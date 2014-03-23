@@ -1,0 +1,34 @@
+% Intro_Dissertation_
+% Slinker, 03/21/2014
+
+%Preamble
+\documentclass{article}
+\usepackage{setspace} %for double spacing
+\usepackage[top=1in, bottom=1in, left=1.25in, right=1in]{geometry}
+\usepackage{pslatex}
+\usepackage{graphicx} %for the figures
+
+
+%Document
+\begin{document}
+
+\doublespace{
+    %Header for Section
+    \paragraph{\large\textbf{Introduction\\\\Variation Between Humans and Non-human Primates}} \hspace{0pt} \\\\
+    %Body of Text
+        \large{
+        \textbf{Purpose:} The RT antisense bias is an optimal\cite{Burma2001} system to examine how RTs affect genes other than by inserting directly into coding sequence.
+        In order to examine the association of antisense bias with gene function, we must first ensure that the antisense bias did not occur through integration, but was due to selective pressures acting on the RTs. 
+        Figure~\ref{fig:sex} shows a photograph of a gull. 
+        }
+    %Figure
+    \begin{figure}[h!]
+        \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{test.pdf}
+        \caption{Sex-specific Expression}
+        \label{fig:sex}
+    \end{figure}
+}
+\bibliographystyle{IEEEtranS}
+\bibliography{library}
+\end{document}
+
