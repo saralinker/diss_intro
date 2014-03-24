@@ -13,20 +13,13 @@
 \begin{document}
 
 \doublespace{
-    %Header for Section
-    \paragraph{\large\textbf{Introduction\\\\Variation Between Humans and Non-human Primates}} \hspace{0pt} \\\\
+    %Regulating Gene Expresson in Humans
+    \paragraph{\large\textbf{Introduction\\\\Regulating Gene Expresson in Humans}} \hspace{0pt} \\\\
     %Body of Text
         \large{
-        \textbf{Purpose:} The RT antisense bias is an optimal\cite{Burma2001} system to examine how RTs affect genes other than by inserting directly into coding sequence.
-        In order to examine the association of antisense bias with gene function, we must first ensure that the antisense bias did not occur through integration, but was due to selective pressures acting on the RTs. 
-        Figure~\ref{fig:sex} shows a photograph of a gull. 
+        Non-coding mobile genetic elements have the potential to alter the regulation of genes. Regulation of gene expression is an evolutionary conserved process that is capable of responding to complex cues such as tissue-type, stage of development, and levels of cellular stress. These concerted signals act through interactive binding of multiple regulatory proteins to specific sequences within the DNA. Regulatory proteins, such as transcription factors, have evolved to bind to these predetermined sequences, or subtle variations thereof. For example, the RORA hormone receptor binds to (5'-[AT][TA]A[AT][CGT]TAGGTCA-3'), which then increases expression of the coincident gene.  
         }
-    %Figure
-    \begin{figure}[h!]
-        \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{test.pdf}
-        \caption{Sex-specific Expression}
-        \label{fig:sex}
-    \end{figure}
+
 }
 \bibliographystyle{IEEEtranS}
 \bibliography{library}
