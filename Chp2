@@ -1,0 +1,39 @@
+% Chp2_Dissertation_
+% Slinker, 03/31/2014
+
+%Preamble
+\documentclass{article}
+\usepackage{setspace} %for double spacing
+\usepackage[top=1in, bottom=1in, left=1.25in, right=1in]{geometry}
+\usepackage{pslatex}
+\usepackage{graphicx} %for the figures
+
+
+%Document
+\begin{document}
+\doublespace{
+    \paragraph{\large\textbf{Chp2: Origins of the Retrotransposon Antisense Bias\\}}
+    %Purpose
+    \paragraph{\large\textbf{Purpose: \\}}
+    \large{The RT antisense bias is an optimal system to examine how RTs affect genes other than by inserting directly into coding sequence. In order to examine the association of antisense bias with gene function, we must first ensure that the antisense bias did not occur through integration, but was due to selective pressures acting on the RTs.
+    }
+    %ASbias upon insertion
+    \paragraph{\large\textbf{RTs insert with equal probability in the sense and antisense orientation\\}}
+    \large{
+    
+    }
+    %Signs of purifying selection
+    \paragraph{\large\textbf{Purifying selection of retrotransposons in genes\\}}
+    \large{
+    
+    }
+    %Change over time (AS bias)
+    \paragraph{\large\textbf{Antisense bias increases over evolutionary time\\}}
+    \large{
+    
+    }
+}
+%
+\bibliographystyle{IEEEtranS}
+\bibliography{library}
+\end{document}
