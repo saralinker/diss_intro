@@ -35,21 +35,30 @@ Although these newly inserted Alu did not have a significant AS bias, it is poss
     \large{
 Alu, L1, and SVA are all integrated through the process of target-primed reverse transcription (TPRT). Therefore to test if TPRT is responsible for AS bias, we examined the null hypothesis that transposons inserted by non-TPRT mechanisms had equal proportions of sense and antisense elements. Similar to Alu, a pooled group of DNA transposons had a significant increase of AS elements over S elements (probability of AS = \num{0.540}; \num{95}\% CI = \num{0.538} - \num{0.543}; p < \num{1.64}e\num{-190}), indicating that AS bias is not restricted to elements integrated by TPRT. 
 }
+%AS bias changes over evolutionary time
+    \paragraph{\large\textbf{\num{2.2 } Antisense Bias Increases Over Evolutionary Time}}
+    \paragraph{\large\textbf{\textnormal{2.2.1 } Antisense bias of Alu increases between segregating and fixed alleles\\}}
+    \large{
+Since we have shown that Alu present in the reference genome have a significantly larger proportion of AS elements than newly integrated elements, it is likely that this change in proportion is due to an action over time. The other possibility would be due to a change in the mechanism of integration between older elements and younger elements, though the results from non-TPRT integration, and from [what?], make this hypothesis less likely. To examine the change of AS proportion in Alu we compared the proportion of Alu within segregating and fixed Alu. Segregating Alu were seperated into two groups \num{1}.) Population-specific Alu from the 1000 genomes project \cite{Stewart2011}, and \num{2}.) Alu shared among all populations in the 1000 genomes project \cite{Stewart2011}. Fixed Alu were also derived from two groups: \num{3}.) Human-specific Alu \cite{Bennett2008}, and \num{4}.) Hg19 Reference Alu \cite{Kent2002}. The mean allele frequencies of groups (1) and (2) are [x] and \num{0.24} respectively. Groups \num{3} and \num{4} are expected to have allele frequencies centered around 1. When all groups were ordered by rank, there was an increase in probability of AS within increasing rank (figure \ref{fig:pAS}), indicating a tendency towards an increase in p(AS) with increasing residence time in the genome.  
+    %Figure pAS
+    \begin{figure}[!h]
+        \centering
+        \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{pAS.pdf}
+        \caption{Change in pAS Over Time}
+        \label{fig:pAS}
+    \end{figure}
+    }
+To further examine the change of pAS over time we subset Alu and L1 into subfamilies. Elements within a subfamily have similar residence times in the genome. The relative age of a subfamily is often measured as the average distance of all elements within a subfamily from the respective consensus sequence (milliDiv).  
 
-    \paragraph{\large\textbf{\textnormal{2.1.3 } Recently Inserted Retrotransposons Exhibit Similar Antisense Bias Throughout a Gene\\}}
+
+
+%Signs of purifying selection
+    \paragraph{\large\textbf{\num{2.3 } Purifying Selection on Retrotransposons in Genes}}
+    \paragraph{\large\textbf{\textnormal{2.3.1 }Purifying selection of retrotransposons in genes\\}}
     \large{
-Two previously published datasets were used for analysis: a) a group of polymorphic Alu from the 1000 genomes project \cite{Stewart2011}, and b) Alu which are specific to the human lineage \cite{Bennett2008} (Supporting Dataset S1). We used all RefSeq genes and normalized for the difference in length by dividing each gene into deciles of equal size. The frequencies of group (a) and group (b) Alu were then calculated within each bin. As expected under a model of uniform integration, the proportion of polymorphic RTs were not significantly different from a uniform distribution (chi-square p-value > 0.19) (figure 1a), although, contrary to expectation, there was an increase in the antisense bias compared to all reference Alu elements (Avg.:1.21, Std. Dev.:0.16). Human-specific Alu, which include RTs fixed within the population and are on-average older than polymorphic RTs, began to exhibit accumulation in both the antisense orientation (Avg.: 1.22, Std. Dev.:0.19), as well as a bias in distribution towards the first half of the gene (figure 1b). These results are largely consistent with previous findings from cell culture studies suggesting that some degree of antisense bias is introduced at the actual point of physical integration into the genome, separate from and in addition to any subsequent action of natural selection.
+
     }
-    %Signs of purifying selection
-    \paragraph{\large\textbf{\textnormal{2.2}Purifying selection of retrotransposons in genes\\}}
-    \large{
-    
-    }
-        %Signs of purifying selection
-    \paragraph{\large\textbf{\textnormal{2.3} Antisense bias increases over evolutionary time\\}}
-    \large{
-    
-    }
+
     \paragraph{}
 }
 
