@@ -8,28 +8,45 @@
 \usepackage{pslatex}
 \usepackage{graphicx} %for the figures
 \usepackage{siunitx}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
 
 
 %Document
 \begin{document}
 \doublespace{
     \paragraph{\large\textbf{Chp2: Origins of the Retrotransposon Antisense Bias\\}}
-    %Purpose
-    \paragraph{\large\textbf{Purpose: \\}}
-    \large{The distribution of retrotransposons throughout the human genome shifted towards a non-uniform pattern over evolutionary time \cite{Lander2001,Moyzis1989, Ovchinnikov2001}. As mentioned previously, L1 elements are enriched within GC-poor regions, while Alu are commonly found in GC-rich regions \cite{Pavlicek2001, Soriano1983}. A second pattern of distribution emerges when analysis is restricted to gene regions. For example, previous studies have identified an increase of many families of retrotransposons near 5'\-UTRs \cite{Medstrand2002}.To distinguish whether this non-uniform distribution of retrotransposons within genes is a result of a bias during insertion, as opposed to an accumulation over time, we calculated the distribution of relatively recent Alu insertions within genes. 
-    }
     %ASbias upon insertion
-    \paragraph{\large\textbf{\num{2.1} RTs insert with equal probability in the sense and antisense orientation\\}}
+    \paragraph{\large\textbf{\num{2.1 } Dependency of Retrotransposon Antisense Bias on the Process of Integration}}
+    %Purpose
+    \paragraph{\large\textbf{Purpose\\}}
     \large{
-    
+The distribution of retrotransposons throughout the human genome shifted towards a non-uniform pattern over evolutionary time \cite{Lander2001,Moyzis1989, Ovchinnikov2001}. As mentioned previously, L1 elements are enriched within GC-poor regions, while Alu are commonly found in GC-rich regions \cite{Pavlicek2001, Soriano1983}. A second pattern of distribution emerges when analysis is restricted to gene regions. For example, previous studies have identified an increase of many families of retrotransposons near 5'\-UTRs \cite{Medstrand2002}. To distinguish whether this non-uniform distribution of retrotransposons within genes is a result of a bias during insertion, as opposed to an accumulation over time, we calculated the distribution of relatively recent Alu insertions within genes. 
+    }
+%1000 genomes by population and Faulkner data
+    \paragraph{\large\textbf{\textnormal{2.1.1 } Recent Polymorphic Retrotransposons Have no Antisense Bias\\}}
+    \large{
+Since Alu insert at the highest rate in humans, these elements were examined to identify the insertion bias upon integration. L1 and SVA were not examined due low insertion rate, and therefore small sample sizes. Two samples of Alu were used for this analysis (a) Alu annotated as insertions in the \num{1000} genomes project \cite{Stewart2011}, and (b) Alu annotated as germline insertions \cite{Baillie2011}. Alu from group (a) were subdivided by population of origin (ie: Yoruban, YRI; European, CEU; Chinese/Japanese, CHBJPT). Alu that were population-specific were kept in the analysis, while Alu that were present among two or more populations were labelled as (c) shared, and were used in a future analysis. Group (a) and (b) were examined for proportion of antisense (AS) and sense (S) oriented Alu. The binomial test was used to calculate the deviation from the null hypothesis that AS and S oriented Alu occur in equal amounts in newly inserted Alu. Alu counts from YRI, CEU, CHBJPT, and group (b) were combined to reduce type II error by increasing sample size. With the total sample size of \num{735}, the computed required effect size was \num{-0.43}. The counts of AS and S Alu were not significantly different from one another (probability of AS = \num{0.49}; \num{95}\% CI = \num{0.46} - \num{0.53}; p = \num{0.94}).
+
+Although these newly inserted Alu did not have a significant AS bias, it is possible that they have a bias that is similar to the often cited AS bias in the Hg19 reference genome [REFs]. The AS bias in the Hg19 reference is significantly different from the null hypothesis of equal distribution (probability of AS = 0.55 ; \num{95}\% CI = \num{0.548} - \num{0.550}; p < \num{2.47}e-\num{323}). This proportion of AS is significantly different from that of relatively new inserts (\num{95}\% CI = \num{-0.09} - \num{-0.01}; p < \num{0.006}). These results indicate that contrary to older Alu, newly inserted Alu have no detectable antisense bias. 
+}
+%TPRT
+    \paragraph{\large\textbf{\textnormal{2.1.2 } AS bias of TPRT and non-TPRT integrated transposons\\}}
+    \large{
+Alu, L1, and SVA are all integrated through the process of target-primed reverse transcription (TPRT). Therefore to test if TPRT is responsible for AS bias, we examined the null hypothesis that transposons inserted by non-TPRT mechanisms had equal proportions of sense and antisense elements. Similar to Alu, a pooled group of DNA transposons had a significant increase of AS elements over S elements (probability of AS = \num{0.540}; \num{95}\% CI = \num{0.538} - \num{0.543}; p < \num{1.64}e\num{-190}), indicating that AS bias is not restricted to elements integrated by TPRT. 
+}
+
+    \paragraph{\large\textbf{\textnormal{2.1.3 } Recently Inserted Retrotransposons Exhibit Similar Antisense Bias Throughout a Gene\\}}
+    \large{
+Two previously published datasets were used for analysis: a) a group of polymorphic Alu from the 1000 genomes project \cite{Stewart2011}, and b) Alu which are specific to the human lineage \cite{Bennett2008} (Supporting Dataset S1). We used all RefSeq genes and normalized for the difference in length by dividing each gene into deciles of equal size. The frequencies of group (a) and group (b) Alu were then calculated within each bin. As expected under a model of uniform integration, the proportion of polymorphic RTs were not significantly different from a uniform distribution (chi-square p-value > 0.19) (figure 1a), although, contrary to expectation, there was an increase in the antisense bias compared to all reference Alu elements (Avg.:1.21, Std. Dev.:0.16). Human-specific Alu, which include RTs fixed within the population and are on-average older than polymorphic RTs, began to exhibit accumulation in both the antisense orientation (Avg.: 1.22, Std. Dev.:0.19), as well as a bias in distribution towards the first half of the gene (figure 1b). These results are largely consistent with previous findings from cell culture studies suggesting that some degree of antisense bias is introduced at the actual point of physical integration into the genome, separate from and in addition to any subsequent action of natural selection.
     }
     %Signs of purifying selection
-    \paragraph{\large\textbf{\num{2.2} Purifying selection of retrotransposons in genes\\}}
+    \paragraph{\large\textbf{\textnormal{2.2}Purifying selection of retrotransposons in genes\\}}
     \large{
     
     }
         %Signs of purifying selection
-    \paragraph{\large\textbf{\num{2.3} Antisense bias increases over evolutionary time\\}}
+    \paragraph{\large\textbf{\textnormal{2.3} Antisense bias increases over evolutionary time\\}}
     \large{
     
     }
