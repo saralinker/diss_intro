@@ -39,21 +39,45 @@ Alu, L1, and SVA are all integrated through the process of target-primed reverse
     \paragraph{\large\textbf{\num{2.2 } Antisense Bias Increases Over Evolutionary Time}}
     \paragraph{\large\textbf{\textnormal{2.2.1 } Antisense bias of Alu increases between segregating and fixed alleles\\}}
     \large{
-Since we have shown that Alu present in the reference genome have a significantly larger proportion of AS elements than newly integrated elements, it is likely that this change in proportion is due to an action over time. The other possibility would be due to a change in the mechanism of integration between older elements and younger elements, though the results from non-TPRT integration, and from [what?], make this hypothesis less likely. To examine the change of AS proportion in Alu we compared the proportion of Alu within segregating and fixed Alu. Segregating Alu were seperated into two groups \num{1}.) Population-specific Alu from the 1000 genomes project \cite{Stewart2011}, and \num{2}.) Alu shared among all populations in the 1000 genomes project \cite{Stewart2011}. Fixed Alu were also derived from two groups: \num{3}.) Human-specific Alu \cite{Bennett2008}, and \num{4}.) Hg19 Reference Alu \cite{Kent2002}. The mean allele frequencies of groups (1) and (2) are [x] and \num{0.24} respectively. Groups \num{3} and \num{4} are expected to have allele frequencies centered around 1. When all groups were ordered by rank, there was an increase in probability of AS within increasing rank (figure \ref{fig:pAS}), indicating a tendency towards an increase in p(AS) with increasing residence time in the genome.  
+Since we have shown that Alu present in the reference genome have a significantly larger proportion of AS elements than newly integrated elements, it is likely that this change in proportion is due to an action over time. The other possibility would be due to a change in the mechanism of integration between older elements and younger elements, though the results from non-TPRT integration, and from [what?], make this hypothesis less likely. To examine the change of AS proportion in Alu we compared the proportion of Alu within segregating and fixed Alu. Segregating Alu were seperated into two groups \num{1}.) Population-specific Alu from the 1000 genomes project \cite{Stewart2011}, and \num{2}.) Alu shared among all populations in the 1000 genomes project \cite{Stewart2011}. Fixed Alu were also derived from two groups: \num{3}.) Human-specific Alu \cite{Bennett2008}, and \num{4}.) Hg19 Reference Alu \cite{Kent2002}. The mean allele frequencies of groups (1) and (2) are [x] and \num{0.24} respectively. Groups \num{3} and \num{4} are expected to have allele frequencies centered around 1. When all groups were ordered by rank, there was an increase in probability of AS within increasing rank (figure \ref{fig:pAS}), indicating a tendency towards an increase in p(AS) with increasing residence time in the genome.
+
     %Figure pAS
     \begin{figure}[!h]
         \centering
         \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{pAS.pdf}
-        \caption{Change in pAS Over Time}
+        \caption{Change in pAS From Polymorphic to Fixed Alu}
         \label{fig:pAS}
     \end{figure}
     }
-To further examine the change of pAS over time we subset Alu and L1 into subfamilies. Elements within a subfamily have similar residence times in the genome. The relative age of a subfamily is often measured as the average distance of all elements within a subfamily from the respective consensus sequence (milliDiv).  
+    
+\paragraph{\large\textbf{\textnormal{2.2.2 } Antisense bias of Alu is constant across Reference Subfamilies\\}}
+To further examine the change of pAS over time we subset Alu and L1 into subfamilies. Elements within a subfamily have similar residence times in the genome. The relative age of a subfamily is often measured as the average distance of all elements within a subfamily from the respective consensus sequence (milliDiv). AS bias was compared across Alu subfamilies under AluY and AluS. AluJ was analyzed seperately due to [bla blibbidy bla]. There was a slight increase in AS bias with increasing millidiv, though, this increase was not signficant (F-test p = \num{0.63}) (figure \ref{fig:pAS_subfam}). These results indicate that Alu are initially integrated with no AS bias, AS and S Alu are then differentially maintained setting up the reference AS bias. And this event occurs relatively quickly on evolutionary time scales, (ie: prior to fixation).
 
+    %Figure pAS_subfamily Alu
+    \begin{figure}[!h]
+        \centering
+        \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{pAS_alu.pdf}
+        \caption{Change in pAS Across Reference Alu}
+        \label{fig:pAS_subfam}
+    \end{figure}
+
+\paragraph{\large\textbf{\textnormal{2.2.3 } Antisense bias of L1 Increases Across Reference Subfamilies\\}}
+L1 are present in high enough numbers in the reference genome to be analyzed for AS bias across subfamilies. The combined Hg19 reference L1 AS bias is significantly different from 50:50 (probability of AS = \num{0.656}; \num{95}\% CI = \num{0.654} - \num{0.657}; p < \num{1.98}e{-323}). The AS bias of L1 is larger than that of Alu. Furthermore, contrary to the results from Alu, L1 exhibit a significant association between AS bias and relative age as measured by millidiv (F-test p < \num{2.66}e{-06}) (figure \ref{fig:pAS_l1}). 
+
+    %Figure pAS_subfamily L1
+    \begin{figure}[!h]
+        \centering
+        \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{pAS_l1.pdf}
+        \caption{Change in pAS Across Reference L1}
+        \label{fig:pAS_l1}
+    \end{figure}
 
 
 %Signs of purifying selection
     \paragraph{\large\textbf{\num{2.3 } Purifying Selection on Retrotransposons in Genes}}
+    \large{
+The results so far have shown that AS bias increases over time, with Alu increasing relatively quickly and L1 continuing to increase over larger periods of time. If selection within genes is playing a role in this change in AS bias, there are three models to examine. 1.) Antisense RTs undergo positive selection within genes, 2.) Sense RTs undergo negative selection within genes, 3.) Both (1) and (2) are true. Previous reports have indicated that on a genome-wide level, Alu undergo negative selection \cite{Stewart2011}, though [REF] has proposed that RTs are under positive selection within genes. 
+    }
     \paragraph{\large\textbf{\textnormal{2.3.1 }Purifying selection of retrotransposons in genes\\}}
     \large{
 
