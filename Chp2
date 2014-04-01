@@ -76,14 +76,31 @@ L1 are present in high enough numbers in the reference genome to be analyzed for
 %Signs of purifying selection
     \paragraph{\large\textbf{\num{2.3 } Purifying Selection on Retrotransposons in Genes}}
     \large{
-The results so far have shown that AS bias increases over time, with Alu increasing relatively quickly and L1 continuing to increase over larger periods of time. If selection within genes is playing a role in this change in AS bias, there are three models to examine. 1.) Antisense RTs undergo positive selection within genes, 2.) Sense RTs undergo negative selection within genes, 3.) Both (1) and (2) are true. Previous reports have indicated that on a genome-wide level, Alu undergo negative selection \cite{Stewart2011}, though [REF] has proposed that RTs are under positive selection within genes. 
+The results so far have shown that AS bias increases over time, with Alu increasing relatively quickly and L1 continuing to increase over larger periods of time. If selection within genes is playing a role in this change in AS bias, there are three models to examine. 1.) Antisense RTs undergo positive selection within genes, 2.) Sense RTs undergo negative selection within genes, 3.) Both (1) and (2) are true. Previous reports have indicated that on a genome-wide level, Alu undergo purifying selection \cite{Stewart2011}, though [REF] has proposed that RTs are under positive selection within genes. 
     }
     \paragraph{\large\textbf{\textnormal{2.3.1 }Purifying selection of retrotransposons in genes\\}}
     \large{
+To examine the influence of positive or purifying selection on Alu we took advantage of the fact that the  more deleterious an allele is, the younger it is \cite{Kimura1969,Li1975}. [Explain this in clear language]. RTs within the same subfamily were assumed to have inserted at relatively equivalent time scales. Millidivs from the subfamily consensus were then measured for each orientation. Therefore the age in millidiv of AS were compared only to their S counterparts within the same subfamily. The null expactation being that AS and S RTs of the same subfamily are of equivalent ages. The mean Student's t test statistic of the differences between S and AS Alu was \num{-3.28}, with a majority of the tests being highly significant (figure \ref{fig:age_alu}). The mean test statistic for L1 was similarly less than \num{1} (-0.38), though the effect of orientation on age was much smaller with a majority of the tests spanning zero (figure \ref{fig:age_l1}). 
 
-    }
+    %Figure Age of Alu
+    \begin{figure}[!h]
+        \centering
+        \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{age_alu.pdf}
+        \caption{Sense oriented Alu are Younger than Antisense}
+        \label{fig:age_alu}
+    \end{figure}
+    
+    %Figure Age of L1
+    \begin{figure}[!h]
+        \centering
+        \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{age_l1.pdf}
+        \caption{Sense oriented L1 are Younger than Antisense}
+        \label{fig:age_l1}
+    \end{figure}
 
-    \paragraph{}
+If however, AS are positively selected they will be older than S, while if S are purified, then S will be younger than AS. There is an obvious paradox(?) in this setup. That is that, when AS is compared versus S we can only determine that they are different in age from one another. To determine the direction of difference, we need a reference point to compare to. In this case we chose to compare to intergenic rates of mutation, under the null hypothesis that intergenic RTs are under equivalent rates of selection in either orientation, and that these rates approximate neutral. By comparing RT ages in genes to those intergenically, we can now determine whether AS are increased versus intergenic or S are decreased versus intergenic. And the difference between AS and S. 
+
+
 }
 
 \bibliographystyle{IEEEtranS}
