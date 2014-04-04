@@ -24,14 +24,18 @@
 The distribution of retrotransposons throughout the human genome shifted towards a non-uniform pattern over evolutionary time \cite{Lander2001,Moyzis1989, Ovchinnikov2001}. As mentioned previously, L1 elements are enriched within GC-poor regions, while Alu are commonly found in GC-rich regions \cite{Pavlicek2001, Soriano1983}. A second pattern of distribution emerges when analysis is restricted to gene regions. For example, previous studies have identified an increase of many families of retrotransposons near 5'\-UTRs \cite{Medstrand2002}. To distinguish whether this non-uniform distribution of retrotransposons within genes is a result of a bias during insertion, as opposed to an accumulation over time, we calculated the distribution of relatively recent Alu insertions within genes. 
     }
 %1000 genomes by population and Faulkner data
-    \paragraph{\large\textbf{\textnormal{2.1.1 } Recent Polymorphic Retrotransposons Have no Antisense Bias\\}}
+\paragraph{\large\textbf{\textnormal{2.1.1 } Alu and L1 are present in the antisense orientation more often than the sense orientation\\}}
+\large{
+[WRITE THIS]
+}
+    \paragraph{\large\textbf{\textnormal{2.1.2 } Recent Polymorphic Retrotransposons Have no Antisense Bias\\}}
     \large{
 Since Alu insert at the highest rate in humans, these elements were examined to identify the insertion bias upon integration. L1 and SVA were not examined due low insertion rate, and therefore small sample sizes. Two samples of Alu were used for this analysis (a) Alu annotated as insertions in the \num{1000} genomes project \cite{Stewart2011}, and (b) Alu annotated as germline insertions \cite{Baillie2011}. Alu from group (a) were subdivided by population of origin (ie: Yoruban, YRI; European, CEU; Chinese/Japanese, CHBJPT). Alu that were population-specific were kept in the analysis, while Alu that were present among two or more populations were labelled as (c) shared, and were used in a future analysis. Group (a) and (b) were examined for proportion of antisense (AS) and sense (S) oriented Alu. The binomial test was used to calculate the deviation from the null hypothesis that AS and S oriented Alu occur in equal amounts in newly inserted Alu. Alu counts from YRI, CEU, CHBJPT, and group (b) were combined to reduce type II error by increasing sample size. With the total sample size of \num{735}, the computed required effect size was \num{-0.43}. The counts of AS and S Alu were not significantly different from one another (probability of AS = \num{0.49}; \num{95}\% CI = \num{0.46} - \num{0.53}; p = \num{0.94}).
 
 Although these newly inserted Alu did not have a significant AS bias, it is possible that they have a bias that is similar to the often cited AS bias in the Hg19 reference genome [REFs]. The AS bias in the Hg19 reference is significantly different from the null hypothesis of equal distribution (probability of AS = 0.55 ; \num{95}\% CI = \num{0.548} - \num{0.550}; p < \num{2.47}e-\num{323}). This proportion of AS is significantly different from that of relatively new inserts (\num{95}\% CI = \num{-0.09} - \num{-0.01}; p < \num{0.006}). These results indicate that contrary to older Alu, newly inserted Alu have no detectable antisense bias. 
 }
 %TPRT
-    \paragraph{\large\textbf{\textnormal{2.1.2 } AS bias of TPRT and non-TPRT integrated transposons\\}}
+    \paragraph{\large\textbf{\textnormal{2.1.3 } AS bias of TPRT and non-TPRT integrated transposons\\}}
     \large{
 Alu, L1, and SVA are all integrated through the process of target-primed reverse transcription (TPRT). Therefore to test if TPRT is responsible for AS bias, we examined the null hypothesis that transposons inserted by non-TPRT mechanisms had equal proportions of sense and antisense elements. Similar to Alu, a pooled group of DNA transposons had a significant increase of AS elements over S elements (probability of AS = \num{0.540}; \num{95}\% CI = \num{0.538} - \num{0.543}; p < \num{1.64}e\num{-190}), indicating that AS bias is not restricted to elements integrated by TPRT. 
 }
@@ -74,7 +78,7 @@ L1 are present in high enough numbers in the reference genome to be analyzed for
 
 
 %Signs of purifying selection
-    \paragraph{\large\textbf{\num{2.3 } Purifying Selection on Retrotransposons in Genes}}
+    \paragraph{\large\textbf{\num{2.3 } Differences in Selection Between S and AS RTs}}
     \large{
 The results so far have shown that AS bias increases over time, with Alu increasing relatively quickly and L1 continuing to increase over larger periods of time. If selection within genes is playing a role in this change in AS bias, there are three models to examine. 1.) Antisense RTs undergo positive selection within genes, 2.) Sense RTs undergo negative selection within genes, 3.) Both (1) and (2) are true. Previous reports have indicated that on a genome-wide level, Alu undergo purifying selection \cite{Stewart2011}, though [REF] has proposed that RTs are under positive selection within genes.
 
@@ -84,7 +88,35 @@ In 1975 Li calculated that on average, deleterious alleles will have shorter res
     \large{
 Using the rationale presented in Li, 1975; the relative force of selection can be compared between two, otherwise equal, alleles by calculating their respective residence times in a population. RTs within a subfamily are defined by the fact that they amplified at similar points in time [REF]. Therefore, barring any forces of selection, the mean ages of AS and S RTs of the same subfamily should be equivalent.
 
-The age of AS and S Alu were calculated as millidiv from the respective consensus sequence. The mean ages of AS and S Alu were compared within each subfamily using a Student's t-test. Most elements were significantly younger in the S orientation when compared to elements of the same family in the AS direction, with a mean test statistic of \num{-3.28} (figure \ref{fig:age_alu}). The mean test statistic for L1 was similarly less than one (-0.38), though the effect of orientation on age was much smaller with a majority of the tests spanning zero (figure \ref{fig:age_l1}). 
+Estimates of the expected effect that differing rates of selection have on the cummulative age of the RT were determined through simulations. For the simulation, a genome was constructed that lacked any RT. For each generation, x new RTs were integrated. These RTs then survived on to the next generation with probability, p$_{\text{AS}}$ for AS RTs, and p$_{\text{S}}$ for S RTs. RTs that sucessfully passed to the next generation were then marked as one generation older.%(figure \ref{fig:sim_diagram}).
+
+    %%Figure schematic showing the logic of the program
+    %\begin{figure}[!h]
+    %    \centering
+    %    \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{sim_diagram.pdf}
+    %    \caption{Logic of Ageing Simulation}
+    %    \label{fig:sim_diagram}
+    %\end{figure}
+
+    %Figure Simulation with Constant Selection Over Time
+    \begin{figure}[!h]
+        \centering
+        \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{sim_cons.pdf}
+        \caption{Caption Here}
+        \label{fig:sim_cons}
+    \end{figure}
+    
+    %Figure Simulation with Constant Selection Over Time_ RAtio of b/a
+    \begin{figure}[!h]
+        \centering
+        \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{sim_cons_ratio.pdf}
+        \caption{Caption Here}
+        \label{fig:sim_cons_ratio}
+    \end{figure}
+
+
+The age of AS and S Alu were calculated as millidiv from the respective consensus sequence. The mean ages of AS and S Alu were compared within each subfamily using a Student's t-test. Most elements were significantly younger in the S orientation when compared to elements of the same family in the AS direction, with a mean test statistic of \num{-3.28} (figure \ref{fig:age_alu}).
+
 
     %Figure Age of Alu
     \begin{figure}[!h]
@@ -94,6 +126,8 @@ The age of AS and S Alu were calculated as millidiv from the respective consensu
         \label{fig:age_alu}
     \end{figure}
     
+Conversely, the mean test statistic for L1 was -0.38, and the effect of orientation on age was much smaller with a majority of the test statistics spanning zero (figure \ref{fig:age_l1}). 
+    
     %Figure Age of L1
     \begin{figure}[!h]
         \centering
@@ -101,8 +135,47 @@ The age of AS and S Alu were calculated as millidiv from the respective consensu
         \caption{Sense oriented L1 are Younger than Antisense}
         \label{fig:age_l1}
     \end{figure}
+    
 
-If however, AS are positively selected they will be older than S, while if S are purified, then S will be younger than AS. There is an obvious paradox(?) in this setup. That is that, when AS is compared versus S we can only determine that they are different in age from one another. To determine the direction of difference, we need a reference point to compare to. In this case we chose to compare to intergenic rates of mutation, under the null hypothesis that intergenic RTs are under equivalent rates of selection in either orientation, and that these rates approximate neutral. By comparing RT ages in genes to those intergenically, we can now determine whether AS are increased versus intergenic or S are decreased versus intergenic. And the difference between AS and S. 
+To determine what variables might be effecting the difference in AS bias between Alu and L1, the dependent variable of length of L1 was added [GO BACK AND DO MORE ANALYSIS. SINGLE LINE PER ALU WITH FAMILYM MILLIDIV AND LENGTH. LOGREG; Y= AS/S; X= SUB + LENGTH].
+    
+    %Figure Age of L1 with length as a dependent variable
+    \begin{figure}[!h]
+        \centering
+        \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{l1_t_length.pdf}
+        \caption{L1 AS bias is dependent on length}
+        \label{fig:l1_t_length}
+    \end{figure}
+
+\paragraph{\large\textbf{\textnormal{2.3.2 }Purifying selection of RTs in genes\\}}
+\large{
+At this point we have shown that Alu in the S orientation are significantly younger than Alu in the AS orientation. L1, however, show a mixed effect, with some subfamilies having a significant difference in age between S and AS, though this is true in both directions. Meaning sometimes S is younger and sometimes AS is younger.
+
+From this analysis the difference in selection between AS and S is known, however the direction of selection remains unknown. Meaning, the results are ambiguous to knowing whether S are younger than AS because S are undergoing negative selection, or because AS are undergoing positive selection. To determine the direction of selection, intergenic RTs were used as a reference point. When compared to intergenic Alu of the same subfamily, Alu in genes were younger in age (figure \ref{fig:age_alu_rel}). S Alu were also reduced in age compared to AS Alu within the older subfamilies (AluJ: Student's t-test p < 1.5e-04; AluS: Student's t-test p < 1.3e-03; AluY: Student's t-test p = 0.73). This supports the hypothesis that Alu undergo purifying selection within genes with Alu in the S orientation being purified to a stronger degree than AS. 
+
+    %Figure Age of Alu normalized to Intergenic
+    \begin{figure}[!h]
+        \centering
+        \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{age_alu_rel_int.pdf}
+        \caption{Alu undergo relatively higher levels of purifying selection in genes}
+        \label{fig:age_alu_rel_int}
+    \end{figure}
+
+Similarly, there was a noted decrease in the age of L1 in genes compared to intergenic. This indicates that purifying selection was acting more on L1 in genes than intergenically. Alternatively to Alu, AS and S L1 were similar in age (L1M: Student's t-test p = 0.32; L1P: Student's t-test p = 0.65). 
+
+    %Figure Age of L1 normalized to Intergenic
+    \begin{figure}[!h]
+        \centering
+        \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{age_l1_rel_int.pdf}
+        \caption{L1 undergo relatively higher levels of purifying selection in genes}
+        \label{fig:age_l1_rel_int}
+    \end{figure}
+    
+}
+    \paragraph{\large\textbf{\textnormal{2.3.3 } Age of RTs in regions with extremes of AS bias\\}}
+%To further test the association of younger RTs with antisense bias 
+    
+    \paragraph{\large\textbf{\textnormal{2.3.4 } Lack of Purifying Selection of RTs on ChrY\\}}
 
 
 }
