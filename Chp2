@@ -21,18 +21,17 @@
     %Purpose
     \paragraph{\large\textbf{Purpose\\}}
     \large{
-The distribution of retrotransposons throughout the human genome shifted towards a non-uniform pattern over evolutionary time \cite{Lander2001,Moyzis1989, Ovchinnikov2001}. As mentioned previously, L1 elements are enriched within GC-poor regions, while Alu are commonly found in GC-rich regions \cite{Pavlicek2001, Soriano1983}. A second pattern of distribution emerges when analysis is restricted to gene regions. For example, previous studies have identified an increase of many families of retrotransposons near 5'\-UTRs \cite{Medstrand2002}. To distinguish whether this non-uniform distribution of retrotransposons within genes is a result of a bias during insertion, as opposed to an accumulation over time, we calculated the distribution of relatively recent Alu insertions within genes. 
+It is possible that the distribution of RTs is a direct effect of selection on RTs, and is therefore indicative of the local effect of RTs on genes. For example, low RT density would indicate regions sensitive to RTs, thus natural selection purifies them from those regions (i.e: near exons \ref{Zhang2011}). Similarly high density regions would indicate either a neutral or positive response to a RT insertion. One of the published patterns of distribution is the tendency of RTs to be present in the antisense (AS) orientation within genes more often than the sense (S) orientation. This has been termed the antisense bias (AS bias). An interesting feature of this bias is that it peaks near the transcription start site \ref{Medstrand2002}. It is possible that this altered distribution is due to natural selection acting differently on the same RT in different orientations. If this is true, then the AS bias can be used to measure regional sensitivities to RT insertions. However possible, there is also another potential cause of this bias that must be ruled out, and that is that the AS-bias does not accumulate over time through selection, but during the integration process. To distinguish whether AS bias is a result of integration or selection over time, the distribution of relatively recent Alu insertions were examined, as well as the change in AS bias over evolutionary time. 
     }
 %1000 genomes by population and Faulkner data
-\paragraph{\large\textbf{\textnormal{2.1.1 } Alu and L1 are present in the antisense orientation more often than the sense orientation\\}}
-\large{
-[WRITE THIS]
-}
+
     \paragraph{\large\textbf{\textnormal{2.1.2 } Recent Polymorphic Retrotransposons Have no Antisense Bias\\}}
     \large{
-Since Alu insert at the highest rate in humans, these elements were examined to identify the insertion bias upon integration. L1 and SVA were not examined due low insertion rate, and therefore small sample sizes. Two samples of Alu were used for this analysis (a) Alu annotated as insertions in the \num{1000} genomes project \cite{Stewart2011}, and (b) Alu annotated as germline insertions \cite{Baillie2011}. Alu from group (a) were subdivided by population of origin (ie: Yoruban, YRI; European, CEU; Chinese/Japanese, CHBJPT). Alu that were population-specific were kept in the analysis, while Alu that were present among two or more populations were labelled as (c) shared, and were used in a future analysis. Group (a) and (b) were examined for proportion of antisense (AS) and sense (S) oriented Alu. The binomial test was used to calculate the deviation from the null hypothesis that AS and S oriented Alu occur in equal amounts in newly inserted Alu. Alu counts from YRI, CEU, CHBJPT, and group (b) were combined to reduce type II error by increasing sample size. With the total sample size of \num{735}, the computed required effect size was \num{-0.43}. The counts of AS and S Alu were not significantly different from one another (probability of AS = \num{0.49}; \num{95}\% CI = \num{0.46} - \num{0.53}; p = \num{0.94}).
+Alu insert at a higher rate than either L1 or SVA, and have a larger sample size of elements with low residence times in the population. These recently integrated Alu were examined to identify the AS bias upon integration. Two samples of relatively young Alu were used for this analysis (a) Alu annotated as insertions in the \num{1000} genomes project \cite{Stewart2011}, and (b) Alu annotated as germline insertions \cite{Baillie2011}. Alu from group (a) are all elements that are polymorphic in the population studied. Three population groups were used in this 1000 genomes study; Yoruban, YRI; European, CEU; and Chinese/Japanese, CHBJPT. Alu that were population-specific were kept in the analysis, while Alu that were present among two or more populations were labelled as (c) shared, and were used in a future analysis. The mean allele frequency of Alu presence was 0.49,0.59, and 0.54 in YRI, CEU, and CHBJPT respectively. Group (b) elements were derived from three individuals that were examined for non-reference Alu insertions in various somatic tissues. The insertions that were deemed 'germline' insertions by comparison between multiple tissues were used for this analysis.
 
-Although these newly inserted Alu did not have a significant AS bias, it is possible that they have a bias that is similar to the often cited AS bias in the Hg19 reference genome [REFs]. The AS bias in the Hg19 reference is significantly different from the null hypothesis of equal distribution (probability of AS = 0.55 ; \num{95}\% CI = \num{0.548} - \num{0.550}; p < \num{2.47}e-\num{323}). This proportion of AS is significantly different from that of relatively new inserts (\num{95}\% CI = \num{-0.09} - \num{-0.01}; p < \num{0.006}). These results indicate that contrary to older Alu, newly inserted Alu have no detectable antisense bias. 
+Group (a) and (b) were examined for proportion of AS and S oriented Alu. The binomial test was used to calculate the deviation from the null hypothesis that AS and S oriented Alu occur in equal proportions. Alu counts from YRI, CEU, CHBJPT, and group (b) were combined to reduce type II error by increasing sample size. With the total sample size of \num{735}, the computed required effect size was \num{-0.43}. The counts of AS and S Alu were not significantly different from one another (probability of AS = \num{0.49}; \num{95}\% CI = \num{0.46} - \num{0.53}; p = \num{0.94}), indicating that a significant AS bias was not present in these newly inserted Alu.
+
+Since the null hypothesis can not be proven, only disproven, the converse hypothesis was tested. This hypothesis was that the AS bias of newly inserted Alu was equal to the AS bias of the reference set of Alu (Hg19). The reference set was chosen as the comparison since this was the group of Alu from within which the AS bias was originally identified. As has been previously documented, the proportions of AS and S Alu in the Hg19 reference was significantly different from the null hypothesis of equal distribution (probability of AS = 0.55 ; \num{95}\% CI = \num{0.548} - \num{0.550}; p < \num{2.47}e-\num{323}). When the AS bias of reference Alu was compared to new inserts, it was identified that reference Alu had a significantly different AS bias than newly inserted Alu (\num{95}\% CI = \num{-0.09} - \num{-0.01}; p < \num{0.006}). These results indicate that contrary to older Alu, newly inserted Alu have no detectable antisense bias. 
 }
 %TPRT
     \paragraph{\large\textbf{\textnormal{2.1.3 } AS bias of TPRT and non-TPRT integrated transposons\\}}
@@ -60,7 +59,7 @@ To further examine the change of pAS over time we subset Alu and L1 into subfami
     %Figure pAS_subfamily Alu
     \begin{figure}[!h]
         \centering
-        \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{pAS_alu.pdf}
+        \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{pAS_alu_2.pdf}
         \caption{Change in pAS Across Reference Alu}
         \label{fig:pAS_subfam}
     \end{figure}
@@ -71,9 +70,9 @@ L1 are present in high enough numbers in the reference genome to be analyzed for
     %Figure pAS_subfamily L1
     \begin{figure}[!h]
         \centering
-        \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{pAS_l1.pdf}
+        \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{pAS_l1_2.pdf}
         \caption{Change in pAS Across Reference L1}
-        \label{fig:pAS_l1}
+        \label{fig:pAS_l1_2}
     \end{figure}
 
 
@@ -88,7 +87,11 @@ In 1975 Li calculated that on average, deleterious alleles will have shorter res
     \large{
 Using the rationale presented in Li, 1975; the relative force of selection can be compared between two, otherwise equal, alleles by calculating their respective residence times in a population. RTs within a subfamily are defined by the fact that they amplified at similar points in time [REF]. Therefore, barring any forces of selection, the mean ages of AS and S RTs of the same subfamily should be equivalent.
 
-Estimates of the expected effect that differing rates of selection have on the cummulative age of the RT were determined through simulations. For the simulation, a genome was constructed that lacked any RT. For each generation, x new RTs were integrated. These RTs then survived on to the next generation with probability, p$_{\text{AS}}$ for AS RTs, and p$_{\text{S}}$ for S RTs. RTs that sucessfully passed to the next generation were then marked as one generation older.%(figure \ref{fig:sim_diagram}).
+Estimates of the expected effect that differing rates of selection have on the cummulative age of the RT were determined through simulations. For the simulation, a genome was constructed that lacked any RT. For each generation, x new RTs were integrated. These RTs then survived on to the next generation with probability, p$_{\text{AS}}$ for AS RTs, and p$_{\text{S}}$ for S RTs. RTs that sucessfully passed to the next generation were then marked as one generation older.Since, Alu and L1 show different rates of change in AS bias, the simulations were run with two different models. The first model (constant) was similar to what was seen in L1; where AS bias changed constantly over time. The assumption here was that the constant change in AS bias was due to a constant low-level selection acting on L1. The second model (immediate) was similar to what was seen for Alu; where the AS bias changed quickly over time and then remained constant. The assumption was that selection acted on the RT quickly, and then the element reached fixation in the population and would not be lost.
+
+The results from the constant simulations show that with an increasing difference between [p(gen) AS / p(gen) S] (ratio) there was an increase in the age difference between a and b. Similarly, there was an increase difference between a and b in the immediate simulations, however the difference was smaller at similar ratios. Interestingly, the AS bias is not dependent on the simulation type, or therefore the age difference.
+
+%(figure \ref{fig:sim_diagram}). 
 
     %%Figure schematic showing the logic of the program
     %\begin{figure}[!h]
@@ -101,7 +104,7 @@ Estimates of the expected effect that differing rates of selection have on the c
     %Figure Simulation with Constant Selection Over Time
     \begin{figure}[!h]
         \centering
-        \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{sim_cons.pdf}
+        \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{sim_age.pdf}
         \caption{Caption Here}
         \label{fig:sim_cons}
     \end{figure}
@@ -109,11 +112,10 @@ Estimates of the expected effect that differing rates of selection have on the c
     %Figure Simulation with Constant Selection Over Time_ RAtio of b/a
     \begin{figure}[!h]
         \centering
-        \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{sim_cons_ratio.pdf}
+        \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{sim_ratio.pdf}
         \caption{Caption Here}
         \label{fig:sim_cons_ratio}
     \end{figure}
-
 
 The age of AS and S Alu were calculated as millidiv from the respective consensus sequence. The mean ages of AS and S Alu were compared within each subfamily using a Student's t-test. Most elements were significantly younger in the S orientation when compared to elements of the same family in the AS direction, with a mean test statistic of \num{-3.28} (figure \ref{fig:age_alu}).
 
