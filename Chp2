@@ -17,7 +17,7 @@
 \doublespace{
     \paragraph{\large\textbf{Chp2: Origins of the Retrotransposon Antisense Bias\\}}
     %ASbias upon insertion
-    \paragraph{\large\textbf{\num{2.1 } Dependency of Retrotransposon Antisense Bias on the Process of Integration}}
+    \paragraph{\large\textbf{\num{2.1 } Retrotransposon Antisense Bias is not Associated with the Process of Integration}}
     %Purpose
     \paragraph{\large\textbf{Purpose\\}}
     \large{
@@ -25,7 +25,7 @@ It is possible that the distribution of RTs is a direct effect of selection on R
     }
 %1000 genomes by population and Faulkner data
 
-    \paragraph{\large\textbf{\textnormal{2.1.2 } Recent Polymorphic Retrotransposons Have no Antisense Bias\\}}
+    \paragraph{\large\textbf{\textnormal{2.1.2 } Young AS and S Alu are Present in Equal Proportions \\}}
     \large{
 Alu insert at a higher rate than either L1 or SVA, and have a larger sample size of elements with low residence times in the population. These recently integrated Alu were examined to identify the AS bias upon integration. Two samples of relatively young Alu were used for this analysis (a) Alu annotated as insertions in the \num{1000} genomes project \cite{Stewart2011}, and (b) Alu annotated as germline insertions \cite{Baillie2011}. Alu from group (a) are all elements that are polymorphic in the population studied. Three population groups were used in this 1000 genomes study; Yoruban, YRI; European, CEU; and Chinese/Japanese, CHBJPT. Alu that were population-specific were kept in the analysis, while Alu that were present among two or more populations were labelled as (c) shared, and were used in a future analysis. The mean allele frequency of Alu presence was 0.49,0.59, and 0.54 in YRI, CEU, and CHBJPT respectively. Group (b) elements were derived from three individuals that were examined for non-reference Alu insertions in various somatic tissues. The insertions that were deemed 'germline' insertions by comparison between multiple tissues were used for this analysis.
 
@@ -34,7 +34,7 @@ Group (a) and (b) were examined for proportion of AS and S oriented Alu. The bin
 Since the null hypothesis can not be proven, only disproven, the converse hypothesis was tested. This hypothesis was that the AS bias of newly inserted Alu was equal to the AS bias of the reference set of Alu (Hg19). The reference set was chosen as the comparison since this was the group of Alu from within which the AS bias was originally identified. As has been previously documented, the proportions of AS and S Alu in the Hg19 reference was significantly different from the null hypothesis of equal distribution (probability of AS = 0.55 ; \num{95}\% CI = \num{0.548} - \num{0.550}; p < \num{2.47}e-\num{323}). When the AS bias of reference Alu was compared to new inserts, it was identified that reference Alu had a significantly different AS bias than newly inserted Alu (\num{95}\% CI = \num{-0.09} - \num{-0.01}; p < \num{0.006}). These results indicate that contrary to older Alu, newly inserted Alu have no detectable antisense bias. 
 }
 %TPRT
-    \paragraph{\large\textbf{\textnormal{2.1.3 } AS bias of TPRT and non-TPRT integrated transposons\\}}
+    \paragraph{\large\textbf{\textnormal{2.1.3 } AS bias is present in transposons integrated by non-TPRT mechanisms\\}}
     \large{
 The overarching goal of this chapter was to discriminate between the RT integration process and selection over time, as being responsible for AS bias. It has just been shown that there is no discernable AS bias upon integration, indiciating that the process of Alu integration (ie: TPRT) does not likely contribute to AS bias. Alu, L1, and SVA are all integrated through the process of TPRT, and all have significant differences in the proportion of AS and S elements. Therefore, it is pertinent to this study to determine if AS bias is restricted to elements which are integrated by TPRT. The null hypothesis that transposons inserted by non-TPRT mechanisms had equal proportions of sense and antisense elements was examined. Similar to Alu, a pooled group of DNA transposons had a significant increase of AS elements over S elements (probability of AS = \num{0.540}; \num{95}\% CI = \num{0.538} - \num{0.543}; p < \num{1.64}e\num{-190}), indicating that AS bias is not restricted to the RT-specific form of integration, TPRT.
 }
@@ -42,23 +42,10 @@ The overarching goal of this chapter was to discriminate between the RT integrat
     \paragraph{\large\textbf{\num{2.2 } Antisense Bias Increases Over Evolutionary Time}}
     \paragraph{\large\textbf{Purpose\\}}
     \large{
-    Since I have shown that Alu present in the reference genome have a significantly larger proportion of AS elements than newly integrated elements, it is likely that this change in proportion was due to an action over time. The other possibility would be due to a change in the mechanism of integration between older elements and younger elements, though the results from non-TPRT integration, and from [what?], make this hypothesis less likely.
+Since Alu present in the reference genome have a significantly larger proportion of AS elements than newly integrated elements, it is likely that this change in proportion was due to a progressive action over time. It is important to examine the change in AS bias over time, since a change over time is indicative of selection acting on the elements depending on the orientation within a gene. The fact that RTs can have a selectable effect on genes depending on their orientation would then allow us to study the effects that RTs are having on genes. 
     }
-    \paragraph{\large\textbf{\textnormal{2.2.1 } Antisense bias of Alu increases between segregating and fixed alleles\\}}
-    \large{
-To examine the change of AS proportion in Alu we compared the proportion of Alu within segregating and fixed Alu. Segregating Alu were seperated into two groups \num{1}.) Population-specific Alu from the 1000 genomes project \cite{Stewart2011}, and \num{2}.) Alu shared among all populations in the 1000 genomes project \cite{Stewart2011}. Fixed Alu were also derived from two groups: \num{3}.) Human-specific Alu \cite{Bennett2008}, and \num{4}.) Hg19 Reference Alu \cite{Kent2002}. The mean allele frequencies of groups (1) and (2) are [x] and \num{0.24} respectively. Groups \num{3} and \num{4} are expected to have allele frequencies centered around 1. When all groups were ordered by rank, there was an increase in probability of AS within increasing rank (figure \ref{fig:pAS}), indicating a tendency towards an increase in p(AS) with increasing residence time in the genome.
-
-    %Figure pAS
-    \begin{figure}[!h]
-        \centering
-        \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{pAS.pdf}
-        \caption{Change in pAS From Polymorphic to Fixed Alu}
-        \label{fig:pAS}
-    \end{figure}
-    }
-    
-\paragraph{\large\textbf{\textnormal{2.2.2 } Antisense bias of Alu is constant across Reference Subfamilies\\}}
-To further examine the change of pAS over time we subset Alu and L1 into subfamilies. Elements within a subfamily have similar residence times in the genome. The relative age of a subfamily is often measured as the average distance of all elements within a subfamily from the respective consensus sequence (milliDiv). AS bias was compared across Alu subfamilies under AluY and AluS. AluJ was analyzed seperately due to [bla blibbidy bla]. There was a slight increase in AS bias with increasing millidiv, though, this increase was not signficant (F-test p = \num{0.63}) (figure \ref{fig:pAS_subfam}). These results indicate that Alu are initially integrated with no AS bias, AS and S Alu are then differentially maintained setting up the reference AS bias. And this event occurs relatively quickly on evolutionary time scales, (ie: prior to fixation).
+ \paragraph{\large\textbf{\textnormal{2.2.1 } Antisense bias of Alu is Constant across Reference Subfamilies\\}}
+To examine the change of pAS over time we subset Alu and L1 into their predefined subfamilies. Elements within a subfamily have similar residence times in the genome. The relative age of a subfamily is often measured as the average distance of all elements within a subfamily from the respective consensus sequence (milliDiv). AS bias was compared across Alu subfamilies under AluY and AluS. AluJ was analyzed seperately due to [bla blibbidy bla]. There was a slight increase in AS bias with increasing millidiv, though, this increase was not signficant (F-test p = \num{0.63}) (figure \ref{fig:pAS_subfam}). These results indicate that Alu are initially integrated with no AS bias, AS and S Alu are then differentially maintained setting up the reference AS bias. And this event occurs relatively quickly on evolutionary time scales, (ie: prior to fixation).
 
     %Figure pAS_subfamily Alu
     \begin{figure}[!h]
@@ -67,6 +54,22 @@ To further examine the change of pAS over time we subset Alu and L1 into subfami
         \caption{Change in pAS Across Reference Alu}
         \label{fig:pAS_subfam}
     \end{figure}
+ 
+    \paragraph{\large\textbf{\textnormal{2.2.2 } Antisense bias of Alu increases between segregating and fixed alleles\\}}
+    \large{
+To examine the change of AS proportion in Alu we compared the proportion of Alu within segregating and fixed Alu. Segregating Alu were seperated into two groups \num{1}.) Population-specific Alu from the 1000 genomes project \cite{Stewart2011}, and \num{2}.) Alu shared among all populations in the 1000 genomes project \cite{Stewart2011}. Fixed Alu were also derived from two groups: \num{3}.) Human-specific Alu \cite{Bennett2008}, and \num{4}.) Hg19 Reference Alu \cite{Kent2002}. The mean allele frequencies of groups (1) and (2) are [x] and \num{0.24} respectively. Groups \num{3} and \num{4} are expected to have allele frequencies centered around 1. When all groups were ordered by rank, there was an increase in probability of AS within increasing rank (figure \ref{fig:pAS}), indicating a tendency towards an increase in p(AS) with increasing residence time in the genome.
+}
+
+    %Figure pAS
+    \begin{figure}[!h]
+        \centering
+        \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{pAS.pdf}
+        \caption{Change in pAS From Polymorphic to Fixed Alu}
+        \label{fig:pAS}
+    \end{figure}
+    
+    
+
 
 \paragraph{\large\textbf{\textnormal{2.2.3 } Antisense bias of L1 Increases Across Reference Subfamilies\\}}
 L1 are present in high enough numbers in the reference genome to be analyzed for AS bias across subfamilies. The combined Hg19 reference L1 AS bias is significantly different from 50:50 (probability of AS = \num{0.656}; \num{95}\% CI = \num{0.654} - \num{0.657}; p < \num{1.98}e{-323}). The AS bias of L1 is larger than that of Alu. Furthermore, contrary to the results from Alu, L1 exhibit a significant association between AS bias and relative age as measured by millidiv (F-test p < \num{2.66}e{-06}) (figure \ref{fig:pAS_l1}). 
