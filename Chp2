@@ -2,14 +2,15 @@
 % Slinker, 03/31/2014
 
 %Preamble
-\documentclass{article}
-\usepackage{setspace} %for double spacing
-\usepackage[top=1in, bottom=1in, left=1.25in, right=1in]{geometry}
-\usepackage{pslatex}
-\usepackage{graphicx} %for the figures
-\usepackage{siunitx}
-\usepackage[T1]{fontenc}
-\usepackage{amsmath}
+%\documentclass{article}
+\documentclass[Intro_diss.tex]{subfiles} 
+%\usepackage{setspace} %for double spacing
+%\usepackage[top=1in, bottom=1in, left=1.25in, right=1in]{geometry}
+%\usepackage{pslatex}
+%\usepackage{graphicx} %for the figures
+%\usepackage{siunitx}
+%\usepackage[T1]{fontenc}
+%\usepackage{amsmath}
 
 
 %Document
@@ -157,13 +158,13 @@ To determine what variables might be effecting the difference in AS bias between
         \caption{L1 AS bias is dependent on length}
         \label{fig:l1_t_length}
     \end{figure}
-
+}
 \paragraph{\large\textbf{\textnormal{2.4.2 }Purifying selection of RTs in genes\\}}
 \large{
 At this point we have shown that Alu in the S orientation are significantly younger than Alu in the AS orientation. L1, however, show a mixed effect, with some subfamilies having a significant difference in age between S and AS, though this is true in both directions. Meaning sometimes S is younger and sometimes AS is younger.
 
 From this analysis the difference in selection between AS and S is known, however the direction of selection remains unknown. Meaning, the results are ambiguous to knowing whether S are younger than AS because S are undergoing negative selection, or because AS are undergoing positive selection. To determine the direction of selection, intergenic RTs were used as a reference point. When compared to intergenic Alu of the same subfamily, Alu in genes were younger in age (figure \ref{fig:age_alu_rel}). S Alu were also reduced in age compared to AS Alu within the older subfamilies (AluJ: Student's t-test p < 1.5e-04; AluS: Student's t-test p < 1.3e-03; AluY: Student's t-test p = 0.73). This supports the hypothesis that Alu undergo purifying selection within genes with Alu in the S orientation being purified to a stronger degree than AS. 
-
+}
     %Figure Age of Alu normalized to Intergenic
     \begin{figure}[!h]
         \centering
@@ -171,7 +172,7 @@ From this analysis the difference in selection between AS and S is known, howeve
         \caption{Alu undergo relatively higher levels of purifying selection in genes}
         \label{fig:age_alu_rel_int}
     \end{figure}
-
+\large{
 Similarly, there was a noted decrease in the age of L1 in genes compared to intergenic. This indicates that purifying selection was acting more on L1 in genes than intergenically. Alternatively to Alu, AS and S L1 were similar in age (L1M: Student's t-test p = 0.32; L1P: Student's t-test p = 0.65). 
 
     %Figure Age of L1 normalized to Intergenic
@@ -189,8 +190,9 @@ Similarly, there was a noted decrease in the age of L1 in genes compared to inte
     \paragraph{\large\textbf{\textnormal{2.4.4 } Lack of Purifying Selection of RTs on ChrY\\}}
 
 
+
 }
 
-\bibliographystyle{IEEEtranS}
-\bibliography{library}
+%\bibliographystyle{IEEEtranS}
+%\bibliography{library}
 \end{document}
