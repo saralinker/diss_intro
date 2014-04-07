@@ -27,7 +27,17 @@
     %Linear Decay
     \paragraph{\large\textbf{\textnormal{3.1.1 } L1 and Alu Antisense bias exhibits a linear decay across gene deciles }}
     \large{
-To determine how RT frequency was dependent upon the position of the element within a gene, the frequency of all L1 and Alu within each gene decile were calculated, subset by AS and S (figures \ref{fig:lineardecay_alu} and \ref{fig:lineardecay_l1}). We were able to reproduce previous findings that demonstrated an accumulation of AS near the 5\rq-  region of the gene [REF].
+To determine how RT frequency was dependent upon the position of the element within a gene, the frequency of all L1 and Alu within each gene decile were calculated by first normalizing all genes by length (figure \ref{fig:decile}). An effect of normalizing by the transcription start and stop positions was that every first and last decile contained an exon, although this exon was not necessarily a coding exon. Genes that were transcribed from the negative strand were reversed so that all gene transcription start sites would be aligned on the 5'-most side.
+
+        %Figure Decile Explanation
+    \begin{figure}[!h]
+        \centering
+        \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{decile.png}
+        \caption{Normalizing Genes by Length}
+        \label{fig:decile}
+    \end{figure}
+    
+AS and S Alu were counted seperately and normalized by the total number of Alu within gene boundaries. The results of this analysis showed that Alu in the S orientation were distributed relatively equally across all gene deciles. Conversely, AS Alu exhibited a linear decay in distribution from the 5'-most decile to the 3'-most decile (figure \ref{fig:lineardecay_alu}). Both AS and S Alu decreased in the first and last deciles, which is likely due to the over-representation of exons within those deciles compared to the internal deciles. Similarly, AS L1 decreased linearly across the gene boundaries, while S L1 remained relatively constant \ref{fig:lineardecay_l1}). These results reproduce previous findings that demonstrated an accumulation of AS near the TSS [REF], while extending the findings to show that AS Alu and L1 not only increase near the TSS, but they are increased in internal deciles as well.
     
         %Figure Linear Decay: Alu
     \begin{figure}[!h]
@@ -79,13 +89,22 @@ Here we further note that the slope of human-specific AS Alu was significantly d
 %%% And the part about the age of L1 and Alu Depending on the position within the gene
     
     }
-    %Correlation of Linear Decay with Exon Density
+    %Correlation of Linear Decay with 5'-UTR
     \paragraph{\large\textbf{\textnormal{3.1.3 } Alu and L1 are Decreased Near 5\rq-UTR}}
     \large{
     Although both are conserved, coding exons and UTRs have very different roles in the creation of a final gene product. It has been shown that exon density is highly predictive of RT frequency; however it is also possible that the 5\rq-UTR has a specific effect on RT abundance that is distinct from the effect imposed by coding exons. We therefore wanted to determine if the presence of a 5\rq-UTRs was associated with altered RT frequency beyond what would be expected from exon enrichment alone.
 In our method of analysis the first and last deciles consistently contained a 5\rq-  or 3\rq-UTR, whereas the internal deciles were variable as to the presence of a coding exon. The resulting frequency plots revealed that RTs were highly reduced within the first bin (containing the 5\rq-UTR) in comparison to the second bin. Since this could be a result of a decrease in the density of CDS exons as well as an altered effect by the 5\rq-UTR, we needed to distinguish the effects from one another. To accomplish this, we restricted analysis to genes that contained a second 5\rq-UTR in each decile. Examples of genes that contained a secondary 5\rq-UTRs are depicted in figure 6a. 
 
-Genes containing secondary 5\rq-UTRs were further grouped into subsets based on the decile location of the second UTR. For example, Group I genes contained all secondary 5\rq-UTRs in the first decile, calculated as the first 0\% - 10\% of the gene. Group II contained genes where the secondary 5\rq-UTR was in the second decile (10\% - 20\% of the gene), and so on for all ten deciles (see methods). The frequencies of all SO and ASO L1 and Alu were then calculated within these gene groups and compared to expectation based on whole genome averages. Both Alu and L1 were reduced in frequency versus expected though only L1 were significantly reduced (Student\rq s t-test p: 2.99 E-06 L1 ASO, 0.04 L1 SO, 0.49 Alu ASO, 0.24 Alu SO) (figure 6b). 
+Genes containing secondary 5\rq-UTRs were further grouped into subsets based on the decile location of the second UTR. For example, Group I genes contained all secondary 5\rq-UTRs in the first decile, calculated as the first 0\% - 10\% of the gene. Group II contained genes where the secondary 5\rq-UTR was in the second decile (10\% - 20\% of the gene), and so on for all ten deciles (figure \ref:{decile}). The frequencies of all S and AS L1 and Alu were then calculated within these gene groups and compared to expectation based on whole genome averages. Both Alu and L1 were reduced in frequency versus expected though only L1 were significantly reduced (Student\rq s t-test p: 2.99 E-06 L1 ASO, 0.04 L1 SO, 0.49 Alu ASO, 0.24 Alu SO) (figure 6b).
+
+        %Figure 5'-UTR examples
+    \begin{figure}[!h]
+        \centering
+        \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{25utr.png}
+        \caption{Examples of Genes Containing Secondary 5'-UTRs}
+        \label{fig:25utr}
+    \end{figure}
+    
 
 Across all genes, we have shown that the second decile, that neighbours the 5\rq-UTR containing decile, contains the largest number of L1 and Alu. We therefore tested if L1 and Alu were similarly increased in the deciles surrounding the secondary 5\rq-UTRs. We found that the L1 and Alu were also reduced to a lower extent in the bins surrounding the 5\rq-UTR (figure 6c). L1 near secondary 5\rq-UTRs were depleted at a higher level than Alu, though this difference was not significant (Student\rq s t-test p = 0.07). Most importantly, the change in exon density due to the altered binning procedure was not correlated with the effect of depletion on RTs (Pearson\rq s correlation coefficient: -0.42 L1, -0.48 Alu; p = 0.30 L1, 0.34 Alu). This indicated that the reduced frequency of RTs near 5\rq-UTRs was not attributable to a correlation with the hazardous zone near an exon, but to the 5\rq-UTR itself. 
 
@@ -124,6 +143,10 @@ To test whether the linear decay of antisense oriented L1 was related to the siz
     %Functional Binding Motifs Effect Maintenance, Tissue Specific
     \paragraph{\large\textbf{\textnormal{3.2.3 } }}
     \large{
+Although the consensus sequences for Alu and L1 contain many functional DNA binding motifs, each individual RT in the genome is variable as to whether or not it contains these motifs. The loss or gain of a motif may occur by mutation at the nucleotide level or through retrotransposition of a parent element that has already lost or gained the motif sequence. To help determine how the functional motifs within Alu and L1 affect their frequency within genes, we analysed a subset of functional motifs found in the respective consensus sequences (table 4). The binding motifs presented in table 4 represent binding motifs for a variety of genes which have the potential to impact both retrotransposon as well as gene expression. For example, the 5’ portion of the polymerase III promoter (Pol-III) contains the A-box motif which is necessary for transcription factor binding and expression of Alu retrotransposons [39]. The YY-1 binding motif contained within L1 is both a component of the core promoter necessary for  L1 transcription [40] as well as a general transcriptional repressor [41]. CpGs which are common in Alu and L1 can potentially effect levels of gene transcription [42] when methylated. Additionally due to the process of deamination, 5-methylcytosines are more likely to be mutated to thymines than non-methylated cytosines [43], and are commonly mutated in Alu [44]. The SRY motif is a binding domain for the testis-determining factor gene SRY which increases L1 transcription in 293 cells [45], and RUNX3 binding can act as both an activator and repressor of transcription and whose repression is linked with tumour progression [46]. Frequencies of each motif were calculated within genes and compared to intergenic proportions. When measured across all genes, the motifs present in table 4 were significantly depleted within genes when compared to intergenic frequencies. To test if the depletion of motifs was due to a general degradation of the whole element as opposed to the motifs themselves we measured the relative frequencies of the end region of Alu (Alu-terminus) that had no known binding partner when queried in JASPAR. This region showed no enrichment in either intergenic or gene regions.
+Since we have shown that, at the level of entire elements, L1 and Alu frequencies are correlated with relative location within a gene, we examined the dependency of individual motifs on the relative location within the gene. To reduce the number of statistical tests (and hence required corrections), we restricted analysis to the bins that contained the extremes of Alu and L1 frequency. These were the first and last bins within the linear range of Alu/L1 frequency, which contained the most and least Alu and L1 respectively. Motif frequencies were normalized by the count of ASO or SO elements within the bin and then compared between bins (figure 8). Contrary to the general trend of L1 elements as whole, functional motifs within L1 were over-represented near the 3’ end of genes compared to the 5’ end. Similarly motifs within sense oriented Alu were also over-represented near the 3’ end of genes. Conversely, motifs within antisense oriented Alu were over-represented near the 5’ gene end. Overall, antisense oriented L1 contained more functional motifs than sense oriented.
+
+
     }
      %Conservation of Binding Motifs is Dependent on Intergenic or In Gene Status
     \paragraph{\large\textbf{\textnormal{3.2.4 } }}
