@@ -141,7 +141,7 @@ Across all genes, we have shown that the second decile, that neighbours the 5\rq
     \begin{figure}[!ht]
         \centering
         \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{2utr_Salu.pdf}
-        \caption{\textbf{Change in S Alu density in the presence of a secondary 5\rq-UTR\\}}
+        \caption{\textbf{Change in S Alu density in the presence of a secondary 5\rq-UTR\\}Calculated similarly to figure \ref{fig:2utr_ASalu}}
         \label{fig:2utr_Salu}
     \end{figure}
     
@@ -150,7 +150,7 @@ Across all genes, we have shown that the second decile, that neighbours the 5\rq
     \begin{figure}[!ht]
         \centering
         \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{2utr_ASl1.pdf}
-        \caption{\textbf{Change in AS L1 density in the presence of a secondary 5\rq-UTR\\}}
+        \caption{\textbf{Change in AS L1 density in the presence of a secondary 5\rq-UTR\\}Calculated similarly to figure \ref{fig:2utr_ASalu}}
         \label{fig:2utr_ASl1}
     \end{figure}
     
@@ -160,7 +160,7 @@ Across all genes, we have shown that the second decile, that neighbours the 5\rq
     \begin{figure}[!ht]
         \centering
         \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{2utr_Sl1.pdf}
-        \caption{\textbf{Change in S L1 density in the presence of a secondary 5\rq-UTR\\}}
+        \caption{\textbf{Change in S L1 density in the presence of a secondary 5\rq-UTR\\}Calculated similarly to figure \ref{fig:2utr_ASalu}}
         \label{fig:2utr_Sl1}
     \end{figure}
     
