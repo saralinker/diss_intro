@@ -35,12 +35,15 @@
 To determine how RT frequency was dependent upon the position of the element within a gene, the frequency of all L1 and Alu within each gene decile were calculated by first normalizing all genes by length (figure \ref{fig:decile}). An effect of normalizing by the transcription start and stop positions was that every first and last decile contained an exon, although this exon was not necessarily a coding exon. Genes that were transcribed from the negative strand were reversed so that all gene transcription start sites would be aligned on the 5'-most side.
 
         %Figure Decile Explanation
-    \begin{figure}[!h]
-        \centering
-        \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{decile.png}
-        \caption{Normalizing Genes by Length}
-        \label{fig:decile}
+    \begin{figure}[!ht]
+    \centering
+    \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{decile.png}
+    \caption{\textbf{Normalizing Genes by Length\\} Example of a gene broken up into deciles. Decile 1 contain the first 0-10\% of the gene, and decile 10 contains the last 90-100\% of the gene. Deciles were calculated from transcription start to transcription stop site from the RefSeq annotated genes.}
+
+    \label{fig:decile}
     \end{figure}
+    
+    
     
 AS and S Alu were counted seperately and normalized by the total number of Alu within gene boundaries. The results of this analysis showed that Alu in the S orientation were distributed relatively equally across all gene deciles. Conversely, AS Alu exhibited a linear decay in distribution from the 5'-most decile to the 3'-most decile (figure \ref{fig:lineardecay_alu}). Both AS and S Alu decreased in the first and last deciles, which is likely due to the over-representation of exons within those deciles compared to the internal deciles. Similarly, AS L1 decreased linearly across the gene boundaries, while S L1 remained relatively constant \ref{fig:lineardecay_l1}). These results reproduce previous findings that demonstrated an accumulation of AS near the TSS [REF], while extending the findings to show that AS Alu and L1 not only increase near the TSS, but they are increased in internal deciles as well.
     
@@ -48,7 +51,7 @@ AS and S Alu were counted seperately and normalized by the total number of Alu w
     \begin{figure}[!h]
         \centering
         \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{lineardecay_alu.pdf}
-        \caption{AS bias of Alu decays linearly across gene boundaries}
+        \caption{\textbf{AS bias of Alu decays linearly across gene boundaries\\}Counts of Alu in the AS and S orientation per decile were normalized by the total Alu in all RefSeq genes. as = antisense, s = sense}
         \label{fig:lineardecay_alu}
     \end{figure}
     
@@ -56,8 +59,7 @@ AS and S Alu were counted seperately and normalized by the total number of Alu w
     \begin{figure}[!h]
         \centering
         \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{lineardecay_l1.pdf}
-        \caption{AS bias of L1 decays linearly across gene boundaries}
-        \label{fig:lineardecay_l1}
+        \caption{\textbf{AS bias of L1 decays linearly across gene boundaries\\}Counts of L1 in the AS and S orientation per decile were normalized by the total L1 in all RefSeq genes. as = antisense, s = sense}
     \end{figure}
     
     By normalizing for gene length we were further able to determine that the decay of AS L1 and Alu is linear across genes. Both AS L1 and Alu began at a relatively high frequency after the first gene decile and declined at a linear rate across the length of the gene (table \ref{table:lindecay}). The lower limits in ASO frequency were observed within the deciles containing the 5\rq-  and 3\rq-  UTRs (see below). As indicated previously, we observed that human specific Alu (youngest class) were slightly biased for the ASO. 
@@ -103,13 +105,10 @@ Although both are conserved, coding exons and UTRs have very different roles in 
 In the current method of analysis the first and last deciles consistently contained a 5\rq-  or 3\rq-UTR, whereas the internal deciles were variable as to the presence of a coding exon. The resulting frequency plots revealed that RTs were highly reduced within the first bin (containing the 5\rq-UTR) in comparison to the second bin. Since this could be a result of a decrease in the density of CDS exons as well as an altered effect by the 5\rq-UTR, it was important to distinguish these effects from one another. To accomplish this, analysis was restricted to genes that contained a second 5\rq-UTR in each decile. Examples of genes that contained secondary 5\rq-UTRs are depicted in figure \ref{fig:25utr}. 
 
     %Figure 5'-UTR examples
-    \begin{figure}[!h]
+    \begin{figure}[!ht]
         \centering
         \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{25utr.png}
-        \caption{\textbf{Examples of Genes Containing Secondary 5'-UTRs:} RAB42, GLB3, and CLCNKB are all genes with alternative 5'-UTRs within the gene boundaries. RAB42 contains the secondary 5'-UTR in the 10 - 20\% bin, GLB3 in the 20 - 30\% bin, and CLCNKB in the 30-40\% bin. Orange: Gene classified as containing the primary UTR; Green: Gene classified as containing the secondary UTR.}
-        %\medskip
-        %\small
-
+        \caption{\textbf{Examples of Genes Containing Secondary 5'-UTRs:\\} RAB42, GLB3, and CLCNKB are examples of genes with alternative 5'-UTRs within the gene boundaries. RAB42 contains the secondary 5'-UTR in the 10 - 20\% bin, GLB3 in the 20 - 30\% bin, and CLCNKB in the 30-40\% bin. Orange: Gene classified as containing the primary UTR; Green: Gene classified as containing the secondary UTR.}
         \label{fig:25utr}
     \end{figure}
     
@@ -121,7 +120,7 @@ The frequencies of all S and AS L1 and Alu were then calculated within these gen
     \begin{figure}[!h]
         \centering
         \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{5utr_diag.pdf}
-        \caption{Method of Analyzing Internal 5'-UTRs}
+        \caption{\textbf{Design for analyzing the impact of internal 5\rq-UTRs on RT density\\}Light green: Genes with only one 5'-UTR located between the transcription start (TSS) and transcription stop site. Dark green: Genes with a second 5\rq-UTR between TSS and transcription stop. Red bar: Decile containing the second 5\rq-UTR. The UTR in the 5\rq-most position was defined as the primary (1$^\circ$) 5\rq-UTR. Dark green genes were grouped by the decile (bin) containing the secondary (2$^\circ$) UTR. All groups were then normalized by the secondary 5\rq-UTR position by defining the bin that contained the 2$^\circ$ UTR as 0. Each bin downstream was defined consecutively as 1, 2, ... 7, and each bin upstream was defined as -1, -2,...-7.}
         \label{fig:5utr_diag}
     \end{figure}
 
@@ -154,11 +153,11 @@ To determine if differences in gene expression across tissue types was confoundi
 Although the consensus sequences for Alu and L1 contain many functional DNA binding motifs, each individual RT in the genome is variable as to whether or not it contains these motifs. The loss or gain of a motif may occur by mutation at the nucleotide level (figure \ref{fig:motif}), through retrotransposition of a parent element that has already lost or gained the motif sequence, or through truncation of the element during integration. Protein binding motifs can impact both RT expression as well as gene expression. For example, the 5’ portion of the polymerase III promoter (Pol-III) contains the A-box motif which is necessary for transcription factor binding and expression of Alu retrotransposons [39]. The YY-1 binding motif contained within L1 is both a component of the core promoter necessary for  L1 transcription [40] as well as a general transcriptional repressor [41]. CpGs which are common in Alu and L1 can potentially effect levels of gene transcription [42] when methylated. Additionally due to the process of deamination, 5-methylcytosines are more likely to be mutated to thymines than non-methylated cytosines [43], and are commonly mutated in Alu [44]. The SRY motif is a binding domain for the testis-determining factor gene SRY which increases L1 transcription in 293 cells [45], and RUNX3 binding can act as both an activator and repressor of transcription and whose repression is linked with tumour progression [46].
     }
     
-    %Figure 5'-UTR examples
+    %Figure Alu motif examples
     \begin{figure}[!ht]
         \centering
         \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{motif.png}
-        \caption{Examples Alu Consensus Sequences that Contain Different Binding Motifs}
+        \caption{\textbf{Examples Alu Consensus Sequences that Contain Different Binding Motifs}AluJo and AluSc represent two Alu subfamilies that have been present in primates prior to the human split. The consensus sequences for these two elements are presented respectively. As expected, both consensus sequences contain the RNA Polymerase III A-box that is required for Alu expression, and therefore Alu retrotransposition. One further protein binding region is highlighted in each sequence, though these binding regions are exclusive to the subfamily of origin. AluJo contains a polyadenylation sequence within the central A-rich region. This polyadenylation signal has been lost in the AluSc consensus sequence (AAATAAA | AAATA\textbf{G}A). Similarly AluSc contains a hepatocyte nuclear factor 4 binding site that is not present in AluJo (GAGGTCAAGAGATCG | GAG\textbf{C}C\textbf{C}A\textbf{G}GAG\textbf{T}TCG).}
         \label{fig:motif}
     \end{figure}
     
