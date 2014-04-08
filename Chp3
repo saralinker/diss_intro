@@ -125,9 +125,45 @@ The frequencies of all S and AS L1 and Alu were then calculated within these gen
     \end{figure}
 
 
-Across all genes, we have shown that the second decile, that neighbours the 5\rq-UTR containing decile, contains the largest number of L1 and Alu. We therefore tested if L1 and Alu were similarly increased in the deciles surrounding the secondary 5\rq-UTRs. We found that the L1 and Alu were also reduced to a lower extent in the bins surrounding the 5\rq-UTR (figure 6c). L1 near secondary 5\rq-UTRs were depleted at a higher level than Alu, though this difference was not significant (Student\rq s t-test p = 0.07). Most importantly, the change in exon density due to the altered binning procedure was not correlated with the effect of depletion on RTs (Pearson\rq s correlation coefficient: -0.42 L1, -0.48 Alu; p = 0.30 L1, 0.34 Alu). This indicated that the reduced frequency of RTs near 5\rq-UTRs was not attributable to a correlation with the hazardous zone near an exon, but to the 5\rq-UTR itself. 
+Across all genes, we have shown that the second decile, that neighbours the 5\rq-UTR containing decile, contains the largest number of L1 and Alu. We therefore tested if L1 and Alu were similarly increased in the deciles surrounding the secondary 5\rq-UTRs. We found that the L1 and Alu were also reduced to a lower extent in the bins surrounding the 5\rq-UTR (figure 6c). L1 near secondary 5\rq-UTRs were depleted at a higher level than Alu, though this difference was not significant (Student\rq s t-test p = 0.07). Most importantly, the change in exon density due to the altered binning procedure was not correlated with the effect of depletion on RTs (Pearson\rq s correlation coefficient: -0.42 L1, -0.48 Alu; p = 0.30 L1, 0.34 Alu). This indicated that the reduced frequency of RTs near 5\rq-UTRs was not attributable to a correlation with the hazardous zone near an exon, but to the 5\rq-UTR itself.
 
-    }
+    %Figure 5'-UTR AS Alu
+    \begin{figure}[!ht]
+        \centering
+        \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{2utr_ASalu.pdf}
+        \caption{\textbf{Change in AS Alu density in the presence of a 2$^\circ$ 5\rq-UTR\\}Proportion of 2$^\circ$ AS Alu proportions were calculated as described in figure \ref{fig:5utr_diag}. All proportions were normalized by the expected proportion based on RefSeq genes that have no 2$^\circ$ within the gene boundaries. }
+        \label{fig:2utr_ASalu}
+    \end{figure}
+    
+    
+    
+    %Figure 5'-UTR S Alu
+    \begin{figure}[!ht]
+        \centering
+        \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{2utr_Salu.pdf}
+        \caption{\textbf{Change in S Alu density in the presence of a secondary 5\rq-UTR\\}}
+        \label{fig:2utr_Salu}
+    \end{figure}
+    
+    
+        %Figure 5'-UTR AS L1
+    \begin{figure}[!ht]
+        \centering
+        \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{2utr_ASl1.pdf}
+        \caption{\textbf{Change in AS L1 density in the presence of a secondary 5\rq-UTR\\}}
+        \label{fig:2utr_ASl1}
+    \end{figure}
+    
+    
+    
+    %Figure 5'-UTR S L1
+    \begin{figure}[!ht]
+        \centering
+        \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{2utr_Sl1.pdf}
+        \caption{\textbf{Change in S L1 density in the presence of a secondary 5\rq-UTR\\}}
+        \label{fig:2utr_Sl1}
+    \end{figure}
+    
     
 %Correlation of Linear Decay with CDS Exon Density
     \paragraph{\large\textbf{\textnormal{3.1.4 } Linear Decay of AS bias is Associated with Exon Density }}
