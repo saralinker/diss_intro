@@ -2,16 +2,16 @@
 % Slinker, 03/31/2014
 
 %Preamble
-%\documentclass{article}
-\documentclass[Intro_diss.tex]{subfiles} 
-%\usepackage{setspace} %for double spacing
-%\usepackage[top=1in, bottom=1in, left=1.25in, right=1in]{geometry}
-%\usepackage{pslatex}
-%\usepackage{graphicx} %for the figures
-%\usepackage{siunitx}
-%\usepackage[T1]{fontenc}
-%\usepackage{amsmath}
-
+\documentclass{article}
+%\documentclass[Intro_diss.tex]{subfiles} 
+\usepackage{setspace} %for double spacing
+\usepackage[top=1in, bottom=1in, left=1.25in, right=1in]{geometry}
+\usepackage{pslatex}
+\usepackage{graphicx} %for the figures
+\usepackage{siunitx}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage[margin=10pt,font=small,justification=justified,labelsep=endash,labelfont=bf]{caption}
 
 %Document
 \begin{document}
@@ -53,7 +53,7 @@ To examine the change of pAS over time Alu and L1 were grouped by their predefin
     \begin{figure}[!h]
         \centering
         \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{pAS_alu_2.pdf}
-        \caption{Change in pAS Across Reference Alu}
+        \caption{\textbf{Change in pAS Across Reference Alu\\}AS/S ratios were calculated for each Alu subfamily and plotted versus the mean deviation from the subfamily consensus sequence (millidiv). AS bias was regressed on millidiv to obtain the fitted line (blue; p = 0.38).}
         \label{fig:pAS_subfam}
     \end{figure}
  
@@ -65,7 +65,7 @@ Since AS bias in reference Alu was independent of the residence time in the popu
     \begin{figure}[!h]
         \centering
         \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{shared_freq.pdf}
-        \caption{Allele Frequencies of Alu that are Shared Between All Populations}
+        \caption{\textbf{Allele Frequencies of Alu that are Shared Between All Populations\\} Many polymorphic Alu identified in the 1000 genomes project were shared between YRI, CEU, and CHBJPT. The count of Alu is plotted as a function of the maximum allele frequency between YRI, CEU, and CHBJPT.}
         \label{fig:shared_freq}
     \end{figure}
 
@@ -75,13 +75,13 @@ These results indicate that Alu are initially integrated with no AS bias, AS and
 
 
 \paragraph{\large\textbf{\textnormal{2.3.3 } Antisense bias of L1 Increases Across Reference Subfamilies\\}}
-L1 are present in high enough numbers in the reference genome to be analyzed for AS bias across subfamilies. The combined Hg19 reference L1 AS bias is significantly different from 0.50 (probability of AS = \num{0.656}; \num{95}\% CI = \num{0.654} - \num{0.657}; p < \num{1.98}e{-323}). The AS bias of L1 is larger than that of Alu. Furthermore, contrary to the results from Alu, L1 exhibit a significant association between AS bias and relative age as measured by millidiv (F-test p < \num{2.66}e{-06}) (figure \ref{fig:pAS_l1}). 
+L1 are present in high enough numbers in the reference genome to be analyzed for AS bias across subfamilies. The combined Hg19 reference L1 AS bias is significantly different from 0.50 (probability of AS = \num{0.656}; \num{95}\% CI = \num{0.654} - \num{0.657}; p < \num{1.98}e{-323}). The AS bias of L1 is larger than that of Alu. Furthermore, contrary to the results from Alu, L1 exhibit a significant association between AS bias and relative age as measured by millidiv (F-test p < \num{2.66}e{-06}) (figure \ref{fig:pAS_l1_2}). 
 
     %Figure pAS_subfamily L1
     \begin{figure}[!h]
         \centering
         \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{pAS_l1_2.pdf}
-        \caption{Change in pAS Across Reference L1}
+        \caption{\textbf{Change in pAS Across Reference L1\\}AS/S ratios were calculated for each L1 subfamily and plotted versus the mean deviation from the subfamily consensus sequence (millidiv). AS bias was regressed on millidiv to obtain the fitted line (blue; p < \num{2.66}e{-06}).}
         \label{fig:pAS_l1_2}
     \end{figure}
 
@@ -115,7 +115,7 @@ The results from the constant simulations show that with a decreasing b/a ratio,
     \begin{figure}[!h]
         \centering
         \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{sim_age.pdf}
-        \caption{Change in cummulative age of elements depending on b/a ratio }
+        \caption{\textbf{Change in cummulative age of elements depending on b/a ratio\\} Differential forces of selection were simulated by creating two elements each with a discrete selective force acting upon it (ie: (a) and (b)). The probability of passing to the next generation was held constant across all simulations for (a) while (b) was increased from 1/100th of (a) to equivalent to (a). Both the left and right figures shows the resulting ages of (a) and (b) elements after 500 generations, with 50 new integrations per generation, and p(survival to the next generation) equal to the value on the x-axis. In the left figure all forces of selection happened within the first generation, mimicking a large phenotypic effect. This "quick" selection is an extreme representation of the hypothesized selective force acting on Alu. In the right figure, selection continued to act on all elements independent of the residence time in the genome. This mimicks lower phenotypic effects.}
         \label{fig:sim_cons}
     \end{figure}
     
@@ -123,7 +123,7 @@ The results from the constant simulations show that with a decreasing b/a ratio,
     \begin{figure}[!h]
         \centering
         \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{sim_ratio.pdf}
-        \caption{Change in antisense bias depending on b/a ratio}
+        \caption{\textbf{Change in antisense bias depending on b/a ratio\\}The simulations from which these figures were derived are the same simulations from figure \ref{fig:sim_cons}. Counts of (a) and (b) elements are plotted in orange and red respectively. These figures show that despite changes in the age of the elements due to different modes of selection, the AS bias remains relatively steady. }
         \label{fig:sim_cons_ratio}
     \end{figure}
 
@@ -134,7 +134,9 @@ The age of AS and S Alu were calculated as millidiv from the respective consensu
     \begin{figure}[!h]
         \centering
         \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{age_alu.pdf}
-        \caption{Sense oriented Alu are Younger than Antisense}
+        \caption{\textbf{Sense oriented Alu are Younger than Antisense\\}
+        More here
+        }
         \label{fig:age_alu}
     \end{figure}
     
@@ -144,7 +146,9 @@ Conversely, the mean test statistic for L1 was -0.38, and the effect of orientat
     \begin{figure}[!h]
         \centering
         \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{age_l1.pdf}
-        \caption{Sense oriented L1 are Younger than Antisense}
+        \caption{\textbf{Sense oriented L1 are Younger than Antisense\\}
+        More here
+        }
         \label{fig:age_l1}
     \end{figure}
     
@@ -155,7 +159,9 @@ To determine what variables might be effecting the difference in AS bias between
     \begin{figure}[!h]
         \centering
         \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{l1_t_length.pdf}
-        \caption{L1 AS bias is dependent on length}
+        \caption{\textbf{L1 AS bias is dependent on length\\}
+        More here
+        }
         \label{fig:l1_t_length}
     \end{figure}
 }
@@ -169,7 +175,9 @@ From this analysis the difference in selection between AS and S is known, howeve
     \begin{figure}[!h]
         \centering
         \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{age_alu_rel_int.pdf}
-        \caption{Alu undergo relatively higher levels of purifying selection in genes}
+        \caption{\textbf{Alu undergo relatively higher levels of purifying selection in genes\\}
+        More here
+        }
         \label{fig:age_alu_rel_int}
     \end{figure}
 \large{
@@ -179,7 +187,9 @@ Similarly, there was a noted decrease in the age of L1 in genes compared to inte
     \begin{figure}[!h]
         \centering
         \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{age_l1_rel_int.pdf}
-        \caption{L1 undergo relatively higher levels of purifying selection in genes}
+        \caption{\textbf{L1 undergo relatively higher levels of purifying selection in genes\\}
+        More here
+        }
         \label{fig:age_l1_rel_int}
     \end{figure}
     
