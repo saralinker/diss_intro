@@ -10,7 +10,7 @@
 \usepackage{siunitx}
 \usepackage[T1]{fontenc}
 \usepackage{amsmath}
-\setcounter{page}{11}
+%\setcounter{page}{11}
 \usepackage[margin=10pt,font=small,justification=justified,labelsep=endash,labelfont=bf]{caption}
 
 
@@ -169,6 +169,17 @@ Across all genes, we have shown that the second decile, that neighbours the 5\rq
     \paragraph{\large\textbf{\textnormal{3.1.4 } Linear Decay of AS bias is Associated with Exon Density }}
     \large{
 Since previous studies have shown that ASO RT density was inversely correlated with exon density, we next calculated the frequency of coding exons (CDS) within each decile. Indeed, CDS density increased at a similar linear rate across gene deciles (figure 5 and table 2).  The first decile of genes contained more CDS than the second decile. This was likely due to using the TSS as a starting point for calculation, which would enrich for 5\rq-UTRs and consequently the coding exons that may be associated with them. Therefore, as has been indicated previously [9], ASO-RTs were inversely correlated with exon density (Pearson\rq s Corr. value: -0.94; p-value: 5.21e-05) (table 3). Moreover, the distributions of exons and RTs were found to be linearly increasing and decreasing across a gene, respectively, indicating a predictable pattern of RT density within gene bounds.  
+    
+    
+    %Figure CDS (no secondary 5'-UTR)
+    \begin{figure}[!ht]
+        \centering
+        \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{cds_noUTR.pdf}
+        \caption{\textbf{Distribution of Coding Sequence Exons in RefSeq Genes\\}The number of coding sequence exons (CDS) in the sense orientation were normalized by all sense oriented CDS in RefSeq genes.}
+        \label{fig:cds_noUTR}
+    \end{figure}
+    
+    
     }
     
 %Alternative Splicing
