@@ -11,6 +11,8 @@
 \usepackage[T1]{fontenc}
 \usepackage{amsmath}
 \setcounter{page}{11}
+\usepackage[margin=10pt,font=small,justification=justified,labelsep=endash,labelfont=bf]{caption}
+
 
 
 %Document
@@ -98,17 +100,22 @@ Here we further note that the slope of human-specific AS Alu was significantly d
     \paragraph{\large\textbf{\textnormal{3.1.3 } Alu and L1 are Decreased Near 5\rq-UTR}}
     \large{
 Although both are conserved, coding exons and UTRs have very different roles in the creation of a final gene product. It has been shown that exon density is highly predictive of RT frequency; however it is also possible that the 5\rq-UTR has a specific effect on RT abundance that is distinct from the effect imposed by coding exons. We therefore wanted to determine if the presence of a 5\rq-UTRs was associated with altered RT frequency beyond what would be expected from exon enrichment alone.
-In our method of analysis the first and last deciles consistently contained a 5\rq-  or 3\rq-UTR, whereas the internal deciles were variable as to the presence of a coding exon. The resulting frequency plots revealed that RTs were highly reduced within the first bin (containing the 5\rq-UTR) in comparison to the second bin. Since this could be a result of a decrease in the density of CDS exons as well as an altered effect by the 5\rq-UTR, we needed to distinguish the effects from one another. To accomplish this, we restricted analysis to genes that contained a second 5\rq-UTR in each decile. Examples of genes that contained a secondary 5\rq-UTRs are depicted in figure 6a. 
-
-Genes containing secondary 5\rq-UTRs were further grouped into subsets based on the decile location of the second UTR. For example, Group I genes contained all secondary 5\rq-UTRs in the first decile, calculated as the first 0\% - 10\% of the gene. Group II contained genes where the secondary 5\rq-UTR was in the second decile (10\% - 20\% of the gene), and so on for all ten deciles (figure \ref:{decile}). The frequencies of all S and AS L1 and Alu were then calculated within these gene groups and compared to expectation based on whole genome averages. Both Alu and L1 were reduced in frequency versus expected though only L1 were significantly reduced (Student\rq s t-test p: 2.99 E-06 L1 ASO, 0.04 L1 SO, 0.49 Alu ASO, 0.24 Alu SO) (figure 6b).
+In the current method of analysis the first and last deciles consistently contained a 5\rq-  or 3\rq-UTR, whereas the internal deciles were variable as to the presence of a coding exon. The resulting frequency plots revealed that RTs were highly reduced within the first bin (containing the 5\rq-UTR) in comparison to the second bin. Since this could be a result of a decrease in the density of CDS exons as well as an altered effect by the 5\rq-UTR, it was important to distinguish these effects from one another. To accomplish this, analysis was restricted to genes that contained a second 5\rq-UTR in each decile. Examples of genes that contained secondary 5\rq-UTRs are depicted in figure \ref{fig:25utr}. 
 
     %Figure 5'-UTR examples
     \begin{figure}[!h]
         \centering
         \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{25utr.png}
-        \caption{Examples of Genes Containing Secondary 5'-UTRs}
+        \caption{\textbf{Examples of Genes Containing Secondary 5'-UTRs:} RAB42, GLB3, and CLCNKB are all genes with alternative 5'-UTRs within the gene boundaries. RAB42 contains the secondary 5'-UTR in the 10 - 20\% bin, GLB3 in the 20 - 30\% bin, and CLCNKB in the 30-40\% bin. Orange: Gene classified as containing the primary UTR; Green: Gene classified as containing the secondary UTR.}
+        %\medskip
+        %\small
+
         \label{fig:25utr}
     \end{figure}
+    
+Once genes with internal r\rq-UTRs were identified, they were further grouped into subsets based on the decile location of the second UTR. For example, Group I genes contained all secondary 5\rq-UTRs in the first decile, calculated as the first 0\% - 10\% of the gene. Group II contained genes where the secondary 5\rq-UTR was in the second decile (10\% - 20\% of the gene), and so on for all ten deciles (figure \ref{fig:5utr_diag}). 
+
+The frequencies of all S and AS L1 and Alu were then calculated within these gene groups and compared to expectation based on whole genome averages. Both Alu and L1 were reduced in frequency versus expected though only L1 were significantly reduced (Student\rq s t-test p: 2.99 E-06 L1 ASO, 0.04 L1 SO, 0.49 Alu ASO, 0.24 Alu SO) (figure 6b).
     
     %Figure 5'-UTR Analysis
     \begin{figure}[!h]
