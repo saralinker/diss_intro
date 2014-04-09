@@ -38,7 +38,7 @@ To determine how RT frequency was dependent upon the position of the element wit
     \begin{figure}[!ht]
     \centering
     \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{decile.png}
-    \caption{\textbf{Normalizing Genes by Length\\} Example of a gene broken up into deciles. Decile 1 contain the first 0-10\% of the gene, and decile 10 contains the last 90-100\% of the gene. Deciles were calculated from transcription start to transcription stop site from the RefSeq annotated genes.}
+    \caption{\textbf{Normalizing Genes by Length\\} Example of a gene broken up into deciles. Decile 1 contains the first 0-10\% of the gene, and decile 10 contains the last 90-100\% of the gene. Deciles were calculated from transcription start to transcription stop site from the RefSeq annotated genes.}
 
     \label{fig:decile}
     \end{figure}
@@ -220,13 +220,51 @@ To test whether the linear decay of antisense oriented L1 was related to the siz
 %Functional Binding Motifs Effect Maintenance
     \paragraph{\large\textbf{\textnormal{3.2.2 } }}
     \large{
-    }
+Functional binding motifs, other than the L1 Pol-II promoter, are present within Alu and L1. Motif prediction algorithms have sucessfully identified a majority of the motifs that are present within the consensus sequences of each subfamily [REF]. Since RTs are differentially selected within genes depending on their orientation, it is possible that these sequence-specific, orientation-specific binding elements play a role in that maintenance. We, therefore, tested whether the RTs that have survived in the genome (ie: present in the Hg19 Reference) contain less of certain binding motifs than predicted by chance. The assumption being that if a binding motif contributes to the deleterious nature of the RT, then RTs lacking the binding motif would be less deleterious and therefore more likely to be maintained to the next generation.
+
+The binding motifs coded within Alu consensus sequences were identified by direct match.[More on this].
+         
+
+    %Figure Alu motifs 
+    \begin{figure}[!ht]
+        \centering
+        \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{alumotifs.pdf}
+       \caption{\textbf{Presence of Alu-contained protein-binding motifs within genes\\}Protein binding motifs were examined for their presence within Alu both in genes and intergenically. The y-axis represents the ratio of the presence within genes to the presence intergenically. Alu within genes were seperated into categories based on the linear decline of AS-bias. AS\_5prime: Antisense Alu in the 10-20\% decile; S\_5prime: Sense Alu in the 10-20\% decile; AS\_3prime: Antisense Alu in the 80-90\% decile; S\_3prime: Sense Alu in the 80-90\% decile. The RNA Polymerase III A-box promoter (Pol3) is higlighted by an orange dashed box.}
+        \label{fig:alumotifs}
+    \end{figure}
     
+[Talk about the pattern of the presence of motifs being dependent on the position of the motif compared to the sequence of the motif itslef. Inlcude the table of the p-values and effects(?) From the ANOVA analysis].
+
+
+    %Linear Regression Equation 1 : Alu motif
+    \begin{equation}
+    \label{Alu 1:}
+        y  = \beta motif_{i} + ... + \beta motif_{n} + \epsilon
+    \end{equation}
+
+    %Linear Regression Equation 2 : Alu position
+    \begin{equation}
+    \label{Alu 1:}
+        y  = \beta position_{i} + ... + \beta position_{n} + \epsilon 
+    \end{equation}
+    
+    %Figure L1 motifs
+    \begin{figure}[!ht]
+        \centering
+        \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{l1motifs.pdf}
+       \caption{\textbf{Presence of L1-contained protein-binding motifs within genes\\}Protein binding motifs were examined similarly to those within Alu (figure \ref{fig:alumotifs}).}
+        \label{fig:l1motifs}
+    \end{figure}
+
+    
+[Talk about the pattern of the presence of motifs being dependent on the position of the motif compared to the sequence of the motif itslef. Inlcude the table of the p-values and effects(?) From the ANOVA analysis].
+    
+ }   
     %Functional Binding Motifs Effect Maintenance, Tissue Specific
     \paragraph{\large\textbf{\textnormal{3.2.3 } }}
     \large{
 To help determine how the functional motifs within Alu and L1 affect their frequency within genes, we analysed a subset of functional motifs found in the respective consensus sequences (table 4). Frequencies of each motif were calculated within genes and compared to intergenic proportions. When measured across all genes, the motifs present in table 4 were significantly depleted within genes when compared to intergenic frequencies. To test if the depletion of motifs was due to a general degradation of the whole element as opposed to the motifs themselves we measured the relative frequencies of the end region of Alu (Alu-terminus) that had no known binding partner when queried in JASPAR. This region showed no enrichment in either intergenic or gene regions.
-Since we have shown that, at the level of entire elements, L1 and Alu frequencies are correlated with relative location within a gene, we examined the dependency of individual motifs on the relative location within the gene. To reduce the number of statistical tests (and hence required corrections), we restricted analysis to the bins that contained the extremes of Alu and L1 frequency. These were the first and last bins within the linear range of Alu/L1 frequency, which contained the most and least Alu and L1 respectively. Motif frequencies were normalized by the count of ASO or SO elements within the bin and then compared between bins (figure 8). Contrary to the general trend of L1 elements as whole, functional motifs within L1 were over-represented near the 3’ end of genes compared to the 5’ end. Similarly motifs within sense oriented Alu were also over-represented near the 3’ end of genes. Conversely, motifs within antisense oriented Alu were over-represented near the 5’ gene end. Overall, antisense oriented L1 contained more functional motifs than sense oriented.
+Since we have shown that, at the level of entire elements, L1 and Alu frequencies are correlated with relative location within a gene, we examined the dependency of individual motifs on the relative location within the gene. To reduce the number of statistical tests (and hence required corrections), we restricted analysis to the bins that contained the extremes of Alu and L1 frequency. These were the first and last bins within the linear range of Alu/L1 frequency, which contained the most and least Alu and L1 respectively. Motif frequencies were normalized by the count of ASO or SO elements within the bin and then compared between bins (figure 8). Contrary to the general trend of L1 elements as whole, functional motifs within L1 were over-represented near the 3\rq end of genes compared to the 5\rq end. Similarly motifs within sense oriented Alu were also over-represented near the 3\rq end of genes. Conversely, motifs within antisense oriented Alu were over-represented near the 5\rq gene end. Overall, antisense oriented L1 contained more functional motifs than sense oriented.
 
 
     }
