@@ -222,7 +222,7 @@ To test whether the linear decay of antisense oriented L1 was related to the siz
     \large{
 Functional binding motifs, other than the L1 Pol-II promoter, are present within Alu and L1. Motif prediction algorithms have sucessfully identified a majority of the motifs that are present within the consensus sequences of each subfamily [REF]. Since RTs are differentially selected within genes depending on their orientation, it is possible that these sequence-specific, orientation-specific binding elements play a role in that maintenance. We, therefore, tested whether the RTs that have survived in the genome (ie: present in the Hg19 Reference) contain less of certain binding motifs than predicted by chance. The assumption being that if a binding motif contributes to the deleterious nature of the RT, then RTs lacking the binding motif would be less deleterious and therefore more likely to be maintained to the next generation.
 
-The binding motifs coded within Alu consensus sequences were identified by direct match, unless otherwise mentioned. 
+The binding motifs coded within Alu consensus sequences were identified by direct match, unless otherwise mentioned. Proportions of motifs within genes were normalized by the proportions identified intergenically. 
          
 
     %Figure Alu motifs 
