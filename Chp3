@@ -23,7 +23,7 @@
 %Purpose
     \paragraph{\large\textbf{Purpose\\}}
     \large{
-    Retrotransposons comprise approximately half of the human genome and contribute to chromatin structure, regulatory motifs, and protein-coding sequences. Since retrotransposon insertions can disrupt functional genetic elements as well as introduce new sequence motifs to a region, they have the potential to affect the function of genes that harbour insertions as well as those nearby. Partly as a result of these effects, the distribution of retrotransposons across the genome is non-uniform and there are observed imbalances in the orientation of insertions with respect to the transcriptional direction of the containing gene. Although some of the factors underlying the observed distributions are understood, much of the variability remains unexplained. Detailed characterization of retrotransposon density in genes could help inform predictions of the functional consequence of \textit{de novo} as well as polymorphic insertions. In order to characterize the relationship between genes and inserted elements, it is important to examine the distribution of retrotransposons and their internal motifs within tissue-specific and housekeeping genes. 
+    Retrotransposons comprise approximately half of the human genome and contribute to chromatin structure, regulatory motifs, and protein-coding sequences. Since retrotransposon insertions can disrupt functional genetic elements as well as introduce new sequence motifs to a region, they have the potential to affect the function of genes that harbor insertions as well as those nearby. Partly as a result of these effects, the distribution of retrotransposons across the genome is non-uniform and there are observed imbalances in the orientation of insertions with respect to the transcriptional direction of the containing gene. Although some of the factors underlying the observed distributions are understood, much of the variability remains unexplained. Detailed characterization of retrotransposon density in genes could help inform predictions of the functional consequence of \textit{de novo} as well as polymorphic insertions. In order to characterize the relationship between genes and inserted elements, it is important to examine the distribution of retrotransposons and their internal motifs within tissue-specific and housekeeping genes. 
     }
 
 %ASbias (Linear Decay)
@@ -222,7 +222,7 @@ To test whether the linear decay of antisense oriented L1 was related to the siz
     \large{
 Functional binding motifs, other than the L1 Pol-II promoter, are present within Alu and L1. Motif prediction algorithms have sucessfully identified a majority of the motifs that are present within the consensus sequences of each subfamily [REF]. Since RTs are differentially selected within genes depending on their orientation, it is possible that these sequence-specific, orientation-specific binding elements play a role in that maintenance. We, therefore, tested whether the RTs that have survived in the genome (ie: present in the Hg19 Reference) contain less of certain binding motifs than predicted by chance. The assumption being that if a binding motif contributes to the deleterious nature of the RT, then RTs lacking the binding motif would be less deleterious and therefore more likely to be maintained to the next generation.
 
-The binding motifs coded within Alu consensus sequences were identified by direct match.[More on this].
+The binding motifs coded within Alu consensus sequences were identified by direct match, unless otherwise mentioned. 
          
 
     %Figure Alu motifs 
@@ -233,7 +233,7 @@ The binding motifs coded within Alu consensus sequences were identified by direc
         \label{fig:alumotifs}
     \end{figure}
     
-[Talk about the pattern of the presence of motifs being dependent on the position of the motif compared to the sequence of the motif itslef. Inlcude the table of the p-values and effects(?) From the ANOVA analysis].
+[Talk about the pattern of the presence of motifs being dependent on the position of the motif compared to the sequence of the motif itslef. Include the table of the p-values and effects(?) From the ANOVA analysis].
 
 
     %Linear Regression Equation 1 : Alu motif
@@ -257,7 +257,7 @@ The binding motifs coded within Alu consensus sequences were identified by direc
     \end{figure}
 
     
-[Talk about the pattern of the presence of motifs being dependent on the position of the motif compared to the sequence of the motif itslef. Inlcude the table of the p-values and effects(?) From the ANOVA analysis].
+[Talk about the pattern of the presence of motifs being dependent on the position of the motif compared to the sequence of the motif itslef. Include the table of the p-values and effects(?) From the ANOVA analysis].
     
  }   
     %Functional Binding Motifs Effect Maintenance, Tissue Specific
@@ -265,6 +265,40 @@ The binding motifs coded within Alu consensus sequences were identified by direc
     \large{
 To help determine how the functional motifs within Alu and L1 affect their frequency within genes, we analysed a subset of functional motifs found in the respective consensus sequences (table 4). Frequencies of each motif were calculated within genes and compared to intergenic proportions. When measured across all genes, the motifs present in table 4 were significantly depleted within genes when compared to intergenic frequencies. To test if the depletion of motifs was due to a general degradation of the whole element as opposed to the motifs themselves we measured the relative frequencies of the end region of Alu (Alu-terminus) that had no known binding partner when queried in JASPAR. This region showed no enrichment in either intergenic or gene regions.
 Since we have shown that, at the level of entire elements, L1 and Alu frequencies are correlated with relative location within a gene, we examined the dependency of individual motifs on the relative location within the gene. To reduce the number of statistical tests (and hence required corrections), we restricted analysis to the bins that contained the extremes of Alu and L1 frequency. These were the first and last bins within the linear range of Alu/L1 frequency, which contained the most and least Alu and L1 respectively. Motif frequencies were normalized by the count of ASO or SO elements within the bin and then compared between bins (figure 8). Contrary to the general trend of L1 elements as whole, functional motifs within L1 were over-represented near the 3\rq end of genes compared to the 5\rq end. Similarly motifs within sense oriented Alu were also over-represented near the 3\rq end of genes. Conversely, motifs within antisense oriented Alu were over-represented near the 5\rq gene end. Overall, antisense oriented L1 contained more functional motifs than sense oriented.
+
+    
+    %Figure Alu antisense (TS / HK) motifs
+    \begin{figure}[!ht]
+        \centering
+        \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{alumotifs_anti.pdf}
+       \caption{\textbf{Alu-contained binding motifs in tissue-specific and housekeeping genes (Antisense)\\}Protein binding motifs were examined similarly to those in figure \ref{fig:alumotifs}. hk : within housekeeping only; ts: within tissue-specific genes only}
+        \label{fig:alumotifs_anti}
+    \end{figure}
+    
+    %Figure Alu sense (TS / HK) motifs
+    \begin{figure}[!ht]
+        \centering
+        \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{alumotifs_sense.pdf}
+       \caption{\textbf{Alu-contained binding motifs in tissue-specific and housekeeping genes (Sense)\\}}
+        \label{fig:alumotifs_sense}
+    \end{figure}
+
+
+    %Figure L1 anti (TS / HK) motifs
+    \begin{figure}[!ht]
+        \centering
+        \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{l1motifs_anti.pdf}
+       \caption{\textbf{L1-contained binding motifs in tissue-specific and housekeeping genes (Antisense)\\}}
+        \label{fig:l1motifs_anti}
+    \end{figure}
+    
+    %Figure L1 sense (TS / HK) motifs
+    \begin{figure}[!ht]
+        \centering
+        \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{l1motifs_sense.pdf}
+       \caption{\textbf{L1-contained binding motifs in tissue-specific and housekeeping genes (Sense)\\}}
+        \label{fig:l1motifs_sense}
+    \end{figure}
 
 
     }
