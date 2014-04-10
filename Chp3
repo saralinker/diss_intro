@@ -2,8 +2,9 @@
 % Slinker, 04/07/2014
 
 %Preamble
-\documentclass{article}
+\documentclass[12bp]{article}
 \usepackage{setspace} %for double spacing
+\usepackage{times}
 \usepackage[top=1in, bottom=1in, left=1.25in, right=1in]{geometry}
 \usepackage{pslatex}
 \usepackage{graphicx} %for the figures
@@ -11,57 +12,65 @@
 \usepackage[T1]{fontenc}
 \usepackage{amsmath}
 %\setcounter{page}{11}
-\usepackage[margin=10pt,font=small,justification=justified,labelsep=endash,labelfont=bf]{caption}
-
+\usepackage[margin=10pt,font=normalsize,justification=justified,labelsep=endash,labelfont=bf]{caption}
+\newenvironment{tightcenter}{%
+  \setlength\topsep{0pt}
+  \setlength\parskip{0pt}
+  \begin{center}
+}{%
+  \end{center}
+}
 
 
 %Document
 \begin{document}
-\doublespace{
-    \paragraph{\large\textbf{Chp3: The distribution of retrotransposons provides insight into their phenotypic impact\\}}
+\doublespace\large{
+\begin{tightcenter}CHAPTER 3\\ THE DISTRIBUTION OF RETROTRANSPOSONS PROVIDES INSIGHT INTO THEIR PHENOTYPIC IMPACT \end{tightcenter}
+
 
 %Purpose
-    \paragraph{\large\textbf{Purpose\\}}
-    \large{
-    Retrotransposons comprise approximately half of the human genome and contribute to chromatin structure, regulatory motifs, and protein-coding sequences. Since retrotransposon insertions can disrupt functional genetic elements as well as introduce new sequence motifs to a region, they have the potential to affect the function of genes that harbor insertions as well as those nearby. Partly as a result of these effects, the distribution of retrotransposons across the genome is non-uniform and there are observed imbalances in the orientation of insertions with respect to the transcriptional direction of the containing gene. Although some of the factors underlying the observed distributions are understood, much of the variability remains unexplained. Detailed characterization of retrotransposon density in genes could help inform predictions of the functional consequence of \textit{de novo} as well as polymorphic insertions. In order to characterize the relationship between genes and inserted elements, it is important to examine the distribution of retrotransposons and their internal motifs within tissue-specific and housekeeping genes. 
-    }
+    \textnormal\Large\textit{\\Purpose\\}
+Retrotransposons comprise approximately half of the human genome and contribute to chromatin structure, regulatory motifs, and protein-coding sequences. Since retrotransposon insertions can disrupt functional genetic elements as well as introduce new sequence motifs to a region, they have the potential to affect the function of genes that harbor insertions as well as those nearby. Partly as a result of these effects, the distribution of retrotransposons across the genome is non-uniform and there are observed imbalances in the orientation of insertions with respect to the transcriptional direction of the containing gene. Although some of the factors underlying the observed distributions are understood, much of the variability remains unexplained. Detailed characterization of retrotransposon density in genes could help inform predictions of the functional consequence of \textit{de novo} as well as polymorphic insertions. In order to characterize the relationship between genes and inserted elements, it is important to examine the distribution of retrotransposons and their internal motifs within tissue-specific and housekeeping genes. 
+
 
 %ASbias (Linear Decay)
-\paragraph{\large\textbf{\textnormal{3.1 } The Current Distribution of Alu and L1 within Genes }}
+\textnormal\large\textit{\\\textnormal{3.1 } The Current Distribution of Alu and L1 within Genes}
     
 %Linear Decay
-    \paragraph{\large\textbf{\textnormal{3.1.1 } L1 and Alu Antisense bias exhibits a linear decay across gene deciles }}
-    \large{
-To determine how RT frequency was dependent upon the position of the element within a gene, the frequency of all L1 and Alu within each gene decile were calculated by first normalizing all genes by length (figure \ref{fig:decile}). An effect of normalizing by the transcription start and stop positions was that every first and last decile contained an exon, although this exon was not necessarily a coding exon. Genes that were transcribed from the negative strand were reversed so that all gene transcription start sites would be aligned on the 5'-most side.
+\textnormal\large\textit{\hspace{-15pt}\textnormal{3.1.1 } L1 and Alu Antisense bias exhibits a linear decay across gene deciles\\}
+The dependency of AS bias on position within a gene was calculated for both Alu and L1, where position was defined as one of ten deciles of a gene. RefSeq genes were divided into these deciles using the boundaries of transcription start (TSS) and transcription stop, including introns (figure \ref{fig:decile}). Previous research had used distance from the TSS to examine RT density, this alternative approach of normalizating genes by length expanded the scope of the analysis to examine the effect of relative position on RT density, and therefore the ability to detect any regions of the gene that are more sensitive to RT insertions. A side-effect of normalizing by the TSS and transcription stop positions was that every decile 1 (first decile) and decile 10 (last decile) contained an exon. Since deciles 2 - 9 (internal deciles) were not defined by any discrete exon boundary, they were variable as to the presence of an exon. Although the first and last deciles inevitably contained an exon, it was not necessarily a coding exon (ie: 5\rq-UTR or 3\rq-UTR). AS and S RTs (L1 or Alu) were counted within each decile and normalized by the total number of (AS + S) RTs in all deciles.\\
 
-        %Figure Decile Explanation
+    %Figure Decile Explanation
     \begin{figure}[!ht]
     \centering
     \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{decile.png}
     \caption{\textbf{Normalizing Genes by Length\\} Example of a gene broken up into deciles. Decile 1 contains the first 0-10\% of the gene, and decile 10 contains the last 90-100\% of the gene. Deciles were calculated from transcription start to transcription stop site from the RefSeq annotated genes.}
-
     \label{fig:decile}
     \end{figure}
     
-    
-    
-AS and S Alu were counted seperately and normalized by the total number of Alu within gene boundaries. The results of this analysis showed that Alu in the S orientation were distributed relatively equally across all gene deciles. Conversely, AS Alu exhibited a linear decay in distribution from the 5'-most decile to the 3'-most decile (figure \ref{fig:lineardecay_alu}). Both AS and S Alu decreased in the first and last deciles, which is likely due to the over-representation of exons within those deciles compared to the internal deciles. Similarly, AS L1 decreased linearly across the gene boundaries, while S L1 remained relatively constant \ref{fig:lineardecay_l1}). These results reproduce previous findings that demonstrated an accumulation of AS near the TSS [REF], while extending the findings to show that AS Alu and L1 not only increase near the TSS, but they are increased in internal deciles as well.
-    
-        %Figure Linear Decay: Alu
+\textit{\hspace{-15pt}Alu\\}  
+AS and S Alu were counted in each decile and normalized by the total number of Alu within all deciles (figure \ref{fig:lineardecay_alu}). As expected due to the known AS-bias, there were more AS Alu than S Alu overall within RefSeq genes. Alu in the S orientation were distributed relatively equally across the internal deciles with drops in density occuring only in the first and last deciles that contain the UTRs. Conversely, AS Alu exhibited a linear decay in distribution with the highest point at decile 2 and the lowest point at decile 10. Similarly to Alu on the S strand, AS Alu also showed decreased in density, outside of the linear decrease, in the first and last deciles. The high level of AS Alu in the second decile mimicks previous studies that have shown an increase in Alu near the TSS. Interestingly, though, there is a steady decline in AS Alu that is highly dependent on the normalized gene decile within which the Alu resides.
+        
+    %Figure Linear Decay: Alu
     \begin{figure}[!h]
-        \centering
-        \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{lineardecay_alu.pdf}
-        \caption{\textbf{AS bias of Alu decays linearly across gene boundaries\\}Counts of Alu in the AS and S orientation per decile were normalized by the total Alu in all RefSeq genes. as = antisense, s = sense}
-        \label{fig:lineardecay_alu}
+    \centering
+    \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{lineardecay_alu.pdf}
+    \caption{\textbf{AS bias of Alu decays linearly across gene boundaries\\}Counts of Alu in the AS and S orientation per decile were normalized by the total Alu in all RefSeq genes. as = antisense, s = sense}
+    \label{fig:lineardecay_alu}
     \end{figure}
     
-        %Figure Linear Decay: L1
-    \begin{figure}[!h]
-        \centering
-        \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{lineardecay_l1.pdf}
-        \caption{\textbf{AS bias of L1 decays linearly across gene boundaries\\}Counts of L1 in the AS and S orientation per decile were normalized by the total L1 in all RefSeq genes. as = antisense, s = sense}
-    \end{figure}
+\textit{\\L1\\}     
+AS L1 showed very similar density distributions within genes that Alu did. There was an overall increase in AS L1 compared to S L1, S L1 remained relatively constant throughout all gene deciles, and AS L1 exhibited a linear decile across deciles 2 - 10 (figure \ref{fig:lineardecay_l1}). There were also some differences between the pattern observed with L1 and the pattern observed with Alu. As is echoed in the overall AS-bias, there was a larger difference between AS L1 and S L1 within each decile, than that which is observed in Alu. This is further emphasized by the S and AS elements having reached a point of equal density in the last inner decile for Alu, while AS L1 remain more prevalent than S in every decile. These results reproduce previous findings that demonstrated an accumulation of AS near the TSS [REF], while extending the findings to show that AS Alu and L1 not only increase near the TSS, but they are increased in internal deciles as well.
+  
     
+    %Figure Linear Decay: L1
+    \begin{figure}[!h]
+    \centering
+    \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{lineardecay_l1.pdf}
+    \caption{\textbf{AS bias of L1 decays linearly across gene boundaries\\}Counts of L1 in the AS and S orientation per decile were normalized by the total L1 in all RefSeq genes. as = antisense, s = sense}
+    \end{figure}
+   
+
     By normalizing for gene length we were further able to determine that the decay of AS L1 and Alu is linear across genes. Both AS L1 and Alu began at a relatively high frequency after the first gene decile and declined at a linear rate across the length of the gene (table \ref{table:lindecay}). The lower limits in ASO frequency were observed within the deciles containing the 5\rq-  and 3\rq-  UTRs (see below). As indicated previously, we observed that human specific Alu (youngest class) were slightly biased for the ASO. 
 
     
@@ -85,24 +94,22 @@ AS and S Alu were counted seperately and normalized by the total number of Alu w
         \label{table:lindecay}
     \end{table}
 
-    }
-    
-%Change of Linear Decay Over Time
-    \paragraph{\large\textbf{\textnormal{3.1.2 } Linear Decay Develops Over Time }}
-    \large{
 
+%Change of Linear Decay Over Time
+\textnormal\large\textit{\\\textnormal{3.1.2 } Linear Decay Develops Over Time\\}
 %%% Add the part of change over time of AS Linear Decay!!
 Here we further note that the slope of human-specific AS Alu was significantly different from the slope calculated with all Alu (Z-score: 2.07; p < 0.03), indicating that the decay in antisense bias across genes most likely arose over evolutionary time. Alternatively, and somewhat less parsimoniously, recently inserted elements may have significantly altered their insertion pattern compared to older elements due to shifts in RT targeting mechanisms.
 
+
 %%% And the part about the age of L1 and Alu Depending on the position within the gene
     
-    }
+    
     
 %Correlation of Linear Decay with 5'-UTR
-    \paragraph{\large\textbf{\textnormal{3.1.3 } Alu and L1 are Decreased Near 5\rq-UTR}}
-    \large{
+\textnormal\large\textit{\\\textnormal{3.1.3 } Alu and L1 are Decreased Near 5\rq-UTR\\}
 Although both are conserved, coding exons and UTRs have very different roles in the creation of a final gene product. It has been shown that exon density is highly predictive of RT frequency; however it is also possible that the 5\rq-UTR has a specific effect on RT abundance that is distinct from the effect imposed by coding exons. We therefore wanted to determine if the presence of a 5\rq-UTRs was associated with altered RT frequency beyond what would be expected from exon enrichment alone.
-In the current method of analysis the first and last deciles consistently contained a 5\rq-  or 3\rq-UTR, whereas the internal deciles were variable as to the presence of a coding exon. The resulting frequency plots revealed that RTs were highly reduced within the first bin (containing the 5\rq-UTR) in comparison to the second bin. Since this could be a result of a decrease in the density of CDS exons as well as an altered effect by the 5\rq-UTR, it was important to distinguish these effects from one another. To accomplish this, analysis was restricted to genes that contained a second 5\rq-UTR in each decile. Examples of genes that contained secondary 5\rq-UTRs are depicted in figure \ref{fig:25utr}. 
+In the current method of analysis the first and last deciles consistently contained a 5\rq-  or 3\rq-UTR, whereas the internal deciles were variable as to the presence of a coding exon. The resulting frequency plots revealed that RTs were highly reduced within the first bin (containing the 5\rq-UTR) in comparison to the second bin. Since this could be a result of a decrease in the density of CDS exons as well as an altered effect by the 5\rq-UTR, it was important to distinguish these effects from one another. To accomplish this, analysis was restricted to genes that contained a second 5\rq-UTR in each decile. Examples of genes that contained secondary 5\rq-UTRs are depicted in figure \ref{fig:25utr}
+
 
     %Figure 5'-UTR examples
     \begin{figure}[!ht]
@@ -112,9 +119,11 @@ In the current method of analysis the first and last deciles consistently contai
         \label{fig:25utr}
     \end{figure}
     
-Once genes with internal r\rq-UTRs were identified, they were further grouped into subsets based on the decile location of the second UTR. For example, Group I genes contained all secondary 5\rq-UTRs in the first decile, calculated as the first 0\% - 10\% of the gene. Group II contained genes where the secondary 5\rq-UTR was in the second decile (10\% - 20\% of the gene), and so on for all ten deciles (figure \ref{fig:5utr_diag}). 
 
-The frequencies of all S and AS L1 and Alu were then calculated within these gene groups and compared to expectation based on whole genome averages. Both Alu and L1 were reduced in frequency versus expected though only L1 were significantly reduced (Student\rq s t-test p: 2.99 E-06 L1 ASO, 0.04 L1 SO, 0.49 Alu ASO, 0.24 Alu SO) (figure 6b).
+Once genes with internal 5\rq-UTRs were identified, they were further grouped into subsets based on the decile location of the second UTR. For example, Group I genes contained all secondary 5\rq-UTRs in the first decile, calculated as the first 0\% - 10\% of the gene. Group II contained genes where the secondary 5\rq-UTR was in the second decile (10\% - 20\% of the gene), and so on for all ten deciles (figure \ref{fig:5utr_diag}). 
+
+The frequencies of all S and AS L1 and Alu were then calculated within these gene groups and compared to expectation based on whole genome averages. Both Alu and L1 were reduced in frequency versus expected though only L1 were significantly reduced (Student\rq s t-test p: 2.99 E-06 L1 ASO, 0.04 L1 SO, 0.49 Alu ASO, 0.24 Alu SO) (figur).
+
     
     %Figure 5'-UTR Analysis
     \begin{figure}[!h]
@@ -123,7 +132,6 @@ The frequencies of all S and AS L1 and Alu were then calculated within these gen
         \caption{\textbf{Design for analyzing the impact of internal 5\rq-UTRs on RT density\\}Light green: Genes with only one 5'-UTR located between the transcription start (TSS) and transcription stop site. Dark green: Genes with a second 5\rq-UTR between TSS and transcription stop. Red bar: Decile containing the second 5\rq-UTR. The UTR in the 5\rq-most position was defined as the primary (1$^\circ$) 5\rq-UTR. Dark green genes were grouped by the decile (bin) containing the secondary (2$^\circ$) UTR. All groups were then normalized by the secondary 5\rq-UTR position by defining the bin that contained the 2$^\circ$ UTR as 0. Each bin downstream was defined consecutively as 1, 2, ... 7, and each bin upstream was defined as -1, -2,...-7.}
         \label{fig:5utr_diag}
     \end{figure}
-
 
 Across all genes, we have shown that the second decile, that neighbours the 5\rq-UTR containing decile, contains the largest number of L1 and Alu. We therefore tested if L1 and Alu were similarly increased in the deciles surrounding the secondary 5\rq-UTRs. We found that the L1 and Alu were also reduced to a lower extent in the bins surrounding the 5\rq-UTR (figure 6c). L1 near secondary 5\rq-UTRs were depleted at a higher level than Alu, though this difference was not significant (Student\rq s t-test p = 0.07). Most importantly, the change in exon density due to the altered binning procedure was not correlated with the effect of depletion on RTs (Pearson\rq s correlation coefficient: -0.42 L1, -0.48 Alu; p = 0.30 L1, 0.34 Alu). This indicated that the reduced frequency of RTs near 5\rq-UTRs was not attributable to a correlation with the hazardous zone near an exon, but to the 5\rq-UTR itself.
 
@@ -166,10 +174,8 @@ Across all genes, we have shown that the second decile, that neighbours the 5\rq
     
     
 %Correlation of Linear Decay with CDS Exon Density
-    \paragraph{\large\textbf{\textnormal{3.1.4 } Linear Decay of AS bias is Associated with Exon Density }}
-    \large{
+\textnormal\large\textit{\\\textnormal{3.1.4 } Linear Decay of AS bias is Associated with Exon Density\\}
 Since previous studies have shown that ASO RT density was inversely correlated with exon density, we next calculated the frequency of coding exons (CDS) within each decile. Indeed, CDS density increased at a similar linear rate across gene deciles (figure 5 and table 2).  The first decile of genes contained more CDS than the second decile. This was likely due to using the TSS as a starting point for calculation, which would enrich for 5\rq-UTRs and consequently the coding exons that may be associated with them. Therefore, as has been indicated previously [9], ASO-RTs were inversely correlated with exon density (Pearson\rq s Corr. value: -0.94; p-value: 5.21e-05) (table 3). Moreover, the distributions of exons and RTs were found to be linearly increasing and decreasing across a gene, respectively, indicating a predictable pattern of RT density within gene bounds.  
-    
     
     %Figure CDS (no secondary 5'-UTR)
     \begin{figure}[!ht]
@@ -180,25 +186,21 @@ Since previous studies have shown that ASO RT density was inversely correlated w
     \end{figure}
     
     
-    }
+    
     
 %Alternative Splicing
-    \paragraph{\large\textbf{\textnormal{3.1.5 } Coding Potential of the Gene Effects AS bias }}
-    \large{
-    }
+\textnormal\large\textit{\\\textnormal{3.1.5 } Coding Potential of the Gene Effects AS bias\\}
 
 %AS bias and tissue-specificity
-    \paragraph{\large\textbf{\textnormal{3.1.6 } Tissue-Specificity of the Gene Effects AS bias }}
-    \large{
+\textnormal\large\textit{\\\textnormal{3.1.6 } Tissue-Specificity of the Gene Effects AS bias\\}
 When taken as a group, RT antisense bias decreased linearly across gene bounds. Different functional groups of genes, however, contain varied numbers of RTs. For example, housekeeping genes have a predictably higher level of Alu frequency than other gene categories [37]. We therefore tested whether the antisense bias remained linear when subdivided by gene category. The effect of tissue-specificity was tested by correlating the distribution of Alu with the distribution of CDS within tissue-specific gene sets. The linear ASO slope remained present in housekeeping genes, but it was not maintained in tissue-specific gene sets. Furthermore, the correlation between ASO-RT frequency and CDS distribution was reduced within tissue-specific gene sets (table 3). 
 To determine if differences in gene expression across tissue types was confounding this result, we tested the correlation between ASO frequency and exon density as a function of relative expression in housekeeping and tissue specific genes. There was no link between expression level and the correlation between ASO and exon density (figure 7). Furthermore, since it has been shown that retrotransposons are restricted near constitutively expressed exons [38], we also wanted to check if the loss of antisense bias was affected by alternative splicing. Using the knownAlt annotation track from Hg19 (UCSC Genome Browser), we separated genes into those with known alternative splicing events, and those that are constitutively expressed. We found no significant differences between the distribution of ASO and SO between the two groups (chi-square p > 0.25, p > 0.23 respectively). We further calculated the correlation of ASO Alu density and CDS density within alternatively spliced genes. The negative correlation that is seen across all genes was replicated when examining only genes that are alternatively spliced (Pearson’s correlation coefficient: -0.78, p < 0.008). 
-    }
+
 
 %Internal Binding Motifs
-    \paragraph{\large\textbf{\textnormal{3.2 } The Distribution of Alu and L1 is Associated with their Internal Binding Motifs}}
-    \large{
+\textnormal\large\textit{\\\textnormal{3.2 } The Distribution of Alu and L1 is Associated with their Internal Binding Motifs}
 Although the consensus sequences for Alu and L1 contain many functional DNA binding motifs, each individual RT in the genome is variable as to whether or not it contains these motifs. The loss or gain of a motif may occur by mutation at the nucleotide level (figure \ref{fig:motif}), through retrotransposition of a parent element that has already lost or gained the motif sequence, or through truncation of the element during integration. Protein binding motifs can impact both RT expression as well as gene expression. For example, the 5’ portion of the polymerase III promoter (Pol-III) contains the A-box motif which is necessary for transcription factor binding and expression of Alu retrotransposons [39]. The YY-1 binding motif contained within L1 is both a component of the core promoter necessary for  L1 transcription [40] as well as a general transcriptional repressor [41]. CpGs which are common in Alu and L1 can potentially effect levels of gene transcription [42] when methylated. Additionally due to the process of deamination, 5-methylcytosines are more likely to be mutated to thymines than non-methylated cytosines [43], and are commonly mutated in Alu [44]. The SRY motif is a binding domain for the testis-determining factor gene SRY which increases L1 transcription in 293 cells [45], and RUNX3 binding can act as both an activator and repressor of transcription and whose repression is linked with tumour progression [46].
-    }
+
     
     %Figure Alu motif examples
     \begin{figure}[!ht]
@@ -210,16 +212,13 @@ Although the consensus sequences for Alu and L1 contain many functional DNA bind
     
     
          %Truncated L1
-    \paragraph{\large\textbf{\textnormal{3.2.1 } Truncated L1 Escape Depletion Near the 5\rq-UTR}}
-    \large{
+\textnormal\large\textit{\\\textnormal{3.2.1 } Truncated L1 Escape Depletion Near the 5\rq-UTR\\}
 The human L1 consensus sequence is approximately 6kb, although it varies by subfamily. During retrotransposition L1 are often truncated, resulting in an average size of 900bp [1]. Reverse transcription of the RNA template initiates near the 3\rq end of RNA and often the L1 retrotransposase is unable to complete retrotransposition of the entire element into the insertion site, resulting in truncation of the 5\rq end [47,48]. In the human genome L1 are variable in size, a majority of which are less than 1 kb (table 6). The 5\rq region of L1, which is often lost during truncation, contains the Polymerase II promoter which can effect expression of neighbouring genes [19,20]. To identify whether L1 (<1kb) lack the promoter region, we determined the start position of each L1 (<1kb) within the respective consensus using local RepeatMasker (figure 9a).  The results indicate that a majority of these small L1 begin after the canonical promoter sequence. 
 To test whether the linear decay of antisense oriented L1 was related to the size of the element, we calculated the proportions of L1 <1kb, 1-2kb, 3-4kb, and 5kb+ versus expectation based on all L1. Fischer\rq s exact test p-values were calculated between the count of observed size-specific L1 and the expectation within bins 1 and 2 since these bins had the largest effects of antisense bias. We found that full-length L1 (5kb+) were greatly reduced in frequency near the 5\rq region of the gene compared to expectation (figure 9). This was true of L1 in both orientations. Conversely small L1, < 1kb, were increased near the 5\rq -UTR. The small sample size for the full length L1 in the second decile may be playing a role in their failure to pass significance after Bonferroni correction.
 
-}
 
 %Functional Binding Motifs Effect Maintenance
-    \paragraph{\large\textbf{\textnormal{3.2.2 } }}
-    \large{
+\textnormal\large\textit{\\\textnormal{3.2.2 } \\}
 Functional binding motifs, other than the L1 Pol-II promoter, are present within Alu and L1. Motif prediction algorithms have sucessfully identified a majority of the motifs that are present within the consensus sequences of each subfamily [REF]. Since RTs are differentially selected within genes depending on their orientation, it is possible that these sequence-specific, orientation-specific binding elements play a role in that maintenance. We, therefore, tested whether the RTs that have survived in the genome (ie: present in the Hg19 Reference) contain less of certain binding motifs than predicted by chance. The assumption being that if a binding motif contributes to the deleterious nature of the RT, then RTs lacking the binding motif would be less deleterious and therefore more likely to be maintained to the next generation.
 
 The binding motifs coded within Alu consensus sequences were identified by direct match, unless otherwise mentioned. Proportions of motifs within genes were normalized by the proportions identified intergenically. 
@@ -233,6 +232,7 @@ The binding motifs coded within Alu consensus sequences were identified by direc
         \label{fig:alumotifs}
     \end{figure}
     
+
 [Talk about the pattern of the presence of motifs being dependent on the position of the motif compared to the sequence of the motif itslef. Include the table of the p-values and effects(?) From the ANOVA analysis].
 
 
@@ -256,13 +256,11 @@ The binding motifs coded within Alu consensus sequences were identified by direc
         \label{fig:l1motifs}
     \end{figure}
 
-    
+
 [Talk about the pattern of the presence of motifs being dependent on the position of the motif compared to the sequence of the motif itslef. Include the table of the p-values and effects(?) From the ANOVA analysis].
-    
- }   
+   
     %Functional Binding Motifs Effect Maintenance, Tissue Specific
-    \paragraph{\large\textbf{\textnormal{3.2.3 } }}
-    \large{
+\textnormal\large\textit{\\\textnormal{3.2.3 } \\}
 To help determine how the functional motifs within Alu and L1 affect their frequency within genes, we analysed a subset of functional motifs found in the respective consensus sequences (table 4). Frequencies of each motif were calculated within genes and compared to intergenic proportions. When measured across all genes, the motifs present in table 4 were significantly depleted within genes when compared to intergenic frequencies. To test if the depletion of motifs was due to a general degradation of the whole element as opposed to the motifs themselves we measured the relative frequencies of the end region of Alu (Alu-terminus) that had no known binding partner when queried in JASPAR. This region showed no enrichment in either intergenic or gene regions.
 Since we have shown that, at the level of entire elements, L1 and Alu frequencies are correlated with relative location within a gene, we examined the dependency of individual motifs on the relative location within the gene. To reduce the number of statistical tests (and hence required corrections), we restricted analysis to the bins that contained the extremes of Alu and L1 frequency. These were the first and last bins within the linear range of Alu/L1 frequency, which contained the most and least Alu and L1 respectively. Motif frequencies were normalized by the count of ASO or SO elements within the bin and then compared between bins (figure 8). Contrary to the general trend of L1 elements as whole, functional motifs within L1 were over-represented near the 3\rq end of genes compared to the 5\rq end. Similarly motifs within sense oriented Alu were also over-represented near the 3\rq end of genes. Conversely, motifs within antisense oriented Alu were over-represented near the 5\rq gene end. Overall, antisense oriented L1 contained more functional motifs than sense oriented.
 
@@ -301,16 +299,15 @@ Since we have shown that, at the level of entire elements, L1 and Alu frequencie
     \end{figure}
 
 
-    }
      %Conservation of Binding Motifs is Dependent on Intergenic or In Gene Status
-    \paragraph{\large\textbf{\textnormal{3.2.4 } }}
-    \large{
-    }
+\textnormal\large\textit{\\\textnormal{3.2.4 }\\}
+
 %Example of the Polyadenylation Signal and PolIII 
-    \paragraph{\large\textbf{\textnormal{3.2.5 } }}
-    \large{
-    }
-    }
+\textnormal\large\textit{\\\textnormal{3.2.5 }\\}
+
+}
+
+    
 \bibliographystyle{IEEEtranS}
 \bibliography{library}
 \end{document}
