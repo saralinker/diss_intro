@@ -60,8 +60,7 @@ AS and S Alu were counted in each decile and normalized by the total number of A
     \end{figure}
     
 \textit{\\L1\\}     
-AS L1 showed very similar density distributions within genes that Alu did. There was an overall increase in AS L1 compared to S L1, S L1 remained relatively constant throughout all gene deciles, and AS L1 exhibited a linear decile across deciles 2 - 10 (figure \ref{fig:lineardecay_l1}). There were also some differences between the pattern observed with L1 and the pattern observed with Alu. As is echoed in the overall AS-bias, there was a larger difference between AS L1 and S L1 within each decile, than that which is observed in Alu. This is further emphasized by the S and AS elements having reached a point of equal density in the last inner decile for Alu, while AS L1 remain more prevalent than S in every decile. These results reproduce previous findings that demonstrated an accumulation of AS near the TSS [REF], while extending the findings to show that AS Alu and L1 not only increase near the TSS, but they are increased in internal deciles as well.
-  
+AS L1 showed very similar density distributions within genes that Alu did. There was an overall increase in AS L1 compared to S L1, S L1 remained relatively constant throughout all gene deciles, and AS L1 exhibited a linear decile across deciles 2 - 10 (figure \ref{fig:lineardecay_l1}). There were also some differences between the pattern observed with L1 and the pattern observed with Alu. As is echoed in the overall AS-bias, there was a larger difference between AS L1 and S L1 within each decile, than that which is observed in Alu. This is further emphasized by the S and AS elements having reached a point of equal density in the last inner decile for Alu, while AS L1 remain more prevalent than S in every decile. 
     
     %Figure Linear Decay: L1
     \begin{figure}[!h]
@@ -71,26 +70,24 @@ AS L1 showed very similar density distributions within genes that Alu did. There
     \end{figure}
    
 
-    By normalizing for gene length we were further able to determine that the decay of AS L1 and Alu is linear across genes. Both AS L1 and Alu began at a relatively high frequency after the first gene decile and declined at a linear rate across the length of the gene (table \ref{table:lindecay}). The lower limits in ASO frequency were observed within the deciles containing the 5\rq-  and 3\rq-  UTRs (see below). As indicated previously, we observed that human specific Alu (youngest class) were slightly biased for the ASO. 
+Both AS L1 and Alu began at a relatively high frequency in decile 2 and declined untili decile 10. To determine the rate of AS decay across gene deciles, analysis was restricted to the internal deciles. This avoided the confounding effects from the process of normalization. Slopes were calculated with raw elements counts as opposed to the proportions (table \ref{table:lindecay}).  
 
     
     % Table Slope of Linear Decay
-    % Mon Apr  7 13:14:44 2014
-    \begin{table}[ht]
-    \centering
-    \begin{tabular}{rlrrr}
-      \hline
-     & Element & R2 & p & slope \\ 
-      \hline
-    1 & L1 & 0.21 & 3.67e-06 & 0.00 \\ 
-      2 & L1AS & 0.18 & 2.16e-05 & 0.01 \\ 
-      3 & L1S & 0.17 & 4.01e-05 & 0.00 \\ 
-      4 & Alu & 0.48 & 7.00e-05 & 0.02 \\ 
-      5 & AluAS & 0.26 & 4.86e-03 & 0.01 \\ 
-      6 & AluS & 0.58 & 4.74e-06 & 0.01 \\ 
-       \hline
+    % Thu Apr 10 13:47:08 2014
+   \begin{table}[ht]
+   \centering
+   \begin{tabular}{rllrrr}
+     \hline
+    & Element & Orientation & Estimate & p(intercept) & p(decile) \\ 
+    \hline
+  1 & Alu & AS & -1410.67 & 7.45e-12 & 5.53e-08 \\ 
+    2 & Alu & S & -27.17 & 2.33e-10 & 6.08e-01 \\ 
+    3 & L1 & AS & -993.60 & 2.40e-08 & 2.00e-04 \\ 
+    4 & L1 & S & 32.88 & 3.09e-07 & 6.91e-01 \\ 
+     \hline
     \end{tabular}
-        \caption{Slope of Linear Decay for Alu and L1 within genes}
+        \caption{Slope of Linear Decay for Alu and L1 within the internal deciles of genes}
         \label{table:lindecay}
     \end{table}
 
