@@ -107,16 +107,22 @@ In the previous chapter it was shown that AS bias was associated with a discrepa
 %AS bias (distribution near 5'-UTR)
 \textnormal\large\textit{\\\textnormal{3.2 } Gene-specific variables are associated with AS bias }
 
-The fact that RTs undergo differential selective pressures depending on the orientation of element with respect to a gene is intriguing. It indicates that there must be some effect of the RT insertion on the phenotype of the organism that is dependent both on the insertion event, and also on the sequence of the RT. If RTs do indeed have specific effects on genes depending on the sequence of the RT then new insertions should be able to be classified as to the potential effect on the gene and potentially the phenotype. This is especially important for disease studies, where it is imperitive to have as much information as possible on a new variation to filter out false positives from the true source of phenotypic variation. The differential purifying selection between AS and S RTs indicates that this sequence-specific interaction between RT and gene, may indeed be true.  
-
-When asking what is causing RTs within genes to undergo purifying selection There are two classes of variables to examine .   
+The fact that RTs undergo differential selective pressures depending on the orientation of element with respect to a gene is intriguing. It indicates that there must be some effect of the RT insertion on the phenotype of the organism that is dependent both on the insertion event, and also on the sequence of the RT. If RTs do indeed have specific effects on genes depending on the sequence of the RT then new insertions should be able to be classified as to the potential effect on the gene and potentially the phenotype. This is especially important for disease studies, where it is imperitive to have as much information as possible on a new variation to filter out false positives from the true source of phenotypic variation. The differential purifying selection between AS and S RTs indicates that this sequence-specific interaction between RT and gene, may indeed be true. When asking what is causing RTs within genes to undergo purifying selection there are two classes of variables to examine; variables associated with genes (eg: 5\rq-UTR density, coding sequence density), and variables associated with RTs (eg: length of the RT, sequence motifs contained with the RT).    
 
 %Correlation of Linear Decay with 5'-UTR
 \textnormal\large\textit{\\\textnormal{3.2.1 } Alu and L1 are Decreased Near 5\rq-UTR\\}
 
-Although both are conserved, coding exons and UTRs have very different roles in the creation of a final gene product. It has been shown that exon density is highly predictive of RT frequency; however it is also possible that the 5\rq-UTR has a specific effect on RT abundance that is distinct from the effect imposed by coding exons. We therefore wanted to determine if the presence of a 5\rq-UTRs was associated with altered RT frequency beyond what would be expected from exon enrichment alone.
-In the current method of analysis the first and last deciles consistently contained a 5\rq-  or 3\rq-UTR, whereas the internal deciles were variable as to the presence of a coding exon. The resulting frequency plots revealed that RTs were highly reduced within the first bin (containing the 5\rq-UTR) in comparison to the second bin. Since this could be a result of a decrease in the density of CDS exons as well as an altered effect by the 5\rq-UTR, it was important to distinguish these effects from one another. To accomplish this, analysis was restricted to genes that contained a second 5\rq-UTR in each decile. Examples of genes that contained secondary 5\rq-UTRs are depicted in figure \ref{fig:25utr}
+Previous studies using raw distances in base pairs have shown that RTs are increased near TSSs. Interestingly in the analysis using normalized distances the AS bias was increased near the TSS, but at a ratio that was less than what would be expected based on the linear trend from the internal deciles. As mentioned earlier, the first decile was defined by the TSS and was therefore enriched for the presence of  5\rq-UTRs (figure \ref{fig:utr_nosecond}), however the presence of a coding exon was not obligatory by the normalization procedure (figure \ref{cds_noUTR}). It was therefore possible that normalizing by the TSS exaggerated an effect of the UTR on RT density. It was therefore important to first study if AS RT density near the TSS was correlated with the presence of the 5\rq-UTR or was due to another latent variable. To accomplish this, the effect of the 5\rq-UTR had to be seperated from any latent effects correlated with the first decile. To seperate out these effects, genes were identified that contained a second 5\rq-UTR within deciles other than the first decile. These 2$^\circ$ 5\rq-UTRs are commonly due to either alternative start positions of transcription, or transcription of a seperate gene that begins within the boundaries of another gene. Examples of genes that contained secondary 5\rq-UTRs are depicted in figure \ref{fig:25utr}. 
 
+
+    %Figure 5'-UTR in genes with no internal 5'-UTR
+    \begin{figure}[!ht]
+        \centering
+        \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{utr_nosecond.pdf}
+        \caption{\textbf{Distribution of 5\rq-UTRs in genes with no 2$^\circ$ 5\rq-UTRs\\}Proportion of 5\rq-UTRs were calculated for each gene decile for genes lacking a second 5\rq-UTR within the gene boundaries.}
+        \label{fig:utr_nosecond}
+    \end{figure}
+    
 
     %Figure 5'-UTR examples
     \begin{figure}[!ht]
@@ -127,9 +133,7 @@ In the current method of analysis the first and last deciles consistently contai
     \end{figure}
     
 
-Once genes with internal 5\rq-UTRs were identified, they were further grouped into subsets based on the decile location of the second UTR. For example, Group I genes contained all secondary 5\rq-UTRs in the first decile, calculated as the first 0\% - 10\% of the gene. Group II contained genes where the secondary 5\rq-UTR was in the second decile (10\% - 20\% of the gene), and so on for all ten deciles (figure \ref{fig:5utr_diag}). 
-
-The frequencies of all S and AS L1 and Alu were then calculated within these gene groups and compared to expectation based on whole genome averages. Both Alu and L1 were reduced in frequency versus expected though only L1 were significantly reduced (Student\rq s t-test p: 2.99 E-06 L1 ASO, 0.04 L1 SO, 0.49 Alu ASO, 0.24 Alu SO) (figur).
+Once genes with internal 5\rq-UTRs were identified, they were further grouped into subsets based on the decile location of the 2$^\circ$ 5\rq-UTRs. For example, Group I genes contained all 2$^\circ$ 5\rq-UTRs in the first decile, calculated as the first 0\% - 10\% of the gene. Group II contained genes where the 2$^\circ$ 5\rq-UTRs was in the second decile (10\% - 20\% of the gene), and so on for all ten deciles (figure \ref{fig:5utr_diag}). The frequencies of all AS and S L1 and Alu were then calculated within these gene groups and compared to expectation based on genes lacking any 2$^\circ$ 5\rq-UTRs. 
 
     
     %Figure 5'-UTR Analysis
@@ -140,7 +144,19 @@ The frequencies of all S and AS L1 and Alu were then calculated within these gen
         \label{fig:5utr_diag}
     \end{figure}
 
-Across all genes, we have shown that the second decile, that neighbours the 5\rq-UTR containing decile, contains the largest number of L1 and Alu. We therefore tested if L1 and Alu were similarly increased in the deciles surrounding the secondary 5\rq-UTRs. We found that the L1 and Alu were also reduced to a lower extent in the bins surrounding the 5\rq-UTR (figure 6c). L1 near secondary 5\rq-UTRs were depleted at a higher level than Alu, though this difference was not significant (Student\rq s t-test p = 0.07). Most importantly, the change in exon density due to the altered binning procedure was not correlated with the effect of depletion on RTs (Pearson\rq s correlation coefficient: -0.42 L1, -0.48 Alu; p = 0.30 L1, 0.34 Alu). This indicated that the reduced frequency of RTs near 5\rq-UTRs was not attributable to a correlation with the hazardous zone near an exon, but to the 5\rq-UTR itself.
+
+    
+    %Figure 5'-UTR in genes with secondary 5'UTRs
+    \begin{figure}[!ht]
+        \centering
+        \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{utr_second.pdf}
+        \caption{\textbf{Distribution of 5\rq-UTRs in genes containing 2$^\circ$ 5\rq-UTRs\\}Proportion of 2$^\circ$ 5\rq-UTRs were calculated after normalization as described in figure \ref{fig:5utr_diag}. Decile 0 is the decile containing the 2$^\circ$ 5\rq-UTR. All negative deciles are upstream of the 2$^\circ$ 5\rq-UTR, and all positive deciles are downstream.}
+        \label{fig:utr_second}
+    \end{figure}
+    
+
+
+\hspace{-15pt}\textit{Alu} \\AS Alu in genes containing 2$^\circ$ UTRs were similar in density to the AS Alu in genes lacking 2$^\circ$ UTRs (figure \ref{fig:2utr_ASalu}). The normalized, 0, decile containing the 2$^\circ$ UTR (mean: 0.049) was significantly reduced compared to the same decile in genes without 2$^\circ$ UTRs (mean: 0.058) (Student's t-test p < 0.039). S Alu showed a slight trend towards an increase over expectation upstream of the 0 decile (figure \ref{fig:2utr_Salu}). The 0 decile, however, was significantly decreased beyond expectation (mean second UTR: 0.41 ; mean no second UTR: 0.46 ; Student's t-test p < 5.2e-04) similar to the AS Alu. 
 
     %Figure 5'-UTR AS Alu
     \begin{figure}[!ht]
@@ -160,6 +176,8 @@ Across all genes, we have shown that the second decile, that neighbours the 5\rq
         \label{fig:2utr_Salu}
     \end{figure}
     
+    
+\hspace{-15pt}\textit{\\L1} \\The distribution of AS L1 within genes containing 2$^\circ$ 5\rq-UTR was somewhat similar to that observed with AS Alu (figure \ref{fig:2utr_ASl1}). Interestingly, there was a slight decrease in L1 density upstream of the 0 decile for AS L1 in genes containing a 2$^\circ$ 5\rq-UTR, though this decrease was not signficant. The 0 decile was significantly reduced over expectation (mean second UTR: 0.057 ; mean no second UTR: 0.071 ; Student's t-test p < 0.007), although the S L1 were not significantly reduced (p = 0.47) (figure \ref{fig:2utr_Sl1}). These results indicated that there may be a decrease of L1 and Alu in the presence of a 5\rq-UTR, however another explanation could be that there was another latent variable associated with the 5\rq-UTR which is still be picked up in this analysis. 
     
         %Figure 5'-UTR AS L1
     \begin{figure}[!ht]
@@ -181,8 +199,8 @@ Across all genes, we have shown that the second decile, that neighbours the 5\rq
     
     
 %Correlation of Linear Decay with CDS Exon Density
-\textnormal\large\textit{\\\textnormal{3.2.2 } Linear Decay of AS bias is Associated with Exon Density\\}
-Since previous studies have shown that ASO RT density was inversely correlated with exon density, we next calculated the frequency of coding exons (CDS) within each decile. Indeed, CDS density increased at a similar linear rate across gene deciles (figure 5 and table 2).  The first decile of genes contained more CDS than the second decile. This was likely due to using the TSS as a starting point for calculation, which would enrich for 5\rq-UTRs and consequently the coding exons that may be associated with them. Therefore, as has been indicated previously [9], ASO-RTs were inversely correlated with exon density (Pearson\rq s Corr. value: -0.94; p-value: 5.21e-05) (table 3). Moreover, the distributions of exons and RTs were found to be linearly increasing and decreasing across a gene, respectively, indicating a predictable pattern of RT density within gene bounds.  
+\textnormal\large\textit{\\\textnormal{3.2.2 } Linear decay of AS bias is associated with coding sequence density\\}
+Since previous studies have shown that AS RT density was inversely correlated with exon density, we next calculated the frequency of coding exons (CDS) within each decile. Indeed, CDS density increased at a linear rate across gene deciles (figure \ref{fig:cds_noUTR}). The first decile of genes contained more CDS than the second decile. This was likely due to using the TSS as a starting point for calculation, which would enrich for 5\rq-UTRs and consequently the coding exons that may be associated with them. Therefore, as has been indicated previously [9], ASO-RTs were inversely correlated with exon density (Pearson\rq s Corr. value: -0.94; p-value: 5.21e-05) (table 3). Moreover, the distributions of exons and RTs were found to be linearly increasing and decreasing across a gene, respectively, indicating a predictable pattern of RT density within gene bounds.  
     
     %Figure CDS (no secondary 5'-UTR)
     \begin{figure}[!ht]
@@ -193,14 +211,39 @@ Since previous studies have shown that ASO RT density was inversely correlated w
     \end{figure}
     
     
-    
-    
 %Alternative Splicing
-\textnormal\large\textit{\\\textnormal{3.2.3 } Coding Potential of the Gene Effects AS bias\\}
+%\textnormal\large\textit{\\\textnormal{3.2.3 } Coding Potential of the Gene Effects AS bias\\}
+%Alu and L1 have often been cited as having the potential to contribute to alternative isoforms of a gene. Both Alu and L1 contain splice donor and acceptor sites and therefore can alter splice signals. Moreover, L1, and in some cases Alu, can cause premature adenylation through the polyadenylation signals located within the sequence. For these reasons, it was important to examine the linear decay of Alu and L1 in genes that are alternatively spliced.
+%%%% ADD ALTERNATIVE SPLICE INFO
+
 
 %AS bias and tissue-specificity
 \textnormal\large\textit{\\\textnormal{3.2.4 } Tissue-Specificity of the Gene Effects AS bias\\}
-When taken as a group, RT antisense bias decreased linearly across gene bounds. Different functional groups of genes, however, contain varied numbers of RTs. For example, housekeeping genes have a predictably higher level of Alu frequency than other gene categories [37]. We therefore tested whether the antisense bias remained linear when subdivided by gene category. The effect of tissue-specificity was tested by correlating the distribution of Alu with the distribution of CDS within tissue-specific gene sets. The linear ASO slope remained present in housekeeping genes, but it was not maintained in tissue-specific gene sets. Furthermore, the correlation between ASO-RT frequency and CDS distribution was reduced within tissue-specific gene sets (table 3). 
+Depending on the functional groups of a gene, it has a different chance of containing large amounts of RTs. For example, housekeeping genes have a predictably higher level of Alu frequency than other gene categories [37]. We therefore tested whether AS bias remained linear when subdivided by gene category. The effect of tissue-specificity was tested by both analyzing the slope of the density of AS as well as correlating the distribution of Alu with the distribution of CDS within tissue-specific gene sets. The linear AS slope remained present in housekeeping genes, but it was not maintained in tissue-specific gene sets. Furthermore, the correlation between ASO-RT frequency and CDS distribution was reduced within tissue-specific gene sets (table \ref{table:tiscor}).
+
+    % Sat Apr 12 09:10:21 2014
+    %Tissue specificity table
+    \begin{table}[ht]
+    \centering
+    \begin{tabular}{rlrrr}
+      \hline
+     & Category & N.genes & R2 AS Alu & R2 S Alu \\ 
+      \hline
+    1 & Housekeeping & 2237 & -0.96 & -0.40 \\ 
+      2 & All Genes & 42582 & -0.94 & -0.30 \\ 
+      3 & Neutrophil & 231 & -0.76 & -0.21 \\ 
+      4 & Muscle & 111 & -0.53 & 0.02 \\ 
+      5 & Cartilage & 133 & -0.53 & 0.23 \\ 
+      6 & Testis & 252 & -0.51 & -0.38 \\ 
+      7 & Liver & 305 & -0.43 & -0.22 \\ 
+      8 & Colon & 122 & -0.16 & 0.03 \\ 
+      9 & Pancreas & 125 & -0.08 & -0.47 \\ 
+       \hline
+    \end{tabular}
+    \caption{Correlation of CDS and Alu across gene categories}
+        \label{table:tiscor}
+    \end{table}
+
 To determine if differences in gene expression across tissue types was confounding this result, we tested the correlation between ASO frequency and exon density as a function of relative expression in housekeeping and tissue specific genes. There was no link between expression level and the correlation between ASO and exon density (figure 7). Furthermore, since it has been shown that retrotransposons are restricted near constitutively expressed exons [38], we also wanted to check if the loss of antisense bias was affected by alternative splicing. Using the knownAlt annotation track from Hg19 (UCSC Genome Browser), we separated genes into those with known alternative splicing events, and those that are constitutively expressed. We found no significant differences between the distribution of ASO and SO between the two groups (chi-square p > 0.25, p > 0.23 respectively). We further calculated the correlation of ASO Alu density and CDS density within alternatively spliced genes. The negative correlation that is seen across all genes was replicated when examining only genes that are alternatively spliced (Pearson’s correlation coefficient: -0.78, p < 0.008). 
 
 
