@@ -1,0 +1,92 @@
+% Chp4_Dissertation
+% Slinker, 04/14/2014
+
+%Preamble
+\documentclass[12bp]{article}
+\usepackage{setspace} %for double spacing
+\usepackage{times}
+\usepackage[top=1in, bottom=1in, left=1.25in, right=1in]{geometry}
+\usepackage{pslatex}
+\usepackage{graphicx} %for the figures
+\usepackage{siunitx}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+%\setcounter{page}{11}
+\usepackage[margin=10pt,font=normalsize,justification=justified,labelsep=endash,labelfont=bf]{caption}
+\newenvironment{tightcenter}{%
+  \setlength\topsep{0pt}
+  \setlength\parskip{0pt}
+  \begin{center}
+}{%
+  \end{center}
+}
+
+
+%Document
+\begin{document}
+\doublespace\large{
+\begin{tightcenter}CHAPTER 4\\ RETROTRANSPOSONS ARE ASSOCIATED WITH A SEX-SPECIFIC DECREASE IN GENE EXPRESSION \end{tightcenter}
+
+
+%Purpose
+    \textnormal\Large\textit{\\Purpose\\}
+Transcriptional regulation is a highly coordinated process necessary for the proper function of an organism. Despite conserved mechanisms regulating expression, many genes are highly variable between species (Brawand et al., 2011; Carninci et al., 2005; Levine & Tjian, 2003; Su et al., 2002), between humans (Cheung et al., 2003; Storey et al., 2007; E. T. Wang et al., 2008), and between sexes (Rinn & Snyder, 2005; Trabzuni et al., 2013). Variations in expression often correlate with measurable phenotype changes such as dopamine receptor expression and locomotor activity in mice (Chesler et al., 2005). Transcriptome differences associated with disease status further substantiate the hypothesis that gene expression is a key regulator of downstream phenotypes (Su et al., 2002; Voineagu et al., 2011). It is important to determine the underlying factors involved in gene expression variability to understand the plasticity of expression in unaffected individuals, as well as the limits of regulation, that when breached lead to disease. 
+
+Large-scale genome-wide analyses such as those published by the ENCODE project have described many of the organizing components of genes underlying expression variance (Birney et al., 2007; Dong et al., 2012; J. Wang et al., 2012). DNA methylation, histone modifications, and chromatin folding are all examples of coordinating components of transcriptional regulation (Bird, 2002; Jenuwein & Allis, 2001). Although many genetic components, such as these, have been tested for correlation with transcription, much of the repetitive content of the genome remains unexamined for its link with expression. Specifically, retrotransposons (RT) have yet to be characterized for their association with gene expression, even though they account for approximately 40\% of the mass of the human genome (Lander et al., 2001). 
+
+Three common families of RTs exist in high copy numbers in the human genome: L1, Alu, and SVA (Lander et al., 2001). These elements have successfully amplified in humans through the “copy and paste” method of retrotransposition (Ostertag & Kazazian, 2001). A subset of L1, Alu, and SVA remain mobile, with new Alu elements inserting at a rate of 1 in 20 generations (Cordaux, Hedges, Herke, & Batzer, 2006), L1 at a rate of 1:95 – 1:270 generations (Ewing & Kazazian, 2010), and SVA approximated at a rate of 1:916 generations (Xing et al., 2009). Previous studies have attempted to annotate these differences, and have so far identified more than 5,000 polymorphic RT insertions between humans (Stewart et al., 2011; Jianxin Wang et al., 2006). There are likely to be many more segregating RT locations between individuals due to current limited means of detection. The phenotypic effects of these polymorphic RTs have yet to be identified. There are indications of functional impact of RTs on genes. For example, RT show signs of selection resulting in an antisense bias within genes (Linker & Hedges, 2013; Stewart et al., 2011; Zhang, Romanish, & Mager, 2011). Furthermore, when RTs insert into introns, there is a potential for functional change to the gene. For example, polyadenylation signals within L1 sequences are associated with premature truncation of protein coding genes that they are embedded within (Belancio, Roy-Engel, & Deininger, 2008; Kaer, Branovets, Hallikma, Nigumann, & Speek, 2011). Also, the presence of an L1 decreases expression of an upstream GFP, potentially due to a decreased processivity through the low complexity A-rich regions of the L1 (X.-F. Wang et al., 2009). 
+
+Despite indications that RTs can have an effect on gene function, they are largely understudied due to inherent complications in identifying locations of polymorphic insertions. Recent advances in both sequencing technology and alignment algorithms have increased the reliability of identifying specific locations of RT insertions (Baillie et al., 2011; Beck et al., 2010; Ewing & Kazazian, 2010; Iskow et al., 2010; Stewart et al., 2011; Ye, Schulz, Long, Apweiler, & Ning, 2009). As of yet, there have only been a few genome-wide studies comparing the presence of RTs with associated gene expression levels. Most importantly, Arora et al., identified that genes that are differentially expressed between humans and chimps are enriched for genes that contain RT-containing indels (Arora, Mittal, Polavarapu, & McDonald, 2011). Here, we examined the association between the presence of RTs and gene expression changes in two scenarios. We examined the relationship both between humans and a subset of non-human primates, and continue the analysis between humans positive for RT insertions and humans negative for RT insertions. Our results suggest a common association between the presence of RTs and a decrease in expression of cis-genes in a sex-specific manner.
+
+
+% Decreased gene expression human v NHP
+\textnormal\large\textit{\\\textnormal{4.1 } Mobile element insertions between humans and non-human primates}
+
+\textnormal\large\textit{\\\textnormal{4.1.1 } Gene expression is commonly decreased in humans compared to non-human primate in the presence of a mobile element insertion}
+
+Using data from Brawand et al. (see methods), we obtained expression values for orthologous genes in human (hg19), chimp (panTro4), gorilla (GorGor3), orangutan (ponAbe2), and rhesus macaque (rheMac3). This dataset contained expression for multiple tissues, including brain, heart, kidney, liver, and testis. Locations of mobile element insertions (MEI) between humans and the respective non-human primate (NHP) were determined using mobile element annotation for each respective reference genome (Kent et al., 2002) . MEI being Alu, L1, and SVA. Genes were classified as containing and MEI if the MEI was within the gene transcription start to transcription stop sites. In order to compare between the sexes, only genes on the autosomes were considered in this analysis. The sample sizes of MEI-containing genes identified for each primate are tabulated in table 1.
+
+The differences in expression across all species were controlled for by inter-sample normalization procedures [REF]. Comparing between genes with MEIs versus genes without MEIs further controlled for differences in expression present across all genes. To determine if the presence of an MEI was associated with a general shift in gene expression, the odds of increased expression in humans for genes containing MEIs versus genes not containing MEIs were calculated using the contingency table in (figure 1a). ORs were calculated between human and each NHP for each tissue, MEI sub-type, and males and females separately (supplementary table 1). Female humans were missing expression values for testis and kidney; these tissues were therefore excluded from analysis in females. To minimize type I error, a Bonferroni cutoff was calculated based on the total number of tests across all MEI types (Number of OR tests = 32; Bonferroni cutoff p = 1.6e-03). Many ORs associated with Alu remained significant after Bonferroni correction (Alu: 13 of 32 ORs), indicating a tendency for gene expression to shift between species depending on MEI status. L1 and SVA ORs also showed significant results (L1: 1 of 32 ORs; SVA: 7 of 32 ORs). To determine if there was Type I error, we tested the validity of these p-values by calculating the bootstrapped p-value for each test. All p-values that were significant after Bonferroni correction remained significant after bootstrapping (table x). 
+
+Volcano plots of ORs versus significance for all primates and tissues are presented in figures 1c-e. A substantial portion of the ORs were < 1 (Alu: 9 of 13 sig. tests; L1: 1 of 1 sig. tests; SVA: 6 of 7 sig. tests), indicating a tendency for gene expression to be decreased in humans when a MEI was present in human and not in the respective NHP. Figures showing the odds ratios for each test are presented in figure 2a-f.
+
+\textnormal\large\textit{\\\textnormal{4.1.2 } Males show a stronger association between MEI status and expression in humans when compared to females}
+
+Using ANOVA, we tested which variable had the largest effect on OR (sex, primate, tissue, or MEI-type) (table 2). OR for the tissues testis and kidney were removed due to the lack of data in female samples. Sex of the individual (p < 7.93e-04), showed the most significant effect, followed by the tissue type (p < 0.02). Indeed when grouping significant ORs based on sex, a majority of the significant ORs were derived from male samples (15/21 = 71\%) as opposed to female samples (6/21 = 29\%). The direction of effect (i.e.: increased versus decreased odds of higher expression in humans) was also effected by the sex of the individual. ORs were more often < 1 (decreased odds) in male samples (14/15 = 93\%) compared to female samples (2/6 = 33\%) (figure 3b).
+
+\textnormal\large\textit{\\\textnormal{4.2 } Mobile element insertions that are polymorphic between humans}
+
+\textnormal\large\textit{\\\textnormal{4.2.1 } Genes containing MEI-Alu are differentially expressed between male and female humans}
+
+The bias in OR due to the sex of the individual indicated that there was a bias in gene expression between males and females that was restricted to genes containing MEIs.  We next determined if the expression differences between sex were originating from the human dataset only, the NHP datasets, or both human and NHP. To test this, we calculated expression within MEI genes only and compared expression values between females and males of the same sex (figure 1b). MEI were restricted to those derived from Alu (MEI-Alu) and were present in human but absent in all other NHP. To restrict the number of tests we only examined expression in the brain. Indeed, gene expression was more likely to be decreased from human females to human males when an MEI meeting these conditions was present within the gene (Fisher’s p human < 2.2e-16). There was a significant difference between sexes for all species, though the difference in gene expression switched direction from greater in female to greater in male between Gorilla and Orangutan (table 2). 
+
+Although these results indicate that there is a sex-dependent difference in expression in genes containing an MEI; it is possible that we were detecting an unrelated bias in the dataset due to the small sample size (N male = 3, N female = 2). We examined a larger replication set to test the claim that the MEI gene set is significantly associated with genes that are differentially expressed between males and females. Trabzuni et al. characterized gene expression from human male (N=101) and female (N=36) brain and spinal cord tissues (Trabzuni et al., 2013). [insert a sentence about how the expression values were derived in this paper].We analyzed the top differentially expressed and alternatively spliced genes between males and females that were reported in  this dataset [REF]. MEI-Alu were converted from Ensembl annotation [REF] to HUGO gene annotation [REF] for this comparison (N MEI total = 2200). Of the 442 genes differentially expressed or spliced between the sexes in any brain region, 117 contained an MEI-Alu [N MEI-Alu total = 2200]. This was significantly more genes containing MEI Alu than expected by chance; expecting 19116 possible genes which are annotated in HUGO (Flicek et al., 2013; Kent et al., 2002) (OR= 2.8; CI= 2.29 – 3.57 ;  p < 2.2e-16). The genes that were differentially expressed or spliced and also contained an MEI were tested for functional pathway enrichment. As expected, there was an enrichment for splice variant (N = 87, Benjamini corrected p < 1.0e-11) and expression in the brain (N = 85; Benjamini corrected p < 4.7e-09). The gene set was also enriched for Synaptic Proteins at the Synaptic Junction (Biocarta) (N =4; Benjamini corrected p < 1.1e-04).
+
+\textnormal\large\textit{\\\textnormal{4.2.2 } MEIs segregating in humans are associated with a decrease in expression}
+
+Many mobile elements have retained their mobility in humans (e.g: Alu and L1) resulting in mobile element variation within the human population (Ewing & Kazazian, 2010; Stewart et al., 2011). Stewart et al. annotated a subset of MEIs that are polymorphic between humans. We next wanted to check if MEIs that are segregating (MEI-seg) within the human population have a similar association with a change in gene expression as the MEIs previously identified between humans and primates. Differentially inserted MEI-segs were defined as Alu present in greater than 0\% but less than 100\% of CEU individuals typed in the 1000 genomes project (Stewart et al.). The distributions of the number of inserts per gene and per individual are presented in figure 4a and b. We obtained annotations of non-reference polymorphic retrotransposons from the 1000 genomes project (Stewart et al., 2011) for 60 CEU individuals, and expression data for the same individuals (Montgomery et al., 2010). Gene expression was filtered to include only genes that contained an MEI-seg between the transcription start and transcription stop sites. 547 genes matched this criterion. Expression from CEU individuals containing the MEI-seg was compared to expression from CEU individuals lacking the MEI-seg. The null hypothesis be tested was that the presence of an MEI-seg does not effect the direction of gene expression, and therefore there should be a 50\% likelihood of an increase or decrease in expression. 338 genes (62\% of total) had a decrease in mean expression in the presence of a MEI-seg (figure 5a.). This was significantly different than a 50\% expectation (95\% CI: 0.57 – 0.66; Z-test p < 3.8e-08).
+
+We next tested whether or not individuals who were homozygous for an MEI-seg had a greater decrease in expression than those that were heterozygous. Individuals were classified as homozygous null MEI-seg (-/-), heterozygous positive (-/+), and homozygous MEI-seg (+/+) as indicated in Stewart et al. Only a subset of individuals and MEI-seg positions were typed for heterozygosity in Stewart et al., thereby restricting the analysis to 286 MEI-segs and 10 individuals. 35 genes contained an MEI-seg after filtering. (Supplementary Table x). There was no significant difference when comparing means of gene expression between -/- and -/+ (Student’s p = ). However, +/+ individuals had a significant overall decrease in expression values compared to (-/-) (Student’s p < 0.03) (figure 5b.). 
+
+\textnormal\large\textit{\\\textnormal{4.2.3 } MEI-seg are associated with reduced expression in males but not in females}
+
+We next tested whether or not genes that had polymorphic MEIs between humans showed the same sex-specific effect that was observed between human and NHP. CEU individuals were separated into four groups; i.) MEI-seg + females (N= 9808), ii.) MEI-seg – females (N= 7632), iii.) MEI-seg + males (N= 7143), and iv.) MEI-seg – males (N= 6482). Expression values were compared for genes containing an MEI-seg based on sex. A volcano plot showing differential expression between males and females versus p-value is shown in figure 6b-c. There was a significant odds of lower expression in males compared to females (table x)(OR = 2.07; CI= 1.60 – 2.66; p < 8.16e-09). This indicates that there is also a sex-specific effect on expression between humans containing MEI-segs. No individual genes showed a significant difference in expression after Bonferroni correction (cutoff p < 9.48 e-05).
+
+The difference in mean expression between female and males cases was significantly greater than between female and male controls (Student’s test; mean difexp log case = 0.009; mean difexp log control = -0.002; p < 2.2e-16). Interestingly the difference between female cases and female controls was much smaller than the difference between male cases and male controls (mean difexp log female:  0.0004; mean difexp log male: -0.012; Student’s p < 2.2e-16) (figure 6a), indicating that the bias between the sexes is largely driven by the MEI-dependent expression in males. 
+
+
+\textnormal\large\textit{\\\textnormal{4.2.4 } Genes containing MEI are functionally enriched for Autism susceptibility genes}
+
+Baillie et al. previously showed that there is somatic retrotransposition in the human brain (Baillie et al., 2011). Within the list of genes that were deemed somatic inserts in Baillie et al., there is a significant overlap with genes associated with Autism Spectrum Disorder (ASD) (hypergeometric p < ). We therefore also determined if genes containing MEI are enriched for genes related to ASD. 
+
+First, we determined if the initial list of MEI that are present in humans but absent in Chimp, Gorilla, Orangutan, and Rhesus Macaque, are enriched for ASD genes. ASD genes were annotated using the Autism Database (AUTdb) (Basu, Kollu, & Banerjee-Basu, 2009). ASD genes were significantly enriched for genes containing MEI (OR = 1.97; CI = 1.62 – 2.38; p < 1.51e-11). 
+
+ASD genes were also significantly enriched for genes containing MEI-seg (OR = 1.89; CI = 1.13 – 3.12; p < 0.01). Similar to all MEI-seg genes, the ASD genes containing an MEI-seg showed sex-specific differences in expression. Differences in expression between MEI-seg (+) and MEI-seg (-) males were significantly greater than between MEI-seg (+) versus MEI-seg (-) females (mean dif logExp male = -0.008; mean dif logExp female = -0.002 ; Student’s p < 0.04) (figure 7ab).
+
+
+
+    
+\bibliographystyle{IEEEtranS}
+\bibliography{library}
+\end{document}
+
