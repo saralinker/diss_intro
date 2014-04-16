@@ -46,6 +46,27 @@ Despite indications that RTs can have an effect on gene function, they are large
 
 Using data from Brawand et al. (see methods), we obtained expression values for orthologous genes in human (hg19), chimp (panTro4), gorilla (GorGor3), orangutan (ponAbe2), and rhesus macaque (rheMac3). This dataset contained expression for multiple tissues, including brain, heart, kidney, liver, and testis. Locations of mobile element insertions (MEI) between humans and the respective non-human primate (NHP) were determined using mobile element annotation for each respective reference genome \cite{Kent2002}. MEI being Alu, L1, and SVA. Genes were classified as containing and MEI if the MEI was within the gene transcription start to transcription stop sites. In order to compare between the sexes, only genes on the autosomes were considered in this analysis. The sample sizes of MEI-containing genes identified for each primate are tabulated in table 1.
 
+% latex table generated in R 3.0.1 by xtable 1.7-3 package
+% Tue Apr 15 22:57:42 2014
+\begin{table}[ht]
+\centering
+\begin{tabular}{rlllll}
+  \hline
+&  & RhesusMacaque & Orangutan & Gorilla & Chimpanzee \\ 
+  \hline
+Group & Gene Set  & RheMac3 & PonAbe2 & GorGor3 & PanTro4 \\
+  \hline
+  a & Expression Data & 5963 & 6333 & 5982 & 6652 \\ 
+  b & Filtered MEI-Alu & 4721 & 4663 & 3889 & 2392 \\ 
+  c & Filtered MEI-L1 & 226 & 181 & 152 & 69 \\ 
+  d & Filtered MEI-SVA & 271 & 564 & 420 & 331 \\ 
+  e & \[a \cap  b \] & 2645 & 2903 & 2471 & 1545 \\ 
+  f & \[a \cap  c \] & 144 & 124 & 105 & 46 \\ 
+  g & \[a \cap  d \] & 166 & 342 & 252 & 199 \\ 
+   \hline
+\end{tabular}
+\end{table}
+
 The differences in expression across all species were controlled for by inter-sample normalization procedures [REF]. Comparing between genes with MEIs versus genes without MEIs further controlled for differences in expression present across all genes. To determine if the presence of an MEI was associated with a general shift in gene expression, the odds of increased expression in humans for genes containing MEIs versus genes not containing MEIs were calculated using the contingency table in (figure 1a). ORs were calculated between human and each NHP for each tissue, MEI sub-type, and males and females separately (supplementary table 1). Female humans were missing expression values for testis and kidney; these tissues were therefore excluded from analysis in females. To minimize type I error, a Bonferroni cutoff was calculated based on the total number of tests across all MEI types (Number of OR tests = 32; Bonferroni cutoff p = 1.6e-03). Many ORs associated with Alu remained significant after Bonferroni correction (Alu: 13 of 32 ORs), indicating a tendency for gene expression to shift between species depending on MEI status. L1 and SVA ORs also showed significant results (L1: 1 of 32 ORs; SVA: 7 of 32 ORs). To determine if there was Type I error, we tested the validity of these p-values by calculating the bootstrapped p-value for each test. All p-values that were significant after Bonferroni correction remained significant after bootstrapping (table x). 
 
 Volcano plots of ORs versus significance for all primates and tissues are presented in figures 1c-e. A substantial portion of the ORs were < 1 (Alu: 9 of 13 sig. tests; L1: 1 of 1 sig. tests; SVA: 6 of 7 sig. tests), indicating a tendency for gene expression to be decreased in humans when a MEI was present in human and not in the respective NHP. Figures showing the odds ratios for each test are presented in figure 2a-f.
