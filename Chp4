@@ -119,7 +119,7 @@ Female humans were missing expression values for testis and liver; these tissues
         \label{fig:meiplots}
     \end{figure}
 
-Although it is possible that L1 and SVA are less often associated with genes that are expressed lower in humans than Alu, it is also possible that the reduced number of significant tests is due to a lack of power to detect significance due to their small sample numbers (req. effect size, Alu Chimp: 0.08; req. effect size, L1 Chimp: 0.48; req. effect size, SVA Chimp: 0.23). Interestingly, 76\% of the significant ORs were < 1 (Alu: 11 of 16 sig. tests (69\%); L1: 2 of 2 sig. tests (100\%); SVA: 9 of 11 sig. tests (82\%)), indicating an association of decreased gene expression in humans with the presence of an MEI. 
+Although it is possible that L1 and SVA are less often associated with genes that are expressed lower in humans than Alu, it is also possible that the reduced number of significant tests is due to a lack of power to detect significance due to their small sample numbers (req. effect size, Alu Chimp: 0.08; req. effect size, L1 Chimp: 0.48; req. effect size, SVA Chimp: 0.23). Interestingly, 76\% of the significant ORs were < 1 (Alu: 11 of 16 sig. tests (69\%); L1: 2 of 2 sig. tests (100\%); SVA: 9 of 11 sig. tests (82\%)), indicating an association of decreased gene expression in humans with the presence of an MEI. A substantial portion of the ORs were < 1 (Alu: 9 of 13 sig. tests; L1: 1 of 1 sig. tests; SVA: 6 of 7 sig. tests), indicating a tendency for gene expression to be decreased in humans when a MEI was present in human and not in the respective NHP. 
 
 
 \begin{sidewaystable}[htbp!]
@@ -165,22 +165,54 @@ Although it is possible that L1 and SVA are less often associated with genes tha
 \end{sidewaystable}
 
 
-Volcano plots of ORs versus significance for all primates and tissues are presented in figures 1c-e. A substantial portion of the ORs were < 1 (Alu: 9 of 13 sig. tests; L1: 1 of 1 sig. tests; SVA: 6 of 7 sig. tests), indicating a tendency for gene expression to be decreased in humans when a MEI was present in human and not in the respective NHP. Figures showing the odds ratios for each test are presented in figure 2a-f.
-
 \textnormal\large\textit{\\\textnormal{4.1.2 } Males show a stronger association between MEI status and expression in humans when compared to females}
 
-Using ANOVA, all variables were examined to determine which had the largest effect on OR (sex, primate comparison, tissue, or MEI-type) (table 2). OR for the tissues testis and liver were removed due to the lack of data in female samples. Sex of the individual (p < 5.2e-04) showed the most significant effect on OR. Indeed when grouping significant ORs based on sex, a majority of the significant ORs were derived from male samples (21/29 = 72\%) as opposed to female samples (8/29 = 28\%). The direction of effect (i.e.: increased versus decreased expression in humans versus NHP) was also associated with the sex of the individual in genes containing MEIs. ORs were more often < 1 (decreased expression) in male samples (19/21 = 90\%) compared to female samples (3/8 = 38\%). Overall the odds ratios between males were significantly smaller than those between females (figure 2).
+Using ANOVA, all variables were examined to determine which had the largest effect on OR (sex, primate comparison, tissue, or MEI-type) (table \ref{table:anova}).
 
+
+    % ANOVA table
+    % Wed Apr 16 13:34:18 2014
+    \begin{table}[ht]
+    \centering
+    \begin{tabular}{rlrrr}
+      \hline
+     & Variable & Df & F.value & p \\ 
+      \hline
+    1 & Sex &   1 & 13.02 & 0.00 \\ 
+      2 & Tissue &   4 & 2.98 & 0.02 \\ 
+      3 & Primate &   3 & 2.81 & 0.04 \\ 
+      4 & MEI-type &   2 & 1.59 & 0.21 \\ 
+       \hline
+    \end{tabular}
+    \caption{\textbf{}}
+    \label{table:anova}
+    \end{table}
+
+
+OR for the tissues testis and liver were removed due to the lack of data in female samples. Sex of the individual (p < 5.2e-04) showed the most significant effect on OR. Indeed when grouping significant ORs based on sex, a majority of the significant ORs were derived from male samples (21/29 = 72\%) as opposed to female samples (8/29 = 28\%). The direction of effect (i.e.: increased versus decreased expression in humans versus NHP) was also associated with the sex of the individual in genes containing MEIs. ORs were more often < 1 (decreased expression) in male samples (19/21 = 90\%) compared to female samples (3/8 = 38\%). Overall the odds ratios between males were significantly smaller than those between females (figure \ref{fig:malefemale}).
+
+
+    %boxplot of male odds ratios versus female odds ratios
+    \begin{figure}[!ht]
+        \centering
+        \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{malefemale.png}
+       \caption{\textbf{Title\\}
+       More Here
+       }
+        \label{fig:malefemale}
+    \end{figure}
+    
+    
 \textnormal\large\textit{\\\textnormal{4.2 } Mobile element insertions that are polymorphic between humans}
 
 \textnormal\large\textit{\\\textnormal{4.2.1 } Genes containing MEI-Alu are differentially expressed between male and female humans}
 The bias in OR due to the sex of the individual indicated that there was a bias in gene expression between males and females that was restricted to genes containing MEIs.  We next determined if the expression differences between humans and NHPs were also present as differences in expression between male and female humans. To test the differences between humans based on sex, we calculated expression within MEI genes in humans only and compared expression values between females and males of the same sex (figure 1b). MEIs were restricted to those derived from Alu (MEI-Alu) and were present in human but absent in all other NHP (equivalent to MEI-Alu, Chimp). To restrict the number of tests we only examined expression in the brain. Indeed, gene expression was more likely to be decreased in human males compared to human females when an MEI-Alu, Chimp was present within the gene (OR = 0.42; CI 95\% = 0.33 – 0.52; Fisher’s p  < 4.25 e-18). 
 
-Although these results indicate that there is a sex-dependent difference in expression in genes containing an MEI; it is possible that we were detecting an unrelated bias in the dataset due to the small sample size (N male = 3, N female = 2). We examined a larger replication set to test the claim that the MEI gene set is significantly associated with genes that are differentially expressed between males and females. Trabzuni et al. characterized gene expression from human male (N=101) and female (N=36) brain and spinal cord tissues (Trabzuni et al., 2013). We analyzed the top differentially expressed and alternatively spliced genes between males and females that were reported in this dataset. To facilitate the comparison MEI-Alu, Chimp were converted from Ensembl annotation to HUGO gene annotation (N MEI –Alu converted = 2200). Of the 442 genes differentially expressed or spliced between the sexes in any brain region, 117 contained an MEI-Alu, Chimp. This was significantly more genes containing MEI Alu than expected by chance (OR= 2.8; CI 95\% = 2.29 – 3.57;  Fisher’s exact p < 2.2e-16). Total gene count was set at 19116 to reflect the number of genes uniquely annotated in HUGO (Flicek et al., 2013; Kent et al., 2002). 
+Although these results indicate that there is a sex-dependent difference in expression in genes containing an MEI; it is possible that we were detecting an unrelated bias in the dataset due to the small sample size (N male = 3, N female = 2). We examined a larger replication set to test the claim that the MEI gene set is significantly associated with genes that are differentially expressed between males and females. Trabzuni et al. characterized gene expression from human male (N=101) and female (N=36) brain and spinal cord tissues \cite{Trabzuni2013}. We analyzed the top differentially expressed and alternatively spliced genes between males and females that were reported in this dataset. To facilitate the comparison MEI-Alu, Chimp were converted from Ensembl annotation to HUGO gene annotation (N MEI –Alu converted = 2200). Of the 442 genes differentially expressed or spliced between the sexes in any brain region, 117 contained an MEI-Alu, Chimp. This was significantly more genes containing MEI Alu than expected by chance (OR= 2.8; CI 95\% = 2.29 – 3.57;  Fisher’s exact p < 2.2e-16). Total gene count was set at 19116 to reflect the number of genes uniquely annotated in HUGO \cite{Flicek2013, Kent2002}. 
 
 \textnormal\large\textit{\\\textnormal{4.2.2 } MEIs segregating in humans are associated with a decrease in expression}
 
-Alu, L1, and SVA are retrotranspositionally competent in humans resulting in mobile element variation within the human population (Ewing & Kazazian, 2010; Stewart et al., 2011). Stewart et al. annotated a subset of MEIs that are polymorphic between humans. We next wanted to check if MEI-Alu locations that are segregating (MEI-seg) within the human population have a similar association with a change in gene expression as the MEIs previously identified between humans and primates. MEI-segs were identified from the CEU individuals typed in the 1000 genomes project (Stewart et al.). Expression data for the same CEU individuals was available from the Montgomery et al. dataset. Gene expression from Montgomery et al. was filtered to include only genes that contained an MEI-seg between the transcription start and transcription stop sites. 547 genes matched this criterion. Gene expression was compared between males and females containing MEI-seg (MEI-seg(+)). 338 genes (62\% of total, Z-test p < 3.8e-08) had a decrease in mean expression in males versus females (figure 3a.). Conversely when the same genes were compared between males and females without an MEI-seg (MEI-seg(-)), only 266 genes were decreased in males versus females (49\% of total, Z-test p < 0.64) (figure 3b). A Student’s t-test showed that this decrease in expression in MEI-seg(+) individuals was significantly larger than in MEI-seg(-) individuals (mean difexp log MEI-seg(+) = 0.009; mean difexp log MEI-seg(-) = -0.002; Student’s t-test p < 1.87 e-25) (figure 4). 
+Alu, L1, and SVA are retrotranspositionally competent in humans resulting in mobile element variation within the human population \cite{Ewing2010, Stewart2011}. Stewart et al. annotated a subset of MEIs that are polymorphic between humans. We next wanted to check if MEI-Alu locations that are segregating (MEI-seg) within the human population have a similar association with a change in gene expression as the MEIs previously identified between humans and primates. MEI-segs were identified from the CEU individuals typed in the 1000 genomes project. Expression data for the same CEU individuals was available from the Montgomery et al. dataset. Gene expression from Montgomery et al. was filtered to include only genes that contained an MEI-seg between the transcription start and transcription stop sites. 547 genes matched this criterion. Gene expression was compared between males and females containing MEI-seg (MEI-seg(+)). 338 genes (62\% of total, Z-test p < 3.8e-08) had a decrease in mean expression in males versus females (figure 3a.). Conversely when the same genes were compared between males and females without an MEI-seg (MEI-seg(-)), only 266 genes were decreased in males versus females (49\% of total, Z-test p < 0.64) (figure 3b). A Student’s t-test showed that this decrease in expression in MEI-seg(+) individuals was significantly larger than in MEI-seg(-) individuals (mean difexp log MEI-seg(+) = 0.009; mean difexp log MEI-seg(-) = -0.002; Student’s t-test p < 1.87 e-25) (figure 4). 
 
 
 \textnormal\large\textit{\\\textnormal{4.2.3 } Decrease in expression in the presence of an MEI-seg is specific to males}
@@ -191,7 +223,7 @@ We next compared expression values within each sex group to determine if the eff
 
 The genes contained an MEI-Alu, Chimp were tested for functional pathway enrichment. Splice variants were significantly enriched in this group (N = 1199, Benjamini corrected p < 4.1e-71), as well as neuron projection development (N = 54, Benjamini corrected p < 7.7e-04), brain expression (N = 1137, Benjamini corrected p < 9.2e-36), and phosphatidylinositol signaling (N = 19, Benjamini corrected p < 9.4e-02). The complete list is presented in supplementary table 2. 
 
-Baillie et al. previously showed that there is somatic retrotransposition in the human brain (Baillie et al., 2011). Within the list of genes that were deemed somatic inserts in Baillie et al., we found that there was a significant overlap with genes associated with Autism Spectrum Disorder (ASD) (Hussman et al., 2011) (OR = 7.29; CI 95\% = 5.01 – 10.73 ; Fisher’s exact p < 6.59e-27) (Supplementary table 2). We therefore performed an additional functional enrichment test to determine if genes containing MEI were enriched for genes related to ASD. MEI-Alu, Chimp were enriched for ASD genes. ASD genes were annotated using the Autism Database (AUTdb) (Basu, Kollu, & Banerjee-Basu, 2009). ASD genes were significantly enriched for genes containing MEI-Alu, Chimp (OR = 1.83; CI 95\% = 1.12 – 2.90; Fisher’s exact p < 0.01). More strikingly, ASD genes were significantly enriched within genes containing the human polymorphic MEI-segs (OR = 5.10; CI 95\% = 3.48 – 7.41; Fisher’s exact p < 6.09e-16). 
+Baillie et al. previously showed that there is somatic retrotransposition in the human brain (Baillie et al., 2011). Within the list of genes that were deemed somatic inserts in Baillie et al., we found that there was a significant overlap with genes associated with Autism Spectrum Disorder (ASD) (Hussman et al., 2011) (OR = 7.29; CI 95\% = 5.01 – 10.73 ; Fisher’s exact p < 6.59e-27) (Supplementary table 2). We therefore performed an additional functional enrichment test to determine if genes containing MEI were enriched for genes related to ASD. MEI-Alu, Chimp were enriched for ASD genes. ASD genes were annotated using the Autism Database (AUTdb) \cite{Basu2009}. ASD genes were significantly enriched for genes containing MEI-Alu, Chimp (OR = 1.83; CI 95\% = 1.12 – 2.90; Fisher’s exact p < 0.01). More strikingly, ASD genes were significantly enriched within genes containing the human polymorphic MEI-segs (OR = 5.10; CI 95\% = 3.48 – 7.41; Fisher’s exact p < 6.09e-16). 
 
 Similar to all MEI-seg genes, the ASD genes containing an MEI-seg showed sex-specific differences in expression. Differences in expression between MEI-seg (+) and MEI-seg (-) males were significantly greater than between MEI-seg (+) versus MEI-seg (-) females (mean dif logExp male = -0.008; mean dif logExp female = -0.002 ; Student’s p < 0.04) (figure 5b).
 
