@@ -165,7 +165,15 @@ Although it is possible that L1 and SVA are less often associated with genes tha
 
 \textnormal\large\textit{\\\textnormal{4.1.2 } Males show a stronger association between MEI status and expression in humans when compared to females}
 
-Using ANOVA, all variables were examined to determine which had the largest effect on OR (sex, primate comparison, tissue, or MEI-type) (table \ref{table:anova}). OR for the tissues testis and liver were removed due to the lack of data in female samples. Sex of the individual (p < 5.2e-04) showed the most significant effect on OR. 
+There were four variables that were uncontrolled for in the calculation of odds ratio: sex of the individual, non-human primate species, tissue of origin, and MEI-type. It was therefore important to determine if any of these variables had a significant effect on the outcome of odds ratio. To compare the effects of each variable type, one regression equation was calculated per variable.
+
+ %Linear Regression Equation: variables
+    \begin{equation}
+    \label{reg 1:}
+        Odds Ratio  = \beta (sex|NHP|tissue|MEI)  + \epsilon
+    \end{equation}
+
+These models were compared using a four-way ANOVA. Using ANOVA, all variables were examined to determine which had the largest effect on OR (sex, primate comparison, tissue, or MEI-type).  (table \ref{table:anova}). OR for the tissues testis and liver were removed due to the lack of data in female samples. Sex of the individual (p < 5.2e-04) showed the most significant effect on OR. 
 
 
     % ANOVA table
@@ -174,20 +182,19 @@ Using ANOVA, all variables were examined to determine which had the largest effe
     \centering
     \begin{tabular}{rlrrr}
       \hline
-     & Variable & Df & F.value & p \\ 
+     & Variable & Df & F-value & p-value \\ 
       \hline
-    1 & Sex &   1 & 13.02 & 0.00 \\ 
+    1 & Sex &   1 & 13.02 & 5.2e-04 \\ 
       2 & Tissue &   4 & 2.98 & 0.02 \\ 
       3 & Primate &   3 & 2.81 & 0.04 \\ 
       4 & MEI-type &   2 & 1.59 & 0.21 \\ 
        \hline
     \end{tabular}
-    \caption{\textbf{}}
+    \caption{\textbf{Results of ANOVA comparing effects of sex, tissue, NHP, and MEI}}
     \label{table:anova}
     \end{table}
 
 Indeed when grouping significant ORs based on sex, a majority of the significant ORs were derived from male samples (21/29 = 72\%) as opposed to female samples (8/29 = 28\%). The direction of effect (i.e.: increased versus decreased expression in humans versus NHP) was also associated with the sex of the individual in genes containing MEIs. ORs were more often < 1 (decreased expression) in male samples (19/21 = 90\%) compared to female samples (3/8 = 38\%). Overall the odds ratios between males were significantly smaller than those between females (figure \ref{fig:malefemale}).
-
 
 
     %boxplot of male odds ratios versus female odds ratios
