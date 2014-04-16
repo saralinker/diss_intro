@@ -1,0 +1,60 @@
+% Appendices_Dissertation
+% Slinker, 04/16/2014
+
+%Preamble
+\documentclass[12bp]{article}
+%formating the page
+\usepackage{setspace} %for double spacing
+\usepackage{times}
+\usepackage[top=1in, bottom=1in, left=1.25in, right=1in]{geometry}
+\usepackage{pslatex}
+%for the figures
+\usepackage{graphicx} 
+\usepackage{siunitx}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+%Formating for the contingency tables
+\usepackage{pgfplots}
+\usepackage{pgfplotstable}
+\usepackage{booktabs}
+%for rotating a table
+\usepackage{rotating} 
+%\setcounter{page}{11}
+\usepackage[margin=10pt,font=normalsize,justification=justified,labelsep=endash,labelfont=bf]{caption}
+\newenvironment{tightcenter}{%
+  \setlength\topsep{0pt}
+  \setlength\parskip{0pt}
+  \begin{center}
+}{%
+  \end{center}
+}
+
+\usepackage{listings}
+\lstset{
+    language=R,
+    basicstyle=\scriptsize\ttfamily,
+    commentstyle=\ttfamily\color{gray},
+    numbers=left,
+    numberstyle=\ttfamily\color{gray}\footnotesize,
+    stepnumber=1,
+    numbersep=5pt,
+    backgroundcolor=\color{white},
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    frame=single,
+    tabsize=2,
+    captionpos=b,
+    breaklines=true,
+    breakatwhitespace=false,
+    title=\lstname,
+    escapeinside={},
+    keywordstyle={},
+    morekeywords={}
+    }
+
+
+\textnormal\large\textit{\\\textnormal{4.10 } R-code libraries}
+
+\lstinputlisting{Prim_Lib2.R}
+
