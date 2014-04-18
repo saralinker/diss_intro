@@ -20,7 +20,7 @@
 }{%
   \end{center}
 }
-
+\usepackage{amsmath}
 
 %Document
 \begin{document}
@@ -95,12 +95,49 @@ Upon formation of the RNP, the complex is reintroduced into the nucleus. The pro
 %Structural Rearrangments associated with TPRT
 \textnormal\Large\textit{\\\\\num{1.0 } Structural rearrangements associated with TPRT\\}
 
+%Subfamilies of Retrotransposons
+\textnormal\Large\textit{\\\\\num{1.0 } Subfamilies of retrotransposons\\}
 
         %Distribution of Retrotransposons 
-    \textnormal\Large\textit{\\\\\num{1.6 } Distribution of Retrotransposons in Genes\\}
+    \textnormal\Large\textit{\\\\\num{1.6 } Natural Selection and the Distribution of Retrotransposons in Genes\\}
     %Body of Text
 %        \large{
-     Although host mechanisms inhibit their amplification rate \cite{Liu1994,Muckenfuss2006,Vagin2006}, human RTs maintain an insertion rate of approximately 1 in 20 births for Alu, 1 in 270 births for L1, and 1:916 births for SVA \cite{Cordaux2006,Ewing2010,Xing2009}. RTs with short residence times, as noted by a lack of fixation in the population, are evenly spaced across the genome \cite{Stewart2011}. This indicates that RTs are integrated without preference across the genome. Contradictory studies have shown that there are hotspots of RT integration [REF], though these studies [bla bla bla]. Contrary to what would be expected under a neutral hypothesis of RT integration, elements with longer residence times are non-randomly distributed. Alu and L1 do not show the same trends of altered distribution. Alu tend to be present in higher numbers in in GC-rich regions, whereas L1 are increased in GC-poor regions \cite{Pavlicek2001,Soriano1983}. Aberrations in otherwise random distribution are signs of violations of Hardy-Weinburg equilibrium, such as local selection or genetic drift [REF]. This indicates a selective pressure either for RTs in RT-rich regions, or again RTs in depleted regions. In fact, RTs that are polymorphic in the population tend to be present more often in the heterozygous state, than homozygous \cite{Stewart2011}. This follows the expectation of allele frequency under a model where the RT is negatively selected, and is therefore less likely to survive in the homozygous state. Understanding the factors associated with these observed distribution biases could help to predict the functional impact RT insertions. Furthermore, Studying the non-random distribution of RTs within genes will provide further evidence of the selectable interaction between RT and genomic context.   
+    The distribution of RTs in the current human genome can indicate signs of selection, or the effect that the RT is having on the organism. RTs insert in the human genome at a rate of approximately 1 in 20 births for Alu, 1 in 270 births for L1, and 1:916 births for SVA \cite{Cordaux2006,Ewing2010,Xing2009}. New polymorphic insertions, as noted by a lack of fixation in the population, are evenly distributed throughout the genome \cite{Stewart2011}, as are young L1 present in the reference genome \cite{Ovchinnikov2001}. These findings indicate that RTs are integrated without preference across the genome. Contradictory studies, however, have identified some transposition hotspots within the human genome. For example, NF1 is a hotspot for both Alu and L1 integration events, resulting in altered splicing of the NF1 gene \cite{Wimmer2011}. Furthermore, it has been shown that young RTs are commonly nested within older elements, indicating a potential presence of hotspots \cite{Levy2010}. Despite the limited findings of insertional hotspots, it is still accepted that RTs insert relatively randomly throughout the genome.
+    
+Conversely, RTs with long residence times in a population show a non-random distribution across the genome. This altered distribution is contrary to what would be expected under a neutral hypothesis of selection on RTs which would result in a relatively uniform distribution. Furthermore, Alu and L1 do not show the same trends of altered densities. Alu tend to be present in higher numbers in in GC-rich regions and to cluster with one another, whereas L1 are increased in GC-poor regions \cite{Pavlicek2001,Soriano1983}. There are a few hypotheses that have been put forward to explain this change in density over time. One theory suggests that segmental duplications mediated by Alu elements increases the co-clustering and enrichment of Alu in regions where Alu already exist \cite{Jurka2004}. Furthermore, this same model suggests that newly inserted Alu are removed at high rates, therefore reducing the Alu load in AT-rich regions. 
+
+
+Aberrations in otherwise random distribution are signs of violations of Hardy-Weinburg equilibrium, such as local selection or genetic drift [REF]. The altered distributions of Alu and L1 indicate that there is a selective pressure acting on these RTs. Some groups suggest that RTs are undergoing purifying selection \cite{Jurka2004, Stewart2011}. One study examined the rate of heterozygosity of polymorphic RTs in various human populations. They found that Alu and L1 are present more often in the heterozygous state than the homozygous state \cite{Stewart2011}. This deviation from Hardy-Weinberg equilibrium is similar to what would be expected under negative selection.
+
+Another study attempting to determine the selective forces on RTs examined the densities of Alu on the autosomes, chrX, and chrY seperately. The advantage to this study was that each of these chromosome groups undergo varying selective forces. One example is that autosomes, chrX, and chrY have different effective population sizes. The equations below show the effetive population sizes for autosomes (equation \ref{eq:auto}), chrX (equation \ref{eq:chrx}), and chrY (equation \ref{eq:chry}), where N$_{\textit{e}}$ is effective population size, N\textit{m} is the population size of males, and N\textit{f} is the population size of females. [REF, Hartl and Clark Principles of human genetics]. 
+
+    %Effective population size : Autosome
+    \begin{equation}
+        N_{\textit{e}}  = \frac{4N_{\textit{m}}N_{\textit{f}}}{N_{\textit{m}} + N_{\textit{f}}}
+        \label{eq:auto}
+    \end{equation}
+
+    %Effective population size : ChrX
+    \begin{equation}
+        N_{\textit{e}}  = \frac{9N_{\textit{m}}N_{\textit{f}}}{4N_{\textit{m}} + 2N_{\textit{f}}}
+        \label{eq:chrx}
+    \end{equation}
+    
+    %Effective population size : ChrY
+    \begin{equation}
+        N_{\textit{e}}  = \frac{N_{\textit{m}}}{2}
+         \label{eq:chry}
+    \end{equation}
+
+
+N$_{\textit{e}}$ (equation \ref{rfix}) is a key determinant in the ability for selection to act over genetic drift \cite{Charlesworth2009}, and therefore the forces of selection differ depending on the chromosome on which it is acting. Another factor at play in the difference of selection between chrX and chrY is the effect termed "Muller's ratchet" \cite{Muller1964}. Muller posited that recombination is highly important for purifying selection. This theory states that there is a lack of an ability to purify deleterious mutations from the genome, since the genome is inherited as a whole with each generation. The next generation then has a higher genetic load of deleterious mutations to begin with, and this mutational load is ever increasing. [MORE SENTENCES, SUPPORT FOR MULLER'S RATCHET ON CHRY]. Although many studies have shown that Muller's ratchet is truely acting on chrY, some studies have shown that there are regions of purifying selection \cite{Sayres2014}.
+
+Jurka showed that there are signs of purifying selection of Alu on chrY \cite{Jurka2004}. Moreover, by comparing between chrX and the autosomes, they show signs of paternal selection against Alu [Any more papers on selection of Alu and L1??? Or even SVA??]
+
+Understanding the factors associated with these observed distribution biases could help to predict the functional impact RT insertions. Furthermore, Studying the non-random distribution of RTs within genes will provide further evidence of the selectable interaction between RT and genomic context.   
+
+The hypothesis that RTs undergo purifying selection within genes is still a topic that is debated in the literature [REFs].
+
         
         Previous studies have taken advantage of the high copy number of RTs to study the relationships of mobile elements with the host genome, revealing the capacity of various genomic contexts to withstand retrotransposition. There are 1.1e06, 9.5e05, and 3.7e03 Alu, L1, and SVA respectively annotated in the human Hg19 reference genome \cite{Kent2002}. Furthermore, the 1000 genomes project has identified [x,y,and z] Alu, L1, and SVA respectively that are segregating within humans. These segregating, or polymorphic RTs allow us to [b;a b;a b;a]. Within genes, certain regions are more susceptible to disruption by RTs than others \cite{Zhang2011}. The regions identified so far have been termed “hazardous zones,” and are highly correlated with exon density. Orientation of the RT with respect to the gene has also been determined to be an important factor in RT density. 
 %        }
