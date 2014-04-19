@@ -39,7 +39,8 @@
 \usepackage{titlesec} %Re-format the chapter title
 \titleformat{\chapter}
   {\normalfont\LARGE\rm\raggedleft\uppercase}{\chaptertitlename\ \thechapter}{20pt}{\Huge}
-
+\titleformat{\section}
+  {\normalfont\large\bfseries\raggedright}{\thesection}{5pt}{\large}
 
 %Document
 \begin{document}
