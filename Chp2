@@ -2,59 +2,98 @@
 % Slinker, 03/31/2014
 
 %Preamble
-\documentclass[12bp]{article}
-%\documentclass[Intro_diss.tex]{subfiles} 
+\documentclass[12bp]{report}
+\usepackage[top=1in, bottom=1in, left=1.25in, right=1in]{geometry} %geom has to be loaded before fancy header
+
+\usepackage{fancyhdr}
+\pagestyle{fancy} %Control over headers and footers
+    \fancyhf{}%clears all fieds
+    \lhead[R]{\rightmark} %add section title to the page
+    \cfoot{\thepage}    %add page number to center bottom
+    \renewcommand{\headrulewidth}{0.05pt} % 0 gets rid of the lines on top 
+    \renewcommand{\footrulewidth}{0pt} % 0 gets rid of the line on bottom
+    \fancypagestyle{plain}{% Changes all chapter pages to this format (by changing plain style)
+        \fancyhf{}         % clear all header and footer fields
+        \rhead{\thepage}    % except the center
+        \renewcommand{\headrulewidth}{0pt}
+        \renewcommand{\footrulewidth}{0pt}}
+
+\usepackage[margin=10pt,font=small,justification=justified,labelsep=endash,labelfont=bf]{caption}
 \usepackage{setspace} %for double spacing
-\usepackage[top=1in, bottom=1in, left=1.25in, right=1in]{geometry}
 \usepackage{pslatex}
 \usepackage{graphicx} %for the figures
 \usepackage{siunitx}
 \usepackage[T1]{fontenc}
+\usepackage[final]{pdfpages}
+\usepackage{apacite} %for citing with APA
+%\newenvironment{tightcenter}{% for self-made chapter headings
+%  \setlength\topsep{0pt}
+%  \setlength\parskip{0pt}
+%  \begin{center}
+%}{%
+%  \end{center}
+%}
 \usepackage{amsmath}
-\usepackage[margin=10pt,font=small,justification=justified,labelsep=endash,labelfont=bf]{caption}
-\newenvironment{tightcenter}{%
-  \setlength\topsep{0pt}
-  \setlength\parskip{0pt}
-  \begin{center}
-}{%
-  \end{center}
-}
+
+\usepackage{titlesec} %Re-format the chapter title
+\titleformat{\chapter}
+  {\normalfont\LARGE\rm\raggedleft\uppercase}{\chaptertitlename\ \thechapter}{20pt}{\Huge}
+\titleformat{\section}
+  {\normalfont\large\bfseries\raggedright}{\thesection}{5pt}{\large}
+\usepackage{listings}
+\lstset{
+    language=R,
+    basicstyle=\scriptsize\ttfamily,
+    commentstyle=\ttfamily\color{gray},
+    numbers=left,
+    numberstyle=\ttfamily\color{gray}\footnotesize,
+    stepnumber=1,
+    numbersep=5pt,
+    backgroundcolor=\color{white},
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    frame=single,
+    tabsize=2,
+    captionpos=b,
+    breaklines=true,
+    breakatwhitespace=false,
+    title=\lstname,
+    escapeinside={},
+    keywordstyle={},
+    morekeywords={}
+    }
 
 
 
 %Document
 \begin{document}
+\chapter{\\ORIGINS OF THE RETROTRANSPOSON ANTISENSE BIAS}
 \doublespace\large{
-    \begin{tightcenter}{CHAPTER 2\\ ORIGINS OF THE RETROTRANSPOSON ANTISENSE BIAS\\}\end{tightcenter}
 
-    %Purpose
-     \textnormal\Large\textit{\\Purpose\\}
-    %\large{
+%ASbias upon insertion
+\section{Retrotransposon Antisense Bias and the Process of Integration}
+
 It is possible that the distribution of RTs is a direct effect of selection on RTs, and is therefore indicative of the local effect of RTs on genes. For example, low RT density would indicate regions sensitive to RTs, thus natural selection purifies them from those regions (i.e: near exons \ref{Zhang2011}). Similarly high density regions would indicate either a neutral or positive response to a RT insertion. One of the published patterns of distribution is the tendency of RTs to be present in the antisense (AS) orientation within genes more often than the sense (S) orientation. This has been termed the antisense bias (AS bias). An interesting feature of this bias is that it peaks near the transcription start site \ref{Medstrand2002}. It is possible that this altered distribution is due to natural selection acting differently on the same RT in different orientations. If this is true, then the AS bias can be used to measure regional sensitivities to RT insertions. However possible, there is also another potential cause of this bias that must be ruled out, and that is that the AS-bias does not accumulate over time through selection, but during the integration process. To distinguish whether AS bias is a result of integration or selection over time, the distribution of relatively recent Alu insertions were examined, as well as the change in AS bias over evolutionary time. 
-    %}
-    %ASbias upon insertion
-     \textnormal\Large\textit{\\\\\num{2.1 } Retrotransposon Antisense Bias is not Associated with the Process of Integration}
     
 %1000 genomes by population and Faulkner data
 
-     \textnormal\Large\textit{\hspace{-15pt}\textnormal{2.2.1 } Young AS and S Alu are Present in Equal Proportions \\}
-    %\large{
+\subsection{Young AS and S Alu are Present in Equal Proportions}
 Alu insert at a higher rate than either L1 or SVA, and have a larger sample size of elements with low residence times in the population. These recently integrated Alu were examined to identify the AS bias upon integration. Two samples of relatively young Alu were used for this analysis (a) Alu annotated as insertions in the \num{1000} genomes project \cite{Stewart2011}, and (b) Alu annotated as germline insertions \cite{Baillie2011}. Alu from group (a) are all elements that are polymorphic in the population studied. Three population groups were used in this 1000 genomes study; Yoruban, YRI; European, CEU; and Chinese/Japanese, CHBJPT. Alu that were population-specific were kept in the analysis, while Alu that were present among two or more populations were labelled as (c) shared, and were used in a future analysis. The mean allele frequency of Alu presence was 0.09,0.07, and 0.07 in YRI, CEU, and CHBJPT respectively. Group (b) elements were derived from three individuals that were examined for non-reference Alu insertions in various somatic tissues. Alu counts from YRI, CEU, CHBJPT, and group (b) were combined to reduce type II error by increasing sample size. The insertions that were deemed 'germline' insertions by comparison between multiple tissues were used for this analysis.
 
 The proportion of AS elements in the young group of Alu were compared versus the antisense bias of reference Alu. The reference set was chosen as the comparison since this was the group of Alu from within which the AS bias was originally identified. As has been previously documented, the proportions of AS and S Alu in the Hg19 reference was significantly different from the null hypothesis of equal distribution (probability of AS = 0.55 ; \num{95}\% CI = \num{0.548} - \num{0.550}; p < \num{2.47}e-\num{323}). A test of equal proportions was used to calculate the deviation from the null hypothesis that young AS Alu occur in equal proportion to that of reference Alu. It was identified that reference Alu had a significantly different AS bias than newly inserted Alu ($propAS_{\text{young}}$ = 0.48; $propAS_{\text{Ref}}$ = 0.55; \num{95}\% CI = \num{-0.08} - \num{-0.06}; p < \num{6.18}e-28). This  shows that the AS bias present in reference Alu is not present upon integration. 
-%}
-%TPRT
-     \textnormal\Large\textit{\\\\\textnormal{2.2.2 } AS bias is present in transposons integrated by non-TPRT mechanisms\\}
-    %\large{
-The overarching goal of this chapter was to discriminate between the RT integration process and selection over time, as being responsible for AS bias. It has just been shown that there is no discernable AS bias upon integration, indiciating that the process of Alu integration (ie: TPRT) does not likely contribute to AS bias. Alu, L1, and SVA are all integrated through the process of TPRT, and all have significant differences in the proportion of AS and S elements. Therefore, it is pertinent to this study to determine if AS bias is restricted to elements which are integrated by TPRT. The null hypothesis that transposons inserted by non-TPRT mechanisms had equal proportions of sense and antisense elements was examined. Similar to Alu, a pooled group of DNA transposons had a significant increase of AS elements over S elements (probability of AS = \num{0.540}; \num{95}\% CI = \num{0.538} - \num{0.543}; p < \num{1.64}e\num{-190}), indicating that AS bias is not restricted to the RT-specific form of integration, TPRT.
-%}
-%AS bias changes over evolutionary time
-     \textnormal\Large\textit{\\\\\num{2.3 } Antisense Bias Increases Over Evolutionary Time}
 
-    \textnormal\Large\textit{\hspace{-15pt}\textnormal{2.3.1 } Antisense bias of Alu is Constant across Reference Subfamilies\\}
-%     \large{
+%TPRT
+\subsection{AS bias is present in transposons integrated by non-TPRT mechanisms}
+
+The overarching goal of this chapter was to discriminate between the RT integration process and selection over time, as being responsible for AS bias. It has just been shown that there is no discernable AS bias upon integration, indiciating that the process of Alu integration (ie: TPRT) does not likely contribute to AS bias. Alu, L1, and SVA are all integrated through the process of TPRT, and all have significant differences in the proportion of AS and S elements. Therefore, it is pertinent to this study to determine if AS bias is restricted to elements which are integrated by TPRT. The null hypothesis that transposons inserted by non-TPRT mechanisms had equal proportions of sense and antisense elements was examined. Similar to Alu, a pooled group of DNA transposons had a significant increase of AS elements over S elements (probability of AS = \num{0.540}; \num{95}\% CI = \num{0.538} - \num{0.543}; p < \num{1.64}e\num{-190}), indicating that AS bias is not restricted to the RT-specific form of integration, TPRT.
+
+%AS bias changes over evolutionary time
+\section{Antisense Bias Increases Over Evolutionary Time}
+[Write a mini intro here]
+
+\subsection{Antisense bias of Alu is Constant across Reference Subfamilies}
 Since Alu present in the reference genome have a significantly larger proportion of AS elements than newly integrated elements, it is likely that this change in proportion was due to a progressive action over time. It is important to examine the change in AS bias over time, since a change over time is indicative of selection acting on the elements depending on the orientation within a gene. The fact that RTs can have a selectable effect on genes depending on their orientation would then allow us to study the effects that RTs are having on genes. 
-%    }
     
 To examine the change of pAS over time Alu and L1 were grouped by their predefined subfamilies. Elements within a subfamily have similar residence times in the genome [REFs]. The relative age of a subfamily is often measured as the average distance of all elements within a subfamily from the respective consensus sequence (milliDiv). Millidiv was therefore used as a measurement of time where smaller values of millidiv corresponded to younger elements with less residence time in the population, and larger millidiv corresponded to older elements with longer residence times. AS bias was compared across between Alu of the same subfamily (figure \ref{fig:pAS_subfam}. There was a slight increase in AS bias with increasing millidiv, though, this increase was not signficant (slope: 4.1e-04; F-test p = \num{0.38}). 
 
@@ -66,8 +105,7 @@ To examine the change of pAS over time Alu and L1 were grouped by their predefin
         \label{fig:pAS_subfam}
     \end{figure}
  
-     \textnormal\Large\textit{\\\textnormal{2.3.2 } Antisense bias of Alu increases Quickly Over Evolutionary Time\\}
-    %\large{
+\subsection{Antisense bias of Alu increases quickly over evolutionary time}
 Since AS bias in reference Alu was independent of the residence time in the population, I was led to examine the hypothesis that AS bias in Alu is achieved rapidly after integration and is then left unchanged after the element has become fixed in the population. To examine the change of AS proportion on shorter time scales than the previous analysis, the proportion of AS of young Alu were compared to Alu that were shared among all three populations (group c). Shared Alu are assumed to have longer residence times in the genome than young Alu because shared elements must have integrated prior to the split of YRI, CEU, and CHBJPT, while young elements are assumed to have inserted after the split. The higher average allele frequencies of shared Alu compared to group population-specific Alu substantiates this assumption ($AF_{\text{YRI}}$ = 0.09 ; $AF_{\text{CEU}}$ = 0.07 ; $AF_{\text{CHBJPT}}$ = 0.07 ; $AF_{\text{shared}}$ =  0.24. Although the shared Alu had a mean frequency of 0.24, there were elements with allele frequencies of 1 within a specific population (figure \ref{fig:shared_freq}). The proportion of AS in the young subset of Alu was significantly smaller than polymorphic Alu that were shared among all three populations ($propAS_{\text{young}}$ = 0.48; $propAS_{\text{shared}}$ = 0.54; \num{95}\% CI = \num{-0.11} - \num{-0.02}; p < \num{0.01}). This indicates that the change to AS bias of Alu occured quickly over evolutionary time.
 
     %Figure pAS
@@ -80,10 +118,8 @@ Since AS bias in reference Alu was independent of the residence time in the popu
 
 
 These results indicate that Alu are initially integrated with no AS bias, AS and S Alu are then differentially maintained setting up the reference AS bias. And this event occurs relatively quickly on evolutionary time scales (ie: prior to fixation).
-%}
 
-
- \textnormal\Large\textit{\\\\\textnormal{2.3.3 } Antisense bias of L1 Increases Across Reference Subfamilies\\}
+\subsection{Antisense bias of L1 Increases Across Reference Subfamilies}
 L1 are present in high enough numbers in the reference genome to be analyzed for AS bias across subfamilies. The combined Hg19 reference L1 AS bias is significantly different from 0.50 (probability of AS = \num{0.656}; \num{95}\% CI = \num{0.654} - \num{0.657}; p < \num{1.98}e{-323}). The AS bias of L1 is larger than that of Alu. Furthermore, contrary to the results from Alu, L1 exhibit a significant association between AS bias and relative age as measured by millidiv (F-test p < \num{2.66}e{-06}) (figure \ref{fig:pAS_l1_2}). 
 
     %Figure pAS_subfamily L1
@@ -96,14 +132,14 @@ L1 are present in high enough numbers in the reference genome to be analyzed for
 
 
 %Signs of purifying selection
-     \textnormal\Large\textit{\\\\\num{2.4 } Differences in Selection Between S and AS Alu and L1\\}
-  %  \large{
+\section{Differences in Selection Between S and AS Alu and L1\\}
+
 The results so far have shown that AS bias increases over time, with Alu increasing relatively quickly and L1 continuing to increase over larger periods of time. If selection within genes is playing a role in this change in AS bias, there are three likely explanations. 1.) Antisense RTs undergo positive selection within genes, 2.) Sense RTs undergo negative (purifying) selection within genes, 3.) Both (1) and (2) are true. Previous reports have indicated that on a genome-wide level, Alu undergo purifying selection \cite{Stewart2011}, though [REF] has proposed that RTs are under positive selection within genes.
 
 In 1975 Li calculated that on average, deleterious alleles have shorter residence times in a population. In other words, they will be younger than neutral or advantageous alleles \cite{Li1975}. The logic behind this finding lies in that, in populations of equal size, an allele is more likely to be passed on to the next generation if it is neutral or positive compared to an allele that is deleterious. The neutral or positive allele will therefore remain in the population longer, accumulating a longer residence time in the genome. Meanwhile, new alleles, both advantageous and deleterious will continually appear. While the advantageous alleles are retained, the deleterious alleles will continually be lost, with only young alleles that have replaced them remaining present. Therefore at any discrete point in time, the deleterious alleles will be younger on average than the advantageous or neutral alleles.
- %   }
-     \textnormal\Large\textit{\\\\\textnormal{2.4.1 }Purifying selection of retrotransposons in genes\\}
- %   \large{
+
+\subsection{Purifying selection of retrotransposons in genes}
+
 Using the rationale presented in Li, 1975; the relative force of selection can be compared between two, otherwise equal, alleles by calculating their respective residence times in a population. RTs within a subfamily are defined by the fact that they amplified at similar points in time [REF]. Therefore, barring any forces of selection, the mean ages of AS and S RTs of the same subfamily should be equivalent.
 
 Estimates of the expected effect that differing rates of selection have on the cummulative age of the RT were determined through simulation. A synthetic genome was constructed that lacked any RTs. For each generation, g, x new RTs were integrated. These RTs then survived on to the next generation with probability, p$_{\text{a}}$ for RTs of type 'a', and p$_{\text{b}}$ for RTs of type 'b'. The ratio of p$_{\text{b}}$ and p$_{\text{a}}$ is denoted as the ratio of b/a. RTs that sucessfully passed to the next generation were then marked as one generation older. Since, Alu and L1 show different rates of change in AS bias, the simulations were run with two different models. The first model (constant) was similar to what was seen in L1; where AS bias changed constantly over time. The assumption here was that the constant change in AS bias was due to a constant low-level selection acting on L1. The second model (immediate) was similar to what was seen for Alu; where the AS bias changed quickly over time and then remained constant. The assumption was that selection acted on the RT quickly, and then the element reached fixation in the population and would not be lost.
@@ -173,13 +209,13 @@ To determine what variables might be effecting the difference in AS bias between
         }
         \label{fig:l1_t_length}
     \end{figure}
-%}
- \textnormal\Large\textit{\\\textnormal{2.4.2 }Purifying selection of RTs in genes\\}
-%\large{
+
+\subsection{Purifying selection of RTs in genes}
+
 At this point we have shown that Alu in the S orientation are significantly younger than Alu in the AS orientation. L1, however, show a mixed effect, with some subfamilies having a significant difference in age between S and AS, though this is true in both directions. Meaning sometimes S is younger and sometimes AS is younger.
 
 From this analysis the difference in selection between AS and S is known, however the direction of selection remains unknown. Meaning, the results are ambiguous to knowing whether S are younger than AS because S are undergoing negative selection, or because AS are undergoing positive selection. To determine the direction of selection, intergenic RTs were used as a reference point. When compared to intergenic Alu of the same subfamily, Alu in genes were younger in age (figure \ref{fig:age_alu_rel}). S Alu were also reduced in age compared to AS Alu within the older subfamilies (AluJ: Student's t-test p < 1.5e-04; AluS: Student's t-test p < 1.3e-03; AluY: Student's t-test p = 0.73). This supports the hypothesis that Alu undergo purifying selection within genes with Alu in the S orientation being purified to a stronger degree than AS. 
-%}
+
     %Figure Age of Alu normalized to Intergenic
     \begin{figure}[!h]
         \centering
@@ -189,7 +225,7 @@ From this analysis the difference in selection between AS and S is known, howeve
         }
         \label{fig:age_alu_rel_int}
     \end{figure}
-%\large{
+
 Similarly, there was a noted decrease in the age of L1 in genes compared to intergenic. This indicates that purifying selection was acting more on L1 in genes than intergenically. Alternatively to Alu, AS and S L1 were similar in age (L1M: Student's t-test p = 0.32; L1P: Student's t-test p = 0.65). 
 
     %Figure Age of L1 normalized to Intergenic
@@ -202,13 +238,10 @@ Similarly, there was a noted decrease in the age of L1 in genes compared to inte
         \label{fig:age_l1_rel_int}
     \end{figure}
     
-%}
-     \textnormal\Large\textit{\\\textnormal{2.4.3 } Age of RTs in regions with extremes of AS bias\\}
+\subsection{Age of RTs in regions with extremes of AS bias}
 %To further test the association of younger RTs with antisense bias 
     
-     \textnormal\Large\textit{\\\textnormal{2.4.4 } Lack of Purifying Selection of RTs on ChrY\\}
-
-
+\subsection{Lack of Purifying Selection of RTs on ChrY}
 
 }
 
