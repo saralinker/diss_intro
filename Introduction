@@ -65,7 +65,7 @@
 
 %Document
 \begin{document}
-%\tableofcontents
+\tableofcontents
 \doublespace\large{
 \chapter{\\INTRODUCTION }
     %Henry Miller Quote
@@ -137,26 +137,32 @@ SVA is partially composed of Alu sequence. It is a composite element that contai
 
 Alu, L1, and SVA are mobilized through the process of target-primed reverse transcription (TPRT) \cite{Raiz2011,Dewannieux2003,Ostertag2001}. TPRT is a method of retrotransposition, meaning that it involves an RNA-intermediate, as opposed to the cut-and-paste methods of transposition that are restricted to DNA. In humans the enzymes that carry out TPRT are encoded by the L1 retrotransposon. The process begins by the transcription of the ORF1 and ORF2 components of full-length L1. ORF2p is required for integration of L1, however it is not necessary, but enhances, the integration of Alu \cite{Wallace2008}. Alu and L1 must also be transcribed for the process of TPRT to occur. It has been hypothesized that RNA transcribed by Pol-III is integrated more quickly than Pol-II \cite{Kroutter2009}. Indeed Alu, which are transcribed by Pol-III, integrate at higher rates than that of L1, which is transcribed by Pol-II. Upon transcription of the retrotransposon RNA, the RNA is shuttled out of the nucleus where it forms an ribonucleoprotein (RNP) with the L1 ORF1p and ORF2p \cite{Doucet2010,Hohjoh1996,Kulpa2005}. A number of host factors are also be present in this RNP that contribute to mobilization. For example, PABPC1, MOV10, UPF1, and PCNA have all been identified in associated with L1 RNPs \cite{Taylor2013}. A subset of these proteins repress retrotransposition, such as MOV10 \cite{Arjan-Odedra2012}, while some of them enhance it. PABPC1 is protein that enhances retrotransposition through binding the polyadenosine (polyA) tail of mRNAs \cite{DelCampo2009}. The knockdown of polyA binding proteins such as PABPC1 has been shown to reduce retrotransposition while retaining the transcription and translation capacity of L1 \cite{Dai2012}. Interestingly, it has also been shown that retrotransposons with longer A-tails are more efficient at retrotransposition \cite{Comeaux2009}. 
 
-Upon formation of the RNP, the complex is reintroduced into the nucleus. The process of insertion begins by the ORF2p cleaving a single stranded nick at the A-T phosphodiester bond in an \rq AATTTT\rq  motif \cite{Feng1996}. Although there are known hotspots of integration \cite{Wimmer2011}, it is still hypothesized that the selection of the \rq AATTTT\rq motif is random \cite{Ovchinnikov2001}. After the first strand is nicked, the stretch of adenosine nucelotides at the end of the mobilized RNA hybridizes to the \rq TTTT\rq s of the nicked DNA. Reverse transcription begins from this primed region, copying the retrotransposon RNA into cDNA from the 3\rq-OH end of the \rq TTTT\rq . The reverse transcription proceeds from this point. Alu are short, ~300bp elements, that are normally completely reverse transcribed. Full-length L1 however, are ~6kb in length, and the retrotransposition process does not always proceed until completion. The incomplete processing of L1 retrotransposons is termed "5\rq - transduction" and many of L1 in the human genome exist in this form at approximately 1kb in length. The conclusion of TPRT results in a duplication of the flanking DNA sequence, termed target-site duplications \cite{Kojima2010}. These regions are often used to validate whether an insertion is real, or whether it is false positive. In rare events, the process of TPRT is accompanied by structural rearrangements in the region. The link between retrotransposition and structural rearrangements will be discussed more in section 1.6(??????).
+Upon formation of the RNP, the complex is reintroduced into the nucleus. The process of insertion begins by the ORF2p cleaving a single stranded nick at the A-T phosphodiester bond in an \rq AATTTT\rq  motif \cite{Feng1996}. Although there are known hotspots of integration \cite{Wimmer2011}, it is still hypothesized that the selection of the \rq AATTTT\rq motif is random \cite{Ovchinnikov2001}. After the first strand is nicked, the stretch of adenosine nucelotides at the end of the mobilized RNA hybridizes to the \rq TTTT\rq s of the nicked DNA. Reverse transcription begins from this primed region, copying the retrotransposon RNA into cDNA from the 3\rq-OH end of the \rq TTTT\rq . The reverse transcription proceeds from this point. Alu are short, ~300bp elements, that are normally completely reverse transcribed. Full-length L1 however, are ~6kb in length, and the retrotransposition process does not always proceed until completion. The incomplete processing of L1 retrotransposons is termed "5\rq - transduction" and many of L1 in the human genome exist in this form at approximately 1kb in length. The conclusion of TPRT results in a duplication of the flanking DNA sequence, termed target-site duplications \cite{Kojima2010}. These regions are often used to validate whether an insertion is real, or whether it is false positive. In rare events, the process of TPRT is accompanied by structural rearrangements in the region. The link between retrotransposition and structural rearrangements will be discussed more in section \ref{sec:rear}.
 
 %Subfamilies of Retrotransposons
 \section{Subfamilies of retrotransposons}
-Although L1 is present in all mammals currently studied, each species has a distinctive sequence of L1. L1 is subdivided into subfamilies based on these distinctions with the major classifications being L1M, L1P, and L1Hs.
 
-Presently Alu is subdivided into subfamilies based on diagnostic mutations in the consensus sequence \cite{Batzer2002}. The oldest subfamily is AluJ, followed by AluS, and finally AluY.
+Each RT family (ie: L1, Alu, and SVA), can be divided in subfamilies based on similar mutations in their sequence. The underlying principle of this form of grouping is that RTs within a subfamily are likely to have mobilized around the same time in evolutionary history. Eventually mutations will arise creating a new subfamily, and this subfamily will then be active in the host genome. There are highly active elements ("hot") that are responsible for most of the mobilization within subgroups. These "hot" master elements may mobilize other active elements as well, which then produce more insertions, but they account for most of the mobilization. It is thought that their retrotransposition is enhanced due to ...[WHAT?]. There are also other master elements that work at a much slower rate (stealth), perhaps with decreased selective pressure as well as the ability to mobilize new elements \cite{Cordaux2009}. 
 
-Check this paper %5-Transducing SVA retrotransposon groups spread efficiently throughout the human genome
+It is estimated that L1 have 80 - 100 master elements that are still mobilizing in humans today, though this might be an underestimate since the work supporting this finding was produced from an early build of the human genome \cite{Brouha2003}. Only a small portion of these mobilization competant L1 are thought to be "hot" elements \cite{Brouha2003,Lutz2003}. The "hot" L1 in the human genome are a part of the human-specific subfamily L1-Ta\cite{Brouha2003}. L1 subfamilies have been evolving for approximately 170 million years, since before the marsupial eutherian split \cite{Smit1996}, and in a direct lineage for over 40 million years \cite{Khan2006}. The most active L1 were present in the primate genome and amplified between 40 and 12 mya \cite{Khan2006}. There are over 100 L1 subfamilies identified within humans \cite{SmitAfaHubleyRandGreen}, with the major subfamilies defined as L1M, L1P, and L1Hs. L1-Ta is the only presently active subfamily with a germline insertion rate of 1 in 270 births \cite{Ewing2011}. 
+
+The burst of Alu mobilzation occured around 35 - 60 mya \cite{Shen1991}. There are an estimate 143 master Alu presently active in the human genome. Conversely to L1, there are multiple subfamilies underlying these elements, and there is a higher rate of total insertion (1 in 20 births). There are over 30 subfamilies of Alu with three major families, from oldest to youngest: AluJ, AluS, and AluY. Although evidence from population studies suggests that the only active subfamilies of Alu are with the AluY lineage \cite{Stewart2011}, there is some evidence to suggest that AluS may retain some ability for mobilization \cite{Bennett2008}. There are many factors associated with the propensity for an Alu sequence to survive and mobilize in the human genome. For example, an increase affinity for the SRP9/14 protein dimer enhances Alu activity \cite{Bennett2008}. Similar to other moblized elements, and increased A-tail also enhances activity \cite{Dewannieux2005,Wagstaff2012,Dai2012}. 
+
+SVA are the youngest of the three elements, originating around 25 mya \cite{Wang2005a}, and contain very few diagnostic mutations. Due to this there are only six subfamilies of SVA. The burst of SVA transcription and concurrent mobilization may be due to the happenstance insertion of SVA near an active gene promoter \cite{Damert2009}. SVA, as a group, show remarkable ability for 5'-transduction of external gene promoters \cite{Damert2009}. The transduction of these promoters results in the mobilization of non-repetitive DNA to new genomic locations, a concept that will be revisited in section \ref{sec:rear}.
+
+
+%Insertion of Retrotransposons During Primate Evolution
+\section{Insertion of Retrotransposons During Primate Evolution}
+
+As mentioned previously, the most active stage of mobilization of L1 and Alu and SVA, was during primate evolution. 
+Recently, Arora et al. have shown that genes differentially expressed between human and chimp are significantly enriched for indels that contain retrotransposons (RT)  \cite{Arora2011}.
+
 
 %Expression and activity of RTs
 \section{Retrotransposon activity}
 
 Talk about tissue specific expression, heat shock viral induction etc.... ALso talk about piwi and other host factors that play a role in reducing RT activity
     
-
-
- %Insertion of Retrotransposons During Primate Evolution
-\section{Insertion of Retrotransposons During Primate Evolution}
- Recently, Arora et al. have shown that genes differentially expressed between human and chimp are significantly enriched for indels that contain retrotransposons (RT)  \cite{Arora2011}. The 5\rq -region of the human specific L1 is less conserved and contains regions with higher GC-content and with homology to the non-autonomous RT Alu \cite{Scott1987}.
 
 
 %Distribution of Retrotransposons 
@@ -219,11 +225,14 @@ N$_{\textit{e}}$ (equation \ref{rfix}) is a key determinant in the ability for s
  
 %Structural Rearrangments associated with TPRT
 \section{Structural rearrangements associated with retrotransposition}
-TAlk ABOUT structural rearrangements and TPRT HERE Try this paper -->{LINE-1 Endonuclease-Dependent Retrotranspositional Events Causing Human Genetic Disease: Mutation Detection Bias and Multiple Mechanisms of Target Gene Disruption}
+\label{sec:rear}
+Other than the direct amplification of the RT, there are other structural effects of retrotransposition, such as rearrangements, transductions, and even the repair of broken DNA. Structural rearrangements are a common consequence of RT integration. The process of retrotransposition involves double-strand break formation, and during the insertion process the 
+
+-->{LINE-1 Endonuclease-Dependent Retrotranspositional Events Causing Human Genetic Disease: Mutation Detection Bias and Multiple Mechanisms of Target Gene Disruption}
 
 Although, RTs are often integrated through the canonical mechanisms of TPRT, there is also L1 retrotransposition that is independent of the endonuclease. [go back to paper --> Endonuclease-independent LINE-1 retrotransposition at mammalian telomeres] [Go more into this and DSB]
 
-
+go over transduction --> Frequent human genomic DNA transduction driven by LINE-1 retrotransposition
 %Retrotransposons as sources of non-coding regulation
 \section{Retrotransposons as Non-coding Sources of Regulating Gene Expression}
 
@@ -233,6 +242,7 @@ Although, RTs are often integrated through the canonical mechanisms of TPRT, the
 
 TALK about disease as well as advantageous mutations. This section should be huge-normous. OR gynormous....which ever one suits you best.
 
+paper -> Mutation in a primate-conserved retrotransposon reveals a noncoding RNA as a mediator of infantile encephalopathy
 
         %Closing of the intro
 \section{Motivation}
