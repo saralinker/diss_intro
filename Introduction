@@ -65,7 +65,7 @@
 
 %Document
 \begin{document}
-\tableofcontents
+%\tableofcontents
 \doublespace\large{
 \chapter{\\INTRODUCTION }
     %Henry Miller Quote
@@ -226,7 +226,7 @@ N$_{\textit{e}}$ (equation \ref{rfix}) is a key determinant in the ability for s
 %Structural Rearrangments associated with TPRT
 \section{Structural rearrangements associated with retrotransposition}
 \label{sec:rear}
-Other than the direct amplification of the RT, there are other structural effects of retrotransposition, such as rearrangements, transductions, and even the repair of broken DNA. Structural rearrangements are a common consequence of RT integration. The process of retrotransposition involves double-strand break formation, and during the insertion process the 
+Other than the direct amplification of the RT, there are other structural effects, such as deletions, rearrangments, and transduction events that are associated with the process of retrotransposition. Deletions are a often result of the process of TPRT. There was an estimated 7.5 megabases (Mb) of sequence lost in primates and 18 kilobases (kb) between human and chimp due to L1 integration alone \cite{Han2005}. Large (2 -14 kb) deletions are common in cell culture \cite{Gilbert2005,Gilbert2002,Symer2002}, however studies comparing primate genomes reveal most deletions are either very small ( < 100 bp) or large (> 1 kb) \cite{Han2005}. It is possible that the discrepancy between cell culture and comparative studies is due to selection against large deletion events. Deletions occuring in cell culture range from local insertional deletions to intrachromosomal deletions \cite{Gilbert2005}. These deletions create variability in the human population, but may also be a process associated with cancer \cite{Raschke2005, Florl2003}. 
 
 -->{LINE-1 Endonuclease-Dependent Retrotranspositional Events Causing Human Genetic Disease: Mutation Detection Bias and Multiple Mechanisms of Target Gene Disruption}
 
@@ -243,6 +243,8 @@ go over transduction --> Frequent human genomic DNA transduction driven by LINE-
 TALK about disease as well as advantageous mutations. This section should be huge-normous. OR gynormous....which ever one suits you best.
 
 paper -> Mutation in a primate-conserved retrotransposon reveals a noncoding RNA as a mediator of infantile encephalopathy
+
+paper -> A systematic analysis of LINE-1 endonuclease-dependent retrotranspositional events causing human genetic disease
 
         %Closing of the intro
 \section{Motivation}
