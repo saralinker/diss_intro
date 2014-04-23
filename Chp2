@@ -97,6 +97,7 @@ To examine the change of pAS over time Alu and L1 were grouped by their predefin
         \caption{\textbf{Change in pAS Across Reference Alu\\}AS/S ratios were calculated for each Alu subfamily and plotted versus the mean deviation from the subfamily consensus sequence (millidiv). AS bias was regressed on millidiv to obtain the fitted line (blue; p = 0.38).}
         \label{fig:pAS_subfam}
     \end{figure}
+    
  
 \subsection{Antisense bias of Alu increases quickly over evolutionary time}
 Since AS bias in reference Alu was independent of the residence time in the population, I was led to examine the hypothesis that AS bias in Alu is achieved rapidly after integration and is then left unchanged after the element has become fixed in the population. To examine the change of AS proportion on shorter time scales than the previous analysis, the proportion of AS of young Alu were compared to Alu that were shared among all three populations (group c). Shared Alu are assumed to have longer residence times in the genome than young Alu because shared elements must have integrated prior to the split of YRI, CEU, and CHBJPT, while young elements are assumed to have inserted after the split. The higher average allele frequencies of shared Alu compared to group population-specific Alu substantiates this assumption ($AF_{\text{YRI}}$ = 0.09 ; $AF_{\text{CEU}}$ = 0.07 ; $AF_{\text{CHBJPT}}$ = 0.07 ; $AF_{\text{shared}}$ =  0.24. Although the shared Alu had a mean frequency of 0.24, there were elements with allele frequencies of 1 within a specific population (figure \ref{fig:shared_freq}). The proportion of AS in the young subset of Alu was significantly smaller than polymorphic Alu that were shared among all three populations ($propAS_{\text{young}}$ = 0.48; $propAS_{\text{shared}}$ = 0.54; \num{95}\% CI = \num{-0.11} - \num{-0.02}; p < \num{0.01}). This indicates that the change to AS bias of Alu occured quickly over evolutionary time.
@@ -131,133 +132,10 @@ The results so far have shown that AS bias increases over time, with Alu increas
 
 In 1975 Li calculated that on average, deleterious alleles have shorter residence times in a population. In other words, they will be younger than neutral or advantageous alleles \cite{Li1975}. The logic behind this finding lies in that, in populations of equal size, an allele is more likely to be passed on to the next generation if it is neutral or positive compared to an allele that is deleterious. The neutral or positive allele will therefore remain in the population longer, accumulating a longer residence time in the genome. Meanwhile, new alleles, both advantageous and deleterious will continually appear. While the advantageous alleles are retained, the deleterious alleles will continually be lost, with only young alleles that have replaced them remaining present. Therefore at any discrete point in time, the deleterious alleles will be younger on average than the advantageous or neutral alleles.
 
-\subsection{Purifying selection of retrotransposons in genes}
+\subsection{Purifying selection of RTs in genes}
 
 Using the rationale presented in Li, 1975; the relative force of selection can be compared between two, otherwise equal, alleles by calculating their respective residence times in a population. RTs within a subfamily are defined by the fact that they amplified at similar points in time [REF]. Therefore, barring any forces of selection, the mean ages of AS and S RTs of the same subfamily should be equivalent.
 
-Estimates of the expected effect that differing rates of selection have on the cummulative age of the RT were determined through simulation. A synthetic genome was constructed that lacked any RTs. For each generation, g, x new RTs were integrated. These RTs then survived on to the next generation with probability, p$_{\text{a}}$ for RTs of type 'a', and p$_{\text{b}}$ for RTs of type 'b'. The ratio of p$_{\text{b}}$ and p$_{\text{a}}$ is denoted as the ratio of b/a. RTs that sucessfully passed to the next generation were then marked as one generation older. Since, Alu and L1 show different rates of change in AS bias, the simulations were run with two different models. The first model (constant) was similar to what was seen in L1; where AS bias changed constantly over time. The assumption here was that the constant change in AS bias was due to a constant low-level selection acting on L1. The second model (immediate) was similar to what was seen for Alu; where the AS bias changed quickly over time and then remained constant. The assumption was that selection acted on the RT quickly, and then the element reached fixation in the population and would not be lost.
-
-The results from the constant simulations show that with a decreasing b/a ratio, there was an increase in the age difference between a and b. Similarly, there was an increase difference between a and b in the immediate simulations, however the difference was smaller at similar ratios. Interestingly, the AS bias is not dependent on the simulation type, or therefore the age difference.
-
-%(figure \ref{fig:sim_diagram}). 
-
-    %%Figure schematic showing the logic of the program
-    %\begin{figure}[!h]
-    %    \centering
-    %    \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{sim_diagram.pdf}
-    %    \caption{Logic of Ageing Simulation}
-    %    \label{fig:sim_diagram}
-    %\end{figure}
-
-    %Figure Simulation with Constant Selection Over Time
-    \begin{figure}[!h]
-        \centering
-        \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{sim_age.pdf}
-        \caption{\textbf{Change in cummulative age of elements depending on b/a ratio\\} Differential forces of selection were simulated by creating two elements each with a discrete selective force acting upon it (ie: (a) and (b)). The probability of passing to the next generation was held constant across all simulations for (a) while (b) was increased from 1/100th of (a) to equivalent to (a). Both the left and right figures shows the resulting ages of (a) and (b) elements after 500 generations, with 50 new integrations per generation, and p(survival to the next generation) equal to the value on the x-axis. In the left figure all forces of selection happened within the first generation, mimicking a large phenotypic effect. This "quick" selection is an extreme representation of the hypothesized selective force acting on Alu. In the right figure, selection continued to act on all elements independent of the residence time in the genome. This mimicks lower phenotypic effects.}
-        \label{fig:sim_cons}
-    \end{figure}
-    
-    %Figure Simulation with Constant Selection Over Time_ RAtio of b/a
-    \begin{figure}[!h]
-        \centering
-        \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{sim_ratio.pdf}
-        \caption{\textbf{Change in antisense bias depending on b/a ratio\\}The simulations from which these figures were derived are the same simulations from figure \ref{fig:sim_cons}. Counts of (a) and (b) elements are plotted in orange and red respectively. These figures show that despite changes in the age of the elements due to different modes of selection, the AS bias remains relatively steady. }
-        \label{fig:sim_cons_ratio}
-    \end{figure}
-
-The age of AS and S Alu were calculated as millidiv from the respective consensus sequence. The mean ages of AS and S Alu were compared within each subfamily using a Student's t-test. Most elements were significantly younger in the S orientation when compared to elements of the same family in the AS direction, with a mean test statistic of \num{-3.28} (figure \ref{fig:age_alu}).
-
-
-    %Figure Age of Alu
-    \begin{figure}[!h]
-        \centering
-        \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{age_alu.pdf}
-        \caption{\textbf{Sense oriented Alu are Younger than Antisense\\}
-        More here
-        }
-        \label{fig:age_alu}
-    \end{figure}
-    
-Conversely, the mean test statistic for L1 was -0.38, and the effect of orientation on age was much smaller with a majority of the test statistics spanning zero (figure \ref{fig:age_l1}). 
-    
-    %Figure Age of L1
-    \begin{figure}[!h]
-        \centering
-        \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{age_l1.pdf}
-        \caption{\textbf{Sense oriented L1 are Younger than Antisense\\}
-        More here
-        }
-        \label{fig:age_l1}
-    \end{figure}
-    
-
-To determine what variables might be effecting the difference in AS bias between Alu and L1, the dependent variable of length of L1 was added [GO BACK AND DO MORE ANALYSIS. SINGLE LINE PER ALU WITH FAMILYM MILLIDIV AND LENGTH. LOGREG; Y= AS/S; X= SUB + LENGTH].
-    
-    %Figure Age of L1 with length as a dependent variable
-    \begin{figure}[!h]
-        \centering
-        \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{l1_t_length.pdf}
-        \caption{\textbf{L1 AS bias is dependent on length\\}
-        More here
-        }
-        \label{fig:l1_t_length}
-    \end{figure}
-
-\subsection{Purifying selection of RTs in genes}
-
-At this point we have shown that Alu in the S orientation are significantly younger than Alu in the AS orientation. L1, however, show a mixed effect, with some subfamilies having a significant difference in age between S and AS, though this is true in both directions. Meaning sometimes S is younger and sometimes AS is younger.
-
-From this analysis the difference in selection between AS and S is known, however the direction of selection remains unknown. Meaning, the results are ambiguous to knowing whether S are younger than AS because S are undergoing negative selection, or because AS are undergoing positive selection. To determine the direction of selection, intergenic RTs were used as a reference point. When compared to intergenic Alu of the same subfamily, Alu in genes were younger in age (figure \ref{fig:age_alu_rel}). S Alu were also reduced in age compared to AS Alu within the older subfamilies (AluJ: Student's t-test p < 1.5e-04; AluS: Student's t-test p < 1.3e-03; AluY: Student's t-test p = 0.73). This supports the hypothesis that Alu undergo purifying selection within genes with Alu in the S orientation being purified to a stronger degree than AS. 
-
-    %Figure Age of Alu normalized to Intergenic
-    \begin{figure}[!h]
-        \centering
-        \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{age_alu_rel_int.pdf}
-        \caption{\textbf{Alu undergo relatively higher levels of purifying selection in genes\\}
-        More here
-        }
-        \label{fig:age_alu_rel_int}
-    \end{figure}
-
-Similarly, there was a noted decrease in the age of L1 in genes compared to intergenic. This indicates that purifying selection was acting more on L1 in genes than intergenically. Alternatively to Alu, AS and S L1 were similar in age (L1M: Student's t-test p = 0.32; L1P: Student's t-test p = 0.65). 
-
-    %Figure Age of L1 normalized to Intergenic
-    \begin{figure}[!h]
-        \centering
-        \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{age_l1_rel_int.pdf}
-        \caption{\textbf{L1 undergo relatively higher levels of purifying selection in genes\\}
-        More here
-        }
-        \label{fig:age_l1_rel_int}
-    \end{figure}
-    
-\subsection{Age of RTs in regions with extremes of AS bias}
-%To further test the association of younger RTs with antisense bias 
-    
-     %Figure 
-    \begin{figure}[!h]
-        \centering
-        \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{selection5_3.png}
-        \caption{\textbf{AS bias at the 5\rq and 3\rq ends\\}
-        More here
-        }
-        \label{fig:selection5_3}
-    \end{figure}
-    
-    % Wed Apr 23 10:23:57 2014
-    \begin{table}[ht]
-    \centering
-    \begin{tabular}{rlrrrr}
-      \hline
-     & Alu & N & {Median Age} & ci1 & ci2 \\ 
-      \hline
-    1 & S & 36298 & 120.30 &  61 & 188 \\ 
-      2 & AS & 52930 & 121.20 &  62 & 189 \\ 
-      3 & Intergenic & 600512 & 121.50 &  60 & 192 \\ 
-       \hline
-    \end{tabular}
-    \end{table}
-    
          %Figure 
     \begin{figure}[!h]
         \centering
@@ -279,6 +157,7 @@ Similarly, there was a noted decrease in the age of L1 in genes compared to inte
     \end{figure}
     
 \subsection{Lack of Purifying Selection of RTs on ChrY}
+
 
 
              %Figure 
