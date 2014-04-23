@@ -2,15 +2,17 @@
 % Slinker, 03/31/2014
 
 %Preamble
+%\documentclass[12bp]{article}
 \documentclass[12bp]{report}
 \usepackage[top=1in, bottom=1in, left=1.25in, right=1in]{geometry} %geom has to be loaded before fancy header
-
+\usepackage{pgfplots}
+\usepackage{pgfplotstable}
 \usepackage{fancyhdr}
 \pagestyle{fancy} %Control over headers and footers
     \fancyhf{}%clears all fieds
     \lhead[R]{\rightmark} %add section title to the page
     \cfoot{\thepage}    %add page number to center bottom
-    \renewcommand{\headrulewidth}{0.05pt} % 0 gets rid of the lines on top 
+    \renewcommand{\headrulewidth}{0.1pt} % 0 gets rid of the lines on top 
     \renewcommand{\footrulewidth}{0pt} % 0 gets rid of the line on bottom
     \fancypagestyle{plain}{% Changes all chapter pages to this format (by changing plain style)
         \fancyhf{}         % clear all header and footer fields
@@ -26,13 +28,6 @@
 \usepackage[T1]{fontenc}
 \usepackage[final]{pdfpages}
 \usepackage{apacite} %for citing with APA
-%\newenvironment{tightcenter}{% for self-made chapter headings
-%  \setlength\topsep{0pt}
-%  \setlength\parskip{0pt}
-%  \begin{center}
-%}{%
-%  \end{center}
-%}
 \usepackage{amsmath}
 
 \usepackage{titlesec} %Re-format the chapter title
@@ -71,13 +66,11 @@
 \chapter{\\ORIGINS OF THE RETROTRANSPOSON ANTISENSE BIAS}
 \doublespace\large{
 
-%ASbias upon insertion
-\section{Retrotransposon Antisense Bias and the Process of Integration}
-
 It is possible that the distribution of RTs is a direct effect of selection on RTs, and is therefore indicative of the local effect of RTs on genes. For example, low RT density would indicate regions sensitive to RTs, thus natural selection purifies them from those regions (i.e: near exons \ref{Zhang2011}). Similarly high density regions would indicate either a neutral or positive response to a RT insertion. One of the published patterns of distribution is the tendency of RTs to be present in the antisense (AS) orientation within genes more often than the sense (S) orientation. This has been termed the antisense bias (AS bias). An interesting feature of this bias is that it peaks near the transcription start site \ref{Medstrand2002}. It is possible that this altered distribution is due to natural selection acting differently on the same RT in different orientations. If this is true, then the AS bias can be used to measure regional sensitivities to RT insertions. However possible, there is also another potential cause of this bias that must be ruled out, and that is that the AS-bias does not accumulate over time through selection, but during the integration process. To distinguish whether AS bias is a result of integration or selection over time, the distribution of relatively recent Alu insertions were examined, as well as the change in AS bias over evolutionary time. 
     
 %1000 genomes by population and Faulkner data
-
+%ASbias upon insertion
+\section{Retrotransposon Antisense Bias and the Process of Integration}
 \subsection{Young AS and S Alu are Present in Equal Proportions}
 Alu insert at a higher rate than either L1 or SVA, and have a larger sample size of elements with low residence times in the population. These recently integrated Alu were examined to identify the AS bias upon integration. Two samples of relatively young Alu were used for this analysis (a) Alu annotated as insertions in the \num{1000} genomes project \cite{Stewart2011}, and (b) Alu annotated as germline insertions \cite{Baillie2011}. Alu from group (a) are all elements that are polymorphic in the population studied. Three population groups were used in this 1000 genomes study; Yoruban, YRI; European, CEU; and Chinese/Japanese, CHBJPT. Alu that were population-specific were kept in the analysis, while Alu that were present among two or more populations were labelled as (c) shared, and were used in a future analysis. The mean allele frequency of Alu presence was 0.09,0.07, and 0.07 in YRI, CEU, and CHBJPT respectively. Group (b) elements were derived from three individuals that were examined for non-reference Alu insertions in various somatic tissues. Alu counts from YRI, CEU, CHBJPT, and group (b) were combined to reduce type II error by increasing sample size. The insertions that were deemed 'germline' insertions by comparison between multiple tissues were used for this analysis.
 
@@ -241,8 +234,73 @@ Similarly, there was a noted decrease in the age of L1 in genes compared to inte
 \subsection{Age of RTs in regions with extremes of AS bias}
 %To further test the association of younger RTs with antisense bias 
     
+     %Figure 
+    \begin{figure}[!h]
+        \centering
+        \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{selection5_3.png}
+        \caption{\textbf{AS bias at the 5\rq and 3\rq ends\\}
+        More here
+        }
+        \label{fig:selection5_3}
+    \end{figure}
+    
+    % Wed Apr 23 10:23:57 2014
+    \begin{table}[ht]
+    \centering
+    \begin{tabular}{rlrrrr}
+      \hline
+     & Alu & N & {Median Age} & ci1 & ci2 \\ 
+      \hline
+    1 & S & 36298 & 120.30 &  61 & 188 \\ 
+      2 & AS & 52930 & 121.20 &  62 & 189 \\ 
+      3 & Intergenic & 600512 & 121.50 &  60 & 192 \\ 
+       \hline
+    \end{tabular}
+    \end{table}
+    
+         %Figure 
+    \begin{figure}[!h]
+        \centering
+        \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{l1age.png}
+        \caption{\textbf{Age of L1 across gene deciles\\}
+        More here
+        }
+        \label{fig:l1age}
+    \end{figure}
+    
+             %Figure 
+    \begin{figure}[!h]
+        \centering
+        \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{aluage.png}
+        \caption{\textbf{Age of Alu across gene deciles\\}
+        More here
+        }
+        \label{fig:aluage}
+    \end{figure}
+    
 \subsection{Lack of Purifying Selection of RTs on ChrY}
 
+
+             %Figure 
+    \begin{figure}[!h]
+        \centering
+        \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{chrx_alu.png}
+        \caption{\textbf{AS bias of Alu on ChrX\\}
+        More here
+        }
+        \label{fig:chrx_alu}
+    \end{figure}
+    
+    
+             %Figure 
+    \begin{figure}[!h]
+        \centering
+        \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{chry_alu.png}
+        \caption{\textbf{AS bias of Alu on ChrY\\}
+        More here
+        }
+        \label{fig:chry_alu}
+    \end{figure}
 }
 
 
