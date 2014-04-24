@@ -1,0 +1,97 @@
+% Chp6_Discussion_Dissertation
+% Slinker, 04/16/2014
+
+%Preamble
+\documentclass[12bp]{report}
+\usepackage{setspace} %for double spacing
+\usepackage{times}
+\usepackage[top=1in, bottom=1in, left=1.25in, right=1in]{geometry}
+\usepackage{pslatex}
+%for the figures
+\usepackage{graphicx} 
+\usepackage{siunitx}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+%Formating for the contingency tables
+\usepackage{pgfplots}
+\usepackage{pgfplotstable}
+\pgfplotsset{compat=1.8}
+\usepackage{booktabs}
+%for rotating a table
+\usepackage{rotating} 
+%\setcounter{page}{11}
+\usepackage[margin=10pt,font=normalsize,justification=justified,labelsep=endash,labelfont=bf]{caption}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy} %Control over headers and footers
+    \fancyhf{}%clears all fieds
+    \lhead[R]{\rightmark} %add section title to the page
+    \cfoot{\thepage}    %add page number to center bottom
+    \renewcommand{\headrulewidth}{0.1pt} % 0 gets rid of the lines on top 
+    \renewcommand{\footrulewidth}{0pt} % 0 gets rid of the line on bottom
+    \fancypagestyle{plain}{% Changes all chapter pages to this format (by changing plain style)
+        \fancyhf{}         % clear all header and footer fields
+        \rhead{\thepage}    % except the center
+        \renewcommand{\headrulewidth}{0pt}
+        \renewcommand{\footrulewidth}{0pt}}
+
+\usepackage[final]{pdfpages}
+\usepackage{apacite} %for citing with APA
+%\newenvironment{tightcenter}{% for self-made chapter headings
+%  \setlength\topsep{0pt}
+%  \setlength\parskip{0pt}
+%  \begin{center}
+%}{%
+%  \end{center}
+%}
+\usepackage{amsmath}
+
+\usepackage{titlesec} %Re-format the chapter title
+\titleformat{\chapter}
+  {\normalfont\LARGE\rm\raggedleft\uppercase}{\chaptertitlename\ \thechapter}{20pt}{\Huge}
+\titleformat{\section}
+  {\normalfont\large\bfseries\raggedright}{\thesection}{5pt}{\large}
+\usepackage{listings}
+\lstset{
+    language=R,
+    basicstyle=\scriptsize\ttfamily,
+    commentstyle=\ttfamily\color{gray},
+    numbers=left,
+    numberstyle=\ttfamily\color{gray}\footnotesize,
+    stepnumber=1,
+    numbersep=5pt,
+    backgroundcolor=\color{white},
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    frame=single,
+    tabsize=2,
+    captionpos=b,
+    breaklines=true,
+    breakatwhitespace=false,
+    title=\lstname,
+    escapeinside={},
+    keywordstyle={},
+    morekeywords={}
+    }
+
+
+
+%Document
+\begin{document}
+\doublespace\large{
+\chapter{\\Discussion}
+\section{Title}
+
+---> Alu can be co-opted as useful sequence since they don't have any large detrimental effects on the system (unlike L1). This would allow them to be maintained in the genome under neutral-esque conditions.
+
+--> Talk about variability between humans and missing heritability and how RTs can be responsible for some of this missing heritability
+
+---> Talk about the use of RTs in GWAS type studies. 
+
+---> Talk about somatic retrotransposition and how that can lead to variation within a human
+
+---> Talk about retinoic acid response elements within Alu and how that might be contributing to the difference in expression between the sexes (especially RORA1)
+
+---> 
+\subsection{Title}
