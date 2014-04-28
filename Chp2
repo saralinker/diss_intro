@@ -86,7 +86,14 @@ Two samples of young Alu were used for this analysis (\textit{a} and \textit{b})
 
 Alu in groups \textit{a} and \textit{b} were initially identified in the 1000 genomes project as being polymorphic between individuals \cite{Stewart2011}. The allele frequencies of these elements were calculated from three populations; Yoruban (YRI); European (CEU); and Chinese/Japanese (CHBJPT) \cite{Stewart2011}. For the current analysis, 1000 genomes annoted Alu were separated into two groups: \textit{a}) population-specific Alu (i.e.: Allele Frequency (AF) > 0 in only one population), and \textit{b}) Alu present among two or more populations. Group \textit{c} elements were derived from three individuals that were examined for non-reference Alu insertions in various somatic tissues. The mean AFs of group \textit{a} Alu were 0.091 ($\pm$0.071), 0.067 ($\pm$0.047), and 0.070 ($\pm$0.067) in YRI, CEU, and CHBJPT respectively. To identify the mean AF of group \textit{b} Alu, the maximum population-specific AF was identified per element. The average of these maximum AFs was significantly higher than the population-specific sets 0.587($\pm$0.30) (Wilcoxon rank sum p$_{, YRI}$ < 1.3e-184; p$_{, CEU}$ < 2.6e-62; p$_{, CHBJPT}$ < 8.5e-49). Since AFs are correlated with residence times in the population [REF], these AFs indicate that group \textit{a} Alu have shorter residence times (younger) than group \textit{b}.
 
-YOU ARE HERE...INSERT A FIGURE SHOWIN THE ALLELE FREQUENCIES COMPARED BETWEEN ALL POPUALTIONS. YOU HAVE A 3D PLOT OF THIS SAVED SOMEWHERE. 
+    %Figure 
+    \begin{figure}[!ht]
+        \centering
+        \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{AF_3d.png}
+        \caption{\textbf{Similar AFs of shared Alu\\}}
+        \label{fig:AF_3d}
+    \end{figure}
+    
 
 Alu counts from YRI, CEU, CHBJPT, and group \textit{c} were combined to reduce type II error by increasing sample size. The insertions that were deemed 'germline' insertions by comparison between multiple tissues were used for this analysis.
 
