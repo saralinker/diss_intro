@@ -65,7 +65,7 @@
 
 %Document
 \begin{document}
-%\tableofcontents
+\tableofcontents
 \doublespace\large{
 \chapter{\\INTRODUCTION }
     %Henry Miller Quote
@@ -128,7 +128,7 @@ The present day Alu has succeeded in capitalizing on the retrotransposition abil
 SVA is partially composed of Alu sequence. It is a composite element that contains regions with similarity to Alu and the human endogenous retrovirus (hERV), as well as a variable number tandem repeat region \cite{Hancks2010}. SVA are still active in the human genome, though at lower levels than either L1 or Alu \cite{Stewart2011}. Even younger than the primate-specific Alu, SVA appear to have evolved relatively recently. They are found only in primates and most commonly in humans, chimpanzee, and gorilla \cite{Zhu1994}. SVA contain all of the necessary requirements for retrotransposition, mainly an internal promoter, and a long polyadenylation stretch at the 3\rq -end (discussed in section \ref{sec:tprt}).
 
 %Subfamilies of Retrotransposons
-\section{Subfamilies of retrotransposons}
+\section{Subfamilies of Retrotransposons}
 
 Each RT family (L1, Alu, and SVA), can be divided into subfamilies based on similar, diagnostic, mutations in their sequence. The underlying assumption of grouping subfamilies by diagnostic mutations, is that RTs with similar mutations (i.e: same subfamily) are likely to have mobilized around the same time in evolutionary history. This is a logical assumption since RTs are vertically transmitted, and successive similar mutations in divergent subfamilies of RTs is unlikely. There are highly active elements ("hot") that are responsible for most of the mobilization within subgroups \cite{Cordaux2009}. These "hot" master elements may mobilize other active elements as well, which then produce more insertions, but they account for most of the mobilization. Therefore, the model of RT subfamilies is that a small number of  parent elements are responsible for the retrotransposition of many elements within a discrete period of evolutionary time. These parent elements gain mutations and are eventually rendered immobile. These mutations could be used to determine a time-scale of activity. Furthermore, a subset of the child elements will be active themselves, therefore gaining new mutations and mobilizing a new subfamily of RTs \cite{Cordaux2009}. 
 
@@ -147,7 +147,7 @@ L1, Alu, and SVA are mobilized through the process of target-primed reverse tran
 Upon formation of the RNP, the complex is reintroduced into the nucleus. The process of insertion begins by the ORF2p cleaving a single stranded nick at the A-T phosphodiester bond in an \lq AATTTT\rq  motif \cite{Feng1996}. Although there are known hotspots of integration \cite{Wimmer2011}, it is still hypothesized that the selection of the \lq AATTTT\rq motif is random \cite{Ovchinnikov2001}. After the first strand is nicked, the stretch of adenosine nucelotides at the end of the mobilized RNA hybridizes to the \lq TTTT\rq s of the nicked DNA. Reverse transcription begins from this primed region, copying the retrotransposon RNA into cDNA from the 3\rq-OH end of the \lq TTTT\rq . The reverse transcription proceeds from this point. Alu are short, ~300bp elements, that are normally completely reverse transcribed. Full-length L1 however, are ~6kb in length, and the retrotransposition process does not always proceed until completion. The incomplete processing of L1 retrotransposons is termed "5\rq - transduction" and many of L1 in the human genome exist in this form at approximately 1kb in length. The conclusion of TPRT results in a duplication of the flanking DNA sequence, termed target-site duplications \cite{Kojima2010}. These regions are often used to validate whether an insertion is real, or whether it is false positive. In rare events, the process of TPRT is accompanied by structural rearrangements in the region. The link between retrotransposition and structural rearrangements will be discussed more in section \ref{sec:rear}.
 
 %Selection on the sex chromosomes versus the autosomes
-\section{Selection on the sex chromosomes versus the autosomes}
+\section{Selection on the Sex Chromosomes Versus the Autosomes}
 
 The equations below show the effetive population sizes for autosomes (equation \ref{eq:auto}), chrX (equation \ref{eq:chrx}), and chrY (equation \ref{eq:chry}), where N$_{\textit{e}}$ is effective population size, N\textit{m} is the population size of males, and N\textit{f} is the population size of females. [REF, Hartl and Clark Principles of human genetics]. 
 
@@ -170,12 +170,12 @@ The equations below show the effetive population sizes for autosomes (equation \
     \end{equation}
 
 
-N$_{\textit{e}}$ (equation \ref{rfix}) is a key determinant in the ability for selection to act over genetic drift \cite{Charlesworth2009}, and therefore the forces of selection differ depending on the chromosome on which it is acting. Another factor at play in the difference of selection between chrX and chrY is the effect termed "Muller\rq s ratchet" \cite{Muller1964}. Muller posited that recombination is highly important for purifying selection. This theory states that there is a lack of an ability to purify deleterious mutations from the genome, since the genome is inherited as a whole with each generation. The next generation then has a higher genetic load of deleterious mutations to begin with, and this mutational load is ever increasing. [MORE SENTENCES, SUPPORT FOR MULLER'S RATCHET ON CHRY]. Although many studies have shown that Muller\rq s ratchet is truely acting on chrY, some studies have shown that there are regions of purifying selection \cite{WilsonSayres2014}. [More negative selection examples]
+N$_{\textit{e}}$ (equation \ref{rfix}) is a key determinant in the ability for selection to act over genetic drift \cite{Charlesworth2009}, and therefore the forces of selection differ depending on the chromosome on which it is acting. Another factor at play in the difference of selection between chrX and chrY is the effect termed "Muller\rq s ratchet" \cite{Muller1964}. Muller posited that recombination is highly important for purifying selection. This theory states that there is a lack of an ability to purify deleterious mutations from the genome, since the genome is inherited as a whole with each generation. The next generation then has a higher genetic load of deleterious mutations to begin with, and this mutational load is ever increasing. Effects such as Muller's ratchet that reduce the effective population size are hypothesized to have resulted in the degeneration of genes on chrY \cite{Charlesworth2000}. Although studies have shown that deleterious mutations are accumulating on chrY, purifying selection is still possible \cite{WilsonSayres2014}. 
 
 
 %Distribution of Retrotransposons 
 %    \textnormal\Large\textit{\\\\\num{1.6 } Natural Selection and the Distribution of Retrotransposons in Genes\\}
-\section{Selection and the Distribution of RTs}
+\section{Selection and Distribution of RTs}
 \label{dist}
 
     The distribution of RTs in the current human genome can be an indicatation of forces of selection, or the effect that the RT is having on the organism. Evidence that selection is acting on RTs comes from the random distribution of young elements that succesively alters to a patterned, non-random, distribution over long spans of evolutionary time. Although this pattern could be explained in part by other forces such as genetic drift, segregating allele frequencies indicate that selective forces are playing a role in this distribution \cite{Stewart2011}. RTs insert in the human genome at a rate of approximately 1 in 20 births for Alu, 1 in 270 births for L1, and 1 in 916 births for SVA \cite{Cordaux2006,Ewing2010,Xing2009}. Although the distribution immedietly after insertion is unknown, polymorphic insertions are evenly distributed throughout the genome \cite{Stewart2011}, as are young L1 present in the reference genome \cite{Ovchinnikov2001}. These findings indicate that young RTs are integrated without preference across the genome.
@@ -190,13 +190,13 @@ Despite large scale rearrangments of RT densities, there is evidence of selectio
 
 Although many groups suggest that RTs are undergoing purifying selection \cite{Jurka2004, Stewart2011}, there are also studies suggesting the potential of postive selection acting on RTs. The altered distribution of Alu in the draft reference genome with respect to GC-content intially caused speculation that RTs were under the influence of positive selection \cite{Lander2001}. A similar GC-bias is observed in B1 within mice. B1 are rodent-specific SINEs that are similar to Alu, but that are not derived from Alu. This finding of seemingly convergent evolutionary forces led the authors to claim that the distribution of Alu and B1 are present due to forces of positive selection \cite{Tsirigos2009}, though there is not much data to support the hypothesis of positive selection versus purifying selection in this case. The population genetics community responded to the claim of positive selection in the Lander et al. paper with skeptisism. Brookfield cited less complicated mechansisms as potential mediators of the altered RT distribution, such as recombination of Alu elements, hitchiker effects, and the change in GC-content over time [Cite Brookfield 2001].
 
-One piece of evidence supporting positive selection is that specific bases within the Alu consensus sequences are mutated less often than expected at random \cite{Britten1994}. Some of these mutations, however, are necessary for Alu transcription and are thefore more likely to be maintained across subfamilies \cite{Brookfield1994}. For example, a large number of the mutations that were found were located within the Polymerase-III binding regions \cite{Britten1994}. These nucleotides would be required for retrotransposition and are therefore more likely to be present than other nucleotides. Since this original paper was published in 1994, almost a decade ahead of the draft genome sequence, it is possible that there are other nucleotides within Alu and other retrotransposon sequences are maintained that could not have been picked up with the small sample size they were working with (1500 elements) \cite{Britten1994}. It is important to revist this question with the data currently available that would facilitate analysis of the conservation of each nucleotide. [OTHER POSITIVE SELECTION]
-        
-        
-Understanding the factors associated with these observed distribution biases could help to predict the functional impact RT insertions. Furthermore, Studying the non-random distribution of RTs within genes will provide further evidence of the selectable interaction between RT and genomic context.
+One piece of evidence supporting positive selection is that specific bases within the Alu consensus sequences are mutated less often than expected at random \cite{Britten1994}. Some of these mutations, however, are necessary for Alu transcription and are thefore more likely to be maintained across subfamilies \cite{Brookfield1994}. For example, a large number of the mutations that were found were located within the Polymerase-III binding regions \cite{Britten1994}. These nucleotides would be required for retrotransposition and are therefore more likely to be present than other nucleotides. Since this original paper was published in 1994, almost a decade ahead of the draft genome sequence, it is possible that there are other nucleotides within Alu and other retrotransposon sequences are maintained that could not have been picked up with the small sample size they were working with (1500 elements) \cite{Britten1994}. It is important to revist this question with the data currently available that would facilitate analysis of the conservation of each nucleotide.
 
-Retrotransposons are more common near transcription start sites [write more from this paper!] \cite{Tsirigos2009}.
+%[OTHER POSITIVE SELECTION]
+        
+%Understanding the factors associated with these observed distribution biases could help to predict the functional impact RT insertions. Furthermore, Studying the non-random distribution of RTs within genes will provide further evidence of the selectable interaction between RT and genomic context.
 
+%Retrotransposons are more common near transcription start sites [write more from this paper!] \cite{Tsirigos2009}.
 
 Previous studies have taken advantage of the high copy number of RTs to study the relationships of mobile elements with the host genome, revealing the capacity of various genomic contexts to withstand retrotransposition. There are 1.1e06, 9.5e05, and 3.7e03 Alu, L1, and SVA respectively annotated in the human Hg19 reference genome \cite{Kent2002}. Furthermore, the 1000 genomes project has identified [x,y,and z] Alu, L1, and SVA respectively that are segregating within humans. These segregating, or polymorphic RTs allow us to [b;a b;a b;a]. Within genes, certain regions are more susceptible to disruption by RTs than others \cite{Zhang2011}. The regions identified so far have been termed “hazardous zones,” and are highly correlated with exon density. Orientation of the RT with respect to the gene has also been determined to be an important factor in RT density. 
 
@@ -208,10 +208,10 @@ The non-random distribution of RTs is likely a result of a combination of variab
 might have antisense info --> Human L1 Retrotransposition Is Associated with Genetic Instability In Vivo
  
 %Host defensenses against retrotransposons
-\section{Host Defenses Against Retrotransposons}
+%\section{Host Defenses Against Retrotransposons}
 
------piwi and other host factors that play a role in reducing RT activity
------methylation
+%-----piwi and other host factors that play a role in reducing RT activity
+%-----methylation
 
 
 
@@ -221,7 +221,7 @@ The genome responds to spatio-temporal and evironmental cues by regulating gene 
 
 Aberrant regulation of gene expression is often associated with disease, and therefore many studies focus on the genetic determinants of altered gene expression. Variations associated with differential expression are termed expressed quantitative trait loci (eQTL). Although these variants may occur within the coding region \cite{Delker2011}, they more commonly occur near transcription start sites and within  regulatory regions \cite{Veyrieras2008}. Despite there being many other forms of genetic variation, these eQTL studies generally examine small nucleotide variants, such as SNPs and small indels. Larger variations are often missed such as large structural rearrangements, copy number variations, and mobile element insertions. Importantly, it is these larger variations that track most with large scale changes in phenotype, such as the loss of conserved non-protein coding elements through deletions \cite{Hiller2012}. Moreover, chromosomes that have undergone large scale rearragments have a 2 fold faster protein evolution rate between humans and chimps \cite{Navarro2003}. and even differences between human and other non-human primates [].  
 
---> these papers might help a lot Chapman2007,Coulon2013,Spitz2012
+%--> these papers might help a lot Chapman2007,Coulon2013,Spitz2012
     
 %Differential Gene Expression Between Humans and Non-human Primates
 \section{Variation in Gene Expression Between Humans and Non-human Primates}
@@ -230,7 +230,9 @@ The coding genome of humans and non-human primates (NHP) are highly similar, wit
 
 An example of gene expression variability between humans and NHPs is exhibited on a tissue-specific level \cite{Blekhman2008}. The highly specific structures such as [examples] of the brain have differences in expression between primate species \cite{Khaitovich2004}. Furthermore, [x] and humans differentially express genes located within the chromosome 7 Autism susceptibility locus  \cite{Navarro2012, Schneider2012}. 
 
-Since non-coding sequences, such as transcription factor binding sites, are important for coordinating regulation of gene expresion, it is likely that they also play a large role in species-specific differential expression. Indeed, genes that have increased in expression in humans versus non-human primates are enriched for transcription factors, indicating that this level of regulation plays an important role in the differences in gene variation between species \cite{Gilad2006}. [ADD MORE SPECIFICS TO THIS PARAGRAPH]
+Since non-coding sequences, such as transcription factor binding sites, are important for coordinating regulation of gene expresion, it is likely that they also play a large role in species-specific differential expression. Indeed, genes that have increased in expression in humans versus non-human primates are enriched for transcription factors, indicating that this level of regulation plays an important role in the differences in gene variation between species \cite{Gilad2006}.
+
+%[ADD MORE SPECIFICS TO THIS PARAGRAPH]
 
 %Retrotransposons as sources of non-coding regulation
 \section{Retrotransposons as Non-coding Sources of Regulating Gene Expression}
@@ -239,26 +241,24 @@ Since non-coding sequences, such as transcription factor binding sites, are impo
  
 One way that RTs insertions effect transcription is through altering splice sites. Alu, L1, and SVA all contain potential splice donor and acceptor sites, and upon inserting into gene boundaries these signals can effect the structure of the final mRNA. SVA is efficient at co-opting splicing enzymes  often resulting in 5\rq transduction of non-repetitive sequence during SVA mobilization \cite{Damert2009}. SVA can also effect splicing of the endogenous transcript. For example, an insertion of SVA into the 3\rq -UTR of the fukutin gene resulted in abberant splicing and the development of Fukuyama muscular dystrophy in Japanese individuals \cite{Taniguchi-Ikeda2011}. Alu and L1 also often provide splice signals, and are responsible for a large proportion of alternative isoforms in humans [REF]. 
 
-Alternative splicing due to RTs can result in the  inclusion of a RT into the final mRNA, termed exonization. Since Alu have expanded to millions of copies in the human genome, it seems like the genome has developed a response to limit the number of Alu exonization events \cite{Zarnack2013}. Heterogeneous nuclear ribonucleoprotein C (hnRNP C) is a RNA-binding protein that competes with splicing factors to inhibit this inclusion of Alu into the final mRNA.
+Alternative splicing due to RTs can result in the  inclusion of a RT into the final mRNA, termed exonization. Since Alu have expanded to millions of copies in the human genome, it seems like the genome has developed a response to limit the number of Alu exonization events \cite{Zarnack2013}. Heterogeneous nuclear ribonucleoprotein C (hnRNP C) is a RNA-binding protein that competes with splicing factors to inhibit this inclusion of Alu into the final mRNA. Another link between Alu and alternative splicing is through the propensity of Alu to undergo Adenosine to Inosine (A-to-I) RNA editing. Alu are common targets of A-to-I editing in the genome because they often reside as inverted repeats in close proximity to one another. The secondary structure created by the binding of these elements is highly prone to editing by the enzyme ADAR1 \cite{Iizasa2009}. The number of sites edited within an mRNA is variable, depending on the length and secondary structure of the molecule \cite{Rieder2013,Blow2006}. When Alu are highly edited, the Alu alters exon choice during alternative splicing \cite{Athanasiadis2004,Lev-Maor2008}.
 
-Another interesting link between Alu and alternative splicing is through the propensity of Alu to undergo Adenosine to Inosine (A-to-I) RNA editing. Alu are common targets of A-to-I editing in the genome because they often reside as inverted repeats in close proximity to one another. The secondary structure created by the binding of these elements is highly prone to editing by the enzyme ADAR1 \cite{Iizasa2009}. The number of sites edited within an mRNA is variable, depending on the length and secondary structure of the molecule \cite{Rieder2013,Blow2006}. The level of editing  When Alu are highly edited, the Alu alters exon choice during alternative splicing \cite{Athanasiadis2004,Lev-Maor2008}.
+%
+%\cite{Kaer2011,Speek2001,Matlik2006}. For example, Wang et al. showed that different fragments of the L1-ORF2 modulated transcription termination of upstream GFP expression \cite{Wang2009}, demonstrating functional impact of the L1 sequence on gene transcription without a direct disruption of coding sequence.
+% 
+% The functional consequences of RT retrotransposition are not always deleterious, and in some instances have led to the evolution of mammalian-specific \cite{Shephard2007} and human-specific traits \cite{Hayakawa2001}.
+% 
 
-\cite{Kaer2011,Speek2001,Matlik2006}. For example, Wang et al. showed that different fragments of the L1-ORF2 modulated transcription termination of upstream GFP expression \cite{Wang2009}, demonstrating functional impact of the L1 sequence on gene transcription without a direct disruption of coding sequence.
- 
- The functional consequences of RT retrotransposition are not always deleterious, and in some instances have led to the evolution of mammalian-specific \cite{Shephard2007} and human-specific traits \cite{Hayakawa2001}.
- 
- On a genome-wide level, retrotransposition has been the source of novel coding sequences \cite{Yu2007}, chromatin organization \cite{Englander1995,Schmidt2012}, and tissue-specific regulation \cite{Robins1992} throughout mammalian evolution. 
- 
----> Talk about sex-hormone binding sites and anything sex-specific that you can find
+%---> Talk about sex-hormone binding sites and anything sex-specific that you can find
 
----> nucleosome
+%---> nucleosome
 
----> primate enhancers
+%---> primate enhancers
 
----> histone methylation
+%---> histone methylation
 
 %Structural Rearrangments associated with retrotransposition
-\section{Structural rearrangements associated with retrotransposition}
+\section{Structural Rearrangements Associated with Retrotransposition}
 \label{sec:rear}
 Other than the direct amplification of the RT, there are other structural effects, such as deletions, rearrangements, and transduction events that are associated with the process of retrotransposition. Deletions are a often result of the process of transposon insertion evidenced from non-LTR RTs in humans, HO cleavage of the mating type locus in \textit{Saccharomyces cerevisiae} \cite{Moore1996}, as well as IS1-mediated deletions in \textit{Escherichia coli} \cite{Nevers1977}. Non-LTR RT-mediated deletions in primates are responsible for an estimated 7.5 megabases (Mb) of sequence lost. Furthermore, there is an estimated 18 kilobases (kb) between human and chimp due to L1 integration, and 9kb due to Alu alone \cite{Han2005,Callinan2005}. Large (2 -14 kb) deletions are common in cell culture \cite{Gilbert2005,Gilbert2002,Symer2002}, and range from local to intrachromosomal deletions \cite{Gilbert2005}. Studies comparing primate genomes, however, reveal most deletions are very small ( < 100 bp) and follow a poisson distribution with a maximum size of ~5kb \cite{Han2005}. It is possible that the discrepancy between the size range of deletions in cell culture and primate comparison studies is due to purifying selection of large deletion events. Two mechanisms proposed for RT-mediated deletions are NAHR and L1-endonuclease independent retrotransposition (figure \ref{fig:dsbr} \cite{Callinan2005}). Alu are particularly good substrates for NAHR because they are highly interspersed in the genome, and have a high GC content, which can stabilize the repair structure. L1-endonuclease independent retrotransposition is the process by where the initial double strand break is created by a means other than the L1 endonuclease. This break is then "filled in" using available template from the RT RNA and the L1 reverse transcriptase. There is evidence that this form of RT plays a role in stabalizing telomeres \cite{Morrish2007}. These deletions create variability in the human population, but may also be a process associated with disease such as cancer and this connection will be elaborated on more in section \ref{sec:pheno}\cite{Raschke2005, Florl2003}.
 
@@ -278,7 +278,7 @@ The process of post-intertional transposon-mediated recombination has observed a
 Another mechanism of structural change due to RT mobilization is the transduction of non-repeat sequence. Sequence transduction occurs either to the 5\rq  or 3\rq  side of the RT, and has been observed both through \textit{in silico} analysis as well as \textit{in vitro} \cite{Symer2002,Damert2009,Pickeral2000}. 5\rq transduction occurs when the retrotransposon is promoted by an upstream gene promoter. This is often the case in SVA moblization \cite{Damert2009}, where approximately 8\% of all SVA elements have identified 5\rq - sequence transductions. One ancient transduction event in particular, of the MAST2 promoter, has enhanced the transcription activity and facilitated the insertion of an entire group of SVA elements \cite{Damert2009}. 3\rq  transduction is more common than 5\rq - and occurs with both SVA and L1 retrotransposition \cite{Damert2009,Pickeral2000}. In this case, the polymerase continues to transcribe beyond the RT polyadenylation signal and into non-repeat sequence. On average the length of the transduced sequence ranges from 200 - 300 bp \cite{Goodier2000,Pickeral2000}.If this sequence has homology to the sequence at the insertion point, it can then be inserted upon reintegration. The 3\rq region is not always mobilized with the element, even if it is transcribed. For example, Alu have weak Pol-III termination sequences and therefore often terminate at a region downstream of the RT sequence. This downstream unique sequence is not reintegrated, since priming on the polyT sequence is facilitated through the polyA tail within the Alu. Despite the requirement for homology for reincorportation, approximately 15\% of L1 show evidence of 3\rq - transduction events. It has been proposed that the mechanisms of 5\rq - and 3\rq - transduction are capable of "shuffling" exons in the human genome, thereby adding variation. An extension to this is the \textit{trans} moblization of pseudogenes and non-processed RNA from the L1 reverse transcriptase but without the coincident transcription of the RT \cite{Ejima2003,Esnault2000,Dewannieux2005}. 
 
 
-\section{Phenotypic effects of RTs on organisms}
+\section{Phenotypic Effects of RTs on Organisms}
 \label{sec:pheno}
 
 RTs can lead to both disease-causing and advantageous phenotypic changes. RT insertions into coding exon sequences are often associated with diseases such as the insertion of Alu into factor IX leading to hemophilia \cite{Vidaud1993}, BRCA2 in breast cancer \cite{Miki1996,Teugels2005}, and NF1 leading to neurofibromatosis \cite{Wallace1991}. Similarly L1 insertions can also disrupt coding sequence by inserting into exons \cite{Kazazian1988,Li2001,Mukherjee2004}. Interestingly RT insertions into the introns can also lead to disease mainly through the creation of cryptic splice sites. Such was the case with the insertion of Alu into the intron of ALPS which resulted in skipping of exon 8 and led to autoimmune lymphoproliferative syndrome \cite{Tighe2002}. Alternativel, the insertion of L1 into the intron created a cryptic splice site that included the L1 in the mature mRNA \cite{VandenHurk2003}.
@@ -291,12 +291,9 @@ Another case was within a primate conserved Alu/L1 composite sequence within the
 
 Although there are many more examples of RTs which have evolved to create useful functions in humans, the last one I will share is that of a particular locus on chr19. This region is the source of at least 50 miRNAs, all of which are transcribed via promoters from Alu RTs . Interestingly, being promoted by Alu, these miRNAs are all Pol-III transcribed as opposed to the canonical Pol-II transcription of most miRNAs \cite{Borchert2006}.
 
-\section{A new path for RT research}
+\section{A New Path for RT Research}
 
---> Why it's been difficult to study how RTs are associated with disease in the past
-
---> What tools are available to study this now
-
+The study of the effects of RTs on genes has previously been largely hampered by inadequent methods to annotate RT polymorphisms. Recent advances both in sequencing technology and bioinformatics analyses have enabelled researchers to begin to identify polymorphic RTs and therefore to study the effect that these elements have on phenotype. In 2010 three seminal papers published in Cell and Genome Research described feasible techniques for sequencing L1 retrotransposons \cite{Ewing2010, Iskow2010, Beck2010}. Combined with an array-based technique published the following year, these methods filled in the first missing piece of identifying the contribution of RTs to human variation \cite{Baillie2011}. That was identifying the variants. Combined with novel bioinformatics algorithms to map these variations to the genome \cite{Ye2009,Chen2009} these techniques facilitated the completion of the RT portion of the 1000 genomes project, which annotated hundreds of insertions that are polymorphic between human populations. Now that the techniques are available to identify the variation of RTs between individuals, it is necessary to examine the phenotypic consequences of these insertions.
 
         %Closing of the intro
 \section{Motivation}
