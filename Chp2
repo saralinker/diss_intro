@@ -80,11 +80,11 @@ To distinguish whether AS bias was truly a result of    selection over time or i
 %ASbias upon insertion
 \section{Retrotransposon Antisense Bias and the Process of Integration}
 \subsection{Young AS and S Alu are Present in Equal Proportions}
-Newly inserted RTs should be equally represented in the sense (S) and antisense (AS) orientations if selection is the driving force of AS bias in genes. Alu insert at a higher rate than either L1 or SVA, and therefore have a larger sample size of elements with low residence times in the population (i.e.: young Alu). For this reason, Alu were studied to examine the AS bias of newly inserted elements. 
+Newly inserted RTs should be equally represented in the sense (S) and antisense (AS) orientations if selection is the driving force of AS bias in genes. Alu and L1 insert at a higher rate than SVA, and therefore have a larger sample size of elements with low residence times in the population (i.e.: young). For this reason, Alu and L1 were studied to examine the AS bias of newly inserted elements. 
 
-Two samples of young Alu were used for this analysis (\textit{a} and \textit{b}) filtered groups of Alu that were annotated as insertions in the \num{1000} genomes project \cite{Stewart2011}, and (\textit{c}) Alu annotated as newly identified germline insertions \cite{Baillie2011, Bundo2013}. Both groups represent Alu that are polymorphic with relatively small residence times in the population. Here, polymorphic refers to presence or absence of the entire Alu element where any mutations within the element are irrelevant. 
+Two samples of young RTs (Alu and L1) were used for this analysis (\textit{a} and \textit{b}) filtered groups of Alu that were annotated as insertions in the \num{1000} genomes project \cite{Stewart2011}, and (\textit{c}) Alu and L1 annotated as newly identified germline insertions \cite{Baillie2011, Bundo2013}. Both groups represent RTs that are polymorphic with relatively small residence times in the population. Here, polymorphic refers to presence or absence of the entire element where any mutations within the element are irrelevant. 
 
-Alu in groups \textit{a} and \textit{b} were initially identified in the 1000 genomes project as being polymorphic between individuals \cite{Stewart2011}. The allele frequencies of these elements were calculated from three populations; Yoruban (YRI); European (CEU); and Chinese/Japanese (CHBJPT) \cite{Stewart2011}. For the current analysis, 1000 genomes annoted Alu were separated into two groups: \textit{a}) population-specific Alu (i.e.: Allele Frequency (AF) > 0 in only one population), and \textit{b}) Alu present among two or more populations. Group \textit{c} elements were derived from three individuals that were examined for non-reference Alu insertions in various somatic tissues. The mean AFs of group \textit{a} Alu were 0.091 ($\pm$0.071), 0.067 ($\pm$0.047), and 0.070 ($\pm$0.067) in YRI, CEU, and CHBJPT respectively. To identify the mean AF of group \textit{b} Alu, the maximum population-specific AF was identified per element. The average of these maximum AFs was significantly higher than the population-specific sets 0.587($\pm$0.30) (Wilcoxon rank sum p$_{, YRI}$ < 1.3e-184; p$_{, CEU}$ < 2.6e-62; p$_{, CHBJPT}$ < 8.5e-49). Since AFs are correlated with residence times in the population [REF], these AFs indicate that group \textit{a} Alu have shorter residence times (younger) than group \textit{b}.
+Alu in groups \textit{a} and \textit{b} were initially identified in the 1000 genomes project as being polymorphic between individuals \cite{Stewart2011}. The allele frequencies of these elements were calculated from three populations; Yoruban (YRI); European (CEU); and Chinese/Japanese (CHBJPT) \cite{Stewart2011}. For the current analysis, 1000 genomes annoted Alu were separated into two groups: \textit{a}) population-specific Alu (i.e.: Allele Frequency (AF) > 0 in only one population), and \textit{b}) Alu present among two or more populations. Group \textit{c} elements were derived from three individuals that were examined for non-reference Alu insertions in various somatic tissues. The mean AFs of group \textit{a} Alu were 0.091 ($\pm$0.071), 0.067 ($\pm$0.047), and 0.070 ($\pm$0.067) in YRI, CEU, and CHBJPT respectively. To identify the mean AF of group \textit{b} Alu, the maximum population-specific AF was identified per element. The average of these maximum AFs was significantly higher than the population-specific sets 0.587($\pm$0.30) (Wilcoxon rank sum p$_{, YRI}$ < 1.3e-184; p$_{, CEU}$ < 2.6e-62; p$_{, CHBJPT}$ < 8.5e-49). The AFs of group \textit{c} Alu were similar in all three populations (figure \ref{fig:AF_3d}). Since AFs are correlated with residence times in the population \cite{Li1975}, these AFs indicate that group \textit{a} Alu have shorter residence times (younger) than group \textit{b}.
 
     %Figure 
     \begin{figure}[!ht]
@@ -94,10 +94,32 @@ Alu in groups \textit{a} and \textit{b} were initially identified in the 1000 ge
         \label{fig:AF_3d}
     \end{figure}
     
+Although the allele frequencies of group \textit{c} RTs were unknown, they were identified in Baillie et. al. as being present in the germline insertions. Since group \textit{a} and \textit{c} RTs all represent young polymorphic insertions the counts were combined across all groups to reduce type II error by increasing sample size (table \ref{table:youngasbias}). The probability of choosing an AS RT in this combined group was tested versus an expected probability of 0.50 using the binomial sign test. The hypothesis that young insertions had an AS bias equal to 0.50 could not be rejected (p(AS) = 0.50 ; CI = 0.47 -- 0.53; p = 0.84). It was noted, that there may have been a bias imparted to the calculation by combining both group \text{a} and \textit{c} RTs. Group \textit{a} RTs were therefore tested separately, despite a reduction in power, and also  did not have a p(AS) significantly different from 0.5 (p(AS) = 0.53; CI = 0.48 -- 0.57; p = 0.20). Although the results of insignificance indicated that young RTs may not have an AS bias, the null hypothesis can not be proved, only rejected \cite{Popper1959,Wilckinson2013}. Therefore, young RTs were tested against the AS bias of the reference RTs, to determine if the AS bias of young elements was significantly different from the bias that is often cited in the literature \cite{Zhang2011}. 
 
-Alu counts from YRI, CEU, CHBJPT, and group \textit{c} were combined to reduce type II error by increasing sample size. The insertions that were deemed 'germline' insertions by comparison between multiple tissues were used for this analysis.
+%AS bias of new insertions
+\begin{table}[ht]
+\centering
+\begin{tabular}{rllllll}
+  \hline
+ & Group & Element & Population & Reference & AS & S \\ 
+  \hline
+1 & \textit{a} & L1 & YRI & {Stewart 2011} & 23 & 10 \\ 
+  2 & \textit{a} & L1 & CEU & {Stewart 2011}& 4 & 2 \\ 
+  3 & \textit{a} & L1 & CHBJPT & {Stewart 2011} & 7 & 2 \\ 
+  4 & \textit{a} & Alu & YRI & {Stewart 2011}& 150 & 154 \\ 
+  5 & \textit{a} &  Alu & CEU &{Stewart 2011}& 29 & 20 \\ 
+  6 & \textit{a} & Alu & CHBJPT & {Stewart 2011} & 21 & 18 \\ 
+  7 &\textit{c} &  L1 & NBB & {Baillie 2011} & 169 & 178 \\ 
+  8 & \textit{c} & Alu & NBB & {Baillie 2011} & 166 & 177 \\ 
+    \hline
+     \textbf{Total} & \textbf{.} &  \textbf{.} & \textbf{.} & \textbf{.} & \textbf{569} & \textbf{561} \\
+   \hline
+\end{tabular}
+\caption{\textbf{AS bias of young RT insertions} A subset of the polymorphic insertions in groups \textit{a} and \textit{c} were present within gene boundaries. AS: Count of antisense elements in the group; S: Count of sense elements in the group. YRI: Yoruban; CEU: European; CHBJPT: Chinese or Japanese; NBB: Samples collected from the Netherlands Brain Bank}
+\label{table:youngasbias}
+\end{table}
 
-The proportion of AS elements in the young group of Alu were compared versus the antisense bias of reference Alu. The reference set was chosen as the comparison since this was the group of Alu from within which the AS bias was originally identified. As has been previously documented, the proportions of AS and S Alu in the Hg19 reference was significantly different from the null hypothesis of equal distribution (probability of AS = 0.55 ; \num{95}\% CI = \num{0.548} - \num{0.550}; p < \num{2.47}e-\num{323}). A test of equal proportions was used to calculate the deviation from the null hypothesis that young AS Alu occur in equal proportion to that of reference Alu. It was identified that reference Alu had a significantly different AS bias than newly inserted Alu ($propAS_{\text{young}}$ = 0.48; $propAS_{\text{Ref}}$ = 0.55; \num{95}\% CI = \num{-0.08} - \num{-0.06}; p < \num{6.18}e-28). This  shows that the AS bias present in reference Alu is not present upon integration. 
+The proportion of AS elements in the young group of Alu were compared versus the antisense bias of reference Alu. The reference set was chosen as the comparison since this was the group of Alu from within which the AS bias was originally identified. As has been previously documented, the proportions of AS and S Alu in the Hg19 reference was significantly different from the null hypothesis of equal distribution (probability of AS = 0.55 ; \num{95}\% CI = \num{0.548} - \num{0.550}; p < \num{2.47}e-\num{323}). A test of equal proportions was used to calculate the deviation from the null hypothesis that young AS Alu occur in equal proportion to that of reference Alu. It was identified that reference Alu had a significantly different AS bias than newly inserted Alu (proportion AS$_{young}$ = 0.48; proportion AS$_{Ref}$ = 0.55; \num{95}\% CI = \num{-0.08} - \num{-0.06}; p < \num{6.18}e-28). This  shows that the AS bias present in reference Alu is not present upon integration. 
 
 %TPRT
 \subsection{AS bias is present in transposons integrated by non-TPRT mechanisms}
