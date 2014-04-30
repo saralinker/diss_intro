@@ -10,9 +10,9 @@
 \usepackage{fancyhdr}
 \pagestyle{fancy} %Control over headers and footers
     \fancyhf{}%clears all fieds
-    \lhead[R]{\rightmark} %add section title to the page
+   % \lhead[R]{\rightmark} %add section title to the page
     \cfoot{\thepage}    %add page number to center bottom
-    \renewcommand{\headrulewidth}{0.1pt} % 0 gets rid of the lines on top 
+    \renewcommand{\headrulewidth}{0pt} % 0 gets rid of the lines on top 
     \renewcommand{\footrulewidth}{0pt} % 0 gets rid of the line on bottom
     \fancypagestyle{plain}{% Changes all chapter pages to this format (by changing plain style)
         \fancyhf{}         % clear all header and footer fields
@@ -85,7 +85,7 @@ Newly inserted RTs should be equally represented in the sense (S) and antisense 
 
 Two samples of young RTs (Alu and L1) were used for this analysis (\textit{a} and \textit{b}) filtered groups of Alu that were annotated as insertions in the \num{1000} genomes project \cite{Stewart2011}, and (\textit{c}) Alu and L1 annotated as newly identified germline insertions \cite{Baillie2011, Bundo2013}. Both groups represent RTs that are polymorphic with relatively small residence times in the population. Here, polymorphic refers to presence or absence of the entire element where any mutations within the element are irrelevant. 
 
-Alu in groups \textit{a} and \textit{b} were initially identified in the 1000 genomes project as being polymorphic between individuals \cite{Stewart2011}. The allele frequencies of these elements were calculated from three populations; Yoruban (YRI); European (CEU); and Chinese/Japanese (CHBJPT) \cite{Stewart2011}. For the current analysis, 1000 genomes annoted Alu were separated into two groups: \textit{a}) population-specific Alu (i.e.: Allele Frequency (AF) > 0 in only one population), and \textit{b}) Alu present among two or more populations. Group \textit{c} elements were derived from three individuals that were examined for non-reference Alu insertions in various somatic tissues. The mean AFs of group \textit{a} Alu were 0.091 ($\pm$0.071), 0.067 ($\pm$0.047), and 0.070 ($\pm$0.067) in YRI, CEU, and CHBJPT respectively. To identify the mean AF of group \textit{b} Alu, the maximum population-specific AF was identified per element. The average of these maximum AFs was significantly higher than the population-specific sets 0.587($\pm$0.30) (Wilcoxon rank sum p$_{, YRI}$ < 1.3e-184; p$_{, CEU}$ < 2.6e-62; p$_{, CHBJPT}$ < 8.5e-49). The AFs of group \textit{c} Alu were similar in all three populations (figure \ref{fig:AF_3d}). Since AFs are correlated with residence times in the population \cite{Li1975}, these AFs indicate that group \textit{a} Alu have shorter residence times (younger) than group \textit{b}.
+Alu in groups \textit{a} and \textit{b} were initially identified in the 1000 genomes project as being polymorphic between individuals \cite{Stewart2011}. The allele frequencies of these elements were calculated from three populations; Yoruban (YRI); European (CEU); and Chinese/Japanese (CHBJPT) \cite{Stewart2011}. For the current analysis, 1000 genomes annoted Alu were separated into two groups: \textit{a}) population-specific Alu (i.e.: Allele Frequency (AF) > 0 in only one population), and \textit{b}) Alu present among two or more populations. Group \textit{c} elements were derived from three individuals that were examined for non-reference Alu insertions in various somatic tissues. The mean AFs of group \textit{a} Alu were 0.091 ($\pm$0.071), 0.067 ($\pm$0.047), and 0.070 ($\pm$0.067) in YRI, CEU, and CHBJPT respectively. To identify the mean AF of group \textit{b} Alu, the maximum population-specific AF was identified per element. The average of these maximum AFs was significantly higher than the population-specific sets 0.279($\pm$0.16) (Wilcoxon rank sum p$_{, YRI}$ < 1.3e-184; p$_{, CEU}$ < 2.6e-62; p$_{, CHBJPT}$ < 8.5e-49). The AFs of group \textit{c} Alu were similar in all three populations (figure \ref{fig:AF_3d}). Since AFs are correlated with residence times in the population \cite{Li1975}, these AFs indicate that group \textit{a} Alu have shorter residence times (younger) than group \textit{b}.
 
     %Figure 
     \begin{figure}[!ht]
@@ -95,7 +95,7 @@ Alu in groups \textit{a} and \textit{b} were initially identified in the 1000 ge
         \label{fig:AF_3d}
     \end{figure}
     
-Although the allele frequencies of group \textit{c} RTs were unknown, they were identified in Baillie et. al. as being present in the germline insertions. Since group \textit{a} and \textit{c} RTs all represent young polymorphic insertions the counts were combined across all groups to reduce type II error by increasing sample size (table \ref{table:youngasbias}). The probability of choosing an AS RT in this combined group was tested versus an expected probability of 0.50 using the binomial sign test. The hypothesis that young insertions had an AS bias equal to 0.50 could not be rejected (p(AS) = 0.50 ; CI = 0.47 -- 0.53; p = 0.84). It was noted, that there may have been a bias imparted to the calculation by combining both group \text{a} and \textit{c} RTs. Group \textit{a} RTs were therefore tested separately, despite a reduction in power, and also  did not have a p(AS) significantly different from 0.5 (p(AS) = 0.53; CI = 0.48 -- 0.57; p = 0.20). Although the results of insignificance indicated that young RTs may not have an AS bias, the null hypothesis can not be proved, only rejected \cite{Popper1959,Wilckinson2013}. Therefore, young RTs were tested against the AS bias of the reference RTs, to determine if the AS bias of young elements was significantly different from the bias that is often cited in the literature \cite{Zhang2011}. 
+Although the allele frequencies of group \textit{c} RTs were unknown, they were identified in Baillie et. al. as being present in the germline insertions. Since group \textit{a} and \textit{c} RTs all represent young polymorphic insertions the counts were combined across all groups to reduce type II error by increasing sample size (table \ref{table:youngasbias}). The probability of choosing an AS RT in this combined group was tested versus an expected probability of 0.50 using the binomial sign test. The hypothesis that young insertions had an AS bias equal to 0.50 could not be rejected (p(AS) = 0.50 ; \num{95}\% CI = 0.47 -- 0.53; p = 0.84). It was noted, that there may have been a bias imparted to the calculation by combining both group \text{a} and \textit{c} RTs. Group \textit{a} RTs were therefore tested separately, despite a reduction in power, and also  did not have a p(AS) significantly different from 0.5 (p(AS) = 0.53; \num{95}\% CI = 0.48 -- 0.57; p = 0.20). Although the results of insignificance indicated that young RTs may not have an AS bias, the null hypothesis can not be proved, only rejected \cite{Popper1959,Wilckinson2013}. Therefore, young RTs were tested against the AS bias of the reference RTs, to determine if the AS bias of young elements was significantly different from the bias that is often cited in the literature \cite{Zhang2011}. 
 
 
 %AS bias of new insertions
@@ -148,51 +148,52 @@ The evidence presented in section \ref{sec:youngas} has shown that there is no d
 
 %AS bias changes over evolutionary time
 \section{Antisense Bias Increases Over Evolutionary Time}
-[Write a mini intro here]
-
-\subsection{Antisense bias of Alu is Constant across Reference Subfamilies}
-Since Alu present in the reference genome have a significantly larger proportion of AS elements than newly integrated elements, it is likely that this change in proportion was due to a progressive action over time. It is important to examine the change in AS bias over time, since a change over time is indicative of selection acting on the elements depending on the orientation within a gene. The fact that RTs can have a selectable effect on genes depending on their orientation would then allow us to study the effects that RTs are having on genes. 
-    
-To examine the change of pAS over time Alu and L1 were grouped by their predefined subfamilies. Elements within a subfamily have similar residence times in the genome [REFs]. The relative age of a subfamily is often measured as the average distance of all elements within a subfamily from the respective consensus sequence (milliDiv). Millidiv was therefore used as a measurement of time where smaller values of millidiv corresponded to younger elements with less residence time in the population, and larger millidiv corresponded to older elements with longer residence times. AS bias was compared across between Alu of the same subfamily (figure \ref{fig:pAS_subfam}. There was a slight increase in AS bias with increasing millidiv, though, this increase was not signficant (slope: 4.1e-04; F-test p = \num{0.38}). 
+Since Alu present in the reference genome have a significantly larger proportion of AS elements than newly integrated elements, it is likely that this change in proportion was due to a progressive action over time. It is therefore important to examine the change in AS bias over time.
 
     %Figure pAS_subfamily Alu
     \begin{figure}[!ht]
         \centering
         \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{pAS_alu_2.pdf}
-        \caption{\textbf{Change in pAS Across Reference Alu\\}AS/S ratios were calculated for each Alu subfamily and plotted versus the mean deviation from the subfamily consensus sequence (millidiv). AS bias was regressed on millidiv to obtain the fitted line (blue; p = 0.38).}
+        \caption{\normalsize{\textbf{Change in pAS Across Reference Alu\\}AS/S ratios were calculated for each Alu subfamily and plotted versus the mean deviation from the subfamily consensus sequence (millidiv). AS bias was regressed on millidiv to obtain the fitted line (blue; p = 0.38).}}
         \label{fig:pAS_subfam}
     \end{figure}
     
- 
-\subsection{Antisense bias of Alu increases quickly over evolutionary time}
-Since AS bias in reference Alu was independent of the residence time in the population, I was led to examine the hypothesis that AS bias in Alu is achieved rapidly after integration and is then left unchanged after the element has become fixed in the population. To examine the change of AS proportion on shorter time scales than the previous analysis, the proportion of AS of young Alu were compared to Alu that were shared among all three populations (group c). Shared Alu are assumed to have longer residence times in the genome than young Alu because shared elements must have integrated prior to the split of YRI, CEU, and CHBJPT, while young elements are assumed to have inserted after the split. The higher average allele frequencies of shared Alu compared to group population-specific Alu substantiates this assumption ($AF_{\text{YRI}}$ = 0.09 ; $AF_{\text{CEU}}$ = 0.07 ; $AF_{\text{CHBJPT}}$ = 0.07 ; $AF_{\text{shared}}$ =  0.24. Although the shared Alu had a mean frequency of 0.24, there were elements with allele frequencies of 1 within a specific population (figure \ref{fig:shared_freq}). The proportion of AS in the young subset of Alu was significantly smaller than polymorphic Alu that were shared among all three populations ($propAS_{\text{young}}$ = 0.48; $propAS_{\text{shared}}$ = 0.54; \num{95}\% CI = \num{-0.11} - \num{-0.02}; p < \num{0.01}). This indicates that the change to AS bias of Alu occured quickly over evolutionary time.
-
-    %Figure pAS
-    \begin{figure}[!ht]
-        \centering
-        \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{shared_freq.pdf}
-        \caption{\textbf{Allele Frequencies of Alu that are Shared Between All Populations\\} Many polymorphic Alu identified in the 1000 genomes project were shared between YRI, CEU, and CHBJPT. The count of Alu is plotted as a function of the maximum allele frequency between YRI, CEU, and CHBJPT.}
-        \label{fig:shared_freq}
-    \end{figure}
-
-
-These results indicate that Alu are initially integrated with no AS bias, AS and S Alu are then differentially maintained setting up the reference AS bias. And this event occurs relatively quickly on evolutionary time scales (ie: prior to fixation).
+\subsection{Antisense bias of Alu is Constant across Reference Subfamilies}
+To examine the change of p(AS) over time, AS bias of Alu and L1 were individually examined after separation into their predefined subfamilies. The relative age of a subfamily is often measured as the average distance of all elements within a subfamily from the respective consensus sequence (milliDiv). Elements within a subfamily have similar residence times in the genome [REFs].  Millidiv was therefore used as a measurement of time where smaller values of millidiv corresponded to younger elements with less residence time in the population, and larger millidiv corresponded to older elements with longer residence times. AS bias was examined across Alu subfamilies ranked by millidiv (figure \ref{fig:pAS_subfam}). There was a slight increase in AS bias with increasing millidiv, though, this increase was not signficant (slope: 4.1e-04; F-test p = \num{0.38}). 
 
 \subsection{Antisense bias of L1 Increases Across Reference Subfamilies}
-L1 are present in high enough numbers in the reference genome to be analyzed for AS bias across subfamilies. The combined Hg19 reference L1 AS bias is significantly different from 0.50 (probability of AS = \num{0.656}; \num{95}\% CI = \num{0.654} - \num{0.657}; p < \num{1.98}e{-323}). The AS bias of L1 is larger than that of Alu. Furthermore, contrary to the results from Alu, L1 exhibit a significant association between AS bias and relative age as measured by millidiv (F-test p < \num{2.66}e{-06}) (figure \ref{fig:pAS_l1_2}). 
 
     %Figure pAS_subfamily L1
     \begin{figure}[!ht]
         \centering
         \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{pAS_l1_2.pdf}
-        \caption{\textbf{Change in pAS Across Reference L1\\}AS/S ratios were calculated for each L1 subfamily and plotted versus the mean deviation from the subfamily consensus sequence (millidiv). AS bias was regressed on millidiv to obtain the fitted line (blue; p < \num{2.66}e{-06}).}
+        \caption{\normalsize{\textbf{Change in pAS Across Reference L1\\}AS/S ratios were calculated for each L1 subfamily and plotted versus the mean deviation from the subfamily consensus sequence (millidiv). AS bias was regressed on millidiv to obtain the fitted line (blue; p < \num{2.66}e{-06}).}}
         \label{fig:pAS_l1_2}
     \end{figure}
+    
+Although Alu and L1 both have a signficant AS bias in the genome, it is possible that they are undergoing different degrees of selection. As pol-II promoted transcripts, L1 have the potential to disrupt expression more substantially than Alu [REF]. L1 have also been evolving since before the split of  marsupials and eutherians, as opposed to Alu which have only been present in the primate lineages, therefore the extent of time that is covered by the L1 subfamilies is effectively longer than that of Alu [REFs]. For these reasons, it is more likely to observe a change in AS bias in L1 as opposed to Alu. This is evidenced by the finding that the AS bias of L1 is significantly larger than that of Alu (prop AS$_{L1}$ =  0.656; prop AS$_{Alu}$ = 0.549 ; p < 2.2e-16).
+
+L1 AS bias was examined across subfamilies ordered by millidiv. Contrary to the findings in Alu, there was a significant trend towards an increase in AS bias over time (F-test p < \num{2.66}e{-06}) (figure \ref{fig:pAS_l1_2}). These results indicate that, as opposed to a static property of the integration, AS bias increases dynamically over time. 
+
+ 
+\subsection{Antisense bias of Alu increases quickly over evolutionary time}
+The findings so far have shown that AS and S RTs have no bias upon integration, however there is an AS bias of Alu in the reference genome. For Alu, this AS bias in reference Alu was independent of the age of the subfamily. It was therefore hypothesized that AS bias in Alu was achieved rapidly after integration.  To examine the change of AS proportion on shorter time scales than the previous analysis, p(AS) of young Alu were compared to p(AS) of Alu that were shared among all three populations (group \textit{b}). Shared Alu were assumed to have longer residence times in the genome than young Alu because shared elements must have integrated prior to the split of YRI, CEU, and CHBJPT, while young elements were assumed to have inserted after the split. The higher average allele frequencies of shared Alu compared to group population-specific Alu substantiates this assumption (section \ref{sec:youngas}). Although the shared Alu had a mean frequency of 0.28, there were elements with allele frequencies of 1 within a specific population (figure \ref{fig:shared_freq}). The proportion of AS in the young subset of Alu was significantly smaller than polymorphic Alu that were shared among all three populations ($propAS_{\text{young}}$ = 0.48; $propAS_{\text{shared}}$ = 0.54; \num{95}\% CI = \num{-0.11} - \num{-0.02}; p < \num{0.01}). This indicates that the change to AS bias of Alu occured quickly over evolutionary time.
+
+    %Figure pAS
+    \begin{figure}[!ht]
+        \centering
+        \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{shared_freq.pdf}
+        \caption{\normalsize{\textbf{Allele Frequencies of Alu that are Shared Between All Populations\\} Many polymorphic Alu identified in the 1000 genomes project were shared between YRI, CEU, and CHBJPT. The count of Alu is plotted as a function of the maximum allele frequency between YRI, CEU, and CHBJPT.}}
+        \label{fig:shared_freq}
+    \end{figure}
+
+
+These results indicate that Alu are initially integrated with no AS bias, AS and S Alu are then differentially maintained setting up the reference AS bias. And this event occurs relatively quickly on evolutionary time scales (ie: prior to fixation). It must be noted that this same hypothesis could be true for L1 as well, though there are not enough counts of shared L1 to test this hypothesis.
 
 
 %Signs of purifying selection
 \section{Differences in Selection Between S and AS Alu and L1}
-The results so far have shown that AS bias increases over time, with Alu increasing relatively quickly and L1 continuing to increase over larger periods of time. If selection within genes is playing a role in this change in AS bias, there are three likely explanations. 1.) Antisense RTs undergo positive selection within genes, 2.) Sense RTs undergo negative (purifying) selection within genes, 3.) Both (1) and (2) are true. Previous reports have indicated that on a genome-wide level, Alu undergo purifying selection \cite{Stewart2011}, though [REF] has proposed that RTs are under positive selection within genes.
+The results so far have shown that AS bias is not due to the process of integration but increases over time, as would be expected under a model of selection. If selection within genes is playing a role in this change in AS bias, there are three likely explanations. 1.) Antisense RTs undergo positive selection within genes, 2.) Sense RTs undergo negative (purifying) selection within genes, 3.) Both (1) and (2) are true. Previous reports have indicated that Alu undergo purifying selectionon a genome-wide level \cite{Stewart2011}, though Lander et al. has proposed that RTs are under positive selection within GC-rich regions \cite{Lander2001}. Neither of these studies has addressed the selection of RTs within gene boundaries, which is important to study due to the potential distruptions of RTs directly on transcription as well as regulation of both transcription and translation [REFs].
 
 In 1975 Li calculated that on average, deleterious alleles have shorter residence times in a population. In other words, they will be younger than neutral or advantageous alleles \cite{Li1975}. The logic behind this finding lies in that, in populations of equal size, an allele is more likely to be passed on to the next generation if it is neutral or positive compared to an allele that is deleterious. The neutral or positive allele will therefore remain in the population longer, accumulating a longer residence time in the genome. Meanwhile, new alleles, both advantageous and deleterious will continually appear. While the advantageous alleles are retained, the deleterious alleles will continually be lost, with only young alleles that have replaced them remaining present. Therefore at any discrete point in time, the deleterious alleles will be younger on average than the advantageous or neutral alleles.
 
