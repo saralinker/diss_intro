@@ -213,7 +213,7 @@ Using the rationale presented in Li, 1975; the relative force of selection can b
 \subsection{Purifying selection of RTs in genes}
 Since Alu and L1 showed different changes in AS bias over time, it was expected that the age ranges associated with differences in AS bias would also be different. It was expected that despite the apparent AS bias, Alu would have relatively similar ages between AS and S elements, since they likely were selected on relatively soon after integration.
 
-Regression analyses were calculated to determine if placement within a gene was associated with millidiv (equation \ref{l1anova}). Each subfamily was analyzed separately. Millidiv was regressed on dummy variables representing the location within the genome (intergenic, AS, or S). A p-value was calculated for each regression equation and plotted as a function of the average millidiv in the entire subfamily (figure \ref{fig:l1ageanova}). 79 of the 115 subfamilies had millidiv values that were significantly associated with location after Bonferroni correction for multiple testing (alpha = 4.3e-04). Moreover, the significance of these results increased with increasing age of the subfamily as a whole. These results indicate that there are different selection biases present depending on the location of the gene. To determine if the association between location and millidiv was effected more by regions within genes versus intergenic, or sense versus antisense.  
+Regression analyses were calculated to determine if placement within a gene was associated with millidiv (equation \ref{l1anova}). Each subfamily was analyzed separately. Millidiv was regressed on dummy variables representing the location within the genome (intergenic, AS, or S). A p-value was calculated for each regression equation and plotted as a function of the average millidiv in the entire subfamily (figure \ref{fig:l1ageanova}). 79 of the 114 subfamilies had millidiv values that were significantly associated with location after Bonferroni correction for multiple testing (alpha = 4.3e-04). Moreover, the significance of these results increased with increasing age of the subfamily as a whole. These results indicate that there are different selection biases present depending on the location of the gene. To determine if the association between location and millidiv was effected more by regions within genes versus intergenic, or sense versus antisense.  77 subfamilies had elements that were significantly different in age between intergenic and within gene regions. 76 of these 77 subfamilies were older in intergenic regions than within genes. This substantiates the hypothesis that L1 retrotransposons undergo purifying selection within genes. 10 subfamilies had a significant differences in age between AS and S orientations, 7 of which were older in the antisense orientation. 
 
     %Linear Regression Equation 1 : L1 anova
     \begin{equation}
@@ -231,17 +231,7 @@ Regression analyses were calculated to determine if placement within a gene was 
         \label{fig:l1ageanova}
     \end{figure}
 
-         %Figure 
-    \begin{figure}[!ht]
-        \centering
-        \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{alu_age_anova.pdf}
-        \caption{\textbf{Age of Alu By Subfamily\\}
-        More here
-        }
-        \label{fig:aluageanova}
-    \end{figure}
-   
-    
+
              %Figure 
     \begin{figure}[!ht]
         \centering
@@ -260,6 +250,16 @@ Regression analyses were calculated to determine if placement within a gene was 
         More here
         }
         \label{fig: l1_senseolder}
+    \end{figure}
+
+         %Figure 
+    \begin{figure}[!ht]
+        \centering
+        \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{alu_age_anova.pdf}
+        \caption{\textbf{Age of Alu By Subfamily\\}
+        More here
+        }
+        \label{fig:aluageanova}
     \end{figure}
   
     
