@@ -4,6 +4,7 @@
 %Preamble
 \documentclass[12bp]{report}
 \usepackage[top=1in, bottom=1in, left=1.25in, right=1in]{geometry} %geom has to be loaded before fancy header
+\usepackage{pgfplots}
 
 \usepackage{fancyhdr}
 \pagestyle{fancy} %Control over headers and footers
@@ -26,13 +27,6 @@
 \usepackage[T1]{fontenc}
 \usepackage[final]{pdfpages}
 \usepackage{apacite} %for citing with APA
-%\newenvironment{tightcenter}{% for self-made chapter headings
-%  \setlength\topsep{0pt}
-%  \setlength\parskip{0pt}
-%  \begin{center}
-%}{%
-%  \end{center}
-%}
 \usepackage{amsmath}
 
 \usepackage{titlesec} %Re-format the chapter title
@@ -80,6 +74,7 @@ Retrotransposons comprise approximately half of the human genome and contribute 
     
 %Linear Decay
 \subsection{L1 and Alu Antisense bias exhibits a linear decay across gene deciles}
+\label{sec:as_dec}
 The dependency of AS bias on position within a gene was calculated for both Alu and L1, where position was defined as one of ten deciles of a gene. RefSeq genes were divided into these deciles using the boundaries of transcription start (TSS) and transcription stop, including introns (figure \ref{fig:decile}). Previous research had used distance from the TSS to examine RT density, this alternative approach of normalizating genes by length expanded the scope of the analysis to examine the effect of relative position on RT density, and therefore the ability to detect any regions of the gene that are more sensitive to RT insertions. A side-effect of normalizing by the TSS and transcription stop positions was that every decile 1 (first decile) and decile 10 (last decile) contained an exon. Since deciles 2 - 9 (internal deciles) were not defined by any discrete exon boundary, they were variable as to the presence of an exon. Although the first and last deciles inevitably contained an exon, it was not necessarily a coding exon (ie: 5\rq-UTR or 3\rq-UTR). AS and S RTs (L1 or Alu) were counted within each decile and normalized by the total number of (AS + S) RTs in all deciles.\\
 
     %Figure Decile Explanation
@@ -144,7 +139,48 @@ In the previous chapter it was shown that AS bias was associated with a discrepa
 
 %%%% WRITE A BASH SCRIPT LOOKING AT A YOUNG-ISH AND OLD-ISH L1 SUBFAMILY ACROSS THE DECILES. THEN ALSO SHOW THE FIGURE OF ALL OF THE DECILES.
     
+  %%%%
+         %Figure 
+    \begin{figure}[!ht]
+        \centering
+        \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{l1age.png}
+        \caption{\textbf{Age of L1 across gene deciles\\}
+        More here
+        }
+        \label{fig:l1age}
+    \end{figure}
     
+             %Figure 
+    \begin{figure}[!ht]
+        \centering
+        \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{aluage.png}
+        \caption{\textbf{Age of Alu across gene deciles\\}
+        More here
+        }
+        \label{fig:aluage}
+    \end{figure}
+    
+    
+             %Figure 
+    \begin{figure}[!ht]
+        \centering
+        \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{chrx_alu.png}
+        \caption{\textbf{AS bias of Alu on ChrX\\}
+        More here
+        }
+        \label{fig:chrx_alu}
+    \end{figure}
+    
+    
+             %Figure 
+    \begin{figure}[!ht]
+        \centering
+        \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{chry_alu.png}
+        \caption{\textbf{AS bias of Alu on ChrY\\}
+        More here
+        }
+        \label{fig:chry_alu}
+    \end{figure}
 
 %AS bias (distribution near 5'-UTR)
 \section{Gene-specific variables are associated with AS bias}
