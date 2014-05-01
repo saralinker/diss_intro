@@ -291,26 +291,41 @@ Alu were similarly analyzed for differences in age depending on position and ori
     
 \subsection{Lack of Purifying Selection of RTs on ChrY}
 
-             %Figure 
-    \begin{figure}[!ht]
-        \centering
-        \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{chrx_alu.png}
-        \caption{\textbf{AS bias of Alu on ChrX\\}
-        More here
-        }
-        \label{fig:chrx_alu}
-    \end{figure}
-    
-    
-             %Figure 
-    \begin{figure}[!ht]
-        \centering
-        \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{chry_alu.png}
-        \caption{\textbf{AS bias of Alu on ChrY\\}
-        More here
-        }
-        \label{fig:chry_alu}
-    \end{figure}
+
+% Thu May  1 17:38:16 2014
+\begin{table}[ht]
+\large
+\centering
+\begin{tabular}{rlllrr}
+  \hline
+ & Element & Location & Chromosome & Mean & SD \\ 
+  \hline
+1 & Alu & sense & x & 114.70 & 38.70 \\ 
+  2 & Alu & sense & aut & 120.62 & 39.34 \\ 
+  3 & Alu & sense & y & 135.95 & 49.40 \\
+    \hline
+  4 & Alu & anti & x & 116.53 & 37.92 \\ 
+  5 & Alu & anti & aut & 120.78 & 38.99 \\ 
+  6 & Alu & anti & y & 137.55 & 48.78 \\
+    \hline
+  7 & Alu & int & x & 118.45 & 40.76 \\ 
+  8 & Alu & int & aut & 121.31 & 40.43 \\ 
+  9 & Alu & int & y & 149.29 & 55.50 \\
+    \hline
+  10 & L1 & sense & x & 186.74 & 80.64 \\ 
+  11 & L1 & sense & aut & 207.98 & 79.02 \\ 
+  12 & L1 & sense & y & 191.20 & 81.32 \\
+    \hline
+  13 & L1 & anti & x & 192.60 & 74.85 \\ 
+  14 & L1 & anti & aut & 210.52 & 74.06 \\ 
+  15 & L1 & anti & y & 213.14 & 76.01 \\
+    \hline
+  16 & L1 & int & x & 188.12 & 78.32 \\ 
+  17 & L1 & int & aut & 206.79 & 79.44 \\ 
+  18 & L1 & int & y & 201.73 & 82.99 \\ 
+   \hline
+\end{tabular}
+\end{table}
 }
 
 
