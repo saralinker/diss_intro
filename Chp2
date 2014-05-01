@@ -213,14 +213,6 @@ Using the rationale presented in Li, 1975; the relative force of selection can b
 \subsection{Purifying selection of RTs in genes}
 Since Alu and L1 showed different changes in AS bias over time, it was expected that the age ranges associated with differences in AS bias would also be different. It was expected that despite the apparent AS bias, Alu would have relatively similar ages between AS and S elements, since they likely were selected on relatively soon after integration.
 
-Regression analyses were calculated to determine if placement within a gene was associated with millidiv (equation \ref{l1anova}). Each subfamily was analyzed separately. Millidiv was regressed on dummy variables representing the location within the genome (intergenic, AS, or S). A p-value was calculated for each regression equation and plotted as a function of the average millidiv in the entire subfamily (figure \ref{fig:l1ageanova}). 79 of the 114 subfamilies had millidiv values that were significantly associated with location after Bonferroni correction for multiple testing (alpha = 4.3e-04). Moreover, the significance of these results increased with increasing age of the subfamily as a whole. These results indicate that there are different selection biases present depending on the location of the gene. To determine if the association between location and millidiv was effected more by regions within genes versus intergenic, or sense versus antisense.  77 subfamilies had elements that were significantly different in age between intergenic and within gene regions. 76 of these 77 subfamilies were older in intergenic regions than within genes. This substantiates the hypothesis that L1 retrotransposons undergo purifying selection within genes. 10 subfamilies had a significant differences in age between AS and S orientations, 7 of which were older in the antisense orientation. 
-
-    %Linear Regression Equation 1 : L1 anova
-    \begin{equation}
-    \label{l1anova}
-         millidiv = \beta location_{subfamily, i}  +  \epsilon
-    \end{equation}
-
          %Figure 
     \begin{figure}[!ht]
         \centering
@@ -231,26 +223,39 @@ Regression analyses were calculated to determine if placement within a gene was 
         \label{fig:l1ageanova}
     \end{figure}
 
+Regression analyses were calculated to determine if placement within a gene was associated with millidiv (equation \ref{l1anova}). Each subfamily was analyzed separately. Millidiv was regressed on dummy variables representing the location within the genome (intergenic, AS, or S). A p-value was calculated for each regression equation and plotted as a function of the average millidiv in the entire subfamily (figure \ref{fig:l1ageanova}). 79 of the 114 subfamilies had millidiv values that were significantly associated with location after Bonferroni correction for multiple testing ( $\alpha$  = 4.3e-04). Moreover, the significance of these results increased with increasing age of the subfamily as a whole. These results indicate that there are different selection biases present depending on the location of the gene.
 
-             %Figure 
-    \begin{figure}[!ht]
-        \centering
-        \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{l1_intolder.pdf}
-        \caption{\textbf{Intergenic L1 are older than L1 in Genes\\}
-        More here
-        }
-        \label{fig: l1_intolder}
-    \end{figure}
+    %Linear Regression Equation 1 : L1 anova
+    \begin{equation}
+    \label{l1anova}
+         millidiv = \beta location_{subfamily, i}  +  \epsilon
+    \end{equation}
+
+    %         %Figure 
+    %\begin{figure}[!ht]
+    %    \centering
+    %    \includegraphics[width=0.5\textwidth,natwidth=610,natheight=642]{l1_intolder.pdf}
+    %    \caption{\textbf{Intergenic L1 are older than L1 in Genes\\}
+    %    More here
+    %    }
+    %    \label{fig: l1intolder}
+    %\end{figure}
+    %
     
-                 %Figure 
-    \begin{figure}[!ht]
-        \centering
-        \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{l1_senseolder.pdf}
-        \caption{\textbf{Sense and Antisense L1 \\}
-        More here
-        }
-        \label{fig: l1_senseolder}
-    \end{figure}
+To determine if the association between location and millidiv was effected more by regions within genes versus intergenic, or sense versus antisense.  77 subfamilies had elements that were significantly different in age between intergenic and within gene regions (tests =114 ; Bonferroni corrected $\alpha$ = 4.4e-04). 76 of these 77 subfamilies were older in intergenic regions than within genes. This substantiates the hypothesis that L1 retrotransposons undergo purifying selection within genes. 10 subfamilies had significant differences in age between AS and S orientations, 7 of which were older in the antisense orientation. 
+
+    %             %Figure 
+    %\begin{figure}[!ht]
+    %    \centering
+    %    \includegraphics[width=0.5\textwidth,natwidth=610,natheight=642]{l1_senseolder.pdf}
+    %    \caption{\textbf{Sense and Antisense L1 \\}
+    %    More here
+    %    }
+    %    \label{fig: l1senseolder}
+    %\end{figure}
+
+Alu were similarly analyzed for differences in age depending on position and orientation. Similar to L1, there was an increasingly significant effect of difference in age between regions within increasing age of the subfamily (figure \ref{fig:aluageanova}). Interestingly 14 of the 14 subfamilies that were significantly different in age between intergenic and within genes were all older intergenically (tests = 36 ; Bonferroni corrected  $\alpha$ = 1.4e-03). This replicates the findings from L1 showing that both L1 and Alu are under purifying selection in genes when compared to the same subfamilies in intergenic regions. Similarly 20 of the 20 subfamilies that were significantly different in age between S and AS orientations were older in the AS orientation. 
+
 
          %Figure 
     \begin{figure}[!ht]
@@ -262,6 +267,27 @@ Regression analyses were calculated to determine if placement within a gene was 
         \label{fig:aluageanova}
     \end{figure}
   
+
+  
+    %           %Figure 
+    %\begin{figure}[!ht]
+    %    \centering
+    %    \includegraphics[width=0.5\textwidth,natwidth=610,natheight=642]{alu_intolder.pdf}
+    %    \caption{\textbf{Intergenic Alu are older than Alu in Genes\\}
+    %    More here
+    %    }
+    %    \label{fig: aluintolder}
+    %\end{figure}
+    %
+    %             %Figure 
+    %\begin{figure}[!ht]
+    %    \centering
+    %    \includegraphics[width=0.5\textwidth,natwidth=610,natheight=642]{alu_senseolder.pdf}
+    %    \caption{\textbf{Sense are younger than Antisense Alu \\}
+    %    More here
+    %    }
+    %    \label{fig: alusenseolder}
+    %\end{figure}
     
 \subsection{Lack of Purifying Selection of RTs on ChrY}
 
