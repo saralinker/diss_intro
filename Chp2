@@ -196,8 +196,8 @@ These results indicate that Alu are initially integrated with no AS bias, AS and
 
 
 %Signs of purifying selection
-\section{Evidence of  Selection on Alu and L1 in genes}
-The results so far have shown that AS bias is not present upon integration but increases over time, as would be expected under a model of selection. If selection within genes is playing a role in this change in AS bias, there are three working hypotheses that can be tested: \textit{1}) Antisense RTs undergo positive selection within genes, \textit{2}) Sense RTs undergo negative (purifying) selection within genes, and \textit{3}) Both (\textit{1}) and (\textit{2}) are true. Previous reports have indicated that Alu undergo purifying selection on a genome-wide level \cite{Stewart2011}. However, Lander et al. have proposed that the increase of Alu in GC-rich regions was due to positive selection, though gave no experimental evidence to support these conclusions \cite{Lander2001}. Neither of these studies have addressed the selection of RTs within gene boundaries, which is important to study due to the potential distruptions of RTs directly on transcription as well as regulation of both transcription and translation [REFs].
+\section{Evidence of  Selection Acting on Alu and L1}
+The results so far have shown that AS bias is not present upon integration but increases over time, as would be expected under a model of selection. If selection within genes is playing a role in this change in AS bias, there are three hypotheses that can be tested: \textit{1}) Antisense RTs undergo positive selection within genes, \textit{2}) Sense RTs undergo negative (purifying) selection within genes, and \textit{3}) Both (\textit{1}) and (\textit{2}) are true. Previous reports have indicated that Alu undergo purifying selection on a genome-wide level \cite{Stewart2011}. However, Lander et al. proposed that the increase of Alu in GC-rich regions was due to positive selection, though gave no experimental evidence to support these conclusions \cite{Lander2001}. Neither of these studies have addressed the selection of RTs within gene boundaries, which is important to study due to the potential distruptions of RTs directly on transcription as well as regulation of both transcription and translation \cite{Thornburg2006,Wang2009}.
 
 In 1975 Li calculated that on average, deleterious alleles have shorter residence times in a population. In other words, they will be younger than neutral or advantageous alleles \cite{Li1975}. The logic behind this finding lies in that, in populations of equal size, an allele is more likely to be passed on to the next generation if it is neutral or positive compared to an allele that is deleterious. The neutral or positive allele will therefore remain in the population longer, accumulating a longer residence time in the genome. Meanwhile, new alleles, both advantageous and deleterious will continually appear. While the advantageous alleles are retained, the deleterious alleles will continually be lost, with only young alleles that have replaced them remaining present. Therefore at any discrete point in time, the deleterious alleles will be younger on average than the advantageous or neutral alleles.
 
@@ -211,11 +211,10 @@ In 1975 Li calculated that on average, deleterious alleles have shorter residenc
         \label{fig:l1age}
     \end{figure}
 
-Using the rationale presented in Li, 1975; the relative force of selection can be compared between two, otherwise equal, alleles by calculating their respective residence times in a population. RTs within a subfamily are an optimal sample to study selective forces, since they have the advantage of being amplified at similar points in time [REF]. Therefore, elements of the same subfamily should have similar residence times in the population when calculated as millidiv. However, if there are deviations in the forces of selection between subsets of the subfamily (i.e: AS versus S) , then the residence times in the population should be unequal. An example of the hypothesis is presented in figure \ref{fig:l1age}. Here is shown the AS bias of Alu in two regions of genes, one region with a large AS bias, and one region with no AS bias. The hypotheses of selection underlying these distributions are listed at the bottom of the figure. 
+Using the rationale presented in Li, 1975; the relative force of selection can be compared between two, otherwise equal, alleles by calculating their respective residence times in a population. RTs within a subfamily are an optimal sample to study selective forces, since they have the advantage of being amplified at similar points in time. Therefore, elements of the same subfamily should have similar residence times in the population when calculated as millidiv. However, if there are deviations in the forces of selection between subsets of the subfamily (i.e: AS versus S, or intergenic versus within genes) , then the residence times in the population should be unequal. An example of the hypothesis is presented in figure \ref{fig:l1age}. Here is shown the AS bias of Alu in two regions of genes, one region with a large AS bias, and one region with no AS bias. The hypotheses of selection underlying these distributions are listed at the bottom of the figure. 
 
 
-\subsection{Selection of RTs in genes}
-Since Alu and L1 showed different changes in AS bias over time, it was expected that the age ranges associated with differences in AS bias would also be different. It was expected that despite the apparent AS bias, Alu would have relatively similar ages between AS and S elements, since they likely were selected on relatively soon after integration.
+\subsection{Evidence of Selection on L1 within Genes}
 
          %Figure 
     \begin{figure}[!ht]
@@ -227,7 +226,11 @@ Since Alu and L1 showed different changes in AS bias over time, it was expected 
         \label{fig:l1ageanova}
     \end{figure}
 
-It was important to determine if the age of an L1 element was contingent on the placement within the genome (i.e.: intergenic, AS within genes, or S within genes). To examine the associated of age with placement, millidiv was regressed on dummy variables representing each possible placement of the element (equation \ref{l1anova}). Since each subfamily has a different mean millidiv, and therefore would contribute differently to the calculation irrespective of placement, separate equations were calculated for each subfamily. This method of analysing the subfamilies separately was chosen instead of adding the subfamilies into the model as a random effect because it was important to observe how the estimates changed across increasingly aged subfamilies. A p-value was calculated for each regression equation and plotted as a function of the average millidiv in the entire subfamily within genes (figure \ref{fig:l1ageanova}). 79 of the 114 subfamilies had millidiv values that were significantly associated with location after Bonferroni correction for multiple testing ( $\alpha$  = 4.3e-04; Appendix table \ref{table:l1subvalues}). Moreover, the significance of these results increased with increasing age of the subfamily as a whole. These results indicated that there were different selection biases present depending on the placement of the RT.
+To study the potential of selection acting on RTs, it was important to determine if the age, in millidiv, of an L1 element was contingent on the placement within the genome (i.e.: intergenic, AS within genes, or S within genes). To examine the association of age with placement, millidiv was regressed on dummy variables representing each possible placement of the element (equation \ref{l1anova}).
+
+Since each element was expected to have the respective subfamily contribute a larger effect to millidiv than the placement, the effect of subfamily needed to be taken into account in the model. For example, a currently active L1 would be expected to have a smaller millidiv value (i.e.: younger) than an L1 that was inserted before the split of primates (i.e.:older), whether or not the old L1 was under selection. There were multiple possible ways of normalizing for subfamily including, adding the subfamily in the model as a random effect, or adding the subfamily as an interaction term. It was decided, that for this analysis, the optimal method would be to calculate a separate regression equation for each subfamily [SURE THIS IS RIGHT?].  This method of analyzing the subfamilies separately was chosen instead of adding the subfamilies into the model as a random effect because it was important to observe how the estimates changed across increasingly aged subfamilies.
+
+A p-value was calculated for each subfamily-specific regression equation and plotted as a function of the average millidiv in the entire subfamily within genes (figure \ref{fig:l1ageanova}). 79 of the 114 subfamilies had millidiv values that were significantly associated with location after Bonferroni correction for multiple testing ( $\alpha$  = 4.3e-04; Appendix table \ref{table:l1subvalues}). Moreover, the significance of these results increased with increasing age of the subfamily as a whole. These results indicated that there were different selection biases present depending on the placement of the RT.
     %Linear Regression Equation 1 : L1 anova
     \begin{equation}
     \label{l1anova}
@@ -246,7 +249,7 @@ It was important to determine if the age of an L1 element was contingent on the 
     %\end{figure}
     %
     
-To determine if the association between location and millidiv was effected more by regions within genes versus intergenic, or sense versus antisense.  77 subfamilies had elements that were significantly different in age between intergenic and within gene regions (tests =114 ; Bonferroni corrected $\alpha$ = 4.4e-04). 76 of these 77 subfamilies were older in intergenic regions than within genes. This substantiates the hypothesis that L1 retrotransposons undergo purifying selection within genes. 10 subfamilies had significant differences in age between AS and S orientations, 7 of which were older in the antisense orientation. 
+To determine if the association between location and millidiv was effected more by regions within genes versus intergenic, or sense versus antisense.  77 subfamilies had elements that were significantly different in age between intergenic and within gene regions (tests =114 ; Bonferroni corrected $\alpha$ = 4.4e-04). 76 of these 77 subfamilies were older in intergenic regions than within genes. This substantiates the hypothesis that L1 retrotransposons undergo selection within genes, though indicates that there are varying effects contributing to the selection of L1 in genes. 10 subfamilies had significant differences in age between AS and S orientations, 7 of which were older in the antisense orientation. 
 
     %             %Figure 
     %\begin{figure}[!ht]
@@ -258,7 +261,8 @@ To determine if the association between location and millidiv was effected more 
     %    \label{fig: l1senseolder}
     %\end{figure}
 
-Alu were similarly analyzed for differences in age depending on position and orientation. Similar to L1, there was an increasingly significant effect of difference in age between regions within increasing age of the subfamily (figure \ref{fig:aluageanova}). Interestingly 14 of the 14 subfamilies that were significantly different in age between intergenic and within genes were all older intergenically (tests = 36 ; Bonferroni corrected  $\alpha$ = 1.4e-03) (Appendix table \ref{table:alusubvalues}). This replicates the findings from L1 showing that both L1 and Alu are under purifying selection in genes when compared to the same subfamilies in intergenic regions. Similarly 20 of the 20 subfamilies that were significantly different in age between S and AS orientations were older in the AS orientation. 
+\subsection{Purifying Selection of Alu within Genes}
+Alu were similarly analyzed for differences in age depending on position and orientation. Similar to L1, there was an increasingly significant effect of Alu placement on age (figure \ref{fig:aluageanova}). 14 of the 14 subfamilies that were significantly different in age between intergenic and within genes had larger millidiv values intergenically (tests = 36 ; Bonferroni corrected  $\alpha$ = 1.4e-03) (Appendix table \ref{table:alusubvalues}). The trend of older Alu elements in intergenic regions indicated that Alu were commonly under a more negative selective force when within genes compared to the same subfamilies in intergenic regions. Similarly 20 of the 20 subfamilies that were significantly different in age between S and AS orientations were older in the AS orientation. This substantiates the hypothesis that S Alu undergo a more negative selective forces than AS Alu of the same subfamilies.
 
 
          %Figure 
@@ -293,9 +297,11 @@ Alu were similarly analyzed for differences in age depending on position and ori
     %    \label{fig: alusenseolder}
     %\end{figure}
     
-\subsection{Lack of Purifying Selection of RTs on ChrY}
+\subsection{The Ages of Alu and L1 are Dependent on the Chromosome of Origin}
 
-To further test whether purifying or positive selection were acting on RTs within genes, we took advantage of the differing rates of selection on chrX, chrY, and the autosomes. It's been shown previously that rates of selection are faster on chrX than the autosomes, and faster on the autosomes than chrY [REF]. For this reason, and for the overall lack of purifying selection on chrY it was hypothesized that the age of RTs would increase in age from chrX to autosomes to chrY, within groups of RTs. First, to have a broad idea of the age of RTs across chromosomes, each location group was analyzed with all subfamilies aggregated together. Although aggregating all subfamilies into a single measure was expected to wash out a lot of the signal, there were significant differences between chromosomes when analyzed this way (table \ref{table:chrxyage}). 
+The above results indicated that both Alu and L1 were undergoing selection within genes, though at different levels. To further test whether purifying selection or positive selection was acting on these RTs within genes, I took advantage of the differing rates of selection on chrX, chrY, and the autosomes. It's been shown previously that the ability for purifying selection of minorly deleterious alleles [??TRUE?] is reduced on chrY compared to chrX and the autosomes. Furthermore, there are varied effective population sizes between chrX, chrY, and the autosomes (section \ref{sec:selection}). Therefore, if selection is indeed acting on RTs within genes, elements should have different ages depending on the chromosome on which they reside. For this reason, and for the overall lack of purifying selection on chrY it was hypothesized that the age of RTs would be the lowest on chrX and the autosomes, while chrY would be expected to have older elements due to the lack of purifying selection.
+
+To have a broad idea of the age of RTs across chromosomes, each placement group was analyzed with all subfamilies aggregated together. Although aggregating all subfamilies into a single measure was expected to wash out much of the signal, there were significant differences between chromosomes when analyzed this way (table \ref{table:chrxyage}). 
 
 % Thu May  1 17:38:16 2014
 \begin{table}[ht]
@@ -406,8 +412,26 @@ L1 elements in autosomes were clustered in one major branch and L1 elements on c
   9 &  & Y & . & . & . & . & . & . & . & . & . \\ 
    \hline
    \end{tabular}
-\caption{\normalsize{\textbf{Significance and direction of age differences across L1 groups}red: Student's t-test p < 2.2e-16; blue: Student't t-test p < 0.0014; teal: Student's t-test p < 0.0018 L: millidiv of row group is less than column group; G: millidiv of row group is greater than column group; =: millidiv of row group is equal to column group. Anti: Antisense; Inter: Intergenic}}
+\caption{\normalsize{\textbf{Significance and direction of age differences across L1 groups}red: Student's t-test p < 2.2e-16; blue: Student't t-test p < 0.0014; L: millidiv of row group is less than column group; G: millidiv of row group is greater than column group; =: millidiv of row group is equal to column group. Anti: Antisense; Inter: Intergenic}}
 \label{table:l1chrsig}
+\end{table}
+
+%AS bias on different chromosomes
+% Fri May  2 17:00:36 2014 
+\begin{table}[ht]
+\centering
+\begin{tabular}{rllrrrr}
+  \hline
+ & Element & Chr & p.AS. & CI1 & CI2 & p \\ 
+  \hline
+1 & Alu & X & 0.57 & 0.56 & 0.58 & 8.63e-80 \\ 
+  2 & Alu & Aut & 0.55 & 0.55 & 0.55 & 2.47e-323 \\ 
+  3 & Alu & Y & 0.56 & 0.54 & 0.58 & 2.50e-07 \\ 
+  4 & L1 & X & 0.66 & 0.66 & 0.67 & 4.94e-324 \\ 
+  5 & L1 & Aut & 0.66 & 0.66 & 0.66 & 1.98e-323 \\ 
+  6 & L1 & Y & 0.70 & 0.68 & 0.72 & 6.48e-50 \\ 
+   \hline
+\end{tabular}
 \end{table}
 
 \section{Conclusions}
