@@ -196,7 +196,7 @@ These results indicate that Alu are initially integrated with no AS bias, AS and
 
 
 %Signs of purifying selection
-\section{Evidence of Purifying Selection on S and AS Retrotransposons}
+\section{Evidence of  Selection on Alu and L1 in genes}
 The results so far have shown that AS bias is not present upon integration but increases over time, as would be expected under a model of selection. If selection within genes is playing a role in this change in AS bias, there are three working hypotheses that can be tested: \textit{1}) Antisense RTs undergo positive selection within genes, \textit{2}) Sense RTs undergo negative (purifying) selection within genes, and \textit{3}) Both (\textit{1}) and (\textit{2}) are true. Previous reports have indicated that Alu undergo purifying selection on a genome-wide level \cite{Stewart2011}. However, Lander et al. have proposed that the increase of Alu in GC-rich regions was due to positive selection, though gave no experimental evidence to support these conclusions \cite{Lander2001}. Neither of these studies have addressed the selection of RTs within gene boundaries, which is important to study due to the potential distruptions of RTs directly on transcription as well as regulation of both transcription and translation [REFs].
 
 In 1975 Li calculated that on average, deleterious alleles have shorter residence times in a population. In other words, they will be younger than neutral or advantageous alleles \cite{Li1975}. The logic behind this finding lies in that, in populations of equal size, an allele is more likely to be passed on to the next generation if it is neutral or positive compared to an allele that is deleterious. The neutral or positive allele will therefore remain in the population longer, accumulating a longer residence time in the genome. Meanwhile, new alleles, both advantageous and deleterious will continually appear. While the advantageous alleles are retained, the deleterious alleles will continually be lost, with only young alleles that have replaced them remaining present. Therefore at any discrete point in time, the deleterious alleles will be younger on average than the advantageous or neutral alleles.
@@ -214,7 +214,7 @@ In 1975 Li calculated that on average, deleterious alleles have shorter residenc
 Using the rationale presented in Li, 1975; the relative force of selection can be compared between two, otherwise equal, alleles by calculating their respective residence times in a population. RTs within a subfamily are an optimal sample to study selective forces, since they have the advantage of being amplified at similar points in time [REF]. Therefore, elements of the same subfamily should have similar residence times in the population when calculated as millidiv. However, if there are deviations in the forces of selection between subsets of the subfamily (i.e: AS versus S) , then the residence times in the population should be unequal. An example of the hypothesis is presented in figure \ref{fig:l1age}. Here is shown the AS bias of Alu in two regions of genes, one region with a large AS bias, and one region with no AS bias. The hypotheses of selection underlying these distributions are listed at the bottom of the figure. 
 
 
-\subsection{Purifying selection of RTs in genes}
+\subsection{Selection of RTs in genes}
 Since Alu and L1 showed different changes in AS bias over time, it was expected that the age ranges associated with differences in AS bias would also be different. It was expected that despite the apparent AS bias, Alu would have relatively similar ages between AS and S elements, since they likely were selected on relatively soon after integration.
 
          %Figure 
@@ -294,6 +294,7 @@ Alu were similarly analyzed for differences in age depending on position and ori
     %\end{figure}
     
 \subsection{Lack of Purifying Selection of RTs on ChrY}
+
 To further test whether purifying or positive selection were acting on RTs within genes, we took advantage of the differing rates of selection on chrX, chrY, and the autosomes. It's been shown previously that rates of selection are faster on chrX than the autosomes, and faster on the autosomes than chrY [REF]. For this reason, and for the overall lack of purifying selection on chrY it was hypothesized that the age of RTs would increase in age from chrX to autosomes to chrY, within groups of RTs. First, to have a broad idea of the age of RTs across chromosomes, each location group was analyzed with all subfamilies aggregated together. Although aggregating all subfamilies into a single measure was expected to wash out a lot of the signal, there were significant differences between chromosomes when analyzed this way (table \ref{table:chrxyage}). 
 
 % Thu May  1 17:38:16 2014
@@ -333,6 +334,17 @@ To further test whether purifying or positive selection were acting on RTs withi
 \label{table:chrxyage}
 \end{table}
 
+         %Figure 
+    \begin{figure}[!ht]
+        \centering
+        \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{hclust_alu_chr.pdf}
+        \caption{\textbf{Clustering of Alu by Age\\} Red: Sense; Green: Antisense; Black: Intergenic}
+        \label{fig:hclustaluchr}
+    \end{figure}
+
+
+\subsection{Evidence of Purifying Selection on S and AS Alu}
+
 As expected, within sense Alu, elements on chrX had significantly lower millidiv than those on autosomes, which were significantly less than those on chrY (table \ref{table:chrsig}). The same pattern was identified between antisense Alu and between intergenic Alu. This result showed that chromosomes with heightened ability for purifying selection had elements that were significantly younger, supporting that purifying selection is indeed acting on Alu RTs. In fact, the effect of rate of selection as identified by type of chromosome had a larger effect on element age than the orientation. For example, sense Alu on chrY were significantly older than antisense Alu on autosomes, further indicating that the antisense bias is only present when purifying selection is present. 
 
 % Thu May  1 18:32:41 2014
@@ -361,14 +373,18 @@ As expected, within sense Alu, elements on chrX had significantly lower millidiv
 \label{table:chrsig}
 \end{table}
 
+%Signs of purifying and positive selection
+\subsection{Evidence of Purifying and Postive Selection on S and AS L1}
 
          %Figure 
     \begin{figure}[!ht]
         \centering
-        \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{hclust_alu_chr.pdf}
-        \caption{\textbf{Clustering of Alu by Age\\} Red: Sense; Green: Antisense; Black: Intergenic}
-        \label{fig:hclustaluchr}
+        \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{hclust_l1_chr.pdf}
+        \caption{\textbf{Clustering of L1 by Age\\} Red: Sense; Green: Antisense; Black: Intergenic}
+        \label{fig:hclustl1chr}
     \end{figure}
+
+L1 elements in autosomes were clustered in one major branch and L1 elements on chrX were clustered on a second major branch (figure \ref{fig:hclustl1chr}). Interestingly, L1 on chrY were interspersed within chrX and autosomes. When compared to using Student's t-tests S L1 on chrY were significantly younger than AS L1 on chrY (table \ref{table:l1chrsig}), indicating a potential difference in selective force acting on S and AS L1 on chrY. Moreover, AS L1 on chrY were older on average than intergenic L1 on chrY. These effects are mimicked by the antisense ratios (table \ref{table:l1asbiaschr}), further implicating selection in the derivation of the altered distribution of RTs within genes. 
 
 % Thu May  1 20:43:20 2014
 \begin{table}[ht]
@@ -391,16 +407,11 @@ As expected, within sense Alu, elements on chrX had significantly lower millidiv
    \hline
    \end{tabular}
 \caption{\normalsize{\textbf{Significance and direction of age differences across L1 groups}red: Student's t-test p < 2.2e-16; blue: Student't t-test p < 0.0014; teal: Student's t-test p < 0.0018 L: millidiv of row group is less than column group; G: millidiv of row group is greater than column group; =: millidiv of row group is equal to column group. Anti: Antisense; Inter: Intergenic}}
-\label{table:chrsig}
+\label{table:l1chrsig}
 \end{table}
 
-         %Figure 
-    \begin{figure}[!ht]
-        \centering
-        \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{hclust_l1_chr.pdf}
-        \caption{\textbf{Clustering of L1 by Age\\} Red: Sense; Green: Antisense; Black: Intergenic}
-        \label{fig:hclustl1chr}
-    \end{figure}
+\section{Conclusions}
+In summary the results within this chapter indicate that the AS bias of Alu and L1 RTs is due to forces of selection. It was found that the AS bias that is present in the current human genome is not present upon integration, and that this bias is produced quickly over evolutionary time in Alu, and over longer periods of time for L1. The ages associated with these RTs further indicated that there are varied levels of selective pressures exerted on Alu and L1 depending on their position and orientation within the genome. In general, Alu and L1 within genes were younger than the same subfamilies intergenically. This was evidence that Alu and L1 may be under purifying selection within genes. Moreover, in regions with restricted purifying selection (i.e.:chrY), there was a reduction of both AS bias and an increase in age of Alu RTs. These results substantiate the hypothesis that RTs are initially integrated without bias but become non-randomly distributed over time due to selection. These findings warrant further study into the variables effecting the non-random distribution of RTs within genes to determine what variables associated with both RTs and with genes that effect the level of selection. 
 }
 
 
