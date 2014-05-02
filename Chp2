@@ -4,7 +4,11 @@
 %Preamble
 %\documentclass[12bp]{article}
 \documentclass[12bp]{report}
+\usepackage{xcolor}
 \usepackage[top=1in, bottom=1in, left=1.25in, right=1in]{geometry} %geom has to be loaded before fancy header
+\usepackage{pdflscape}
+\usepackage{longtable,tabularx,ltxtable}
+
 \usepackage{pgfplots}
 \usepackage{pgfplotstable}
 \usepackage{fancyhdr}
@@ -223,13 +227,13 @@ Since Alu and L1 showed different changes in AS bias over time, it was expected 
         \label{fig:l1ageanova}
     \end{figure}
 
-Regression analyses were calculated to determine if placement within a gene was associated with millidiv (equation \ref{l1anova}). Each subfamily was analyzed separately. Millidiv was regressed on dummy variables representing the location within the genome (intergenic, AS, or S). A p-value was calculated for each regression equation and plotted as a function of the average millidiv in the entire subfamily (figure \ref{fig:l1ageanova}). 79 of the 114 subfamilies had millidiv values that were significantly associated with location after Bonferroni correction for multiple testing ( $\alpha$  = 4.3e-04). Moreover, the significance of these results increased with increasing age of the subfamily as a whole. These results indicate that there are different selection biases present depending on the location of the gene.
-
+It was important to determine if the age of an L1 element was contingent on the placement within the genome (i.e.: intergenic, AS within genes, or S within genes). To examine the associated of age with placement, millidiv was regressed on dummy variables representing each possible placement of the element (equation \ref{l1anova}). Since each subfamily has a different mean millidiv, and therefore would contribute differently to the calculation irrespective of placement, separate equations were calculated for each subfamily. This method of analysing the subfamilies separately was chosen instead of adding the subfamilies into the model as a random effect because it was important to observe how the estimates changed across increasingly aged subfamilies. A p-value was calculated for each regression equation and plotted as a function of the average millidiv in the entire subfamily within genes (figure \ref{fig:l1ageanova}). 79 of the 114 subfamilies had millidiv values that were significantly associated with location after Bonferroni correction for multiple testing ( $\alpha$  = 4.3e-04; Appendix table \ref{table:l1subvalues}). Moreover, the significance of these results increased with increasing age of the subfamily as a whole. These results indicated that there were different selection biases present depending on the placement of the RT.
     %Linear Regression Equation 1 : L1 anova
     \begin{equation}
     \label{l1anova}
          millidiv = \beta location_{subfamily, i}  +  \epsilon
     \end{equation}
+
 
     %         %Figure 
     %\begin{figure}[!ht]
@@ -290,7 +294,7 @@ Alu were similarly analyzed for differences in age depending on position and ori
     %\end{figure}
     
 \subsection{Lack of Purifying Selection of RTs on ChrY}
-
+To further test whether purifying or positive selection were acting on RTs within genes, we took advantage of the differing rates of selection on chrX, chrY, and the autosomes. It's been shown previously that rates of selection are faster on chrX than the autosomes, and faster on the autosomes than chrY [REF]. For this reason, and for the overall lack of purifying selection on chrY it was hypothesized that the age of RTs would increase in age from chrX to autosomes to chrY, within groups of RTs. First, to have a broad idea of the age of RTs across chromosomes, each location group was analyzed with all subfamilies aggregated together. Although aggregating all subfamilies into a single measure was expected to wash out a lot of the signal, there were significant differences between chromosomes when analyzed this way (table \ref{table:chrxyage}). 
 
 % Thu May  1 17:38:16 2014
 \begin{table}[ht]
@@ -325,7 +329,78 @@ Alu were similarly analyzed for differences in age depending on position and ori
   18 & L1 & int & y & 201.73 & 82.99 \\ 
    \hline
 \end{tabular}
+\caption{\normalsize{\textbf{Aggregated ages of Alu and L1 by chromosome}}}
+\label{table:chrxyage}
 \end{table}
+
+As expected, within sense Alu, elements on chrX had significantly lower millidiv than those on autosomes, which were significantly less than those on chrY (table \ref{table:chrsig}). The same pattern was identified between antisense Alu and between intergenic Alu. This result showed that chromosomes with heightened ability for purifying selection had elements that were significantly younger, supporting that purifying selection is indeed acting on Alu RTs. In fact, the effect of rate of selection as identified by type of chromosome had a larger effect on element age than the orientation. For example, sense Alu on chrY were significantly older than antisense Alu on autosomes, further indicating that the antisense bias is only present when purifying selection is present. 
+
+% Thu May  1 18:32:41 2014
+\begin{table}[ht]
+\large
+\centering
+\begin{tabular}{rlllllllllll}
+  \hline
+ & ALU &  & &Sense& & &Anti&&&Inter&  {    }\\ 
+ &  &  & chrX & Aut& chrY & chrX & Aut& chrY & chrX & Aut& chrY \\
+  \hline
+  1&  & X & . & \color{red}{L}&\color{red}{L} & \color{teal}{L}&\color{red}{L} & \color{red}{L} & \color{blue}{L}& \color{red}{L} & \color{red}{L} \\ 
+  2 & Sense & Aut & . & . & \color{red}{L} & \color{red}{G} & = & \color{red}{L} & \color{red}{G} & \color{blue}{L} & \color{red}{L} \\ 
+  3 &  & Y & . & . & . & \color{red}{G} & \color{red}{G} & = & \color{red}{G} & \color{red}{G} &\color{blue}{L} \\
+  \hline
+  4 &  & X & . & . & . & . & \color{red}{L} & \color{red}{L} & \color{blue}{L} & \color{red}{L} & \color{red}{L} \\ 
+  5 & Antisense & Aut & . & . & . & . & . & \color{red}{L} & \color{red}{G} & \color{blue}{L} & \color{red}{L} \\ 
+  6 &  & Y & . & . & . & . & . & . & \color{red}{G} & \color{red}{G} & \color{blue}{L} \\
+  \hline
+  7 &  & X & . & . & . & . & . & . & . & \color{red}{L} & \color{red}{L} \\ 
+  8 & Intergenic & Aut & . & . & . & . & . & . & . & . & \color{red}{L} \\ 
+  9 &  & Y & . & . & . & . & . & . & . & . & . \\ 
+   \hline
+\end{tabular}
+\caption{\normalsize{\textbf{Significance and direction of age differences across Alu groups}red: Student's t-test p < 2.2e-16; blue: Student't t-test p < 0.0014; teal: Student's t-test p < 0.0018 L: millidiv of row group is less than column group; G: millidiv of row group is greater than column group; =: millidiv of row group is equal to column group. Anti: Antisense; Inter: Intergenic}}
+\label{table:chrsig}
+\end{table}
+
+
+         %Figure 
+    \begin{figure}[!ht]
+        \centering
+        \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{hclust_alu_chr.pdf}
+        \caption{\textbf{Clustering of Alu by Age\\} Red: Sense; Green: Antisense; Black: Intergenic}
+        \label{fig:hclustaluchr}
+    \end{figure}
+
+% Thu May  1 20:43:20 2014
+\begin{table}[ht]
+\large
+\centering
+\begin{tabular}{rlllllllllll}
+  \hline
+ &  L1 &  & &Sense& & &Anti&&&Inter&  {    }\\ 
+ &  &  & chrX & Aut& chrY & chrX & Aut& chrY & chrX & Aut& chrY \\
+  \hline
+  1 &  & X & . & \color{red}{L} & = & \color{blue}{L} & \color{red}{L} & \color{red}{L} & = & \color{red}{L} & \color{red}{L} \\ 
+  2 & Sense & Aut & . & . & \color{blue}{G} & \color{red}{G}  & \color{red}{L}  & = & \color{red}{G}  & \color{blue}{G}  & \color{blue}{G}  \\ 
+  3 &  & Y & . & . & . & = & \color{blue}{L}  &  \color{blue}{L} & = &  \color{blue}{L} & = \\ 
+  4 &  & X & . & . & . & . &  \color{red}{L} &  \color{blue}{L} &  \color{blue}{G} &  \color{red}{L} & \color{blue}{L} \\ 
+  5 & Antisense & Aut & . & . & . & . & . & = &  \color{red}{G} & \color{red}{G} & \color{red}{G} \\ 
+  6 &  & Y & . & . & . & . & . & . & \color{red}{G} & = & \color{blue}{G} \\ 
+  7 &  & X & . & . & . & . & . & . & . & \color{red}{L} & \color{red}{L} \\ 
+  8 & Intergenic & Aut & . & . & . & . & . & . & . & . & \color{blue}{G} \\ 
+  9 &  & Y & . & . & . & . & . & . & . & . & . \\ 
+   \hline
+   \end{tabular}
+\caption{\normalsize{\textbf{Significance and direction of age differences across L1 groups}red: Student's t-test p < 2.2e-16; blue: Student't t-test p < 0.0014; teal: Student's t-test p < 0.0018 L: millidiv of row group is less than column group; G: millidiv of row group is greater than column group; =: millidiv of row group is equal to column group. Anti: Antisense; Inter: Intergenic}}
+\label{table:chrsig}
+\end{table}
+
+         %Figure 
+    \begin{figure}[!ht]
+        \centering
+        \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{hclust_l1_chr.pdf}
+        \caption{\textbf{Clustering of L1 by Age\\} Red: Sense; Green: Antisense; Black: Intergenic}
+        \label{fig:hclustl1chr}
+    \end{figure}
 }
 
 
