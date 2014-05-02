@@ -258,7 +258,7 @@ To determine if the association between location and millidiv was effected more 
     %    \label{fig: l1senseolder}
     %\end{figure}
 
-Alu were similarly analyzed for differences in age depending on position and orientation. Similar to L1, there was an increasingly significant effect of difference in age between regions within increasing age of the subfamily (figure \ref{fig:aluageanova}). Interestingly 14 of the 14 subfamilies that were significantly different in age between intergenic and within genes were all older intergenically (tests = 36 ; Bonferroni corrected  $\alpha$ = 1.4e-03). This replicates the findings from L1 showing that both L1 and Alu are under purifying selection in genes when compared to the same subfamilies in intergenic regions. Similarly 20 of the 20 subfamilies that were significantly different in age between S and AS orientations were older in the AS orientation. 
+Alu were similarly analyzed for differences in age depending on position and orientation. Similar to L1, there was an increasingly significant effect of difference in age between regions within increasing age of the subfamily (figure \ref{fig:aluageanova}). Interestingly 14 of the 14 subfamilies that were significantly different in age between intergenic and within genes were all older intergenically (tests = 36 ; Bonferroni corrected  $\alpha$ = 1.4e-03) (Appendix table \ref{table:alusubvalues}). This replicates the findings from L1 showing that both L1 and Alu are under purifying selection in genes when compared to the same subfamilies in intergenic regions. Similarly 20 of the 20 subfamilies that were significantly different in age between S and AS orientations were older in the AS orientation. 
 
 
          %Figure 
