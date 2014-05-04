@@ -451,7 +451,7 @@ These results indicate that the sequence of both Alu and L1 are differentially m
 %Example of the Polyadenylation Signal and PolIII 
 \subsection{Conservation at the basepair level of Binding Motifs}
 
-Since the previous analysis may have bias due to altered subfamily distributions, further analysis using conservation values was performed. Conservation 
+Since the previous analysis may have bias due to altered subfamily distributions, further analysis using conservation values was performed. Conservation values used in this analysis were from the phyloP basewise conservation scores, where positive values indicated evidence of positive selection, and negative values indicated evidence of purifying selection. Since the polyadenylation sequence was capable of being present within both Alu and L1 sequences, this was the first motif analyzed. Basewise conservation scores were averaged for each base within the polyadenylation sequence of either L1 (figure \ref{fig:l1polyA}) or Alu (figure \ref{fig:alupolyA}). L1 and Alu elements were first separated into AS and S elements before calculating the conservation scores. Interestingly, both Alu and L1 show a decrease in conservation at the central T base. Moreover, polyadenylation signals of L1 in the sense orientation have a lower conservation score on average than those of AS oriented L1. 
 
     %Figure l1 polyA
     \begin{figure}[!ht]
