@@ -349,7 +349,7 @@ To test whether the linear decay of antisense oriented L1 was related to the siz
 
 \subsection{Binding motifs in Alu}
 
-To establish an understanding of the binding motifs within Alu in general, intergenic Alu were studied first. The proportion of motifs within intergenic Alu were normalized by the number of elements analyzed.  
+Binding motifs were counted in a subset of Alu consensus sequences (table \ref{table:consensusAlu}). As noted above, most motifs were only present in a subset of the consensus sequences, and some motifs were not present in any of the sequences in the table. Other than the Pol-III (Pol3) promoter sequence, OTX2, PITX2, and LYF1 were present in all of the consensus sequences in the table. 
          
          % Sun May  4 13:23:32 2014
 \begin{landscape}%[ht]
@@ -368,7 +368,7 @@ To establish an understanding of the binding motifs within Alu in general, inter
   7 & RORA & ATcACGAGGTCAA &   0 &   0 &   0 &   1 &   0 &   0 &   0 \\ 
   8 & IRF1 & CAAgAGCGAAACT &   0 &   0 &   0 &   0 &   0 &   0 &   0 \\ 
   9 & NKX25 & CACTTGA &   0 &   1 &   0 &   0 &   0 &   0 &   0 \\ 
-  10 & OTX & CCTGTAATCCCA &   1 &   1 &   2 &   1 &   1 &   1 &   1 \\ 
+  10 & OTX2 & CCTGTAATCCCA &   1 &   1 &   2 &   1 &   1 &   1 &   1 \\ 
   11 & CpG & CG &  22 &  22 &  24 &  25 &  25 &  24 &  23 \\ 
   12 & MEF & CTACTAAAAATAcAAA &   0 &   0 &   1 &   1 &   1 &   0 &   1 \\ 
   13 & HNF4 & GAGGTCAAgAGATCG &   0 &   0 &   0 &   1 &   0 &   0 &   0 \\ 
@@ -379,15 +379,16 @@ To establish an understanding of the binding motifs within Alu in general, inter
   18 & LUN1 & TCCCAGCactTTgGGa &   0 &   0 &   0 &   0 &   0 &   0 &   0 \\ 
   19 & SP1 & TGAGGCGGGT &   0 &   0 &   0 &   0 &   0 &   0 &   0 \\ 
   20 & AARE & TGGTGAAAC &   0 &   1 &   1 &   1 &   0 &   0 &   0 \\ 
-  21 & PITX & TGTAATCCCAG &   1 &   1 &   2 &   1 &   1 &   1 &   1 \\ 
+  21 & PITX2 & TGTAATCCCAG &   1 &   1 &   2 &   1 &   1 &   1 &   1 \\ 
   22 & GFI & TGtAATCCCAGCA &   1 &   0 &   1 &   0 &   0 &   0 &   0 \\ 
-  23 & LYF2 & TTTGGGAGG &   1 &   1 &   1 &   1 &   1 &   1 &   1 \\ 
+  23 & LYF1 & TTTGGGAGG &   1 &   1 &   1 &   1 &   1 &   1 &   1 \\ 
   24 & terminus & GAGACTCCGTCTC &   0 &   0 &   1 &   1 &   1 &   1 &   1 \\ 
    \hline
 \end{longtable}
+\label{table:consensusAlu}
 \end{landscape}
 
-         
+These motifs were counted in intergenic Alu and normalized by the total number of intergenic Alu (figure \ref{fig:aluintmotif}). These values were calculated to act as a reference point for examining the changes in motif distribution based on placement of the element. As expected, based on the load of CpGs within the Alu consensus sequence, CpGs were the most prevalent motif in intergenic Alu. The next most prevalent motifs were PITX2, LYF1, and OTX2. This was also expected based on the presence of these elements with in every consensus sequence tested. 
          
     %Figure Alu motifs intergenic
     \begin{figure}[!ht]
@@ -397,6 +398,7 @@ To establish an understanding of the binding motifs within Alu in general, inter
         \label{fig:aluintmotif}
     \end{figure}
 
+The proportions of intergenic Alu motifs were then used to normalize the proportions of binding motifs identified in Alu that resided within genes (figure \ref{fig:alumotifs}). As with intergenic Alu, the count of motifs were first normalized by the number of elements within each region analyzed. Interestingly, even after this normalization procedure, the proportion of any given motif seemed to be effected more by the placement within a gene, than the sequence of the motif. For example, all of the motifs located within AS Alu had values above 1.2, independent of the type of motif. Similarly, all of the motifs within S Alu had values below 0.8. ANOVA was performed to determine if the effect of placement was significantly more than the effect of motif (equations \ref{Alu1} and \ref{Alu2}). Placement did indeed have a more significant effect on the proportion of motif than the sequence of motif (p$_{placement}$ < 2.2e-16; p$_{sequence}$ = 0.99) . Interestingly, despite the Alu Pol-III promoter being present in all Alu consensus sequences, it was reduced in all placements compared to intergenic Alu. 
 
     %Figure Alu motifs 
     \begin{figure}[!ht]
@@ -407,18 +409,15 @@ To establish an understanding of the binding motifs within Alu in general, inter
     \end{figure}
     
 
-[Talk about the pattern of the presence of motifs being dependent on the position of the motif compared to the sequence of the motif itslef. Include the table of the p-values and effects(?) From the ANOVA analysis].
-
-
     %Linear Regression Equation 1 : Alu motif
     \begin{equation}
-    \label{Alu 1:}
+    \label{Alu1}
         y  = \beta motif_{i} + ... + \beta motif_{n} + \epsilon
     \end{equation}
 
     %Linear Regression Equation 2 : Alu position
     \begin{equation}
-    \label{Alu 1:}
+    \label{Alu2}
         y  = \beta position_{i} + ... + \beta position_{n} + \epsilon 
     \end{equation}
     
