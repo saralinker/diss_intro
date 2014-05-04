@@ -5,7 +5,9 @@
 \documentclass[12bp]{report}
 \usepackage[top=1in, bottom=1in, left=1.25in, right=1in]{geometry} %geom has to be loaded before fancy header
 \usepackage{pgfplots}
-
+\usepackage{pdflscape}
+\usepackage{longtable,tabularx,ltxtable}
+\usepackage{rotating} 
 \usepackage{fancyhdr}
 \pagestyle{fancy} %Control over headers and footers
     \fancyhf{}%clears all fieds
@@ -347,8 +349,54 @@ To test whether the linear decay of antisense oriented L1 was related to the siz
 
 \subsection{Binding motifs in Alu}
 
-The binding motifs coded within Alu consensus sequences were identified by direct match, unless otherwise mentioned. Proportions of motifs within genes were normalized by the proportions identified intergenically. 
+To establish an understanding of the binding motifs within Alu in general, intergenic Alu were studied first. The proportion of motifs within intergenic Alu were normalized by the number of elements analyzed.  
          
+         % Sun May  4 13:23:32 2014
+\begin{landscape}%[ht]
+\large
+\centering
+\begin{longtable}{rllrrrrrrr}
+  \hline
+ & Motif & Sequence & AluJo & AluJb & AluS & AluSc & AluY' & AluYa8 & AluYb8 \\ 
+  \hline
+1 & PAX4 & AAAAAATTAGC &   0 &   0 &   0 &   0 &   1 &   0 &   1 \\ 
+  2 & PolyA & AAATAAA &   0 &   0 &   0 &   0 &   0 &   0 &   1 \\ 
+  3 & OC2 & ACAAAAAATaCAAAAAT &   1 &   1 &   0 &   0 &   0 &   0 &   1 \\ 
+  4 & BRN2 & ACAaAAATTAGCTgG &   0 &   0 &   0 &   0 &   0 &   0 &   1 \\ 
+  5 & AML & AGGCGGGTGGATCA &   0 &   0 &   0 &   0 &   0 &   0 &   1 \\ 
+  6 & DR2 & AGGTCAGGAGTTCA &   0 &   0 &   0 &   0 &   0 &   0 &   0 \\ 
+  7 & RORA & ATcACGAGGTCAA &   0 &   0 &   0 &   1 &   0 &   0 &   0 \\ 
+  8 & IRF1 & CAAgAGCGAAACT &   0 &   0 &   0 &   0 &   0 &   0 &   0 \\ 
+  9 & NKX25 & CACTTGA &   0 &   1 &   0 &   0 &   0 &   0 &   0 \\ 
+  10 & OTX & CCTGTAATCCCA &   1 &   1 &   2 &   1 &   1 &   1 &   1 \\ 
+  11 & CpG & CG &  22 &  22 &  24 &  25 &  25 &  24 &  23 \\ 
+  12 & MEF & CTACTAAAAATAcAAA &   0 &   0 &   1 &   1 &   1 &   0 &   1 \\ 
+  13 & HNF4 & GAGGTCAAgAGATCG &   0 &   0 &   0 &   1 &   0 &   0 &   0 \\ 
+  14 & REBP & GATCACcTGAG &   0 &   1 &   1 &   0 &   0 &   0 &   0 \\ 
+  15 & LXRE & GGATCACcTGAGGTCA &   0 &   0 &   1 &   1 &   1 &   1 &   0 \\ 
+  16 & Pol3 & GGCCGGGCGCGGTGGCTCACGCC &   1 &   1 &   1 &   1 &   1 &   1 &   1 \\ 
+  17 & HNF1 & TACAAAAATTAGCC &   1 &   1 &   1 &   1 &   0 &   0 &   0 \\ 
+  18 & LUN1 & TCCCAGCactTTgGGa &   0 &   0 &   0 &   0 &   0 &   0 &   0 \\ 
+  19 & SP1 & TGAGGCGGGT &   0 &   0 &   0 &   0 &   0 &   0 &   0 \\ 
+  20 & AARE & TGGTGAAAC &   0 &   1 &   1 &   1 &   0 &   0 &   0 \\ 
+  21 & PITX & TGTAATCCCAG &   1 &   1 &   2 &   1 &   1 &   1 &   1 \\ 
+  22 & GFI & TGtAATCCCAGCA &   1 &   0 &   1 &   0 &   0 &   0 &   0 \\ 
+  23 & LYF2 & TTTGGGAGG &   1 &   1 &   1 &   1 &   1 &   1 &   1 \\ 
+  24 & terminus & GAGACTCCGTCTC &   0 &   0 &   1 &   1 &   1 &   1 &   1 \\ 
+   \hline
+\end{longtable}
+\end{landscape}
+
+         
+         
+    %Figure Alu motifs intergenic
+    \begin{figure}[!ht]
+        \centering
+        \includegraphics[width=0.65\textwidth,natwidth=610,natheight=642]{alu_int_motif.pdf}
+       \caption{\textbf{}}
+        \label{fig:aluintmotif}
+    \end{figure}
+
 
     %Figure Alu motifs 
     \begin{figure}[!ht]
@@ -376,6 +424,15 @@ The binding motifs coded within Alu consensus sequences were identified by direc
     
 \subsection{Binding motifs in L1}
 {INFO}
+
+
+    %Figure L1 motifs intergenic
+    \begin{figure}[!ht]
+        \centering
+        \includegraphics[width=0.65\textwidth,natwidth=610,natheight=642]{l1_int_motif.pdf}
+       \caption{\textbf{}}
+        \label{fig:l1intmotif}
+    \end{figure}
 
     %Figure L1 motifs
     \begin{figure}[!ht]
@@ -419,23 +476,27 @@ The binding motifs coded within Alu consensus sequences were identified by direc
 \subsection{Functional Binding Motifs Effect Maintenance, Tissue Specific}
 To help determine how the functional motifs within Alu and L1 affect their frequency within genes, we analysed a subset of functional motifs found in the respective consensus sequences. To reduce the number of statistical tests (and hence required corrections), we restricted analysis to the bins that contained the extremes of Alu and L1 frequency. These were the first and last bins within the linear range of Alu/L1 frequency, which contained the most and least Alu and L1 respectively. Motif frequencies were normalized by the count of ASO or SO elements within the respective bin.
 
-\subsubsection{Alu}
     %Figure Alu antisense (TS / HK) motifs
     \begin{figure}[!ht]
         \centering
         \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{alumotifs_anti.pdf}
-       \caption{\textbf{Alu-contained binding motifs in tissue-specific and housekeeping genes (Antisense)\\}Protein binding motifs were examined similarly to those in figure \ref{fig:alumotifs}. hk : within housekeeping only; ts: within tissue-specific genes only}
+       \caption{\textbf{Alu-contained binding motifs in tissue-specific and housekeeping genes (Antisense)\\}Protein binding motifs were examined similarly to those in figure \ref{fig:alumotifs}. hk : within housekeeping only; ts: within tissue-specific genes only. The values on the top of the figure correspond to the Student's t-test p-values between TS and HK genes. Each dot represents the proportion in either bin 2, bin9, or bin 2 + bin 9 [IS THIS TRUE???????].}
         \label{fig:alumotifs_anti}
     \end{figure}
-    
+
+\subsubsection{Alu}
+The proportion of motifs found within AS Alu are plotted in figure \ref{fig:alumotifs_anti}. Intergenic Alu were used as a proxy for expectations under a neutral model, as was done in Chp2, and therefore used for comparison. The proportion of each motif was normalized by both the number of elements in the region (AS or intergenic). The motifs within AS Alu were then normalized by the proportion of motifs within intergenic Alu. This was done separately for tissue-specific (TS) genes and house-keeping (HK) genes. There were relatively similar values for all motifs in TS and HK genes. Interestingly, although there were similar levels of the Alu Pol-III promoter in AS elements of both TS and HK genes, both were substantially lower than intergenic values. This indicated that the Pol-III promoter of Alu in the AS orientation is ubiquitously eliminated within genes.
+
+
     %Figure Alu sense (TS / HK) motifs
     \begin{figure}[!ht]
         \centering
         \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{alumotifs_sense.pdf}
-       \caption{\textbf{Alu-contained binding motifs in tissue-specific and housekeeping genes (Sense)\\}}
+       \caption{\textbf{Alu-contained binding motifs in tissue-specific and housekeeping genes (Sense)\\} }
         \label{fig:alumotifs_sense}
     \end{figure}
 
+S Alu had a slightly different pattern of motif maintenance than AS Alu. Similarly to the AS Alu, there was a decrease in the Pol-III promoter in S Alu. 
 
 \subsubsection{L1}
 Contrary to the general trend of L1 elements as whole, functional motifs within L1 were over-represented near the 3\rq end of genes compared to the 5\rq end. Similarly motifs within sense oriented Alu were also over-represented near the 3\rq end of genes. Conversely, motifs within antisense oriented Alu were over-represented near the 5\rq gene end. Overall, antisense oriented L1 contained more functional motifs than sense oriented.
