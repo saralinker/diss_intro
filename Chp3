@@ -9,13 +9,13 @@
 \usepackage{fancyhdr}
 \pagestyle{fancy} %Control over headers and footers
     \fancyhf{}%clears all fieds
-    \lhead[R]{\leftmark} %add section title to the page
-    \cfoot{\thepage}    %add page number to center bottom
-    \renewcommand{\headrulewidth}{0.05pt} % 0 gets rid of the lines on top 
+   % \lhead[R]{\leftmark} %add section title to the page
+    \rhead{\thepage}    %add page number to center bottom
+    \renewcommand{\headrulewidth}{0pt} % 0 gets rid of the lines on top 
     \renewcommand{\footrulewidth}{0pt} % 0 gets rid of the line on bottom
     \fancypagestyle{plain}{% Changes all chapter pages to this format (by changing plain style)
         \fancyhf{}         % clear all header and footer fields
-        \rhead{\thepage}    % except the center
+        \cfoot{\thepage}    % except the center
         \renewcommand{\headrulewidth}{0pt}
         \renewcommand{\footrulewidth}{0pt}}
 
@@ -63,8 +63,9 @@
 
 %Document
 \begin{document}
+\tableofcontents
 \doublespace\large{
-\chapter{\\ABERRANT DISTRIBUTION OF RETROTRANSPOSONS IN GENES}
+\chapter{\\FACTORS INFLUENCING RETROTRANSPOSON DISTRIBUTION IN GENES}
 
 Retrotransposons comprise approximately half of the human genome and contribute to chromatin structure, regulatory motifs, and protein-coding sequences. Since retrotransposon insertions can disrupt functional genetic elements as well as introduce new sequence motifs to a region, they have the potential to affect the function of genes that harbor insertions as well as those nearby. Partly as a result of these effects, the distribution of retrotransposons across the genome is non-uniform and there are observed imbalances in the orientation of insertions with respect to the transcriptional direction of the containing gene. Although some of the factors underlying the observed distributions are understood, much of the variability remains unexplained. Detailed characterization of retrotransposon density in genes could help inform predictions of the functional consequence of \textit{de novo} as well as polymorphic insertions. In order to characterize the relationship between genes and inserted elements, it is important to examine the distribution of retrotransposons and their internal motifs within tissue-specific and housekeeping genes. 
 
@@ -85,7 +86,7 @@ The dependency of AS bias on position within a gene was calculated for both Alu 
     \label{fig:decile}
     \end{figure}
     
-\textit{\hspace{-15pt}Alu\\}  
+\subsubsection{Alu}
 AS and S Alu were counted in each decile and normalized by the total number of Alu within all deciles (figure \ref{fig:lineardecay_alu}). As expected due to the known AS-bias, there were more AS Alu than S Alu overall within RefSeq genes. Alu in the S orientation were distributed relatively equally across the internal deciles with drops in density occuring only in the first and last deciles that contain the UTRs. Conversely, AS Alu exhibited a linear decay in distribution with the highest point at decile 2 and the lowest point at decile 10. Similarly to Alu on the S strand, AS Alu also showed decreased in density, outside of the linear decrease, in the first and last deciles. The high level of AS Alu in the second decile mimicks previous studies that have shown an increase in Alu near the TSS. Interestingly, though, there is a steady decline in AS Alu that is highly dependent on the normalized gene decile within which the Alu resides.
         
     %Figure Linear Decay: Alu
@@ -96,7 +97,7 @@ AS and S Alu were counted in each decile and normalized by the total number of A
     \label{fig:lineardecay_alu}
     \end{figure}
     
-\textit{\\L1\\}     
+\subsubsection{L1}     
 AS L1 showed very similar density distributions within genes that Alu did. There was an overall increase in AS L1 compared to S L1, S L1 remained relatively constant throughout all gene deciles, and AS L1 exhibited a linear decile across deciles 2 - 10 (figure \ref{fig:lineardecay_l1}). There were also some differences between the pattern observed with L1 and the pattern observed with Alu. As is echoed in the overall AS-bias, there was a larger difference between AS L1 and S L1 within each decile, than that which is observed in Alu. This is further emphasized by the S and AS elements having reached a point of equal density in the last inner decile for Alu, while AS L1 remain more prevalent than S in every decile. \\
     
     %Figure Linear Decay: L1
@@ -183,7 +184,7 @@ In the previous chapter it was shown that AS bias was associated with a discrepa
     \end{figure}
 
 %AS bias (distribution near 5'-UTR)
-\section{Gene-specific variables are associated with AS bias}
+\section{Gene-specific variables associated with RT distribution}
 
 The fact that RTs undergo differential selective pressures depending on the orientation of element with respect to a gene is intriguing. It indicates that there must be some effect of the RT insertion on the phenotype of the organism that is dependent both on the insertion event, and also on the sequence of the RT. If RTs do indeed have specific effects on genes depending on the sequence of the RT then new insertions should be able to be classified as to the potential effect on the gene and potentially the phenotype. This is especially important for disease studies, where it is imperitive to have as much information as possible on a new variation to filter out false positives from the true source of phenotypic variation. The differential purifying selection between AS and S RTs indicates that this sequence-specific interaction between RT and gene, may indeed be true. When asking what is causing RTs within genes to undergo purifying selection there are two classes of variables to examine; variables associated with genes (eg: 5\rq-UTR density, coding sequence density), and variables associated with RTs (eg: length of the RT, sequence motifs contained with the RT).    
 
@@ -305,7 +306,7 @@ Depending on the functional groups of a gene, it has a different chance of conta
     \centering
     \begin{tabular}{rlrrr}
       \hline
-     & Category & N.genes & R2 AS Alu & R2 S Alu \\ 
+     & Category & {N, genes} & R2 AS Alu & R2 S Alu \\ 
       \hline
     1 & Housekeeping & 2237 & -0.96 & -0.40 \\ 
       2 & All Genes & 42582 & -0.94 & -0.30 \\ 
@@ -326,7 +327,7 @@ Depending on the functional groups of a gene, it has a different chance of conta
 
 
 %Internal Binding Motifs
-\section{Retrotransposon-specific variables are associated with AS bias}
+\section{Retrotransposon-specific variables are associated with RT distribution}
 Although the consensus sequences for Alu and L1 contain many functional DNA binding motifs, each individual RT in the genome is variable as to whether or not it contains these motifs. The loss or gain of a motif may occur by mutation at the nucleotide level (figure \ref{fig:motif}), through retrotransposition of a parent element that has already lost or gained the motif sequence, or through truncation of the element during integration. Protein binding motifs can impact both RT expression as well as gene expression. For example, the 5’ portion of the polymerase III promoter (Pol-III) contains the A-box motif which is necessary for transcription factor binding and expression of Alu retrotransposons [39]. The YY-1 binding motif contained within L1 is both a component of the core promoter necessary for  L1 transcription [40] as well as a general transcriptional repressor [41]. CpGs which are common in Alu and L1 can potentially effect levels of gene transcription [42] when methylated. Additionally due to the process of deamination, 5-methylcytosines are more likely to be mutated to thymines than non-methylated cytosines [43], and are commonly mutated in Alu [44]. The SRY motif is a binding domain for the testis-determining factor gene SRY which increases L1 transcription in 293 cells [45], and RUNX3 binding can act as both an activator and repressor of transcription and whose repression is linked with tumour progression [46].
 
     
@@ -344,10 +345,7 @@ Although the consensus sequences for Alu and L1 contain many functional DNA bind
 The human L1 consensus sequence is approximately 6kb, although it varies by subfamily. During retrotransposition L1 are often truncated, resulting in an average size of 900bp [1]. Reverse transcription of the RNA template initiates near the 3\rq end of RNA and often the L1 retrotransposase is unable to complete retrotransposition of the entire element into the insertion site, resulting in truncation of the 5\rq end [47,48]. In the human genome L1 are variable in size, a majority of which are less than 1 kb (table 6). The 5\rq region of L1, which is often lost during truncation, contains the Polymerase II promoter which can effect expression of neighbouring genes [19,20]. To identify whether L1 (<1kb) lack the promoter region, we determined the start position of each L1 (<1kb) within the respective consensus using local RepeatMasker (figure 9a).  The results indicate that a majority of these small L1 begin after the canonical promoter sequence. 
 To test whether the linear decay of antisense oriented L1 was related to the size of the element, we calculated the proportions of L1 <1kb, 1-2kb, 3-4kb, and 5kb+ versus expectation based on all L1. Fischer\rq s exact test p-values were calculated between the count of observed size-specific L1 and the expectation within bins 1 and 2 since these bins had the largest effects of antisense bias. We found that full-length L1 (5kb+) were greatly reduced in frequency near the 5\rq region of the gene compared to expectation (figure 9). This was true of L1 in both orientations. Conversely small L1, < 1kb, were increased near the 5\rq -UTR. The small sample size for the full length L1 in the second decile may be playing a role in their failure to pass significance after Bonferroni correction.
 
-
-%Functional Binding Motifs Effect Maintenance
-\subsection{TITLE HERE}
-Functional binding motifs, other than the L1 Pol-II promoter, are present within Alu and L1. Motif prediction algorithms have sucessfully identified a majority of the motifs that are present within the consensus sequences of each subfamily [REF]. Since RTs are differentially selected within genes depending on their orientation, it is possible that these sequence-specific, orientation-specific binding elements play a role in that maintenance. We, therefore, tested whether the RTs that have survived in the genome (ie: present in the Hg19 Reference) contain less of certain binding motifs than predicted by chance. The assumption being that if a binding motif contributes to the deleterious nature of the RT, then RTs lacking the binding motif would be less deleterious and therefore more likely to be maintained to the next generation.
+\subsection{Binding motifs in Alu}
 
 The binding motifs coded within Alu consensus sequences were identified by direct match, unless otherwise mentioned. Proportions of motifs within genes were normalized by the proportions identified intergenically. 
          
@@ -376,6 +374,9 @@ The binding motifs coded within Alu consensus sequences were identified by direc
         y  = \beta position_{i} + ... + \beta position_{n} + \epsilon 
     \end{equation}
     
+\subsection{Binding motifs in L1}
+{INFO}
+
     %Figure L1 motifs
     \begin{figure}[!ht]
         \centering
@@ -387,12 +388,38 @@ The binding motifs coded within Alu consensus sequences were identified by direc
 
 [Talk about the pattern of the presence of motifs being dependent on the position of the motif compared to the sequence of the motif itslef. Include the table of the p-values and effects(?) From the ANOVA analysis].
    
-    %Functional Binding Motifs Effect Maintenance, Tissue Specific
-\subsection{TITLE HERE}
-To help determine how the functional motifs within Alu and L1 affect their frequency within genes, we analysed a subset of functional motifs found in the respective consensus sequences (table 4). Frequencies of each motif were calculated within genes and compared to intergenic proportions. When measured across all genes, the motifs present in table 4 were significantly depleted within genes when compared to intergenic frequencies. To test if the depletion of motifs was due to a general degradation of the whole element as opposed to the motifs themselves we measured the relative frequencies of the end region of Alu (Alu-terminus) that had no known binding partner when queried in JASPAR. This region showed no enrichment in either intergenic or gene regions.
-Since we have shown that, at the level of entire elements, L1 and Alu frequencies are correlated with relative location within a gene, we examined the dependency of individual motifs on the relative location within the gene. To reduce the number of statistical tests (and hence required corrections), we restricted analysis to the bins that contained the extremes of Alu and L1 frequency. These were the first and last bins within the linear range of Alu/L1 frequency, which contained the most and least Alu and L1 respectively. Motif frequencies were normalized by the count of ASO or SO elements within the bin and then compared between bins (figure 8). Contrary to the general trend of L1 elements as whole, functional motifs within L1 were over-represented near the 3\rq end of genes compared to the 5\rq end. Similarly motifs within sense oriented Alu were also over-represented near the 3\rq end of genes. Conversely, motifs within antisense oriented Alu were over-represented near the 5\rq gene end. Overall, antisense oriented L1 contained more functional motifs than sense oriented.
-
+%Example of the Polyadenylation Signal and PolIII 
+\subsection{Conservation at the basepair level of Binding Motifs}
+    %Figure l1 polyA
+    \begin{figure}[!ht]
+        \centering
+        \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{l1polyA.pdf}
+       \caption{\textbf{Title\\}}
+        \label{fig:l1polyA}
+    \end{figure}
     
+    %Figure alu polyA
+    \begin{figure}[!ht]
+        \centering
+        \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{alupolyA.pdf}
+       \caption{\textbf{Title\\}}
+        \label{fig:alupolyA}
+    \end{figure}
+    
+        %Figure alu pol3
+    \begin{figure}[!ht]
+        \centering
+        \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{alupol3.pdf}
+       \caption{\textbf{Title\\}}
+        \label{fig:alupol3}
+    \end{figure}
+   
+\section{Interaction between Gene-specific and RT-specific variables}
+    %Functional Binding Motifs Effect Maintenance, Tissue Specific
+\subsection{Functional Binding Motifs Effect Maintenance, Tissue Specific}
+To help determine how the functional motifs within Alu and L1 affect their frequency within genes, we analysed a subset of functional motifs found in the respective consensus sequences. To reduce the number of statistical tests (and hence required corrections), we restricted analysis to the bins that contained the extremes of Alu and L1 frequency. These were the first and last bins within the linear range of Alu/L1 frequency, which contained the most and least Alu and L1 respectively. Motif frequencies were normalized by the count of ASO or SO elements within the respective bin.
+
+\subsubsection{Alu}
     %Figure Alu antisense (TS / HK) motifs
     \begin{figure}[!ht]
         \centering
@@ -410,6 +437,9 @@ Since we have shown that, at the level of entire elements, L1 and Alu frequencie
     \end{figure}
 
 
+\subsubsection{L1}
+Contrary to the general trend of L1 elements as whole, functional motifs within L1 were over-represented near the 3\rq end of genes compared to the 5\rq end. Similarly motifs within sense oriented Alu were also over-represented near the 3\rq end of genes. Conversely, motifs within antisense oriented Alu were over-represented near the 5\rq gene end. Overall, antisense oriented L1 contained more functional motifs than sense oriented.
+
     %Figure L1 anti (TS / HK) motifs
     \begin{figure}[!ht]
         \centering
@@ -425,13 +455,6 @@ Since we have shown that, at the level of entire elements, L1 and Alu frequencie
        \caption{\textbf{L1-contained binding motifs in tissue-specific and housekeeping genes (Sense)\\}}
         \label{fig:l1motifs_sense}
     \end{figure}
-
-
-     %Conservation of Binding Motifs is Dependent on Intergenic or In Gene Status
-\subsection{TITLE HERE}
-
-%Example of the Polyadenylation Signal and PolIII 
-\subsection{TITLE HERE}
 
 }
 
