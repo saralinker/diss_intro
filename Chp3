@@ -398,16 +398,8 @@ These motifs were counted in intergenic Alu and normalized by the total number o
         \label{fig:aluintmotif}
     \end{figure}
 
-The proportions of intergenic Alu motifs were then used to normalize the proportions of binding motifs identified in Alu that resided within genes (figure \ref{fig:alumotifs}). As with intergenic Alu, the count of motifs were first normalized by the number of elements within each region analyzed. Interestingly, even after this normalization procedure, the proportion of any given motif seemed to be effected more by the placement within a gene, than the sequence of the motif. For example, all of the motifs located within AS Alu had values above 1.2, independent of the type of motif. Similarly, all of the motifs within S Alu had values below 0.8. ANOVA was performed to determine if the effect of placement was significantly more than the effect of motif (equations \ref{Alu1} and \ref{Alu2}). Placement did indeed have a more significant effect on the proportion of motif than the sequence of motif (p$_{placement}$ < 2.2e-16; p$_{sequence}$ = 0.99) . Interestingly, despite the Alu Pol-III promoter being present in all Alu consensus sequences, it was reduced in all placements compared to intergenic Alu. 
+The proportions of intergenic Alu motifs were then used to normalize the proportions of binding motifs identified in Alu that resided within genes (figure \ref{fig:alumotifs}). As with intergenic Alu, the count of motifs were first normalized by the number of elements within each region analyzed. Interestingly, even after this normalization procedure, the proportion of any given motif seemed to be effected more by the placement within a gene, than the sequence of the motif. For example, all of the motifs located within AS Alu had values above 1.2, independent of the type of motif. Similarly, all of the motifs within S Alu had values below 0.8.
 
-    %Figure Alu motifs 
-    \begin{figure}[!ht]
-        \centering
-        \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{alumotifs.pdf}
-       \caption{\textbf{Presence of Alu-contained protein-binding motifs within genes\\}Protein binding motifs were examined for their presence within Alu both in genes and intergenically. The y-axis represents the ratio of the presence within genes to the presence intergenically. Alu within genes were seperated into categories based on the linear decline of AS-bias. AS\_5prime: Antisense Alu in the 10-20\% decile; S\_5prime: Sense Alu in the 10-20\% decile; AS\_3prime: Antisense Alu in the 80-90\% decile; S\_3prime: Sense Alu in the 80-90\% decile. The RNA Polymerase III A-box promoter (Pol3) is higlighted by an orange dashed box.}
-        \label{fig:alumotifs}
-    \end{figure}
-    
 
     %Linear Regression Equation 1 : Alu motif
     \begin{equation}
@@ -421,9 +413,21 @@ The proportions of intergenic Alu motifs were then used to normalize the proport
         y  = \beta position_{i} + ... + \beta position_{n} + \epsilon 
     \end{equation}
     
-\subsection{Binding motifs in L1}
-{INFO}
+    
+ANOVA was performed to determine if the effect of placement was significantly more than the effect of motif (equations \ref{Alu1} and \ref{Alu2}). Placement did indeed have a more significant effect on the proportion of motif than the sequence of motif (p$_{placement}$ < 2.2e-16; p$_{sequence}$ = 0.99) . Interestingly, despite the Alu Pol-III promoter being present in all Alu consensus sequences, it was reduced in all placements compared to intergenic Alu. 
 
+    %Figure Alu motifs 
+    \begin{figure}[!ht]
+        \centering
+        \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{alumotifs.pdf}
+       \caption{\textbf{Presence of Alu-contained protein-binding motifs within genes\\}Protein binding motifs were examined for their presence within Alu both in genes and intergenically. The y-axis represents the ratio of the presence within genes to the presence intergenically. Alu within genes were seperated into categories based on the linear decline of AS-bias. AS\_5prime: Antisense Alu in the 10-20\% decile; S\_5prime: Sense Alu in the 10-20\% decile; AS\_3prime: Antisense Alu in the 80-90\% decile; S\_3prime: Sense Alu in the 80-90\% decile. The RNA Polymerase III A-box promoter (Pol3) is higlighted by an orange dashed box.}
+        \label{fig:alumotifs}
+    \end{figure}
+    
+
+    
+\subsection{Binding motifs in L1}
+The motifs present within intergenic L1 are plotted in figure \ref{fig:l1intmotif}. Again, CpGs were the most prevalent motif in intergenic L1 followed by the polyadenylation sequence. The proportions of motifs in intergenic L1 were compared to the proportions within genes. As before, the values were normalized by the total number of elements in the respective region prior to comparison versus intergenic L1. Contrary to the pattern seen with Alu, L1 showed no trend of enrichment based on the placement within the gene. Instead the sequence of the motif had a larger effect on the proportion of motifs (p$_{placement}$ = 0.78; p$_{sequence}$ < 3.56e-13). Furthermore, unlike Alu, all motifs within L1 were reduced in genes compared to intergenically, with the largest depletion present within the SRY motif. 
 
     %Figure L1 motifs intergenic
     \begin{figure}[!ht]
@@ -433,6 +437,7 @@ The proportions of intergenic Alu motifs were then used to normalize the proport
         \label{fig:l1intmotif}
     \end{figure}
 
+
     %Figure L1 motifs
     \begin{figure}[!ht]
         \centering
@@ -441,11 +446,13 @@ The proportions of intergenic Alu motifs were then used to normalize the proport
         \label{fig:l1motifs}
     \end{figure}
 
+These results indicate that the sequence of both Alu and L1 are differentially maintained in genes vesrus intergenically. It must be noted, however, that since RTs within genes are more likely to be younger than RTs outside of genes, that there may be an inherent bias to detecting the difference in motifs. However, since age was calculated as the number of mismatches from consensus, it would be more likely that there would be an increase in the proportion of motifs since there would be less deviations from consensus. Therefore, although there is a possibility that these results are skewed due to differences in subfamily proportions between intergenic and within genes, the results are skewed in the opposite direction than would be expected. 
 
-[Talk about the pattern of the presence of motifs being dependent on the position of the motif compared to the sequence of the motif itslef. Include the table of the p-values and effects(?) From the ANOVA analysis].
-   
 %Example of the Polyadenylation Signal and PolIII 
 \subsection{Conservation at the basepair level of Binding Motifs}
+
+Since the previous analysis may have bias due to altered subfamily distributions, further analysis using conservation values was performed. Conservation 
+
     %Figure l1 polyA
     \begin{figure}[!ht]
         \centering
