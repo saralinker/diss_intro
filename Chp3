@@ -504,63 +504,46 @@ These results indicated that each position within a RT-contained binding motif h
 \subsection{Functional Binding Motifs Effect Maintenance, Tissue Specific}
 Next it was determined how the RT-specific variable of binding motifs is effected by the gene-specific variable of tissue-specific gene expression. To reduce the number of statistical tests, analysis was restricted to the deciles that contained the extremes of Alu and L1 frequency. These were deciles 2 and 9, otherwise defined as the first and last bins within the linear range of Alu/L1 frequency (section \ref{sec:as_dec}). To correct for differences in overall abundance of RTs depending on placement, motif frequencies were normalized by the count of AS or S elements within the respective bin, prior to normalization versus intergenic proportions. This was repeated separately for tissue-specific (TS) genes and house-keeping (HK) genes. 
 
+\subsubsection{Alu}
+
+                    %Figure Alu sense (TS / HK) motifs
+    \begin{figure}[!ht]
+        \centering
+        \includegraphics[scale=1.5,width=\textwidth]{alu_tshkmotifs_value.pdf}
+       \caption{\normalsize{\textbf{Alu-contained binding motifs in tissue-specific and housekeeping genes}}}
+        \label{fig:alu_tshkmotifs_value}
+    \end{figure}
+    
+    
+        %Figure Alu sense (TS / HK) motifs
+    \begin{figure}[!ht]
+        \centering
+        \includegraphics[scale=1.5,width=\textwidth]{alu_tshkmotifs.pdf}
+       \caption{\normalsize{\textbf{Alu-contained binding motifs in tissue-specific and housekeeping genes}}}
+        \label{fig:alumotifs_tshk}
+    \end{figure}
+
+
 
 \subsubsection{L1}
 
-
-    %Figure L1 anti (TS / HK) motifs
+    
+                %Figure Alu sense (TS / HK) motifs
     \begin{figure}[!ht]
         \centering
-        %\includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{l1motifs_anti.pdf}
-         \includegraphics[scale=1.5,width=\textwidth]{l1motifs_anti.pdf}
-       \caption{\normalsize{\textbf{L1-contained binding motifs in tissue-specific and housekeeping genes (Antisense)\\}
-       Protein binding motifs were examined similarly to those in figure \ref{fig:alumotifs}. hk : within housekeeping only; ts: within tissue-specific genes only. The values on the top of the figure correspond to the Student's t-test p-values between TS and HK genes. Each dot represents the proportion in either bin 2, bin9, or across the entire gene.}}
-        \label{fig:l1motifs_anti}
+        \includegraphics[scale=1.5,width=\textwidth]{l1_tshkmotifs_value.pdf}
+       \caption{\normalsize{\textbf{L1-contained binding motifs in tissue-specific and housekeeping genes}}}
+        \label{fig:l1_tshkmotifs_value}
     \end{figure}
     
-    %Figure L1 sense (TS / HK) motifs
+    
+            %Figure Alu sense (TS / HK) motifs
     \begin{figure}[!ht]
         \centering
-        %\includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{l1motifs_sense.pdf}
-        \includegraphics[scale=1.5,width=\textwidth]{l1motifs_sense.pdf}
-       \caption{\normalsize{\textbf{L1-contained binding motifs in tissue-specific and housekeeping genes (Sense)\\}
-       Protein binding motifs were examined similarly to those in figure \ref{fig:alumotifs}. hk : within housekeeping only; ts: within tissue-specific genes only. The values on the top of the figure correspond to the Student's t-test p-values between TS and HK genes. Each dot represents the proportion in either bin 2, bin9, or across the entire gene.}}
-        \label{fig:l1motifs_sense}
+        \includegraphics[scale=1.5,width=\textwidth]{l1_tshkmotifs.pdf}
+       \caption{\normalsize{\textbf{L1-contained binding motifs in tissue-specific and housekeeping genes}}}
+        \label{fig:l1motifs_tshk}
     \end{figure}
-
-As expected, tissue-specificity had a larger effect on L1 motifs than was observed within Alu motifs. In general the L1-contained motifs were reduced in both the AS and S orientation when compared to intergenic proportions. CpGs, polyadenylation signals, and Runx3(a) were significantly reduced in HK genes compared to TS genes (figure \ref{fig:l1motifs_anti}) in both the AS and S orientations. 
-
-\subsubsection{Alu}
-    %Figure Alu antisense (TS / HK) motifs
-    \begin{figure}[!ht]
-        \centering
-       % \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{alumotifs_anti.pdf}
-        \includegraphics[scale=1.5,width=\textwidth]{alumotifs_anti.pdf}
-       \caption{\normalsize{\textbf{Alu-contained binding motifs in tissue-specific and housekeeping genes (Antisense)\\}Protein binding motifs were examined similarly to those in figure \ref{fig:alumotifs}. hk : within housekeeping only; ts: within tissue-specific genes only. The values on the top of the figure correspond to the Student's t-test p-values between TS and HK genes. Each dot represents the proportion in either bin 2, bin9, or across the entire gene.}}
-        \label{fig:alumotifs_anti}
-    \end{figure}
-
-The same motifs analyzed in section \ref{sec:motifs} were compared in HK and TS genes. The proportion of motifs found within AS Alu are plotted in figure \ref{fig:alumotifs_anti}. There were relatively similar values for all motifs in TS and HK genes. BRN2, and polyadenylation signals had significant uncorrected p-values though did not pass Bonferroni correction ($\alpha$ = 0.002).
-
-HNF4, OC2, and RORA had measurements where the proportion of the motifs in one placement did not aggregate with the other measurements. For example, HNF4 showed a decrease in proportion when measured in the 3\rq -region of AS Alu within TS genes (p < 0.03). This was despite the relatively similarity of 5\rq - measures and the aggregate of all AS elements across all TS and HK genes to intergenic values. OC2 was differentially represented in AS within the 5\rq regions of genes (p < 0.01).  Lastly, RORA was also reduced in the Alu within the 5\rq - regions of genes (p < 0.01). Although these three regions must be noted due to their depletion beyond the proportions intergenically, they were not significant after correction for multiple testing ($\alpha$ = 6.94e-04).
-
-Although there were similar levels of the Alu Pol-III promoter in AS elements of both TS and HK genes, both were substantially lower than intergenic values. This indicated that the Pol-III promoter of Alu in the AS orientation was ubiquitously eliminated within HK and TS genes.
-
-
-    %Figure Alu sense (TS / HK) motifs
-    \begin{figure}[!ht]
-        \centering
-        %\includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{alumotifs_sense.pdf}
-        \includegraphics[scale=1.5,width=\textwidth]{alumotifs_sense.pdf}
-       \caption{\normalsize{\textbf{Alu-contained binding motifs in tissue-specific and housekeeping genes (Sense)\\}
-       Protein binding motifs were examined similarly to those in figure \ref{fig:alumotifs}. hk : within housekeeping only; ts: within tissue-specific genes only. The values on the top of the figure correspond to the Student's t-test p-values between TS and HK genes. Each dot represents the proportion in either bin 2, bin9, or across the entire gene.
-       }}
-        \label{fig:alumotifs_sense}
-    \end{figure}
-
-Alu in the S orientation had a slightly different pattern of motif maintenance than AS Alu. Similarly to the AS Alu, the majority of motifs had similar proportions within genes as they did in intergenic regions. HNF4 (p < 0.006) and the polyadenylation sequences (p < 0.019) had different proportions between TS and HK genes, though once again these tests did not pass the Bonferroni threshold ($\alpha$ = 0.002).
-
-Also, similar to what was observed in Alu in the AS orientation; HNF4, OC2, RORA, and IRF1 had single measurements that were lower than the other measurements for the same motif, though these values were not significant after Bonferroni correction. As with AS Alu there was a decrease in the Pol-III promoter in S Alu, however S Alu near the 5\rq end of the gene were not depleted.
 
 
 }
