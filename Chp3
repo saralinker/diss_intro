@@ -502,50 +502,50 @@ These results indicated that each position within a RT-contained binding motif h
 \section{Interaction between Gene-specific and RT-specific variables}
     %Functional Binding Motifs Effect Maintenance, Tissue Specific
 \subsection{Functional Binding Motifs Effect Maintenance, Tissue Specific}
-Next it was determined how the RT-specific variable of binding motifs is effected by the gene-specific variable of tissue-specific gene expression. To reduce the number of statistical tests, analysis was restricted to the deciles that contained the extremes of Alu and L1 frequency. These were deciles 2 and 9, otherwise defined as the first and last bins within the linear range of Alu/L1 frequency (section \ref{sec:as_dec}). To correct for differences in overall abundance of RTs depending on placement, motif frequencies were normalized by the count of AS or S elements within the respective bin, prior to normalization versus intergenic proportions. This was repeated separately for tissue-specific (TS) genes and house-keeping (HK) genes. 
+Next it was determined how the RT-specific variable of binding motifs is effected by the gene-specific variable of tissue-specific gene expression. To reduce the number of statistical tests, analysis was restricted to the deciles that contained the extremes of Alu and L1 frequency. These were deciles 2 and 9, otherwise defined as the first and last bins within the linear range of Alu/L1 frequency (section \ref{sec:as_dec}). To correct for differences in overall abundance of RTs depending on placement, motif frequencies were normalized by the count of AS or S elements within the respective bin. This was repeated separately for tissue-specific (TS) genes and house-keeping (HK) genes. 
 
 \subsubsection{Alu}
 
-                    %Figure Alu sense (TS / HK) motifs
+    %Figure Alu sense (TS / HK) motifs
     \begin{figure}[!ht]
         \centering
-        \includegraphics[scale=1.5,width=\textwidth]{alu_tshkmotifs_value.pdf}
+        \includegraphics[scale=1,width=\textwidth]{alu_tshkmotifs_value.pdf}
        \caption{\normalsize{\textbf{Alu-contained binding motifs in tissue-specific and housekeeping genes}}}
         \label{fig:alu_tshkmotifs_value}
     \end{figure}
     
     
-        %Figure Alu sense (TS / HK) motifs
+        %Figure Alu sense (TS / HK) motifs p-values
     \begin{figure}[!ht]
         \centering
-        \includegraphics[scale=1.5,width=\textwidth]{alu_tshkmotifs.pdf}
+        \includegraphics[scale=1,width=\textwidth]{alu_tshkmotifs.pdf}
        \caption{\normalsize{\textbf{Alu-contained binding motifs in tissue-specific and housekeeping genes}}}
         \label{fig:alumotifs_tshk}
     \end{figure}
 
-
+Since there was no normalization against intergenic in this analysis, the changes in proportion due to each motif was observable for this analysis (figure \ref{fig:alumotifs_tshk}). The proportion of motifs in each placement within TS genes were compared to the counterpart in HK genes. In general proportions of motifs in TS genes were larger than HK genes (87 of 140). 29 of the 140 comparisons were significant after Bonferonni correction ($\alpha$ = 3.6e-04) (figure \ref{fig:alumotifs_tshk}). Many of these comparisons were from polyadenylation sequences (N = 5 of 7 possible), and LUN1 (N = 4 of 7 possible). The majority of the significant comparisons were derived from whole gene comparisons (10 of 29 tests).
 
 \subsubsection{L1}
 
     
-                %Figure Alu sense (TS / HK) motifs
+    %Figure L1 sense (TS / HK) motifs
     \begin{figure}[!ht]
         \centering
-        \includegraphics[scale=1.5,width=\textwidth]{l1_tshkmotifs_value.pdf}
+        \includegraphics[scale=1,width=\textwidth]{l1_tshkmotifs_value.pdf}
        \caption{\normalsize{\textbf{L1-contained binding motifs in tissue-specific and housekeeping genes}}}
         \label{fig:l1_tshkmotifs_value}
     \end{figure}
     
     
-            %Figure Alu sense (TS / HK) motifs
+    %Figure L1 sense (TS / HK) motifs p-values
     \begin{figure}[!ht]
         \centering
-        \includegraphics[scale=1.5,width=\textwidth]{l1_tshkmotifs.pdf}
+        \includegraphics[scale=1,width=\textwidth]{l1_tshkmotifs.pdf}
        \caption{\normalsize{\textbf{L1-contained binding motifs in tissue-specific and housekeeping genes}}}
         \label{fig:l1motifs_tshk}
     \end{figure}
 
-
+For L1-contained motifs, all proportions of motifs were greater in TS genes than the respective placement in HK genes (56 of 56) (figure \ref{fig:l1_tshkmotifs_value}). 35 of the 56 comparisons were significant after Bonferonni correction ($\alpha$ = 8.9e-04) (figure \ref{fig:l1motifs_tshk}). The majority of the significant comparisons were within polyadenylation sequences (N = 7 of 7 possible), and the second variation of RUNX3 (N$_{b}$ = 6 of 7 possible). 
 }
 
     
