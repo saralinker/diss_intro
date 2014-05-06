@@ -137,53 +137,51 @@ AS L1 showed very similar density distributions within genes that Alu did. There
 AS bias in general was shown to increase relatively quickly for Alu, but to change over long periods of evolutionary time in L1. The slope of AS bias across gene deciles was similarly calculated across Alu and L1 subfamilies.
 %%% NEED TO WRITE BASH SCRIPT TO RE-CALCULATE THIS. I'M NOT SURE ABOUT THE ORIGINAL CALCULATIONS
 
-%%% And the part about the age of L1 and Alu Depending on the position within the gene
-In the previous chapter it was shown that AS bias was associated with a discrepancy in the age of elements between AS and S. An examination of the ages of Alu and L1 within each bin.
-
-%%%% WRITE A BASH SCRIPT LOOKING AT A YOUNG-ISH AND OLD-ISH L1 SUBFAMILY ACROSS THE DECILES. THEN ALSO SHOW THE FIGURE OF ALL OF THE DECILES.
-    
-  %%%%
-         %Figure 
-    \begin{figure}[!ht]
-        \centering
-        \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{l1age.png}
-        \caption{\normalsize{\textbf{Age of L1 across gene deciles\\}}
-        More here
-        }
-        \label{fig:l1age}
-    \end{figure}
-    
-             %Figure 
-    \begin{figure}[!ht]
-        \centering
-        \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{aluage.png}
-        \caption{\normalsize{\textbf{Age of Alu across gene deciles\\}}
-        More here
-        }
-        \label{fig:aluage}
-    \end{figure}
-    
-    
-             %Figure 
-    \begin{figure}[!ht]
-        \centering
-        \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{chrx_alu.png}
-        \caption{\normalsize{\textbf{AS bias of Alu on ChrX\\}}
-        More here
-        }
-        \label{fig:chrx_alu}
-    \end{figure}
-    
-    
-             %Figure 
-    \begin{figure}[!ht]
-        \centering
-        \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{chry_alu.png}
-        \caption{\normalsize{\textbf{AS bias of Alu on ChrY\\}}
-        More here
-        }
-        \label{fig:chry_alu}
-    \end{figure}
+%%%% And the part about the age of L1 and Alu Depending on the position within the gene
+%In the previous chapter it was shown that AS bias was associated with a discrepancy in the age of elements between AS and S. An examination of the ages of Alu and L1 within each bin. 
+%    
+%  %%%%
+%         %Figure 
+%    \begin{figure}[!ht]
+%        \centering
+%        \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{l1age.png}
+%        \caption{\normalsize{\textbf{Age of L1 across gene deciles\\}}
+%        More here
+%        }
+%        \label{fig:l1age}
+%    \end{figure}
+%    
+%             %Figure 
+%    \begin{figure}[!ht]
+%        \centering
+%        \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{aluage.png}
+%        \caption{\normalsize{\textbf{Age of Alu across gene deciles\\}}
+%        More here
+%        }
+%        \label{fig:aluage}
+%    \end{figure}
+%    
+%    
+%             %Figure 
+%    \begin{figure}[!ht]
+%        \centering
+%        \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{chrx_alu.png}
+%        \caption{\normalsize{\textbf{AS bias of Alu on ChrX\\}}
+%        More here
+%        }
+%        \label{fig:chrx_alu}
+%    \end{figure}
+%    
+%    
+%             %Figure 
+%    \begin{figure}[!ht]
+%        \centering
+%        \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{chry_alu.png}
+%        \caption{\normalsize{\textbf{AS bias of Alu on ChrY\\}}
+%        More here
+%        }
+%        \label{fig:chry_alu}
+%    \end{figure}
 
 %AS bias (distribution near 5'-UTR)
 \section{Gene-specific variables associated with RT distribution}
