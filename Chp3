@@ -69,16 +69,13 @@
 \doublespace\large{
 \chapter{\\FACTORS INFLUENCING RETROTRANSPOSON DISTRIBUTION IN GENES}
 
-Retrotransposons comprise approximately half of the human genome and contribute to chromatin structure, regulatory motifs, and protein-coding sequences. Upon insertion, retrotransposons can disrupt functional genetic elements as well as introduce new sequence motifs to a region. They therefore have the potential to effect the function of genes that harbor insertions. It is hypothesized that partly as a result of these effects, the distribution of retrotransposons across the genome is non-uniform. An example is the decrease in RTs within a few hundred bps of exons \cite{Zhang2011}. Although some of the factors underlying non-random distributions of RTs are understood, much of the variability remains unexplained. Detailed characterization of retrotransposon density in genes could help inform predictions of the functional consequence of \textit{de novo} as well as polymorphic insertions, which are important for future disease studies. In order to characterize the relationship between genes and inserted elements, it is important to examine the factors associates with altered distributions of retrotransposons. Factors that are associated with the RT (e.g. length of element, orientation, sequence) as well as factors that are associated with the gene (e.g. tissue expression, density of coding sequence) will be examined in this section.  
+Retrotransposons (RTs) comprise approximately half of the human genome and contribute to chromatin structure, regulatory motifs, and protein-coding sequences. Upon insertion, RTs can disrupt functional genetic elements as well as introduce new sequence motifs to a region. They therefore have the potential to effect the function of genes that harbor insertions. It is hypothesized that partly as a result of these effects, the distribution of RTs across the genome is non-uniform. An example is observed antisense bias (AS bias) of elements within genes (chapter 2). Although some of the factors underlying non-random distributions of RTs are understood, much of the variability remains unexplained. Detailed characterization of RT density in genes could help inform predictions of the functional consequence of \textit{de novo} as well as polymorphic insertions, which are important for future disease studies. In order to characterize the relationship between genes and inserted elements, it is important to examine the factors associates with altered distributions of RTs. Factors that are associated with the RT (e.g. length of element, orientation, sequence) as well as factors that are associated with the gene (e.g. tissue expression, density of coding sequence) will be examined in this section.  
 
 
 %ASbias (Linear Decay)
 \section{The Current Distribution of Alu and L1 within Genes}
-    
 %Linear Decay
-\subsection{L1 and Alu Antisense bias exhibits a linear decay across gene deciles}
-\label{sec:as_dec}
-The dependency of AS bias on position within a gene was calculated for both Alu and L1, where position was defined as one of ten deciles of a gene. RefSeq genes were divided into these deciles using the boundaries of transcription start (TSS) and transcription stop, including introns (figure \ref{fig:decile}). Previous research had used distance from the TSS to examine RT density, this alternative approach of normalizating genes by length expanded the scope of the analysis to examine the effect of relative position on RT density, and therefore the ability to detect any regions of the gene that are more sensitive to RT insertions. A side-effect of normalizing by the TSS and transcription stop positions was that every decile 1 (first decile) and decile 10 (last decile) contained an exon. Since deciles 2 - 9 (internal deciles) were not defined by any discrete exon boundary, they were variable as to the presence of an exon. Although the first and last deciles inevitably contained an exon, it was not necessarily a coding exon (ie: 5\rq-UTR or 3\rq-UTR). AS and S RTs (L1 or Alu) were counted within each decile and normalized by the total number of (AS + S) RTs in all deciles.\\
+The dependency of AS bias on position within a gene was calculated for both Alu and L1, where position was defined as one of ten deciles of a gene. RefSeq genes were divided into these deciles using the boundaries of transcription start (TSS) and transcription stop, including introns (figure \ref{fig:decile}). Previous research had used distance from the TSS to examine RT density, this alternative approach of normalizating genes by length expanded the scope of the analysis to examine the effect of relative position on RT density, and therefore the ability to detect any regions of the gene that are more sensitive to RT insertions. A side-effect of normalizing by the TSS and transcription stop positions was that every decile 1 (first decile) and decile 10 (last decile) contained an exon. Since deciles 2 - 9 (internal deciles) were not defined by any discrete exon boundary, they were variable as to the presence of an exon. Although the first and last deciles inevitably contained an exon, it was not necessarily a coding exon (ie: 5\rq-UTR or 3\rq-UTR). 
 
     %Figure Decile Explanation
     \begin{figure}[!ht]
@@ -88,8 +85,12 @@ The dependency of AS bias on position within a gene was calculated for both Alu 
     \label{fig:decile}
     \end{figure}
     
+\subsection{L1 and Alu Antisense bias exhibits a linear decay across gene deciles}
+\label{sec:as_dec}
+It has been previously shown that RTs are increased near TSSs. It was first important to determine if the increased RT density near the TSS was replicated when genes were normalized by length. AS and S RTs (L1 or Alu) were counted within each decile across all RefSeq genes and normalized by the total number of  RTs in all deciles (AS + S).
+
 \subsubsection{Alu}
-AS and S Alu were counted in each decile and normalized by the total number of Alu within all deciles (figure \ref{fig:lineardecay_alu}). As expected due to the known AS-bias, there were more AS Alu than S Alu overall within RefSeq genes. Alu in the S orientation were distributed relatively equally across the internal deciles with drops in density occuring only in the first and last deciles that contain the UTRs. Conversely, AS Alu exhibited a linear decay in distribution with the highest point at decile 2 and the lowest point at decile 10. Similarly to Alu on the S strand, AS Alu also showed decreased in density, outside of the linear decrease, in the first and last deciles. The high level of AS Alu in the second decile mimicks previous studies that have shown an increase in Alu near the TSS. Interestingly, though, there is a steady decline in AS Alu that is highly dependent on the normalized gene decile within which the Alu resides.
+AS and S Alu were counted in each decile and normalized by the total number of Alu within all deciles (figure \ref{fig:lineardecay_alu}). Replicating previous findings, there was an increase in elements near the TSS (decile 1) compared to the body of the gene. Although when normalized, decile 1 had less elements than one decile downstream (decile 2). As expected due to the known AS-bias, there were more AS Alu than S Alu overall. Alu in the S orientation were distributed relatively equally across the internal deciles with drops in density in deciles 1 and 10. Conversely, AS Alu exhibited a linear decay in distribution from decile 2 to decile 9. Similarly to Alu on the S strand, AS Alu also showed decreased in density, outside of the linear decrease, in deciles 1 and 10. 
         
     %Figure Linear Decay: Alu
     \begin{figure}[!h]
@@ -100,26 +101,28 @@ AS and S Alu were counted in each decile and normalized by the total number of A
     \end{figure}
     
 \subsubsection{L1}     
-AS L1 showed very similar density distributions within genes that Alu did. There was an overall increase in AS L1 compared to S L1, S L1 remained relatively constant throughout all gene deciles, and AS L1 exhibited a linear decile across deciles 2 - 10 (figure \ref{fig:lineardecay_l1}). There were also some differences between the pattern observed with L1 and the pattern observed with Alu. As is echoed in the overall AS-bias, there was a larger difference between AS L1 and S L1 within each decile, than that which is observed in Alu. This is further emphasized by the S and AS elements having reached a point of equal density in the last inner decile for Alu, while AS L1 remain more prevalent than S in every decile. \\
+L1 had a similar distribution to Alu when within genes. Again, as expected due to the overall AS bias, there was an increase in AS L1 compared to S L1. Throughout deciles 2 - 9, S L1 remained at a relatively constant distribution, though it must be noted that there was more variability between these deciles, then observed with Alu. AS L1 exhibited a linear decile across deciles 2 - 9 (figure \ref{fig:lineardecay_l1}). The overall difference between AS L1 and S L1 within each decile, was larger than what was observed in Alu. This was emphasized by AS and S elements having reached a point of equal density in the last inner decile for Alu, while AS L1 remain more prevalent than S in every decile. \\
     
     %Figure Linear Decay: L1
     \begin{figure}[!h]
     \centering
     \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{lineardecay_l1.pdf}
     \caption{\normalsize{\textbf{AS bias of L1 decays linearly across gene boundaries\\}Counts of L1 in the AS and S orientation per decile were normalized by the total L1 in all RefSeq genes. as = antisense, s = sense}}
+    \label{fig:lineardecay_l1}
     \end{figure}
    
 
-\newpage Both AS L1 and Alu began at a relatively high frequency in decile 2 and declined until decile 10. To determine the rate of AS decay across gene deciles, analysis was restricted to the internal deciles. This avoided the confounding effects from the process of normalization. Slopes were calculated with the counts of raw elements as opposed to the proportions to facilitate interpretation (table \ref{table:lindecay}). As expected, the decile number had a significant impact on AS density in both Alu and L1, with Alu reduced by -994 elements per decile and L1 by -1410 elements per decile. S elements were not significantly effected by the decile within which they resided.\\
+\newpage Both AS L1 and Alu began at a relatively high frequency in decile 2 and declined linearly until decile 9. The rate of AS decay across gene deciles was determined by analysing these internal deciles only. This avoided the confounding effects from the process of normalization. Slopes were calculated with the counts of raw elements as opposed to the proportions to facilitate interpretation (table \ref{table:lindecay}). As expected, the decile number had a significant impact on AS density in both Alu and L1, with Alu reduced by -994 elements per decile and L1 by -1410 elements per decile. S elements were not significantly effected by the decile within which they resided.\\
 
     
     % Table Slope of Linear Decay
     % Thu Apr 10 13:47:08 2014
    \begin{table}[ht]
+   \large
    \centering
    \begin{tabular}{rllrrr}
      \hline
-    & Element & Orientation & Estimate & p(intercept) & p(decile) \\ 
+    & Element & Orientation & Estimate & p$_{intercept}$ & p$_{decile}$ \\ 
     \hline
   1 & Alu & AS & -1410.67 & 7.45e-12 & 5.53e-08 \\ 
     2 & Alu & S & -27.17 & 2.33e-10 & 6.08e-01 \\ 
@@ -127,9 +130,11 @@ AS L1 showed very similar density distributions within genes that Alu did. There
     4 & L1 & S & 32.88 & 3.09e-07 & 6.91e-01 \\ 
      \hline
     \end{tabular}
-        \caption{Slope of Linear Decay for Alu and L1 within the internal deciles of genes}
+        \caption{\normalsize{\textbf{Slope of linear decay for Alu and L1 within the internal deciles of genes\\} Decile number was regressed on element count in the antisense (AS) and sense (S) orientations for each element. p$_{intercept}$ = F-test p-value of the intercept of the regression line. p$_{decile}$ = F-test p-value of the effect of decile on the regression line.}}
         \label{table:lindecay}
     \end{table}
+
+These results show that RTs are not only increased in density near the TSS, but are increased as a function of the location within the gene in which they reside. Moreover, the enrichment of elements is restricted to AS elements. If the increase near the TSS was purely due to a structural change in accessiblity, it would be expected that both AS and S elements would be increased near the TSS. Therefore, these results indicated that there may be a functional link between the orientation of elements and the propensity to which they are maintained within genes. Futhermore, there is a difference in this propensity near the TSS as opposed to near the 3\rq -end of a gene. 
 
 
 %Change of Linear Decay Over Time
