@@ -266,7 +266,7 @@ AS Alu in genes containing 2$^\circ$ 5\rq -UTRs were similar in density to the A
     
     
 \subsubsection{\textit{L1}}
-The distribution of AS L1 within genes containing 2$^\circ$ 5\rq-UTR was somewhat similar to that observed with AS Alu (figure \ref{fig:2utr_ASl1}). Interestingly, there was a slight decrease in L1 density upstream of the 0 decile for AS L1 in genes containing a 2$^\circ$ 5\rq-UTR, though this decrease was not signficant. The 0 decile was significantly reduced over expectation (mean second UTR: 0.057 ; mean no second UTR: 0.071 ; Student's t-test p < 0.007), although the S L1 were not significantly reduced (p = 0.47) (figure \ref{fig:2utr_Sl1}). These results indicated that there may be a decrease of L1 and Alu in the presence of a 5\rq-UTR, however another explanation could be that there was another latent variable associated with the 5\rq-UTR which is still be picked up in this analysis. 
+The distribution of AS L1 within genes containing 2$^\circ$ 5\rq-UTR was somewhat similar to that observed with AS Alu (figure \ref{fig:2utr_ASl1}). Interestingly, there was a slight decrease in L1 density upstream of the 0 decile for AS L1 in genes containing a 2$^\circ$ 5\rq-UTR, followed by an increase, though this decrease was not signficant. The 0 decile was significantly reduced over expectation (mean second UTR: 0.057 ; mean no second UTR: 0.071 ; Student's t-test p < 0.007), although the S L1 were not significantly reduced (p = 0.47) (figure \ref{fig:2utr_Sl1}). These results showed that there was a decrease of L1 and Alu in the presence of a 5\rq-UTR. 
     
         %Figure 5'-UTR AS L1
     \begin{figure}[!ht]
@@ -291,7 +291,7 @@ The distribution of AS L1 within genes containing 2$^\circ$ 5\rq-UTR was somewha
     
 %Correlation of Linear Decay with CDS Exon Density
 \subsection{Linear decay of AS bias is associated with coding sequence density}
-Since previous studies have shown that AS RT density was inversely correlated with exon density, we next calculated the frequency of coding exons (CDS) within each decile. Indeed, CDS density increased at a linear rate across gene deciles (figure \ref{fig:cds_noUTR}). The first decile of genes contained more CDS than the second decile. This was likely due to using the TSS as a starting point for calculation, which would enrich for 5\rq-UTRs and consequently the coding exons that may be associated with them. Therefore, as has been indicated previously [9], ASO-RTs were inversely correlated with exon density (Pearson\rq s Corr. value: -0.94; p-value: 5.21e-05) (table 3). Moreover, the distributions of exons and RTs were found to be linearly increasing and decreasing across a gene, respectively, indicating a predictable pattern of RT density within gene bounds.  
+Although 5\rq -UTRs were associated with RT density, CDS exons must still be examined as to their contribution to the effect of reduced RTs near the TSS. Since previous studies have shown that AS RT density was reduced within close proximity to exons, the density of CDS within each decile was calculated. Indeed, CDS density increased at a linear rate across gene deciles (figure \ref{fig:cds_noUTR}). The first decile of genes contained more CDS than the second decile.  AS Alu were inversely correlated with this distribution of CDS (R$^{2}$ = -0.94; one-tailed p <  2.64e-05). S Alu, however, were not correlated with CDS (R$^{2}$ = -0.30; one-tailed p = 0.200) 
     
     %Figure CDS (no secondary 5'-UTR)
     \begin{figure}[!ht]
@@ -310,31 +310,31 @@ Since previous studies have shown that AS RT density was inversely correlated wi
 
 %AS bias and tissue-specificity
 \subsection{Tissue-Specificity of the Gene Effects AS bias}
-Depending on the functional groups of a gene, it has a different chance of containing large amounts of RTs. For example, housekeeping genes have a predictably higher level of Alu frequency than other gene categories [37]. We therefore tested whether AS bias remained linear when subdivided by gene category. The effect of tissue-specificity was tested by both analyzing the slope of the density of AS as well as correlating the distribution of Alu with the distribution of CDS within tissue-specific gene sets. The linear AS slope remained present in housekeeping genes, but it was not maintained in tissue-specific gene sets. Furthermore, the correlation between ASO-RT frequency and CDS distribution was reduced within tissue-specific gene sets (table \ref{table:tiscor}).
+Depending on the functional groups of a gene, it has a different chance of containing large amounts of RTs. For example, housekeeping genes have a predictably higher level of Alu frequency than other gene categories. We therefore tested whether AS bias remained linear when subdivided by gene category. The effect of tissue-specificity was tested by both analyzing the slope of the density of AS as well as correlating the distribution of Alu with the distribution of CDS within tissue-specific gene sets. The linear AS slope remained present in housekeeping genes, but it was not maintained in tissue-specific gene sets. Furthermore, the correlation between ASO-RT frequency and CDS distribution was reduced within tissue-specific gene sets (table \ref{table:tiscor}). Although the sample size of each gene set trended with the R$^{2}$, sample size was not significantly correlated with R$^{2}$ (p = 0.062).
 
     % Sat Apr 12 09:10:21 2014
     %Tissue specificity table
     \begin{table}[ht]
     \large
     \centering
-    \begin{tabular}{rlrrr}
+    \begin{tabular}{rlrrrrr}
       \hline
-     & Category & {N, genes} & R2 AS Alu & R2 S Alu \\ 
+     & Category & {N, genes} & R$^{2}$ $_{AS ,Alu}$ & one-tailed p$_{AS}$ & R$^{2}$  $_{S ,Alu}$ & one-tailed p$_{S}$ \\ 
       \hline
-    1 & Housekeeping & 2237 & -0.96 & -0.40 \\ 
-      2 & All Genes & 42582 & -0.94 & -0.30 \\ 
-      3 & Neutrophil & 231 & -0.76 & -0.21 \\ 
-      4 & Muscle & 111 & -0.53 & 0.02 \\ 
-      5 & Cartilage & 133 & -0.53 & 0.23 \\ 
-      6 & Testis & 252 & -0.51 & -0.38 \\ 
-      7 & Liver & 305 & -0.43 & -0.22 \\ 
-      8 & Colon & 122 & -0.16 & 0.03 \\ 
-      9 & Pancreas & 125 & -0.08 & -0.47 \\ 
+    1 & Housekeeping & 2237 & -0.96 & 5.34e-06& -0.40 & 0.126\\  
+      2 & Neutrophil & 231 & -0.76 & 5.37e-03 &-0.21 & 0.280 \\ 
+      3 & Muscle & 111 & -0.53 & 0.058 & 0.02& 0.478 \\ 
+      4 & Cartilage & 133 & -0.53 &  0.058 & 0.23 & 0.258 \\ 
+      5 & Testis & 252 & -0.51 & 0.066 & -0.38 & 0.139 \\ 
+      6 & Liver & 305 & -0.43 & 0.107 & -0.22 & 0.270\\ 
+      7 & Colon & 122 & -0.16 & 0.329 &  0.03 & 0.467 \\ 
+      8 & Pancreas & 125 & -0.08 & 0.413 & -0.47 & 0.085\\ 
        \hline
     \end{tabular}
-    \caption{\normalsize{\textbf{Correlation of CDS and Alu across gene categories}}}
+    \caption{\normalsize{\textbf{Correlation of CDS and Alu across gene categories\\}Correlation of the proportion of Alu in each decile versus the proportion of CDS in each decile.}}
         \label{table:tiscor}
     \end{table}
+    %2 & All Genes & 42582 & -0.94 & 2.64e-05&-0.30& 0.200
 
 !!!! NEED TO ADD P-VALUES FOR THAT TABLE !!! To determine if differences in gene expression across tissue types was confounding this result, we tested the correlation between ASO frequency and exon density as a function of relative expression in housekeeping and tissue specific genes. There was no link between expression level and the correlation between ASO and exon density (figure 7). Furthermore, since it has been shown that retrotransposons are restricted near constitutively expressed exons [38], we also wanted to check if the loss of antisense bias was affected by alternative splicing. Using the knownAlt annotation track from Hg19 (UCSC Genome Browser), we separated genes into those with known alternative splicing events, and those that are constitutively expressed. We found no significant differences between the distribution of ASO and SO between the two groups (chi-square p > 0.25, p > 0.23 respectively). We further calculated the correlation of ASO Alu density and CDS density within alternatively spliced genes. The negative correlation that is seen across all genes was replicated when examining only genes that are alternatively spliced (Pearson’s correlation coefficient: -0.78, p < 0.008). 
 
