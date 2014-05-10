@@ -77,7 +77,7 @@ The detailed characterization of these associations is important to understand t
 %ASbias (Linear Decay)
 \section{The Current Distribution of Alu and L1 within Genes}
 %Linear Decay
-The dependency of AS bias on position within a gene was calculated for both Alu and L1, where position was defined as one of ten deciles of a gene. RefSeq genes were divided into these deciles using the boundaries of transcription start site (TSS) and transcription stop site, including introns (figure \ref{fig:decile}). Previous research had used distance from the TSS to examine RT density, this alternative approach of normalizating genes by length expanded the scope of the analysis to examine the effect of relative position on RT density, and therefore the ability to detect any regions of the gene that are more sensitive to RT insertions. A side-effect of normalizing by the TSS and transcription stop positions was that every decile 1 (first decile) and decile 10 (last decile) necessarily contained an exon. Since deciles 2 - 9 (internal deciles) were not defined by any discrete exon boundary, they were variable with respect to the presence of an exon. For this reason many analyses were restricted to the internal deciles. It must be noted that although the first and last deciles inevitably contained an exon, it was not necessarily a coding exon (i.e.: 5\rq-UTR or 3\rq-UTR only). 
+The dependency of AS bias on position within a gene was calculated for both Alu and L1, where position was defined as one of ten deciles of a gene. RefSeq genes were divided into these deciles using the boundaries of transcription start site (TSS) and transcription stop site, including introns (figure \ref{fig:decile}). Previous research had used distance from the TSS to examine RT density, this alternative approach of normalizating genes by length expanded the scope of the analysis to examine the effect of relative position on RT density, and therefore the ability to detect any regions of the gene that were more sensitive to RT insertions. A side-effect of normalizing by the TSS and transcription stop positions was that every decile 1 (first decile) and decile 10 (last decile) necessarily contained an exon. Since deciles 2 - 9 (internal deciles) were not defined by any discrete exon boundary, they were variable with respect to the presence of an exon. For this reason many analyses were restricted to the internal deciles. It must be noted that although the first and last deciles inevitably contained an exon, it was not necessarily a coding exon (i.e.: 5\rq-UTR or 3\rq-UTR only). 
 
     %Figure Decile Explanation
     \begin{figure}[!ht]
@@ -89,10 +89,10 @@ The dependency of AS bias on position within a gene was calculated for both Alu 
     
 \subsection{L1 and Alu Antisense bias exhibits a linear decay across gene deciles}
 \label{sec:as_dec}
-It has been previously shown that RTs are increased near TSSs. It was first important to determine if the increased RT density near the TSS was replicated when genes were normalized by length. AS and S RTs (L1 or Alu) were counted within each decile across all RefSeq genes and normalized by the total number of  RTs in all deciles (AS + S).
+RTs are increased in number near TSSs compared to transcription stop sites. It was first important to determine if examining RT distribution, while normalizing genes by length, replicated these findings. AS and S RTs were counted within each decile across all RefSeq genes and normalized by the total number of  RTs in all deciles (AS + S) for both Alu and L1.
 
-\subsubsection{Alu}
-AS and S Alu were counted in each decile and normalized by the total number of Alu within all deciles (figure \ref{fig:lineardecay_alu}). Replicating previous findings, there was an increase in elements near the TSS (decile 1) compared to the body of the gene. Although when normalized, decile 1 had less elements than one decile downstream (decile 2). As expected due to the known AS-bias, there were more AS Alu than S Alu overall. Alu in the S orientation were distributed relatively equally across the internal deciles with drops in density in deciles 1 and 10. Conversely, AS Alu exhibited a linear decay in distribution from decile 2 to decile 9. Similarly to Alu on the S strand, AS Alu also showed decreased in density, outside of the linear decrease, in deciles 1 and 10. 
+\subsubsection{\textit{Alu}}
+AS and S Alu were counted in each decile and normalized by the total number of Alu within all deciles (figure \ref{fig:lineardecay_alu}). Replicating previous findings, there was an increase in elements near the TSS (decile 1) compared to the end of the gene. Also as expected due to the known AS-bias, there were more AS Alu than S Alu overall. Alu in the S orientation were distributed relatively equally across the internal deciles with drops in density in deciles 1 and 10. Conversely, AS Alu exhibited a linear decay in distribution from decile 2 to decile 9. Similarly to Alu on the S strand, AS Alu also showed decreased in density, outside of the linear decrease, in deciles 1 and 10. 
         
     %Figure Linear Decay: Alu
     \begin{figure}[!h]
@@ -102,8 +102,8 @@ AS and S Alu were counted in each decile and normalized by the total number of A
     \label{fig:lineardecay_alu}
     \end{figure}
     
-\subsubsection{L1}     
-L1 had a similar distribution to Alu when within genes. Again, as expected due to the overall AS bias, there was an increase in AS L1 compared to S L1. Throughout deciles 2 - 9, S L1 remained at a relatively constant distribution, though it must be noted that there was more variability between these deciles, then observed with Alu. AS L1 exhibited a linear decile across deciles 2 - 9 (figure \ref{fig:lineardecay_l1}). The overall difference between AS L1 and S L1 within each decile, was larger than what was observed in Alu. This was emphasized by AS and S elements having reached a point of equal density in the last inner decile for Alu, while AS L1 remain more prevalent than S in every decile. \\
+\subsubsection{\textit{L1}}
+L1 had a similar distribution to Alu when within genes. Again, as expected due to the overall AS bias, there was an increase in AS L1 compared to S L1. Throughout the internal deciles (2 - 9), S L1 remained at a relatively constant distribution, though it must be noted that there was more variability between these deciles, than observed with Alu. AS L1 exhibited a linear decile across the internal deciles (figure \ref{fig:lineardecay_l1}). The overall difference between AS L1 and S L1 within each decile, was larger than what was observed in Alu. This was emphasized by AS and S elements having reached a point of equal density in the last inner decile for Alu, while AS L1 remain more prevalent than S in every decile. \\
     
     %Figure Linear Decay: L1
     \begin{figure}[!h]
@@ -113,8 +113,8 @@ L1 had a similar distribution to Alu when within genes. Again, as expected due t
     \label{fig:lineardecay_l1}
     \end{figure}
    
-
-\newpage Both AS L1 and Alu began at a relatively high frequency in decile 2 and declined linearly until decile 9. The rate of AS decay across gene deciles was determined by analysing these internal deciles only. This avoided the confounding effects from the process of normalization. Slopes were calculated with the counts of raw elements as opposed to the proportions to facilitate interpretation (table \ref{table:lindecay}). As expected, the decile number had a significant impact on AS density in both Alu and L1, with Alu reduced by -994 elements per decile and L1 by -1410 elements per decile. S elements were not significantly effected by the decile within which they resided.\\
+\subsubsection{\textit{Linear Decay of Alu and L1}}
+Both AS L1 and Alu began at a relatively high frequency in decile 2 and declined linearly until decile 9. The rate of AS decay across gene deciles was determined by analysing these internal deciles only. This avoided the confounding effects from the process of normalization. Slopes were calculated with the counts of raw elements as opposed to the proportions to facilitate interpretation (table \ref{table:lindecay}). As expected, the decile number had a significant impact on AS density in both Alu and L1, with Alu reduced by -994 elements per decile and L1 by -1410 elements per decile. S elements were not significantly effected by the decile within which they resided.
 
     
     % Table Slope of Linear Decay
@@ -136,7 +136,7 @@ L1 had a similar distribution to Alu when within genes. Again, as expected due t
         \label{table:lindecay}
     \end{table}
 
-These results show that RTs are not only increased in density near the TSS, but are increased as a function of the location within the gene in which they reside. Moreover, the enrichment of elements is restricted to AS elements. If the increase near the TSS was purely due to a structural change in accessiblity, it would be expected that both AS and S elements would be increased near the TSS. Therefore, these results indicated that there may be a functional link between the orientation of elements and the propensity to which they are maintained within genes. Futhermore, there is a difference in this propensity near the TSS as opposed to near the 3\rq -end of a gene. 
+Previous research suggested that RTs increased in a peak around the TSS. The results presented here using normalized gene lengths revealed that RTs are not only increased in density near the TSS, but are increased as a function of the normalized distance from the TSS. Moreover, the enrichment of elements is restricted to AS elements. If the increase near the TSS was purely due to a structural change in accessiblity, it would be expected that both AS and S elements would be increased near the TSS. Therefore, these results indicated that there may be a functional link between the orientation of elements and the propensity to which they are maintained within genes. Futhermore, there is a difference in this propensity near the TSS as opposed to near the 3\rq -end of a gene. 
 
 
 %%Change of Linear Decay Over Time
@@ -192,13 +192,12 @@ These results show that RTs are not only increased in density near the TSS, but 
 
 %AS bias (distribution near 5'-UTR)
 \section{Gene-specific variables associated with RT distribution}
+Different genes have different transcriptional requirements. Moreover different portions of a gene have different transcriptional and regulational requirements. These will be explored here [NEED TO WRITE MORE THIS IS SO UGLY]
 
-The differential distribution of RTs depending on the orientation indicates that the sequence of a RT can be selected on, not just the . If RTs do indeed have specific effects on genes depending on the sequence of the RT then new insertions should be able to be classified as to the potential effect on the gene and potentially the phenotype. This is especially important for disease studies, where it is imperitive to have as much information as possible on a new variation to filter out false positives from the true source of phenotypic variation. The differential purifying selection between AS and S RTs indicates that this sequence-specific interaction between RT and gene, may indeed be true. When asking what is causing RTs within genes to undergo purifying selection there are two classes of variables to examine; variables associated with genes (eg: 5\rq-UTR density, coding sequence density), and variables associated with RTs (eg: length of the RT, sequence motifs contained with the RT).    
 
 %Correlation of Linear Decay with 5'-UTR
 \subsection{Alu and L1 are Decreased Near 5\rq-UTR}
-
-Previous studies using raw distances in base pairs have shown that RTs are increased near TSSs. Interestingly in the analysis using normalized distances the AS bias was increased near the TSS, but at a ratio that was less than what would be expected based on the linear trend from the internal deciles. As mentioned earlier, the first decile was defined by the TSS and was therefore enriched for the presence of  5\rq-UTRs (figure \ref{fig:utr_nosecond}), however the presence of a coding exon was not obligatory by the normalization procedure (figure \ref{cds_noUTR}). It was therefore possible that normalizing by the TSS exaggerated an effect of the UTR on RT density. It was therefore important to first study if AS RT density near the TSS was correlated with the presence of the 5\rq-UTR or was due to another latent variable. To accomplish this, the effect of the 5\rq-UTR had to be seperated from any latent effects correlated with the first decile. To seperate out these effects, genes were identified that contained a second 5\rq-UTR within deciles other than the first decile. These 2$^\circ$ 5\rq-UTRs are commonly due to either alternative start positions of transcription, or transcription of a seperate gene that begins within the boundaries of another gene. Examples of genes that contained secondary 5\rq-UTRs are depicted in figure \ref{fig:25utr}. 
+Although, previous studies using raw distances showed that RTs were increased near TSSs, here it was noted that AS were increased over S at a ratio less than expected based on the linear trend from the internal deciles. Therefore, although there was an increase near the TSS, this increase was modified by another factor, likely the exon density. As mentioned earlier, the first decile was defined by the TSS and was therefore enriched for the presence of  5\rq-UTR exons (figure \ref{fig:utr_nosecond}), however the presence of a coding exon (CDS) was not obligatory by the normalization procedure (figure \ref{fig:cds_noUTR}). This suggested the possibility that normalizing by the TSS exaggerated an effect of the UTR on RT density. It was therefore important to first study if AS RT density near the TSS was correlated with the presence of the 5\rq-UTR or was due to another variable (e.g: CDS). To accomplish this, the effect of the 5\rq-UTR had to be seperated from any latent effects correlated with the first decile. To seperate out these effects, genes were identified that contained a second 5\rq-UTR within deciles other than the first decile. These 2$^\circ$ 5\rq-UTRs were commonly due to either alternative start positions of transcription, or transcription of a seperate gene that began within the boundaries of another gene. Examples of genes that contained 2$^\circ$  5\rq-UTRs are depicted in figure \ref{fig:25utr}. 
 
 
     %Figure 5'-UTR in genes with no internal 5'-UTR
@@ -219,7 +218,7 @@ Previous studies using raw distances in base pairs have shown that RTs are incre
     \end{figure}
     
 
-Once genes with internal 5\rq-UTRs were identified, they were further grouped into subsets based on the decile location of the 2$^\circ$ 5\rq-UTRs. For example, Group I genes contained all 2$^\circ$ 5\rq-UTRs in the first decile, calculated as the first 0\% - 10\% of the gene. Group II contained genes where the 2$^\circ$ 5\rq-UTRs was in the second decile (10\% - 20\% of the gene), and so on for all ten deciles (figure \ref{fig:5utr_diag}). The frequencies of all AS and S L1 and Alu were then calculated within these gene groups and compared to expectation based on genes lacking any 2$^\circ$ 5\rq-UTRs. 
+Once genes with 2$^\circ$  5\rq-UTRs were identified, they were further grouped into subsets based on the decile location of the 2$^\circ$ 5\rq-UTRs. For example, Group I genes contained all 2$^\circ$ 5\rq-UTRs in the first decile. Group II contained genes where the 2$^\circ$ 5\rq-UTRs were in the second decile, and so on for all ten deciles (figure \ref{fig:5utr_diag}). The frequencies of all AS and S L1 and Alu were then calculated within these gene groups and compared to expectation based on genes lacking any 2$^\circ$ 5\rq-UTRs. 
 
     
     %Figure 5'-UTR Analysis
@@ -242,7 +241,8 @@ Once genes with internal 5\rq-UTRs were identified, they were further grouped in
     
 
 
-\hspace{-15pt}\textit{Alu} \\AS Alu in genes containing 2$^\circ$ UTRs were similar in density to the AS Alu in genes lacking 2$^\circ$ UTRs (figure \ref{fig:2utr_ASalu}). The normalized, 0, decile containing the 2$^\circ$ UTR (mean: 0.049) was significantly reduced compared to the same decile in genes without 2$^\circ$ UTRs (mean: 0.058) (Student's t-test p < 0.039). S Alu showed a slight trend towards an increase over expectation upstream of the 0 decile (figure \ref{fig:2utr_Salu}). The 0 decile, however, was significantly decreased beyond expectation (mean second UTR: 0.41 ; mean no second UTR: 0.46 ; Student's t-test p < 5.2e-04) similar to the AS Alu. 
+\subsubsection{\textit{Alu}}
+AS Alu in genes containing 2$^\circ$ UTRs were similar in density to the AS Alu in genes lacking 2$^\circ$ UTRs (figure \ref{fig:2utr_ASalu}). The normalized, 0, decile containing the 2$^\circ$ UTR (mean: 0.049) was significantly reduced compared to the same decile in genes without 2$^\circ$ UTRs (mean: 0.058) (Student's t-test p < 0.039). S Alu showed a slight trend towards an increase over expectation upstream of the 0 decile (figure \ref{fig:2utr_Salu}). The 0 decile, however, was significantly decreased beyond expectation (mean second UTR: 0.41 ; mean no second UTR: 0.46 ; Student's t-test p < 5.2e-04) similar to the AS Alu. 
 
     %Figure 5'-UTR AS Alu
     \begin{figure}[!ht]
@@ -265,7 +265,8 @@ Once genes with internal 5\rq-UTRs were identified, they were further grouped in
     \end{figure}
     
     
-\hspace{-15pt}\textit{\\L1} \\The distribution of AS L1 within genes containing 2$^\circ$ 5\rq-UTR was somewhat similar to that observed with AS Alu (figure \ref{fig:2utr_ASl1}). Interestingly, there was a slight decrease in L1 density upstream of the 0 decile for AS L1 in genes containing a 2$^\circ$ 5\rq-UTR, though this decrease was not signficant. The 0 decile was significantly reduced over expectation (mean second UTR: 0.057 ; mean no second UTR: 0.071 ; Student's t-test p < 0.007), although the S L1 were not significantly reduced (p = 0.47) (figure \ref{fig:2utr_Sl1}). These results indicated that there may be a decrease of L1 and Alu in the presence of a 5\rq-UTR, however another explanation could be that there was another latent variable associated with the 5\rq-UTR which is still be picked up in this analysis. 
+\subsubsection{\textit{L1}}
+The distribution of AS L1 within genes containing 2$^\circ$ 5\rq-UTR was somewhat similar to that observed with AS Alu (figure \ref{fig:2utr_ASl1}). Interestingly, there was a slight decrease in L1 density upstream of the 0 decile for AS L1 in genes containing a 2$^\circ$ 5\rq-UTR, though this decrease was not signficant. The 0 decile was significantly reduced over expectation (mean second UTR: 0.057 ; mean no second UTR: 0.071 ; Student's t-test p < 0.007), although the S L1 were not significantly reduced (p = 0.47) (figure \ref{fig:2utr_Sl1}). These results indicated that there may be a decrease of L1 and Alu in the presence of a 5\rq-UTR, however another explanation could be that there was another latent variable associated with the 5\rq-UTR which is still be picked up in this analysis. 
     
         %Figure 5'-UTR AS L1
     \begin{figure}[!ht]
@@ -509,7 +510,7 @@ These results indicated that each position within a RT-contained binding motif h
 \subsection{Functional Binding Motifs Effect Maintenance, Tissue Specific}
 Next it was determined how the RT-specific variable of binding motifs is effected by the gene-specific variable of tissue-specific gene expression. To reduce the number of statistical tests, analysis was restricted to the deciles that contained the extremes of Alu and L1 frequency. These were deciles 2 and 9, otherwise defined as the first and last bins within the linear range of Alu/L1 frequency (section \ref{sec:as_dec}). To correct for differences in overall abundance of RTs depending on placement, motif frequencies were normalized by the count of AS or S elements within the respective bin. This was repeated separately for tissue-specific (TS) genes and house-keeping (HK) genes. 
 
-\subsubsection{Alu}
+\subsubsection{\textit{Alu}}
 
     %Figure Alu sense (TS / HK) motifs
     \begin{figure}[!ht]
@@ -530,7 +531,7 @@ Next it was determined how the RT-specific variable of binding motifs is effecte
 
 Since there was no normalization against intergenic in this analysis, the changes in proportion due to each motif was observable for this analysis (figure \ref{fig:alumotifs_tshk}). The proportion of motifs in each placement within TS genes were compared to the counterpart in HK genes. In general proportions of motifs in TS genes were larger than HK genes (87 of 140). 29 of the 140 comparisons were significant after Bonferonni correction ($\alpha$ = 3.6e-04) (figure \ref{fig:alumotifs_tshk}). Many of these comparisons were from polyadenylation sequences (N = 5 of 7 possible), and LUN1 (N = 4 of 7 possible). The majority of the significant comparisons were derived from whole gene comparisons (10 of 29 tests).
 
-\subsubsection{L1}
+\subsubsection{\textit{L1}}
 
     
     %Figure L1 sense (TS / HK) motifs
