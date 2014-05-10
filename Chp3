@@ -218,7 +218,7 @@ Although, previous studies using raw distances showed that RTs were increased ne
     \end{figure}
     
 
-Once genes with 2$^\circ$  5\rq-UTRs were identified, they were further grouped into subsets based on the decile location of the 2$^\circ$ 5\rq-UTRs. For example, Group I genes contained all 2$^\circ$ 5\rq-UTRs in the first decile. Group II contained genes where the 2$^\circ$ 5\rq-UTRs were in the second decile, and so on for all ten deciles (figure \ref{fig:5utr_diag}). The frequencies of all AS and S L1 and Alu were then calculated within these gene groups and compared to expectation based on genes lacking any 2$^\circ$ 5\rq-UTRs. 
+Once genes with 2$^\circ$  5\rq-UTRs were identified, they were further grouped into subsets based on the decile location of the 2$^\circ$ 5\rq-UTRs. For example, Group I genes contained all 2$^\circ$ 5\rq-UTRs in the first decile. Group II contained genes where the 2$^\circ$ 5\rq-UTRs were in the second decile, and so on for all ten deciles (figure \ref{fig:5utr_diag}). The distribution of  5\rq -UTRs within these genes are presented in figure \ref{fig:utr_second}. As expected, the number of 5\rq -UTRs increased in the decile containing the 2$^\circ$ 5\rq-UTR (normalized decile 0). The frequencies of all AS and S L1 and Alu were calculated within these gene groups and compared to expectation based on genes lacking any 2$^\circ$ 5\rq-UTRs. 
 
     
     %Figure 5'-UTR Analysis
@@ -242,7 +242,7 @@ Once genes with 2$^\circ$  5\rq-UTRs were identified, they were further grouped 
 
 
 \subsubsection{\textit{Alu}}
-AS Alu in genes containing 2$^\circ$ UTRs were similar in density to the AS Alu in genes lacking 2$^\circ$ UTRs (figure \ref{fig:2utr_ASalu}). The normalized, 0, decile containing the 2$^\circ$ UTR (mean: 0.049) was significantly reduced compared to the same decile in genes without 2$^\circ$ UTRs (mean: 0.058) (Student's t-test p < 0.039). S Alu showed a slight trend towards an increase over expectation upstream of the 0 decile (figure \ref{fig:2utr_Salu}). The 0 decile, however, was significantly decreased beyond expectation (mean second UTR: 0.41 ; mean no second UTR: 0.46 ; Student's t-test p < 5.2e-04) similar to the AS Alu. 
+AS Alu in genes containing 2$^\circ$ 5\rq -UTRs were similar in density to the AS Alu in genes lacking 2$^\circ$ UTRs (figure \ref{fig:2utr_ASalu}). The normalized, 0, decile containing the 2$^\circ$ UTR (mean: 0.049) was significantly reduced compared to the same decile in genes without 2$^\circ$ UTRs (mean: 0.058) (Student's t-test p < 0.039). S Alu showed a slight trend towards an increase over expectation upstream of the 0 decile (figure \ref{fig:2utr_Salu}). The 0 decile, however, was significantly decreased beyond expectation (mean second UTR: 0.41 ; mean no second UTR: 0.46 ; Student's t-test p < 5.2e-04) similar to the AS Alu. 
 
     %Figure 5'-UTR AS Alu
     \begin{figure}[!ht]
