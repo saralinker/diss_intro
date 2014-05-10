@@ -67,15 +67,17 @@
 \begin{document}
 \tableofcontents
 \doublespace\large{
-\chapter{\\FACTORS INFLUENCING RETROTRANSPOSON DISTRIBUTION IN GENES}
+\chapter{\\VARIABLES INFLUENCING RETROTRANSPOSON DISTRIBUTION IN GENES}
 
-Retrotransposons (RTs) comprise approximately half of the human genome and contribute to chromatin structure, regulatory motifs, and protein-coding sequences. Upon insertion, RTs can disrupt functional genetic elements as well as introduce new sequence motifs to a region. They therefore have the potential to effect the function of genes that harbor insertions. It is hypothesized that partly as a result of these effects, the distribution of RTs across the genome is non-uniform. An example is observed antisense bias (AS bias) of elements within genes (chapter 2). Although some of the factors underlying non-random distributions of RTs are understood, much of the variability remains unexplained. Detailed characterization of RT density in genes could help inform predictions of the functional consequence of \textit{de novo} as well as polymorphic insertions, which are important for future disease studies. In order to characterize the relationship between genes and inserted elements, it is important to examine the factors associates with altered distributions of RTs. Factors that are associated with the RT (e.g. length of element, orientation, sequence) as well as factors that are associated with the gene (e.g. tissue expression, density of coding sequence) will be examined in this section.  
+Retrotransposons (RTs) comprise approximately half of the human genome and contribute to chromatin structure, regulatory motifs, and protein-coding sequences. Upon insertion, RTs can disrupt functional genetic elements as well as introduce new sequence motifs to a region. They therefore have the potential to effect the function of genes in which they insert. It is hypothesized that the phenotypic impact of RTs on genes is a contributing factor to the non-random distribution of RTs across the genome. An example of this non-random distribution is antisense bias (AS bias) of elements within genes (chapter 2).  Although some of the variables associated with non-random distributions of RTs are understood, many variables remain unstudied. Specifically, there are many variables that have the potential to impact gene expression that have not been analyzed in association with RT distribution.
+
+The detailed characterization of these associations is important to understand the impact of RTs within differing genomic locations. Determining which variables are most associated with decreases in RT distribution could help inform predictions of the severity of phenotypic consequence of \textit{de novo} as well as polymorphic RT insertions. The thousands of RT polymorphisms that are present between any two individuals \cite{Stewart2011} could then be filtered in a manner akin to the filitering of current SNP studies. RT distribution analyses would therefore, inform future disease studies attempting to associate genetic variability with disease phenotypes. Variables that are associated with the RT (e.g. length of element, orientation, sequence) as well as variables that are associated with the gene (e.g. tissue expression, density of coding sequence) will be examined in this section.  
 
 
 %ASbias (Linear Decay)
 \section{The Current Distribution of Alu and L1 within Genes}
 %Linear Decay
-The dependency of AS bias on position within a gene was calculated for both Alu and L1, where position was defined as one of ten deciles of a gene. RefSeq genes were divided into these deciles using the boundaries of transcription start (TSS) and transcription stop, including introns (figure \ref{fig:decile}). Previous research had used distance from the TSS to examine RT density, this alternative approach of normalizating genes by length expanded the scope of the analysis to examine the effect of relative position on RT density, and therefore the ability to detect any regions of the gene that are more sensitive to RT insertions. A side-effect of normalizing by the TSS and transcription stop positions was that every decile 1 (first decile) and decile 10 (last decile) contained an exon. Since deciles 2 - 9 (internal deciles) were not defined by any discrete exon boundary, they were variable as to the presence of an exon. Although the first and last deciles inevitably contained an exon, it was not necessarily a coding exon (ie: 5\rq-UTR or 3\rq-UTR). 
+The dependency of AS bias on position within a gene was calculated for both Alu and L1, where position was defined as one of ten deciles of a gene. RefSeq genes were divided into these deciles using the boundaries of transcription start site (TSS) and transcription stop site, including introns (figure \ref{fig:decile}). Previous research had used distance from the TSS to examine RT density, this alternative approach of normalizating genes by length expanded the scope of the analysis to examine the effect of relative position on RT density, and therefore the ability to detect any regions of the gene that are more sensitive to RT insertions. A side-effect of normalizing by the TSS and transcription stop positions was that every decile 1 (first decile) and decile 10 (last decile) necessarily contained an exon. Since deciles 2 - 9 (internal deciles) were not defined by any discrete exon boundary, they were variable with respect to the presence of an exon. For this reason many analyses were restricted to the internal deciles. It must be noted that although the first and last deciles inevitably contained an exon, it was not necessarily a coding exon (i.e.: 5\rq-UTR or 3\rq-UTR only). 
 
     %Figure Decile Explanation
     \begin{figure}[!ht]
@@ -137,10 +139,10 @@ L1 had a similar distribution to Alu when within genes. Again, as expected due t
 These results show that RTs are not only increased in density near the TSS, but are increased as a function of the location within the gene in which they reside. Moreover, the enrichment of elements is restricted to AS elements. If the increase near the TSS was purely due to a structural change in accessiblity, it would be expected that both AS and S elements would be increased near the TSS. Therefore, these results indicated that there may be a functional link between the orientation of elements and the propensity to which they are maintained within genes. Futhermore, there is a difference in this propensity near the TSS as opposed to near the 3\rq -end of a gene. 
 
 
-%Change of Linear Decay Over Time
-\subsection{Linear Decay Develops Over Time}
-AS bias in general was shown to increase relatively quickly for Alu, but to change over long periods of evolutionary time in L1. The slope of AS bias across gene deciles was similarly calculated across Alu and L1 subfamilies.
-%%% NEED TO WRITE BASH SCRIPT TO RE-CALCULATE THIS. I'M NOT SURE ABOUT THE ORIGINAL CALCULATIONS
+%%Change of Linear Decay Over Time
+%\subsection{Linear Decay Develops Over Time}
+%AS bias in general was shown to increase relatively quickly for Alu, but to change over long periods of evolutionary time in L1. The slope of AS bias across gene deciles was similarly calculated across Alu and L1 subfamilies.
+%%%% NEED TO WRITE BASH SCRIPT TO RE-CALCULATE THIS. I'M NOT SURE ABOUT THE ORIGINAL CALCULATIONS
 
 %%%% And the part about the age of L1 and Alu Depending on the position within the gene
 %In the previous chapter it was shown that AS bias was associated with a discrepancy in the age of elements between AS and S. An examination of the ages of Alu and L1 within each bin. 
@@ -191,7 +193,7 @@ AS bias in general was shown to increase relatively quickly for Alu, but to chan
 %AS bias (distribution near 5'-UTR)
 \section{Gene-specific variables associated with RT distribution}
 
-The fact that RTs undergo differential selective pressures depending on the orientation of element with respect to a gene is intriguing. It indicates that there must be some effect of the RT insertion on the phenotype of the organism that is dependent both on the insertion event, and also on the sequence of the RT. If RTs do indeed have specific effects on genes depending on the sequence of the RT then new insertions should be able to be classified as to the potential effect on the gene and potentially the phenotype. This is especially important for disease studies, where it is imperitive to have as much information as possible on a new variation to filter out false positives from the true source of phenotypic variation. The differential purifying selection between AS and S RTs indicates that this sequence-specific interaction between RT and gene, may indeed be true. When asking what is causing RTs within genes to undergo purifying selection there are two classes of variables to examine; variables associated with genes (eg: 5\rq-UTR density, coding sequence density), and variables associated with RTs (eg: length of the RT, sequence motifs contained with the RT).    
+The differential distribution of RTs depending on the orientation indicates that the sequence of a RT can be selected on, not just the . If RTs do indeed have specific effects on genes depending on the sequence of the RT then new insertions should be able to be classified as to the potential effect on the gene and potentially the phenotype. This is especially important for disease studies, where it is imperitive to have as much information as possible on a new variation to filter out false positives from the true source of phenotypic variation. The differential purifying selection between AS and S RTs indicates that this sequence-specific interaction between RT and gene, may indeed be true. When asking what is causing RTs within genes to undergo purifying selection there are two classes of variables to examine; variables associated with genes (eg: 5\rq-UTR density, coding sequence density), and variables associated with RTs (eg: length of the RT, sequence motifs contained with the RT).    
 
 %Correlation of Linear Decay with 5'-UTR
 \subsection{Alu and L1 are Decreased Near 5\rq-UTR}
@@ -552,6 +554,6 @@ For L1-contained motifs, all proportions of motifs were greater in TS genes than
 }
 
     
-\bibliographystyle{IEEEtranS}
+\bibliographystyle{apacite}
 \bibliography{library}
 \end{document}
