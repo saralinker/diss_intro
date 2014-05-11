@@ -382,9 +382,7 @@ These binding motifs can have an effect on gene expression, and some of these mo
     
          %Truncated L1
 \subsection{Truncated L1 Escape Depletion Near the 5\rq-UTR}
-The full-length human L1 consensus sequence is approximately 6kb, although it varies by subfamily. Commonly, however, L1 are approximately 900 bp on average. The shorter average sequence is due to malfunctions during retrotransposition where L1 are often truncated. Reverse transcription of the RNA template initiates near the 3\rq end of RNA and often the L1 retrotransposase is unable to complete retrotransposition of the entire element into the insertion site, resulting in truncation of the 5\rq end.
-
-This 5\rq -truncation of L1 results in variable sizes of L1 in the human genome, with a majority being less than 1 kb (table \ref{table:l1size}). The 5\rq region of L1, that is often lost during truncation, contains the Polymerase II promoter which can effect expression of neighbouring genes. It is likely that this promoter region of L1 effects gene expression. To determine if L1 with promoters have a different distribution within genes than L1 without promoters, I calculated the distribution of L1 of varying sizes. Since size was used as a proxy for the presence of the L1 promoter, the presence of the L1 promoter within short (< 1kb) L1 sequences was analyzed first. To identify whether L1 (<1kb) lack the promoter region, we determined the start position of each L1 (<1kb) within the respective consensus using local RepeatMasker (figure \ref{fig:l1start}).  The results indicate that a majority of these small L1 begin after the canonical promoter sequence.
+The full-length human L1 consensus sequence is approximately 6kb, but varies by subfamily. Commonly, however, L1 are approximately 900 bp on average. The shorter average sequence is due to malfunctions during retrotransposition where L1 are often truncated. Reverse transcription of the RNA template initiates near the 3\rq end of RNA and often the L1 retrotransposase is unable to complete retrotransposition of the entire element into the insertion site, resulting in truncation of the 5\rq end.
 
 % L1 size
 \begin{table}[ht]
@@ -406,7 +404,7 @@ This 5\rq -truncation of L1 results in variable sizes of L1 in the human genome,
 \label{table:l1size}
 \end{table}
 
-To test whether the linear decay of antisense oriented L1 was related to the size of the element, we calculated the proportions of L1 <1kb, 1-2kb, 3-4kb, 4-5kb, and 5kb+ versus expectation based on all L1. Fischer\rq s exact test p-values were calculated between the count of observed size-specific L1 and the expectation within bins 1 and 2 since these bins had the largest effects of antisense bias. We found that full-length L1 (5kb+) were greatly reduced in frequency near the 5\rq region of the gene compared to expectation (figure \ref{fig:l1size_as} and \ref{fig:l1size_s}). This was true of L1 in both orientations. Conversely small L1, < 1kb, were increased near the 5\rq -UTR. The small sample size for the full length L1 in the second decile may be playing a role in their failure to pass significance after Bonferroni correction.
+This 5\rq -truncation of L1 results in variable sizes of L1 in the human genome, with a majority being less than 1 kb (table \ref{table:l1size}). The 5\rq region of L1, that is often lost during truncation, contains the Polymerase II promoter which can effect expression of neighbouring genes. It is likely that this promoter region of L1 effects gene expression. To determine if L1 with promoters have a different distribution within genes than L1 without promoters, the distributions of L1 of varying sizes were calculated.
 
         %Figure L1 size
     \begin{figure}[!ht]
@@ -416,7 +414,9 @@ To test whether the linear decay of antisense oriented L1 was related to the siz
         \label{fig:l1start}
     \end{figure}
     
-            %Figure L1 size
+Since size was used as a proxy for the presence of the L1 promoter, it was important to determine the presence of the L1 promoter within short L1 (< 1kb). The L1 promoter region is within the first 2kb of the L1 consensus sequence. To identify whether L1 (<1kb) lack the promoter region, the start position of each short L1 (<1kb) within the respective consensus. A histogram of the start positions within the consensus sequence are presented in figure \ref{fig:l1start}).  The enrichement near 6kb indicated that the 5\rq -most portion of short L1 was located many kb downstream of the L1 promoter sequence. Therefore, a majority of these small L1 did not contain the canonical promoter sequence. It was therefore hypothesized that short L1 would not be under the same purifying selection as full-length L1, and would be present at higher levels than full-length L1. 
+
+            %Figure L1 size AS
     \begin{figure}[!ht]
         \centering
         \includegraphics[scale=0.005,width=\textwidth]{L1distsize.pdf}
@@ -424,7 +424,7 @@ To test whether the linear decay of antisense oriented L1 was related to the siz
         \label{fig:l1size_as}
     \end{figure}
     
-        %Figure L1 size
+            %Figure L1 size S
     \begin{figure}[!ht]
         \centering
         \includegraphics[scale=0.5,width=\textwidth]{L1distsize_s.pdf}
@@ -432,23 +432,26 @@ To test whether the linear decay of antisense oriented L1 was related to the siz
         \label{fig:l1size_s}
     \end{figure}
     
-   
+
+To test whether the linear decay of antisense oriented L1 was related to the size of the element, the proportions of L1 <1kb, 1-2kb, 3-4kb, 4-5kb, and 5kb+ were calculated within all genes. All groups of AS L1 had a similar distribution to all AS L1 (figure \ref{fig:l1size_as}). When all size ranges were compared within the first decile it was noted that the proportion of AS L1 was higher with decreased length of the element (figure \ref{fig:l1size_as_one}) . Importantly, L1 < 1kb in length were present at a significantly higher level than full-length L1 (prop <1kb = 0.0574 ; prop 5+kb = 0.0437 ; Test for equalities of proportion p < 1.01e-04). S L1 separated by length were also similarly distributed to all S, however full-length L1 were reduced in the first decile compared to short L1 (prop <1kb = 0.0237 ; prop 5+kb = 0.0163 ; Test for equalities of proportion p < 0.0012). 
+
+We found that full-length L1 (5kb+) were greatly reduced in frequency near the 5\rq region of the gene compared to expectation (figure \ref{fig:l1size_as} and \ref{fig:l1size_s}). This was true of L1 in both orientations. Conversely small L1, < 1kb, were increased near the 5\rq -UTR. The small sample size for the full length L1 in the second decile may be playing a role in their failure to pass significance after Bonferroni correction.
     
         %Figure L1 size
     \begin{figure}[!ht]
         \centering
-        \includegraphics[width=0.65\textwidth,natwidth=610,natheight=642]{L1distsize_decile1.pdf}
-        \caption{\normalsize{\textbf{Effect of L1 Size on L1 density: Antisense, decile 1\\}L1 density was calculated within the first decile. L1 were first grouped into sizes (< 1 kb, 1-2, 2-3, 3-4, 4-5, and 5+). }}
+        \includegraphics[width=0.55\textwidth,natwidth=610,natheight=642]{L1distsize_decile1.pdf}
+        \caption{\normalsize{\textbf{Effect of L1 Size on L1 density: Antisense, decile 1\\}L1 density was calculated within the first decile. L1 were first grouped into sizes (< 1 kb, 1-2, 2-3, 3-4, 4-5, and 5+). The lines on either side of the point represent the 95\% confidence interval. Prop: Proportion of antisense L1 per all L1of the same size within genes. kb: maximum length of the group of L1 in kilobases (6000 represent L1 that are 5kb or greater). The minimum of each group is 1kb less than the maximum except for L1 5kb and greater.}}
         \label{fig:l1size_as_one}
     \end{figure}
     
-            %Figure L1 size
-    \begin{figure}[!ht]
-        \centering
-        \includegraphics[width=0.65\textwidth,natwidth=610,natheight=642]{L1distsize_decile1_s.pdf}
-        \caption{\normalsize{\textbf{Effect of L1 Size on L1 density: Sense, decile 1\\}L1 density was calculated within the first decile. L1 were first grouped into sizes (< 1 kb, 1-2, 2-3, 3-4, 4-5, and 5+). }}
-        \label{fig:l1size_s_one}
-    \end{figure}
+    %        %Figure L1 size
+    %\begin{figure}[!ht]
+    %    \centering
+    %    \includegraphics[width=0.65\textwidth,natwidth=610,natheight=642]{L1distsize_decile1_s.pdf}
+    %    \caption{\normalsize{\textbf{Effect of L1 Size on L1 density: Sense, decile 1\\}L1 density was calculated within the first decile. L1 were first grouped into sizes (< 1 kb, 1-2, 2-3, 3-4, 4-5, and 5+). }}
+    %    \label{fig:l1size_s_one}
+    %\end{figure}
 
 \subsection{Binding motifs in Alu}
 
