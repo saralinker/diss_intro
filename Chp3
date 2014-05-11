@@ -194,6 +194,23 @@ Previous research suggested that RTs increased in a peak around the TSS. The res
 \section{Gene-specific variables associated with RT distribution}
 Different genes have different transcriptional requirements. Moreover different portions of a gene have different transcriptional and regulational requirements. These will be explored here [NEED TO WRITE MORE THIS IS SO UGLY]
 
+%Correlation of Linear Decay with CDS Exon Density
+\subsection{Linear decay of AS bias is associated with coding sequence density}
+\label{sec:cds}
+The linear decay of RTs across gene deciles may be contributed to by a number of factors. The most likely of these is the presence of coding sequence exons (CDS), since these are the most conservered units of a gene. Furthermore, Zhang et. al. showed that RTs were less often located in close proximity to an exon. Therefore the density of CDS within each decile was calculated. Indeed, CDS density increased at a linear rate across gene deciles (figure \ref{fig:cds_noUTR}). The first decile of genes contained more CDS than the second decile.  AS Alu were inversely correlated with this distribution of CDS (R$^{2}$ = -0.94; one-tailed p <  2.64e-05). S Alu, however, were not correlated with CDS (R$^{2}$ = -0.30; one-tailed p = 0.200). These results suggest that AS RTs are highly inveresely correlated with CDS exon density.
+
+    %Figure CDS (no secondary 5'-UTR)
+    \begin{figure}[!ht]
+        \centering
+        \includegraphics[width=0.5\textwidth,natwidth=610,natheight=642]{cds_noUTR.pdf}
+        \caption{\normalsize{\textbf{Distribution of Coding Sequence Exons in RefSeq Genes\\}The number of coding sequence exons (CDS) in the sense orientation were normalized by all sense oriented CDS in RefSeq genes.}}
+        \label{fig:cds_noUTR}
+    \end{figure}
+
+%Alternative Splicing
+%subsection{Coding Potential of the Gene Effects AS bias}
+%Alu and L1 have often been cited as having the potential to contribute to alternative isoforms of a gene. Both Alu and L1 contain splice donor and acceptor sites and therefore can alter splice signals. Moreover, L1, and in some cases Alu, can cause premature adenylation through the polyadenylation signals located within the sequence. For these reasons, it was important to examine the linear decay of Alu and L1 in genes that are alternatively spliced.
+%%%% ADD ALTERNATIVE SPLICE INFO
 
 %Correlation of Linear Decay with 5'-UTR
 \subsection{Alu and L1 are Decreased Near 5\rq-UTR}
@@ -284,33 +301,39 @@ The distribution of AS L1 within genes containing 2$^\circ$ 5\rq-UTR was somewha
         \centering
         %\includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{2utr_Sl1.pdf}
         \includegraphics[scale=1,width=\textwidth]{2utr_Sl1.pdf}
-        \caption{\normalsize{\textbf{Change in S L1 density in the presence of a secondary 5\rq-UTR\\}Calculated similarly to figure \ref{fig:2utr_ASalu}}}
+        \caption{\normalsize{\textbf{Change in S L1 density in the presence of a 2$^\circ$ 5\rq-UTR\\}Calculated similarly to figure \ref{fig:2utr_ASalu}}}
         \label{fig:2utr_Sl1}
     \end{figure}
     
-    
-%Correlation of Linear Decay with CDS Exon Density
-\subsection{Linear decay of AS bias is associated with coding sequence density}
-Although 5\rq -UTRs were associated with RT density, CDS exons must still be examined as to their contribution to the effect of reduced RTs near the TSS. Since previous studies have shown that AS RT density was reduced within close proximity to exons, the density of CDS within each decile was calculated. Indeed, CDS density increased at a linear rate across gene deciles (figure \ref{fig:cds_noUTR}). The first decile of genes contained more CDS than the second decile.  AS Alu were inversely correlated with this distribution of CDS (R$^{2}$ = -0.94; one-tailed p <  2.64e-05). S Alu, however, were not correlated with CDS (R$^{2}$ = -0.30; one-tailed p = 0.200) 
-    
-    %Figure CDS (no secondary 5'-UTR)
+\subsubsection{CDS accounts for the variablility identified in the AS orientation}
+
+The results so far suggest that there was a decrease of RTs near the 2$^\circ$ 5\rq -UTR when the position within the gene was normalized. This was important to note since it had previously been shown that RTs were increased near the 5\rq -UTRs in multiple species \cite(VanDeLagemaat2003).  In section \ref{sec:cds} it was shown that RTs are strongly inveresely correlated with CDS density. Since the first CDS exon of a gene is often, but not always, connected to the 5\rq -UTR, it was important to determine if the CDS density in 2$^\circ$ 5\rq -UTR genes had an effect on RT density.
+
+The CDS density and Alu density within non- 2$^\circ$ 5\rq -UTR containing genes was used to predict the expected Alu density in 2$^\circ$ 5\rq -UTR containing genes. To accomplish this, Alu density from non-2$^\circ$ was regressed on CDS density from non-2$^\circ$. The CDS density of each 2$^\circ$ 5\rq -UTR gene group was then calculated and used as new data to predict the expected 5\rq-UTR density. The actual values are plotted next to the predicted values in figure \ref{fig:25_cdspred}. In the AS orientation, there was no difference in Alu density from what was expected based on CDS density. Converesly, in the S orientation, there were less Alu in regions containing a 5\rq-UTR than expected based on CDS density alone. 
+
+Overall these results are important to the field of RT research. They support a shift in the common thinking of RT accumulation within genes. Previous speculations were that RTs are increased near 5\rq -UTRs due to advantageous effects of RTs \cite(VanDeLagemaat2003). This current research suggests that the increase of RTs near the 5\rq - UTR is not an effect of the UTR, but an effect of the lack of CDS sequences. Moreover, there was no evidence of an increase near the 5\rq -UTR when position within the gene was normalized. Instead, there was significant decrease in Alu density in the S orientation.
+
+
+        %Figure CDS (secondary 5'-UTR)
     \begin{figure}[!ht]
         \centering
-        \includegraphics[width=0.5\textwidth,natwidth=610,natheight=642]{cds_noUTR.pdf}
-        \caption{\normalsize{\textbf{Distribution of Coding Sequence Exons in RefSeq Genes\\}The number of coding sequence exons (CDS) in the sense orientation were normalized by all sense oriented CDS in RefSeq genes.}}
-        \label{fig:cds_noUTR}
+      \includegraphics[scale=1,width=\textwidth]{25utr_cdsmulti.pdf}
+        \caption{\normalsize{\textbf{CDS density in  2$^\circ$ 5\rq-UTR gene groups\\}}}
+        \label{fig:25_cdsmulti}
     \end{figure}
     
+        %Figure CDS (secondary 5'-UTR)
+    \begin{figure}[!ht]
+        \centering
+        \includegraphics[scale=1,width=\textwidth]{25utr_cdspred.pdf}
+        \caption{\normalsize{\textbf{5\rq-UTR density and predictions based on CDS density\\}}}
+        \label{fig:25_cdspred}
+    \end{figure}
     
-%Alternative Splicing
-%\textnormal\large\textit{\\\textnormal{3.2.3 } Coding Potential of the Gene Effects AS bias\\}
-%Alu and L1 have often been cited as having the potential to contribute to alternative isoforms of a gene. Both Alu and L1 contain splice donor and acceptor sites and therefore can alter splice signals. Moreover, L1, and in some cases Alu, can cause premature adenylation through the polyadenylation signals located within the sequence. For these reasons, it was important to examine the linear decay of Alu and L1 in genes that are alternatively spliced.
-%%%% ADD ALTERNATIVE SPLICE INFO
-
 
 %AS bias and tissue-specificity
 \subsection{Tissue-Specificity of the Gene Effects AS bias}
-Depending on the functional groups of a gene, it has a different chance of containing large amounts of RTs. For example, housekeeping genes have a predictably higher level of Alu frequency than other gene categories. We therefore tested whether AS bias remained linear when subdivided by gene category. The effect of tissue-specificity was tested by both analyzing the slope of the density of AS as well as correlating the distribution of Alu with the distribution of CDS within tissue-specific gene sets. The linear AS slope remained present in housekeeping genes, but it was not maintained in tissue-specific gene sets. Furthermore, the correlation between ASO-RT frequency and CDS distribution was reduced within tissue-specific gene sets (table \ref{table:tiscor}). Although the sample size of each gene set trended with the R$^{2}$, sample size was not significantly correlated with R$^{2}$ (p = 0.062).
+Depending on the functional groups of a gene, it has a different chance of containing large amounts of RTs. For example, housekeeping genes have a predictably higher level of Alu frequency than other gene categories. We therefore tested whether AS bias remained linear when subdivided by gene category. The effect of tissue-specificity was tested by both analyzing the slope of the density of AS as well as correlating the distribution of Alu with the distribution of CDS within tissue-specific gene sets. The linear AS slope remained present in housekeeping genes, but it was not maintained in tissue-specific gene sets. Furthermore, the correlation between ASO-RT frequency and CDS distribution was reduced within tissue-specific gene sets (table \ref{table:tiscor}). Although the sample size of each gene set trended with the R$^{2}$, sample size was not significantly correlated with R$^{2}$ (R${^2}$ = -0.68; p = 0.062).
 
     % Sat Apr 12 09:10:21 2014
     %Tissue specificity table
@@ -338,9 +361,10 @@ Depending on the functional groups of a gene, it has a different chance of conta
 
 To determine if differences in gene expression across tissue types was confounding this result, we tested the correlation between AS frequency and exon density as a function of relative expression in housekeeping and tissue specific genes. There was no association between expression level in the respective tissue and the correlation between ASO and exon density (R$^{2}$ = 0.60 ; p = 0.15).
 
-\subsection{Alternative splicing}
-Using the knownAlt annotation track from Hg19 (UCSC Genome Browser), we separated genes into those with known alternative splicing events, and those that are constitutively expressed. We found no significant differences between the distribution of ASO and SO between the two groups (chi-square p > 0.25, p > 0.23 respectively). We further calculated the correlation of ASO Alu density and CDS density within alternatively spliced genes. The negative correlation that is seen across all genes was replicated when examining only genes that are alternatively spliced (Pearson’s correlation coefficient: -0.78, p < 0.008). 
+Overall these results indicated that the tissue-specificity of the gene in which a RT is located is associated with the AS bias. 
 
+\subsection{Alternative splicing}
+Alu and L1 both contain cryptic splice sequences that are often used for alternative splicing. It was therefore investigated whether genes with alternative isoforms have a different AS bias than constitutively expressed genes. Using the knownAlt annotation track from Hg19 (UCSC Genome Browser), we separated genes into those with known alternative splicing events, and those that were constitutively expressed. We found no significant differences between the distribution of AS and S between the two groups (chi-square p > 0.25, p > 0.23 respectively). We further calculated the correlation of AS Alu density and CDS density within alternatively spliced genes. The negative correlation that is seen across all genes was replicated when examining only genes that are alternatively spliced (Pearson’s correlation coefficient: -0.78, p < 0.008). Therefore, there was no observable difference between alternatively spliced and constitutively spliced genes.
 
 %Internal Binding Motifs
 \section{Retrotransposon-specific variables are associated with RT distribution}
