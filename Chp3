@@ -393,18 +393,36 @@ The human L1 consensus sequence is approximately 6kb, although it varies by subf
  & {size, kb} & {L1 count} \\ 
   \hline
  &   {< 1} & 833043 \\ 
-   &   2 & 76631 \\ 
-   &   3 & 20349 \\ 
-   &   4 & 8174 \\ 
-   &   5 & 3787 \\ 
-   &   {6 +} & 10181 \\ 
+   &   {1 - 2} & 76631 \\ 
+   &   {2 -3} & 20349 \\ 
+   &   {3 - 4} & 8174 \\ 
+   &   {4 - 5} & 3787 \\ 
+   &   {5 + } & 10181 \\ 
    \hline
 \end{tabular}
 \caption{\textbf{Size of L1 elements in the human reference genome\\}Counts were tallied of all L1 in the human reference genome.}
 \label{table:l1size}
 \end{table}
 
-To test whether the linear decay of antisense oriented L1 was related to the size of the element, we calculated the proportions of L1 <1kb, 1-2kb, 3-4kb, and 5kb+ versus expectation based on all L1. Fischer\rq s exact test p-values were calculated between the count of observed size-specific L1 and the expectation within bins 1 and 2 since these bins had the largest effects of antisense bias. We found that full-length L1 (5kb+) were greatly reduced in frequency near the 5\rq region of the gene compared to expectation (figure 9). This was true of L1 in both orientations. Conversely small L1, < 1kb, were increased near the 5\rq -UTR. The small sample size for the full length L1 in the second decile may be playing a role in their failure to pass significance after Bonferroni correction.
+To test whether the linear decay of antisense oriented L1 was related to the size of the element, we calculated the proportions of L1 <1kb, 1-2kb, 3-4kb, 4-5kb, and 5kb+ versus expectation based on all L1. Fischer\rq s exact test p-values were calculated between the count of observed size-specific L1 and the expectation within bins 1 and 2 since these bins had the largest effects of antisense bias. We found that full-length L1 (5kb+) were greatly reduced in frequency near the 5\rq region of the gene compared to expectation (figure 9). This was true of L1 in both orientations. Conversely small L1, < 1kb, were increased near the 5\rq -UTR. The small sample size for the full length L1 in the second decile may be playing a role in their failure to pass significance after Bonferroni correction.
+
+        %Figure L1 size
+    \begin{figure}[!ht]
+        \centering
+        \includegraphics[scale=1,width=\textwidth]{l1start.pdf}
+        \caption{\normalsize{\textbf{Start position of short L1 (< 1kb) within the full-length L1 consensus sequence\\}Each short L1 (<1 kb) was aligned to the respective full-length L1 consensus sequence. The start position within each consensus sequence was tallied and is presented here. Note that the L1 promoter is within the first 2kb of the full-length L1}}
+        \label{fig:l1sizef}
+    \end{figure}
+    
+            %Figure L1 size
+    \begin{figure}[!ht]
+        \centering
+        \includegraphics[scale=1,width=\textwidth]{l1size.pdf}
+        \caption{\normalsize{\textbf{Effect of L1 Size on L1 density\\}L1 density was calculated within the first and second deciles. L1 were first grouped into sizes (< 1 kb, 1-2, 2-3, 3-4, 4-5, and 5+). The L1 in each size group were then compared to the total density of L1}}
+        \label{fig:l1sizef}
+    \end{figure}
+    
+    
 
 \subsection{Binding motifs in Alu}
 
