@@ -208,9 +208,8 @@ The linear decay of RTs across gene deciles may be contributed to by a number of
     \end{figure}
 
 %Alternative Splicing
-%subsection{Coding Potential of the Gene Effects AS bias}
-%Alu and L1 have often been cited as having the potential to contribute to alternative isoforms of a gene. Both Alu and L1 contain splice donor and acceptor sites and therefore can alter splice signals. Moreover, L1, and in some cases Alu, can cause premature adenylation through the polyadenylation signals located within the sequence. For these reasons, it was important to examine the linear decay of Alu and L1 in genes that are alternatively spliced.
-%%%% ADD ALTERNATIVE SPLICE INFO
+\subsection{Alternative splicing}
+Alu and L1 both contain cryptic splice sequences that are often used for alternative splicing. It was therefore investigated whether genes with alternative isoforms have a different AS bias than constitutively expressed genes. Using the knownAlt annotation track from Hg19 (UCSC Genome Browser), we separated genes into those with known alternative splicing events, and those that were constitutively expressed. We found no significant differences between the distribution of AS and S between the two groups (chi-square p > 0.25, p > 0.23 respectively). We further calculated the correlation of AS Alu density and CDS density within alternatively spliced genes. The negative correlation that is seen across all genes was replicated when examining only genes that are alternatively spliced (Pearson’s correlation coefficient: -0.78, p < 0.008). Therefore, there was no observable difference between alternatively spliced and constitutively spliced genes.
 
 %Correlation of Linear Decay with 5'-UTR
 \subsection{Alu and L1 are Decreased Near 5\rq-UTR}
@@ -307,11 +306,11 @@ The distribution of AS L1 within genes containing 2$^\circ$ 5\rq-UTR was somewha
     
 \subsubsection{CDS accounts for the variablility identified in the AS orientation}
 
-The results so far suggest that there was a decrease of RTs near the 2$^\circ$ 5\rq -UTR when the position within the gene was normalized. This was important to note since it had previously been shown that RTs were increased near the 5\rq -UTRs in multiple species \cite(VanDeLagemaat2003).  In section \ref{sec:cds} it was shown that RTs are strongly inveresely correlated with CDS density. Since the first CDS exon of a gene is often, but not always, connected to the 5\rq -UTR, it was important to determine if the CDS density in 2$^\circ$ 5\rq -UTR genes had an effect on RT density.
+The results so far suggested that there was a decrease of RTs near the 2$^\circ$ 5\rq -UTR when the position within the gene was normalized. This was important to note since it had previously been shown that RTs were increased near the 5\rq -UTRs in multiple species \cite(VanDeLagemaat2003).  In section \ref{sec:cds} it was shown that RTs were strongly inveresely correlated with CDS density. Since the first CDS exon of a gene is often, but not always, connected to the 5\rq -UTR, it was important to determine if the CDS density in 2$^\circ$ 5\rq -UTR genes had an effect on RT density.
 
-The CDS density and Alu density within non- 2$^\circ$ 5\rq -UTR containing genes was used to predict the expected Alu density in 2$^\circ$ 5\rq -UTR containing genes. To accomplish this, Alu density from non-2$^\circ$ was regressed on CDS density from non-2$^\circ$. The CDS density of each 2$^\circ$ 5\rq -UTR gene group was then calculated and used as new data to predict the expected 5\rq-UTR density. The actual values are plotted next to the predicted values in figure \ref{fig:25_cdspred}. In the AS orientation, there was no difference in Alu density from what was expected based on CDS density. Converesly, in the S orientation, there were less Alu in regions containing a 5\rq-UTR than expected based on CDS density alone. 
+The CDS density and Alu density within non- 2$^\circ$ 5\rq -UTR containing genes was used to predict the expected Alu density in 2$^\circ$ 5\rq -UTR containing genes. To accomplish this, Alu density was regressed on CDS density. The CDS density of each 2$^\circ$ 5\rq -UTR gene group was then calculated and used as new data to predict the expected 5\rq-UTR density. The actual values are plotted next to the predicted values in figure \ref{fig:25_cdspred}. In the AS orientation, there was no difference in Alu density from what was expected based on CDS density. Converesly, in the S orientation, there were less Alu in regions containing a 5\rq-UTR than expected based on CDS density alone. 
 
-Overall these results are important to the field of RT research. They support a shift in the common thinking of RT accumulation within genes. Previous speculations were that RTs are increased near 5\rq -UTRs due to advantageous effects of RTs \cite(VanDeLagemaat2003). This current research suggests that the increase of RTs near the 5\rq - UTR is not an effect of the UTR, but an effect of the lack of CDS sequences. Moreover, there was no evidence of an increase near the 5\rq -UTR when position within the gene was normalized. Instead, there was significant decrease in Alu density in the S orientation.
+Overall these results are important to the field of RT research. They support a shift in the common thinking of RT accumulation within genes. Previous speculations were that RTs are increased near 5\rq -UTRs due to advantageous effects of the RT (e.g.: CpGs, enhancers) \cite(VanDeLagemaat2003). Converesely, this current research suggests that the increase of RTs near the 5\rq - UTR is not an effect of the UTR, but an effect of the lack of CDS sequences. Moreover, there was no evidence of an increase near the 5\rq -UTR when position within the gene was normalized. Instead, there was significant decrease in Alu density in the S orientation.
 
 
         %Figure CDS (secondary 5'-UTR)
@@ -333,7 +332,7 @@ Overall these results are important to the field of RT research. They support a 
 
 %AS bias and tissue-specificity
 \subsection{Tissue-Specificity of the Gene Effects AS bias}
-Depending on the functional groups of a gene, it has a different chance of containing large amounts of RTs. For example, housekeeping genes have a predictably higher level of Alu frequency than other gene categories. We therefore tested whether AS bias remained linear when subdivided by gene category. The effect of tissue-specificity was tested by both analyzing the slope of the density of AS as well as correlating the distribution of Alu with the distribution of CDS within tissue-specific gene sets. The linear AS slope remained present in housekeeping genes, but it was not maintained in tissue-specific gene sets. Furthermore, the correlation between ASO-RT frequency and CDS distribution was reduced within tissue-specific gene sets (table \ref{table:tiscor}). Although the sample size of each gene set trended with the R$^{2}$, sample size was not significantly correlated with R$^{2}$ (R${^2}$ = -0.68; p = 0.062).
+Housekeeping genes have a predictably higher level of Alu frequency than other gene categories \cite{Eller2007}. It was therefore tested whether AS bias remained linear when subdivided by tissue-expression category. The effect of tissue-specificity was tested by both analyzing the slope of the density of AS as well as correlating the distribution of Alu with the distribution of CDS within tissue-specific gene sets. The linear AS slope remained present in housekeeping genes, but it was not maintained in tissue-specific gene sets. Furthermore, the correlation between AS frequency and CDS distribution was reduced within tissue-specific gene sets (table \ref{table:tiscor}). Although the sample size of each gene set trended with the R$^{2}$, sample size was not significantly correlated with R$^{2}$ (R${^2}$ = -0.68; p = 0.062).
 
     % Sat Apr 12 09:10:21 2014
     %Tissue specificity table
@@ -359,19 +358,19 @@ Depending on the functional groups of a gene, it has a different chance of conta
     \end{table}
     %2 & All Genes & 42582 & -0.94 & 2.64e-05&-0.30& 0.200
 
-To determine if differences in gene expression across tissue types was confounding this result, we tested the correlation between AS frequency and exon density as a function of relative expression in housekeeping and tissue specific genes. There was no association between expression level in the respective tissue and the correlation between ASO and exon density (R$^{2}$ = 0.60 ; p = 0.15).
+To determine if differences in the levels of gene expression across tissue types was confounding this result, we tested the correlation between AS frequency and exon density as a function of relative expression in housekeeping and tissue specific genes. There was no association between expression level in the respective tissue and the correlation between AS and exon density (R$^{2}$ = 0.60 ; p = 0.15).
 
-Overall these results indicated that the tissue-specificity of the gene in which a RT is located is associated with the AS bias. 
-
-\subsection{Alternative splicing}
-Alu and L1 both contain cryptic splice sequences that are often used for alternative splicing. It was therefore investigated whether genes with alternative isoforms have a different AS bias than constitutively expressed genes. Using the knownAlt annotation track from Hg19 (UCSC Genome Browser), we separated genes into those with known alternative splicing events, and those that were constitutively expressed. We found no significant differences between the distribution of AS and S between the two groups (chi-square p > 0.25, p > 0.23 respectively). We further calculated the correlation of AS Alu density and CDS density within alternatively spliced genes. The negative correlation that is seen across all genes was replicated when examining only genes that are alternatively spliced (Pearson’s correlation coefficient: -0.78, p < 0.008). Therefore, there was no observable difference between alternatively spliced and constitutively spliced genes.
+Overall these results indicated that the tissue-specificity of the gene in which a RT is located was associated with the AS bias. AS bias was more prevalent in housekeeping genes, which also have higher numbers of RTs, and less prevalent in genes that expressed specifically in the pancreas, colon, and liver.  
 
 %Internal Binding Motifs
 \section{Retrotransposon-specific variables are associated with RT distribution}
 \label{sec:motifs}
-Although the consensus sequences for Alu and L1 contain many functional DNA binding motifs, each individual RT in the genome is variable as to whether or not it contains these motifs. The loss or gain of a motif may occur by mutation at the nucleotide level (figure \ref{fig:motif}), through retrotransposition of a parent element that has already lost or gained the motif sequence, or through truncation of the element during integration. Protein binding motifs can impact both RT expression as well as gene expression. For example, the 5’ portion of the polymerase III promoter (Pol-III) contains the A-box motif which is necessary for transcription factor binding and expression of Alu retrotransposons [39]. The YY-1 binding motif contained within L1 is both a component of the core promoter necessary for  L1 transcription [40] as well as a general transcriptional repressor [41]. CpGs which are common in Alu and L1 can potentially effect levels of gene transcription [42] when methylated. Additionally due to the process of deamination, 5-methylcytosines are more likely to be mutated to thymines than non-methylated cytosines [43], and are commonly mutated in Alu [44]. The SRY motif is a binding domain for the testis-determining factor gene SRY which increases L1 transcription in 293 cells [45], and RUNX3 binding can act as both an activator and repressor of transcription and whose repression is linked with tumour progression [46].
+The consensus sequences for Alu and L1 contain many functional DNA binding motifs. Some of these binding motifs act as enhancers, or repressors of gene expression. Although the consensus sequence of RTs contain many binding motifs, each individual RT in the genome is variable as to whether or not it contains these motifs. The loss or gain of a motif may occur by mutation at the nucleotide level (figure \ref{fig:motif}), through retrotransposition of a parent element that has already lost or gained the motif sequence, or through truncation of the element during integration.
 
-    
+Protein binding motifs can impact both RT expression as well as gene expression. For example, the 5\rq portion of the polymerase III promoter (Pol-III) contains the A-box motif which is necessary for transcription factor binding and expression of Alu retrotransposons. The YY-1 binding motif contained within L1 is both a component of the core promoter necessary for  L1 transcription as well as a general transcriptional repressor. CpGs which are common in Alu and L1 can potentially effect levels of gene transcription when methylated. Additionally due to the process of deamination, 5-methylcytosines are more likely to be mutated to thymines than non-methylated cytosines, and are commonly mutated in Alu. The SRY motif is a binding domain for the testis-determining factor gene SRY which increases L1 transcription in 293 cells, and RUNX3 binding can act as both an activator and repressor of transcription and whose repression is linked with tumour progression.
+
+These binding motifs can have an effect on gene expression, and some of these motifs are orientiation specific (e.g.: polyadenylation sequences). The relative presence of these motifs within genes was compared to intergenic motifs to determine whether some motifs were excluded from genes, therby indicating a functional impact on the organism.
+
     %Figure Alu motif examples
     \begin{figure}[!ht]
         \centering
@@ -383,7 +382,28 @@ Although the consensus sequences for Alu and L1 contain many functional DNA bind
     
          %Truncated L1
 \subsection{Truncated L1 Escape Depletion Near the 5\rq-UTR}
-The human L1 consensus sequence is approximately 6kb, although it varies by subfamily. During retrotransposition L1 are often truncated, resulting in an average size of 900bp [1]. Reverse transcription of the RNA template initiates near the 3\rq end of RNA and often the L1 retrotransposase is unable to complete retrotransposition of the entire element into the insertion site, resulting in truncation of the 5\rq end [47,48]. In the human genome L1 are variable in size, a majority of which are less than 1 kb (table 6). The 5\rq region of L1, which is often lost during truncation, contains the Polymerase II promoter which can effect expression of neighbouring genes [19,20]. To identify whether L1 (<1kb) lack the promoter region, we determined the start position of each L1 (<1kb) within the respective consensus using local RepeatMasker (figure 9a).  The results indicate that a majority of these small L1 begin after the canonical promoter sequence. 
+The human L1 consensus sequence is approximately 6kb, although it varies by subfamily. During retrotransposition L1 are often truncated, resulting in an average size of 900bp. Reverse transcription of the RNA template initiates near the 3\rq end of RNA and often the L1 retrotransposase is unable to complete retrotransposition of the entire element into the insertion site, resulting in truncation of the 5\rq end [47,48]. In the human genome L1 are variable in size, a majority of which are less than 1 kb (table \ref{table:l1size}). The 5\rq region of L1, which is often lost during truncation, contains the Polymerase II promoter which can effect expression of neighbouring genes [19,20]. To identify whether L1 (<1kb) lack the promoter region, we determined the start position of each L1 (<1kb) within the respective consensus using local RepeatMasker (figure 9a).  The results indicate that a majority of these small L1 begin after the canonical promoter sequence.
+
+% L1 size
+\begin{table}[ht]
+\large
+\centering
+\begin{tabular}{rrr}
+  \hline
+ & {size, kb} & {L1 count} \\ 
+  \hline
+ &   {< 1} & 833043 \\ 
+   &   2 & 76631 \\ 
+   &   3 & 20349 \\ 
+   &   4 & 8174 \\ 
+   &   5 & 3787 \\ 
+   &   {6 +} & 10181 \\ 
+   \hline
+\end{tabular}
+\caption{\textbf{Size of L1 elements in the human reference genome\\}Counts were tallied of all L1 in the human reference genome.}
+\label{table:l1size}
+\end{table}
+
 To test whether the linear decay of antisense oriented L1 was related to the size of the element, we calculated the proportions of L1 <1kb, 1-2kb, 3-4kb, and 5kb+ versus expectation based on all L1. Fischer\rq s exact test p-values were calculated between the count of observed size-specific L1 and the expectation within bins 1 and 2 since these bins had the largest effects of antisense bias. We found that full-length L1 (5kb+) were greatly reduced in frequency near the 5\rq region of the gene compared to expectation (figure 9). This was true of L1 in both orientations. Conversely small L1, < 1kb, were increased near the 5\rq -UTR. The small sample size for the full length L1 in the second decile may be playing a role in their failure to pass significance after Bonferroni correction.
 
 \subsection{Binding motifs in Alu}
