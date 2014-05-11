@@ -71,7 +71,7 @@
 
 Retrotransposons (RTs) comprise approximately half of the human genome and contribute to chromatin structure, regulatory motifs, and protein-coding sequences. Upon insertion, RTs can disrupt functional genetic elements as well as introduce new sequence motifs to a region. They therefore have the potential to effect the function of genes in which they insert. It is hypothesized that the phenotypic impact of RTs on genes is a contributing factor to the non-random distribution of RTs across the genome. An example of this non-random distribution is antisense bias (AS bias) of elements within genes (chapter 2).  Although some of the variables associated with non-random distributions of RTs are understood, many variables remain unstudied. Specifically, there are many variables that have the potential to impact gene expression that have not been analyzed in association with RT distribution.
 
-The detailed characterization of these associations is important to understand the impact of RTs within differing genomic locations. Determining which variables are most associated with decreases in RT distribution could help inform predictions of the severity of phenotypic consequence of \textit{de novo} as well as polymorphic RT insertions. The thousands of RT polymorphisms that are present between any two individuals \cite{Stewart2011} could then be filtered in a manner akin to the filitering of current SNP studies. RT distribution analyses would therefore, inform future disease studies attempting to associate genetic variability with disease phenotypes. Variables that are associated with the RT (e.g. length of element, orientation, sequence) as well as variables that are associated with the gene (e.g. tissue expression, density of coding sequence) will be examined in this section.  
+The detailed characterization of these associations is important to understand the impact of RTs within differing genomic locations. Determining which variables are most associated with decreases in RT distribution could help inform predictions of the severity of phenotypic consequence of \textit{de novo} as well as polymorphic RT insertions. The thousands of RT polymorphisms that are present between any two individuals \cite{Stewart2011} could then be filtered in a manner akin to the filtering of current SNP studies. RT distribution analyses would therefore, inform future disease studies attempting to associate genetic variability with disease phenotypes. Variables that are associated with the RT (e.g. length of element, orientation, sequence) as well as variables that are associated with the gene (e.g. tissue expression, density of coding sequence) will be examined in this section.  
 
 
 %ASbias (Linear Decay)
@@ -114,7 +114,7 @@ L1 had a similar distribution to Alu when within genes. Again, as expected due t
     \end{figure}
    
 \subsubsection{\textit{Linear Decay of Alu and L1}}
-Both AS L1 and Alu began at a relatively high frequency in decile 2 and declined linearly until decile 9. The rate of AS decay across gene deciles was determined by analysing these internal deciles only. This avoided the confounding effects from the process of normalization. Slopes were calculated with the counts of raw elements as opposed to the proportions to facilitate interpretation (table \ref{table:lindecay}). As expected, the decile number had a significant impact on AS density in both Alu and L1, with Alu reduced by -994 elements per decile and L1 by -1410 elements per decile. S elements were not significantly effected by the decile within which they resided.
+Both AS L1 and Alu began at a relatively high frequency in decile 2 and declined linearly until decile 9. The rate of AS decay across gene deciles was determined by analyzing these internal deciles only. This avoided the confounding effects from the process of normalization. Slopes were calculated with the counts of raw elements as opposed to the proportions to facilitate interpretation (table \ref{table:lindecay}). As expected, the decile number had a significant impact on AS density in both Alu and L1, with Alu reduced by -994 elements per decile and L1 by -1410 elements per decile. S elements were not significantly effected by the decile within which they resided.
 
     
     % Table Slope of Linear Decay
@@ -136,7 +136,7 @@ Both AS L1 and Alu began at a relatively high frequency in decile 2 and declined
         \label{table:lindecay}
     \end{table}
 
-Previous research suggested that RTs increased in a peak around the TSS. The results presented here using normalized gene lengths revealed that RTs are not only increased in density near the TSS, but are increased as a function of the normalized distance from the TSS. Moreover, the enrichment of elements is restricted to AS elements. If the increase near the TSS was purely due to a structural change in accessiblity, it would be expected that both AS and S elements would be increased near the TSS. Therefore, these results indicated that there may be a functional link between the orientation of elements and the propensity to which they are maintained within genes. Futhermore, there is a difference in this propensity near the TSS as opposed to near the 3\rq -end of a gene. 
+Previous research suggested that RTs increased in a peak around the TSS. The results presented here using normalized gene lengths revealed that RTs are not only increased in density near the TSS, but are increased as a function of the normalized distance from the TSS. Moreover, the enrichment of elements is restricted to AS elements. If the increase near the TSS was purely due to a structural change in accessibility, it would be expected that both AS and S elements would be increased near the TSS. Therefore, these results indicated that there may be a functional link between the orientation of elements and the propensity to which they are maintained within genes. Furthermore, there is a difference in this propensity near the TSS as opposed to near the 3\rq -end of a gene. 
 
 
 %%Change of Linear Decay Over Time
@@ -197,7 +197,7 @@ Different genes have different transcriptional requirements. Moreover different 
 %Correlation of Linear Decay with CDS Exon Density
 \subsection{Linear decay of AS bias is associated with coding sequence density}
 \label{sec:cds}
-The linear decay of RTs across gene deciles may be contributed to by a number of factors. The most likely of these is the presence of coding sequence exons (CDS), since these are the most conservered units of a gene. Furthermore, Zhang et. al. showed that RTs were less often located in close proximity to an exon. Therefore the density of CDS within each decile was calculated. Indeed, CDS density increased at a linear rate across gene deciles (figure \ref{fig:cds_noUTR}). The first decile of genes contained more CDS than the second decile.  AS Alu were inversely correlated with this distribution of CDS (R$^{2}$ = -0.94; one-tailed p <  2.64e-05). S Alu, however, were not correlated with CDS (R$^{2}$ = -0.30; one-tailed p = 0.200). These results suggest that AS RTs are highly inveresely correlated with CDS exon density.
+The linear decay of RTs across gene deciles may be contributed to by a number of factors. The most likely of these is the presence of coding sequence exons (CDS), since these are the most conserved units of a gene. Furthermore, Zhang et. al. showed that RTs were less often located in close proximity to an exon. Therefore the density of CDS within each decile was calculated. Indeed, CDS density increased at a linear rate across gene deciles (figure \ref{fig:cds_noUTR}). The first decile of genes contained more CDS than the second decile.  AS Alu were inversely correlated with this distribution of CDS (R$^{2}$ = -0.94; one-tailed p <  2.64e-05). S Alu, however, were not correlated with CDS (R$^{2}$ = -0.30; one-tailed p = 0.200). These results suggest that AS RTs are highly inversely correlated with CDS exon density.
 
     %Figure CDS (no secondary 5'-UTR)
     \begin{figure}[!ht]
@@ -213,7 +213,7 @@ Alu and L1 both contain cryptic splice sequences that are often used for alterna
 
 %Correlation of Linear Decay with 5'-UTR
 \subsection{Alu and L1 are Decreased Near 5\rq-UTR}
-Although, previous studies using raw distances showed that RTs were increased near TSSs, here it was noted that AS were increased over S at a ratio less than expected based on the linear trend from the internal deciles. Therefore, although there was an increase near the TSS, this increase was modified by another factor, likely the exon density. As mentioned earlier, the first decile was defined by the TSS and was therefore enriched for the presence of  5\rq-UTR exons (figure \ref{fig:utr_nosecond}), however the presence of a coding exon (CDS) was not obligatory by the normalization procedure (figure \ref{fig:cds_noUTR}). This suggested the possibility that normalizing by the TSS exaggerated an effect of the UTR on RT density. It was therefore important to first study if AS RT density near the TSS was correlated with the presence of the 5\rq-UTR or was due to another variable (e.g: CDS). To accomplish this, the effect of the 5\rq-UTR had to be seperated from any latent effects correlated with the first decile. To seperate out these effects, genes were identified that contained a second 5\rq-UTR within deciles other than the first decile. These 2$^\circ$ 5\rq-UTRs were commonly due to either alternative start positions of transcription, or transcription of a seperate gene that began within the boundaries of another gene. Examples of genes that contained 2$^\circ$  5\rq-UTRs are depicted in figure \ref{fig:25utr}. 
+Although, previous studies using raw distances showed that RTs were increased near TSSs, here it was noted that AS were increased over S at a ratio less than expected based on the linear trend from the internal deciles. Therefore, although there was an increase near the TSS, this increase was modified by another factor, likely the exon density. As mentioned earlier, the first decile was defined by the TSS and was therefore enriched for the presence of  5\rq-UTR exons (figure \ref{fig:utr_nosecond}), however the presence of a coding exon (CDS) was not obligatory by the normalization procedure (figure \ref{fig:cds_noUTR}). This suggested the possibility that normalizing by the TSS exaggerated an effect of the UTR on RT density. It was therefore important to first study if AS RT density near the TSS was correlated with the presence of the 5\rq-UTR or was due to another variable (e.g: CDS). To accomplish this, the effect of the 5\rq-UTR had to be separated from any latent effects correlated with the first decile. To separate out these effects, genes were identified that contained a second 5\rq-UTR within deciles other than the first decile. These 2$^\circ$ 5\rq-UTRs were commonly due to either alternative start positions of transcription, or transcription of a separate gene that began within the boundaries of another gene. Examples of genes that contained 2$^\circ$  5\rq-UTRs are depicted in figure \ref{fig:25utr}. 
 
 
     %Figure 5'-UTR in genes with no internal 5'-UTR
@@ -282,7 +282,7 @@ AS Alu in genes containing 2$^\circ$ 5\rq -UTRs were similar in density to the A
     
     
 \subsubsection{\textit{L1}}
-The distribution of AS L1 within genes containing 2$^\circ$ 5\rq-UTR was somewhat similar to that observed with AS Alu (figure \ref{fig:2utr_ASl1}). Interestingly, there was a slight decrease in L1 density upstream of the 0 decile for AS L1 in genes containing a 2$^\circ$ 5\rq-UTR, followed by an increase, though this decrease was not signficant. The 0 decile was significantly reduced over expectation (mean second UTR: 0.057 ; mean no second UTR: 0.071 ; Student's t-test p < 0.007), although the S L1 were not significantly reduced (p = 0.47) (figure \ref{fig:2utr_Sl1}). These results showed that there was a decrease of L1 and Alu in the presence of a 5\rq-UTR. 
+The distribution of AS L1 within genes containing 2$^\circ$ 5\rq-UTR was somewhat similar to that observed with AS Alu (figure \ref{fig:2utr_ASl1}). Interestingly, there was a slight decrease in L1 density upstream of the 0 decile for AS L1 in genes containing a 2$^\circ$ 5\rq-UTR, followed by an increase, though this decrease was not significant. The 0 decile was significantly reduced over expectation (mean second UTR: 0.057 ; mean no second UTR: 0.071 ; Student's t-test p < 0.007), although the S L1 were not significantly reduced (p = 0.47) (figure \ref{fig:2utr_Sl1}). These results showed that there was a decrease of L1 and Alu in the presence of a 5\rq-UTR. 
     
         %Figure 5'-UTR AS L1
     \begin{figure}[!ht]
@@ -306,11 +306,11 @@ The distribution of AS L1 within genes containing 2$^\circ$ 5\rq-UTR was somewha
     
 \subsubsection{CDS accounts for the variablility identified in the AS orientation}
 
-The results so far suggested that there was a decrease of RTs near the 2$^\circ$ 5\rq -UTR when the position within the gene was normalized. This was important to note since it had previously been shown that RTs were increased near the 5\rq -UTRs in multiple species \cite(VanDeLagemaat2003).  In section \ref{sec:cds} it was shown that RTs were strongly inveresely correlated with CDS density. Since the first CDS exon of a gene is often, but not always, connected to the 5\rq -UTR, it was important to determine if the CDS density in 2$^\circ$ 5\rq -UTR genes had an effect on RT density.
+The results so far suggested that there was a decrease of RTs near the 2$^\circ$ 5\rq -UTR when the position within the gene was normalized. This was important to note since it had previously been shown that RTs were increased near the 5\rq -UTRs in multiple species \cite(VanDeLagemaat2003).  In section \ref{sec:cds} it was shown that RTs were strongly inversely correlated with CDS density. Since the first CDS exon of a gene is often, but not always, connected to the 5\rq -UTR, it was important to determine if the CDS density in 2$^\circ$ 5\rq -UTR genes had an effect on RT density.
 
-The CDS density and Alu density within non- 2$^\circ$ 5\rq -UTR containing genes was used to predict the expected Alu density in 2$^\circ$ 5\rq -UTR containing genes. To accomplish this, Alu density was regressed on CDS density. The CDS density of each 2$^\circ$ 5\rq -UTR gene group was then calculated and used as new data to predict the expected 5\rq-UTR density. The actual values are plotted next to the predicted values in figure \ref{fig:25_cdspred}. In the AS orientation, there was no difference in Alu density from what was expected based on CDS density. Converesly, in the S orientation, there were less Alu in regions containing a 5\rq-UTR than expected based on CDS density alone. 
+The CDS density and Alu density within non- 2$^\circ$ 5\rq -UTR containing genes was used to predict the expected Alu density in 2$^\circ$ 5\rq -UTR containing genes. To accomplish this, Alu density was regressed on CDS density. The CDS density of each 2$^\circ$ 5\rq -UTR gene group was then calculated and used as new data to predict the expected 5\rq-UTR density. The actual values are plotted next to the predicted values in figure \ref{fig:25_cdspred}. In the AS orientation, there was no difference in Alu density from what was expected based on CDS density. Conversely, in the S orientation, there were less Alu in regions containing a 5\rq-UTR than expected based on CDS density alone. 
 
-Overall these results are important to the field of RT research. They support a shift in the common thinking of RT accumulation within genes. Previous speculations were that RTs are increased near 5\rq -UTRs due to advantageous effects of the RT (e.g.: CpGs, enhancers) \cite(VanDeLagemaat2003). Converesely, this current research suggests that the increase of RTs near the 5\rq - UTR is not an effect of the UTR, but an effect of the lack of CDS sequences. Moreover, there was no evidence of an increase near the 5\rq -UTR when position within the gene was normalized. Instead, there was significant decrease in Alu density in the S orientation.
+Overall these results are important to the field of RT research. They support a shift in the common thinking of RT accumulation within genes. Previous speculations were that RTs are increased near 5\rq -UTRs due to advantageous effects of the RT (e.g.: CpGs, enhancers) \cite(VanDeLagemaat2003). Conversely, this current research suggests that the increase of RTs near the 5\rq - UTR is not an effect of the UTR, but an effect of the lack of CDS sequences. Moreover, there was no evidence of an increase near the 5\rq -UTR when position within the gene was normalized. Instead, there was significant decrease in Alu density in the S orientation.
 
 
         %Figure CDS (secondary 5'-UTR)
@@ -367,9 +367,9 @@ Overall these results indicated that the tissue-specificity of the gene in which
 \label{sec:motifs}
 The consensus sequences for Alu and L1 contain many functional DNA binding motifs. Some of these binding motifs act as enhancers, or repressors of gene expression. Although the consensus sequence of RTs contain many binding motifs, each individual RT in the genome is variable as to whether or not it contains these motifs. The loss or gain of a motif may occur by mutation at the nucleotide level (figure \ref{fig:motif}), through retrotransposition of a parent element that has already lost or gained the motif sequence, or through truncation of the element during integration.
 
-Protein binding motifs can impact both RT expression as well as gene expression. For example, the 5\rq portion of the polymerase III promoter (Pol-III) contains the A-box motif which is necessary for transcription factor binding and expression of Alu retrotransposons. The YY-1 binding motif contained within L1 is both a component of the core promoter necessary for  L1 transcription as well as a general transcriptional repressor. CpGs which are common in Alu and L1 can potentially effect levels of gene transcription when methylated. Additionally due to the process of deamination, 5-methylcytosines are more likely to be mutated to thymines than non-methylated cytosines, and are commonly mutated in Alu. The SRY motif is a binding domain for the testis-determining factor gene SRY which increases L1 transcription in 293 cells, and RUNX3 binding can act as both an activator and repressor of transcription and whose repression is linked with tumour progression.
+Protein binding motifs can impact both RT expression as well as gene expression. For example, the 5\rq portion of the polymerase III promoter (Pol-III) contains the A-box motif which is necessary for transcription factor binding and expression of Alu retrotransposons. The YY-1 binding motif contained within L1 is both a component of the core promoter necessary for  L1 transcription as well as a general transcriptional repressor. CpGs which are common in Alu and L1 can potentially effect levels of gene transcription when methylated. Additionally due to the process of deamination, 5-methylcytosines are more likely to be mutated to thymines than non-methylated cytosines, and are commonly mutated in Alu. The SRY motif is a binding domain for the testis-determining factor gene SRY which increases L1 transcription in 293 cells, and RUNX3 binding can act as both an activator and repressor of transcription and whose repression is linked with tumor progression.
 
-These binding motifs can have an effect on gene expression, and some of these motifs are orientiation specific (e.g.: polyadenylation sequences). The relative presence of these motifs within genes was compared to intergenic motifs to determine whether some motifs were excluded from genes, therby indicating a functional impact on the organism.
+These binding motifs can have an effect on gene expression, and some of these motifs are orientation specific (e.g.: polyadenylation sequences). The relative presence of these motifs within genes was compared to intergenic motifs to determine whether some motifs were excluded from genes, thereby indicating a functional impact on the organism.
 
     %Figure Alu motif examples
     \begin{figure}[!ht]
@@ -404,7 +404,7 @@ The full-length human L1 consensus sequence is approximately 6kb, but varies by 
 \label{table:l1size}
 \end{table}
 
-This 5\rq -truncation of L1 results in variable sizes of L1 in the human genome, with a majority being less than 1 kb (table \ref{table:l1size}). The 5\rq region of L1, that is often lost during truncation, contains the Polymerase II promoter which can effect expression of neighbouring genes. It is likely that this promoter region of L1 effects gene expression. To determine if L1 with promoters have a different distribution within genes than L1 without promoters, the distributions of L1 of varying sizes were calculated.
+This 5\rq -truncation of L1 results in variable sizes of L1 in the human genome, with a majority being less than 1 kb (table \ref{table:l1size}). The 5\rq region of L1, that is often lost during truncation, contains the Polymerase II promoter which can effect expression of neighboring genes. It is likely that this promoter region of L1 effects gene expression. To determine if L1 with promoters have a different distribution within genes than L1 without promoters, the distributions of L1 of varying sizes were calculated.
 
         %Figure L1 size
     \begin{figure}[!ht]
@@ -414,7 +414,7 @@ This 5\rq -truncation of L1 results in variable sizes of L1 in the human genome,
         \label{fig:l1start}
     \end{figure}
     
-Since size was used as a proxy for the presence of the L1 promoter, it was important to determine the presence of the L1 promoter within short L1 (< 1kb). The L1 promoter region is within the first 2kb of the L1 consensus sequence. To identify whether L1 (<1kb) lack the promoter region, the start position of each short L1 (<1kb) within the respective consensus. A histogram of the start positions within the consensus sequence are presented in figure \ref{fig:l1start}).  The enrichement near 6kb indicated that the 5\rq -most portion of short L1 was located many kb downstream of the L1 promoter sequence. Therefore, a majority of these small L1 did not contain the canonical promoter sequence. It was therefore hypothesized that short L1 would not be under the same purifying selection as full-length L1, and would be present at higher levels than full-length L1. 
+Since size was used as a proxy for the presence of the L1 promoter, it was important to determine the presence of the L1 promoter within short L1 (< 1kb). The L1 promoter region is within the first 2kb of the L1 consensus sequence. To identify whether L1 (<1kb) lack the promoter region, the start position of each short L1 (<1kb) within the respective consensus. A histogram of the start positions within the consensus sequence are presented in figure \ref{fig:l1start}).  The enrichment near 6kb indicated that the 5\rq -most portion of short L1 was located many kb downstream of the L1 promoter sequence. Therefore, a majority of these small L1 did not contain the canonical promoter sequence. It was therefore hypothesized that short L1 would not be under the same purifying selection as full-length L1, and would be present at higher levels than full-length L1. 
 
             %Figure L1 size AS
     \begin{figure}[!ht]
@@ -453,7 +453,7 @@ To test whether the linear decay of antisense oriented L1 was related to the siz
 
 \subsection{Protein binding motifs in Alu}
 
-Protein binding motifs other than the Pol-II promoter are highly concentrated in both Alu and L1 consensus sequences. Since L1 containing a Pol-II promoter region were decreased near the 5\rq -region of genes, it was further hypothesized that other protein binding motifs modify the distribution of RTs within genes. Binding motifs within the Alu consensus sequence were analyzed for changes versus expectation. As noted previously, most motifs were only present in a subset of the consensus sequences. Therefore, binding motifs were first counted in a subset of Alu consensus sequences to determine the relative expectation of identifying each motifs (table \ref{table:consensusAlu}). Some motifs were present multiple times within an individual consensus sequence (e.g.: CpG, OTX2), while some motifs were not present in any of the consensus sequences analysed (e.g: BRN2, DR2). Other than the Pol-III (Pol3) promoter sequence, OTX2, PITX2, and LYF1 were present in all of the consensus sequences in the table. 
+Protein binding motifs other than the Pol-II promoter are highly concentrated in both Alu and L1 consensus sequences. Since L1 containing a Pol-II promoter region were decreased near the 5\rq -region of genes, it was further hypothesized that other protein binding motifs modify the distribution of RTs within genes. Binding motifs within the Alu consensus sequence were analyzed for changes versus expectation. As noted previously, most motifs were only present in a subset of the consensus sequences. Therefore, binding motifs were first counted in a subset of Alu consensus sequences to determine the relative expectation of identifying each motifs (table \ref{table:consensusAlu}). Some motifs were present multiple times within an individual consensus sequence (e.g.: CpG, OTX2), while some motifs were not present in any of the consensus sequences analyzed (e.g: BRN2, DR2). Other than the Pol-III (Pol3) promoter sequence, OTX2, PITX2, and LYF1 were present in all of the consensus sequences in the table. 
          
          % Sun May  4 13:23:32 2014
 \begin{landscape}%[ht]
@@ -492,20 +492,31 @@ Protein binding motifs other than the Pol-II promoter are highly concentrated in
 \label{table:consensusAlu}
 \end{landscape}
 
-These motifs were counted in intergenic Alu and normalized by the total number of intergenic Alu (figure \ref{fig:aluintmotif}). These values were calculated to act as a reference point for examining the changes in motif distribution based on placement of the element. As expected, based on the load of CpGs within the Alu consensus sequence, CpGs were the most prevalent motif in intergenic Alu. The next most prevalent motifs were PITX2, LYF1, and OTX2. This was also expected based on the presence of these elements with in every consensus sequence tested. 
-         
-    %Figure Alu motifs intergenic
+%These motifs were counted in intergenic Alu and normalized by the total number of intergenic Alu (figure \ref{fig:aluintmotif}). These values were calculated to act as a reference point for examining the changes in motif distribution based on placement of the element. As expected, based on the load of CpGs within the Alu consensus sequence, CpGs were the most prevalent motif in intergenic Alu. The next most prevalent motifs were PITX2, LYF1, and OTX2. This was also expected based on the presence of these elements with in every consensus sequence tested. 
+%         
+%    %Figure Alu motifs intergenic
+%    \begin{figure}[!ht]
+%        \centering
+%        \includegraphics[width=0.65\textwidth,natwidth=610,natheight=642]{alu_int_motif.pdf}
+%       \caption{\normalsize{\textbf{}}}
+%        \label{fig:aluintmotif}
+%    \end{figure}
+
+The proportions of motifs within intergenic Alu were used to normalize the proportions of binding motifs identified within genes (figure \ref{fig:alumotifs}). To correct for differences in the total number of Alu within different regions of the genome, the count of motifs were first normalized by the number of elements within each region analyzed. After this normalization procedure, the proportion of any given motif was effected more by the placement within a gene, than the sequence of the motif. For example, all of the motifs located within AS Alu had values above 1.2, independent of the type of motif. Similarly, all of the motifs within S Alu had values below 0.8.
+
+
+    %Figure Alu motifs 
     \begin{figure}[!ht]
         \centering
-        \includegraphics[width=0.65\textwidth,natwidth=610,natheight=642]{alu_int_motif.pdf}
-       \caption{\normalsize{\textbf{}}}
-        \label{fig:aluintmotif}
+        %\includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{alumotifs.pdf}
+         \includegraphics[scale=1, width=\textwidth]{alumotifs.pdf}
+       \caption{\normalsize{\textbf{Presence of Alu-contained protein-binding motifs within genes\\}Protein binding motifs were examined for their presence within Alu both in genes and intergenically. The y-axis represents the ratio of the presence within genes to the presence intergenically. Alu within genes were separated into categories based on the linear decline of AS-bias. AS\_5prime: Antisense Alu in the 10-20\% decile; S\_5prime: Sense Alu in the 10-20\% decile; AS\_3prime: Antisense Alu in the 80-90\% decile; S\_3prime: Sense Alu in the 80-90\% decile. The RNA Polymerase III A-box promoter (Pol3) is highlighted by an orange dashed box.}}
+        \label{fig:alumotifs}
     \end{figure}
+    
+ANOVA was performed to determine if the effect of placement (i.e: sense, antisense, in genes, 5\rq -, 3\rq -) was significantly more than the effect of the sequence of the motif (equations \ref{Alu1} and \ref{Alu2}). Placement did indeed have a more significant effect on the proportion of motif than the sequence of motif (p$_{placement}$ < 2.2e-16; p$_{sequence}$ = 0.99). 
 
-The proportions of intergenic Alu motifs were then used to normalize the proportions of binding motifs identified in Alu that resided within genes (figure \ref{fig:alumotifs}). As with intergenic Alu, the count of motifs were first normalized by the number of elements within each region analyzed. Interestingly, even after this normalization procedure, the proportion of any given motif seemed to be effected more by the placement within a gene, than the sequence of the motif. For example, all of the motifs located within AS Alu had values above 1.2, independent of the type of motif. Similarly, all of the motifs within S Alu had values below 0.8.
-
-
-    %Linear Regression Equation 1 : Alu motif
+   %Linear Regression Equation 1 : Alu motif
     \begin{equation}
     \label{Alu1}
         y  = \beta motif_{i} + ... + \beta motif_{n} + \epsilon
@@ -516,31 +527,18 @@ The proportions of intergenic Alu motifs were then used to normalize the proport
     \label{Alu2}
         y  = \beta position_{i} + ... + \beta position_{n} + \epsilon 
     \end{equation}
-    
-    
-ANOVA was performed to determine if the effect of placement was significantly more than the effect of motif (equations \ref{Alu1} and \ref{Alu2}). Placement did indeed have a more significant effect on the proportion of motif than the sequence of motif (p$_{placement}$ < 2.2e-16; p$_{sequence}$ = 0.99) . Interestingly, despite the Alu Pol-III promoter being present in all Alu consensus sequences, it was reduced in all placements compared to intergenic Alu. 
-
-    %Figure Alu motifs 
-    \begin{figure}[!ht]
-        \centering
-        %\includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{alumotifs.pdf}
-         \includegraphics[scale=1, width=\textwidth]{alumotifs.pdf}
-       \caption{\normalsize{\textbf{Presence of Alu-contained protein-binding motifs within genes\\}Protein binding motifs were examined for their presence within Alu both in genes and intergenically. The y-axis represents the ratio of the presence within genes to the presence intergenically. Alu within genes were seperated into categories based on the linear decline of AS-bias. AS\_5prime: Antisense Alu in the 10-20\% decile; S\_5prime: Sense Alu in the 10-20\% decile; AS\_3prime: Antisense Alu in the 80-90\% decile; S\_3prime: Sense Alu in the 80-90\% decile. The RNA Polymerase III A-box promoter (Pol3) is higlighted by an orange dashed box.}}
-        \label{fig:alumotifs}
-    \end{figure}
-    
 
     
-\subsection{Binding motifs in L1}
-The motifs present within intergenic L1 are plotted in figure \ref{fig:l1intmotif}. Again, CpGs were the most prevalent motif in intergenic L1 followed by the polyadenylation sequence. The proportions of motifs in intergenic L1 were compared to the proportions within genes. As before, the values were normalized by the total number of elements in the respective region prior to comparison versus intergenic L1. Contrary to the pattern seen with Alu, L1 showed no trend of enrichment based on the placement within the gene. Instead the sequence of the motif had a larger effect on the proportion of motifs (p$_{placement}$ = 0.78; p$_{sequence}$ < 3.56e-13). Furthermore, unlike Alu, all motifs within L1 were reduced in genes compared to intergenically, with the largest depletion present within the SRY motif. 
+\subsection{Protein binding motifs in L1}
+The proportions of motifs in intergenic L1 were compared to the proportions within genes. As before, the values were normalized by the total number of elements in the respective region prior to comparison versus intergenic L1. Contrary to the pattern seen with Alu, L1 showed no trend of enrichment based on the placement within the gene. Instead the sequence of the motif had a significant effect on the proportion of motifs (p$_{placement}$ = 0.78; p$_{sequence}$ < 3.56e-13). Furthermore, unlike Alu, all motifs within L1 were reduced in genes compared to intergenically. The largest depletion present was of the SRY motif. 
 
-    %Figure L1 motifs intergenic
-    \begin{figure}[!ht]
-        \centering
-        \includegraphics[width=0.65\textwidth,natwidth=610,natheight=642]{l1_int_motif.pdf}
-       \caption{\normalsize{\textbf{}}}
-        \label{fig:l1intmotif}
-    \end{figure}
+    %%Figure L1 motifs intergenic
+    %\begin{figure}[!ht]
+    %    \centering
+    %    \includegraphics[width=0.65\textwidth,natwidth=610,natheight=642]{l1_int_motif.pdf}
+    %   \caption{\normalsize{\textbf{}}}
+    %    \label{fig:l1intmotif}
+    %\end{figure}
 
 
     %Figure L1 motifs
@@ -552,7 +550,7 @@ The motifs present within intergenic L1 are plotted in figure \ref{fig:l1intmoti
         \label{fig:l1motifs}
     \end{figure}
 
-These results indicate that the sequence of both Alu and L1 are differentially maintained in genes vesrus intergenically. It must be noted, however, that since RTs within genes are more likely to be younger than RTs outside of genes, that there may be an inherent bias to detecting the difference in motifs. However, since age was calculated as the number of mismatches from consensus, it would be more likely that there would be an increase in the proportion of motifs since there would be less deviations from consensus. Therefore, although there is a possibility that these results are skewed due to differences in subfamily proportions between intergenic and within genes, the results are skewed in the opposite direction than would be expected. 
+These results indicated that the sequence of both Alu and L1 were differentially maintained in genes versus intergenically. Binding motifs contained within Alu were reduced in a pattern similar to the distribution of the whole elements. Conversely, binding motifs within L1 were reduced depending on the sequence of the motif. 
 
 %Example of the Polyadenylation Signal and PolIII 
 \subsection{Conservation at the basepair level of Binding Motifs}
@@ -561,7 +559,7 @@ These results indicate that the sequence of both Alu and L1 are differentially m
     \begin{figure}[!ht]
         \centering
         \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{l1polyA.pdf}
-       \caption{\normalsize{\textbf{Baswise conservation of polyadenylation signals within S and AS L1\\}
+       \caption{\normalsize{\textbf{Basewise conservation of polyadenylation signals within S and AS L1\\}
        Basewise conservation scores were taken from the phyloP conservation scores, where positive values indicate potential positive selection, and negative values indicate possible negative selection. The scores of each bp were calculated for intergenic L1, AS L1, and S L1. AS (pink dots) and S (blue dots) L1 were then normalized versus the intergenic values. 
        }}
         \label{fig:l1polyA}
@@ -577,7 +575,7 @@ These results indicate that the sequence of both Alu and L1 are differentially m
         \label{fig:alupolyA}
     \end{figure}
     
-Since the previous analysis may have bias due to altered subfamily distributions, further analysis using conservation values was performed. Conservation values used in this analysis were from the phyloP basewise conservation scores, where positive values indicated evidence of positive selection, and negative values indicated evidence of purifying selection. Importantly, conservation was only calculated within regions that matched the binding motif within the human reference sequence. Therefore, as opposed to the previous analysis which modelled the loss of binding motifs in the human reference, this calculation analyzed motifs that were present in humans but potentially lost in non-human primates.
+The previous analysis may have bias due to altered subfamily distributions, further analysis using conservation values was performed. Conservation values used in this analysis were from the phyloP basewise conservation scores, where positive values indicated evidence of positive selection, and negative values indicated evidence of purifying selection. Importantly, conservation was only calculated within regions that matched the binding motif within the human reference sequence. Therefore, as opposed to the previous analysis which modeled the loss of binding motifs in the human reference, this calculation analyzed motifs that were present in humans but potentially lost in non-human primates.
 
 Since the polyadenylation sequence was present within both Alu and L1 consensus sequences, this was the first motif analyzed. Basewise conservation scores were averaged for each base within the polyadenylation sequence of either L1 (figure \ref{fig:l1polyA}) or Alu (figure \ref{fig:alupolyA}). L1 and Alu elements were first separated into AS and S elements before calculating the conservation scores. Interestingly, both Alu and L1 show a decrease in conservation at the central T base. Moreover, polyadenylation signals of L1 in the sense orientation have a lower conservation score on average than those of AS oriented L1. 
 
@@ -593,9 +591,9 @@ Since the polyadenylation sequence was present within both Alu and L1 consensus 
    
 Conservation of the Alu-specific Pol-III A-box (figure \ref{fig: alupol3}) was also examined in both the AS and S orientations. The Pol-III A-box is required for transcription and retrotransposition of Alu. Moreover, it may effect transcription of Pol-II genes by maintaining the gene in an open chromatin state, therefore allowing for increased recruitment of Pol-II transcription factors [REF]. When normalized versus intergenic values, there was no major difference between AS and S conservation signals.
 
-There are four CpGs within the Pol-III A-box consensus sequence. The cytosine within a CpG context is more likely to undergo mutation than other nucleotides due to the common deamination of 5-methylcytosine. Suprisingly, only one of the four CpGs present within the queried sequence (position 20) was less conserved than the same position integenically. Two bp in the Pol-III sequence were more highly conserved within genes than intergenically. These were the cytosine at position 3 and guanine at position 15.
+There are four CpGs within the Pol-III A-box consensus sequence. The cytosine within a CpG context is more likely to undergo mutation than other nucleotides due to the common deamination of 5-methylcytosine. Surprisingly, only one of the four CpGs present within the queried sequence (position 20) was less conserved than the same position intergenically. Two bp in the Pol-III sequence were more highly conserved within genes than intergenically. These were the cytosine at position 3 and guanine at position 15.
 
-These results indicated that each position within a RT-contained binding motif had a different expectation of conservation. Interestingly, the polyadenylation sequence, had a similar dynamic of conservation  independent of the element within which it resided. Moreover, the S L1 had a complete reduction of the polyadenylation signal, whereas the AS L1, S Alu, and AS Alu all had reductions only in the central thymine. This indicates that S polyadenylation signals may be strongly purified from within genes. Evidence in the literature that S L1 contribute to pre-mature polyadenylation substatiates this hypothesis. 
+These results indicated that each position within a RT-contained binding motif had a different expectation of conservation. Interestingly, the polyadenylation sequence, had a similar dynamic of conservation  independent of the element within which it resided. Moreover, the S L1 had a complete reduction of the polyadenylation signal, whereas the AS L1, S Alu, and AS Alu all had reductions only in the central thymine. This indicates that S polyadenylation signals may be strongly purified from within genes. Evidence in the literature that S L1 contribute to pre-mature polyadenylation substantiates this hypothesis. 
 
 \section{Interaction between Gene-specific and RT-specific variables}
     %Functional Binding Motifs Effect Maintenance, Tissue Specific
