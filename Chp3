@@ -394,7 +394,7 @@ The full-length human L1 consensus sequence is approximately 6kb, but varies by 
   \hline
  &   {< 1} & 833043 \\ 
    &   {1 - 2} & 76631 \\ 
-   &   {2 -3} & 20349 \\ 
+   &   {2 - 3} & 20349 \\ 
    &   {3 - 4} & 8174 \\ 
    &   {4 - 5} & 3787 \\ 
    &   {5 + } & 10181 \\ 
@@ -433,9 +433,7 @@ Since size was used as a proxy for the presence of the L1 promoter, it was impor
     \end{figure}
     
 
-To test whether the linear decay of antisense oriented L1 was related to the size of the element, the proportions of L1 <1kb, 1-2kb, 3-4kb, 4-5kb, and 5kb+ were calculated within all genes. All groups of AS L1 had a similar distribution to all AS L1 (figure \ref{fig:l1size_as}). When all size ranges were compared within the first decile it was noted that the proportion of AS L1 was higher with decreased length of the element (figure \ref{fig:l1size_as_one}) . Importantly, L1 < 1kb in length were present at a significantly higher level than full-length L1 (prop <1kb = 0.0574 ; prop 5+kb = 0.0437 ; Test for equalities of proportion p < 1.01e-04). S L1 separated by length were also similarly distributed to all S, however full-length L1 were reduced in the first decile compared to short L1 (prop <1kb = 0.0237 ; prop 5+kb = 0.0163 ; Test for equalities of proportion p < 0.0012). 
-
-We found that full-length L1 (5kb+) were greatly reduced in frequency near the 5\rq region of the gene compared to expectation (figure \ref{fig:l1size_as} and \ref{fig:l1size_s}). This was true of L1 in both orientations. Conversely small L1, < 1kb, were increased near the 5\rq -UTR. The small sample size for the full length L1 in the second decile may be playing a role in their failure to pass significance after Bonferroni correction.
+To test whether the linear decay of antisense oriented L1 was related to the size of the element, the proportions of L1 <1kb, 1-2kb, 3-4kb, 4-5kb, and 5kb+ were calculated within all genes. All groups of AS L1 had a similar distribution to all AS L1 (figure \ref{fig:l1size_as}). When all size ranges were compared within the first decile it was noted that the proportion of AS L1 was higher with decreased length of the element (figure \ref{fig:l1size_as_one}) . Importantly, L1 < 1kb in length were present at a significantly higher level than full-length L1 (prop <1kb = 0.0574 ; prop 5+ kb = 0.0437 ; Test for equalities of proportion p < 1.01e-04). S L1 separated by length were also similarly distributed to all S, however full-length L1 were reduced in the first decile compared to short L1 (prop <1kb = 0.0237 ; prop 5+ kb = 0.0163 ; Test for equalities of proportion p < 0.0012). 
     
         %Figure L1 size
     \begin{figure}[!ht]
@@ -453,9 +451,9 @@ We found that full-length L1 (5kb+) were greatly reduced in frequency near the 5
     %    \label{fig:l1size_s_one}
     %\end{figure}
 
-\subsection{Binding motifs in Alu}
+\subsection{Protein binding motifs in Alu}
 
-Binding motifs were counted in a subset of Alu consensus sequences (table \ref{table:consensusAlu}). As noted above, most motifs were only present in a subset of the consensus sequences, and some motifs were not present in any of the sequences in the table. Other than the Pol-III (Pol3) promoter sequence, OTX2, PITX2, and LYF1 were present in all of the consensus sequences in the table. 
+Protein binding motifs other than the Pol-II promoter are highly concentrated in both Alu and L1 consensus sequences. Since L1 containing a Pol-II promoter region were decreased near the 5\rq -region of genes, it was further hypothesized that other protein binding motifs modify the distribution of RTs within genes. Binding motifs within the Alu consensus sequence were analyzed for changes versus expectation. As noted previously, most motifs were only present in a subset of the consensus sequences. Therefore, binding motifs were first counted in a subset of Alu consensus sequences to determine the relative expectation of identifying each motifs (table \ref{table:consensusAlu}). Some motifs were present multiple times within an individual consensus sequence (e.g.: CpG, OTX2), while some motifs were not present in any of the consensus sequences analysed (e.g: BRN2, DR2). Other than the Pol-III (Pol3) promoter sequence, OTX2, PITX2, and LYF1 were present in all of the consensus sequences in the table. 
          
          % Sun May  4 13:23:32 2014
 \begin{landscape}%[ht]
