@@ -82,9 +82,9 @@
 %Document
 \begin{document}
 \doublespace\large{
-\chapter{RETROTRANSPOSONS ARE ASSOCIATED WITH A SEX-SPECIFIC DECREASE IN GENE EXPRESSION}
+\chapter{\\RETROTRANSPOSONS ARE ASSOCIATED WITH A SEX-SPECIFIC DECREASE IN GENE EXPRESSION}
 
-Transcriptional regulation is a highly coordinated process necessary for the proper function of an organism. Despite conserved mechanisms regulating expression, many genes are highly variable between species \cite{Brawand2011, Carninci2005, Levine2003, Su2002}, between humans \cite{Cheung2003, Storey2007, Wang2008}, and between sexes \cite{Rinn2005, Trabzuni2013}. Variations in expression often correlate with measurable phenotype changes such as dopamine receptor expression and locomotor activity in mice \cite{Chesler2005}. Transcriptome differences associated with disease status further substantiate the hypothesis that gene expression is a key regulator of downstream phenotypes \cite{Su2002, Voineagu2011}. It is important to determine the underlying factors involved in gene expression variability to understand the plasticity of expression in unaffected individuals, as well as the limits of regulation, that when breached lead to disease. 
+Transcriptional regulation is a highly coordinated process necessary for the proper function of an organism. Despite conserved mechanisms regulating expression, many genes are highly variable between species \cite{Brawand2011, Carninci2005, Levine2003, Su2002}, between humans \cite{Cheung2003, Storey2007, Wang2008}, and between sexes \cite{Rinn2005, Trabzuni2013}. Variations in expression is often correlated with measurable phenotype changes such as dopamine receptor expression and locomotor activity in mice \cite{Chesler2005}. Transcriptome differences associated with disease status further indicate that gene expression is a key regulator of downstream phenotypes \cite{Su2002, Voineagu2011}. It is important to determine the underlying factors involved in gene expression variability to understand the plasticity of expression in unaffected individuals, as well as the limits of regulation, that when breached lead to disease. 
 
 Large-scale genome-wide analyses such as those published by the ENCODE project have described many of the organizing components of genes underlying expression variance \cite{Birney2007, Dong2012, Wang2012}. DNA methylation, histone modifications, and chromatin folding are all examples of coordinating components of transcriptional regulation \cite{Bird2002, Jenuwein2001}. Although many genetic components, such as these, have been tested for correlation with transcription, much of the repetitive content of the genome remains unexamined for its link with expression. Specifically, retrotransposons (RT) have yet to be characterized for their association with gene expression, even though they account for approximately 40\% of the mass of the human genome \cite{Lander2001}. 
 
@@ -336,7 +336,16 @@ Baillie et al. previously showed that there is somatic retrotransposition in the
 
 Similar to all MEI-seg genes, the ASD genes containing an MEI-seg showed sex-specific differences in expression. Differences in expression between MEI-seg (+) and MEI-seg (-) males were significantly greater than between MEI-seg (+) versus MEI-seg (-) females (mean dif logExp male = -0.008; mean dif logExp female = -0.002 ; Student\rq s p < 0.04) (figure 5b).
 
- 
+ %RORA STUFF
+         %Figure alu rora conservation
+    \begin{figure}[!ht]
+        \centering
+        %\includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{alu_rora.pdf}
+        \includegraphics[scale=1,width=\textwidth]{alu_rora.pdf}
+       \caption{\normalsize{\textbf{Basewise conservation of RORA-1 motif in AS and S Alu \\} Conservation scores were derived from phyloP conservation scores where a positive value indicates positive selection and a negative value indicates possible negative selection. AS and S values were normalized by intergenic values}}
+        \label{fig:alurora}
+    \end{figure}
+    
 \bibliographystyle{apacite}
 \bibliography{library}
 \end{document}
