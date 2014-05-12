@@ -81,17 +81,40 @@
 \begin{document}
 \doublespace\large{
 \chapter{\\Discussion}
-\section{Title}
 
+\section{Selection}
 ---> Alu can be co-opted as useful sequence since they don't have any large detrimental effects on the system (unlike L1). This would allow them to be maintained in the genome under neutral-esque conditions.
 
+--> Talk about how under a "neutral" model for RTs you'd expect that RTs would be older than intergenic RTs on average because a loss of a RT  in a gene may remove coding things as well. ie: coding regions are more conserved in general, so there.
+
+--> Present the proposed two-step model of selection (draw a figure for this). Where step one is the immediate selection (both Alu and L1), and step two is the slow selection (L1 only)
+
+---> Talk about how AS L1 were sometimes older than intergenic L1 (even when first separated by subfamily). Talk about how sense L1 on chrY were much younger than expected, and talk about how L1 is though to play an active role in X-inactivation. Talk about the potential of using the older L1 as a prediction tool to identify functional roles of L1.
+
+--> Look at the discussion from this paper for talking about expectations of ChrX versus autosomes (Estimate of the Mutation Rate per Nucleotide in Humans)
+
+\section{Effect on Phenotype}
 --> Talk about variability between humans and missing heritability and how RTs can be responsible for some of this missing heritability
 
----> Talk about the use of RTs in GWAS type studies. 
+--> OTX2 and PITX2 are both involved in neuronal stuff...They are present in all the Alu consensus sequences
 
----> Talk about somatic retrotransposition and how that can lead to variation within a human
+\section{Sex Specific Effects}
 
 ---> Talk about retinoic acid response elements within Alu and how that might be contributing to the difference in expression between the sexes (especially RORA1)
 
+\section {Neuropsychiatric Disorders}
+
+---> Autisim and Schizophrenia (Epilepsy?)
+
 ---> hnRNP C and Schizophrenia (Altering the expression balance of hnRNP C1 and C2 changes the expression of myelination-related genes)
 \subsection{Title}
+
+\section{Future of Retrotransposons in Human Genetics Research}
+---> Talk about the use of RTs in GWAS type studies.
+
+
+---> Talk about somatic retrotransposition and how that can lead to variation within a human
+
+--> How future research should take what's known from chp3 and make a prediction algorithm for de novo inserts. Also the same algorithm should be used for reference RTs, and the ones that fall outside of what they would be predicted should be evalutated for function
+
+
