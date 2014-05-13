@@ -258,7 +258,7 @@ Indeed when grouping significant ORs based on sex, a majority of the significant
 \section{Mobile element insertions that are polymorphic between humans}
 
 \subsection{Genes containing MEI-Alu are differentially expressed between male and female humans}
-The bias in OR due to the sex of the individual indicated that there was a bias in gene expression between males and females that was restricted to genes containing MEIs.  We next determined if the expression differences between humans and NHPs were also present as differences in expression between male and female humans. To test the differences between humans based on sex, we calculated expression within MEI genes in humans only and compared expression values between females and males of the same sex (table \ref{table:contablesex}).
+The bias in OR due to the sex of the individual indicated that there was a bias in gene expression between males and females that was restricted to genes containing MEIs.  It was next determined if the expression differences between humans and NHPs were also present as differences in expression between male and female humans. To test the differences between humans based on sex, expression was calculated within MEI genes in humans only and compared expression values between females and males of the same sex (table \ref{table:contablesex}).
 
 \begin{table}
 \centering
@@ -284,7 +284,7 @@ The bias in OR due to the sex of the individual indicated that there was a bias 
 \label{table:contablesex}
 \end{table}
 
-MEIs were restricted to those derived from Alu (MEI-Alu) and were present in human but absent in all other NHP (equivalent to MEI-Alu-Chimp). To restrict the number of tests we only examined expression in the brain. Indeed, gene expression was more likely to be decreased in human males compared to human females when an MEI-Alu-Chimp was present within the gene (OR = 0.42; CI 95\% = 0.33 -- 0.52; Fisher\rq s p  < 4.25 e-18). 
+MEIs were restricted to those derived from Alu (MEI-Alu) and were present in human but absent in all other NHP (equivalent to MEI-Alu-Chimp). To restrict the number of tests expression was only examined in the brain. Indeed, gene expression was more likely to be decreased in human males compared to human females when an MEI-Alu-Chimp was present within the gene (OR = 0.42; CI 95\% = 0.33 -- 0.52; Fisher\rq s p  < 4.25 e-18). 
 
 Although these results indicated that there was a sex-dependent difference in expression in genes containing an MEI; it was possible that the analysis detected an unrelated bias in the dataset due to the small sample size (N male = 3, N female = 2). Therefore, a larger replication set was examined. This larger dataset was used to test the claim that the MEI gene set was significantly associated with genes that were differentially expressed between males and females.
 
@@ -318,7 +318,7 @@ Alu, L1, and SVA are retrotranspositionally competent in humans resulting in mob
 
 \subsection{Decrease in expression in the presence of an MEI-seg is specific to males}
 
-We next compared expression values within each sex group to determine if the effect was biased towards a decrease in males, or an increase of expression in females. The odds of decreased expression in the presence of an MEI-seg were significantly increased when the individual was male compared to female (OR = 2.36; CI 95\% = 1.84 -- 3.05; Fisher\rq s exact p < 5.90e-12). Furthermore, the differential expression between MEI-seg(+) and MEI-seg (-) males was significantly greater than that between females (Student\rq s t-test  p < 7.93e-26) (figure \ref{fig:malemale_femfem}). These results indicated that the bias of decreased expression was largely driven by MEI-associated expression in males.
+Expression values were compared within each sex group to determine if the effect was biased towards a decrease in males, or an increase of expression in females. The odds of decreased expression in the presence of an MEI-seg were significantly increased when the individual was male compared to female (OR = 2.36; CI 95\% = 1.84 -- 3.05; Fisher\rq s exact p < 5.90e-12). Furthermore, the differential expression between MEI-seg(+) and MEI-seg (-) males was significantly greater than that between females (Student\rq s t-test  p < 7.93e-26) (figure \ref{fig:malemale_femfem}). These results indicated that the bias of decreased expression was largely driven by MEI-associated expression in males.
 
     %female male cases
     \begin{figure}[!ht]
@@ -334,19 +334,19 @@ We next compared expression values within each sex group to determine if the eff
 
 The genes contained an MEI-Alu, Chimp were tested for functional pathway enrichment. Splice variants were significantly enriched in this group (N = 1199, Benjamini corrected p < 4.1e-71), as well as neuron projection development (N = 54, Benjamini corrected p < 7.7e-04), brain expression (N = 1137, Benjamini corrected p < 9.2e-36), and phosphatidylinositol signaling (N = 19, Benjamini corrected p < 9.4e-02). The complete list is presented in supplementary table 2. 
 
-Baillie et al. previously showed that there is somatic retrotransposition in the human brain (Baillie et al., 2011). Within the list of genes that were deemed somatic inserts in Baillie et al., we found that there was a significant overlap with genes associated with Autism Spectrum Disorder (ASD) (Hussman et al., 2011) (OR = 7.29; CI 95\% = 5.01 -- 10.73 ; Fisher\rq s exact p < 6.59e-27) (Supplementary table 2). We therefore performed an additional functional enrichment test to determine if genes containing MEI were enriched for genes related to ASD. MEI-Alu, Chimp were enriched for ASD genes. ASD genes were annotated using the Autism Database (AUTdb) \cite{Basu2009}. ASD genes were significantly enriched for genes containing MEI-Alu, Chimp (OR = 1.83; CI 95\% = 1.12 -- 2.90; Fisher\rq s exact p < 0.01). More strikingly, ASD genes were significantly enriched within genes containing the human polymorphic MEI-segs (OR = 5.10; CI 95\% = 3.48 -- 7.41; Fisher\rq s exact p < 6.09e-16). 
+Baillie et al. previously showed that there is somatic retrotransposition in the human brain (Baillie et al., 2011). Within the list of genes that were deemed somatic inserts in Baillie et al., there was a significant overlap with genes associated with Autism Spectrum Disorder (ASD) (Hussman et al., 2011) (OR = 7.29; CI 95\% = 5.01 -- 10.73 ; Fisher\rq s exact p < 6.59e-27) (Supplementary table 2).  Therefore an additional functional enrichment test was performed to determine if genes containing MEI were enriched for genes related to ASD. MEI-Alu, Chimp were enriched for ASD genes. ASD genes were annotated using the Autism Database (AUTdb) \cite{Basu2009}. ASD genes were significantly enriched for genes containing MEI-Alu, Chimp (OR = 1.83; CI 95\% = 1.12 -- 2.90; Fisher\rq s exact p < 0.01). More strikingly, ASD genes were significantly enriched within genes containing the human polymorphic MEI-segs (OR = 5.10; CI 95\% = 3.48 -- 7.41; Fisher\rq s exact p < 6.09e-16). 
 
 Similar to all MEI-seg genes, the ASD genes containing an MEI-seg showed sex-specific differences in expression. Differences in expression between MEI-seg (+) and MEI-seg (-) males were significantly greater than between MEI-seg (+) versus MEI-seg (-) females (mean dif logExp male = -0.008; mean dif logExp female = -0.002 ; Student\rq s p < 0.04) (figure 5b).
 
- %RORA STUFF
-         %Figure alu rora conservation
-    \begin{figure}[!ht]
-        \centering
-        %\includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{alu_rora.pdf}
-        \includegraphics[scale=1,width=\textwidth]{alu_rora.pdf}
-       \caption{\normalsize{\textbf{Basewise conservation of RORA-1 motif in AS and S Alu \\} Conservation scores were derived from phyloP conservation scores where a positive value indicates positive selection and a negative value indicates possible negative selection. AS and S values were normalized by intergenic values}}
-        \label{fig:alurora}
-    \end{figure}
+ %%RORA STUFF
+ %        %Figure alu rora conservation
+ %   \begin{figure}[!ht]
+ %       \centering
+ %       %\includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{alu_rora.pdf}
+ %       \includegraphics[scale=1,width=\textwidth]{alu_rora.pdf}
+ %      \caption{\normalsize{\textbf{Basewise conservation of RORA-1 motif in AS and S Alu \\} Conservation scores were derived from phyloP conservation scores where a positive value indicates positive selection and a negative value indicates possible negative selection. AS and S values were normalized by intergenic values}}
+ %       \label{fig:alurora}
+ %   \end{figure}
     
 \bibliographystyle{apacite}
 \bibliography{library}
