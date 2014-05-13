@@ -284,20 +284,22 @@ The bias in OR due to the sex of the individual indicated that there was a bias 
 \label{table:contablesex}
 \end{table}
 
-MEIs were restricted to those derived from Alu (MEI-Alu) and were present in human but absent in all other NHP (equivalent to MEI-Alu, Chimp). To restrict the number of tests we only examined expression in the brain. Indeed, gene expression was more likely to be decreased in human males compared to human females when an MEI-Alu, Chimp was present within the gene (OR = 0.42; CI 95\% = 0.33 -- 0.52; Fisher\rq s p  < 4.25 e-18). 
+MEIs were restricted to those derived from Alu (MEI-Alu) and were present in human but absent in all other NHP (equivalent to MEI-Alu-Chimp). To restrict the number of tests we only examined expression in the brain. Indeed, gene expression was more likely to be decreased in human males compared to human females when an MEI-Alu-Chimp was present within the gene (OR = 0.42; CI 95\% = 0.33 -- 0.52; Fisher\rq s p  < 4.25 e-18). 
 
-Although these results indicate that there is a sex-dependent difference in expression in genes containing an MEI; it is possible that we were detecting an unrelated bias in the dataset due to the small sample size (N male = 3, N female = 2). We examined a larger replication set to test the claim that the MEI gene set is significantly associated with genes that are differentially expressed between males and females. Trabzuni et al. characterized gene expression from human male (N=101) and female (N=36) brain and spinal cord tissues \cite{Trabzuni2013}. We analyzed the top differentially expressed and alternatively spliced genes between males and females that were reported in this dataset. To facilitate the comparison MEI-Alu, Chimp were converted from Ensembl annotation to HUGO gene annotation (N MEI –Alu converted = 2200). Of the 442 genes differentially expressed or spliced between the sexes in any brain region, 117 contained an MEI-Alu, Chimp. This was significantly more genes containing MEI Alu than expected by chance (OR= 2.8; CI 95\% = 2.29 -- 3.57;  Fisher\rq s exact p < 2.2e-16). Total gene count was set at 19116 to reflect the number of genes uniquely annotated in HUGO \cite{Flicek2013, Kent2002}. 
+Although these results indicated that there was a sex-dependent difference in expression in genes containing an MEI; it was possible that the analysis detected an unrelated bias in the dataset due to the small sample size (N male = 3, N female = 2). Therefore, a larger replication set was examined. This larger dataset was used to test the claim that the MEI gene set was significantly associated with genes that were differentially expressed between males and females.
+
+Trabzuni et al. characterized gene expression from human male (N=101) and female (N=36) brain and spinal cord tissues \cite{Trabzuni2013}. The top differentially expressed and alternatively spliced genes between males and females that were reported in this dataset were used for this analysis. To facilitate the comparison, MEI-Alu-Chimp were converted from Ensembl annotation to HUGO gene annotation (N MEI-Alu-Chimp converted = 2200). Of the 442 genes differentially expressed or spliced between the sexes in any brain region, 117 contained an MEI-Alu-Chimp. This was significantly more genes containing MEI-Alu-Chimp than expected by chance (OR= 2.8; CI 95\% = 2.29 -- 3.57;  Fisher\rq s exact p < 2.2e-16). Total gene count was set at 19116 to reflect the number of genes uniquely annotated in HUGO \cite{Flicek2013, Kent2002}. 
 
 \subsection{MEIs segregating in humans are associated with a decrease in expression}
 
-Alu, L1, and SVA are retrotranspositionally competent in humans resulting in mobile element variation within the human population \cite{Ewing2010, Stewart2011}. Stewart et al. annotated a subset of MEIs that are polymorphic between humans. We next wanted to check if MEI-Alu locations that are segregating (MEI-seg) within the human population have a similar association with a change in gene expression as the MEIs previously identified between humans and primates. MEI-segs were identified from the CEU individuals typed in the 1000 genomes project. Expression data for the same CEU individuals was available from the Montgomery et al. dataset. Gene expression from Montgomery et al. was filtered to include only genes that contained an MEI-seg between the transcription start and transcription stop sites. 547 genes matched this criterion. Gene expression was compared between males and females containing MEI-seg (MEI-seg(+)). 338 genes (62\% of total, Z-test p < 3.8e-08) had a decrease in mean expression in males versus females (figure \ref{fig:femalemalecase}). Conversely when the same genes were compared between males and females without an MEI-seg (MEI-seg(-)), only 266 genes were decreased in males versus females (49\% of total, Z-test p < 0.64) (figure \ref{fig:femalemalecontrol}). A Student\rq s t-test showed that this decrease in expression in MEI-seg(+) individuals was significantly larger than in MEI-seg(-) individuals (mean difexp log MEI-seg(+) = 0.009; mean difexp log MEI-seg(-) = -0.002; Student\rq s t-test p < 1.87 e-25). 
+Alu, L1, and SVA are retrotranspositionally competent in humans resulting in mobile element variation within the human population \cite{Ewing2010, Stewart2011}. Stewart et al. annotated a subset of MEIs that are polymorphic between humans. It was next important to check if MEI-Alu locations that were segregating (MEI-seg) within the human population had a similar association with a change in gene expression as the MEIs previously identified between humans and primates. MEI-segs were identified from the CEU individuals typed in the 1000 genomes project. Expression data for the same CEU individuals was available from the Montgomery et al. dataset. Gene expression from Montgomery et al. was filtered to include only genes that contained an MEI-seg between the transcription start and transcription stop sites. 547 genes matched this criterion. Gene expression was compared between males and females containing MEI-seg (MEI-seg(+)). 338 genes (62\% of total, Z-test p < 3.8e-08) had a decrease in mean expression in males versus females (figure \ref{fig:femalemalecase}). Conversely when the same genes were compared between males and females without an MEI-seg (MEI-seg(-)), only 266 genes were decreased in males versus females (49\% of total, Z-test p < 0.64) (figure \ref{fig:femalemalecontrol}). A Student\rq s t-test showed that this decrease in expression in MEI-seg(+) individuals was significantly larger than in MEI-seg(-) individuals (mean difexp log MEI-seg(+) = 0.009; mean difexp log MEI-seg(-) = -0.002; Student\rq s t-test p < 1.87 e-25). 
 
     %female male cases
     \begin{figure}[!ht]
         \centering
         \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{femalemale_case.png}
-       \caption{\textbf{Title\\}
-       More Here
+       \caption{\textbf{Differential expression between sexes in individuals containing the MEI\\}
+       Gene expression of females containing an MEI were compared to the same genes in males who also contained the same MEI. The t-test p-values of these comparisons were plotted verus the difference between the means of the two groups. 
        }
         \label{fig:femalemalecase}
     \end{figure}
@@ -307,8 +309,8 @@ Alu, L1, and SVA are retrotranspositionally competent in humans resulting in mob
     \begin{figure}[!ht]
         \centering
         \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{femalemale_control.png}
-       \caption{\textbf{Title\\}
-       More Here
+       \caption{\textbf{Differential expression between sexes in individuals lacking the MEI\\}
+        Gene expression of females lacking an MEI were compared to the same genes in males who also lacked the MEI. The t-test p-values of these comparisons were plotted verus the difference between the means of the two groups. 
        }
         \label{fig:femalemalecontrol}
     \end{figure}
@@ -316,14 +318,14 @@ Alu, L1, and SVA are retrotranspositionally competent in humans resulting in mob
 
 \subsection{Decrease in expression in the presence of an MEI-seg is specific to males}
 
-We next compared expression values within each sex group to determine if the effect was biased towards a decrease in males, or an increase of expression in females. The odds of decreased expression in the presence of an MEI-seg were significantly increased when the individual was male compared to female (OR = 2.36; CI 95\% = 1.84 -- 3.05; Fisher\rq s exact p < 5.90e-12). Furthermore, the differential expression between MEI-seg(+) and MEI-seg (-) males was significantly greater than that between females (Student\rq s t-test  p < 7.93e-26) (figure \ref{fig:malemale_femfem}). These results indicate that the bias of decreased expression was largely driven by MEI-associated expression in males.
+We next compared expression values within each sex group to determine if the effect was biased towards a decrease in males, or an increase of expression in females. The odds of decreased expression in the presence of an MEI-seg were significantly increased when the individual was male compared to female (OR = 2.36; CI 95\% = 1.84 -- 3.05; Fisher\rq s exact p < 5.90e-12). Furthermore, the differential expression between MEI-seg(+) and MEI-seg (-) males was significantly greater than that between females (Student\rq s t-test  p < 7.93e-26) (figure \ref{fig:malemale_femfem}). These results indicated that the bias of decreased expression was largely driven by MEI-associated expression in males.
 
     %female male cases
     \begin{figure}[!ht]
         \centering
         \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{malemale_femfem.png}
        \caption{\textbf{Comparison within groups of the same sex, between MEI+ and MEI- individuals\\}
-       More Here
+       Differences in expression were calculated between females containing the MEI and lacking the MEI (Fem) or between males containing the MEI and lacking the MEI (Male). A red line is drawn at zero, where no change would be expected. 
        }
         \label{fig:malemale_femfem}
     \end{figure}
