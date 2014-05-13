@@ -160,7 +160,7 @@ Female humans were missing expression values for testis and liver; these tissues
         \centering
         \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{meiplots2.pdf}
        \caption{\textbf{The effect of MEI status on gene expression between primates}
-       Odds ratios for each tissue and each primate are plotted by MEI-type (Alu, L1, or SVA). Dots in black represent tests that did not pass Bonferonni significance. Dots in red represent tests that did pass Bonferroni significance.
+       Odds ratios for each tissue (brain, heart, liver, kidney, testis) and each primate (human, chimp, gorilla, orangutan, rhesus macaque) were plotted by MEI-type (Alu, L1, or SVA). Dots in black represented tests that did not pass Bonferonni significance ($\alpha$ = 1.25e-03 ). Dots in red represent tests that did pass Bonferroni significance.
        }
         \label{fig:meiplots}
     \end{figure}
@@ -172,7 +172,7 @@ Although it is possible that L1 and SVA are less often associated with genes tha
 \centering
 \begin{tabular}{rllllrrrrrrrrr}
   \hline
- & Primate & Sex & Tissue & Element & OddsRatio & {conf1} & {conf2} & Raw\_pvalue & {MEI- Hs} & {MEI- NHP} & {MEI+ Hs} & {MEI+ NHP} &  {pvalue}\\ 
+ Test& Primate & Sex & Tissue & Element & OddsRatio & {conf1} & {conf2} & Raw\_pvalue & {MEI- Hs} & {MEI- NHP} & {MEI+ Hs} & {MEI+ NHP} &  {pvalue}\\ 
 1 & RheMac & male & brain & Alu & 0.87 & 0.79 & 0.96 & 0.01 & 2708.00 & 7008.00 & 652.00 & 1940.00 & 4.00e-04 \\ 
   2 & RheMac & male & kidney & Alu & 0.83 & 0.75 & 0.91 & 0.00 & 6702.00 & 2896.00 & 1688.00 & 882.00 &  0.00e+00 \\ 
   5 & RheMac & male & testis & Alu & 0.83 & 0.76 & 0.91 & 0.00 & 4411.00 & 5658.00 & 1039.00 & 1603.00 &  0.00e+00 \\ 
@@ -202,19 +202,19 @@ Although it is possible that L1 and SVA are less often associated with genes tha
   119 & Chimp & female & heart & SVA & 0.47 & 0.33 & 0.67 & 0.00 & 4351.00 & 7215.00 & 43.00 & 150.00 &  0.00e+00 \\ 
    \hline
 \end{tabular}
-\caption{\textbf{Contingency table values and results of the one-tailed  permuation tests for MEI-expression tests\\} Conf1: lower confidence limit, Conf2: higher confidence limit, MEI- : Genes with no identifiable MEI within the gene boundaries; MEI+ : Genes with MEIs within the gene boundaries; Hs: Genes expressed higher in humans; NHP: Genes expressed higher in the respective non-human primate}
+\caption{\textbf{Contingency table values and results of the two-tailed  permuation tests for MEI-expression tests\\} Conf1: lower confidence limit, Conf2: higher confidence limit, MEI- : Genes with no identifiable MEI within the gene boundaries; MEI+ : Genes with MEIs within the gene boundaries; Hs: Genes expressed higher in humans; NHP: Genes expressed higher in the respective non-human primate. pvalue: proportion of permutations that were more extreme than the actual odds ratio out of 5000 permutations.}
 \label{table:permOR}
 \end{sidewaystable}
 
 
 \subsection{Males show a stronger association between MEI status and expression in humans when compared to females}
 
-There were four variables that were uncontrolled for in the calculation of odds ratio: sex of the individual, non-human primate species, tissue of origin, and MEI-type. It was therefore important to determine if any of these variables had a significant effect on the outcome of odds ratio. To compare the effects of each variable type, one regression equation was calculated per variable.
+There were four variables that were uncontrolled for in the calculation of odds ratio: sex of the individual, non-human primate species, tissue of origin, and MEI-type. It was therefore important to determine if any of these variables had a significant effect on the outcome of odds ratio. To compare the effects of each variable type, ORs were regressed on sex, NHP, tissue, and mei (equation \ref{spec}).
 
  %Linear Regression Equation: variables
     \begin{equation}
-    \label{reg 1:}
-        Odds Ratio  = \beta (sex|NHP|tissue|MEI)  + \epsilon
+    \label{spec}
+        Odds Ratio  = \beta sex + \beta NHP  + \beta tissue + \beta MEI  + \epsilon
     \end{equation}
 
 These models were compared using a four-way ANOVA. Using ANOVA, all variables were examined to determine which had the largest effect on OR (sex, primate comparison, tissue, or MEI-type) (table \ref{table:anova}). OR for the tissues testis and liver were removed due to the lack of data in female samples. Sex of the individual (p < 5.2e-04) showed the most significant effect on OR. 
@@ -223,6 +223,7 @@ These models were compared using a four-way ANOVA. Using ANOVA, all variables we
     % ANOVA table
     % Wed Apr 16 13:34:18 2014
     \begin{table}[ht]
+    \large
     \centering
     \begin{tabular}{rlrrr}
       \hline
@@ -234,20 +235,22 @@ These models were compared using a four-way ANOVA. Using ANOVA, all variables we
       4 & MEI-type &   2 & 1.59 & 0.21 \\ 
        \hline
     \end{tabular}
-    \caption{\textbf{Results of ANOVA comparing effects of sex, tissue, NHP, and MEI}}
+    \caption{\normalsize{\textbf{Results of ANOVA comparing effects of sex, tissue, NHP, and MEI}
+    A single regression equation was calculated for Odds ratios regressed on sex, tissue, primate, and mei-type. The model was then analyzed by ANOVA to determine the respective contributions of each variable. Df = degress of freedom.
+    }}
     \label{table:anova}
     \end{table}
 
-Indeed when grouping significant ORs based on sex, a majority of the significant ORs were derived from male samples (21/29 = 72\%) as opposed to female samples (8/29 = 28\%). The direction of effect (i.e.: increased versus decreased expression in humans versus NHP) was also associated with the sex of the individual in genes containing MEIs. ORs were more often < 1 (decreased expression) in male samples (19/21 = 90\%) compared to female samples (3/8 = 38\%). Overall the odds ratios between males were significantly smaller than those between females (figure \ref{fig:malefemale}).
+Indeed when grouping significant ORs based on sex, a majority of the significant ORs were derived from male samples (20/27 = 74\%) as opposed to female samples (7/27 = 26\%). The direction of effect (i.e.: increased versus decreased expression in humans versus NHP) was also associated with the sex of the individual in genes containing MEIs. ORs were more often < 1 (decreased expression) in male samples (18/20 = 90\%) compared to female samples (2/7 = 28\%). Overall the odds ratios between males were significantly smaller than those between females (figure \ref{fig:malefemale}).
 
 
     %boxplot of male odds ratios versus female odds ratios
     \begin{figure}[!ht]
         \centering
-        \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{malefemale.png}
-       \caption{\textbf{Title\\}
-       More Here
-       }
+        \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{malefemale2.pdf}
+       \caption{\normalsize{\textbf{Odds ratios based on sex of origin\\}
+       Odds ratios were calculated for each primate (human, chimp, gorilla, orangutan, and rhesus macaque) and each tissue (brain, heart, liver, kidney, testis). Odds ratios were separated by sex of origin. Black dots indicate odds ratios that were not significant after Bonferroni correction of the two-tailed permuted p-value.  Red dots indicate odds ratios that were significant ($\alpha$ = 1.25e-03).
+       }}
         \label{fig:malefemale}
     \end{figure}
     
