@@ -3,47 +3,37 @@
 
 %Preamble
 \documentclass[12bp]{report}
-\usepackage{setspace} %for double spacing
-\usepackage{times}
-\usepackage[top=1in, bottom=1in, left=1.25in, right=1in]{geometry}
-\usepackage{pslatex}
-%for the figures
-\usepackage{graphicx} 
-\usepackage{siunitx}
-\usepackage[T1]{fontenc}
-\usepackage{amsmath}
-%Formating for the contingency tables
+\usepackage[top=1in, bottom=1in, left=1.25in, right=1in]{geometry} %geom has to be loaded before fancy header
+\usepackage{pdflscape}
+\usepackage{longtable,tabularx,ltxtable}
+
 \usepackage{pgfplots}
+\usepackage{xcolor}
 \usepackage{pgfplotstable}
-\pgfplotsset{compat=1.8}
 \usepackage{booktabs}
 %for rotating a table
 \usepackage{rotating} 
-%\setcounter{page}{11}
-\usepackage[margin=10pt,font=normalsize,justification=justified,labelsep=endash,labelfont=bf]{caption}
-
 \usepackage{fancyhdr}
 \pagestyle{fancy} %Control over headers and footers
     \fancyhf{}%clears all fieds
-    \lhead[R]{\rightmark} %add section title to the page
-    \cfoot{\thepage}    %add page number to center bottom
-    \renewcommand{\headrulewidth}{0.1pt} % 0 gets rid of the lines on top 
+    %\lhead[R]{\rightmark} %add section title to the page
+    \rhead{\thepage}    %add page number to center bottom
+    \renewcommand{\headrulewidth}{0pt} % 0 gets rid of the lines on top 
     \renewcommand{\footrulewidth}{0pt} % 0 gets rid of the line on bottom
     \fancypagestyle{plain}{% Changes all chapter pages to this format (by changing plain style)
         \fancyhf{}         % clear all header and footer fields
-        \rhead{\thepage}    % except the center
+        \cfoot{\thepage}    % except the center
         \renewcommand{\headrulewidth}{0pt}
         \renewcommand{\footrulewidth}{0pt}}
 
+\usepackage[margin=10pt,font=small,justification=justified,labelsep=endash,labelfont=bf]{caption}
+\usepackage{setspace} %for double spacing
+\usepackage{pslatex}
+\usepackage{graphicx} %for the figures
+\usepackage{siunitx}
+\usepackage[T1]{fontenc}
 \usepackage[final]{pdfpages}
 \usepackage{apacite} %for citing with APA
-%\newenvironment{tightcenter}{% for self-made chapter headings
-%  \setlength\topsep{0pt}
-%  \setlength\parskip{0pt}
-%  \begin{center}
-%}{%
-%  \end{center}
-%}
 \usepackage{amsmath}
 
 \usepackage{titlesec} %Re-format the chapter title
@@ -75,22 +65,32 @@
     morekeywords={}
     }
 
-
-
 %Document
 \begin{document}
 \doublespace\large{
 \chapter{Discussion}
-\section{Overall Conclusions}
-The goal of most human genomics studies today is to attribute genetic variation to disease phenotypes. These variations commonly take the form of single nucleotide polymorphisms (SNPs), small insertions/deletions (indels), and large copy number variations (CNVs). Genome-wide studies attempting to associate genetic variation with phenotypes have been successful at identifying much of the heritable component of many genes. For example [PUT EXAMPLES HERE, LOOK AT SOME REVIEWS]. Despite the success of these association studies, there is still a large amount of heritability of diseases that is unaccounted for.
+\section{Retrotransposons: a source of missing heritability}
+The goal of many human genomics studies today is to attribute genetic variation to disease phenotypes. These variations commonly take the form of single nucleotide polymorphisms (SNPs), small insertions \slash deletions (indels), and large copy number variations (CNVs). Genomewide studies attempting to associate genetic variation with phenotypes have been successful at identifying much of the heritable component of many genes. For example [PUT EXAMPLES HERE, LOOK AT SOME REVIEWS]. Despite the success of these association studies, there is still a large amount of heritability of diseases that is unaccounted for.
 
 The reasons that there is still heritability unaccounted for probably lies in many factors. For example, if many variants in different genes work together to create a disease phenotype, it would be difficult to pick up all of the small effects, especially with the small sample sizes often used in studies today. Another reason for missing heritability is the possibility that the genetic variant that is causing the disease is not being considered for analysis. This is often discussed in the literature with respect to SNP filtering, where SNPs in intergenic regions, or SNPs that do not fall below a certain threshold of allele frequency are not considered for functional analysis. Although these SNPs may be effecting the disease phenotype, they are not considered for analysis. Another, and arguably more detrimental, oversight is the lack of analysis of retrotransposon (RTs) variants.
 
-Re
+RTs are both a common source of heritable variation, and are capable of substantially distrupting gene function. For these reasons they are prime candidates for genetic variation that contributes to human disease. RTs, however, currently remain an understudied source of genetic variation. The main reasons for the lack of research this area are two-fold: 1.) a lack of quality techniques to identify RT variation and 2.) an inability interpret the damage resulting from a RT variant \textit{in silico}. The lack of knowledge in these two areas greatly inhibits the analysis of RT variation, and it is necessary to overcome these issues before research into disease associations can be done. In recent years many bioinformatics approaches have begun to appear in the literature to help fix the first of these two problems. Therefore, the research presented in this dissertation focused on the latter problem of interpretation. The possibility that RTs are associated with phenotypic changes in an organism was examined from multiple angles. The phenotypic change of gene expression was examined in relation to RT variations, and the change in selective pressure on RTs in genes was analyzed. Together the studies both resulted in findings that suggested that RTs are not only capable of altering genes in a phenotypically selectable manner, but that many RTs are variable in the current human population that are associated wtih these changes.
 
+[Transition statement to SELECTION]
 
 \section{Selection}
-Evidence of natural selection is often used as a measure of the functionality of a region, or of it's usefulness to an organism. For example, there is a database of the conservation of each nucleotide in the human genome that is used to calculate the likelihood that the specific nucleotide is useful. The idea is that the more conserved a nucleotide, or region is, the more likely it is to do something useful, or to lead to disease when disrupted. Evidence of selection has therefore been used to determine the likelihood that RTs are effecting genes in some functional way. 
+
+Evidence of natural selection is a indicator of the functionality of a region, or of it's usefulness to an organism. Regions that are highly conserved between species are more likely to provide some function to the organism. I was therefore able to use evidence of selection as a way to evaluate the potential for retrotransposons to have a phenotypic effect on the organism (or population) in which they've inserted. The idea behind this analysis was that RTs should be present in a random distribution throughout the genome. Of course there are hotspots of integration, but taking these into account, there should generally be a random distribution of elements. So....if I found regions that were increased about the random expectation, that would lead me to hypothesize that RTs were having a positive effect in that region. Conversely, and more commonly, if I found a region where RTs were present below what would be expected by chance, then I would have to assume that the RTs in that region were having some sort of deleterious effect.
+
+There were many situations where RTs were decreased beyond what would be expected based on intergenic values. The most significant situation was where the RT was present in the sense orientation with respect to the coding gene's direction of transcription. It is possible that RTs in the sense orientation inhibit expression moreso than RTs in the antisense orientation. This is because Retrotransposons contain runs of A's in the sense orientation which polymerase II has trouble going through. Therefore the insertion of a RT in the sense orientation may decrease transcription of the coincident gene and therefore result in a selectable change in the phenotype of gene expression.
+
+Interestingly the effect resulting in AS bias was stronger for L1 than for Alu. At first glance one might think that this is because of the difference in size between L1 (6kb) and Alu (300bp), however most L1 in the reference genome are far less than even 1kb in length, and Alu contain multiple regions of polyA's within their consensus sequences. An alternative reason for the significant difference in reduction of L1 in the sense orientation compared to Alu in the sense orientation is that L1 contain a strong polyadenylation sequence near the 3\rq end of the element. The studies here showing the basewise conservation of polyadenylation sequence in L1 and Alu showed that polyadenylation sequences within L1 in the sense orientation were much less conserved overall than either L1 in the antisense orientation or Alu. This indicated that the polyadenylation seuqence within sense oriented L1 may be leading to the reduced quantity of sense L1. Interestingly, there are still many L1 in the sense orienation that contain polyadenylation sequences. It is possible that the human genome has not undergone purifying selection to rid these sequences because they are not functional. Also, however, it is possible that some of the L1-contained polyadenylation sequences in the human genome have been expated to serve a function. Future studies should look at the polyadenylation sequences that are not conserved among species to determine if they have developed a human specific function.  
+
+The advantange of this studying selection with respect to RTs was that this allowed me to take a look at the different variables associated with retrotransposons or different regions of the genome and to deterimine which regions had the largest "effect" on phenotype. Although I can't say "effect" directly with this analysis, the idea that selection was playing a role, necessitates that some sort of phenotypic effect is occuring (sans genetic drify. byt bla bla bla ).
+
+Importantly this analysis showed us that RTs are commonly removed from the genome, or undergo purifying selection. 
+
+there is a database of the conservation of each nucleotide in the human genome that is used to calculate the likelihood that the specific nucleotide is useful. The idea is that the more conserved a nucleotide, or region is, the more likely it is to do something useful, or to lead to disease when disrupted. Evidence of selection has therefore been used to determine the likelihood that RTs are effecting genes in some functional way. 
 
 ---> Alu can be co-opted as useful sequence since they don't have any large detrimental effects on the system (unlike L1). This would allow them to be maintained in the genome under neutral-esque conditions.
 
@@ -99,6 +99,9 @@ Evidence of natural selection is often used as a measure of the functionality of
 ---> Talk about how AS L1 were sometimes older than intergenic L1 (even when first separated by subfamily). Talk about how sense L1 on chrY were much younger than expected, and talk about how L1 is though to play an active role in X-inactivation. Talk about the potential of using the older L1 as a prediction tool to identify functional roles of L1.
 
 --> Look at the discussion from this paper for talking about expectations of ChrX versus autosomes (Estimate of the Mutation Rate per Nucleotide in Humans)
+
+In the near future I would like to use this knowledge to create predictions of RT frequency in the human genome for every known RT. I think it would be possible to create a value for each RT that represents the likelihood that that retrotransposon should exist given the trends based on genomic averages. If a RT has a really low score, but exists in the human genome, perhaps that RT has an effect on the genome that should be tested, or at least catalouged so when variants arise in the gene it can be noted for disease studies. 
+
 
 \section{Effect on Phenotype}
 --> Talk about variability between humans and missing heritability and how RTs can be responsible for some of this missing heritability
@@ -124,4 +127,5 @@ Evidence of natural selection is often used as a measure of the functionality of
 
 --> How future research should take what's known from chp3 and make a prediction algorithm for de novo inserts. Also the same algorithm should be used for reference RTs, and the ones that fall outside of what they would be predicted should be evalutated for function
 
-
+}
+\end{document}
