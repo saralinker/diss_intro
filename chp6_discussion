@@ -80,12 +80,19 @@
 %Document
 \begin{document}
 \doublespace\large{
-\chapter{\\Discussion}
+\chapter{Discussion}
+\section{Overall Conclusions}
+The goal of most human genomics studies today is to attribute genetic variation to disease phenotypes. These variations commonly take the form of single nucleotide polymorphisms (SNPs), small insertions/deletions (indels), and large copy number variations (CNVs). Genome-wide studies attempting to associate genetic variation with phenotypes have been successful at identifying much of the heritable component of many genes. For example [PUT EXAMPLES HERE, LOOK AT SOME REVIEWS]. Despite the success of these association studies, there is still a large amount of heritability of diseases that is unaccounted for.
+
+The reasons that there is still heritability unaccounted for probably lies in many factors. For example, if many variants in different genes work together to create a disease phenotype, it would be difficult to pick up all of the small effects, especially with the small sample sizes often used in studies today. Another reason for missing heritability is the possibility that the genetic variant that is causing the disease is not being considered for analysis. This is often discussed in the literature with respect to SNP filtering, where SNPs in intergenic regions, or SNPs that do not fall below a certain threshold of allele frequency are not considered for functional analysis. Although these SNPs may be effecting the disease phenotype, they are not considered for analysis. Another, and arguably more detrimental, oversight is the lack of analysis of retrotransposon (RTs) variants.
+
+Re
+
 
 \section{Selection}
----> Alu can be co-opted as useful sequence since they don't have any large detrimental effects on the system (unlike L1). This would allow them to be maintained in the genome under neutral-esque conditions.
+Evidence of natural selection is often used as a measure of the functionality of a region, or of it's usefulness to an organism. For example, there is a database of the conservation of each nucleotide in the human genome that is used to calculate the likelihood that the specific nucleotide is useful. The idea is that the more conserved a nucleotide, or region is, the more likely it is to do something useful, or to lead to disease when disrupted. Evidence of selection has therefore been used to determine the likelihood that RTs are effecting genes in some functional way. 
 
---> Talk about how under a "neutral" model for RTs you'd expect that RTs would be older than intergenic RTs on average because a loss of a RT  in a gene may remove coding things as well. ie: coding regions are more conserved in general, so there.
+---> Alu can be co-opted as useful sequence since they don't have any large detrimental effects on the system (unlike L1). This would allow them to be maintained in the genome under neutral-esque conditions.
 
 --> Present the proposed two-step model of selection (draw a figure for this). Where step one is the immediate selection (both Alu and L1), and step two is the slow selection (L1 only)
 
