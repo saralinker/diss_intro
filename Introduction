@@ -4,7 +4,11 @@
 %Preamble
 \documentclass[12bp]{report}
 \usepackage[top=1in, bottom=1in, left=1.25in, right=1in]{geometry} %geom has to be loaded before fancy header
+\usepackage{pdflscape}
+\usepackage{longtable,tabularx,ltxtable}
+
 \usepackage{pgfplots}
+\usepackage{xcolor}
 \usepackage{pgfplotstable}
 \usepackage{booktabs}
 %for rotating a table
@@ -12,13 +16,13 @@
 \usepackage{fancyhdr}
 \pagestyle{fancy} %Control over headers and footers
     \fancyhf{}%clears all fieds
-    \lhead[R]{\rightmark} %add section title to the page
-    \cfoot{\thepage}    %add page number to center bottom
-    \renewcommand{\headrulewidth}{0.1pt} % 0 gets rid of the lines on top 
+    %\lhead[R]{\rightmark} %add section title to the page
+    \rhead{\thepage}    %add page number to center bottom
+    \renewcommand{\headrulewidth}{0pt} % 0 gets rid of the lines on top 
     \renewcommand{\footrulewidth}{0pt} % 0 gets rid of the line on bottom
     \fancypagestyle{plain}{% Changes all chapter pages to this format (by changing plain style)
         \fancyhf{}         % clear all header and footer fields
-        \rhead{\thepage}    % except the center
+        \cfoot{\thepage}    % except the center
         \renewcommand{\headrulewidth}{0pt}
         \renewcommand{\footrulewidth}{0pt}}
 
@@ -99,7 +103,7 @@ There are two major classes of non-LTR RTs, Long INterspersed Elements (LINEs) w
 A major distinction of L1 is their ability to encode the proteins required for retrotransposition. Depending on this ability to facilitate their own integration, RTs are termed either autonomous or non-autonomous. The proteins encoded by autonomous RTs must be capable of endonuclease and reverse transcriptase activity \cite{Mathias1991,Feng1996}. Without autonomous elements, the non-autonomous elements would be immobile. The non-autonomous elements, therefore, have an increased affinity to bind to the retrotransposition proteins, and are able to be inserted even though they do not encode the protein machinery themselves.
 
 %Figure
-      \begin{figure}[!h]
+      \begin{figure}[!ht]
       \centering
         \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{l1.pdf}
         \caption{\normalsize{\textbf{Structure of Human Retrotransposons\\} The simplified structures of  LINE-1 (L1), Alu, and SINE-VNTR-Alu (SVA) are shown here. \textbf{L1} is broken up into three main regions: 5\rq - UTR, the protein coding region, and the 3\rq - region and is approximately 6kb long. The 5\rq -UTR regions contains a Pol-II promoter sequence with bidirectional activity (green arrows). This region also contains homology to the Alu sequence. Sense transcription of L1 copies the bicistronic mRNA encoding two open reading frames (ORF1 and ORF2; red boxes). There is also a 3\rq region of the L1 transcript that contains a 3\rq -UTR (dark green)  and an active polyadenylation sequence as well as a polyA tail (light green).\textbf{Alu} is transcribed by the Pol-III via internal A and B box sequences (red boxes) and is approximately 280 - 300 bp long. The center region of Alu is rich in adenosines and often is of the sequence A$_{6}$TACA$_{6}$ . The 3\rq region of the Alu also contains a polyA tail (light green). \textbf{SVA} is a composite elements that is roughly 2kb long. The 5\rq portion of SVA contains a CCCTCT$_{n}$ repeat sequence. This is linked to an Alu-like sequence, followed by a region containing a variable number of tandem repeats (VNTR). This is then linked to a SINE-like sequence, and finally there is a polyA sequence at the 3\rq end.}}
@@ -148,7 +152,7 @@ Upon formation of the RNP, the complex is reintroduced into the nucleus. The pro
 
 %Selection on the sex chromosomes versus the autosomes
 \section{Selection on the Sex Chromosomes Versus the Autosomes}
-
+\label{sec:selection}
 The equations below show the effetive population sizes for autosomes (equation \ref{eq:auto}), chrX (equation \ref{eq:chrx}), and chrY (equation \ref{eq:chry}), where N$_{\textit{e}}$ is effective population size, N\textit{m} is the population size of males, and N\textit{f} is the population size of females. [REF, Hartl and Clark Principles of human genetics]. 
 
     %Effective population size : Autosome
@@ -172,7 +176,6 @@ The equations below show the effetive population sizes for autosomes (equation \
 
 N$_{\textit{e}}$ (equation \ref{rfix}) is a key determinant in the ability for selection to act over genetic drift \cite{Charlesworth2009}, and therefore the forces of selection differ depending on the chromosome on which it is acting. Another factor at play in the difference of selection between chrX and chrY is the effect termed "Muller\rq s ratchet" \cite{Muller1964}. Muller posited that recombination is highly important for purifying selection. This theory states that there is a lack of an ability to purify deleterious mutations from the genome, since the genome is inherited as a whole with each generation. The next generation then has a higher genetic load of deleterious mutations to begin with, and this mutational load is ever increasing. Effects such as Muller's ratchet that reduce the effective population size are hypothesized to have resulted in the degeneration of genes on chrY \cite{Charlesworth2000}. Although studies have shown that deleterious mutations are accumulating on chrY, purifying selection is still possible \cite{WilsonSayres2014}. 
 
-
 %Distribution of Retrotransposons 
 %    \textnormal\Large\textit{\\\\\num{1.6 } Natural Selection and the Distribution of Retrotransposons in Genes\\}
 \section{Selection and Distribution of RTs}
@@ -186,7 +189,7 @@ Contrary to the young elements, RTs with long residence times in a population sh
 
 One example of a genomic force leading to the altered distribution of Alu, is the process of non-allelic homologous recombination (NAHR). Homologous recombination is a process of double-strand break repair that uses the availability of sister chromatids to repair the break. NAHR is similar in procedure to HR, however it uses two sequences that are similar, but not sister chromatids, to repair the broken region. NAHR therefore often results in deletions, or rearrangements. Since Alu are highly interspered and have strong homology to one another they are common substrates of NAHR \cite{Sen2006, Witherspoon2009}. It is has even been shown that this increased propensity for NAHR has resulted in Alu being responsible for a majority of the segmental duplications currently present in the human genome. Alu mediated NAHR is also responsible for many of the rearrangments present between human and non-human primates \cite{Bailey2003}. When Alu are used as substrates for NAHR, the result would be two Alu residing close to one another, rather than at farther, more random distances, and thus has been used as a hypothesis to describe the co-clustering of Alu in GC-rich regions \cite{Jurka2004}. Furthermore, the ubiquitous removal of newly inserted Alu, would reduce the load in AT-rich regions \cite{Jurka2004}.
 
-Despite large scale rearrangments of RT densities, there is evidence of selection at the level of the individual element. One study, indicating that RTs undergo purifying selection, examined the rate of heterozygosity of polymorphic RTs in various human populations. They found that Alu and L1 are present more often in the heterozygous state than the homozygous state \cite{Stewart2011}. This deviation from Hardy-Weinberg equilibrium is similar to what would be expected under purifying selection. Another study attempting to determine the selective forces on RTs examined the densities of Alu on the autosomes, chrX, and chrY seperately. The advantage to this study was that each of these chromosome groups undergo varying selective forces. One example is that autosomes, chrX, and chrY have different effective population sizes (section).
+Despite large scale rearrangments of RT densities, there is evidence of selection at the level of the individual element. One study, indicating that RTs undergo purifying selection, examined the rate of heterozygosity of polymorphic RTs in various human populations. They found that Alu and L1 are present more often in the heterozygous state than the homozygous state \cite{Stewart2011}. This deviation from Hardy-Weinberg equilibrium is similar to what would be expected under purifying selection. Another study attempting to determine the selective forces on RTs examined the densities of Alu on the autosomes, chrX, and chrY seperately. The advantage to this study was that each of these chromosome groups undergo varying selective forces. One example is that autosomes, chrX, and chrY have different effective population sizes, where the effective population size of autosomes is greater than that of chrX which is greater than chrY. Importantly, however, in the case of recessive mutations, chrX can eliminate these mutations easier since it spends half of its time in the hemizygous state. 
 
 Although many groups suggest that RTs are undergoing purifying selection \cite{Jurka2004, Stewart2011}, there are also studies suggesting the potential of postive selection acting on RTs. The altered distribution of Alu in the draft reference genome with respect to GC-content intially caused speculation that RTs were under the influence of positive selection \cite{Lander2001}. A similar GC-bias is observed in B1 within mice. B1 are rodent-specific SINEs that are similar to Alu, but that are not derived from Alu. This finding of seemingly convergent evolutionary forces led the authors to claim that the distribution of Alu and B1 are present due to forces of positive selection \cite{Tsirigos2009}, though there is not much data to support the hypothesis of positive selection versus purifying selection in this case. The population genetics community responded to the claim of positive selection in the Lander et al. paper with skeptisism. Brookfield cited less complicated mechansisms as potential mediators of the altered RT distribution, such as recombination of Alu elements, hitchiker effects, and the change in GC-content over time [Cite Brookfield 2001].
 
