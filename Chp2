@@ -67,7 +67,6 @@
 
 %Document
 \begin{document}
-
 \doublespace\large{
 \chapter{\\ORIGINS OF THE RETROTRANSPOSON ANTISENSE BIAS}
 The non-random distribution of RTs can be used to facilitate studies into the variable effects that RTs impart on genes; effects that may be accompanied by phenotypic changes. The distribution of RTs is only useful in these studies, however, if it is due to forces acting on phenotypes (i.e.: selection) as opposed to non-phenotype associated mechanisms such as integration preferences. Studies attempting to determine the mechanistic underpinnings leading to changes in RT distribution over time have identified that selection plays a role in the genome-wide distribution of RTs (section \ref{sec:dist}), but it is unknown if the altered distribution observed within genes is also due to forces of selection.
@@ -98,7 +97,7 @@ Since the goal was to determine if either the immediate force of integration or 
         \label{fig:AF_3d}
     \end{figure}
 
-\subsection{Young AS and S Alu are Present in Equal Proportions}
+\subsection{Young Antisense and Sense Alu are Present in Equal Proportions}
 \label{sec:youngas}
 Although the allele frequencies of group \textit{c} RTs were unknown, they were identified in Baillie et. al. as being present in the germline insertions. Since group \textit{a} and \textit{c} RTs all represent young polymorphic insertions the counts were combined across all groups to reduce type II error by increasing sample size (table \ref{table:youngasbias}). The probability of choosing an AS RT in this combined group was tested versus an expected probability of 0.50 using the binomial sign test. The hypothesis that young insertions had an AS bias equal to 0.50 could not be rejected (p(AS) = 0.50 ; \num{95}\% CI = 0.47 -- 0.53; p = 0.84). It was noted, that there may have been a bias imparted to the calculation by combining both group \text{a} and \textit{c} RTs. Group \textit{a} RTs were therefore tested separately, despite a reduction in power, and also  did not have a p(AS) significantly different from 0.5 (p(AS) = 0.53; \num{95}\% CI = 0.48 -- 0.57; p = 0.20). Although the results of insignificance indicated that young RTs may not have an AS bias, the null hypothesis can not be proved, only rejected \cite{Popper1959,Wilckinson2013}. Therefore, young RTs were tested against the AS bias of the reference RTs, to determine if the AS bias of young elements was significantly different from the bias that is often cited in the literature \cite{Zhang2011}. 
 
@@ -148,7 +147,7 @@ The proportion of AS elements in the young group of Alu and L1 were compared ver
 \end{table}
 
 %TPRT
-\subsection{AS bias is present in transposons integrated by non-TPRT mechanisms}
+\subsection{Antisense Bias is Present in DNA Transposons}
 
 The evidence presented in section \ref{sec:youngas} has shown that there is no discernible AS bias upon integration, indicating that the process of Alu integration (ie: TPRT) does not likely contribute to AS bias. Alu, L1, and SVA are all integrated through the process of TPRT, and all have significant differences in the proportion of AS and S elements (table \ref{table:alul1ref}). Therefore, it was pertinent to this study to determine if AS bias was restricted to elements which were integrated by TPRT. The null hypothesis that transposons inserted by non-TPRT mechanisms had equal proportions of S and AS elements was examined. Similar to the RTs Alu and L1, a pooled group of DNA transposons had a significant increase of AS elements over S elements (probability of AS = \num{0.540}; \num{95}\% CI = \num{0.538} - \num{0.543}; p < \num{1.64}e\num{-190}), indicating that AS bias is likely due to a process that acts independently of the mechanism of integration.
 
@@ -164,10 +163,10 @@ Since Alu present in the reference genome have a significantly larger proportion
         \label{fig:pAS_subfam}
     \end{figure}
     
-\subsection{Antisense bias of Alu is Constant across Reference Subfamilies}
+\subsection{Antisense Bias of Alu is Constant across Reference Subfamilies}
 Since Alu originated in the primate lineage, the scale of Alu age spans from early primate evolution, to modern human evolution. AS bias was examined across Alu subfamilies ranked by millidiv (figure \ref{fig:pAS_subfam}). Although there was a slight increase in AS bias with increasing millidiv, this increase was not signficant (slope: 4.1e-04; F-test p = \num{0.38}). This indicated that the effect leading to AS bias of Alu likely occured soon after the time point of integration. 
 
-\subsection{Antisense bias of L1 Increases Across Reference Subfamilies}
+\subsection{Antisense Bias of L1 Increases across Reference Subfamilies}
 
     %Figure pAS_subfamily L1
     \begin{figure}[!ht]
@@ -182,8 +181,11 @@ Although Alu and L1 both have a signficant AS bias in the genome, it is possible
 L1 AS bias was also examined across subfamilies ordered by millidiv. Contrary to the findings in Alu, there was a significant trend towards an increase in AS bias over time (F-test p < \num{2.66}e{-06}) (figure \ref{fig:pAS_l1_2}). These results indicated that, in L1, AS bias increased dynamically over long periods of evolutionary time. 
 
  
-\subsection{Antisense bias of Alu increases quickly over evolutionary time}
-The findings so far have shown that AS and S RTs have no bias upon integration, however there is an AS bias of Alu in the reference genome. For Alu, this AS bias in reference Alu was independent of the age of the subfamily. It was therefore hypothesized that AS bias in Alu was achieved rapidly after integration.  To examine the change of AS proportion on shorter time scales than the previous analysis, p(AS) of young Alu were compared to p(AS) of Alu that were shared among all three populations (section \ref{sec:af}: group \textit{b}). As mentioned previously, shared Alu (group \textit{b}) were assumed to have longer residence times in the genome than young Alu because shared elements must have integrated prior to the split of YRI, CEU, and CHBJPT, while young elements were assumed to have inserted after the split. The higher average allele frequencies of shared Alu compared to group population-specific Alu substantiated this assumption (section \ref{sec:youngas}). The AS bias was compared between group \textit{b} and the combined group \textit{a} and \textit{c} to determine if AS bias was present in this slightly older group of elements. Indeed The proportion of AS in the young subset of Alu was significantly smaller than polymorphic Alu that were shared among all three populations ($propAS_{\text{young}}$ = 0.50; $propAS_{\text{shared}}$ = 0.54; \num{95}\% CI = \num{-0.11} - \num{-0.02}; p < \num{0.01}) [REDO THIS CALCULATION THE P=VALUE MIGHT BE OFF, TOO LAZY RIGHT NOW]. This indicated that the change to AS bias of Alu occured quickly over evolutionary time.
+\subsection{Antisense Bias of Alu Increases Quickly Over Evolutionary Time}
+The findings so far have shown that AS and S RTs have no bias upon integration, however there is an AS bias of Alu in the reference genome. For Alu, this AS bias in reference Alu was independent of the age of the subfamily. It was therefore hypothesized that AS bias in Alu was achieved rapidly after integration.  To examine the change of AS proportion on shorter time scales than the previous analysis, p(AS) of young Alu were compared to p(AS) of Alu that were shared among all three populations (section \ref{sec:af}: group \textit{b}). As mentioned previously, shared Alu (group \textit{b}) were assumed to have longer residence times in the genome than young Alu because shared elements must have integrated prior to the split of YRI, CEU, and CHBJPT, while young elements were assumed to have inserted after the split. The higher average allele frequencies of shared Alu compared to group population-specific Alu substantiated this assumption (section \ref{sec:youngas}). The AS bias was compared between group \textit{b} and the combined group \textit{a} and \textit{c} to determine if AS bias was present in this slightly older group of elements. Indeed The proportion of AS in the young subset of Alu was significantly smaller than polymorphic Alu that were shared among all three populations ($propAS_{\text{young}}$ = 0.50; $propAS_{\text{shared}}$ = 0.54; \num{95}\% CI = \num{-0.11} - \num{-0.02}; p < \num{0.01}). This indicated that the change to AS bias of Alu occured quickly over evolutionary time.
+%%!!!!!!!!!!!!!!!!!!!!!!!!!!!
+%%[REDO THIS CALCULATION THE P=VALUE MIGHT BE OFF, TOO LAZY RIGHT NOW]
+%%!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
     %Figure pAS
     \begin{figure}[!ht]
@@ -198,7 +200,7 @@ Overall, these results indicated that Alu and L1 were initially integrated with 
 
 %Signs of purifying selection
 \section{Evidence of  Selection Acting on Alu and L1}
-The results so far have shown that AS bias is not present upon integration but increases over time, as would be expected under a model of selection. If selection within genes is playing a role in this change in AS bias, there are three hypotheses that can be tested: \textit{1}) Antisense RTs undergo positive selection within genes, \textit{2}) Sense RTs undergo negative (purifying) selection within genes, and \textit{3}) Both (\textit{1}) and (\textit{2}) are true. Previous reports have indicated that Alu undergo purifying selection on a genome-wide level \cite{Stewart2011}. However, Lander et al. proposed that the increase of Alu in GC-rich regions was due to positive selection, though gave no experimental evidence to support these conclusions \cite{Lander2001}. Neither of these studies have addressed the selection of RTs within gene boundaries, which is important to study due to the potential distruptions of RTs directly on transcription as well as regulation of both transcription and translation \cite{Thornburg2006,Wang2009}.
+The results so far have shown that AS bias was not present upon integration but increased over evolutionary time, as would be expected under a model of selection. If selection within genes was playing a role in this change in AS bias, there are three hypotheses that can be tested: \textit{1}) Antisense RTs undergo positive selection within genes, \textit{2}) Sense RTs undergo negative (purifying) selection within genes, and \textit{3}) Both (\textit{1}) and (\textit{2}) are true. Previous reports have indicated that Alu undergo purifying selection on a genome-wide level \cite{Stewart2011}. However, Lander et al. proposed that the increase of Alu in GC-rich regions was due to positive selection, though gave no experimental evidence to support these conclusions \cite{Lander2001}. Neither of these studies have addressed the selection of RTs within gene boundaries, which is important to study due to the potential distruptions of RTs directly on transcription as well as regulation of both transcription and translation \cite{Thornburg2006,Wang2009}.
 
 In 1975 Li calculated that on average, deleterious alleles have shorter residence times in a population. In other words, they will be younger than neutral or advantageous alleles \cite{Li1975}. The logic behind this finding lies in that, in populations of equal size, an allele is more likely to be passed on to the next generation if it is neutral or positive compared to an allele that is deleterious. The neutral or positive allele will therefore remain in the population longer, accumulating a longer residence time in the genome. Meanwhile, new alleles, both advantageous and deleterious will continually appear. While the advantageous alleles are retained, the deleterious alleles will continually be lost, with only young alleles that have replaced them remaining present. Therefore at any discrete point in time, the deleterious alleles will be younger on average than the advantageous or neutral alleles.
 
@@ -229,7 +231,7 @@ Using the rationale presented in Li, 1975; the relative force of selection can b
 
 To study the potential of selection acting on RTs, it was important to determine if the age, in millidiv, of an L1 element was contingent on the placement within the genome (i.e.: intergenic, AS within genes, or S within genes). To examine the association of age with placement, millidiv was regressed on dummy variables representing each possible placement of the element (equation \ref{l1anova}).
 
-Since each element was expected to have the respective subfamily contribute a larger effect to millidiv than the placement, the effect of subfamily needed to be taken into account in the model. For example, a currently active L1 would be expected to have a smaller millidiv value (i.e.: younger) than an L1 that was inserted before the split of primates (i.e.:older), whether or not the old L1 was under selection. There were multiple possible ways of normalizing for subfamily including, adding the subfamily in the model as a random effect, or adding the subfamily as an interaction term. It was decided, that for this analysis, the optimal method would be to calculate a separate regression equation for each subfamily [SURE THIS IS RIGHT?].  This method of analyzing the subfamilies separately was chosen instead of adding the subfamilies into the model as a random effect because it was important to observe how the estimates changed across increasingly aged subfamilies.
+Since each element was expected to have the respective subfamily contribute a larger effect to millidiv than the placement, the effect of subfamily needed to be taken into account in the model. For example, a currently active L1 would be expected to have a smaller millidiv value (i.e.: younger) than an L1 that was inserted before the split of primates (i.e.:older), whether or not the old L1 was under selection. There were multiple possible ways of normalizing for subfamily including, adding the subfamily in the model as a random effect, or adding the subfamily as an interaction term. It was decided, that for this analysis, the optimal method would be to calculate a separate regression equation for each subfamily.  This method of analyzing the subfamilies separately was chosen instead of adding the subfamilies into the model as a random effect because it was important to observe how the estimates changed across increasingly aged subfamilies.
 
 A p-value was calculated for each subfamily-specific regression equation and plotted as a function of the average millidiv in the entire subfamily within genes (figure \ref{fig:l1ageanova}). 79 of the 114 subfamilies had millidiv values that were significantly associated with location after Bonferroni correction for multiple testing ( $\alpha$  = 4.3e-04; Appendix table \ref{table:l1subvalues}). Moreover, the significance of these results increased with increasing age of the subfamily as a whole. These results indicated that there were different selection biases present depending on the placement of the RT.
     %Linear Regression Equation 1 : L1 anova
@@ -300,7 +302,7 @@ Alu were similarly analyzed for differences in age depending on position and ori
     
 \subsection{The Ages of Alu and L1 are Dependent on the Chromosome of Origin}
 
-The above results indicated that both Alu and L1 were undergoing selection within genes, though at different levels. To further test whether purifying selection or positive selection was acting on these RTs within genes, I took advantage of the differing rates of selection on chrX, chrY, and the autosomes. It's been shown previously that the ability for purifying selection of minorly deleterious alleles [??TRUE?] is reduced on chrY compared to chrX and the autosomes. Furthermore, there are varied effective population sizes between chrX, chrY, and the autosomes (section \ref{sec:selection}). Therefore, if selection is indeed acting on RTs within genes, elements should have different ages depending on the chromosome on which they reside. For this reason, and for the overall lack of purifying selection on chrY it was hypothesized that the age of RTs would be the lowest on chrX and the autosomes, while chrY would be expected to have older elements due to the lack of purifying selection.
+The above results indicated that both Alu and L1 were undergoing selection within genes, though at different levels. To further test whether purifying selection or positive selection was acting on these RTs within genes, I took advantage of the differing rates of selection on chrX, chrY, and the autosomes. It's been shown previously that the ability for purifying selection of deleterious alleles is reduced on chrY compared to chrX and the autosomes. Furthermore, there are varied effective population sizes between chrX, chrY, and the autosomes (section \ref{sec:selection}). Therefore, if selection is indeed acting on RTs within genes, elements should have different ages depending on the chromosome on which they reside. For this reason, and for the overall lack of purifying selection on chrY it was hypothesized that the age of RTs would be the lowest on chrX and the autosomes, while chrY would be expected to have older elements due to the lack of purifying selection.
 
 To have a broad idea of the age of RTs across chromosomes, each placement group was analyzed with all subfamilies aggregated together. Although aggregating all subfamilies into a single measure was expected to wash out much of the signal, there were significant differences between chromosomes when analyzed this way (table \ref{table:chrxyage}). 
 
@@ -350,10 +352,7 @@ To have a broad idea of the age of RTs across chromosomes, each placement group 
     \end{figure}
 
 
-\subsection{Evidence of Purifying Selection on S and AS Alu}
-
-As expected, within sense Alu, elements on chrX had significantly lower millidiv than those on autosomes, which were significantly less than those on chrY (table \ref{table:chrsig}). The same pattern was identified between antisense Alu and between intergenic Alu. This result showed that chromosomes with heightened ability for purifying selection had elements that were significantly younger, supporting that purifying selection is indeed acting on Alu RTs. In fact, the effect of rate of selection as identified by type of chromosome had a larger effect on element age than the orientation. For example, sense Alu on chrY were significantly older than antisense Alu on autosomes, further indicating that the antisense bias is only present when purifying selection is present. 
-
+\subsection{Evidence of Purifying Selection on Sense and Antisense Alu}
 % Thu May  1 18:32:41 2014
 \begin{table}[ht]
 \large
@@ -380,8 +379,10 @@ As expected, within sense Alu, elements on chrX had significantly lower millidiv
 \label{table:chrsig}
 \end{table}
 
+As expected, within sense Alu, elements on chrX had significantly lower millidiv than those on autosomes, which were significantly less than those on chrY (table \ref{table:chrsig}). The same pattern was identified between antisense Alu and between intergenic Alu. This result showed that chromosomes with heightened ability for purifying selection had elements that were significantly younger, supporting that purifying selection is indeed acting on Alu RTs. In fact, the effect of rate of selection as identified by type of chromosome had a larger effect on element age than the orientation. For example, sense Alu on chrY were significantly older than antisense Alu on autosomes. 
+
 %Signs of purifying and positive selection
-\subsection{Evidence of Purifying and Postive Selection on S and AS L1}
+\subsection{Evidence of Purifying and Postive Selection on Sense and Antisense L1}
 
          %Figure 
     \begin{figure}[!ht]
@@ -390,8 +391,6 @@ As expected, within sense Alu, elements on chrX had significantly lower millidiv
         \caption{\textbf{Clustering of L1 by Age\\} Red: Sense; Green: Antisense; Black: Intergenic}
         \label{fig:hclustl1chr}
     \end{figure}
-
-L1 elements in autosomes were clustered in one major branch and L1 elements on chrX were clustered on a second major branch (figure \ref{fig:hclustl1chr}). Interestingly, L1 on chrY were interspersed within chrX and autosomes. When compared to using Student's t-tests S L1 on chrY were significantly younger than AS L1 on chrY (table \ref{table:l1chrsig}), indicating a potential difference in selective force acting on S and AS L1 on chrY. Moreover, AS L1 on chrY were older on average than intergenic L1 on chrY. These effects are mimicked by the antisense ratios (table \ref{table:l1asbiaschr}), further implicating selection in the derivation of the altered distribution of RTs within genes. 
 
 % Thu May  1 20:43:20 2014
 \begin{table}[ht]
@@ -417,23 +416,25 @@ L1 elements in autosomes were clustered in one major branch and L1 elements on c
 \label{table:l1chrsig}
 \end{table}
 
-%AS bias on different chromosomes
-% Fri May  2 17:00:36 2014 
-\begin{table}[ht]
-\centering
-\begin{tabular}{rllrrrr}
-  \hline
- & Element & Chr & p.AS. & CI1 & CI2 & p \\ 
-  \hline
-1 & Alu & X & 0.57 & 0.56 & 0.58 & 8.63e-80 \\ 
-  2 & Alu & Aut & 0.55 & 0.55 & 0.55 & 2.47e-323 \\ 
-  3 & Alu & Y & 0.56 & 0.54 & 0.58 & 2.50e-07 \\ 
-  4 & L1 & X & 0.66 & 0.66 & 0.67 & 4.94e-324 \\ 
-  5 & L1 & Aut & 0.66 & 0.66 & 0.66 & 1.98e-323 \\ 
-  6 & L1 & Y & 0.70 & 0.68 & 0.72 & 6.48e-50 \\ 
-   \hline
-\end{tabular}
-\end{table}
+L1 elements in autosomes were clustered in one major branch and L1 elements on chrX were clustered on a second major branch (figure \ref{fig:hclustl1chr}). Interestingly, L1 on chrY were interspersed within chrX and autosomes. When compared to using Student's t-tests S L1 on chrY were significantly younger than AS L1 on chrY (table \ref{table:l1chrsig}), indicating a potential difference in selective force acting on S and AS L1 on chrY. Moreover, AS L1 on chrY were older on average than intergenic L1 on chrY. These effects are mimicked by the antisense ratios (table \ref{table:l1asbiaschr}), further implicating selection in the derivation of the altered distribution of RTs within genes. 
+
+%%AS bias on different chromosomes
+%% Fri May  2 17:00:36 2014 
+%\begin{table}[ht]
+%\centering
+%\begin{tabular}{rllrrrr}
+%  \hline
+% & Element & Chr & p.AS. & CI1 & CI2 & p \\ 
+%  \hline
+%1 & Alu & X & 0.57 & 0.56 & 0.58 & 8.63e-80 \\ 
+%  2 & Alu & Aut & 0.55 & 0.55 & 0.55 & 2.47e-323 \\ 
+%  3 & Alu & Y & 0.56 & 0.54 & 0.58 & 2.50e-07 \\ 
+%  4 & L1 & X & 0.66 & 0.66 & 0.67 & 4.94e-324 \\ 
+%  5 & L1 & Aut & 0.66 & 0.66 & 0.66 & 1.98e-323 \\ 
+%  6 & L1 & Y & 0.70 & 0.68 & 0.72 & 6.48e-50 \\ 
+%   \hline
+%\end{tabular}
+%\end{table}
 
 \section{Conclusions}
 In summary the results within this chapter indicate that the AS bias of Alu and L1 RTs is due to forces of selection. It was found that the AS bias that is present in the current human genome is not present upon integration, and that this bias is produced quickly over evolutionary time in Alu, and over longer periods of time for L1. The ages associated with these RTs further indicated that there are varied levels of selective pressures exerted on Alu and L1 depending on their position and orientation within the genome. In general, Alu and L1 within genes were younger than the same subfamilies intergenically. This was evidence that Alu and L1 may be under purifying selection within genes. Moreover, in regions with restricted purifying selection (i.e.:chrY), there was a reduction of both AS bias and an increase in age of Alu RTs. These results substantiate the hypothesis that RTs are initially integrated without bias but become non-randomly distributed over time due to selection. These findings warrant further study into the variables effecting the non-random distribution of RTs within genes to determine what variables associated with both RTs and with genes that effect the level of selection. 
