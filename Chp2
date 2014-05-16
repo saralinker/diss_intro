@@ -204,17 +204,25 @@ The results so far have shown that AS bias was not present upon integration but 
 
 In 1975 Li calculated that on average, deleterious alleles have shorter residence times in a population. In other words, they will be younger than neutral or advantageous alleles \cite{Li1975}. The logic behind this finding lies in that, in populations of equal size, an allele is more likely to be passed on to the next generation if it is neutral or positive compared to an allele that is deleterious. The neutral or positive allele will therefore remain in the population longer, accumulating a longer residence time in the genome. Meanwhile, new alleles, both advantageous and deleterious will continually appear. While the advantageous alleles are retained, the deleterious alleles will continually be lost, with only young alleles that have replaced them remaining present. Therefore at any discrete point in time, the deleterious alleles will be younger on average than the advantageous or neutral alleles.
 
-         %Figure 
-    \begin{figure}[!ht]
-        \centering
-        \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{selection5_3.png}
-        \caption{\textbf{AS bias of Alu across gene deciles\\}
-        More here
-        }
-        \label{fig:l1age}
-    \end{figure}
+    %     %Figure 
+    %\begin{figure}[!ht]
+    %    \centering
+    %    \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{selection5_3.png}
+    %    \caption{\textbf{AS bias of Alu across gene deciles\\}
+    %    More here
+    %    }
+    %    \label{fig:l1age}
+    %\end{figure}
 
-Using the rationale presented in Li, 1975; the relative force of selection can be compared between two, otherwise equal, alleles by calculating their respective residence times in a population. RTs within a subfamily are an optimal sample to study selective forces, since they have the advantage of being amplified at similar points in time. Therefore, elements of the same subfamily should have similar residence times in the population when calculated as millidiv. However, if there are deviations in the forces of selection between subsets of the subfamily (i.e: AS versus S, or intergenic versus within genes) , then the residence times in the population should be unequal. An example of the hypothesis is presented in figure \ref{fig:l1age}. Here is shown the AS bias of Alu in two regions of genes, one region with a large AS bias, and one region with no AS bias. The hypotheses of selection underlying these distributions are listed at the bottom of the figure. 
+Using the rationale presented in Li, 1975; the relative force of selection can be compared between two, otherwise equal, alleles by calculating their respective residence times in a population. RTs within a subfamily are an optimal sample to study selective forces, since they have the advantage of being amplified at similar points in time. Therefore, elements of the same subfamily should have similar residence times in the population when calculated as millidiv. However, if there are deviations in the forces of selection between subsets of the subfamily (i.e: AS versus S, or intergenic versus within genes) , then the residence times in the population should be unequal.
+
+%An example
+
+%of the hypothesis is presented in figure \ref{fig:l1age}. Here is shown the AS bias of Alu in two regions of genes, one region with a large AS bias (near the 5\rq -end of genes), and one region with no AS bias (near the 3\rq -end of gene). This difference in AS bias between the 5\rq and 3\rq regions will be discussed in more detail in Chapter 3. It is important to note here that the 5\rq region has a probability of AS (p(AS)) equal to 0.59, while the 3\rq region has a p(AS) equal to 0.51. The selection hypotheses given for the AS bias on the 5\rq end are that AS elements are older than S elements, indicating a relative advantage in the A
+
+%S orientation. The important distinction is the age of intergenic elemestn
+
+.% The hypotheses of selection underlying these distributions are listed at the bottom of the figure. 
 
 
 \subsection{Evidence of Selection on L1 within Genes}
