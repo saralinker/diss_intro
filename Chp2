@@ -231,9 +231,9 @@ Using the rationale presented in Li, 1975; the relative force of selection can b
     \begin{figure}[!ht]
         \centering
         \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{l1_age_anova.pdf}
-        \caption{\textbf{Age of L1 By Subfamily\\}
-        More here
-        }
+        \caption{\normalsize{\textbf{Age of L1 By Subfamily\\}
+        The age L1 were regressed on the placement of the L1 (i.e.:intergenic, sense, or antisense). Regression equations were calculated separately for each L1 subfamily. The significance of each test is plotted versus the average age of the entire subfamily in millidiv)
+        }}
         \label{fig:l1ageanova}
     \end{figure}
 
@@ -281,7 +281,7 @@ Alu were similarly analyzed for differences in age depending on position and ori
         \centering
         \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{alu_age_anova.pdf}
         \caption{\textbf{Age of Alu By Subfamily\\}
-        More here
+         The age Alu were regressed on the placement of the Alu (i.e.:intergenic, sense, or antisense). Regression equations were calculated separately for each Alu subfamily. The significance of each test is plotted versus the average age of the entire subfamily in millidiv)
         }
         \label{fig:aluageanova}
     \end{figure}
