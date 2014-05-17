@@ -112,8 +112,8 @@ As mentioned in section \ref{sec:puri} it was previously thought that RTs were i
 
 Despite incongruous interpretations, the previous findings and the current findings are compatible with one another. The finding that there is a lower density of coding exons near the transcription start site facilitates the interpretation of both models. This decrease in coding density results in a reciprocal increase in RT density that looks as though it is related to the 5\rq -UTR, as previous studies have identified. However, when the effect of 5\rq -UTRs was studied in regions of genes with higher levels of coding sequence, there were respective decreases in RTs. This supports the finding that in the absense of coding sequences, there is an increase of RTs. Therefore the increase of RTs near the 5\rq -UTR of genes is likely a red-herring, and instead is a function of coding sequence density. 
 
-\section{Binding Motifs}
-[INSERT INFORMATION HERE]
+%\section{Binding Motifs}%% <-- Add this back in, it's important to talk about.
+%Transcription factor binding sites may not have as large of an effect on a gene as an insertion that disrupts coding sequence directly. They may however have smaller effects on a system that are also coferrign a selective advantage or disadvantage. The proportions of binding motifs within Alu elements within genes were dependent on the location within the gene. 
 
 \section{Examining Signs of Selection for Variables other than Antisense Bias}
 It must be noted that we did not examine the evidence of selection for variables other than the AS bias. It is possible that AS bias is due to selection while the other biases (ie: tissue-specific patterns of distribution and binding motif preference) were due to integration rather than selection. Regarding the binding motifs, although this is possible, it is highly unlikely since the process of retrotransposition does not involve the internal binding motifs.
