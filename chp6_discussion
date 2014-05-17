@@ -219,7 +219,7 @@ Previous studies have taken advantage of the high copy number of RTs to study th
 
     %Antisense Bias 
 \section{Antisense Bias of Retrotransposons in Genes}
-
+%stopped here -->
 The non-random distribution of RTs is likely a result of a combination of variables such as the selection ceofficient of the mutation, the effective population size, and the rate of recombination in the region of the mutation. Interestingly, the distributions of RTs in genes differs depending on orientation of the RT with respect to the gene. Elements in the antisense orientation (AS) with respect to a gene are more common than elements that are oriented in the sense (S) direction, termed antisense bias \cite{VanDeLagemaat2006}. When in the same region, RTs in either orientation would be expected to be undergoing similar levels of genetic drift, effects of population size, and hitchiker effects.  The varying distribution is likely the result of either selection on the RT based on the orientation, or a bias due to TPRT. Antisense bias is observed across all major human RTs as well as Type II DNA transposons. Although this indicates that AS bias is not due to TPRT, since Type II transposons do not insert via TPRT, it is still unknown whether the antisense bias (AS bias) is due to the process of integration, or is due to a mechanism of selection over time.
 
 might have antisense info --> Human L1 Retrotransposition Is Associated with Genetic Instability In Vivo
@@ -312,6 +312,8 @@ Although there are many more examples of RTs which have evolved to create useful
 
 The study of the effects of RTs on genes has previously been largely hampered by inadequent methods to annotate RT polymorphisms. Recent advances both in sequencing technology and bioinformatics analyses have enabelled researchers to begin to identify polymorphic RTs and therefore to study the effect that these elements have on phenotype. In 2010 three seminal papers published in Cell and Genome Research described feasible techniques for sequencing L1 retrotransposons \cite{Ewing2010, Iskow2010, Beck2010}. Combined with an array-based technique published the following year, these methods filled in the first missing piece of identifying the contribution of RTs to human variation \cite{Baillie2011}. That was identifying the variants. Combined with novel bioinformatics algorithms to map these variations to the genome \cite{Ye2009,Chen2009} these techniques facilitated the completion of the RT portion of the 1000 genomes project, which annotated hundreds of insertions that are polymorphic between human populations. Now that the techniques are available to identify the variation of RTs between individuals, it is necessary to examine the phenotypic consequences of these insertions.
 
+%\renewcommand{\thepage}{\arabic{page}}% Arabic page numbers
+
         %Closing of the intro
 \section{Motivation}
 Herein I present an examination of the consequences of RT insertions within genes. The hypothesis examined is that, when inserted into genes, RTs affect the gene in a selectable manner. It is therefore postulated that the AS bias has arisen through selection as opposed to integration. Furthermore, it is hypothesized that the sequence of the RT as well as the genomic context can modify the resulting distribution of the RT. Finally it is hypothesized that the presence of a RT is associated with changes in the phenotype of gene expression. Evidence presented herein shows that RT insertions are under negative selective pressure within genes, genetic factors modify this selection of RTs, and that there is association between RTs and differential expression of the genes they reside within. This research will aid future disease studies attempting to link genetic variability of RTs to phenotypic change by aiding the ability to annotate RT insertions as potentially deleterious based on variables such as genomic location and RT-type. These results were attained through the following specific aims:
@@ -326,6 +328,7 @@ This analysis will examine which RT and gene contexts modify RT distribution wit
 To further explore the potential for RTs to effect genes in a selectable manner, we will examine how RTs are associated with the phenotype of gene expression. In order to test this, I will calculate the association between RT insertions and differential gene expression between humans and well as between humans and non-human primates.  
 
 }
+\renewcommand{\thepage}{\arabic{page}}% Arabic page numbers
 
 \bibliographystyle{apacite}
 \bibliography{library}
