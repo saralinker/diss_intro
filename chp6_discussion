@@ -141,10 +141,6 @@ In the analyses of altered gene expression in association with retrotransposon p
 %
 %--> Look at the discussion from this paper for talking about expectations of ChrX versus autosomes (Estimate of the Mutation Rate per Nucleotide in Humans)
 
-\section{Future goals}
-In the near future I would like to use this knowledge to create predictions of RT frequency in the human genome for every known RT. I think it would be possible to create a value for each RT that represents the likelihood that that retrotransposon should exist given the trends based on genomic averages. If a RT has a really low score, but exists in the human genome, perhaps that RT has an effect on the genome that should be tested, or at least catalouged so when variants arise in the gene it can be noted for disease studies. 
-
-
 %---> hnRNP C and Schizophrenia (Altering the expression balance of hnRNP C1 and C2 changes the expression of myelination-related genes)
 %\subsection{Title}
 %
