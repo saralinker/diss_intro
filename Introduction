@@ -37,7 +37,7 @@
 \usepackage{hyperref}
 \usepackage{apacite} %for citing with APA
 \usepackage{amsmath}
-
+\usepackage{pifont}%for checkmark
 \usepackage{titlesec} %Re-format the chapter title
 \titleformat{\chapter}
   {\normalfont\LARGE\rm\raggedleft\uppercase}{\chaptertitlename\ \thechapter}{20pt}{\Huge}
