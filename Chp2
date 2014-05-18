@@ -258,7 +258,7 @@ Using the rationale presented in Li, 1975; the relative force of selection can b
 % The hypotheses of selection underlying these distributions are listed at the bottom of the figure. 
 
 
-\subsection{Evidence of Selection on L1 within Genes}
+\subsection{Selection of L1 within Genes}
 
          %Figure 
     \begin{figure}[!ht]
@@ -308,8 +308,8 @@ When only L1 within genes were analyzed, there was a smaller number of subfamili
     %    \label{fig: l1senseolder}
     %\end{figure}
 
-\subsection{Purifying Selection of Alu within Genes}
-Alu were similarly analyzed for differences in age depending on position and orientation. Similar to L1, there was an increasingly significant effect of Alu placement on age (figure \ref{fig:aluageanova}). 14 of the 14 subfamilies that were significantly different in age between intergenic and within genes had larger millidiv values intergenically (tests = 36 ; Bonferroni corrected  $\alpha$ = 1.4e-03) (Appendix table \ref{table:alusubvalues}). The trend of older Alu elements in intergenic regions indicated that Alu were commonly under a more negative selective force when within genes compared to the same subfamilies in intergenic regions. Similarly 20 of the 20 subfamilies that were significantly different in age between S and AS orientations were older in the AS orientation. This substantiates the hypothesis that S Alu undergo a more negative selective forces than AS Alu of the same subfamilies.
+\subsection{Selection of Alu within Genes}
+Alu were similarly analyzed for differences in age depending on position and orientation. Similar to L1, there was an increasingly significant effect of Alu placement on age (figure \ref{fig:aluageanova}), and subfamilies with reduced sample size showed no observable association with location. 14 of the 14 subfamilies that were significantly different in age between intergenic and within genes had larger millidiv values intergenically (tests = 36 ; Bonferroni corrected  $\alpha$ = 1.4e-03) (Appendix table \ref{table:alusubvalues}). The trend of older Alu elements in intergenic regions indicated that Alu were commonly under a more negative selective force when within genes compared to the same subfamilies in intergenic regions. Similarly 20 of the 20 subfamilies that were significantly different in age between S and AS orientations were older in the AS orientation. This substantiates the hypothesis that S Alu were less likely to be passed down to the next generation than AS Alu of the same subfamilies.
 
 
          %Figure 
@@ -344,11 +344,13 @@ Alu were similarly analyzed for differences in age depending on position and ori
     %    \label{fig: alusenseolder}
     %\end{figure}
     
-\subsection{The Ages of Alu and L1 are Dependent on the Chromosome of Origin}
+\subsection{Evidence of Purifying Selection}
 
-The above results indicated that both Alu and L1 were undergoing selection within genes, though at different levels. To further test whether purifying selection or positive selection was acting on these RTs within genes, I took advantage of the differing rates of selection on chrX, chrY, and the autosomes. It's been shown previously that the ability for purifying selection of deleterious alleles is reduced on chrY compared to chrX and the autosomes. Furthermore, there are varied effective population sizes between chrX, chrY, and the autosomes (section \ref{sec:selection}). Therefore, if selection is indeed acting on RTs within genes, elements should have different ages depending on the chromosome on which they reside. For this reason, and for the overall lack of purifying selection on chrY it was hypothesized that the age of RTs would be the lowest on chrX and the autosomes, while chrY would be expected to have older elements due to the lack of purifying selection.
+The above results indicated that both Alu and L1 were undergoing differential levels of selection within genes compared to intergenic elements. These results, however, did not show whether negative (purifying) or positive selection was the driving force. If intergenic elements were assumed to be neutral, then the conclusion would be that RTs within genes were undergoing purifying selection due to the younger ages of elements within genes.
 
-To have a broad idea of the age of RTs across chromosomes, each placement group was analyzed with all subfamilies aggregated together. Although aggregating all subfamilies into a single measure was expected to wash out much of the signal, there were significant differences between chromosomes when analyzed this way (table \ref{table:chrxyage}). 
+To test whether this hypothesis of purifying selection on RTs in genes was valid, the prior knowledge of the differing rates of selection on chrX, chrY, and the autosomes were used. It's been shown previously that the ability for purifying selection to remove deleterious alleles is reduced on chrY compared to chrX and the autosomes (section \ref{sec:selection}). Moreover, selection can be increased on chrX due to the time the mutation spends in the hemizygous state when in males. Therefore, if purifying selection is indeed acting on RTs within genes, then the age of RTs should be the lowest on chrX and the autosomes, while chrY would be expected to have accumulated older elements due to the lack of purifying selection.
+
+To have a broad idea of the age of RTs across chromosomes, each genomic orientation group (i.e: intergenic, sense, antisense) was analyzed with all subfamilies aggregated together. Although aggregating all subfamilies into a single measure was expected to wash out much of the signal, there were significant differences between chromosomes when analyzed this way (table \ref{table:chrxyage}). 
 
 % Thu May  1 17:38:16 2014
 \begin{table}[ht]
@@ -397,33 +399,9 @@ To have a broad idea of the age of RTs across chromosomes, each placement group 
 
 
 \subsection{Evidence of Purifying Selection on Sense and Antisense Alu}
-% Thu May  1 18:32:41 2014
-\begin{table}[ht]
-\large
-\centering
-\begin{tabular}{rlllllllllll}
-  \hline
- & ALU &  & &Sense& & &Anti&&&Inter&  {    }\\ 
- &  &  & chrX & Aut& chrY & chrX & Aut& chrY & chrX & Aut& chrY \\
-  \hline
-  1&  & X & . & \color{red}{L}&\color{red}{L} & \color{teal}{L}&\color{red}{L} & \color{red}{L} & \color{blue}{L}& \color{red}{L} & \color{red}{L} \\ 
-  2 & Sense & Aut & . & . & \color{red}{L} & \color{red}{G} & = & \color{red}{L} & \color{red}{G} & \color{blue}{L} & \color{red}{L} \\ 
-  3 &  & Y & . & . & . & \color{red}{G} & \color{red}{G} & = & \color{red}{G} & \color{red}{G} &\color{blue}{L} \\
-  \hline
-  4 &  & X & . & . & . & . & \color{red}{L} & \color{red}{L} & \color{blue}{L} & \color{red}{L} & \color{red}{L} \\ 
-  5 & Antisense & Aut & . & . & . & . & . & \color{red}{L} & \color{red}{G} & \color{blue}{L} & \color{red}{L} \\ 
-  6 &  & Y & . & . & . & . & . & . & \color{red}{G} & \color{red}{G} & \color{blue}{L} \\
-  \hline
-  7 &  & X & . & . & . & . & . & . & . & \color{red}{L} & \color{red}{L} \\ 
-  8 & Intergenic & Aut & . & . & . & . & . & . & . & . & \color{red}{L} \\ 
-  9 &  & Y & . & . & . & . & . & . & . & . & . \\ 
-   \hline
-\end{tabular}
-\caption{\normalsize{\textbf{Significance and direction of age differences across Alu groups}red: Student's t-test p < 2.2e-16; blue: Student't t-test p < 0.0014; teal: Student's t-test p < 0.0018 L: millidiv of row group is less than column group; G: millidiv of row group is greater than column group; =: millidiv of row group is equal to column group. Anti: Antisense; Inter: Intergenic}}
-\label{table:chrsig}
-\end{table}
 
-As expected, within sense Alu, elements on chrX had significantly lower millidiv than those on autosomes, which were significantly less than those on chrY (table \ref{table:chrsig}). The same pattern was identified between antisense Alu and between intergenic Alu. This result showed that chromosomes with heightened ability for purifying selection had elements that were significantly younger, supporting that purifying selection is indeed acting on Alu RTs. In fact, the effect of rate of selection as identified by type of chromosome had a larger effect on element age than the orientation. For example, sense Alu on chrY were significantly older than antisense Alu on autosomes. 
+
+As expected, within sense Alu, elements on chrX had significantly lower millidiv than those on autosomes, which were significantly less than those on chrY (Appendix table \ref{table:chrsig}). The same pattern was identified between antisense Alu and between intergenic Alu. This result showed that chromosomes with heightened ability for purifying selection had elements that were significantly younger, supporting that purifying selection is indeed acting on Alu RTs. In fact, the effect of rate of selection as identified by type of chromosome had a larger effect on element age than the orientation. For example, sense Alu on chrY were significantly older than antisense Alu on autosomes. 
 
 %Signs of purifying and positive selection
 \subsection{Evidence of Purifying and Postive Selection on Sense and Antisense L1}
@@ -436,31 +414,8 @@ As expected, within sense Alu, elements on chrX had significantly lower millidiv
         \label{fig:hclustl1chr}
     \end{figure}
 
-% Thu May  1 20:43:20 2014
-\begin{table}[ht]
-\large
-\centering
-\begin{tabular}{rlllllllllll}
-  \hline
- &  L1 &  & &Sense& & &Anti&&&Inter&  {    }\\ 
- &  &  & chrX & Aut& chrY & chrX & Aut& chrY & chrX & Aut& chrY \\
-  \hline
-  1 &  & X & . & \color{red}{L} & = & \color{blue}{L} & \color{red}{L} & \color{red}{L} & = & \color{red}{L} & \color{red}{L} \\ 
-  2 & Sense & Aut & . & . & \color{blue}{G} & \color{red}{G}  & \color{red}{L}  & = & \color{red}{G}  & \color{blue}{G}  & \color{blue}{G}  \\ 
-  3 &  & Y & . & . & . & = & \color{blue}{L}  &  \color{blue}{L} & = &  \color{blue}{L} & = \\ 
-  4 &  & X & . & . & . & . &  \color{red}{L} &  \color{blue}{L} &  \color{blue}{G} &  \color{red}{L} & \color{blue}{L} \\ 
-  5 & Antisense & Aut & . & . & . & . & . & = &  \color{red}{G} & \color{red}{G} & \color{red}{G} \\ 
-  6 &  & Y & . & . & . & . & . & . & \color{red}{G} & = & \color{blue}{G} \\ 
-  7 &  & X & . & . & . & . & . & . & . & \color{red}{L} & \color{red}{L} \\ 
-  8 & Intergenic & Aut & . & . & . & . & . & . & . & . & \color{blue}{G} \\ 
-  9 &  & Y & . & . & . & . & . & . & . & . & . \\ 
-   \hline
-   \end{tabular}
-\caption{\normalsize{\textbf{Significance and direction of age differences across L1 groups}red: Student's t-test p < 2.2e-16; blue: Student't t-test p < 0.0014; L: millidiv of row group is less than column group; G: millidiv of row group is greater than column group; =: millidiv of row group is equal to column group. Anti: Antisense; Inter: Intergenic}}
-\label{table:l1chrsig}
-\end{table}
 
-L1 elements in autosomes were clustered in one major branch and L1 elements on chrX were clustered on a second major branch (figure \ref{fig:hclustl1chr}). Interestingly, L1 on chrY were interspersed within chrX and autosomes. When compared to using Student's t-tests S L1 on chrY were significantly younger than AS L1 on chrY (table \ref{table:l1chrsig}), indicating a potential difference in selective force acting on S and AS L1 on chrY. Moreover, AS L1 on chrY were older on average than intergenic L1 on chrY. These effects are mimicked by the antisense ratios (table \ref{table:l1asbiaschr}), further implicating selection in the derivation of the altered distribution of RTs within genes. 
+L1 elements in autosomes were clustered in one major branch and L1 elements on chrX were clustered on a second major branch (figure \ref{fig:hclustl1chr}). Interestingly, L1 on chrY were interspersed within chrX and autosomes. When compared to using Student's t-tests S L1 on chrY were significantly younger than AS L1 on chrY (Appendix table \ref{table:l1chrsig}), indicating a potential difference in selective force acting on S and AS L1 on chrY. Moreover, AS L1 on chrY were older on average than intergenic L1 on chrY. These effects are mimicked by the antisense ratios (table \ref{table:l1asbiaschr}), further implicating selection in the derivation of the altered distribution of RTs within genes. 
 
 %%AS bias on different chromosomes
 %% Fri May  2 17:00:36 2014 
