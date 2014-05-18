@@ -197,6 +197,7 @@
 \setlength\tabcolsep{2pt}
 \centering
 \begin{longtable}{llllllllll}
+
   \hline
  & subfamily & mean millidiv & mean miilidiv$_{sense}$ & mean millidiv$_{anti}$& mean millidiv$_{int}$ & p$_{in gene v. int.}$ <  & estimate$_{int.}$ & p$_{sense v. anti}$ < & estimate$_{sense}$ \\ 
   \hline
@@ -241,6 +242,59 @@
 \citation{\textbf{Alu}}
 \label{table:alusubvalues}
 \end{landscape}
+
+\subsection{Selection by chromosomes: Alu}
+% Thu May  1 18:32:41 2014
+\begin{table}[ht]
+\large
+\centering
+\begin{tabular}{rlllllllllll}
+  \hline
+ & ALU &  & &Sense& & &Anti&&&Inter&  {    }\\ 
+ &  &  & chrX & Aut& chrY & chrX & Aut& chrY & chrX & Aut& chrY \\
+  \hline
+  1&  & X & . & \color{red}{L}&\color{red}{L} & \color{teal}{L}&\color{red}{L} & \color{red}{L} & \color{blue}{L}& \color{red}{L} & \color{red}{L} \\ 
+  2 & Sense & Aut & . & . & \color{red}{L} & \color{red}{G} & = & \color{red}{L} & \color{red}{G} & \color{blue}{L} & \color{red}{L} \\ 
+  3 &  & Y & . & . & . & \color{red}{G} & \color{red}{G} & = & \color{red}{G} & \color{red}{G} &\color{blue}{L} \\
+  \hline
+  4 &  & X & . & . & . & . & \color{red}{L} & \color{red}{L} & \color{blue}{L} & \color{red}{L} & \color{red}{L} \\ 
+  5 & Antisense & Aut & . & . & . & . & . & \color{red}{L} & \color{red}{G} & \color{blue}{L} & \color{red}{L} \\ 
+  6 &  & Y & . & . & . & . & . & . & \color{red}{G} & \color{red}{G} & \color{blue}{L} \\
+  \hline
+  7 &  & X & . & . & . & . & . & . & . & \color{red}{L} & \color{red}{L} \\ 
+  8 & Intergenic & Aut & . & . & . & . & . & . & . & . & \color{red}{L} \\ 
+  9 &  & Y & . & . & . & . & . & . & . & . & . \\ 
+   \hline
+\end{tabular}
+\caption{\normalsize{\textbf{Significance and direction of age differences across Alu groups}red: Student's t-test p < 2.2e-16; blue: Student't t-test p < 0.0014; teal: Student's t-test p < 0.0018 L: millidiv of row group is less than column group; G: millidiv of row group is greater than column group; =: millidiv of row group is equal to column group. Anti: Antisense; Inter: Intergenic}}
+\label{table:chrsig}
+\end{table}
+
+\subsection{Selection by chromosomes: L1}
+% Thu May  1 20:43:20 2014
+\begin{table}[ht]
+\large
+\centering
+\begin{tabular}{rlllllllllll}
+  \hline
+ &  L1 &  & &Sense& & &Anti&&&Inter&  {    }\\ 
+ &  &  & chrX & Aut& chrY & chrX & Aut& chrY & chrX & Aut& chrY \\
+  \hline
+  1 &  & X & . & \color{red}{L} & = & \color{blue}{L} & \color{red}{L} & \color{red}{L} & = & \color{red}{L} & \color{red}{L} \\ 
+  2 & Sense & Aut & . & . & \color{blue}{G} & \color{red}{G}  & \color{red}{L}  & = & \color{red}{G}  & \color{blue}{G}  & \color{blue}{G}  \\ 
+  3 &  & Y & . & . & . & = & \color{blue}{L}  &  \color{blue}{L} & = &  \color{blue}{L} & = \\ 
+  4 &  & X & . & . & . & . &  \color{red}{L} &  \color{blue}{L} &  \color{blue}{G} &  \color{red}{L} & \color{blue}{L} \\ 
+  5 & Antisense & Aut & . & . & . & . & . & = &  \color{red}{G} & \color{red}{G} & \color{red}{G} \\ 
+  6 &  & Y & . & . & . & . & . & . & \color{red}{G} & = & \color{blue}{G} \\ 
+  7 &  & X & . & . & . & . & . & . & . & \color{red}{L} & \color{red}{L} \\ 
+  8 & Intergenic & Aut & . & . & . & . & . & . & . & . & \color{blue}{G} \\ 
+  9 &  & Y & . & . & . & . & . & . & . & . & . \\ 
+   \hline
+   \end{tabular}
+\caption{\normalsize{\textbf{Significance and direction of age differences across L1 groups}red: Student's t-test p < 2.2e-16; blue: Student't t-test p < 0.0014; L: millidiv of row group is less than column group; G: millidiv of row group is greater than column group; =: millidiv of row group is equal to column group. Anti: Antisense; Inter: Intergenic}}
+\label{table:l1chrsig}
+\end{table}
+
 
 \section{Chapter 3 R-Code}
 \subsection{Functions}
