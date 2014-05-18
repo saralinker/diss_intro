@@ -34,7 +34,7 @@
     \renewcommand{\footrulewidth}{0pt} % 0 gets rid of the line on bottom
     \fancypagestyle{plain}{% Changes all chapter pages to this format (by changing plain style)
         \fancyhf{}         % clear all header and footer fields
-        \rhead{\thepage}    % except the center
+        \rhead{\thepage}    % put the page number at the rop right
         \renewcommand{\headrulewidth}{0pt}
         \renewcommand{\footrulewidth}{0pt}}
 
@@ -91,7 +91,7 @@ Large-scale genome-wide analyses such as those published by the ENCODE project h
 Despite indications that RTs can have an effect on gene function, they are largely understudied due to inherent complications in identifying locations of polymorphic insertions. Recent advances in both sequencing technology and alignment algorithms have increased the reliability of identifying specific locations of RT insertions \cite{Baillie2011, Beck2010, Ewing2010, Iskow2010, Stewart2011, Ye2009}. As of yet, there have only been a few genome-wide studies comparing the presence of RTs with associated gene expression levels. Most importantly, Arora et al., identified that genes that are differentially expressed between humans and chimps are enriched for genes that contain RT-containing indels \cite{Arora2011}. 
 
 % Decreased gene expression human v NHP
-\section{Mobile element insertions between humans and non-human primates}
+\section{Mobile Element Insertions between Humans and Non-human Primates}
 Mobile elements, specifically retrotransposons (RTs), have the potential to effect gene expression. For example RTs often contain transcription factor binding motifs that recruit protein complexes, and offset levels of gene expression. Due to limitations of current methods to identify RT insertions, the association of RTs with gene expression has remained understudied. It is important to determine whether RTs have a predictable effect on gene expression, since they are a major cause of genotypic variation. If RTs indeed contribute to changes in gene expression, then the variability of RTs between humans can be influencing the phenotypic variabilty in the population.
 
 To determine if retrotransposons (RTs) effect the phenotype of gene expression, insertions were tested for association with gene expression. The first class of data in which this was tested was in genes that contained a RT in humans but that were absent in a reference genome of non-human primates. Since there are many other variables that can be associated with changes in gene expression between humans and non-human primates, other than RTs, the tests of association used genes without insertions to control for inter-species differences. 
@@ -207,14 +207,14 @@ Although it is possible that L1 and SVA are less often associated with genes tha
 \end{sidewaystable}
 
 
-\subsection{Males show a stronger association between MEI status and expression in humans when compared to females}
+\subsection{Males Show a Stronger Association between MEI Status and Expression in Humans when Compared to Females}
 
 There were four variables that were uncontrolled for in the calculation of odds ratio: sex of the individual, non-human primate species, tissue of origin, and MEI-type. It was therefore important to determine if any of these variables had a significant effect on the outcome of odds ratio. To compare the effects of each variable type, ORs were regressed on sex, NHP, tissue, and mei (equation \ref{spec}).
 
  %Linear Regression Equation: variables
     \begin{equation}
     \label{spec}
-        Odds Ratio  = \beta sex + \beta NHP  + \beta tissue + \beta MEI  + \epsilon
+        Odds Ratio  = \beta _{o} + \beta sex + \beta NHP  + \beta tissue + \beta MEI  + \epsilon
     \end{equation}
 
 These models were compared using a four-way ANOVA. Using ANOVA, all variables were examined to determine which had the largest effect on OR (sex, primate comparison, tissue, or MEI-type) (table \ref{table:anova}). OR for the tissues testis and liver were removed due to the lack of data in female samples. Sex of the individual (p < 5.2e-04) showed the most significant effect on OR. 
@@ -255,7 +255,7 @@ Indeed when grouping significant ORs based on sex, a majority of the significant
     \end{figure}
     
     
-\section{Mobile element insertions that are polymorphic between humans}
+\section{Mobile Element Insertions that are Polymorphic Between Humans}
 
 \subsection{Genes containing MEI-Alu are differentially expressed between male and female humans}
 The bias in OR due to the sex of the individual indicated that there was a bias in gene expression between males and females that was restricted to genes containing MEIs.  It was next determined if the expression differences between humans and NHPs were also present as differences in expression between male and female humans. To test the differences between humans based on sex, expression was calculated within MEI genes in humans only and compared expression values between females and males of the same sex (table \ref{table:contablesex}).
