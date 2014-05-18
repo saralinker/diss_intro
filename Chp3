@@ -192,8 +192,6 @@ Previous research suggested that RTs increased in a peak around the TSS. The res
 
 %AS bias (distribution near 5'-UTR)
 \section{Gene-specific Variables Associated with Retrotransposon Distribution}
-Different genes have different transcriptional requirements. Moreover different portions of a gene have different transcriptional and regulational requirements. These will be explored here [NEED TO WRITE MORE THIS IS SO UGLY]
-
 %Correlation of Linear Decay with CDS Exon Density
 \subsection{Linear Decay of AS Bias is Associated with Coding Sequence Density}
 \label{sec:cds}
@@ -519,13 +517,13 @@ ANOVA was performed to determine if the effect of placement (i.e: sense, antisen
    %Linear Regression Equation 1 : Alu motif
     \begin{equation}
     \label{Alu1}
-        y  = \beta motif_{i} + ... + \beta motif_{n} + \epsilon
+        y  = \beta _{o} + \beta motif_{i} + ... + \beta motif_{n} + \epsilon
     \end{equation}
 
     %Linear Regression Equation 2 : Alu position
     \begin{equation}
     \label{Alu2}
-        y  = \beta position_{i} + ... + \beta position_{n} + \epsilon 
+        y  = \beta _{o} + \beta position_{i} + ... + \beta position_{n} + \epsilon 
     \end{equation}
 
     
