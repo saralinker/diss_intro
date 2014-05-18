@@ -6,7 +6,8 @@
 \usepackage[top=1in, bottom=1in, left=1.25in, right=1in]{geometry} %geom has to be loaded before fancy header
 \usepackage{pdflscape}
 \usepackage{longtable,tabularx,ltxtable}
-\usepackage{setspace}  
+\usepackage{setspace}
+\usepackage{pifont}
 \usepackage{pgfplots}
 \usepackage{xcolor}
 \usepackage{pgfplotstable}
@@ -104,27 +105,30 @@ Since the goal was to determine if either the immediate force of integration or 
         \label{fig:AF_3d}
     \end{figure}
 
+%stopped here --->
 \subsection{Young Antisense and Sense Alu are Present in Equal Proportions}
 \label{sec:youngas}
 %Groups
 \begin{table}[ht]
 \large
 \centering
-\begin{tabular}{rlllll}
+\begin{tabular}{rcccccc}
   \hline
- & Group & Reference & {Study Type} & {Allele Sharing}  & {Allele Frequency} \\ 
+ & Group & Reference & {Study Type} & {Allele Sharing}  & {Allele Frequency} & {Combined} \\ 
   \hline
-1 & \textit{a} & {Stewart 2011} &  population & {population-specific} & 0.076  \\ 
-  2 & \textit{b} & {Stewart 2011}  &  population & {shared} & 0.279  \\ 
-  3 & \textit{c} & {Baillie2011}  & individual & NA & NA   \\ 
+1 & \textit{a} & {Stewart 2011} &  population & {population-specific} & 0.076  & \ding{51}\\ 
+  2 & \textit{b} & {Stewart 2011}  &  population & {shared} & 0.279  &\ding{55}\\ 
+  3 & \textit{c} & {Baillie2011}  & individual & NA & NA   & \ding{51} \\ 
        \hline
 \end{tabular}
 \caption{\normalsize{\textbf{Groups of Polymorphic Retrotransposons\\}
-Group \textit{a,b,} and \textit{c} elements used in this study. Study type indicated whether the data was derived from a large study across multiple populations (population) or from a small study where comparisons were derived from within individuals (individual). The metric of allele frequency was specific for population studies where the frequency of the allele in the population could be determined. Allele sharing was also a metric specific for population studies and referred to whether the elements were identified in one population only (population-specific), or were observed across all populations (shared).}}
+Group \textit{a,b,} and \textit{c} elements used in this study. Study type indicated whether the data was derived from a large study across multiple populations (population) or from a small study where comparisons were derived from within individuals (individual). The metric of allele frequency was specific for population studies where the frequency of the allele in the population could be determined. Allele sharing was also a metric specific for population studies and referred to whether the elements were identified in one population only (population-specific), or were observed across all populations (shared). Combined refers to the elements which were combined to test the probability of choosing an AS RT versus null expectation.}}
 
 \label{table:groups}
 \end{table}
-Although the allele frequencies of group \textit{c} RTs were unknown, they were identified in Baillie et. al. as being present in the germline insertions. Group \textit{a} and \textit{c} RTs all represent young polymorphic insertions that were significantly less frequent than group \textit{b}. To reduce type II error by increasing sample size the counts were combined across groups \textit{a} and \textit{b} (table \ref{table:groups} and table \ref{table:youngasbias}). The probability of choosing an AS RT in this combined group was tested versus an expected probability of 0.50 using the binomial sign test. The hypothesis that young insertions had an AS bias equal to 0.50 could not be rejected (p(AS) = 0.50 ; \num{95}\% CI = 0.47 -- 0.53; p = 0.84). It was noted, that there may have been a bias imparted to the calculation by combining both group \text{a} and \textit{c} RTs. Group \textit{a} RTs were therefore tested separately, despite a reduction in power, and also  did not have a p(AS) significantly different from 0.5 (p(AS) = 0.53; \num{95}\% CI = 0.48 -- 0.57; p = 0.20). Although the results of insignificance indicated that young RTs may not have an AS bias, the null hypothesis can not be proved, only rejected \cite{Popper1959,Wilkinson2013}. Therefore, young RTs were tested against the AS bias of the reference RTs, to determine if the AS bias of young elements was significantly different from the bias that is often cited in the literature \cite{Zhang2011}. 
+Although the allele frequencies of group \textit{c} RTs were unknown, they were identified in Baillie et. al. as being present in the germline insertions. Group \textit{a} and \textit{c} RTs all represent young polymorphic insertions that were significantly less frequent than group \textit{b}. To reduce type II error by increasing sample size the counts were combined across groups \textit{a} and \textit{c} (combined) (table \ref{table:groups} and table \ref{table:youngasbias}).
+
+To determine if there was an antisense bias in newly integrated RTs, the probability of choosing an AS RT in the combined group was tested versus an expected probability of 0.50 using the binomial sign test. The hypothesis that young insertions had an AS bias equal to 0.50 could not be rejected (p(AS) = 0.50 ; \num{95}\% CI = 0.47 -- 0.53; p = 0.84). It was noted, that there may have been a bias imparted to the calculation by combining both group \text{a} and \textit{c} RTs. Group \textit{a} RTs were therefore tested separately, despite a reduction in power, and also  did not have a p(AS) significantly different from 0.5 (p(AS) = 0.53; \num{95}\% CI = 0.48 -- 0.57; p = 0.20). Although the results of insignificance indicated that young RTs may not have an AS bias, the null hypothesis can not be proved, only rejected \cite{Popper1959,Wilkinson2013}. Therefore, young RTs were tested against the AS bias of the reference RTs, to determine if the AS bias of young elements was significantly different from the bias that is often cited in the literature \cite{Zhang2011}. 
 
 
 %AS bias of new insertions
