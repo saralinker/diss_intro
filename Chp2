@@ -110,25 +110,25 @@ Since the goal was to determine if either the immediate force of integration or 
 \label{sec:youngas}
 %Groups
 \begin{table}[ht]
-\large
+\normalsize
 \centering
-\begin{tabular}{rcccccc}
+\begin{tabular}{rccccccc}
   \hline
- & Group & Reference & {Study Type} & {Allele Sharing}  & {Allele Frequency} & {Combined} \\ 
+ & Group & Reference & {Study Type} & {Allele Sharing} &{Allele Frequency} &  {Combined} & nickname \\ 
   \hline
-1 & \textit{a} & {Stewart 2011} &  population & {population-specific} & 0.076  & \ding{51}\\ 
-  2 & \textit{b} & {Stewart 2011}  &  population & {shared} & 0.279  &\ding{55}\\ 
-  3 & \textit{c} & {Baillie2011}  & individual & NA & NA   & \ding{51} \\ 
+1 & \textit{a} & {Stewart 2011} &  population & {population-specific}  & 0.076  & \ding{51} & young\\ 
+  2 & \textit{b} & {Stewart 2011}  &  population & {shared}  & 0.279  &\ding{55} & shared\\ 
+  3 & \textit{c} & {Baillie2011}  & individual & NA & NA   & \ding{51}  & young \\ 
        \hline
 \end{tabular}
 \caption{\normalsize{\textbf{Groups of Polymorphic Retrotransposons\\}
-Group \textit{a,b,} and \textit{c} elements used in this study. Study type indicated whether the data was derived from a large study across multiple populations (population) or from a small study where comparisons were derived from within individuals (individual). The metric of allele frequency was specific for population studies where the frequency of the allele in the population could be determined. Allele sharing was also a metric specific for population studies and referred to whether the elements were identified in one population only (population-specific), or were observed across all populations (shared). Combined refers to the elements which were combined to test the probability of choosing an AS RT versus null expectation.}}
+Group \textit{a,b,} and \textit{c} elements used in this study. Study type indicated whether the data was derived from a large study across multiple populations (population) or from a small study where comparisons were derived from within individuals (individual). The metric of allele frequency was specific for population studies where the frequency of the allele in the population could be determined. Allele sharing was also a metric specific for population studies and referred to whether the elements were identified in one population only (population-specific), or were observed across all populations (shared). Combined refers to the elements which were combined to test the probability of choosing an AS RT versus null expectation. Nickname refers to either the descriptive name of the two groups after being combined (i.e.: "young"), or the uncombined group (shared).}}
 
 \label{table:groups}
 \end{table}
-Although the allele frequencies of group \textit{c} RTs were unknown, they were identified in Baillie et. al. as being present in the germline insertions. Group \textit{a} and \textit{c} RTs all represent young polymorphic insertions that were significantly less frequent than group \textit{b}. To reduce type II error by increasing sample size the counts were combined across groups \textit{a} and \textit{c} (combined) (table \ref{table:groups} and table \ref{table:youngasbias}).
+Although the allele frequencies of group \textit{c} RTs were unknown, they were identified in Baillie et. al. as being present in the germline insertions. Group \textit{a} and \textit{c} RTs all represent young polymorphic insertions that were significantly less frequent than group \textit{b}. To reduce type II error by increasing sample size the counts were combined across groups \textit{a} and \textit{c} ("young") (table \ref{table:groups} and table \ref{table:youngasbias}).
 
-To determine if there was an antisense bias in newly integrated RTs, the probability of choosing an AS RT in the combined group was tested versus an expected probability of 0.50 using the binomial sign test. The hypothesis that young insertions had an AS bias equal to 0.50 could not be rejected (p(AS) = 0.50 ; \num{95}\% CI = 0.47 -- 0.53; p = 0.84). It was noted, that there may have been a bias imparted to the calculation by combining both group \text{a} and \textit{c} RTs. Group \textit{a} RTs were therefore tested separately, despite a reduction in power, and also  did not have a p(AS) significantly different from 0.5 (p(AS) = 0.53; \num{95}\% CI = 0.48 -- 0.57; p = 0.20). Although the results of insignificance indicated that young RTs may not have an AS bias, the null hypothesis can not be proved, only rejected \cite{Popper1959,Wilkinson2013}. Therefore, young RTs were tested against the AS bias of the reference RTs, to determine if the AS bias of young elements was significantly different from the bias that is often cited in the literature \cite{Zhang2011}. 
+To determine if there was an antisense bias in newly integrated RTs, the probability of choosing an AS RT in the "young" group was tested versus an expected probability of 0.50 using the binomial sign test. The hypothesis that young insertions had an AS bias equal to 0.50 could not be rejected (p(AS) = 0.50 ; \num{95}\% CI = 0.47 -- 0.53; p = 0.84). It was noted, that there may have been a bias imparted to the calculation by combining both group \text{a} and \textit{c} RTs in the "young" group. Group \textit{a} RTs were therefore tested separately, at the cost of a reduction in power. The test of group \textit{a} alone also did not result in a p(AS) significantly different from 0.50 (p(AS) = 0.53; \num{95}\% CI = 0.48 -- 0.57; p = 0.20). Although the results of insignificance indicated that young RTs may not have an AS bias, the null hypothesis can not be proven, only rejected \cite{Popper1959,Wilkinson2013}.
 
 
 %AS bias of new insertions
@@ -155,7 +155,9 @@ To determine if there was an antisense bias in newly integrated RTs, the probabi
 \label{table:youngasbias}
 \end{table}
 
-The proportion of AS elements in the young group of Alu and L1 were compared versus the AS bias of reference Alu and L1. As has been previously documented, the proportions of AS and S Alu and L1 in the Hg19 reference were significantly different from the null hypothesis of equal distribution (table \ref{table:alul1ref}). A test of equal proportions was used to calculate the deviation from the null hypothesis that young AS RTs occur in equal proportion to that of reference RTs. It was identified that reference Alu and L1 RTs had a significantly different AS bias than newly inserted Alu (proportion AS$_{young}$ = 0.50; proportion AS$_{Ref}$ = 0.59; \num{95}\% CI = \num{-0.12} - \num{-0.057}; p < \num{4.44}e-09). This was further evidence that the commonly cited AS bias of reference Alu was not present initially upon integration. 
+Since the test of newly inserted RT AS bias versus a null expectation was not significant, newly inserted RTs were compared versus the AS bias of the reference RTs. This analysis allowed for the ability to determine if the AS bias of young elements was significantly different from the bias that is often cited in the literature \cite{Zhang2011}. The proportion of AS elements in the young group of Alu and L1 were compared versus the AS bias of reference Alu and L1 \cite{Kent2002, SmitAfaHubleyRandGreen}.
+
+First the AS bias of reference Alu and L1 were identified. As has been previously documented, the proportions of AS and S Alu and L1 in the Hg19 reference were significantly different from the null hypothesis of equal distribution (table \ref{table:alul1ref}). A test of equal proportions was used to calculate the deviation from the null hypothesis that young AS RTs occur in equal proportion to that of reference RTs. It was identified that reference Alu and L1 RTs had a significantly different AS bias than newly inserted Alu (proportion AS$_{young}$ = 0.50; proportion AS$_{Ref}$ = 0.59; \num{95}\% CI = \num{-0.12} - \num{-0.057}; p < \num{4.44}e-09). This was evidence that the commonly cited AS bias of reference Alu was not present initially upon integration. 
 
 % Tue Apr 29 13:36:35 2014
 \begin{table}[ht]
@@ -205,33 +207,35 @@ Since Alu originated in the primate lineage, the scale of Alu age spans from ear
         \label{fig:pAS_l1_2}
     \end{figure}
     
-Although Alu and L1 both have a signficant AS bias in the genome, it is possible that they are undergoing different degrees of selection. As pol-II promoted transcripts, L1 have the potential to disrupt expression more substantially than Alu. Furthermore, L1 have also been evolving since before the split of  marsupials and eutherians, as opposed to Alu which have only been present in the primate lineages, therefore the extent of time that is covered by the L1 subfamilies is effectively longer than that of Alu. For these reasons, it is more likely to observe a change in AS bias in L1 as opposed to Alu. This is evidenced by the finding that the AS bias of L1 overall is significantly larger than that of Alu (prop AS$_{L1}$ =  0.656; prop AS$_{Alu}$ = 0.549 ; p < 2.2e-16).
+Although Alu and L1 both have a signficant AS bias in the genome, it is possible that they are undergoing different degrees of selection. This is evidenced by the finding that the AS bias of L1 overall is significantly larger than that of Alu (prop AS$_{L1}$ =  0.656; prop AS$_{Alu}$ = 0.549 ; p < 2.2e-16).
 
 L1 AS bias was also examined across subfamilies ordered by millidiv. Contrary to the findings in Alu, there was a significant trend towards an increase in AS bias over time (F-test p < \num{2.66}e{-06}) (figure \ref{fig:pAS_l1_2}). These results indicated that, in L1, AS bias increased dynamically over long periods of evolutionary time. 
 
  
 \subsection{Antisense Bias of Alu Increases Quickly Over Evolutionary Time}
-The findings so far have shown that AS and S RTs have no bias upon integration, however there is an AS bias of Alu in the reference genome. For Alu, this AS bias in reference Alu was independent of the age of the subfamily. It was therefore hypothesized that AS bias in Alu was achieved rapidly after integration.  To examine the change of AS proportion on shorter time scales than the previous analysis, p(AS) of young Alu were compared to p(AS) of Alu that were shared among all three populations (section \ref{sec:af}: group \textit{b}). As mentioned previously, shared Alu (group \textit{b}) were assumed to have longer residence times in the genome than young Alu because shared elements must have integrated prior to the split of YRI, CEU, and CHBJPT, while young elements were assumed to have inserted after the split. The higher average allele frequencies of shared Alu compared to group population-specific Alu substantiated this assumption (section \ref{sec:youngas}). The AS bias was compared between group \textit{b} and the combined group \textit{a} and \textit{c} to determine if AS bias was present in this slightly older group of elements. Indeed The proportion of AS in the young subset of Alu was significantly smaller than polymorphic Alu that were shared among all three populations ($propAS_{\text{young}}$ = 0.50; $propAS_{\text{shared}}$ = 0.54; \num{95}\% CI = \num{-0.11} - \num{-0.02}; p < \num{0.01}). This indicated that the change to AS bias of Alu occured quickly over evolutionary time.
+The findings so far have shown that AS and S RTs have no bias upon integration, however there is an AS bias of Alu in the reference genome. For Alu, this AS bias in reference Alu was independent of the age of the subfamily. It was therefore hypothesized that AS bias in Alu was achieved rapidly after integration.  To examine the change of AS proportion on shorter time scales than the previous analysis, p(AS) of young Alu were compared to p(AS) of Alu that were shared among all three populations (section \ref{sec:af}; table \ref{table:groups}; group \textit{b}). As mentioned previously, shared Alu were assumed to have longer residence times in the genome than young Alu (young = combined groups \textit{a} and \textit{c}; table \ref{table:groups}) because shared elements must have integrated prior to the split of YRI, CEU, and CHBJPT, while young elements were assumed to have inserted after the split. The higher average allele frequencies of shared Alu compared to group population-specific Alu substantiated this assumption (section \ref{sec:youngas}).
+
+The AS bias was compared between shared and young Alu to determine if AS bias was present in this slightly older group of elements. Indeed the proportion of AS in the young subset of Alu was significantly smaller than polymorphic Alu that were shared among all three populations (\textit{b}) ($propAS_{\text{young}}$ = 0.50; $propAS_{\text{shared}}$ = 0.54; \num{95}\% CI = \num{-0.11} - \num{-0.02}; p < \num{0.01}). This indicated that the change to AS bias of Alu occured quickly over evolutionary time.
 %%!!!!!!!!!!!!!!!!!!!!!!!!!!!
 %%[REDO THIS CALCULATION THE P=VALUE MIGHT BE OFF, TOO LAZY RIGHT NOW]
 %%!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-    %Figure pAS
-    \begin{figure}[!ht]
-        \centering
-        \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{shared_freq.pdf}
-        \caption{\normalsize{\textbf{Allele Frequencies of Alu that are Shared Between All Populations\\} Many polymorphic Alu identified in the 1000 genomes project were shared between YRI, CEU, and CHBJPT. The count of Alu is plotted as a function of the maximum allele frequency between YRI, CEU, and CHBJPT.}}
-        \label{fig:shared_freq}
-    \end{figure}
+    %%Figure pAS
+    %\begin{figure}[!ht]
+    %    \centering
+    %    \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{shared_freq.pdf}
+    %    \caption{\normalsize{\textbf{Allele Frequencies of Alu that are Shared Between All Populations\\} Many polymorphic Alu identified in the 1000 genomes project were shared between YRI, CEU, and CHBJPT. The count of Alu is plotted as a function of the maximum allele frequency between YRI, CEU, and CHBJPT.}}
+    %    \label{fig:shared_freq}
+    %\end{figure}
 
 
-Overall, these results indicated that Alu and L1 were initially integrated with no AS bias. The proportion of AS and S Alu changed relatively quickly over evolutionary time scales (ie: prior to fixation). The AS bias of L1 also changed over evolutionary time, and at much larger time scales than that of Alu.
+Overall, these results indicated that Alu and L1 were initially integrated with no AS bias. The proportion of AS and S Alu changed relatively quickly over evolutionary time scales. The AS bias of L1 also changed over evolutionary time, and at much larger time scales than that of Alu.
 
 %Signs of purifying selection
 \section{Evidence of  Selection Acting on Alu and L1}
 The results so far have shown that AS bias was not present upon integration but increased over evolutionary time, as would be expected under a model of selection. If selection within genes was playing a role in this change in AS bias, there are three hypotheses that can be tested: \textit{1}) Antisense RTs undergo positive selection within genes, \textit{2}) Sense RTs undergo negative (purifying) selection within genes, and \textit{3}) Both (\textit{1}) and (\textit{2}) are true. Previous reports have indicated that Alu undergo purifying selection on a genome-wide level \cite{Stewart2011}. However, Lander et al. proposed that the increase of Alu in GC-rich regions was due to positive selection, though gave no experimental evidence to support these conclusions \cite{Lander2001}. Neither of these studies have addressed the selection of RTs within gene boundaries, which is important to study due to the potential distruptions of RTs directly on transcription as well as regulation of both transcription and translation \cite{Thornburg2006,Wang2009}.
 
-In 1975 Li calculated that on average, deleterious alleles have shorter residence times in a population. In other words, they will be younger than neutral or advantageous alleles \cite{Li1975}. The logic behind this finding lies in that, in populations of equal size, an allele is more likely to be passed on to the next generation if it is neutral or positive compared to an allele that is deleterious. The neutral or positive allele will therefore remain in the population longer, accumulating a longer residence time in the genome. Meanwhile, new alleles, both advantageous and deleterious will continually appear. While the advantageous alleles are retained, the deleterious alleles will continually be lost, with only young alleles that have replaced them remaining present. Therefore at any discrete point in time, the deleterious alleles will be younger on average than the advantageous or neutral alleles.
+In 1975 Li calculated that, on average, deleterious alleles have shorter residence times in a population. In other words, they will be younger than neutral or advantageous alleles \cite{Li1975}. The logic behind this finding lies in that, in populations of equal size, an allele is more likely to be passed on to the next generation if it is neutral or positive compared to an allele that is deleterious. The neutral or positive allele will therefore remain in the population longer, accumulating a longer residence time in the genome. Meanwhile, new alleles, both advantageous and deleterious will continually appear. While the advantageous alleles are retained, the deleterious alleles will continually be lost, with only young alleles that have replaced them remaining present. Therefore at any discrete point in time, the deleterious alleles will be younger on average than the advantageous or neutral alleles.
 
     %     %Figure 
     %\begin{figure}[!ht]
@@ -266,15 +270,15 @@ Using the rationale presented in Li, 1975; the relative force of selection can b
         \label{fig:l1ageanova}
     \end{figure}
 
-To study the potential of selection acting on RTs, it was important to determine if the age, in millidiv, of an L1 element was contingent on the placement within the genome (i.e.: intergenic, AS within genes, or S within genes). To examine the association of age with placement, millidiv was regressed on dummy variables representing each possible placement of the element (equation \ref{l1anova}).
+To study the potential of selection acting on RTs, it was important to determine if the age, in millidiv, of an L1 element was contingent on the placement within the genome (i.e.: intergenic, AS within genes, or S within genes). To examine the association of age with placement, millidiv was regressed on each possible placement of the element where placement was encoded as a factor (equation \ref{l1anova}).
 
-Since each element was expected to have the respective subfamily contribute a larger effect to millidiv than the placement, the effect of subfamily needed to be taken into account in the model. For example, a currently active L1 would be expected to have a smaller millidiv value (i.e.: younger) than an L1 that was inserted before the split of primates (i.e.:older), whether or not the old L1 was under selection. There were multiple possible ways of normalizing for subfamily including, adding the subfamily in the model as a random effect, or adding the subfamily as an interaction term. It was decided, that for this analysis, the optimal method would be to calculate a separate regression equation for each subfamily.  This method of analyzing the subfamilies separately was chosen instead of adding the subfamilies into the model as a random effect because it was important to observe how the estimates changed across increasingly aged subfamilies.
+Since each element was expected to have the respective subfamily contribute a larger effect to millidiv than the placement, the effect of subfamily needed to be taken into account in the model. For example, a currently active L1 would be expected to have a smaller millidiv value (i.e.: younger) than an L1 that was inserted before the split of primates (i.e.:older), whether or not the old L1 was under selection. Each subfamily was therefore tested separately, and multiple testing correction was applied. 
 
-A p-value was calculated for each subfamily-specific regression equation and plotted as a function of the average millidiv in the entire subfamily within genes (figure \ref{fig:l1ageanova}). 79 of the 114 subfamilies had millidiv values that were significantly associated with location after Bonferroni correction for multiple testing ( $\alpha$  = 4.3e-04; Appendix table \ref{table:l1subvalues}). Moreover, the significance of these results increased with increasing age of the subfamily as a whole. These results indicated that there were different selection biases present depending on the placement of the RT.
+A p-value was calculated for each subfamily-specific regression equation and plotted as a function of the average millidiv in the entire subfamily within genes (figure \ref{fig:l1ageanova}). 79 of the 114 subfamilies had millidiv values that were significantly associated with location after Bonferroni correction for multiple testing ( $\alpha$  = 4.3e-04; Appendix table \ref{table:l1subvalues}). %stopped here --> explanation about sample size Moreover, the significance of these results increased with increasing age of the subfamily as a whole. These results indicated that there were different selection biases present depending on the placement of the RT.
     %Linear Regression Equation 1 : L1 anova
     \begin{equation}
     \label{l1anova}
-         millidiv = \beta location_{subfamily, i}  +  \epsilon
+         millidiv = \beta _{o} + \beta location_{subfamily, i}  +  \epsilon
     \end{equation}
 
 
@@ -289,7 +293,7 @@ A p-value was calculated for each subfamily-specific regression equation and plo
     %\end{figure}
     %
     
-To determine if the association between location and millidiv was effected more by regions within genes versus intergenic, or sense versus antisense.  77 subfamilies had elements that were significantly different in age between intergenic and within gene regions (tests =114 ; Bonferroni corrected $\alpha$ = 4.4e-04). 76 of these 77 subfamilies were older in intergenic regions than within genes. This substantiates the hypothesis that L1 retrotransposons undergo selection within genes, though indicates that there are varying effects contributing to the selection of L1 in genes. 10 subfamilies had significant differences in age between AS and S orientations, 7 of which were older in the antisense orientation. 
+Next it was determined if the association between location and millidiv was effected more by regions within genes versus intergenic, or sense versus antisense.  77 subfamilies had elements that were significantly different in age between intergenic and within gene regions (tests =114 ; Bonferroni corrected $\alpha$ = 4.4e-04). 76 of these 77 subfamilies were older in intergenic regions than within genes. This substantiates the hypothesis that L1 retrotransposons undergo selection within genes, though indicates that there are varying effects contributing to the selection of L1 in genes. 10 subfamilies had significant differences in age between AS and S orientations, 7 of which were older in the antisense orientation. 
 
     %             %Figure 
     %\begin{figure}[!ht]
