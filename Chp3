@@ -232,7 +232,18 @@ Although, previous studies using raw distances showed that RTs were increased ne
 
 To determine the effect of the 5\rq -UTR on RT density, the effect of the 5\rq-UTR had to be separated from any latent effects correlated with the first decile. To separate out these effects, genes were identified that contained a second 5\rq-UTR (2$^\circ$ 5\rq-UTR) within deciles other than the first decile. These 2$^\circ$ 5\rq-UTRs were commonly due to either alternative start positions of transcription, or transcription of a separate gene that began within the boundaries of another gene. Examples of genes that contained 2$^\circ$  5\rq-UTRs are depicted in figure \ref{fig:25utr}. 
 
+
+    %Figure 5'-UTR Analysis
+    \begin{figure}[!h]
+        \centering
+        \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{5utr_diag.pdf}
+        \caption{\normalsize{\textbf{Design for analyzing the impact of internal 5\rq-UTRs on RT density\\}Light green: Genes with only one 5'-UTR located between the transcription start (TSS) and transcription stop site. Dark green: Genes with a second 5\rq-UTR between TSS and transcription stop. Red bar: Decile containing the second 5\rq-UTR. The UTR in the 5\rq-most position was defined as the primary (1$^\circ$) 5\rq-UTR. Dark green genes were grouped by the decile (bin) containing the secondary (2$^\circ$) UTR. All groups were then normalized by the secondary 5\rq-UTR position by defining the bin that contained the 2$^\circ$ UTR as 0. Each bin downstream was defined consecutively as 1, 2, ... 7, and each bin upstream was defined as -1, -2,...-7.}}
+        \label{fig:5utr_diag}
+    \end{figure}
     
+Once genes with 2$^\circ$  5\rq-UTRs were identified, they were further grouped into subsets based on the decile location of the 2$^\circ$ 5\rq-UTRs. For example, Group I genes contained all 2$^\circ$ 5\rq-UTRs in the first decile. Group II contained genes where the 2$^\circ$ 5\rq-UTRs were in the second decile, and so on for all ten deciles (figure \ref{fig:5utr_diag}). The distribution of  5\rq -UTRs within genes with no  2$^\circ$ 5\rq-UTR is presented in figure \ref{fig:utr_nosecond}, and the distribution within genes these containing a  2$^\circ$ 5\rq-UTR is presented in figure \ref{fig:utr_second}. As expected, the number of 5\rq -UTRs were generally higher in the decile containing the 2$^\circ$ 5\rq-UTR (normalized decile 0). This indicated that the procedure of normalizing by  2$^\circ$ 5\rq-UTR enriched for 5\rq -UTR sequences in deciles other than the first decile.
+
+        
     %Figure 5'-UTR in genes with no internal 5'-UTR
     \begin{figure}[!ht]
         \centering
@@ -242,22 +253,6 @@ To determine the effect of the 5\rq -UTR on RT density, the effect of the 5\rq-U
     \end{figure}
     
 
-
-    
-
-Once genes with 2$^\circ$  5\rq-UTRs were identified, they were further grouped into subsets based on the decile location of the 2$^\circ$ 5\rq-UTRs. For example, Group I genes contained all 2$^\circ$ 5\rq-UTRs in the first decile. Group II contained genes where the 2$^\circ$ 5\rq-UTRs were in the second decile, and so on for all ten deciles (figure \ref{fig:5utr_diag}). The distribution of  5\rq -UTRs within these genes are presented in figure \ref{fig:utr_second}. As expected, the number of 5\rq -UTRs increased in the decile containing the 2$^\circ$ 5\rq-UTR (normalized decile 0). The frequencies of all AS and S L1 and Alu were calculated within these gene groups and compared to expectation based on genes lacking any 2$^\circ$ 5\rq-UTRs. 
-
-    
-    %Figure 5'-UTR Analysis
-    \begin{figure}[!h]
-        \centering
-        \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{5utr_diag.pdf}
-        \caption{\normalsize{\textbf{Design for analyzing the impact of internal 5\rq-UTRs on RT density\\}Light green: Genes with only one 5'-UTR located between the transcription start (TSS) and transcription stop site. Dark green: Genes with a second 5\rq-UTR between TSS and transcription stop. Red bar: Decile containing the second 5\rq-UTR. The UTR in the 5\rq-most position was defined as the primary (1$^\circ$) 5\rq-UTR. Dark green genes were grouped by the decile (bin) containing the secondary (2$^\circ$) UTR. All groups were then normalized by the secondary 5\rq-UTR position by defining the bin that contained the 2$^\circ$ UTR as 0. Each bin downstream was defined consecutively as 1, 2, ... 7, and each bin upstream was defined as -1, -2,...-7.}}
-        \label{fig:5utr_diag}
-    \end{figure}
-
-
-    
     %Figure 5'-UTR in genes with secondary 5'UTRs
     \begin{figure}[!ht]
         \centering
@@ -267,9 +262,8 @@ Once genes with 2$^\circ$  5\rq-UTRs were identified, they were further grouped 
     \end{figure}
     
 
-
 \subsubsection{\textit{Alu}}
-AS Alu in genes containing 2$^\circ$ 5\rq -UTRs were similar in density to the AS Alu in genes lacking 2$^\circ$ UTRs (figure \ref{fig:2utr_ASalu}). The normalized, 0, decile containing the 2$^\circ$ UTR (mean: 0.049) was significantly reduced compared to the same decile in genes without 2$^\circ$ UTRs (mean: 0.058) (Student's t-test p < 0.039). S Alu showed a slight trend towards an increase over expectation upstream of the 0 decile (figure \ref{fig:2utr_Salu}). The 0 decile, however, was significantly decreased beyond expectation (mean second UTR: 0.41 ; mean no second UTR: 0.46 ; Student's t-test p < 5.2e-04) similar to the AS Alu. 
+ The frequencies of all AS and S L1 and Alu were calculated within 2$^\circ$ 5\rq -UTR gene groups and compared to expectation based on genes lacking any 2$^\circ$ 5\rq-UTRs.  AS Alu in genes containing 2$^\circ$ 5\rq -UTRs were similar in density to the AS Alu in genes lacking 2$^\circ$ UTRs (figure \ref{fig:2utr_ASalu}). The normalized, 0, decile containing the 2$^\circ$ UTR (mean: 0.049) was significantly reduced compared to the same decile in genes without 2$^\circ$ UTRs (mean: 0.058) (Student's t-test p < 0.039). S Alu showed a slight trend towards an increase over expectation upstream of the 0 decile (figure \ref{fig:2utr_Salu}). The 0 decile, however, was significantly decreased beyond expectation (mean second UTR: 0.41 ; mean no second UTR: 0.46 ; Student's t-test p < 5.2e-04) similar to the AS Alu. 
 
     %Figure 5'-UTR AS Alu
     \begin{figure}[!ht]
