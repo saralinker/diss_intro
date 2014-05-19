@@ -4,14 +4,19 @@
 %Preamble
 \documentclass[12bp]{report}
 \usepackage[top=1in, bottom=1in, left=1.25in, right=1in]{geometry} %geom has to be loaded before fancy header
-\usepackage{pgfplots}
 \usepackage{pdflscape}
 \usepackage{longtable,tabularx,ltxtable}
+\usepackage{setspace}  
+\usepackage{pgfplots}
+\usepackage{xcolor}
+\usepackage{pgfplotstable}
+\usepackage{booktabs}
+%for rotating a table
 \usepackage{rotating} 
 \usepackage{fancyhdr}
 \pagestyle{fancy} %Control over headers and footers
     \fancyhf{}%clears all fieds
-   % \lhead[R]{\leftmark} %add section title to the page
+    %\lhead[R]{\rightmark} %add section title to the page
     \rhead{\thepage}    %add page number to center bottom
     \renewcommand{\headrulewidth}{0pt} % 0 gets rid of the lines on top 
     \renewcommand{\footrulewidth}{0pt} % 0 gets rid of the line on bottom
@@ -28,9 +33,11 @@
 \usepackage{siunitx}
 \usepackage[T1]{fontenc}
 \usepackage[final]{pdfpages}
+%properly spaces the urls in the apa citations
+\usepackage{hyperref}
 \usepackage{apacite} %for citing with APA
 \usepackage{amsmath}
-
+\usepackage{pifont}%for checkmark
 \usepackage{titlesec} %Re-format the chapter title
 \titleformat{\chapter}
   {\normalfont\LARGE\rm\raggedleft\uppercase}{\chaptertitlename\ \thechapter}{20pt}{\Huge}
@@ -59,6 +66,12 @@
     keywordstyle={},
     morekeywords={}
     }
+\usepackage{setspace} %for spacing
+\usepackage[]{natbib} % for spacing and other formating options of apacite (needs "citep" instead of "cite")
+\renewcommand*{\bibfont}{\interlinepenalty 10000\relax} % no page breaks in the middle of a citation, requires \usepackage[]{natbib}
+
+\widowpenalty=10000 % to remove single lines
+\clubpenalty=10000 %also to remove single lines
 
 
 
@@ -69,7 +82,7 @@
 \doublespace\large{
 \chapter{\\VARIABLES INFLUENCING RETROTRANSPOSON DISTRIBUTION IN GENES}
 
-Retrotransposons (RTs) comprise approximately half of the human genome and contribute to chromatin structure, regulatory motifs, and protein-coding sequences \cite{Lander2001,Krull2005,Englander1995}. Upon insertion, RTs can disrupt functional genetic elements as well as introduce new sequence motifs to a region \cite{Belancio2008a}. They therefore have the potential to effect the function of genes in which they insert.
+Retrotransposons (RTs) comprise approximately half of the human genome and contribute to chromatin structure, regulatory motifs, and protein-coding sequences \citep{Lander2001,Krull2005,Englander1995}. Upon insertion, RTs can disrupt functional genetic elements as well as introduce new sequence motifs to a region \citep{Belancio2008a}. They therefore have the potential to effect the function of genes in which they insert.
 
 It is hypothesized that this phenotypic impact of RTs on genes is a contributing factor to the non-random distribution of RTs across the genome. An example of non-random distribution being the propensity for a decrease of RTs in the sense orientation within genes (i.e: antisense bias (AS bias)).  Although some of the variables associated with non-random distributions of RTs are understood (section \ref{sec:dist}), many variables remain unstudied. Specifically, there are many variables that have the potential to impact gene expression that have not been analyzed in association with RT distribution.
 
@@ -95,7 +108,7 @@ Previous research had used distance from the TSS to examine RT density. The alte
     
 \subsection{L1 and Alu Antisense Bias Exhibits a Linear Decay Across Gene Deciles}
 \label{sec:as_dec}
-When analyzed by raw distance in bp, RTs are increased in number near TSSs compared to transcription stop sites \cite{Tsirigos2009}. It was first important to determine if examining RT distribution, while normalizing genes by length, replicated these findings. AS and S RTs were counted within each decile across all RefSeq genes and normalized by the total number of  RTs in all deciles (AS + S) for both Alu and L1.
+When analyzed by raw distance in bp, RTs are increased in number near TSSs compared to transcription stop sites \citep{Tsirigos2009}. It was first important to determine if examining RT distribution, while normalizing genes by length, replicated these findings. AS and S RTs were counted within each decile across all RefSeq genes and normalized by the total number of  RTs in all deciles (AS + S) for both Alu and L1.
 
 \subsubsection{\textit{Alu}}
 AS and S Alu were counted in each decile and normalized by the total number of Alu within all deciles (figure \ref{fig:lineardecay_alu}). Replicating previous findings, there was an increase in elements near the TSS (decile 1, d1) compared to the end of the gene (decile 10, d10). This change was associated with a significant difference in the proportion of AS Alu between deciles 1 and 10 (Test of unequal proportions: prop$_{d1}$ = 0.598 ; prop$_{d10}$ = 0.479; p < 5.67e-262). Also as expected due to the known AS-bias, there were more AS Alu than S Alu overall. Alu in the S orientation were distributed relatively equally across the internal deciles with drops in density in deciles 1 and 10. Conversely, AS Alu exhibited a linear decay in distribution from decile 2 to decile 9. Similarly to Alu on the S strand, AS Alu also showed decreased in density in deciles 1 and 10. This decrease was outside what would be expected based on the linear trend from deciles 2 - 9. Therefore, although they were increased near the TSS more than the transcription stop site, they were decreased compared to decile 2.
@@ -219,7 +232,7 @@ Alu and L1 both contain cryptic splice sequences that are often used for alterna
 
 %Correlation of Linear Decay with 5'-UTR
 \subsection{Alu and L1 are Decreased Near 5\rq-UTR}
-Although, previous studies using raw distances showed that RTs were increased near TSSs, here it was noted that AS were increased over S at a ratio less than expected based on the linear trend from the internal deciles. Therefore, although there was an increase near the TSS, this increase was modified by another factor such as the exon density. As mentioned earlier, the first decile was defined by the TSS and was therefore enriched for the presence of  5\rq-UTR exons (figure \ref{fig:utr_nosecond}), however the presence of a coding exon (CDS) was not obligatory by the normalization procedure (figure \ref{fig:cds_noUTR}). Although the RT density was highly correlated with CDS density, it was important to study if AS RT density near the TSS was modified by the presence of the 5\rq-UTR. This was especially important because it had been previously claimed that RTs were increased near the TSS due to positive selection \cite{Tsirigos2009}, a hypothesis that would be discounted if instead the increase near the TSS was due only to a reduction in CDS.
+Although, previous studies using raw distances showed that RTs were increased near TSSs, here it was noted that AS were increased over S at a ratio less than expected based on the linear trend from the internal deciles. Therefore, although there was an increase near the TSS, this increase was modified by another factor such as the exon density. As mentioned earlier, the first decile was defined by the TSS and was therefore enriched for the presence of  5\rq-UTR exons (figure \ref{fig:utr_nosecond}), however the presence of a coding exon (CDS) was not obligatory by the normalization procedure (figure \ref{fig:cds_noUTR}). Although the RT density was highly correlated with CDS density, it was important to study if AS RT density near the TSS was modified by the presence of the 5\rq-UTR. This was especially important because it had been previously claimed that RTs were increased near the TSS due to positive selection \citep{Tsirigos2009}, a hypothesis that would be discounted if instead the increase near the TSS was due only to a reduction in CDS.
 
 
     %Figure 5'-UTR examples
@@ -263,7 +276,7 @@ Once genes with 2$^\circ$  5\rq-UTRs were identified, they were further grouped 
     
 
 \subsubsection{\textit{Alu}}
- The frequencies of all AS and S L1 and Alu were calculated within 2$^\circ$ 5\rq -UTR gene groups and compared to expectation based on genes lacking any 2$^\circ$ 5\rq-UTRs.  AS Alu in genes containing 2$^\circ$ 5\rq -UTRs were similar in density to the AS Alu in genes lacking 2$^\circ$ UTRs (figure \ref{fig:2utr_ASalu}). The normalized, 0, decile containing the 2$^\circ$ UTR (mean: 0.049) was significantly reduced compared to the same decile in genes without 2$^\circ$ UTRs (mean: 0.058) (Student's t-test p < 0.039). S Alu showed a slight trend towards an increase over expectation upstream of the 0 decile (figure \ref{fig:2utr_Salu}). The 0 decile, however, was significantly decreased beyond expectation (mean second UTR: 0.41 ; mean no second UTR: 0.46 ; Student's t-test p < 5.2e-04) similar to the AS Alu. 
+ The frequencies of all AS and S L1 and Alu were calculated within 2$^\circ$ 5\rq -UTR gene groups and compared to expectation based on genes lacking any 2$^\circ$ 5\rq-UTRs.  AS Alu in genes containing 2$^\circ$ 5\rq -UTRs were present in similar proportions to the AS Alu in genes lacking 2$^\circ$ UTRs (figure \ref{fig:2utr_ASalu}). However, the normalized 0, decile was significantly reduced compared to the same decile in genes without 2$^\circ$ UTRs (mean$_{with\;2^\circ\;5\rq -UTR}$: 0.049 mean$_{without \;2^\circ\;5\rq -UTR}$: 0.058; Student's t-test p < 0.039). S Alu were also similar to expectation except for within the 0 decile (figure \ref{fig:2utr_Salu}). The 0 decile was significantly decreased beyond expectation (mean second UTR: 0.41 ; mean no second UTR: 0.46 ; Student's t-test p < 5.2e-04) similar to the AS Alu. 
 
     %Figure 5'-UTR AS Alu
     \begin{figure}[!ht]
@@ -287,7 +300,7 @@ Once genes with 2$^\circ$  5\rq-UTRs were identified, they were further grouped 
     
     
 \subsubsection{\textit{L1}}
-The distribution of AS L1 within genes containing 2$^\circ$ 5\rq-UTR was somewhat similar to that observed with AS Alu (figure \ref{fig:2utr_ASl1}). Interestingly, there was a slight decrease in L1 density upstream of the 0 decile for AS L1 in genes containing a 2$^\circ$ 5\rq-UTR, followed by an increase, though this decrease was not significant. The 0 decile was significantly reduced over expectation (mean second UTR: 0.057 ; mean no second UTR: 0.071 ; Student's t-test p < 0.007), although the S L1 were not significantly reduced (p = 0.47) (figure \ref{fig:2utr_Sl1}). These results showed that there was a decrease of L1 and Alu in the presence of a 5\rq-UTR. 
+The distribution of AS L1 within genes containing a 2$^\circ$ 5\rq-UTR was somewhat similar to that observed with AS Alu (figure \ref{fig:2utr_ASl1}). The 0 decile of AS L1 was significantly reduced over expectation (mean second UTR: 0.057 ; mean no second UTR: 0.071 ; Student's t-test p < 0.007), although the S L1 were not significantly reduced (p = 0.47) (figure \ref{fig:2utr_Sl1}). These results showed that there was a decrease of AS L1 and Alu in the presence of a 5\rq-UTR. 
     
         %Figure 5'-UTR AS L1
     \begin{figure}[!ht]
@@ -311,11 +324,11 @@ The distribution of AS L1 within genes containing 2$^\circ$ 5\rq-UTR was somewha
     
 \subsubsection{Coding Sequence Accounts for the Variablility Identified in the Antisense Orientation}
 
-The results so far suggested that there was a decrease of RTs near the 2$^\circ$ 5\rq -UTR when the position within the gene was normalized. This was important to note since it had previously been shown that RTs were increased near the 5\rq -UTRs in multiple species \cite(VanDeLagemaat2003).  In section \ref{sec:cds} it was shown that RTs were strongly inversely correlated with CDS density. Since the first CDS exon of a gene is often, but not always, connected to the 5\rq -UTR, it was important to determine if the CDS density in 2$^\circ$ 5\rq -UTR genes had an effect on RT density.
+The results so far suggested that there was a decrease of RTs near the 2$^\circ$ 5\rq -UTR when the position within the gene was normalized. This was important to note since it had previously been shown that RTs were increased near the 5\rq -UTRs in multiple species \citep(VanDeLagemaat2003).  In section \ref{sec:cds} it was shown that RTs were strongly inversely correlated with CDS density. Since the first CDS exon of a gene is often, but not always, connected to the 5\rq -UTR, it was important to determine if the CDS density in 2$^\circ$ 5\rq -UTR genes had an effect on RT density.
 
 The CDS density and Alu density within non- 2$^\circ$ 5\rq -UTR containing genes was used to predict the expected Alu density in 2$^\circ$ 5\rq -UTR containing genes. To accomplish this, Alu density was regressed on CDS density. The CDS density of each 2$^\circ$ 5\rq -UTR gene group was then calculated and used as new data to predict the expected 5\rq-UTR density. The actual values are plotted next to the predicted values in figure \ref{fig:25_cdspred}. In the AS orientation, there was no difference in Alu density from what was expected based on CDS density. Conversely, in the S orientation, there were less Alu in regions containing a 5\rq-UTR than expected based on CDS density alone. 
 
-Overall these results are important to the field of RT research. They support a shift in the common thinking of RT accumulation within genes. Previous speculations were that RTs are increased near 5\rq -UTRs due to advantageous effects of the RT (e.g.: CpGs, enhancers) \cite(VanDeLagemaat2003). Conversely, this current research suggests that the increase of RTs near the 5\rq - UTR is not an effect of the UTR, but an effect of the lack of CDS sequences. Moreover, there was no evidence of an increase near the 5\rq -UTR when position within the gene was normalized. Instead, there was significant decrease in Alu density in the S orientation.
+Overall these results are important to the field of RT research. They support a shift in the common thinking of RT accumulation within genes. Previous speculations were that RTs are increased near 5\rq -UTRs due to advantageous effects of the RT (e.g.: CpGs, enhancers) \citep(VanDeLagemaat2003). Conversely, this current research suggests that the increase of RTs near the 5\rq - UTR is not an effect of the UTR, but an effect of the lack of CDS sequences. Moreover, there was no evidence of an increase near the 5\rq -UTR when position within the gene was normalized. Instead, there was significant decrease in Alu density in the S orientation.
 
 
         %Figure CDS (secondary 5'-UTR)
@@ -337,7 +350,7 @@ Overall these results are important to the field of RT research. They support a 
 
 %AS bias and tissue-specificity
 \subsection{Tissue-Specificity of the Gene Effects Antisense Bias}
-Housekeeping genes have a predictably higher level of Alu frequency than other gene categories \cite{Eller2007}. It was therefore tested whether AS bias remained linear when subdivided by tissue-expression category. The effect of tissue-specificity was tested by both analyzing the slope of the density of AS as well as correlating the distribution of Alu with the distribution of CDS within tissue-specific gene sets. The linear AS slope remained present in housekeeping genes, but it was not maintained in tissue-specific gene sets. Furthermore, the correlation between AS frequency and CDS distribution was reduced within tissue-specific gene sets (table \ref{table:tiscor}). Although the sample size of each gene set trended with the R$^{2}$, sample size was not significantly correlated with R$^{2}$ (R${^2}$ = -0.68; p = 0.062).
+Housekeeping genes have a predictably higher level of Alu frequency than other gene categories \citep{Eller2007}. It was therefore tested whether AS bias remained linear when subdivided by tissue-expression category. The effect of tissue-specificity was tested by both analyzing the slope of the density of AS as well as correlating the distribution of Alu with the distribution of CDS within tissue-specific gene sets. The linear AS slope remained present in housekeeping genes, but it was not maintained in tissue-specific gene sets. Furthermore, the correlation between AS frequency and CDS distribution was reduced within tissue-specific gene sets (table \ref{table:tiscor}). Although the sample size of each gene set trended with the R$^{2}$, sample size was not significantly correlated with R$^{2}$ (R${^2}$ = -0.68; p = 0.062).
 
     % Sat Apr 12 09:10:21 2014
     %Tissue specificity table
@@ -598,7 +611,7 @@ Conservation of the Alu-specific Pol-III A-box (figure \ref{fig: alupol3}) was a
 
 There are four CpGs within the Pol-III A-box consensus sequence. The cytosine within a CpG context is more likely to undergo mutation than other nucleotides due to the common deamination of 5-methylcytosine. Surprisingly, only one of the four CpGs present within the queried sequence (position 20) was less conserved than the same position intergenically. Two bp in the Pol-III sequence were more highly conserved within genes than intergenically. These were the cytosine at position 3 and guanine at position 15.
 
-These results indicated that each position within a RT-contained binding motif had a different expectation of conservation. Interestingly, the polyadenylation sequence, had a similar dynamic of conservation  independent of the element within which it resided. Moreover, the S L1 had a complete reduction of the polyadenylation signal, whereas the AS L1, S Alu, and AS Alu all had reductions only in the central thymine. This indicated that S polyadenylation signals may be strongly purified from within genes. Evidence in the literature that S L1 contribute to pre-mature polyadenylation substantiates this hypothesis \cite{Kaer2011}. 
+These results indicated that each position within a RT-contained binding motif had a different expectation of conservation. Interestingly, the polyadenylation sequence, had a similar dynamic of conservation  independent of the element within which it resided. Moreover, the S L1 had a complete reduction of the polyadenylation signal, whereas the AS L1, S Alu, and AS Alu all had reductions only in the central thymine. This indicated that S polyadenylation signals may be strongly purified from within genes. Evidence in the literature that S L1 contribute to pre-mature polyadenylation substantiates this hypothesis \citep{Kaer2011}. 
 
 \section{Interaction between Gene-specific and Retrotransposon-specific Variables}
     %Functional Binding Motifs Effect Maintenance, Tissue Specific
@@ -650,6 +663,12 @@ For L1-contained motifs, all proportions of motifs were greater in TS genes than
 }
 
     
+\renewcommand{\thepage}{\arabic{page}}% Arabic page numbers
 \bibliographystyle{apacite}
+
+\setlength\bibsep{10pt}%single space between references
+\large\singlespacing{
 \bibliography{library}
+}
+
 \end{document}
