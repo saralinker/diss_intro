@@ -266,7 +266,7 @@
   9 &  & Y & . & . & . & . & . & . & . & . & . \\ 
    \hline
 \end{tabular}
-\caption{\normalsize{\textbf{Significance and direction of age differences across Alu groups}red: Student's t-test p < 2.2e-16; blue: Student't t-test p < 0.0014; teal: Student's t-test p < 0.0018 L: millidiv of row group is less than column group; G: millidiv of row group is greater than column group; =: millidiv of row group is equal to column group. Anti: Antisense; Inter: Intergenic}}
+\caption[Significance and direction of age differences across Alu groups]{\normalsize{\textbf{Significance and direction of age differences across Alu groups\\}red: Student's t-test p < 2.2e-16; blue: Student't t-test p < 0.0014; teal: Student's t-test p < 0.0018 L: millidiv of row group is less than column group; G: millidiv of row group is greater than column group; =: millidiv of row group is equal to column group. Anti: Antisense; Inter: Intergenic}}
 \label{table:chrsig}
 \end{table}
 
@@ -291,7 +291,7 @@
   9 &  & Y & . & . & . & . & . & . & . & . & . \\ 
    \hline
    \end{tabular}
-\caption{\normalsize{\textbf{Significance and direction of age differences across L1 groups}red: Student's t-test p < 2.2e-16; blue: Student't t-test p < 0.0014; L: millidiv of row group is less than column group; G: millidiv of row group is greater than column group; =: millidiv of row group is equal to column group. Anti: Antisense; Inter: Intergenic}}
+\caption[Significance and direction of age differences across L1 groups]{\normalsize{\textbf{Significance and direction of age differences across L1 groups\\}red: Student's t-test p < 2.2e-16; blue: Student't t-test p < 0.0014; L: millidiv of row group is less than column group; G: millidiv of row group is greater than column group; =: millidiv of row group is equal to column group. Anti: Antisense; Inter: Intergenic}}
 \label{table:l1chrsig}
 \end{table}
 
