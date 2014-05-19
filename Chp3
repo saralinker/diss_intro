@@ -100,7 +100,7 @@ Since the previous chapter indicated that the ratio of antisense to sense elemen
     \begin{figure}[!ht]
     \centering
     \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{decile.png}
-    \caption{\normalsize{\textbf{Normalizing Genes by Length\\} Example of a gene divided into deciles. Deciles are divided by black dashed lines and represented by the orange number above the divisions. Decile 1 contains the first 0-10\% of the gene, and decile 10 contains the last 90-100\% of the gene. Deciles were calculated from transcription start to transcription stop site from the RefSeq annotated genes. The long boxes at the start and stop represent untranslated regions, the smaller internal boxes represent coding exons, and the green line represents the transcribed gene including introns.}}
+    \caption[Normalizing Genes by Length]{\normalsize{\textbf{Normalizing Genes by Length\\} Example of a gene divided into deciles. Deciles are divided by black dashed lines and represented by the orange number above the divisions. Decile 1 contains the first 0-10\% of the gene, and decile 10 contains the last 90-100\% of the gene. Deciles were calculated from transcription start to transcription stop site from the RefSeq annotated genes. The long boxes at the start and stop represent untranslated regions, the smaller internal boxes represent coding exons, and the green line represents the transcribed gene including introns.}}
     \label{fig:decile}
     \end{figure}
 
@@ -117,7 +117,7 @@ AS and S Alu were counted in each decile and normalized by the total number of A
     \begin{figure}[!h]
     \centering
     \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{lineardecay_alu.pdf}
-    \caption{\normalsize{\textbf{AS bias of Alu decays linearly across gene boundaries\\}Counts of Alu in the AS and S orientation per decile were normalized by the total Alu in all RefSeq genes. as = antisense, s = sense}}
+    \caption[AS bias of Alu decays linearly across gene boundaries]{\normalsize{\textbf{AS bias of Alu decays linearly across gene boundaries\\}Counts of Alu in the AS and S orientation per decile were normalized by the total Alu in all RefSeq genes. as = antisense, s = sense}}
     \label{fig:lineardecay_alu}
     \end{figure}
     
@@ -128,7 +128,7 @@ L1 had a similar distribution to Alu when within genes. Again, as expected due t
     \begin{figure}[!h]
     \centering
     \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{lineardecay_l1.pdf}
-    \caption{\normalsize{\textbf{AS bias of L1 decays linearly across gene boundaries\\}Counts of L1 in the AS and S orientation per decile were normalized by the total L1 in all RefSeq genes. as = antisense, s = sense}}
+    \caption[AS bias of L1 decays linearly across gene boundaries]{\normalsize{\textbf{AS bias of L1 decays linearly across gene boundaries\\}Counts of L1 in the AS and S orientation per decile were normalized by the total L1 in all RefSeq genes. as = antisense, s = sense}}
     \label{fig:lineardecay_l1}
     \end{figure}
    
@@ -151,7 +151,7 @@ Both AS Alu and L1 began at a relatively high frequency in decile 2 and declined
     4 & L1 & S & 32.88 & 3.09e-07 & 6.91e-01 \\ 
      \hline
     \end{tabular}
-        \caption{\normalsize{\textbf{Slope of linear decay for Alu and L1 within the internal deciles of genes\\} Decile number was regressed on element count in the antisense (AS) and sense (S) orientations for each element. p$_{intercept}$ = F-test p-value of the intercept of the regression line. p$_{decile}$ = F-test p-value of the effect of decile on the regression line.}}
+        \caption[Slope of linear decay for Alu and L1 within the internal deciles of genes]{\normalsize{\textbf{Slope of linear decay for Alu and L1 within the internal deciles of genes\\} Decile number was regressed on element count in the antisense (AS) and sense (S) orientations for each element. p$_{intercept}$ = F-test p-value of the intercept of the regression line. p$_{decile}$ = F-test p-value of the effect of decile on the regression line.}}
         \label{table:lindecay}
     \end{table}
 
@@ -222,7 +222,7 @@ The linear decay of RTs across gene deciles may be contributed to by a number of
     \begin{figure}[!ht]
         \centering
         \includegraphics[width=0.5\textwidth,natwidth=610,natheight=642]{cds_noUTR.pdf}
-        \caption{\normalsize{\textbf{Distribution of Coding Sequence Exons in RefSeq Genes\\}The number of coding sequence exons (CDS) in the sense orientation were normalized by all sense oriented CDS in RefSeq genes.}}
+        \caption[Distribution of Coding Sequence Exons in RefSeq Genes]{\normalsize{\textbf{Distribution of Coding Sequence Exons in RefSeq Genes\\}The number of coding sequence exons (CDS) in the sense orientation were normalized by all sense oriented CDS in RefSeq genes.}}
         \label{fig:cds_noUTR}
     \end{figure}
 
@@ -239,7 +239,7 @@ Although, previous studies using raw distances showed that RTs were increased ne
     \begin{figure}[!ht]
         \centering
         \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{25utr.png}
-        \caption{\normalsize{\textbf{Examples of Genes Containing 2$^\circ$ 5'-UTRs:\\} RAB42, GLB3, and CLCNKB are examples of genes with 2$^\circ$ 5'-UTRs within the gene boundaries. RAB42 contains the 2$^\circ$ 5'-UTR in the 10 - 20\% bin, GLB3 in the 20 - 30\% bin, and CLCNKB in the 30-40\% bin. Orange: Gene classified as encoding the primary UTR and containing the 2$^\circ$ 5\rq -UTR within its boundaries; Green: Gene classified as encoding the 2$^\circ$ UTR.}}
+        \caption[Examples of Genes Containing 2$^\circ$ 5'-UTRs]{\normalsize{\textbf{Examples of Genes Containing 2$^\circ$ 5'-UTRs\\} RAB42, GLB3, and CLCNKB are examples of genes with 2$^\circ$ 5'-UTRs within the gene boundaries. RAB42 contains the 2$^\circ$ 5'-UTR in the 10 - 20\% bin, GLB3 in the 20 - 30\% bin, and CLCNKB in the 30-40\% bin. Orange: Gene classified as encoding the primary UTR and containing the 2$^\circ$ 5\rq -UTR within its boundaries; Green: Gene classified as encoding the 2$^\circ$ UTR.}}
         \label{fig:25utr}
     \end{figure}
 
@@ -250,7 +250,7 @@ To determine the effect of the 5\rq -UTR on RT density, the effect of the 5\rq-U
     \begin{figure}[!h]
         \centering
         \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{5utr_diag.pdf}
-        \caption{\normalsize{\textbf{Design for analyzing the impact of internal 5\rq-UTRs on RT density\\}Light green: Genes with only one 5'-UTR located between the transcription start (TSS) and transcription stop site. Dark green: Genes with a second 5\rq-UTR between TSS and transcription stop. Red bar: Decile containing the second 5\rq-UTR. The UTR in the 5\rq-most position was defined as the primary (1$^\circ$) 5\rq-UTR. Dark green genes were grouped by the decile (bin) containing the secondary (2$^\circ$) UTR. All groups were then normalized by the secondary 5\rq-UTR position by defining the bin that contained the 2$^\circ$ UTR as 0. Each bin downstream was defined consecutively as 1, 2, ... 7, and each bin upstream was defined as -1, -2,...-7.}}
+        \caption[Design for analyzing the impact of internal 5\rq-UTRs on RT density]{\normalsize{\textbf{Design for analyzing the impact of internal 5\rq-UTRs on RT density\\}Light green: Genes with only one 5'-UTR located between the transcription start (TSS) and transcription stop site. Dark green: Genes with a second 5\rq-UTR between TSS and transcription stop. Red bar: Decile containing the second 5\rq-UTR. The UTR in the 5\rq-most position was defined as the primary (1$^\circ$) 5\rq-UTR. Dark green genes were grouped by the decile (bin) containing the secondary (2$^\circ$) UTR. All groups were then normalized by the secondary 5\rq-UTR position by defining the bin that contained the 2$^\circ$ UTR as 0. Each bin downstream was defined consecutively as 1, 2, ... 7, and each bin upstream was defined as -1, -2,...-7.}}
         \label{fig:5utr_diag}
     \end{figure}
     
@@ -261,7 +261,7 @@ Once genes with 2$^\circ$  5\rq-UTRs were identified, they were further grouped 
     \begin{figure}[!ht]
         \centering
         \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{utr_nosecond.pdf}
-        \caption{\normalsize{\textbf{Distribution of 5\rq-UTRs in genes with no 2$^\circ$ 5\rq-UTRs\\}Proportion of 5\rq-UTRs were calculated for each gene decile for genes lacking a second 5\rq-UTR within the gene boundaries.}}
+        \caption[Distribution of 5\rq-UTRs in genes with no 2$^\circ$ 5\rq-UTRs]{\normalsize{\textbf{Distribution of 5\rq-UTRs in genes with no 2$^\circ$ 5\rq-UTRs\\}Proportion of 5\rq-UTRs were calculated for each gene decile for genes lacking a second 5\rq-UTR within the gene boundaries.}}
         \label{fig:utr_nosecond}
     \end{figure}
     
@@ -270,7 +270,7 @@ Once genes with 2$^\circ$  5\rq-UTRs were identified, they were further grouped 
     \begin{figure}[!ht]
         \centering
         \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{utr_second.pdf}
-        \caption{\normalsize{\textbf{Distribution of 5\rq-UTRs in genes containing 2$^\circ$ 5\rq-UTRs\\}Proportion of 2$^\circ$ 5\rq-UTRs were calculated after normalization as described in figure \ref{fig:5utr_diag}. Decile 0 is the decile containing the 2$^\circ$ 5\rq-UTR. All negative deciles are upstream of the 2$^\circ$ 5\rq-UTR, and all positive deciles are downstream.}}
+        \caption[Distribution of 5\rq-UTRs in genes containing 2$^\circ$ 5\rq-UTRs]{\normalsize{\textbf{Distribution of 5\rq-UTRs in genes containing 2$^\circ$ 5\rq-UTRs\\}Proportion of 2$^\circ$ 5\rq-UTRs were calculated after normalization as described in figure \ref{fig:5utr_diag}. Decile 0 is the decile containing the 2$^\circ$ 5\rq-UTR. All negative deciles are upstream of the 2$^\circ$ 5\rq-UTR, and all positive deciles are downstream.}}
         \label{fig:utr_second}
     \end{figure}
     
@@ -283,7 +283,7 @@ Once genes with 2$^\circ$  5\rq-UTRs were identified, they were further grouped 
         \centering
         %\includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{2utr_ASalu.pdf}
         \includegraphics[scale=1,width=\textwidth]{2utr_ASalu.pdf}
-        \caption{\normalsize{\textbf{Change in AS Alu density in the presence of a 2$^\circ$ 5\rq-UTR\\}Proportion of 2$^\circ$ AS Alu proportions were calculated as described in figure \ref{fig:5utr_diag}. All proportions were normalized by the expected proportion based on RefSeq genes that have no 2$^\circ$ within the gene boundaries. }}
+        \caption[Change in AS Alu density in the presence of a 2$^\circ$ 5\rq-UTR]{\normalsize{\textbf{Change in AS Alu density in the presence of a 2$^\circ$ 5\rq-UTR\\}Proportion of 2$^\circ$ AS Alu proportions were calculated as described in figure \ref{fig:5utr_diag}. All proportions were normalized by the expected proportion based on RefSeq genes that have no 2$^\circ$ within the gene boundaries. }}
         \label{fig:2utr_ASalu}
     \end{figure}
     
@@ -294,7 +294,7 @@ Once genes with 2$^\circ$  5\rq-UTRs were identified, they were further grouped 
         \centering
         %\includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{2utr_Salu.pdf}
         \includegraphics[scale=1,width=\textwidth]{2utr_Salu.pdf}
-        \caption{\normalsize{\textbf{Change in S Alu density in the presence of a secondary 5\rq-UTR\\}Calculated similarly to figure \ref{fig:2utr_ASalu}}}
+        \caption[Change in S Alu density in the presence of a secondary 5\rq-UTR]{\normalsize{\textbf{Change in S Alu density in the presence of a secondary 5\rq-UTR\\}Calculated similarly to figure \ref{fig:2utr_ASalu}}}
         \label{fig:2utr_Salu}
     \end{figure}
     
@@ -307,7 +307,7 @@ The distribution of AS L1 within genes containing a 2$^\circ$ 5\rq-UTR was somew
         \centering
         %\includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{2utr_ASl1.pdf}
         \includegraphics[scale=1,width=\textwidth]{2utr_ASl1.pdf}
-        \caption{\normalsize{\textbf{Change in AS L1 density in the presence of a secondary 5\rq-UTR\\}Calculated similarly to figure \ref{fig:2utr_ASalu}}}
+        \caption[Change in AS L1 density in the presence of a secondary 5\rq-UTR]{\normalsize{\textbf{Change in AS L1 density in the presence of a secondary 5\rq-UTR\\}Calculated similarly to figure \ref{fig:2utr_ASalu}}}
         \label{fig:2utr_ASl1}
     \end{figure}
     
@@ -318,15 +318,15 @@ The distribution of AS L1 within genes containing a 2$^\circ$ 5\rq-UTR was somew
         \centering
         %\includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{2utr_Sl1.pdf}
         \includegraphics[scale=1,width=\textwidth]{2utr_Sl1.pdf}
-        \caption{\normalsize{\textbf{Change in S L1 density in the presence of a 2$^\circ$ 5\rq-UTR\\}Calculated similarly to figure \ref{fig:2utr_ASalu}}}
+        \caption[Change in S L1 density in the presence of a 2$^\circ$ 5\rq-UTR]{\normalsize{\textbf{Change in S L1 density in the presence of a 2$^\circ$ 5\rq-UTR\\}Calculated similarly to figure \ref{fig:2utr_ASalu}}}
         \label{fig:2utr_Sl1}
     \end{figure}
     
 \subsubsection{Coding Sequence Accounts for the Variablility Identified in the Antisense Orientation}
 
-The results so far suggested that there was a decrease of RTs near the 2$^\circ$ 5\rq -UTR when the position within the gene was normalized. This was important to note since it had previously been shown that RTs were increased near the 5\rq -UTRs in multiple species \citep(VanDeLagemaat2003).  In section \ref{sec:cds} it was shown that RTs were strongly inversely correlated with CDS density. Since the first CDS exon of a gene is often, but not always, connected to the 5\rq -UTR, it was important to determine if the CDS density in 2$^\circ$ 5\rq -UTR genes had an effect on RT density.
+The results so far suggested that there was a decrease of RTs near the 2$^\circ$ 5\rq -UTR when the position within the gene was normalized. This is contradictory to commonly written hypothesis that RTs are increased near 5' -UTRs due to positive selection of regulatory features. Importantly, in section \ref{sec:cds} it was shown that RTs were inversely correlated with CDS density. Since the first CDS exon of a gene is often, but not always, connected to the 5\rq -UTR, it was important to determine if the CDS density had an effect on the RT distribution observed in genes containing 2$^\circ$ 5\rq -UTRs. Importantly the CDS density within genes containing 2$^\circ$ 5\rq -UTRs was altered compared to the CDS density in genes with no internal 2$^\circ$ 5\rq -UTRs (figure \ref{fig:25_cdsmulti}). The most striking feature was the increase in CDS density in the decile containing the 2$^\circ$ 5\rq -UTR. This further substantiated studying the effect of CDS density on RT density in genes containing 2$^\circ$ 5\rq -UTRs.
 
-The CDS density and Alu density within non- 2$^\circ$ 5\rq -UTR containing genes was used to predict the expected Alu density in 2$^\circ$ 5\rq -UTR containing genes. To accomplish this, Alu density was regressed on CDS density. The CDS density of each 2$^\circ$ 5\rq -UTR gene group was then calculated and used as new data to predict the expected 5\rq-UTR density. The actual values are plotted next to the predicted values in figure \ref{fig:25_cdspred}. In the AS orientation, there was no difference in Alu density from what was expected based on CDS density. Conversely, in the S orientation, there were less Alu in regions containing a 5\rq-UTR than expected based on CDS density alone. 
+The CDS density and Alu density within non-2$^\circ$ 5\rq -UTR containing genes was used to predict the expected Alu density in 2$^\circ$ 5\rq -UTR containing genes. To accomplish this, Alu density from non-2$^\circ$ 5\rq -UTR containing genes was regressed on CDS density from the same genes. The expected RT density was then predicted using the CDS density from genes containing 2$^\circ$ 5\rq -UTRs. The actual values were plotted next to the predicted values in figure \ref{fig:25_cdspred}. In the AS orientation, there was no difference in Alu density from what was expected based on CDS density. Conversely, in the S orientation, there were less Alu in regions containing a 5\rq-UTR than expected based on CDS density alone. 
 
 Overall these results are important to the field of RT research. They support a shift in the common thinking of RT accumulation within genes. Previous speculations were that RTs are increased near 5\rq -UTRs due to advantageous effects of the RT (e.g.: CpGs, enhancers) \citep(VanDeLagemaat2003). Conversely, this current research suggests that the increase of RTs near the 5\rq - UTR is not an effect of the UTR, but an effect of the lack of CDS sequences. Moreover, there was no evidence of an increase near the 5\rq -UTR when position within the gene was normalized. Instead, there was significant decrease in Alu density in the S orientation.
 
@@ -335,7 +335,7 @@ Overall these results are important to the field of RT research. They support a 
     \begin{figure}[!ht]
         \centering
       \includegraphics[scale=1,width=\textwidth]{25utr_cdsmulti.pdf}
-        \caption{\normalsize{\textbf{CDS density in  2$^\circ$ 5\rq-UTR gene groups\\}}}
+        \caption[CDS density in  2$^\circ$ 5\rq-UTR gene groups]{\normalsize{\textbf{CDS density in  2$^\circ$ 5\rq-UTR gene groups\\}}}
         \label{fig:25_cdsmulti}
     \end{figure}
     
@@ -343,7 +343,7 @@ Overall these results are important to the field of RT research. They support a 
     \begin{figure}[!ht]
         \centering
         \includegraphics[scale=1,width=\textwidth]{25utr_cdspred.pdf}
-        \caption{\normalsize{\textbf{5\rq-UTR density and predictions based on CDS density\\}}}
+        \caption[5\rq-UTR density and predictions based on CDS density]{\normalsize{\textbf{5\rq-UTR density and predictions based on CDS density\\}}}
         \label{fig:25_cdspred}
     \end{figure}
     
@@ -371,7 +371,7 @@ Housekeeping genes have a predictably higher level of Alu frequency than other g
       8 & Pancreas & 125 & -0.08 & 0.413 & -0.47 & 0.085\\ 
        \hline
     \end{tabular}
-    \caption{\normalsize{\textbf{Correlation of CDS and Alu across gene categories\\}Correlation of the proportion of Alu in each decile versus the proportion of CDS in each decile.}}
+    \caption[Correlation of CDS and Alu across gene categories]{\normalsize{\textbf{Correlation of CDS and Alu across gene categories\\}Correlation of the proportion of Alu in each decile versus the proportion of CDS in each decile.}}
         \label{table:tiscor}
     \end{table}
     %2 & All Genes & 42582 & -0.94 & 2.64e-05&-0.30& 0.200
@@ -393,7 +393,7 @@ These binding motifs can have an effect on gene expression, and some of these mo
     \begin{figure}[!ht]
         \centering
         \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{motif.png}
-        \caption{\normalsize{\textbf{Examples Alu Consensus Sequences that Contain Different Binding Motifs}AluJo and AluSc represent two Alu subfamilies that have been present in primates prior to the human split. The consensus sequences for these two elements are presented respectively. As expected, both consensus sequences contain the RNA Polymerase III A-box that is required for Alu expression, and therefore Alu retrotransposition. One further protein binding region is highlighted in each sequence, though these binding regions are exclusive to the subfamily of origin. AluJo contains a polyadenylation sequence within the central A-rich region. This polyadenylation signal has been lost in the AluSc consensus sequence (AAATAAA | AAATA\textbf{G}A). Similarly AluSc contains a hepatocyte nuclear factor 4 binding site that is not present in AluJo (GAGGTCAAGAGATCG | GAG\textbf{C}C\textbf{C}A\textbf{G}GAG\textbf{T}TCG).}}
+        \caption[Examples Alu Consensus Sequences that Contain Different Binding Motifs]{\normalsize{\textbf{Examples Alu Consensus Sequences that Contain Different Binding Motifs\\}AluJo and AluSc represent two Alu subfamilies that have been present in primates prior to the human split. The consensus sequences for these two elements are presented respectively. As expected, both consensus sequences contain the RNA Polymerase III A-box that is required for Alu expression, and therefore Alu retrotransposition. One further protein binding region is highlighted in each sequence, though these binding regions are exclusive to the subfamily of origin. AluJo contains a polyadenylation sequence within the central A-rich region. This polyadenylation signal has been lost in the AluSc consensus sequence (AAATAAA | AAATA\textbf{G}A). Similarly AluSc contains a hepatocyte nuclear factor 4 binding site that is not present in AluJo (GAGGTCAAGAGATCG | GAG\textbf{C}C\textbf{C}A\textbf{G}GAG\textbf{T}TCG).}}
         \label{fig:motif}
     \end{figure}
     
@@ -418,7 +418,7 @@ The full-length human L1 consensus sequence is approximately 6kb, but varies by 
    &   {5 + } & 10181 \\ 
    \hline
 \end{tabular}
-\caption{\textbf{Size of L1 elements in the human reference genome\\}Counts were tallied of all L1 in the human reference genome.}
+\caption[Size of L1 elements in the human reference genome]{\textbf{Size of L1 elements in the human reference genome\\}Counts were tallied of all L1 in the human reference genome.}
 \label{table:l1size}
 \end{table}
 
@@ -428,7 +428,7 @@ This 5\rq -truncation of L1 results in variable sizes of L1 in the human genome,
     \begin{figure}[!ht]
         \centering
         \includegraphics[scale=1,width=\textwidth]{l1start.pdf}
-        \caption{\normalsize{\textbf{Start position of short L1 (< 1kb) within the full-length L1 consensus sequence\\}Each short L1 (<1 kb) was aligned to the respective full-length L1 consensus sequence. The start position within each consensus sequence was tallied and is presented here. Note that the L1 promoter is within the first 2kb of the full-length L1}}
+        \caption[Start position of short L1 (< 1kb) within the full-length L1 consensus sequence]{\normalsize{\textbf{Start position of short L1 (< 1kb) within the full-length L1 consensus sequence\\}Each short L1 (<1 kb) was aligned to the respective full-length L1 consensus sequence. The start position within each consensus sequence was tallied and is presented here. Note that the L1 promoter is within the first 2kb of the full-length L1}}
         \label{fig:l1start}
     \end{figure}
     
@@ -438,7 +438,7 @@ Since size was used as a proxy for the presence of the L1 promoter, it was impor
     \begin{figure}[!ht]
         \centering
         \includegraphics[scale=0.005,width=\textwidth]{L1distsize.pdf}
-        \caption{\normalsize{\textbf{Effect of L1 Size on L1 density: Antisense\\}L1 density was calculated within all deciles. L1 were first grouped into sizes (< 1 kb, 1-2, 2-3, 3-4, 4-5, and 5+). }}
+        \caption[Effect of L1 Size on L1 density: Antisense]{\normalsize{\textbf{Effect of L1 Size on L1 density: Antisense\\}L1 density was calculated within all deciles. L1 were first grouped into sizes (< 1 kb, 1-2, 2-3, 3-4, 4-5, and 5+). }}
         \label{fig:l1size_as}
     \end{figure}
     
@@ -446,7 +446,7 @@ Since size was used as a proxy for the presence of the L1 promoter, it was impor
     \begin{figure}[!ht]
         \centering
         \includegraphics[scale=0.5,width=\textwidth]{L1distsize_s.pdf}
-        \caption{\normalsize{\textbf{Effect of L1 Size on L1 density: Sense\\}L1 density was calculated within the all deciles. L1 were first grouped into sizes (< 1 kb, 1-2, 2-3, 3-4, 4-5, and 5+). }}
+        \caption[Effect of L1 Size on L1 density: Sense]{\normalsize{\textbf{Effect of L1 Size on L1 density: Sense\\}L1 density was calculated within the all deciles. L1 were first grouped into sizes (< 1 kb, 1-2, 2-3, 3-4, 4-5, and 5+). }}
         \label{fig:l1size_s}
     \end{figure}
     
@@ -457,7 +457,7 @@ To test whether the linear decay of antisense oriented L1 was related to the siz
     \begin{figure}[!ht]
         \centering
         \includegraphics[width=0.55\textwidth,natwidth=610,natheight=642]{L1distsize_decile1.pdf}
-        \caption{\normalsize{\textbf{Effect of L1 Size on L1 density: Antisense, decile 1\\}L1 density was calculated within the first decile. L1 were first grouped into sizes (< 1 kb, 1-2, 2-3, 3-4, 4-5, and 5+). The lines on either side of the point represent the 95\% confidence interval. Prop: Proportion of antisense L1 per all L1of the same size within genes. kb: maximum length of the group of L1 in kilobases (6000 represent L1 that are 5kb or greater). The minimum of each group is 1kb less than the maximum except for L1 5kb and greater.}}
+        \caption[Effect of L1 Size on L1 density: Antisense, decile 1]{\normalsize{\textbf{Effect of L1 Size on L1 density: Antisense, decile 1\\}L1 density was calculated within the first decile. L1 were first grouped into sizes (< 1 kb, 1-2, 2-3, 3-4, 4-5, and 5+). The lines on either side of the point represent the 95\% confidence interval. Prop: Proportion of antisense L1 per all L1of the same size within genes. kb: maximum length of the group of L1 in kilobases (6000 represent L1 that are 5kb or greater). The minimum of each group is 1kb less than the maximum except for L1 5kb and greater.}}
         \label{fig:l1size_as_one}
     \end{figure}
     
@@ -528,7 +528,7 @@ The proportions of motifs within intergenic Alu were used to normalize the propo
         \centering
         %\includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{alumotifs.pdf}
          \includegraphics[scale=1, width=\textwidth]{alumotifs.pdf}
-       \caption{\normalsize{\textbf{Presence of Alu-contained protein-binding motifs within genes\\}Protein binding motifs were examined for their presence within Alu both in genes and intergenically. The y-axis represents the ratio of the presence within genes to the presence intergenically. Alu within genes were separated into categories based on the linear decline of AS-bias. AS\_5prime: Antisense Alu in the 10-20\% decile; S\_5prime: Sense Alu in the 10-20\% decile; AS\_3prime: Antisense Alu in the 80-90\% decile; S\_3prime: Sense Alu in the 80-90\% decile. The RNA Polymerase III A-box promoter (Pol3) is highlighted by an orange dashed box.}}
+       \caption[Presence of Alu-contained protein-binding motifs within genes]{\normalsize{\textbf{Presence of Alu-contained protein-binding motifs within genes\\}Protein binding motifs were examined for their presence within Alu both in genes and intergenically. The y-axis represents the ratio of the presence within genes to the presence intergenically. Alu within genes were separated into categories based on the linear decline of AS-bias. AS\_5prime: Antisense Alu in the 10-20\% decile; S\_5prime: Sense Alu in the 10-20\% decile; AS\_3prime: Antisense Alu in the 80-90\% decile; S\_3prime: Sense Alu in the 80-90\% decile. The RNA Polymerase III A-box promoter (Pol3) is highlighted by an orange dashed box.}}
         \label{fig:alumotifs}
     \end{figure}
     
@@ -564,7 +564,7 @@ The proportions of motifs in intergenic L1 were compared to the proportions with
         \centering
        %\includegraphics[width=1.2\textwidth,natwidth=610,natheight=642]{l1motifs.pdf}
        \includegraphics[scale=1, width=\textwidth]{l1motifs.pdf}
-       \caption{\normalsize{\textbf{Presence of L1-contained protein-binding motifs within genes\\}Protein binding motifs were examined similarly to those within Alu (figure \ref{fig:alumotifs}).}}
+       \caption[Presence of L1-contained protein-binding motifs within genes]{\normalsize{\textbf{Presence of L1-contained protein-binding motifs within genes\\}Protein binding motifs were examined similarly to those within Alu (figure \ref{fig:alumotifs}).}}
         \label{fig:l1motifs}
     \end{figure}
 
@@ -577,7 +577,7 @@ These results indicated that the sequence of both Alu and L1 were differentially
     \begin{figure}[!ht]
         \centering
         \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{l1polyA.pdf}
-       \caption{\normalsize{\textbf{Basewise conservation of polyadenylation signals within S and AS L1\\}
+       \caption[Basewise conservation of polyadenylation signals within S and AS L1]{\normalsize{\textbf{Basewise conservation of polyadenylation signals within S and AS L1\\}
        Basewise conservation scores were taken from the phyloP conservation scores, where positive values indicate potential positive selection, and negative values indicate possible negative selection. The scores of each bp were calculated for intergenic L1, AS L1, and S L1. AS (pink dots) and S (blue dots) L1 were then normalized versus the intergenic values. 
        }}
         \label{fig:l1polyA}
@@ -587,7 +587,7 @@ These results indicated that the sequence of both Alu and L1 were differentially
     \begin{figure}[!ht]
         \centering
         \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{alupolyA.pdf}
-       \caption{\normalsize{\textbf{Baswise conservation of polyadenylation signals within S and AS Alu\\}
+       \caption[Baswise conservation of polyadenylation signals within S and AS Alu]{\normalsize{\textbf{Baswise conservation of polyadenylation signals within S and AS Alu\\}
               Basewise conservation scores were taken from the phyloP conservation scores, where positive values indicate potential positive selection, and negative values indicate possible negative selection. The scores of each bp were calculated for intergenic Alu, AS Alu, and S Alu. AS (pink dots) and S (blue dots) Alu were then normalized versus the intergenic values.
               }}
         \label{fig:alupolyA}
@@ -603,7 +603,7 @@ Since the polyadenylation sequence was present within both Alu and L1 consensus 
         \centering
         %\includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{alupol3.pdf}
         \includegraphics[scale=1,width=\textwidth]{alupol3.pdf}
-       \caption{\normalsize{\textbf{Basewise conservation of Pol-III A-box region in AS and S Alu \\} Conservation scores were derived from phyloP conservation scores where a positive value indicates positive selection and a negative value indicates possible negative selection. AS and S values were normalized by intergenic values}}
+       \caption[Basewise conservation of Pol-III A-box region in AS and S Alu]{\normalsize{\textbf{Basewise conservation of Pol-III A-box region in AS and S Alu \\} Conservation scores were derived from phyloP conservation scores where a positive value indicates positive selection and a negative value indicates possible negative selection. AS and S values were normalized by intergenic values}}
         \label{fig:alupol3}
     \end{figure}
    
@@ -624,7 +624,7 @@ Lastly, it was determined how the RT-specific variable of binding motifs was eff
     \begin{figure}[!ht]
         \centering
         \includegraphics[scale=1,width=\textwidth]{alu_tshkmotifs_value.pdf}
-       \caption{\normalsize{\textbf{Alu-contained binding motifs in tissue-specific and housekeeping genes}}}
+       \caption[Alu-contained binding motifs in tissue-specific and housekeeping genes]{\normalsize{\textbf{Alu-contained binding motifs in tissue-specific and housekeeping genes\\}}}
         \label{fig:alu_tshkmotifs_value}
     \end{figure}
     
@@ -633,7 +633,7 @@ Lastly, it was determined how the RT-specific variable of binding motifs was eff
     \begin{figure}[!ht]
         \centering
         \includegraphics[scale=1,width=\textwidth]{alu_tshkmotifs.pdf}
-       \caption{\normalsize{\textbf{Alu-contained binding motifs in tissue-specific and housekeeping genes}}}
+       \caption[Alu-contained binding motifs in tissue-specific and housekeeping genes]{\normalsize{\textbf{Alu-contained binding motifs in tissue-specific and housekeeping genes\\}}}
         \label{fig:alumotifs_tshk}
     \end{figure}
 
@@ -646,7 +646,7 @@ Since there was no normalization against intergenic in this analysis, the change
     \begin{figure}[!ht]
         \centering
         \includegraphics[scale=1,width=\textwidth]{l1_tshkmotifs_value.pdf}
-       \caption{\normalsize{\textbf{L1-contained binding motifs in tissue-specific and housekeeping genes}}}
+       \caption[L1-contained binding motifs in tissue-specific and housekeeping genes]{\normalsize{\textbf{L1-contained binding motifs in tissue-specific and housekeeping genes\\}}}
         \label{fig:l1_tshkmotifs_value}
     \end{figure}
     
@@ -655,7 +655,7 @@ Since there was no normalization against intergenic in this analysis, the change
     \begin{figure}[!ht]
         \centering
         \includegraphics[scale=1,width=\textwidth]{l1_tshkmotifs.pdf}
-       \caption{\normalsize{\textbf{L1-contained binding motifs in tissue-specific and housekeeping genes}}}
+       \caption[L1-contained binding motifs in tissue-specific and housekeeping genes]{\normalsize{\textbf{L1-contained binding motifs in tissue-specific and housekeeping genes\\}}}
         \label{fig:l1motifs_tshk}
     \end{figure}
 
