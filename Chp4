@@ -2,53 +2,42 @@
 % Slinker, 04/14/2014
 
 %Preamble
-
-%Preamble
-%formating the page
 \documentclass[12bp]{report}
-\usepackage{setspace} %for double spacing
-\usepackage{times}
-\usepackage[top=1in, bottom=1in, left=1.25in, right=1in]{geometry}
-\usepackage{pslatex}
-%for the figures
-\usepackage{graphicx} 
-\usepackage{siunitx}
-\usepackage[T1]{fontenc}
-\usepackage{amsmath}
-%Formating for the contingency tables
+\usepackage[top=1in, bottom=1in, left=1.25in, right=1in]{geometry} %geom has to be loaded before fancy header
+\usepackage{pdflscape}
+\usepackage{longtable,tabularx,ltxtable}
+\usepackage{setspace}  
 \usepackage{pgfplots}
+\usepackage{xcolor}
 \usepackage{pgfplotstable}
-\pgfplotsset{compat=1.8}
 \usepackage{booktabs}
 %for rotating a table
 \usepackage{rotating} 
-%\setcounter{page}{11}
-\usepackage[margin=10pt,font=normalsize,justification=justified,labelsep=endash,labelfont=bf]{caption}
-
 \usepackage{fancyhdr}
 \pagestyle{fancy} %Control over headers and footers
     \fancyhf{}%clears all fieds
-   % \lhead[R]{\rightmark} %add section title to the page
-    \cfoot{\thepage}    %add page number to center bottom
+    %\lhead[R]{\rightmark} %add section title to the page
+    \rhead{\thepage}    %add page number to center bottom
     \renewcommand{\headrulewidth}{0pt} % 0 gets rid of the lines on top 
     \renewcommand{\footrulewidth}{0pt} % 0 gets rid of the line on bottom
     \fancypagestyle{plain}{% Changes all chapter pages to this format (by changing plain style)
         \fancyhf{}         % clear all header and footer fields
-        \rhead{\thepage}    % put the page number at the rop right
+        \cfoot{\thepage}    % except the center
         \renewcommand{\headrulewidth}{0pt}
         \renewcommand{\footrulewidth}{0pt}}
 
+\usepackage[margin=10pt,font=small,justification=justified,labelsep=endash,labelfont=bf]{caption}
+\usepackage{setspace} %for double spacing
+\usepackage{pslatex}
+\usepackage{graphicx} %for the figures
+\usepackage{siunitx}
+\usepackage[T1]{fontenc}
 \usepackage[final]{pdfpages}
+%properly spaces the urls in the apa citations
+\usepackage{hyperref}
 \usepackage{apacite} %for citing with APA
-%\newenvironment{tightcenter}{% for self-made chapter headings
-%  \setlength\topsep{0pt}
-%  \setlength\parskip{0pt}
-%  \begin{center}
-%}{%
-%  \end{center}
-%}
 \usepackage{amsmath}
-
+\usepackage{pifont}%for checkmark
 \usepackage{titlesec} %Re-format the chapter title
 \titleformat{\chapter}
   {\normalfont\LARGE\rm\raggedleft\uppercase}{\chaptertitlename\ \thechapter}{20pt}{\Huge}
@@ -77,6 +66,13 @@
     keywordstyle={},
     morekeywords={}
     }
+\usepackage{setspace} %for spacing
+\usepackage[]{natbib} % for spacing and other formating options of apacite (needs "citep" instead of "cite")
+\renewcommand*{\bibfont}{\interlinepenalty 10000\relax} % no page breaks in the middle of a citation, requires \usepackage[]{natbib}
+
+\widowpenalty=10000 % to remove single lines
+\clubpenalty=10000 %also to remove single lines
+
 
 
 %Document
@@ -84,11 +80,11 @@
 \doublespace\large{
 \chapter{\\RETROTRANSPOSONS ARE ASSOCIATED WITH A SEX-SPECIFIC DECREASE IN GENE EXPRESSION}
 
-Transcriptional regulation is a highly coordinated process necessary for the proper function of an organism. Despite conserved mechanisms regulating expression, many genes are highly variable between species \cite{Brawand2011, Carninci2005, Levine2003, Su2002}, between humans \cite{Cheung2003, Storey2007, Wang2008}, and between sexes \cite{Rinn2005, Trabzuni2013}. Variations in expression is often correlated with measurable phenotype changes such as dopamine receptor expression and locomotor activity in mice \cite{Chesler2005}. Transcriptome differences associated with disease status further indicate that gene expression is a key regulator of downstream phenotypes \cite{Su2002, Voineagu2011}. It is important to determine the underlying factors involved in gene expression variability to understand the plasticity of expression in unaffected individuals, as well as the limits of regulation, that when breached lead to disease. 
+Transcriptional regulation is a highly coordinated process necessary for the proper function of an organism. Despite conserved mechanisms regulating expression, many genes are highly variable between species \citep{Brawand2011, Carninci2005, Levine2003, Su2002}, between humans \citep{Cheung2003, Storey2007, Wang2008}, and between sexes \citep{Rinn2005, Trabzuni2013}. Variations in expression is often correlated with measurable phenotype changes such as dopamine receptor expression and locomotor activity in mice \citep{Chesler2005}. Transcriptome differences associated with disease status further indicate that gene expression is a key regulator of downstream phenotypes \citep{Su2002, Voineagu2011}. It is important to determine the underlying factors involved in gene expression variability to understand the plasticity of expression in unaffected individuals, as well as the limits of regulation, that when breached lead to disease. 
 
-Large-scale genome-wide analyses such as those published by the ENCODE project have described many of the organizing components of genes underlying expression variance \cite{Birney2007, Dong2012, Wang2012}. DNA methylation, histone modifications, and chromatin folding are all examples of coordinating components of transcriptional regulation \cite{Bird2002, Jenuwein2001}. Although many genetic components, such as these, have been tested for correlation with transcription, much of the repetitive content of the genome remains unexamined for its link with expression. Specifically, retrotransposons (RT) have yet to be characterized for their association with gene expression, even though they account for approximately 40\% of the mass of the human genome \cite{Lander2001}. 
+Large-scale genome-wide analyses such as those published by the ENCODE project have described many of the organizing components of genes underlying expression variance \citep{Birney2007, Dong2012, Wang2012}. DNA methylation, histone modifications, and chromatin folding are all examples of coordinating components of transcriptional regulation \citep{Bird2002, Jenuwein2001}. Although many genetic components, such as these, have been tested for correlation with transcription, much of the repetitive content of the genome remains unexamined for its link with expression. Specifically, retrotransposons (RT) have yet to be characterized for their association with gene expression, even though they account for approximately 40\% of the mass of the human genome \citep{Lander2001}. 
 
-Despite indications that RTs can have an effect on gene function, they are largely understudied due to inherent complications in identifying locations of polymorphic insertions. Recent advances in both sequencing technology and alignment algorithms have increased the reliability of identifying specific locations of RT insertions \cite{Baillie2011, Beck2010, Ewing2010, Iskow2010, Stewart2011, Ye2009}. As of yet, there have only been a few genome-wide studies comparing the presence of RTs with associated gene expression levels. Most importantly, Arora et al., identified that genes that are differentially expressed between humans and chimps are enriched for genes that contain RT-containing indels \cite{Arora2011}. 
+Despite indications that RTs can have an effect on gene function, they are largely understudied due to inherent complications in identifying locations of polymorphic insertions. Recent advances in both sequencing technology and alignment algorithms have increased the reliability of identifying specific locations of RT insertions \citep{Baillie2011, Beck2010, Ewing2010, Iskow2010, Stewart2011, Ye2009}. As of yet, there have only been a few genome-wide studies comparing the presence of RTs with associated gene expression levels. Most importantly, Arora et al., identified that genes that are differentially expressed between humans and chimps are enriched for genes that contain RT-containing indels \citep{Arora2011}. 
 
 % Decreased gene expression human v NHP
 \section{Mobile Element Insertions between Humans and Non-human Primates}
@@ -98,7 +94,7 @@ To determine if retrotransposons (RTs) effect the phenotype of gene expression, 
 
 \subsection{Gene expression is commonly decreased in humans compared to non-human primate in the presence of a mobile element insertion}
 
-Genes were first identified that contained mobile element insertions (MEIs) of either L1, Alu, or SVA.  These genes were then filtered to retain only genes with orthologs between human (hg19), chimp (panTro4), gorilla (GorGor3), orangutan (ponAbe2), and rhesus macaque (rheMac3). Locations of MEIs between humans and the respective non-human primate (NHP) were determined using mobile element annotation for each respective reference genome \cite{Kent2002}. Genes were classified as an MEI-containing gene if the MEI was within the gene transcription start to transcription stop sites, including introns. In order to compare between the sexes, only genes on the autosomes were considered in this analysis. Using data from Brawand et al., expression values were obtained for all of these genes and for each species. This dataset contained expression for multiple tissues, including brain, heart, kidney, liver, and testis.  The sample sizes of MEI-containing genes identified for each primate, and those with expression values from Brawand et al., were tabulated in table \ref{table:mei}.
+Genes were first identified that contained mobile element insertions (MEIs) of either L1, Alu, or SVA.  These genes were then filtered to retain only genes with orthologs between human (hg19), chimp (panTro4), gorilla (GorGor3), orangutan (ponAbe2), and rhesus macaque (rheMac3). Locations of MEIs between humans and the respective non-human primate (NHP) were determined using mobile element annotation for each respective reference genome \citep{Kent2002}. Genes were classified as an MEI-containing gene if the MEI was within the gene transcription start to transcription stop sites, including introns. In order to compare between the sexes, only genes on the autosomes were considered in this analysis. Using data from Brawand et al., expression values were obtained for all of these genes and for each species. This dataset contained expression for multiple tissues, including brain, heart, kidney, liver, and testis.  The sample sizes of MEI-containing genes identified for each primate, and those with expression values from Brawand et al., were tabulated in table \ref{table:mei}.
 
 % Tue Apr 15 22:57:42 2014
 \begin{table}[ht]
@@ -119,7 +115,7 @@ Group & Gene Set  & RheMac3 & PonAbe2 & GorGor3 & PanTro4 \\
   g & a $\cap$  d  & 166 & 342 & 252 & 199 \\ 
    \hline
 \end{tabular}
-\caption{\textbf{Gene counts per MEI-type and non-human primate (NHP)\\} Presented here are the number of genes analyzed between humans and the respective non-human primate. RheMac3: Rhesus Macaque; PonAbe2: Orangutan; GorGor3: Gorilla; PanTro4: Chimpanzee. Expression data: The genes with orthologs between humans and the non-human primate for which there was valid expression data. Filtered MEI: Genes containing mobile element insertions in humans but not the respecitive NHP, after filtering based on pylogenetic order.}
+\caption[Gene counts per MEI-type and non-human primate (NHP)]{\textbf{Gene counts per MEI-type and non-human primate (NHP)\\} Presented here are the number of genes analyzed between humans and the respective non-human primate. RheMac3: Rhesus Macaque; PonAbe2: Orangutan; GorGor3: Gorilla; PanTro4: Chimpanzee. Expression data: The genes with orthologs between humans and the non-human primate for which there was valid expression data. Filtered MEI: Genes containing mobile element insertions in humans but not the respecitive NHP, after filtering based on pylogenetic order.}
 \label{table:mei}
 \end{table}
 
@@ -148,7 +144,7 @@ The differences in expression across all species were controlled for by inter-sa
     NHP                b           d               b+d 
     {Total by Expression}  a+b          c+d             a+b+c+d 
 }
-\caption{\normalsize{\textbf{Contingency table for expression differences between human and non-human primate\\}a,b,c, and represent counts of genes. Odds ratio = ad / bc}}
+\caption[Contingency table for expression differences between human and non-human primate]{\normalsize{\textbf{Contingency table for expression differences between human and non-human primate\\}a,b,c, and represent counts of genes. Odds ratio = ad / bc}}
 \label{table:contablemei}
 \end{table}
 
@@ -159,7 +155,7 @@ Female humans were missing expression values for testis and liver; these tissues
     \begin{figure}[!ht]
         \centering
         \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{meiplots2.pdf}
-       \caption{\textbf{The effect of MEI status on gene expression between primates}
+       \caption[The effect of MEI status on gene expression between primates]{\textbf{The effect of MEI status on gene expression between primates\\}
        Odds ratios for each tissue (brain, heart, liver, kidney, testis) and each primate (human, chimp, gorilla, orangutan, rhesus macaque) were plotted by MEI-type (Alu, L1, or SVA). Dots in black represented tests that did not pass Bonferonni significance ($\alpha$ = 1.25e-03 ). Dots in red represent tests that did pass Bonferroni significance.
        }
         \label{fig:meiplots}
@@ -202,7 +198,7 @@ Although it is possible that L1 and SVA are less often associated with genes tha
   119 & Chimp & female & heart & SVA & 0.47 & 0.33 & 0.67 & 0.00 & 4351.00 & 7215.00 & 43.00 & 150.00 &  0.00e+00 \\ 
    \hline
 \end{tabular}
-\caption{\textbf{Contingency table values and results of the two-tailed  permuation tests for MEI-expression tests\\} Conf1: lower confidence limit, Conf2: higher confidence limit, MEI- : Genes with no identifiable MEI within the gene boundaries; MEI+ : Genes with MEIs within the gene boundaries; Hs: Genes expressed higher in humans; NHP: Genes expressed higher in the respective non-human primate. pvalue: proportion of permutations that were more extreme than the actual odds ratio out of 5000 permutations.}
+\caption[Contingency table values and results of the two-tailed  permuation tests for MEI-expression tests]{\textbf{Contingency table values and results of the two-tailed  permuation tests for MEI-expression tests\\} Conf1: lower confidence limit, Conf2: higher confidence limit, MEI- : Genes with no identifiable MEI within the gene boundaries; MEI+ : Genes with MEIs within the gene boundaries; Hs: Genes expressed higher in humans; NHP: Genes expressed higher in the respective non-human primate. pvalue: proportion of permutations that were more extreme than the actual odds ratio out of 5000 permutations.}
 \label{table:permOR}
 \end{sidewaystable}
 
@@ -235,7 +231,7 @@ These models were compared using a four-way ANOVA. Using ANOVA, all variables we
       4 & MEI-type &   2 & 1.59 & 0.21 \\ 
        \hline
     \end{tabular}
-    \caption{\normalsize{\textbf{Results of ANOVA comparing effects of sex, tissue, NHP, and MEI}
+    \caption[Results of ANOVA comparing effects of sex, tissue, NHP, and MEI]{\normalsize{\textbf{Results of ANOVA comparing effects of sex, tissue, NHP, and MEI\\}
     A single regression equation was calculated for Odds ratios regressed on sex, tissue, primate, and mei-type. The model was then analyzed by ANOVA to determine the respective contributions of each variable. Df = degress of freedom.
     }}
     \label{table:anova}
@@ -248,7 +244,7 @@ Indeed when grouping significant ORs based on sex, a majority of the significant
     \begin{figure}[!ht]
         \centering
         \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{malefemale2.pdf}
-       \caption{\normalsize{\textbf{Odds ratios based on sex of origin\\}
+       \caption[Odds ratios based on sex of origin]{\normalsize{\textbf{Odds ratios based on sex of origin\\}
        Odds ratios were calculated for each primate (human, chimp, gorilla, orangutan, and rhesus macaque) and each tissue (brain, heart, liver, kidney, testis). Odds ratios were separated by sex of origin. Black dots indicate odds ratios that were not significant after Bonferroni correction of the two-tailed permuted p-value.  Red dots indicate odds ratios that were significant ($\alpha$ = 1.25e-03).
        }}
         \label{fig:malefemale}
@@ -280,7 +276,7 @@ The bias in OR due to the sex of the individual indicated that there was a bias 
     Females                b           d               b+d 
     {Total by Expression}  a+b          c+d             a+b+c+d 
 }
-\caption{\textbf{Contingency table for expression differences between males and females of the same species\\}a,b,c, and represent counts of genes. Odds ratio = ad / bc}
+\caption[Contingency table for expression differences between males and females of the same species]{\textbf{Contingency table for expression differences between males and females of the same species\\}a,b,c, and represent counts of genes. Odds ratio = ad / bc}
 \label{table:contablesex}
 \end{table}
 
@@ -288,17 +284,17 @@ MEIs were restricted to those derived from Alu (MEI-Alu) and were present in hum
 
 Although these results indicated that there was a sex-dependent difference in expression in genes containing an MEI; it was possible that the analysis detected an unrelated bias in the dataset due to the small sample size (N male = 3, N female = 2). Therefore, a larger replication set was examined. This larger dataset was used to test the claim that the MEI gene set was significantly associated with genes that were differentially expressed between males and females.
 
-Trabzuni et al. characterized gene expression from human male (N=101) and female (N=36) brain and spinal cord tissues \cite{Trabzuni2013}. The top differentially expressed and alternatively spliced genes between males and females that were reported in this dataset were used for this analysis. To facilitate the comparison, MEI-Alu-Chimp were converted from Ensembl annotation to HUGO gene annotation (N MEI-Alu-Chimp converted = 2200). Of the 442 genes differentially expressed or spliced between the sexes in any brain region, 117 contained an MEI-Alu-Chimp. This was significantly more genes containing MEI-Alu-Chimp than expected by chance (OR= 2.8; CI 95\% = 2.29 -- 3.57;  Fisher\rq s exact p < 2.2e-16). Total gene count was set at 19116 to reflect the number of genes uniquely annotated in HUGO \cite{Flicek2013, Kent2002}. 
+Trabzuni et al. characterized gene expression from human male (N=101) and female (N=36) brain and spinal cord tissues \citep{Trabzuni2013}. The top differentially expressed and alternatively spliced genes between males and females that were reported in this dataset were used for this analysis. To facilitate the comparison, MEI-Alu-Chimp were converted from Ensembl annotation to HUGO gene annotation (N MEI-Alu-Chimp converted = 2200). Of the 442 genes differentially expressed or spliced between the sexes in any brain region, 117 contained an MEI-Alu-Chimp. This was significantly more genes containing MEI-Alu-Chimp than expected by chance (OR= 2.8; CI 95\% = 2.29 -- 3.57;  Fisher\rq s exact p < 2.2e-16). Total gene count was set at 19116 to reflect the number of genes uniquely annotated in HUGO \citep{Flicek2013, Kent2002}. 
 
 \subsection{MEIs segregating in humans are associated with a decrease in expression}
 
-Alu, L1, and SVA are retrotranspositionally competent in humans resulting in mobile element variation within the human population \cite{Ewing2010, Stewart2011}. Stewart et al. annotated a subset of MEIs that are polymorphic between humans. It was next important to check if MEI-Alu locations that were segregating (MEI-seg) within the human population had a similar association with a change in gene expression as the MEIs previously identified between humans and primates. MEI-segs were identified from the CEU individuals typed in the 1000 genomes project. Expression data for the same CEU individuals was available from the Montgomery et al. dataset. Gene expression from Montgomery et al. was filtered to include only genes that contained an MEI-seg between the transcription start and transcription stop sites. 547 genes matched this criterion. Gene expression was compared between males and females containing MEI-seg (MEI-seg(+)). 338 genes (62\% of total, Z-test p < 3.8e-08) had a decrease in mean expression in males versus females (figure \ref{fig:femalemalecase}). Conversely when the same genes were compared between males and females without an MEI-seg (MEI-seg(-)), only 266 genes were decreased in males versus females (49\% of total, Z-test p < 0.64) (figure \ref{fig:femalemalecontrol}). A Student\rq s t-test showed that this decrease in expression in MEI-seg(+) individuals was significantly larger than in MEI-seg(-) individuals (mean difexp log MEI-seg(+) = 0.009; mean difexp log MEI-seg(-) = -0.002; Student\rq s t-test p < 1.87 e-25). 
+Alu, L1, and SVA are retrotranspositionally competent in humans resulting in mobile element variation within the human population \citep{Ewing2010, Stewart2011}. Stewart et al. annotated a subset of MEIs that are polymorphic between humans. It was next important to check if MEI-Alu locations that were segregating (MEI-seg) within the human population had a similar association with a change in gene expression as the MEIs previously identified between humans and primates. MEI-segs were identified from the CEU individuals typed in the 1000 genomes project. Expression data for the same CEU individuals was available from the Montgomery et al. dataset. Gene expression from Montgomery et al. was filtered to include only genes that contained an MEI-seg between the transcription start and transcription stop sites. 547 genes matched this criterion. Gene expression was compared between males and females containing MEI-seg (MEI-seg(+)). 338 genes (62\% of total, Z-test p < 3.8e-08) had a decrease in mean expression in males versus females (figure \ref{fig:femalemalecase}). Conversely when the same genes were compared between males and females without an MEI-seg (MEI-seg(-)), only 266 genes were decreased in males versus females (49\% of total, Z-test p < 0.64) (figure \ref{fig:femalemalecontrol}). A Student\rq s t-test showed that this decrease in expression in MEI-seg(+) individuals was significantly larger than in MEI-seg(-) individuals (mean difexp log MEI-seg(+) = 0.009; mean difexp log MEI-seg(-) = -0.002; Student\rq s t-test p < 1.87 e-25). 
 
     %female male cases
     \begin{figure}[!ht]
         \centering
         \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{femalemale_case.png}
-       \caption{\textbf{Differential expression between sexes in individuals containing the MEI\\}
+       \caption[Differential expression between sexes in individuals containing the MEI]{\textbf{Differential expression between sexes in individuals containing the MEI\\}
        Gene expression of females containing an MEI were compared to the same genes in males who also contained the same MEI. The t-test p-values of these comparisons were plotted verus the difference between the means of the two groups. 
        }
         \label{fig:femalemalecase}
@@ -309,7 +305,7 @@ Alu, L1, and SVA are retrotranspositionally competent in humans resulting in mob
     \begin{figure}[!ht]
         \centering
         \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{femalemale_control.png}
-       \caption{\textbf{Differential expression between sexes in individuals lacking the MEI\\}
+       \caption[Differential expression between sexes in individuals lacking the MEI]{\textbf{Differential expression between sexes in individuals lacking the MEI\\}
         Gene expression of females lacking an MEI were compared to the same genes in males who also lacked the MEI. The t-test p-values of these comparisons were plotted verus the difference between the means of the two groups. 
        }
         \label{fig:femalemalecontrol}
@@ -324,7 +320,7 @@ Expression values were compared within each sex group to determine if the effect
     \begin{figure}[!ht]
         \centering
         \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{malemale_femfem.png}
-       \caption{\textbf{Comparison within groups of the same sex, between MEI+ and MEI- individuals\\}
+       \caption[Comparison within groups of the same sex, between MEI+ and MEI- individuals]{\textbf{Comparison within groups of the same sex, between MEI+ and MEI- individuals\\}
        Differences in expression were calculated between females containing the MEI and lacking the MEI (Fem) or between males containing the MEI and lacking the MEI (Male). A red line is drawn at zero, where no change would be expected. 
        }
         \label{fig:malemale_femfem}
@@ -334,7 +330,7 @@ Expression values were compared within each sex group to determine if the effect
 
 The genes contained an MEI-Alu, Chimp were tested for functional pathway enrichment. Splice variants were significantly enriched in this group (N = 1199, Benjamini corrected p < 4.1e-71), as well as neuron projection development (N = 54, Benjamini corrected p < 7.7e-04), brain expression (N = 1137, Benjamini corrected p < 9.2e-36), and phosphatidylinositol signaling (N = 19, Benjamini corrected p < 9.4e-02). The complete list is presented in supplementary table 2. 
 
-Baillie et al. previously showed that there is somatic retrotransposition in the human brain (Baillie et al., 2011). Within the list of genes that were deemed somatic inserts in Baillie et al., there was a significant overlap with genes associated with Autism Spectrum Disorder (ASD) (Hussman et al., 2011) (OR = 7.29; CI 95\% = 5.01 -- 10.73 ; Fisher\rq s exact p < 6.59e-27) (Supplementary table 2).  Therefore an additional functional enrichment test was performed to determine if genes containing MEI were enriched for genes related to ASD. MEI-Alu, Chimp were enriched for ASD genes. ASD genes were annotated using the Autism Database (AUTdb) \cite{Basu2009}. ASD genes were significantly enriched for genes containing MEI-Alu, Chimp (OR = 1.83; CI 95\% = 1.12 -- 2.90; Fisher\rq s exact p < 0.01). More strikingly, ASD genes were significantly enriched within genes containing the human polymorphic MEI-segs (OR = 5.10; CI 95\% = 3.48 -- 7.41; Fisher\rq s exact p < 6.09e-16). 
+Baillie et al. previously showed that there is somatic retrotransposition in the human brain (Baillie et al., 2011). Within the list of genes that were deemed somatic inserts in Baillie et al., there was a significant overlap with genes associated with Autism Spectrum Disorder (ASD) (Hussman et al., 2011) (OR = 7.29; CI 95\% = 5.01 -- 10.73 ; Fisher\rq s exact p < 6.59e-27) (Supplementary table 2).  Therefore an additional functional enrichment test was performed to determine if genes containing MEI were enriched for genes related to ASD. MEI-Alu, Chimp were enriched for ASD genes. ASD genes were annotated using the Autism Database (AUTdb) \citep{Basu2009}. ASD genes were significantly enriched for genes containing MEI-Alu, Chimp (OR = 1.83; CI 95\% = 1.12 -- 2.90; Fisher\rq s exact p < 0.01). More strikingly, ASD genes were significantly enriched within genes containing the human polymorphic MEI-segs (OR = 5.10; CI 95\% = 3.48 -- 7.41; Fisher\rq s exact p < 6.09e-16). 
 
 Similar to all MEI-seg genes, the ASD genes containing an MEI-seg showed sex-specific differences in expression. Differences in expression between MEI-seg (+) and MEI-seg (-) males were significantly greater than between MEI-seg (+) versus MEI-seg (-) females (mean dif logExp male = -0.008; mean dif logExp female = -0.002 ; Student\rq s p < 0.04) (figure 5b).
 
@@ -347,8 +343,15 @@ Similar to all MEI-seg genes, the ASD genes containing an MEI-seg showed sex-spe
  %      \caption{\normalsize{\textbf{Basewise conservation of RORA-1 motif in AS and S Alu \\} Conservation scores were derived from phyloP conservation scores where a positive value indicates positive selection and a negative value indicates possible negative selection. AS and S values were normalized by intergenic values}}
  %       \label{fig:alurora}
  %   \end{figure}
-    
+
+\renewcommand{\thepage}{\arabic{page}}% Arabic page numbers
 \bibliographystyle{apacite}
+
+\setlength\bibsep{10pt}%single space between references
+\large\singlespacing{
 \bibliography{library}
+}
+
 \end{document}
+
 
