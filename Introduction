@@ -73,11 +73,19 @@
 \widowpenalty=10000 % to remove single lines
 \clubpenalty=10000 %also to remove single lines
 
+
+
+
+
+
 %Document
 \begin{document}
 \renewcommand{\thepage}{\roman{page}}% Roman page numbers
 \setcounter{page}{3}
-\large{\tableofcontents
+\large{
+\tableofcontents
+\listoffigures
+\listoftables
 }
 \doublespace\large{
 \chapter{\\INTRODUCTION }
@@ -117,7 +125,7 @@ A major distinction of L1 is their ability to encode the proteins required for r
       \begin{figure}[!ht]
       \centering
         \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{l1.pdf}
-        \caption{\normalsize{\textbf{Structure of Human Retrotransposons\\} The simplified structures of  LINE-1 (L1), Alu, and SINE-VNTR-Alu (SVA) are shown here. \textbf{L1} is broken up into three main regions: 5\rq - UTR, the protein coding region, and the 3\rq - region and is approximately 6kb long. The 5\rq -UTR regions contains a Pol-II promoter sequence with bidirectional activity (green arrows). This region also contains homology to the Alu sequence. Sense transcription of L1 copies the bicistronic mRNA encoding two open reading frames (ORF1 and ORF2; red boxes). There is also a 3\rq region of the L1 transcript that contains a 3\rq -UTR (dark green)  and an active polyadenylation sequence as well as a polyA tail (light green).\textbf{Alu} is transcribed by the Pol-III via internal A and B box sequences (red boxes) and is approximately 280 - 300 bp long. The center region of Alu is rich in adenosines and often is of the sequence A$_{6}$TACA$_{6}$ . The 3\rq region of the Alu also contains a polyA tail (light green). \textbf{SVA} is a composite elements that is roughly 2kb long. The 5\rq portion of SVA contains a CCCTCT$_{n}$ repeat sequence. This is linked to an Alu-like sequence, followed by a region containing a variable number of tandem repeats (VNTR). This is then linked to a SINE-like sequence, and finally there is a polyA sequence at the 3\rq end.}}
+        \caption[Structure of Human Retrotransposons]{\normalsize{\textbf{Structure of Human Retrotransposons\\} The simplified structures of  LINE-1 (L1), Alu, and SINE-VNTR-Alu (SVA) are shown here. \textbf{L1} is broken up into three main regions: 5\rq - UTR, the protein coding region, and the 3\rq - region and is approximately 6kb long. The 5\rq -UTR regions contains a Pol-II promoter sequence with bidirectional activity (green arrows). This region also contains homology to the Alu sequence. Sense transcription of L1 copies the bicistronic mRNA encoding two open reading frames (ORF1 and ORF2; red boxes). There is also a 3\rq region of the L1 transcript that contains a 3\rq -UTR (dark green)  and an active polyadenylation sequence as well as a polyA tail (light green).\textbf{Alu} is transcribed by the Pol-III via internal A and B box sequences (red boxes) and is approximately 280 - 300 bp long. The center region of Alu is rich in adenosines and often is of the sequence A$_{6}$TACA$_{6}$ . The 3\rq region of the Alu also contains a polyA tail (light green). \textbf{SVA} is a composite elements that is roughly 2kb long. The 5\rq portion of SVA contains a CCCTCT$_{n}$ repeat sequence. This is linked to an Alu-like sequence, followed by a region containing a variable number of tandem repeats (VNTR). This is then linked to a SINE-like sequence, and finally there is a polyA sequence at the 3\rq end.}}
         \label{fig:l1}
     \end{figure}
 
@@ -135,7 +143,7 @@ The present day Alu has succeeded in capitalizing on the retrotransposition abil
       \begin{figure}[!h]
       \centering
         \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{alu_line.pdf}
-        \caption{\normalsize{\textbf{Evolution of the Human Alu Sequence} The middle green flow diagram depicts the proposed evolution of modern-day Alu sequences. A 7SL sequence directly evolved into Fossil Alu Monomer (FAM) by gene duplication. FAM then evolved into two distinct sequences, Fossil Left Alu Monomer (FLAM) and Fossil Right Alu Monomer (FRAM). These two sequences were joined by a central A-rich region, becoming the ancient version of Alu. Alu then subsequently amplified as well as mutated, thus giving rise to the subfamilies in modern primates (AluJ, AluS, and AluY). On the right in red is the approximate time in millions of years since the event occurred. On the left in orange are hallmarks in human evolution that occurred at similar time points.}}
+        \caption[Evolution of the Human Alu Sequence]{\normalsize{\textbf{Evolution of the Human Alu Sequence\\} The middle green flow diagram depicts the proposed evolution of modern-day Alu sequences. A 7SL sequence directly evolved into Fossil Alu Monomer (FAM) by gene duplication. FAM then evolved into two distinct sequences, Fossil Left Alu Monomer (FLAM) and Fossil Right Alu Monomer (FRAM). These two sequences were joined by a central A-rich region, becoming the ancient version of Alu. Alu then subsequently amplified as well as mutated, thus giving rise to the subfamilies in modern primates (AluJ, AluS, and AluY). On the right in red is the approximate time in millions of years since the event occurred. On the left in orange are hallmarks in human evolution that occurred at similar time points.}}
         \label{fig:alu_line}
     \end{figure}
 
@@ -288,7 +296,7 @@ Other than the direct amplification of the RT, there are other structural effect
       \begin{figure}[!h]
       \centering
         \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{dsbr.pdf}
-        \caption{\normalsize{\textbf{Example Mechanisms of RT-mediated Deletions\\}a) Non-Allelic Homlogous Recombination (NAHR). The medium green and dark green boxes represent non-repetitive portions of the genomic DNA. The light green box represents a gene. The orange arrows are RTs where the arrow is pointed in the direction of transcription. The dotted line represents a site of a DNA double strand break (DSB), the L1 Endonuclease is not required for this DSB. The regions of homology between the two inverted RTs bind to eachother and facilitate initiation of the homologous recombination pathway. When the DSB is resolved along the red line, a deletion will occur. b) L1-Endonuclease Independent Retrotransposition. The medium green and dark green boxes again represent the non-repetitive portion of the genomic DNA. The short orange boxes represent genomic regions wtih homology to the retrotransposon (long orange box). Upon creation of an L1-endonuclease independent DSB, end-repair removes nucleotides from the region near the break. The RT then binds to the regions of homology and is used as a template for reverse transcription (red line), thereby healing the DSB at the cost of a small deletion.}}
+        \caption[Example Mechanisms of RT-mediated Deletions]{\normalsize{\textbf{Example Mechanisms of RT-mediated Deletions\\}a) Non-Allelic Homlogous Recombination (NAHR). The medium green and dark green boxes represent non-repetitive portions of the genomic DNA. The light green box represents a gene. The orange arrows are RTs where the arrow is pointed in the direction of transcription. The dotted line represents a site of a DNA double strand break (DSB), the L1 Endonuclease is not required for this DSB. The regions of homology between the two inverted RTs bind to eachother and facilitate initiation of the homologous recombination pathway. When the DSB is resolved along the red line, a deletion will occur. b) L1-Endonuclease Independent Retrotransposition. The medium green and dark green boxes again represent the non-repetitive portion of the genomic DNA. The short orange boxes represent genomic regions wtih homology to the retrotransposon (long orange box). Upon creation of an L1-endonuclease independent DSB, end-repair removes nucleotides from the region near the break. The RT then binds to the regions of homology and is used as a template for reverse transcription (red line), thereby healing the DSB at the cost of a small deletion.}}
         \label{fig:dsbr}
     \end{figure}
 
