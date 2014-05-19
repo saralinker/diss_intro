@@ -256,6 +256,8 @@ To determine the effect of the 5\rq -UTR on RT density, the effect of the 5\rq-U
     
 Once genes with 2$^\circ$  5\rq-UTRs were identified, they were further grouped into subsets based on the decile location of the 2$^\circ$ 5\rq-UTRs. For example, Group I genes contained all 2$^\circ$ 5\rq-UTRs in the first decile. Group II contained genes where the 2$^\circ$ 5\rq-UTRs were in the second decile, and so on for all ten deciles (figure \ref{fig:5utr_diag}). The distribution of  5\rq -UTRs within genes with no  2$^\circ$ 5\rq-UTR is presented in figure \ref{fig:utr_nosecond}, and the distribution within genes these containing a  2$^\circ$ 5\rq-UTR is presented in figure \ref{fig:utr_second}. As expected, the number of 5\rq -UTRs were generally higher in the decile containing the 2$^\circ$ 5\rq-UTR (normalized decile 0). This indicated that the procedure of normalizing by  2$^\circ$ 5\rq-UTR enriched for 5\rq -UTR sequences in deciles other than the first decile.
 
+In order to interpret the findings properly, it is important to note that each normalized decile did not contain equal numbers of measurements. This is due to the fact that the calculations of upstream and downstream values were contingent on the placement of the 0 decile. Therefore if, before normalization, the zero decile was originally decile 9, there would only be one decile downstream capable of being analyzed and the remaining downstream deciles would not have a value attributed to them. For this reason all deciles are shown in the analyses, however only the 0 decile was used to calculate changes in genes with a 2$^\circ$ 5\rq-UTR versus those that did not have an internal 5\rq-UTR. 
+
         
     %Figure 5'-UTR in genes with no internal 5'-UTR
     \begin{figure}[!ht]
@@ -276,13 +278,13 @@ Once genes with 2$^\circ$  5\rq-UTRs were identified, they were further grouped 
     
 
 \subsubsection{\textit{Alu}}
- The frequencies of all AS and S L1 and Alu were calculated within 2$^\circ$ 5\rq -UTR gene groups and compared to expectation based on genes lacking any 2$^\circ$ 5\rq-UTRs.  AS Alu in genes containing 2$^\circ$ 5\rq -UTRs were present in similar proportions to the AS Alu in genes lacking 2$^\circ$ UTRs (figure \ref{fig:2utr_ASalu}). However, the normalized 0, decile was significantly reduced compared to the same decile in genes without 2$^\circ$ UTRs (mean$_{with\;2^\circ\;5\rq -UTR}$: 0.049 mean$_{without \;2^\circ\;5\rq -UTR}$: 0.058; Student's t-test p < 0.039). S Alu were also similar to expectation except for within the 0 decile (figure \ref{fig:2utr_Salu}). The 0 decile was significantly decreased beyond expectation (mean second UTR: 0.41 ; mean no second UTR: 0.46 ; Student's t-test p < 5.2e-04) similar to the AS Alu. 
+ The frequencies of all AS and S L1 and Alu were calculated within 2$^\circ$ 5\rq -UTR gene groups and compared to expectation based on genes lacking any 2$^\circ$ 5\rq-UTRs.  Overall AS Alu in genes containing 2$^\circ$ 5\rq -UTRs were present in similar proportions to the AS Alu in genes lacking 2$^\circ$ UTRs (figure \ref{fig:2utr_ASalu}). The normalized 0 decile was significantly reduced compared to the same decile in genes without 2$^\circ$ UTRs (mean$_{with\;2^\circ\;5\rq -UTR}$: 0.049 mean$_{without \;2^\circ\;5\rq -UTR}$: 0.058; Student's t-test p < 0.039). S Alu were also similar to expectation except for within the 0 decile (figure \ref{fig:2utr_Salu}). The 0 decile was significantly decreased beyond expectation (mean$_{with\;2^\circ\;5\rq -UTR}$: 0.41 ; mean$_{without \;2^\circ\;5\rq -UTR}$:  0.46 ; Student's t-test p < 5.2e-04) similar to the AS Alu. 
 
     %Figure 5'-UTR AS Alu
     \begin{figure}[!ht]
         \centering
-        %\includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{2utr_ASalu.pdf}
-        \includegraphics[scale=1,width=\textwidth]{2utr_ASalu.pdf}
+        \includegraphics[width=0.7\textwidth,natwidth=610,natheight=642]{2utr_ASalu.pdf}
+       % \includegraphics[scale=0.5,width=\textwidth]{2utr_ASalu.pdf}
         \caption[Change in AS Alu density in the presence of a 2$^\circ$ 5\rq-UTR]{\normalsize{\textbf{Change in AS Alu density in the presence of a 2$^\circ$ 5\rq-UTR\\}Proportion of 2$^\circ$ AS Alu proportions were calculated as described in figure \ref{fig:5utr_diag}. All proportions were normalized by the expected proportion based on RefSeq genes that have no 2$^\circ$ within the gene boundaries. }}
         \label{fig:2utr_ASalu}
     \end{figure}
@@ -292,21 +294,23 @@ Once genes with 2$^\circ$  5\rq-UTRs were identified, they were further grouped 
     %Figure 5'-UTR S Alu
     \begin{figure}[!ht]
         \centering
-        %\includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{2utr_Salu.pdf}
-        \includegraphics[scale=1,width=\textwidth]{2utr_Salu.pdf}
+        \includegraphics[width=0.7\textwidth,natwidth=610,natheight=642]{2utr_Salu.pdf}
+        %\includegraphics[scale=0.5,width=\textwidth]{2utr_Salu.pdf}
         \caption[Change in S Alu density in the presence of a secondary 5\rq-UTR]{\normalsize{\textbf{Change in S Alu density in the presence of a secondary 5\rq-UTR\\}Calculated similarly to figure \ref{fig:2utr_ASalu}}}
         \label{fig:2utr_Salu}
     \end{figure}
     
     
 \subsubsection{\textit{L1}}
-The distribution of AS L1 within genes containing a 2$^\circ$ 5\rq-UTR was somewhat similar to that observed with AS Alu (figure \ref{fig:2utr_ASl1}). The 0 decile of AS L1 was significantly reduced over expectation (mean second UTR: 0.057 ; mean no second UTR: 0.071 ; Student's t-test p < 0.007), although the S L1 were not significantly reduced (p = 0.47) (figure \ref{fig:2utr_Sl1}). These results showed that there was a decrease of AS L1 and Alu in the presence of a 5\rq-UTR. 
+The distribution of AS L1 within genes containing a 2$^\circ$ 5\rq-UTR was somewhat similar to that observed with AS Alu (figure \ref{fig:2utr_ASl1}). The 0 decile of AS L1 was significantly reduced over expectation (mean$_{with\;2^\circ\;5\rq -UTR}$: 0.057 ; mean$_{without\;2^\circ\;5\rq -UTR}$: 0.071 ; Student's t-test p < 0.007), although the S L1 were not significantly reduced (p = 0.47) (figure \ref{fig:2utr_Sl1}).
+
+Togther the decrease of AS Alu and L1 in the decile containing the 2$^\circ$ 5\rq-UTR indicated that there was an effect of the 5\rq -UTR on RT density that was independent of the position within the gene. Interestingly, this finding is contrary to expectation. Since the RT density was increased near the TSS and therefore near the 5\rq -UTR it was hypothesized that there would be an increase of RTs near the 5\rq -UTR. 
     
         %Figure 5'-UTR AS L1
     \begin{figure}[!ht]
         \centering
-        %\includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{2utr_ASl1.pdf}
-        \includegraphics[scale=1,width=\textwidth]{2utr_ASl1.pdf}
+        \includegraphics[width=0.7\textwidth,natwidth=610,natheight=642]{2utr_ASl1.pdf}
+        %\includegraphics[scale=1,width=\textwidth]{2utr_ASl1.pdf}
         \caption[Change in AS L1 density in the presence of a secondary 5\rq-UTR]{\normalsize{\textbf{Change in AS L1 density in the presence of a secondary 5\rq-UTR\\}Calculated similarly to figure \ref{fig:2utr_ASalu}}}
         \label{fig:2utr_ASl1}
     \end{figure}
@@ -316,41 +320,69 @@ The distribution of AS L1 within genes containing a 2$^\circ$ 5\rq-UTR was somew
     %Figure 5'-UTR S L1
     \begin{figure}[!ht]
         \centering
-        %\includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{2utr_Sl1.pdf}
-        \includegraphics[scale=1,width=\textwidth]{2utr_Sl1.pdf}
+        \includegraphics[width=0.7\textwidth,natwidth=610,natheight=642]{2utr_Sl1.pdf}
+        %\includegraphics[scale=1,width=\textwidth]{2utr_Sl1.pdf}
         \caption[Change in S L1 density in the presence of a 2$^\circ$ 5\rq-UTR]{\normalsize{\textbf{Change in S L1 density in the presence of a 2$^\circ$ 5\rq-UTR\\}Calculated similarly to figure \ref{fig:2utr_ASalu}}}
         \label{fig:2utr_Sl1}
     \end{figure}
     
-\subsubsection{Coding Sequence Accounts for the Variablility Identified in the Antisense Orientation}
+\subsection{Coding Sequence Accounts for Variability Near 5\rq -UTR}
 
-The results so far suggested that there was a decrease of RTs near the 2$^\circ$ 5\rq -UTR when the position within the gene was normalized. This is contradictory to commonly written hypothesis that RTs are increased near 5' -UTRs due to positive selection of regulatory features. Importantly, in section \ref{sec:cds} it was shown that RTs were inversely correlated with CDS density. Since the first CDS exon of a gene is often, but not always, connected to the 5\rq -UTR, it was important to determine if the CDS density had an effect on the RT distribution observed in genes containing 2$^\circ$ 5\rq -UTRs. Importantly the CDS density within genes containing 2$^\circ$ 5\rq -UTRs was altered compared to the CDS density in genes with no internal 2$^\circ$ 5\rq -UTRs (figure \ref{fig:25_cdsmulti}). The most striking feature was the increase in CDS density in the decile containing the 2$^\circ$ 5\rq -UTR. This further substantiated studying the effect of CDS density on RT density in genes containing 2$^\circ$ 5\rq -UTRs.
+The results so far suggested that, contrary to expectation, there was a decrease of RTs near the 2$^\circ$ 5\rq -UTR when the position within the gene was controlled for. Importantly, in section \ref{sec:cds} it was shown that RTs were inversely correlated with CDS density. Since the first CDS exon of a gene is often, but not always, connected to the 5\rq -UTR, it was important to determine if the CDS density had an effect on the RT distribution observed in genes containing 2$^\circ$ 5\rq -UTRs.
 
-The CDS density and Alu density within non-2$^\circ$ 5\rq -UTR containing genes was used to predict the expected Alu density in 2$^\circ$ 5\rq -UTR containing genes. To accomplish this, Alu density from non-2$^\circ$ 5\rq -UTR containing genes was regressed on CDS density from the same genes. The expected RT density was then predicted using the CDS density from genes containing 2$^\circ$ 5\rq -UTRs. The actual values were plotted next to the predicted values in figure \ref{fig:25_cdspred}. In the AS orientation, there was no difference in Alu density from what was expected based on CDS density. Conversely, in the S orientation, there were less Alu in regions containing a 5\rq-UTR than expected based on CDS density alone. 
-
-Overall these results are important to the field of RT research. They support a shift in the common thinking of RT accumulation within genes. Previous speculations were that RTs are increased near 5\rq -UTRs due to advantageous effects of the RT (e.g.: CpGs, enhancers) \citep(VanDeLagemaat2003). Conversely, this current research suggests that the increase of RTs near the 5\rq - UTR is not an effect of the UTR, but an effect of the lack of CDS sequences. Moreover, there was no evidence of an increase near the 5\rq -UTR when position within the gene was normalized. Instead, there was significant decrease in Alu density in the S orientation.
-
+\subsubsection{CDS Density Differs Near 2$^\circ$ 5\rq -UTR}
 
         %Figure CDS (secondary 5'-UTR)
     \begin{figure}[!ht]
         \centering
-      \includegraphics[scale=1,width=\textwidth]{25utr_cdsmulti.pdf}
+      \includegraphics[width=0.7\textwidth,natwidth=610,natheight=642]{25utr_cdsmulti.pdf}
         \caption[CDS density in  2$^\circ$ 5\rq-UTR gene groups]{\normalsize{\textbf{CDS density in  2$^\circ$ 5\rq-UTR gene groups\\}}}
         \label{fig:25_cdsmulti}
     \end{figure}
     
+First, the CDS density within genes containing 2$^\circ$ 5\rq -UTRs was identified. Indeed the CDS density within genes that containing a 2$^\circ$ 5\rq -UTRs were altered compared to the CDS density in genes with no internal 2$^\circ$ 5\rq -UTRs (figure \ref{fig:25_cdsmulti} and figure \ref{fig:cds_noUTR}). The most striking feature was the CDS density in the decile containing the 2$^\circ$ 5\rq -UTR. These genes showed a significant increase in CDS density compared to expectation based on genes lacking internal 5\rq -UTRs (table \ref{table:cdssig}) . This further substantiated studying the effect of CDS density on RT density in genes containing 2$^\circ$ 5\rq -UTRs.
+
+% CDS density in 5'UTR genes
+\begin{table}[ht]
+\large
+\centering
+\begin{tabular}{ccccccc}
+  \hline
+ ${2^\circ}$ decile & CDS$_{2^\circ}$& CDS all deciles$_{2^\circ}$ & CDS$_{no 2^\circ}$& Prop,$_{2^\circ}$ & Prop,$_{no\;2^\circ}$ &  p \\ 
+  \hline
+ 2 & 157 & 1774 &12526& 0.09 & 0.06 & 3.06e-07 \\ 
+   3 & 118 & 1080 &14264& 0.11 & 0.07 & 7.55e-08 \\ 
+   4 & 110 & 984 &16055& 0.11 & 0.08 & 3.24e-05 \\ 
+   5 & 111 & 943 &18119& 0.12 & 0.09 & 6.08e-04 \\ 
+   6 & 101 & 794 &20213& 0.13 & 0.10 & 3.00e-03 \\ 
+   7 & 103 & 781 &22518 &0.13 & 0.11 & 2.63e-02 \\ 
+   8 & 104 & 774 &24746 &0.13 & 0.12 & 1.50e-01 \\ 
+   9 & 100 & 659 &28504 &0.15 & 0.14 & 2.31e-01 \\ 
+   \hline
+\end{tabular}
+\caption[CDS density in genes with 2$^\circ$ 5\rq -UTRs]{\normalsize{\textbf{CDS density in genes with 2$^\circ$ 5\rq -UTRs\\}
+CDS were counted in genes containing 2$^\circ$ 5\rq -UTRs (column CDS$_{2^\circ}$) and those with no internal 2$^\circ$ 5\rq -UTRs
+(column CDS$_{no 2^\circ}$). The counts in each row correspond to the decile tabulated in the column denoted as ${2^\circ}$ decile. For genes containing a 2$^\circ$ 5\rq -UTR, this was the decile containing the 2$^\circ$ 5\rq -UTR. The proportions of CDS were calculated by normalizing versus all of the CDS in all deciles. For genes containing a 2$^\circ$ 5\rq -UTR this was the value in column CDS all deciles$_{2^\circ}$. For genes with no 2$^\circ$ 5\rq -UTR, the total CDS in all deciles was 211134. The proportions were compared between genes with and without 2$^\circ$ 5\rq -UTR in the same deciles using a test of equal proportions.}}
+\label{table:cdssig}
+\end{table}
+
+\subsubsection{Effect of CDS density on Alu and L1}
+The CDS density and Alu density within non-2$^\circ$ 5\rq -UTR containing genes was used to predict the expected Alu density in 2$^\circ$ 5\rq -UTR containing genes. To accomplish this, Alu density from non-2$^\circ$ 5\rq -UTR containing genes was regressed on CDS density from the same genes. The expected RT density was then predicted using the CDS density from genes containing 2$^\circ$ 5\rq -UTRs. For Alu, the actual values were plotted next to the predicted values in figure \ref{fig:25_cdspred}. In the AS orientation, there was no difference in Alu or L1 density from what was expected based on CDS density. Conversely, in the S orientation, there were less Alu and L1 in regions containing a 5\rq-UTR than expected based on CDS density alone (Student's t-test p,$_{Alu}$ < 0.03 ; Student's t-test p,$_{L1}$ < 0.001 ). 
+
+ In summary of the effect of CDS and 5\-rq -UTRs on RT density, there was no evidence of an increase near the 5\rq -UTR when position within the gene was normalized. Instead, there was significant decrease in Alu density in the S orientation. Furthermore, the decrease of AS Alu was largely correlated with an increase in CDS sequence near 5\rq -UTRs. This suggested that the increase of AS RTs near the 5\rq - UTR was not an effect of the UTR, but an effect of the lack of CDS sequences in deciles that were near the 5\-rq end of a gene.
+
         %Figure CDS (secondary 5'-UTR)
     \begin{figure}[!ht]
         \centering
-        \includegraphics[scale=1,width=\textwidth]{25utr_cdspred.pdf}
+        \includegraphics[width=0.7\textwidth,natwidth=610,natheight=642]{25utr_cdspred.pdf}
         \caption[5\rq-UTR density and predictions based on CDS density]{\normalsize{\textbf{5\rq-UTR density and predictions based on CDS density\\}}}
         \label{fig:25_cdspred}
     \end{figure}
     
-
+%stopped here -->
 %AS bias and tissue-specificity
 \subsection{Tissue-Specificity of the Gene Effects Antisense Bias}
-Housekeeping genes have a predictably higher level of Alu frequency than other gene categories \citep{Eller2007}. It was therefore tested whether AS bias remained linear when subdivided by tissue-expression category. The effect of tissue-specificity was tested by both analyzing the slope of the density of AS as well as correlating the distribution of Alu with the distribution of CDS within tissue-specific gene sets. The linear AS slope remained present in housekeeping genes, but it was not maintained in tissue-specific gene sets. Furthermore, the correlation between AS frequency and CDS distribution was reduced within tissue-specific gene sets (table \ref{table:tiscor}). Although the sample size of each gene set trended with the R$^{2}$, sample size was not significantly correlated with R$^{2}$ (R${^2}$ = -0.68; p = 0.062).
+Housekeeping genes have a predictably higher level of Alu frequency than other gene categories \citep{Eller2007}. It was therefore tested whether AS bias remained linear when subdivided by tissue-expression category. The effect of tissue-specificity was tested by both analyzing the slope of the density of AS as well as by correlating the distribution of Alu with the distribution of CDS within tissue-specific gene sets. The linear AS slope remained present in housekeeping genes, but it was not maintained in tissue-specific gene sets. Furthermore, the correlation between AS frequency and CDS distribution was reduced within tissue-specific gene sets (table \ref{table:tiscor}). Although the sample size of each gene set trended with the R$^{2}$, sample size was not significantly correlated with R$^{2}$ (R${^2}$ = -0.68; p = 0.062).
 
     % Sat Apr 12 09:10:21 2014
     %Tissue specificity table
