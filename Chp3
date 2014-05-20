@@ -670,30 +670,33 @@ Conservation of the Alu-specific Pol-III A-box (figure \ref{fig:alupol3}) was al
 There are four CpGs within the Pol-III A-box consensus sequence. The cytosine within a CpG context is more likely to undergo mutation than other nucleotides due to the common deamination of 5-methylcytosine. Surprisingly, only one of the four CpGs present within the queried sequence (position 20) was less conserved than the same position intergenically. Two bp in the Pol-III sequence were more highly conserved within genes than intergenically. These were the cytosine at position 3 and guanine at position 15.
 
 \section{Interaction between Gene-specific and Retrotransposon-specific Variables}
+These results have shown that both gene-specific and RT-specific variables were associated with RT density. It was therefore important to analyze the interaction of these variables. The density of RTs was therefore analyzed based on both the tissue-specific expression of the gene as well as the binding motifs contained within the element.
+
     %Functional Binding Motifs Effect Maintenance, Tissue Specific
 \subsection{Functional Binding Motifs Effect Maintenance, Tissue Specific}
-Lastly, it was determined how the RT-specific variable of binding motifs was effected by the gene-specific variable of tissue-specific gene expression. To reduce the number of statistical tests, analysis was restricted to the deciles that contained the extremes of Alu and L1 frequency. These were deciles 2 and 9, otherwise defined as the first and last bins within the linear range of Alu/L1 frequency (section \ref{sec:as_dec}). To correct for differences in overall abundance of RTs depending on placement, motif frequencies were normalized by the count of AS or S elements within the respective bin. This was repeated separately for tissue-specific (TS) genes and house-keeping (HK) genes. 
+To reduce the number of statistical tests, analysis was restricted to the internal deciles that contained the extremes of Alu and L1 frequency. These were deciles 2 and 9 (figure \ref{fig:decile}), otherwise defined as the first and last bins within the linear range of Alu/L1 frequency (section \ref{sec:as_dec}). To correct for differences in overall abundance of RTs depending on genomic location, motif frequencies were normalized by the count of AS or S elements within the respective bin. This was repeated separately for tissue-specific (TS) genes and house-keeping (HK) genes. All values are tabulated in Appendix table \ref{table:binding}.
 
 \subsubsection{\textit{Alu}}
 
-    %Figure Alu sense (TS / HK) motifs
-    \begin{figure}[!ht]
-        \centering
-        \includegraphics[scale=1,width=\textwidth]{alu_tshkmotifs_value.pdf}
-       \caption[Alu-contained binding motifs in tissue-specific and housekeeping genes]{\normalsize{\textbf{Alu-contained binding motifs in tissue-specific and housekeeping genes\\}}}
-        \label{fig:alu_tshkmotifs_value}
-    \end{figure}
-    
-    
+    %%Figure Alu sense (TS / HK) motifs
+    %\begin{figure}[!ht]
+    %    \centering
+    %  \includegraphics[width=0.7\textwidth,natwidth=610,natheight=642]{alu_tshkmotifs_value.pdf}
+    %   \caption[Alu-contained binding motifs in tissue-specific and housekeeping genes]{\normalsize{\textbf{Alu-contained binding motifs in tissue-specific and housekeeping genes\\}}}
+    %    \label{fig:alu_tshkmotifs_value}
+    %\end{figure}
+
         %Figure Alu sense (TS / HK) motifs p-values
     \begin{figure}[!ht]
         \centering
-        \includegraphics[scale=1,width=\textwidth]{alu_tshkmotifs.pdf}
+        \includegraphics[width=0.7\textwidth,natwidth=610,natheight=642]{alu_tshkmotifs.pdf}
        \caption[Alu-contained binding motifs in tissue-specific and housekeeping genes]{\normalsize{\textbf{Alu-contained binding motifs in tissue-specific and housekeeping genes\\}}}
         \label{fig:alumotifs_tshk}
     \end{figure}
 
-Since there was no normalization against intergenic in this analysis, the changes in proportion due to each motif was observable for this analysis (figure \ref{fig:alumotifs_tshk}). The proportion of motifs in each placement within TS genes were compared to the counterpart in HK genes. In general proportions of motifs in TS genes were larger than HK genes (87 of 140). 29 of the 140 comparisons were significant after Bonferonni correction ($\alpha$ = 3.6e-04) (figure \ref{fig:alumotifs_tshk}). Many of these comparisons were from polyadenylation sequences (N = 5 of 7 possible), and LUN1 (N = 4 of 7 possible). The majority of the significant comparisons were derived from whole gene comparisons (10 of 29 tests).
+%Motifs were normalization against the total number of elements within each gene category, however they were not normalized for the proportion of elements in intergenic regions. It is therefore easy to observe that a subset of binding motifs, such as GFI and LUN1, were more common than other motifs such as OC2 and Pol-III (figure \ref{fig:alumotifs_tshk}).
+
+The proportion of motifs in each placement within TS genes were compared to the counterpart in HK genes (figure \ref{fig:alumotifs_tshk}). In general, proportions of motifs in TS genes were larger than HK genes (87 of 140; 62\%; Z-test p < 5.2e-04). 29 of the 140 comparisons between HK and TS genes were significant after Bonferonni correction ($\alpha$ = 3.6e-04) . Many of these comparisons were from polyadenylation sequences (N = 5 of 7 possible), and LUN1 (N = 4 of 7 possible). The majority of the significant comparisons were derived from whole gene comparisons (10 of 29 tests).
 
 \subsubsection{\textit{L1}}
 
