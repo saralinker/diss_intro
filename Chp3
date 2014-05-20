@@ -654,6 +654,7 @@ Conservation values used in this analysis were derived from the phyloP basewise 
 
 Polyadenylation sequences were the first motif analyzed since they were present within both Alu and L1 consensus sequences, and were reduced within genes compared to intergenic regions. Basewise conservation scores were averaged for each base within the polyadenylation sequence of either L1 (figure \ref{fig:l1polyA}) or Alu (figure \ref{fig:alupolyA}). L1 and Alu elements were first separated into AS and S elements before conservation scores were calculated. Interestingly, both Alu and L1 showed a decrease in conservation at the central T base. Moreover, polyadenylation signals of L1 in the sense orientation had a lower conservation score on average than those of AS oriented L1. 
 
+These results indicated that each position within a RT-contained binding motif had a different expectation of conservation. Interestingly, the polyadenylation sequence, had a similar dynamic of conservation  independent of the element within which it resided. Moreover, the S L1 had a complete reduction of the polyadenylation signal, whereas the AS L1, S Alu, and AS Alu all had reductions only in the central thymine. 
     
         %Figure alu pol3
     \begin{figure}[!ht]
@@ -664,11 +665,9 @@ Polyadenylation sequences were the first motif analyzed since they were present 
         \label{fig:alupol3}
     \end{figure}
    
-Conservation of the Alu-specific Pol-III A-box (figure \ref{fig: alupol3}) was also examined in both the AS and S orientations. The Pol-III A-box is required for transcription and retrotransposition of Alu. When normalized versus intergenic values, there was no major difference between AS and S conservation signals, similar to what was observed for the polyadenylation signal within Alu.
+Conservation of the Alu-specific Pol-III A-box (figure \ref{fig:alupol3}) was also examined in both the AS and S orientations. The Pol-III A-box is required for transcription and retrotransposition of Alu. When normalized versus intergenic values, there was no major difference between AS and S conservation signals, similar to what was observed for the polyadenylation signal within Alu.
 
 There are four CpGs within the Pol-III A-box consensus sequence. The cytosine within a CpG context is more likely to undergo mutation than other nucleotides due to the common deamination of 5-methylcytosine. Surprisingly, only one of the four CpGs present within the queried sequence (position 20) was less conserved than the same position intergenically. Two bp in the Pol-III sequence were more highly conserved within genes than intergenically. These were the cytosine at position 3 and guanine at position 15.
-
-These results indicated that each position within a RT-contained binding motif had a different expectation of conservation. Interestingly, the polyadenylation sequence, had a similar dynamic of conservation  independent of the element within which it resided. Moreover, the S L1 had a complete reduction of the polyadenylation signal, whereas the AS L1, S Alu, and AS Alu all had reductions only in the central thymine. This indicated that S polyadenylation signals may be strongly purified from within genes. Evidence in the literature that S L1 contribute to pre-mature polyadenylation substantiates this hypothesis \citep{Kaer2011}. 
 
 \section{Interaction between Gene-specific and Retrotransposon-specific Variables}
     %Functional Binding Motifs Effect Maintenance, Tissue Specific
