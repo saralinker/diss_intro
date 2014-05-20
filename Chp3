@@ -505,7 +505,7 @@ S L1 grouped by length were also similarly distributed to all S, however full-le
 
 \subsection{Protein Binding Motifs in Alu}
 
-Protein binding motifs other than the Pol-II promoter are highly concentrated in both Alu and L1 consensus sequences. Since L1 containing a Pol-II promoter region were decreased near the 5\rq -region of genes, it was further hypothesized that other protein binding motifs modify the distribution of RTs within genes. Binding motifs within the Alu consensus sequence were analyzed for changes versus expectation. As noted previously, most motifs were only present in a subset of the consensus sequences. Therefore, binding motifs were first counted in a subset of Alu consensus sequences to determine the relative expectation of identifying each motifs (table \ref{table:consensusAlu}). Some motifs were present multiple times within an individual consensus sequence (e.g.: CpG, OTX2), while some motifs were not present in any of the consensus sequences analyzed (e.g: BRN2, DR2). Other than the Pol-III (Pol3) promoter sequence, OTX2, PITX2, and LYF1 were present in all of the consensus sequences in the table. 
+Protein binding motifs other than the Pol-II promoter are highly concentrated in both Alu and L1 consensus sequences. Binding motifs within the Alu consensus sequence were analyzed for changes versus expectation. As noted previously, most motifs were only present in a subset of the consensus sequences. Therefore, binding motifs were first counted in a subset of Alu consensus sequences to determine the relative expectation of identifying each motifs (table \ref{table:consensusAlu}). Some motifs were present multiple times within an individual consensus sequence (e.g.: CpG, OTX2), while some motifs were not present in any of the consensus sequences analyzed (e.g: BRN2, DR2). Other than the Pol-III (Pol3) promoter sequence, OTX2, PITX2, and LYF1 were present in all of the consensus sequences in the table. 
          
          % Sun May  4 13:23:32 2014
 \begin{landscape}%[ht]
@@ -582,16 +582,6 @@ ANOVA was performed to determine if the effect of placement (i.e: sense, antisen
 
     
 \subsection{Protein Binding Motifs in L1}
-The proportions of motifs in intergenic L1 were compared to the proportions within genes. As before, the values were normalized by the total number of elements in the respective region prior to comparison versus intergenic L1. Contrary to the pattern seen with Alu, L1 showed no trend of enrichment based on the placement within the gene. Instead the sequence of the motif had a significant effect on the proportion of motifs (p$_{placement}$ = 0.78; p$_{sequence}$ < 3.56e-13). Furthermore, unlike Alu, all motifs within L1 were reduced in genes compared to intergenically. The largest depletion present was of the SRY motif. 
-
-    %%Figure L1 motifs intergenic
-    %\begin{figure}[!ht]
-    %    \centering
-    %    \includegraphics[width=0.65\textwidth,natwidth=610,natheight=642]{l1_int_motif.pdf}
-    %   \caption{\normalsize{\textbf{}}}
-    %    \label{fig:l1intmotif}
-    %\end{figure}
-
 
     %Figure L1 motifs
     \begin{figure}[!ht]
@@ -601,6 +591,37 @@ The proportions of motifs in intergenic L1 were compared to the proportions with
        \caption[Presence of L1-contained protein-binding motifs within genes]{\normalsize{\textbf{Presence of L1-contained protein-binding motifs within genes\\}Protein binding motifs were examined similarly to those within Alu (figure \ref{fig:alumotifs}).}}
         \label{fig:l1motifs}
     \end{figure}
+
+
+The proportions of motifs in intergenic L1 were compared to the proportions within genes. As before, the values were normalized by the total number of elements in the respective region prior to comparison versus intergenic L1. Contrary to the pattern seen with Alu, L1 showed no trend of enrichment based on the placement within the gene. Instead the sequence of the motif had a significant effect on the proportion of motifs (p$_{placement}$ = 0.78; p$_{sequence}$ < 3.56e-13). Furthermore, unlike Alu, all motifs within L1 were reduced in genes compared to intergenically. SRY was the motif with the largest depletion within genes compared to L1 in intergenic regions (table \ref{table:sry}).
+
+% Tue May 20 14:18:09 2014
+\begin{table}[ht]
+\large
+\centering
+\begin{tabular}{rlrrrr}
+  \hline
+ & {Genomic Region} & N, $_{L1\,with\,SRY}$ & N, $_{L1}$ & Proportion & {Prop.\,test,$_{vs.\,int.}$ p < }\\ 
+  \hline
+1 & Intergenic  & 15770 & 598467& 2.64e-02 & NA  \\ 
+  2 & Genes  & 11840 & 669036& 1.77e-02 & 2.53e-243 \\ 
+  3 & Sense  & 3306& 227066 & 1.46e-02 & 2.31e-222 \\ 
+  4 & Antisense & 8534 & 441970 & 1.93e-02 & 4.10e-122 \\ 
+   \hline
+\end{tabular}
+\caption[Context Dependent Proportions of the SRY Motif in L1 elements]{\normalsize{\textbf{Context Dependent Proportions of the SRY Motif in L1 elements}
+The number of L1 were counted in each region (N, $_{L1}$), as well as the number of L1 containing an SRY motif (N, $_{L1\,with\,SRY}$). The proportion of SRY-containing L1 was compared within each gene region versus intergenic using a test of equal proportions (Prop. test,$_{vs.\,int.}$ p < ).
+}}
+\label{table:sry}
+\end{table}
+
+    %%Figure L1 motifs intergenic
+    %\begin{figure}[!ht]
+    %    \centering
+    %    \includegraphics[width=0.65\textwidth,natwidth=610,natheight=642]{l1_int_motif.pdf}
+    %   \caption{\normalsize{\textbf{}}}
+    %    \label{fig:l1intmotif}
+    %\end{figure}
 
 These results indicated that the sequence of both Alu and L1 were differentially maintained in genes versus intergenically. Binding motifs contained within Alu were reduced in a pattern similar to the distribution of the whole elements. Conversely, binding motifs within L1 were reduced depending on the sequence of the motif. 
 
@@ -627,9 +648,11 @@ These results indicated that the sequence of both Alu and L1 were differentially
         \label{fig:alupolyA}
     \end{figure}
     
-The previous analysis examined the distribution of binding motifs by calculating the lack of motifs in the reference human genome. It was also important to analyze the distribution of binding motifs through the conservation status, which would examine the motifs that are present in the human genome. Moreover, analyzing the conservation scores would allow a base-by-base analysis of the binding motif. Conservation values used in this analysis were from the phyloP basewise conservation scores, where positive values indicated evidence of positive selection, and negative values indicated evidence of purifying selection. Importantly, conservation was only calculated within regions that matched the binding motif within the human reference sequence. Therefore, as opposed to the previous analysis which modeled the loss of binding motifs in the human reference, this calculation analyzed the individual basepairs within motifs that were present in humans but potentially lost in non-human primates.
+The previous analysis examined the distribution of binding motifs within human genes and indicate a general decrease of RT-contained motifs within genes. This lack of motifs in genes could have occured due to base-wise mutations of the motifs over time, or to a selection against elements as a whole. It was therefore important to analyze the base-wise conservation status of binding motifs which were differentially represented based on genomic context.
 
-Since the polyadenylation sequence was present within both Alu and L1 consensus sequences, this was the first motif analyzed. Basewise conservation scores were averaged for each base within the polyadenylation sequence of either L1 (figure \ref{fig:l1polyA}) or Alu (figure \ref{fig:alupolyA}). L1 and Alu elements were first separated into AS and S elements before the conservation scores were calculated. Interestingly, both Alu and L1 showed a decrease in conservation at the central T base. Moreover, polyadenylation signals of L1 in the sense orientation had a lower conservation score on average than those of AS oriented L1. 
+Conservation values used in this analysis were derived from the phyloP basewise conservation scores, where positive values indicated evidence of positive selection, and negative values indicated evidence of purifying selection. Importantly, conservation was only calculated within regions that matched the binding motif within the human reference sequence. Therefore, as opposed to the previous analysis which modeled the loss of binding motifs in the human reference, this calculation analyzed the individual basepairs within motifs that were present in humans but potentially lost in non-human primates.
+
+Polyadenylation sequences were the first motif analyzed since they were present within both Alu and L1 consensus sequences, and were reduced within genes compared to intergenic regions. Basewise conservation scores were averaged for each base within the polyadenylation sequence of either L1 (figure \ref{fig:l1polyA}) or Alu (figure \ref{fig:alupolyA}). L1 and Alu elements were first separated into AS and S elements before conservation scores were calculated. Interestingly, both Alu and L1 showed a decrease in conservation at the central T base. Moreover, polyadenylation signals of L1 in the sense orientation had a lower conservation score on average than those of AS oriented L1. 
 
     
         %Figure alu pol3
