@@ -6,7 +6,7 @@
 \usepackage[top=1in, bottom=1in, left=1.25in, right=1in]{geometry} %geom has to be loaded before fancy header
 \usepackage{pdflscape}
 \usepackage{longtable,tabularx,ltxtable}
-
+\usepackage{setspace}  
 \usepackage{pgfplots}
 \usepackage{xcolor}
 \usepackage{pgfplotstable}
@@ -33,9 +33,11 @@
 \usepackage{siunitx}
 \usepackage[T1]{fontenc}
 \usepackage[final]{pdfpages}
+%properly spaces the urls in the apa citations
+\usepackage{hyperref}
 \usepackage{apacite} %for citing with APA
 \usepackage{amsmath}
-
+\usepackage{pifont}%for checkmark
 \usepackage{titlesec} %Re-format the chapter title
 \titleformat{\chapter}
   {\normalfont\LARGE\rm\raggedleft\uppercase}{\chaptertitlename\ \thechapter}{20pt}{\Huge}
@@ -64,6 +66,19 @@
     keywordstyle={},
     morekeywords={}
     }
+\usepackage{setspace} %for spacing
+\usepackage[]{natbib} % for spacing and other formating options of apacite (needs "citep" instead of "cite")
+\renewcommand*{\bibfont}{\interlinepenalty 10000\relax} % no page breaks in the middle of a citation, requires \usepackage[]{natbib}
+
+\widowpenalty=10000 % to remove single lines
+\clubpenalty=10000 %also to remove single lines
+
+    
+    
+    
+    
+    
+    
 
 %Document
 \begin{document}
@@ -113,12 +128,17 @@ As mentioned in section \ref{sec:puri} it was previously thought that RTs were i
 Despite incongruous interpretations, the previous findings and the current findings are compatible with one another. The finding that there is a lower density of coding exons near the transcription start site facilitates the interpretation of both models. This decrease in coding density results in a reciprocal increase in RT density that looks as though it is related to the 5\rq -UTR, as previous studies have identified. However, when the effect of 5\rq -UTRs was studied in regions of genes with higher levels of coding sequence, there were respective decreases in RTs. This supports the finding that in the absense of coding sequences, there is an increase of RTs. Therefore the increase of RTs near the 5\rq -UTR of genes is likely a red-herring, and instead is a function of coding sequence density. 
 
 %\section{Binding Motifs}%% <-- Add this back in, it's important to talk about.
-%Transcription factor binding sites may not have as large of an effect on a gene as an insertion that disrupts coding sequence directly. They may however have smaller effects on a system that are also coferrign a selective advantage or disadvantage. The proportions of binding motifs within Alu elements within genes were dependent on the location within the gene. 
+%Transcription factor binding sites may not have as large of an effect on a gene as an insertion that disrupts coding sequence directly. They may however have smaller effects on a system that are also coferrign a selective advantage or disadvantage. The proportions of binding motifs within Alu elements within genes were dependent on the location within the gene.
+
+\section{Tissue Specific Association with Antisense Bias}
+The finding that AS bias was dependent on the tissue-expression profile indicated that selective pressures on RTs may be variable depending on the tissue of expression. This suggests that there may be different functional impacts of RTs depending on the transcriptional environment, such as tissue-specific repressors, and further underscores the importance of studying RTs in relation to human disease.
+
+Importantly it must be noted that, although it didn't reach signifiance, there was a subtle association of AS bias with the sample size of genes in the tissue-specific category. Since there is a reduction in power to detect significant results with smaller sample sizes it is important that these results are replicated in population studies once the data becomes available. 
 
 \section{Examining Signs of Selection for Variables other than Antisense Bias}
 It must be noted that we did not examine the evidence of selection for variables other than the AS bias. It is possible that AS bias is due to selection while the other biases (ie: tissue-specific patterns of distribution and binding motif preference) were due to integration rather than selection. Regarding the binding motifs, although this is possible, it is highly unlikely since the process of retrotransposition does not involve the internal binding motifs.
 
-Regarding tissue-specificity the possibility of integration bias is a bit more palpable. Since retrotransposition is influenced by chromatin dynamics, the structure of chromatin in the germ cell, specifically in the male germ cells, may play a role in bias of the number of insertions in different regions. If integration bias was the cause of differences in antisense bias between tissue-specific and housekeeping genes, it would be expected that presence binding motifs would be similar between the two groups. That is unless the binding motifs aid in the transcription of the retrotransposon in certain tissues, in which case the binding sites would be expected to be differentially represented. Importantly, the major difference measured between housekeeping and tissue-specific genes was changes in antisense bias. Since RTs initially integrate without an antisense bias, then even if there is a bias for increased integration in certain genes, there should not be an increased propensity for antisense bias. Furthermore, studies analyzing mutations in tissue-specific genes have identified that selection rates vary depending on the expression pattern of the gene. Moreover, mutation rates did not vary depending on the expression pattern \cite{Duret2000}. This supports the hypothesis that RTs are differentially selected depending on the tissue specificity of the gene. 
+Regarding tissue-specificity the possibility of integration bias is a bit more palpable. Since retrotransposition is influenced by chromatin dynamics, the structure of chromatin in the germ cell, specifically in the male germ cells, may play a role in bias of the number of insertions in different regions. If integration bias was the cause of differences in antisense bias between tissue-specific and housekeeping genes, it would be expected that presence binding motifs would be similar between the two groups. That is unless the binding motifs aid in the transcription of the retrotransposon in certain tissues, in which case the binding sites would be expected to be differentially represented. Importantly, the major difference measured between housekeeping and tissue-specific genes was changes in antisense bias. Since RTs initially integrate without an antisense bias, then even if there was a bias for increased integration in certain genes, there should not be an increased propensity for antisense bias. Furthermore, studies analyzing mutations in tissue-specific genes have identified that selection rates vary depending on the expression pattern of the gene \citep{Duret2000}. This supports the hypothesis that RTs are differentially selected depending on the tissue specificity of the gene. 
 
 \section{Decreased Gene Expression in the Presence of a Retrotransposon}
 Results from the selection analyses indicated that RTs had a phenotypic effect on organisms that was selected on throughout primate evolution. It was therefore important to examine if any effects could be observed within genes that contained RTs in present-day humans. The main results of these analyses showed that the presence of a RT, and more specifically an Alu, was associated with a decrease in gene expression. Although there was a significant association with the presence of a RT and decrease in expression, not all genes showed a response to the presence of a RT. This indicated that there were latent variables effecting the statistical interaction of RTs and gene expression. Again, this harkens back to the analyses in chapters 2 and 3 that showed that the effect of RTs was largely contingent upon the context in which they inserted. For example, the orientation with respect to the gene, the proximity to a 5\rq -UTR, the proximity to a coding sequence, and the gene type in which they inserted are all modifiers of the distribution of RTs within genes. It is therefore likely that these variables are also modifiers of gene expression. Unfortunately there was not a large enough sample size of elements that also had expression values to calculate the effect of these variables on gene expression. In the future, when more data on RT polymorphisms becomes available, associations between these subtle variations and gene expression should be further explored. 
@@ -155,4 +175,16 @@ In the analyses of altered gene expression in association with retrotransposon p
 %--> How future research should take what's known from chp3 and make a prediction algorithm for de novo inserts. Also the same algorithm should be used for reference RTs, and the ones that fall outside of what they would be predicted should be evalutated for function
 
 }
+
+
+
+\renewcommand{\thepage}{\arabic{page}}% Arabic page numbers
+\bibliographystyle{apacite}
+
+\setlength\bibsep{10pt}%single space between references
+\large\singlespacing{
+\bibliography{library}
+}
+
 \end{document}
+
