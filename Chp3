@@ -369,7 +369,7 @@ CDS were counted in genes containing 2$^\circ$ 5\rq -UTRs (column CDS$_{2^\circ}
 \subsubsection{Effect of CDS density on Alu and L1}
 The CDS density and Alu density within non-2$^\circ$ 5\rq -UTR containing genes was used to predict the expected Alu density in 2$^\circ$ 5\rq -UTR containing genes. To accomplish this, Alu density from non-2$^\circ$ 5\rq -UTR containing genes was regressed on CDS density from the same genes. The expected RT density was then predicted using the CDS density from genes containing 2$^\circ$ 5\rq -UTRs. For Alu, the actual values were plotted next to the predicted values in figure \ref{fig:25_cdspred}. In the AS orientation, there was no difference in Alu or L1 density from what was expected based on CDS density. Conversely, in the S orientation, there were less Alu and L1 in regions containing a 5\rq-UTR than expected based on CDS density alone (Student's t-test p,$_{Alu}$ < 0.03 ; Student's t-test p,$_{L1}$ < 0.001 ). 
 
- In summary of the effect of CDS and 5\-rq -UTRs on RT density, there was no evidence of an increase near the 5\rq -UTR when position within the gene was normalized. Instead, there was significant decrease in Alu density in the S orientation. Furthermore, the decrease of AS Alu was largely correlated with an increase in CDS sequence near 5\rq -UTRs. This suggested that the increase of AS RTs near the 5\rq - UTR was not an effect of the UTR, but an effect of the lack of CDS sequences in deciles that were near the 5\-rq end of a gene.
+ In summary of the effect of CDS and 5\-rq -UTRs on RT density, there was no evidence of an increase near the 5\rq -UTR when position within the gene was normalized. Instead, there was significant decrease in Alu density in the S orientation. Furthermore, the decrease of AS Alu was largely correlated with an increase in CDS sequence near 5\rq -UTRs. This suggested that the increase of AS RTs near the 5\rq - UTR was not an effect of the UTR, but an effect of the lack of CDS sequences in deciles that were near the 5\rq -end of a gene.
 
         %Figure CDS (secondary 5'-UTR)
     \begin{figure}[!ht]
@@ -410,14 +410,14 @@ Housekeeping genes have a predictably higher level of Alu frequency than other g
 
 To determine if differences in the levels of gene expression across tissue types was confounding this result, we tested the correlation between AS frequency and exon density as a function of relative expression in housekeeping and tissue specific genes. There was no association between expression level in the respective tissue and the correlation between AS and exon density (R$^{2}$ = 0.60 ; p = 0.15).
 
-Overall these results indicated that the tissue-specificity of the gene in which a RT is located was associated with the AS bias. AS bias was more prevalent in housekeeping genes, which also have higher numbers of RTs, and less prevalent in genes that expressed specifically in the pancreas, colon, and liver.  
+Overall these results indicated that the tissue-specificity of the gene in which a RT is located was associated with the AS bias.  AS bias was more prevalent in housekeeping genes, which also have higher numbers of RTs, and less prevalent in genes that were expressed specifically in the pancreas, colon, and liver.  
 
 %Internal Binding Motifs
 \section{Retrotransposon-specific Variables are Associated with Retrotransposon Distribution}
 \label{sec:motifs}
 The consensus sequences for Alu and L1 contain many functional DNA binding motifs. Some of these binding motifs act as enhancers, or repressors of gene expression. Although the consensus sequence of RTs contain many binding motifs, each individual RT in the genome is variable as to whether or not it contains these motifs. The loss or gain of a motif may occur by mutation at the nucleotide level (figure \ref{fig:motif}), through retrotransposition of a parent element that has already lost or gained the motif sequence, or through truncation of the element during integration.
 
-Protein binding motifs can impact both RT expression as well as gene expression. For example, the 5\rq portion of the polymerase III promoter (Pol-III) contains the A-box motif which is necessary for transcription factor binding and expression of Alu retrotransposons. The YY-1 binding motif contained within L1 is both a component of the core promoter necessary for  L1 transcription as well as a general transcriptional repressor. CpGs which are common in Alu and L1 can potentially effect levels of gene transcription when methylated. Additionally due to the process of deamination, 5-methylcytosines are more likely to be mutated to thymines than non-methylated cytosines, and are commonly mutated in Alu. The SRY motif is a binding domain for the testis-determining factor gene SRY which increases L1 transcription in 293 cells, and RUNX3 binding can act as both an activator and repressor of transcription and whose repression is linked with tumor progression.
+Protein binding motifs can impact both RT expression as well as gene expression. For example, the 5\rq portion of the polymerase III promoter (Pol-III) contains the A-box motif which is necessary for transcription factor binding and expression of Alu retrotransposons. The YY-1 binding motif contained within L1 is both a component of the core promoter necessary for  L1 transcription as well as a general transcriptional repressor. The SRY motif is a binding domain for the testis-determining factor gene SRY which increases L1 transcription in 293 cells, and RUNX3 binding can act as both an activator and repressor of transcription and whose repression is linked with tumor progression.
 
 These binding motifs can have an effect on gene expression, and some of these motifs are orientation specific (e.g.: polyadenylation sequences). The relative presence of these motifs within genes was compared to intergenic motifs to determine whether some motifs were excluded from genes, thereby indicating a functional impact on the organism.
 
@@ -432,7 +432,7 @@ These binding motifs can have an effect on gene expression, and some of these mo
     
          %Truncated L1
 \subsection{Truncated L1 Escape Depletion Near the 5\rq-UTR}
-The full-length human L1 consensus sequence is approximately 6kb, but varies by subfamily. Commonly, however, L1 are approximately 900 bp on average. The shorter average sequence is due to malfunctions during retrotransposition where L1 are often truncated. Reverse transcription of the RNA template initiates near the 3\rq end of RNA and often the L1 retrotransposase is unable to complete retrotransposition of the entire element into the insertion site, resulting in truncation of the 5\rq end.
+The full-length human L1 consensus sequence is approximately 6kb, but varies by subfamily. More commonly, L1 are approximately 900 bp on average. The shorter average sequence compared to full-length is due to malfunctions during retrotransposition where L1 are often truncated. Reverse transcription of the RNA template initiates near the 3\rq end of RNA and often the L1 retrotransposase is unable to complete retrotransposition of the entire element into the insertion site, resulting in truncation of the 5\rq end.
 
 % L1 size
 \begin{table}[ht]
@@ -454,22 +454,22 @@ The full-length human L1 consensus sequence is approximately 6kb, but varies by 
 \label{table:l1size}
 \end{table}
 
-This 5\rq -truncation of L1 results in variable sizes of L1 in the human genome, with a majority being less than 1 kb (table \ref{table:l1size}). The 5\rq region of L1, that is often lost during truncation, contains the Polymerase II promoter which can effect expression of neighboring genes. It is likely that this promoter region of L1 effects gene expression. To determine if L1 with promoters have a different distribution within genes than L1 without promoters, the distributions of L1 of varying sizes were calculated.
+This 5\rq -truncation of L1 results in variable sizes of L1 in the human genome, with a majority being less than 1 kb (table \ref{table:l1size}). The 5\rq -region of L1, that is often lost during truncation, contains the Polymerase II promoter which can effect expression of neighboring genes. It is likely that this promoter region of L1 effects gene expression. To determine if L1 with promoters have a different distribution within genes than L1 without promoters, the distributions of L1 of varying sizes were calculated.
 
         %Figure L1 size
     \begin{figure}[!ht]
         \centering
-        \includegraphics[scale=1,width=\textwidth]{l1start.pdf}
+        \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{l1start.pdf}
         \caption[Start position of short L1 (< 1kb) within the full-length L1 consensus sequence]{\normalsize{\textbf{Start position of short L1 (< 1kb) within the full-length L1 consensus sequence\\}Each short L1 (<1 kb) was aligned to the respective full-length L1 consensus sequence. The start position within each consensus sequence was tallied and is presented here. Note that the L1 promoter is within the first 2kb of the full-length L1}}
         \label{fig:l1start}
     \end{figure}
     
-Since size was used as a proxy for the presence of the L1 promoter, it was important to determine the presence of the L1 promoter within short L1 (< 1kb). The L1 promoter region is within the first 2kb of the L1 consensus sequence. To identify whether L1 (<1kb) lack the promoter region, the start position of each short L1 (<1kb) within the respective consensus. A histogram of the start positions within the consensus sequence are presented in figure \ref{fig:l1start}).  The enrichment near 6kb indicated that the 5\rq -most portion of short L1 was located many kb downstream of the L1 promoter sequence. Therefore, a majority of these small L1 did not contain the canonical promoter sequence. It was therefore hypothesized that short L1 would not be under the same purifying selection as full-length L1, and would be present at higher levels than full-length L1. 
+Since size was used as a proxy for the presence of the L1 promoter, it was important to determine the presence of the L1 promoter within short L1 (< 1kb). The L1 promoter region is located within the first 2kb of the L1 consensus sequence. To identify whether L1  that were <1kb lacked the promoter region, the start position of each short L1 (<1kb) within the respective consensus. A histogram of the start positions within the consensus sequence are presented in figure \ref{fig:l1start}).  The enrichment near 6kb indicated that the 5\rq -most portion of short L1 was located many kb downstream of the L1 promoter sequence (N, $_{L1\,>\,2 kb}$ = 654963 ; 87\%). Therefore, the majority of short L1 did not contain the canonical promoter sequence. It was therefore hypothesized that short L1 would not be under the same purifying selection as full-length L1, and would be present at higher levels than full-length L1. 
 
             %Figure L1 size AS
     \begin{figure}[!ht]
         \centering
-        \includegraphics[scale=0.005,width=\textwidth]{L1distsize.pdf}
+        \includegraphics[width=0.6\textwidth,natwidth=610,natheight=642]{L1distsize.pdf}
         \caption[Effect of L1 Size on L1 density: Antisense]{\normalsize{\textbf{Effect of L1 Size on L1 density: Antisense\\}L1 density was calculated within all deciles. L1 were first grouped into sizes (< 1 kb, 1-2, 2-3, 3-4, 4-5, and 5+). }}
         \label{fig:l1size_as}
     \end{figure}
@@ -477,13 +477,15 @@ Since size was used as a proxy for the presence of the L1 promoter, it was impor
             %Figure L1 size S
     \begin{figure}[!ht]
         \centering
-        \includegraphics[scale=0.5,width=\textwidth]{L1distsize_s.pdf}
+         \includegraphics[width=0.6\textwidth,natwidth=610,natheight=642]{L1distsize_s.pdf}
         \caption[Effect of L1 Size on L1 density: Sense]{\normalsize{\textbf{Effect of L1 Size on L1 density: Sense\\}L1 density was calculated within the all deciles. L1 were first grouped into sizes (< 1 kb, 1-2, 2-3, 3-4, 4-5, and 5+). }}
         \label{fig:l1size_s}
     \end{figure}
     
 
-To test whether the linear decay of antisense oriented L1 was related to the size of the element, the proportions of L1 <1kb, 1-2kb, 3-4kb, 4-5kb, and 5kb+ were calculated within all genes. All groups of AS L1 had a similar distribution to all AS L1 (figure \ref{fig:l1size_as}). When all size ranges were compared within the first decile it was noted that the proportion of AS L1 was higher with decreased length of the element (figure \ref{fig:l1size_as_one}) . Importantly, L1 < 1kb in length were present at a significantly higher level than full-length L1 (prop <1kb = 0.0574 ; prop 5+ kb = 0.0437 ; Test for equalities of proportion p < 1.01e-04). S L1 separated by length were also similarly distributed to all S, however full-length L1 were reduced in the first decile compared to short L1 (prop <1kb = 0.0237 ; prop 5+ kb = 0.0163 ; Test for equalities of proportion p < 0.0012). 
+To test whether the linear decay of antisense oriented L1 was related to the size of the element, the proportions of L1 <1kb, 1-2kb, 3-4kb, 4-5kb, and 5kb+ were calculated within all genes. All groups of AS L1 had a similar distribution to all AS L1 (figure \ref{fig:l1size_as}). When all size ranges were compared within the first decile it was noted that the proportion of AS L1 was higher with decreased length of the element (figure \ref{fig:l1size_as_one}) . Importantly, L1 < 1kb in length were present at a significantly higher level than full-length L1 (prop <1kb = 0.0574 ; prop 5+ kb = 0.0437 ; Test for equalities of proportion p < 1.01e-04).
+
+S L1 grouped by length were also similarly distributed to all S, however full-length L1 were significantly reduced in the first decile compared to short L1 (prop <1kb = 0.0237 ; prop 5+ kb = 0.0163 ; Test for equalities of proportion p < 0.0012). 
     
         %Figure L1 size
     \begin{figure}[!ht]
