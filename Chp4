@@ -75,12 +75,15 @@
 
 
 
+
+
+
 %Document
 \begin{document}
 \doublespace\large{
 \chapter{\\RETROTRANSPOSONS ARE ASSOCIATED WITH A SEX-SPECIFIC DECREASE IN GENE EXPRESSION}
 
-Transcriptional regulation is a highly coordinated process necessary for the proper function of an organism. Despite conserved mechanisms regulating expression, many genes are highly variable between species \citep{Brawand2011, Carninci2005, Levine2003, Su2002}, between humans \citep{Cheung2003, Storey2007, Wang2008}, and between sexes \citep{Rinn2005, Trabzuni2013}. Variations in expression is often correlated with measurable phenotype changes such as dopamine receptor expression and locomotor activity in mice \citep{Chesler2005}. Transcriptome differences associated with disease status further indicate that gene expression is a key regulator of downstream phenotypes \citep{Su2002, Voineagu2011}. It is important to determine the underlying factors involved in gene expression variability to understand the plasticity of expression in unaffected individuals, as well as the limits of regulation, that when breached lead to disease. 
+Transcriptional regulation is a highly coordinated process necessary for the proper function of an organism. Despite conserved mechanisms regulating expression, many genes are highly variable between species \citep{Brawand2011, Carninci2005, Levine2003, Su2002}, between humans \citep{Cheung2003, Storey2007, Wang2008}, and between sexes \citep{Rinn2005, Trabzuni2013}. Variations in expression are often correlated with measurable phenotypic changes such as dopamine receptor expression and locomotor activity in mice \citep{Chesler2005}. Transcriptome differences associated with disease status further indicate that gene expression is a key regulator of downstream phenotypes \citep{Su2002, Voineagu2011}. It is important to determine the underlying factors involved in gene expression variability to understand the plasticity of expression in unaffected individuals, as well as the limits of regulation, that when breached lead to disease. 
 
 Large-scale genome-wide analyses such as those published by the ENCODE project have described many of the organizing components of genes underlying expression variance \citep{Birney2007, Dong2012, Wang2012}. DNA methylation, histone modifications, and chromatin folding are all examples of coordinating components of transcriptional regulation \citep{Bird2002, Jenuwein2001}. Although many genetic components, such as these, have been tested for correlation with transcription, much of the repetitive content of the genome remains unexamined for its link with expression. Specifically, retrotransposons (RT) have yet to be characterized for their association with gene expression, even though they account for approximately 40\% of the mass of the human genome \citep{Lander2001}. 
 
@@ -94,14 +97,13 @@ To determine if retrotransposons (RTs) effect the phenotype of gene expression, 
 
 \subsection{Gene expression is commonly decreased in humans compared to non-human primate in the presence of a mobile element insertion}
 
-Genes were first identified that contained mobile element insertions (MEIs) of either L1, Alu, or SVA.  These genes were then filtered to retain only genes with orthologs between human (hg19), chimp (panTro4), gorilla (GorGor3), orangutan (ponAbe2), and rhesus macaque (rheMac3). Locations of MEIs between humans and the respective non-human primate (NHP) were determined using mobile element annotation for each respective reference genome \citep{Kent2002}. Genes were classified as an MEI-containing gene if the MEI was within the gene transcription start to transcription stop sites, including introns. In order to compare between the sexes, only genes on the autosomes were considered in this analysis. Using data from Brawand et al., expression values were obtained for all of these genes and for each species. This dataset contained expression for multiple tissues, including brain, heart, kidney, liver, and testis.  The sample sizes of MEI-containing genes identified for each primate, and those with expression values from Brawand et al., were tabulated in table \ref{table:mei}.
-
 % Tue Apr 15 22:57:42 2014
 \begin{table}[ht]
+\large
 \centering
-\begin{tabular}{rlllll}
+\begin{tabular}{rccccc}
   \hline
-&  &  & {Non-human Primate} &  &  \\
+&  &  & {Genes in Group} &  &  \\
   \hline
   \hline
 Group & Gene Set  & RheMac3 & PonAbe2 & GorGor3 & PanTro4 \\
@@ -118,6 +120,10 @@ Group & Gene Set  & RheMac3 & PonAbe2 & GorGor3 & PanTro4 \\
 \caption[Gene counts per MEI-type and non-human primate (NHP)]{\textbf{Gene counts per MEI-type and non-human primate (NHP)\\} Presented here are the number of genes analyzed between humans and the respective non-human primate. RheMac3: Rhesus Macaque; PonAbe2: Orangutan; GorGor3: Gorilla; PanTro4: Chimpanzee. Expression data: The genes with orthologs between humans and the non-human primate for which there was valid expression data. Filtered MEI: Genes containing mobile element insertions in humans but not the respecitive NHP, after filtering based on pylogenetic order.}
 \label{table:mei}
 \end{table}
+
+Genes were first identified that contained mobile element insertions (MEIs) of either L1, Alu, or SVA.  These genes were then filtered to retain only genes with orthologs between human (hg19), chimp (panTro4), gorilla (GorGor3), orangutan (ponAbe2), and rhesus macaque (rheMac3). Locations of MEIs between humans and the respective non-human primate (NHP) were determined using mobile element annotation for each respective reference genome \citep{Kent2002}. Genes were classified as an MEI-containing gene if the MEI was within the gene transcription start to transcription stop sites, including introns. In order to compare between the sexes, only genes on the autosomes were considered in this analysis. Using data from Brawand et al., expression values were obtained for all of these genes and for each species. This dataset contained expression for multiple tissues, including brain, heart, kidney, liver, and testis.  The sample sizes of MEI-containing genes identified for each primate, and those with expression values from Brawand et al., were tabulated in table \ref{table:mei}.
+
+
 
 
 The differences in expression across all species were controlled for by inter-sample normalization procedures (Brawand et al., 2011). Comparing between genes with MEIs versus genes without MEIs further controlled for differences in expression present across all genes. To determine if the presence of an MEI was associated with a general shift in gene expression, the odds ratio (OR) of increased expression in humans for genes containing MEIs versus genes not containing MEIs were calculated using the contingency table presented in table \ref{table:contablemei}. These ORs were calculated between human and each NHP for each tissue, MEI sub-type, and males and females separately (table \ref{table:permOR}).
