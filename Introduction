@@ -69,6 +69,7 @@
 \usepackage{setspace} %for spacing
 \usepackage[]{natbib} % for spacing and other formating options of apacite (needs "citep" instead of "cite")
 \renewcommand*{\bibfont}{\interlinepenalty 10000\relax} % no page breaks in the middle of a citation, requires \usepackage[]{natbib}
+\renewcommand{\bibfont}{\large}%for reference font size
 
 \widowpenalty=10000 % to remove single lines
 \clubpenalty=10000 %also to remove single lines
