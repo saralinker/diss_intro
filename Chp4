@@ -213,7 +213,7 @@ Although it is possible that L1 and SVA are less often associated with genes tha
 
 \subsection{Males Show a Stronger Association between MEI Status and Expression in Humans when Compared to Females}
 
-There were four variables that were uncontrolled for in the calculation of odds ratio: sex of the individual, non-human primate species, tissue of origin, and MEI-type. It was therefore important to determine if any of these variables had a significant effect on the outcome of odds ratio. To compare the effects of each variable type, ORs were regressed on sex, NHP, tissue, and mei (equation \ref{spec}).
+There were four variables that were uncontrolled for in the calculation of odds ratio: sex of the individual, non-human primate species, tissue of origin, and MEI-type. It was therefore important to determine if any of these variables had a significant effect on the outcome of odds ratio. To compare the effect of each variable type, ORs were regressed on sex, NHP, tissue, and MEI-type (equation \ref{spec}). OR for the tissues testis and liver were removed due to the lack of data in female samples.
 
  %Linear Regression Equation: variables
     \begin{equation}
@@ -221,7 +221,7 @@ There were four variables that were uncontrolled for in the calculation of odds 
         Odds Ratio  = \beta _{o} + \beta sex + \beta NHP  + \beta tissue + \beta MEI  + \epsilon
     \end{equation}
 
-These models were compared using a four-way ANOVA. Using ANOVA, all variables were examined to determine which had the largest effect on OR (sex, primate comparison, tissue, or MEI-type) (table \ref{table:anova}). OR for the tissues testis and liver were removed due to the lack of data in female samples. Sex of the individual (p < 5.2e-04) showed the most significant effect on OR. 
+These models were compared using a four-way ANOVA. Using ANOVA, all variables were examined to determine which had the largest effect on OR (sex, primate comparison, tissue, or MEI-type) (table \ref{table:anova}). Sex of the individual (p < 5.2e-04) showed the most significant effect on OR. 
 
 
     % ANOVA table
@@ -251,7 +251,7 @@ Indeed when grouping significant ORs based on sex, a majority of the significant
     %boxplot of male odds ratios versus female odds ratios
     \begin{figure}[!ht]
         \centering
-        \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{malefemale2.pdf}
+        \includegraphics[width=0.6\textwidth,natwidth=610,natheight=642]{malefemale2.pdf}
        \caption[Odds ratios based on sex of origin]{\normalsize{\textbf{Odds ratios based on sex of origin\\}
        Odds ratios were calculated for each primate (human, chimp, gorilla, orangutan, and rhesus macaque) and each tissue (brain, heart, liver, kidney, testis). Odds ratios were separated by sex of origin. Black dots indicate odds ratios that were not significant after Bonferroni correction of the two-tailed permuted p-value.  Red dots indicate odds ratios that were significant ($\alpha$ = 1.25e-03).
        }}
@@ -260,9 +260,10 @@ Indeed when grouping significant ORs based on sex, a majority of the significant
     
     
 \section{Mobile Element Insertions that are Polymorphic Between Humans}
+The bias in OR due to the sex of the individual indicated that there was a bias in gene expression between males and females that was restricted to genes containing MEIs.  It was next determined if the expression differences between humans and NHPs were also present as differences in expression between male and female humans.
 
 \subsection{Genes containing MEI-Alu are differentially expressed between male and female humans}
-The bias in OR due to the sex of the individual indicated that there was a bias in gene expression between males and females that was restricted to genes containing MEIs.  It was next determined if the expression differences between humans and NHPs were also present as differences in expression between male and female humans. To test the differences between humans based on sex, expression was calculated within MEI genes in humans only and compared expression values between females and males of the same sex (table \ref{table:contablesex}).
+To test the differences between humans based on sex, expression was calculated within MEI genes in humans only and compared expression values between females and males of the same sex (table \ref{table:contablesex}).
 
 \begin{table}
 \centering
