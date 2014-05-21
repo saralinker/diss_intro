@@ -1,5 +1,5 @@
-% Chp4_Dissertation
-% Slinker, 04/14/2014
+% Chp6_Discussion_Dissertation
+% Slinker, 04/16/2014
 
 %Preamble
 \documentclass[12bp]{report}
@@ -66,298 +66,118 @@
     keywordstyle={},
     morekeywords={}
     }
-%\usepackage{setspace} %for spacing
+\usepackage{setspace} %for spacing
 \usepackage[]{natbib} % for spacing and other formating options of apacite (needs "citep" instead of "cite")
 \renewcommand*{\bibfont}{\interlinepenalty 10000\relax} % no page breaks in the middle of a citation, requires \usepackage[]{natbib}
-\renewcommand{\bibfont}{\large}%for reference font size
 
 \widowpenalty=10000 % to remove single lines
 \clubpenalty=10000 %also to remove single lines
 
-
-
-
-
-
+    
+    
 %Document
 \begin{document}
 \doublespace\large{
-\chapter{\\RETROTRANSPOSONS ARE ASSOCIATED WITH A SEX-SPECIFIC DECREASE IN GENE EXPRESSION}
+\chapter{Discussion}
 
-Transcriptional regulation is a highly coordinated process necessary for the proper function of an organism. Despite conserved mechanisms regulating expression, many genes are highly variable between species \citep{Brawand2011, Carninci2005, Levine2003, Su2002}, between humans \citep{Cheung2003, Storey2007, Wang2008}, and between sexes \citep{Rinn2005, Trabzuni2013}. Variations in expression are often correlated with measurable phenotypic changes such as dopamine receptor expression and locomotor activity in mice \citep{Chesler2005}. Transcriptome differences associated with disease status further indicate that gene expression is a key regulator of downstream phenotypes \citep{Su2002, Voineagu2011}. It is important to determine the underlying factors involved in gene expression variability to understand the plasticity of expression in unaffected individuals, as well as the limits of regulation, that when breached lead to disease. 
+\section{Motivation}
+Genomic studies have been sucessful in characterizing a portion of the heritable component of complex human diseases. For example, through genomics, the human leukocyte antigen has been associated with the etiology of Multiple Sclerosis, and Complement Factor H with Age-Related Macular Degeneration. Despite these, and other sucesses, there remains a large portion of the heritability of complex diseases which is yet to be explained. This is a common problem that has arisen in the study of complex human diseases, and is often termed "missing heritability". There are many reasons why the heritable portion of complex disease etiology may remain elusive such as the limited power to detect small effects. One reason, in particular, is the stringency of prior assumptions that geneticists use in order to make analyses more tractable. Perhaps the most pertinent to this study are the assumptions that result in the exclusion of retrotransposons (RTs) from analysis. It was the intent of this study to analyze the potential of RTs to account for phenotypic variation between individuals, and therefore the potential to be mediators of disease heritability.
 
-Large-scale genome-wide analyses such as those published by the ENCODE project have described many of the organizing components of genes underlying expression variance \citep{Birney2007, Dong2012, Wang2012}. DNA methylation, histone modifications, and chromatin folding are all examples of coordinating components of transcriptional regulation \citep{Bird2002, Jenuwein2001}. Although many genetic components, such as these, have been tested for correlation with transcription, much of the repetitive content of the genome remains unexamined for its link with expression. Specifically, retrotransposons (RT) have yet to be characterized for their association with gene expression, even though they account for approximately 40\% of the mass of the human genome \citep{Lander2001}. 
+RTs are common sources of heritable variation, and are capable of substantially distrupting gene function. For these reasons they are prime candidates for genetic variations that contribute to human disease. Current studies, however, focus on other forms of genetic variation such as single nucleotide polymorphisms, insertions\slash deletions, and large copy number variations. RTs therefore remain an under-examined source of phenotypic variation. The lack of research into the phenotypic associations with RTs is largely due to two major factors.  These are 1.) limitations in the methodology used to identify RT variants and 2.) difficulty in interpreting the effects of RT variants on the genome.
 
-Despite indications that RTs can have an effect on gene function, they are largely understudied due to inherent complications in identifying locations of polymorphic insertions. Recent advances in both sequencing technology and alignment algorithms have increased the reliability of identifying specific locations of RT insertions \citep{Baillie2011, Beck2010, Ewing2010, Iskow2010, Stewart2011, Ye2009}. As of yet, there have only been a few genome-wide studies comparing the presence of RTs with associated gene expression levels. Most importantly, Arora et al., identified that genes that are differentially expressed between humans and chimps are enriched for genes that contain RT-containing indels \citep{Arora2011}. 
+The lack of appropriate methodology stems from the highly repetitive and highly homologous sequence of RTs. Alu, for example, exist in millions of copies throughout the human genome. These Alu elements have high homology both to the many other copies of Alu, as well as to repetition within the individual element itself. These repetitive features of Alu and other RTs make them difficult to map to the reference genome when using modern short-read sequencing. Recent advances both in long read sequencers and clever bioinformatics mapping strategies have begun to advance the ability to map RTs to the reference genome. However, there remains a lack of methods with low false positive rates. Due to the quickening advances in technology of annotating RTs, the problem of limited methodology was not the focused on in this study, though it remains a limitation. The second problem, and the one focused on in this study, is the difficulty of interpreting the downstream effects of the identified RT variants.
 
-It is vitally important to disease studies to identify the effects of RTs on gene expression, as they are a major cause of genotypic variation inserting every 1:20 or 1:270 births \cite{Cordaux2006,Ewing2011}. If RTs indeed contribute to changes in gene expression, then the variability of RTs between humans may be influencing the phenotypic variabilty in the population as well as in disease.
+Local effects of RTs have been elucidated in the decades since the discovery of RTs. \textit{In vitro} studies have established a host of effects that RTs can have on genes such as reduced expression or altered splice signals. Furthermore, \textit{in silico} studies have identified a subset of genome-wide trends that indicate potential functional implications of RT insertions. For example, Zhang et al. showed that RTs are reduced within a few hundred basepairs of exons, inferring that RTs are more hazardous in these regions.
 
-In this chapter, the association between the presence of RTs and gene expression was examined. RTs were identified as either polymorphic between humans and a subset of non-human primates, or as polymorphic between human individuals. Expression data was then analyzed in these genes to determine if there was an association of RT polymorphisms with differential gene expression.
+Despite these advances, it remains difficult to interpret the effects of RT variants on a genome-wide scale. This difficulty largely stems from the multitude of effects that a RT can have on a genomic region. RTs contain many structural features ranging purely from the size of the insertion, to the AT-content, to specific protein binding motifs contained within the sequence. All of these features will disrupt the genome in varying ways depending largely on the genomic context in which they insert. It was this ambiguity of the effect of RTs, that this study attempted to resolve by analysing RTs in varying genomic contexts.
 
-% Decreased gene expression human v NHP
-\section{Mobile Element Insertions between Humans and Non-human Primates}
+\subsection{The System}
+Since it was hypothesized that the difficulty in predicting effects of RTs stemmed from the interaction between the RT element and the genomic context, it was important to examine the roles of both of these factors on the effect of RTs on genes. \textit{In silico} techniques were chosen over \textit{in vitro} techniques to accomplish this. The advantages of an \textit{in vitro} study, such as incorporating a tagged RT an observed chromatin chances, would be that the effects of RTs would be studied in a relatively controlled environment. The direct effects of RTs could therefore be determined. Indeed many experiments such as these have proven the effects of L1 insertions on reduced transcriptional processivity of RNA Polymerase-II.  The major disadvantage of \textit{in vitro} studies, however, would be that only singular genomic context could be queried at any given time.  Since, the intention of this project is to determine common trends of the effects of RTs on genes, it is important to study the effects of RTs on many genes and in many contexts. The genome-wide data necessary for this type of analysis would be infeasible using current \text{in vitro} techniques. Therefore \textit{in silico} techniques were used to examine genome-wide trends from information gathered from publically available databases.
 
-To determine if retrotransposons (RTs) effect the phenotype of gene expression, insertions were tested for association with gene expression. The first class of data in which this was tested was in genes that contained a RT in humans but that were absent in a reference genome of non-human primates. Since there are many other variables that can be associated with changes in gene expression between humans and non-human primates, other than RTs, the tests of association used genes without insertions to control for inter-species differences. 
+In order to study genome-wide trends of the effects of RTs on genes, two measures of "effect" were selected. The first measure i.) was the distribution of RTs (a proxy for selection) and the second measure ii.) was gene expression. These two types of measurements resulted in an ability to distinguish the strength of an effect of a RT over long periods of evolutionary time, as well as the current biochemical change of gene expression. Together these studies both resulted in findings suggesting that RTs are not only capable of altering genes in a phenotypically selectable manner, but that many RTs are presently variable in the current human population that are associated with changes in gene expression.
 
-\subsection{Gene expression is commonly decreased in humans compared to non-human primate in the presence of a mobile element insertion}
+\section{Lack of Antisense Bias in Newly Integrated Elements}
+The initial finding presented in this dissertation was that newly integrated RTs are present in equal proportions in the sense and antisense orientations. This was contradictory to the trend of older RTs that have a propensity to be observed in the antisense orientation when within a gene. This finding of equal proportions for newly inserted elements is important because it establishes that antisense bias is not due to integration, but is due to a process that occurs over some length of time.
 
-% Tue Apr 15 22:57:42 2014
-\begin{table}[ht]
-\large
-\centering
-\begin{tabular}{rccccc}
-  \hline
-&  &  & {Genes in Group} &  &  \\
-  \hline
-  \hline
-Group & Gene Set  & RheMac3 & PonAbe2 & GorGor3 & PanTro4 \\
-  \hline
-  a & Expression Data & 5963 & 6333 & 5982 & 6652 \\ 
-  b & Filtered MEI-Alu & 4721 & 4663 & 3889 & 2392 \\ 
-  c & Filtered MEI-L1 & 226 & 181 & 152 & 69 \\ 
-  d & Filtered MEI-SVA & 271 & 564 & 420 & 331 \\ 
-  e & a $\cap$ b  & 2645 & 2903 & 2471 & 1545 \\ 
-  f & a $\cap$  c  & 144 & 124 & 105 & 46 \\ 
-  g & a $\cap$  d  & 166 & 342 & 252 & 199 \\ 
-   \hline
-\end{tabular}
-\caption[Gene counts per MEI-type and non-human primate (NHP)]{\textbf{Gene counts per MEI-type and non-human primate (NHP)\\} Presented here are the number of genes analyzed between humans and the respective non-human primate. RheMac3: Rhesus Macaque; PonAbe2: Orangutan; GorGor3: Gorilla; PanTro4: Chimpanzee. Expression data: The genes with orthologs between humans and the non-human primate for which there was valid expression data. Filtered MEI: Genes containing mobile element insertions in humans but not the respecitive NHP, after filtering based on pylogenetic order.}
-\label{table:mei}
-\end{table}
+The equal proportions of sense and antisense elements is important for the currently expanding field of RT research. Through the advances in sequencing and bioinformatics technologies, the RT field is publishing an increasing number of papers on new RT variants. A caveat of interpreting these new findings, is that the procedures for validating RT variants have been slower to advance than the ability to coarsely identify the insertions. Therefore, it is likely that many of the new RT variants being published are false positives. Although validation procedures will surely catch up to the annotation procedures with time, there is currently a difficulty in interpreting these findings. Our research showing that RTs insert with equal proportions in the sense and antisense orientation can therefore be used as a quality control measure for these studies. Studies attempting to identify new RT variants can measure the antisense bias of the sample and compare this measure to both the antisense bias of newly inserted elements, and that of older elements. If the antisense bias of a study is more closely aligned to that of older elements, then this would warrant a more stringent attempt at validating the new insertions.
 
-RefSeq genes were identified in the human reference (hg19) that contained mobile elements of  L1, Alu, or SVA. The presence of each human mobile element was then examined within each non-human primate (NHP) reference genome. If the mobile element was absent in the NHP, and present in the human then it was labelled a mobile element insertion (MEI). Genes were classified as an MEI-containing gene if the MEI was within the gene transcription start to transcription stop sites, including introns. The sample sizes of MEI-containing genes are presented in table \ref{table:mei}.
+\section{Purifying Selection of Retrotransposons within Genes}
+\label{sec:puri}
+The research presented in Chapter 2 identified that, when within genes, RTs often undergo purifying selection. This was the first time that evidence had been provided for purifying selection of RTs within genes, though it had been suggested in a genome-wide study. Previously, researchers had alluded to advantageous roles of RTs as the reason for their accumulation near transcription start sites of genes. This concept of RTs as common mediators of an unknown regulatory mechanism is seductive in that it infers that there is a common advantageous result of an event that by all other thoughts should be mutagenic. As RTs are numbered in the effects that they have on the genome, it can be alluring to want to pigeon-hole RTs into having singular effects on genes, even if those effects are yet unknown. Here, however, we identified that RTs are more likely to be deleterious within genes, than advantageous. Therefore, it is unlikely that they have a singluar role in gene regulation. The lack of a singular role in regulation, does not exclude the possibility that individual RTs have been co-opted to serve a function, even a regulatory function for the gene. However, these results do suggest that the increased distribution of RTs near the transcription start site is not likely a result of that co-option, and is instead a result of a lack of purifying selection compared to the rest of the gene. Although this is a less entertaining scenario, it is a far more plausible hypothesis. It is often stated that loss-of-function mutations are far more likely to occur than gain-of-function mutations. This rule should hold true for RTs insertions as it does for any other form of genetic mutation.
 
-These genes were then filtered to retain only genes with orthologs between hg19 and chimp (panTro4), gorilla (GorGor3), orangutan (ponAbe2), and rhesus macaque (rheMac3). Furthermore, in order to compare between the sexes, only genes on the autosomes were considered in this analysis. Using data from Brawand et al., expression values were obtained for all orthologous genes and for each species. This dataset contained expression for multiple tissues, including brain, heart, kidney, liver, and testis. The final counts of genes that had expression values in Brawand et al. are presented in table \ref{table:mei}. 
+\section{Deviations in Selection Between Alu and L1}
+The two RTs studied here, Alu and L1, showed very different trends of purifying selection of sense elements. Initially upon integration, both Alu and L1 had no signs of antisense bias. For both elements, this then quickly changed to an increase of antisense elements over sense elements. For reference Alu only, the antisense bias remained relatively constant across subfamilies independent of the length of time since they had been inserted. Conversely, the antisense bias of L1 subfamilies continued to increase with increasingly longer residence times in the population.
 
-The differences in expression across all species were controlled for by inter-sample normalization procedures (Brawand et al., 2011). Comparing between genes with MEIs versus genes without MEIs further controlled for differences in expression present across all genes. To determine if the presence of an MEI was associated with a general shift in gene expression, odds ratios (OR) were calculated. The calculations represented the odds of having more genes with increased expression in humans that also contained an MEI ( table \ref{table:contablemei}). These ORs were calculated between human and each NHP for each tissue, MEI sub-type, and males and females separately (table \ref{table:permOR}).
+There are a few possible explanations for this observed difference in trends between Alu and L1. One possibility is that the shorter time scale of Alu compared to L1 limits what can be observed for Alu elements. L1 elements have been present since the evolution of early mammals and therefore small changes would have had more time to accumulate to a large enough effect when compared to Alu that have only been present since the split of primates. The slight, but not significant, upward trend observed in Alu may be an indication that small changes are occurring over time. Future studies could attempt to distinguish the effect of time on observed changes in antisense bias by first calculating the time of divergence for each L1 and Alu subfamily. These time scales could then be overlaying on the same axis, enabling the measure of differences in the slope of the antisense bias between the two major families. Although millidiv could be used as a proxy for time in this type of a study, if there are differences in mutation rates of Alu and L1 then this could lead to misinterpretation of the results. 
 
+Another compatible possibility for the differences in Alu and L1 is linked to the strength of the effect that each element has on a gene. This leads to a hypothesis of a multimodal distribution of selection coefficients of RTs within genes. This hypothesis suggest that there are a subset of RT insertions that have large selection coefficients (a), for example a full-length L1 inserted in the sense orientation within a highly conserved coding exon. It would be expected that this type of RT would have a large selection coefficient. On the other hand, this hypothesis suggestst that there are also inserts with smaller selection coefficients (b), such as Alu in the antisense orientation in large intronic regions. Lastly, this hypothesis suggests that there is a third set of insertions that lies somewhere between the elements with a large and with a small selection coeffient (c). Importantly this third set would only consist of L1. If Alu inserts can fall into either category \textit{a} or \textit{b}, then this would explain the fast selection of the highly deleterious elements, and the consistent level of antisense bias over time. Similarly if L1 could either be of type \textit{a, b, } or \textit{c} then this would explain the quick selection of highly deleterious elements as well as a change in antisense bias over time. Furthermore, it is more likely that L1 would have elements of type \textit{c} as opposed to Alu, since L1 are transcribed by RNA polymerase II. L1 therefore have protein binding sites that can disrupt local transcription. 
 
-\begin{table}
-\centering
-\pgfplotstabletypeset[
-  every head row/.style={%
-    before row={\toprule 
-        & \multicolumn{2}{c}{MEI-Status}\\
-        \cmidrule{2-3}},
-    after row=\midrule},
-  every last row/.style={after row=\bottomrule},
-  columns/{Higher Expression}/.style={string type},
-  column type=r,
-    columns/MEI/.style={string type},
-    columns/no-MEI/.style={string type},
-    columns/{Total by MEI}/.style={string type},
-]{
-    {Higher Expression}       MEI no-MEI  {Total by MEI}
-    Human                   a           c               a+c 
-    NHP                b           d               b+d 
-    {Total by Expression}  a+b          c+d             a+b+c+d 
+Although the differences in selection between Alu and L1 may seem like a small matter, it has large implications for the study of RT variants. First, if L1 are indeed capable of having a larger effect on genes, then they are more likely than Alu to be mediators of human disease. This is evidenced by most associations of RTs with disease being attributed to L1 as opposed to Alu. Secondly if Alu are more likely to have smaller initial effects on the gene, then they are also more likely to be passed to the next generation. This gives Alu a higher chance of being co-opted by the system to serve a function since the Alu elements would have longer residence times in the population. 
+
+\section{Genetic Drift}
+It must be noted that the effects of genetic drift were not examined with respect to RT distribution. Genetic drift and population bottlenecks could lead to local alterations in the distributions of RTs. Genetic drift was not accounted for in this study was because local effects of drift should not have carying effects depending on the orientation of an element. Therefore the observed bias of antisense and sense RTs is not likely to be an effect of genetic drift, and this was the variable that we studied to determine if RT distribution was due to selection.
+
+\section{Decrease of Retrotransposons Near Exons}
+As mentioned in section \ref{sec:puri} it was previously thought that RTs were increased near transcription start sites because they were conferring some sort of selective advantage to the gene. The research presented here shows the contrary. Our results indicated that, as had been seen in previous studies, there was an increase of retrotransposons near the transcription start site. Interestingly, though, when genes were normalized by length, the RTs in the decile containing the transcription start site were reduced compared to what would be expected based on the trend across the rest of the deciles. Since the first decile was enriched for exons compared to the internal deciles, this dip in RT density indicated that RT density may be influenced by exon density, even near the 5\rq -UTR. Indeed, when this concept was followed up on, it was identified that not only are RTs reduced near coding exons, as has been previously shown, but when in the sense orientation they were also reduced near the 5\rq -UTR. This was a very unexpected finding since, as mentioned earlier, RTs are increased near the transcription start site, and therefore the 5\rq -UTR.
+
+Despite incongruous interpretations, the previous findings and the current findings are compatible with one another. The finding that there is a lower density of coding exons near the transcription start site facilitates the interpretation of both models. This decrease in coding density results in a reciprocal increase in RT density that looks as though it is related to the 5\rq -UTR, as previous studies have identified. However, when the effect of 5\rq -UTRs was studied in regions of genes with higher levels of coding sequence, there were respective decreases in RTs. This supports the finding that in the absense of coding sequences, there is an increase of RTs. Therefore the increase of RTs near the 5\rq -UTR of genes is likely a red-herring, and instead is a function of coding sequence density. 
+
+\section{Binding Motifs}
+Transcription factor binding sites may not have as large of an effect on a gene as an insertion that disrupts function by inserting directly into the coding sequence. For this reason it may be more difficult to pick up signs of the effects of RT-contained binding motifs on an organism. However, these smaller effects may have a larger potential of being co-opted by the system over time, due to longer residence times in the population.
+
+There was evidence that binding motifs contained within Alu and within L1 were differentially selected on depending on genomic context. Most significantly was the reduction of binding motifs within L1 in genes compared to the same elements in intergenic regions. 
+
+Interestingly the conservation analysis of polyadenylation sequences showed that the central thymine (T) of the motif was less conserved than the external adenosines (A). Although it is possible that this is due to a fluctuation in the mutation rates between the T and the A's, previous studies have shown that the internal T limits polyadenylation activity \cite{Zarkower1986}. Therefore, perhaps the lack of conservation of the internal T is reflective of the function of the polyadenylation signal. If so, perhaps the polyadenylation signals that are fixed in humans but mutated in non-human primates have either been co-opted by the system to serve as alternative termination signals, or are in regions that are less deleterious in humans. Either hypothesis warrants exploration into the differences of RT-contained polyadenylation signals between primates. 
+
+It must be noted that the subfamilies of the elements were not included as a confounding variable in this analysis. Since each subfamily encodes different binding motifs, it is important for future studies to account for variation in subfamily frequency within genes and in intergenic regions.
+
+\section{Tissue Specific Association with Antisense Bias}
+The finding that AS bias was dependent on the tissue-expression profile indicated that selective pressures on RTs may be variable depending on the tissue of expression. This suggests that there may be different functional impacts of RTs depending on the transcriptional environment, such as tissue-specific repressors. Moreover, AS bias was reduced in tissue-specific gene sets as opposed to within housekeeping genes that contain a high number of RTs. Perhaps housekeeping genes are more permissible to RT integrations and malleability of gene regulation, while tissue-specific genes require a more conserved model of regulation that would be otherwise obstructed by a new insertion. If this is true, it would underscore the importance of studying RTs in relation to human disease.
+
+It must be noted that, although it didn't reach signifiance, there was a subtle association of AS bias with the sample size of genes in the tissue-specific category. Since there is a reduction in power to detect significant results with smaller sample sizes it is important that the association of tissue-specific expression and RT AS bias is replicated in population studies once the data becomes available. 
+
+\section{Examining Signs of Selection for Variables other than Antisense Bias}
+It must be noted that we did not examine the evidence of selection for variables other than the AS bias. It is possible that AS bias is due to selection while the other biases (ie: tissue-specific patterns of distribution and binding motif preference) were due to integration rather than selection. Regarding the binding motifs, although this is possible, it is highly unlikely since the process of retrotransposition does not involve the internal binding motifs.
+
+Regarding tissue-specificity the possibility of integration bias is a bit more palpable. Since retrotransposition is influenced by chromatin dynamics, the structure of chromatin in the germ cell, specifically in the male germ cells, may play a role in bias of the number of insertions in different regions. If integration bias was the cause of differences in antisense bias between tissue-specific and housekeeping genes, it would be expected that presence binding motifs would be similar between the two groups. That is unless the binding motifs aid in the transcription of the retrotransposon in certain tissues, in which case the binding sites would be expected to be differentially represented. Importantly, the major difference measured between housekeeping and tissue-specific genes was changes in antisense bias. Since RTs initially integrate without an antisense bias, then even if there was a bias for increased integration in certain genes, there should not be an increased propensity for antisense bias. Furthermore, studies analyzing mutations in tissue-specific genes have identified that selection rates vary depending on the expression pattern of the gene \citep{Duret2000}. This supports the hypothesis that RTs are differentially selected depending on the tissue specificity of the gene. 
+
+\section{Decreased Gene Expression in the Presence of a Retrotransposon}
+Results from the selection analyses indicated that RTs had a phenotypic effect on organisms that was selected on throughout primate evolution. It was therefore important to examine if any effects could be observed within genes that contained RTs in present-day humans. The main results of these analyses showed that the presence of a RT, and more specifically an Alu, was associated with a decrease in gene expression. Although there was a significant association with the presence of a RT and decrease in expression, not all genes showed a response to the presence of a RT. This indicated that there were latent variables effecting the statistical interaction of RTs and gene expression. Again, this harkens back to the analyses in chapters 2 and 3 that showed that the effect of RTs was largely contingent upon the context in which they inserted. For example, the orientation with respect to the gene, the proximity to a 5\rq -UTR, the proximity to a coding sequence, and the gene type in which they inserted are all modifiers of the distribution of RTs within genes. It is therefore likely that these variables are also modifiers of gene expression. Unfortunately there was not a large enough sample size of elements that also had expression values to calculate the effect of these variables on gene expression. In the future, when more data on RT polymorphisms becomes available, associations between these subtle variations and gene expression should be further explored. 
+ 
+ %stopped here -->
+\section{Differences in Effect on Expression Between Retrotransposon Types}
+Most of the significant associations between RT and gene expression were associated with Alu and not L1 or SVA. It is possible that Alu have larger effects on gene expression than either L1 or SVA. However, it is also possible that Alu, L1, and SVA all have effects on gene expression, but that selective pressures and sample size issues reduce the ability to observe changes in the latter two elements. For example, we saw in the section on selection evidence that L1 undergoes stronger forces of selection than Alu. If L1 have a larger effect on gene expression than Alu, then perhaps they do not survive in the population, and therefore they were not observed in this analysis. Conversely, and consistent with the hypothesis presented earlier, perhaps Alu have a smaller, but present, impact on gene expression. Therefore they are passed on through the population due to a low selective coefficient and the effect can therefore be observed. Regarding SVA, it is possible that these elements have an effect on genes that was not detected since SVA occur at much lower levels in the genome than the other elements. This reduction in sample size reduces the power to detect any significant results with small effect sizes (req. effect size, Alu Chimp: 0.08; req. effect size, L1 Chimp: 0.48; req. effect size, SVA Chimp: 0.23).
+
+\section{Interaction of Sex of the Individual with Changes in Gene Expression in the Presence of a Retrotransposon}
+Perhaps the most intriguing finding regarding gene expression was that the decrease in expression was associated with RTs in a sex-specific manner. Importantly, the reduced gene expression in the presence of a polymorphic Alu was contingent on the individual being male. The finding that there was a difference in the effect of the RT on gene expression based on sex indicated the possibility of an interaction between RTs and sex-specific factors. Some sex-specific factors that could be facilitating this interaction are hormones such as estrogen and androgen.
+
+RTs are known to contain hormone response elements within their consensus sequences. For example most of the estrogen-responsive DR2 elements in the human genome are present within Alu sequences. Estrogen, however, is a female specific hormone, and therefore if there was an interaction with DR2 elements, the response would be expected to be observed in females as opposed to males. RORA-1 is another hormone response element contained within Alu. More importantly, RORA-1 has sex-specific responses both to estrogen as well as androgens. Future studies should investigate the role of RORA-1 and other hormone response elements in the effect of Alu on gene expression.
+
+Even though the change in gene expression was male specific, it is possible that an unobserved effect is present within females as well. Since it has been shown that long stretches of adensosines reduce transcription, it is likely that an insertion of Alu would decrease expression in both males and females. Perhaps in females estrogen binding elements play a role in opening up the region for higher expression, thereby negating the initial effect of the insertion. Although this hypothesis is more complicated than the previous mentioned hypothesis, it should be examined as well in order to determine the roles of Alu in mediating sex-specific gene expression. 
+
+\section{Alu and Autism Spectrum Disorder}
+
+In the analyses of altered gene expression in association with retrotransposon polymorphisms, there was a significant overlap between genes that were differentially expressed, and genes that serve a brain specific function. Even more interesting was the finding that these genes were signficantly enriched for genes that have been previously associated with Autism Spectrum Disorder (ASD). The enrichment of Alu in brain specific genes could be due to brain genes having larger introns on average than most genes. Therefore genes involved in brain function are more likely to have a RT insert within their boundaries than other genes. Even if there is a size-advantage of brain-related genes to be inserted by Alu than non-brain-related genes, this does not preclude the possibility that once Alu are inserted within these genes, they are capable of being co-opted by the genome to serve a function. Interestingly the RORA receptor, which is contained within Alu, has been implicated in Autism Spectrum Disorder independent of retrotransposon insertions. The association of RORA in Autism Spectrum disorder necessitates further research into the interaction between Alu elements and changes in gene expression at a molecular level.
+
+%
+%--> Look at the discussion from this paper for talking about expectations of ChrX versus autosomes (Estimate of the Mutation Rate per Nucleotide in Humans)
+
+%---> hnRNP C and Schizophrenia (Altering the expression balance of hnRNP C1 and C2 changes the expression of myelination-related genes)
+%\subsection{Title}
+%
+%--> OTX2 and PITX2 are both involved in neuronal stuff...They are present in all the Alu consensus sequences
+%
+%\section{Future of Retrotransposons in Human Genetics Research}
+%---> Talk about the use of RTs in GWAS type studies.
+%
+%
+%---> Talk about somatic retrotransposition and how that can lead to variation within a human
+%
+%--> How future research should take what's known from chp3 and make a prediction algorithm for de novo inserts. Also the same algorithm should be used for reference RTs, and the ones that fall outside of what they would be predicted should be evalutated for function
+
 }
-\caption[Contingency table for expression differences between human and non-human primate]{\normalsize{\textbf{Contingency table for expression differences between human and non-human primate\\}a,b,c, and represent counts of genes. Odds ratio = ad / bc}}
-\label{table:contablemei}
-\end{table}
-
-Female humans were missing expression values for testis and liver; these tissues were therefore excluded from analysis in females. To minimize type I error, p-values were calculated directly by permuting MEI-status and a strict Bonferroni cutoff was calculated based on the total number of tests across all MEI types (Number of OR tests = 96; Bonferroni cutoff $\alpha$ = 5.21e-04) (table \ref{table:permOR}). Many ORs associated with Alu remained significant after Bonferroni correction (Alu: 16 of 32 ORs) (figure \ref{fig:meiplots}), indicating a tendency for gene expression to shift between species associated with MEI status. L1 and SVA ORs also showed significant results (L1: 1 of 32 ORs; SVA: 10 of 32 ORs). 
 
 
-    %Figure boxplot of MEI Odds Ratios
-    \begin{figure}[!ht]
-        \centering
-        \includegraphics[width=0.7\textwidth,natwidth=610,natheight=642]{meiplots2.pdf}
-       \caption[The effect of MEI status on gene expression between primates]{\textbf{The effect of MEI status on gene expression between primates\\}
-       Odds ratios for each tissue (brain, heart, liver, kidney, testis) and each primate (human, chimp, gorilla, orangutan, rhesus macaque) were plotted by MEI-type (Alu, L1, or SVA). Dots in black represented tests that did not pass Bonferonni significance ($\alpha$ = 1.25e-03 ). Dots in red represent tests that did pass Bonferroni significance.
-       }
-        \label{fig:meiplots}
-    \end{figure}
-
-Interestingly, 76\% of the significant ORs were < 1 (Alu: 11 of 16 sig. tests (69\%); L1: 1 of 1 sig. tests (100\%); SVA: 8 of 11 sig. tests (72\%)), indicating an association of decreased gene expression in humans with the presence of an MEI. 
-
-\begin{sidewaystable}[htbp!]
-% Wed Apr 16 11:39:47 2014
-\centering
-\begin{tabular}{rllllrrrrrrrrr}
-  \hline
- Test& Primate & Sex & Tissue & Element & OddsRatio & {conf1} & {conf2} & Raw\_pvalue & {MEI- Hs} & {MEI- NHP} & {MEI+ Hs} & {MEI+ NHP} &  {pvalue}\\ 
-1 & RheMac & male & brain & Alu & 0.87 & 0.79 & 0.96 & 0.01 & 2708.00 & 7008.00 & 652.00 & 1940.00 & 4.00e-04 \\ 
-  2 & RheMac & male & kidney & Alu & 0.83 & 0.75 & 0.91 & 0.00 & 6702.00 & 2896.00 & 1688.00 & 882.00 &  0.00e+00 \\ 
-  5 & RheMac & male & testis & Alu & 0.83 & 0.76 & 0.91 & 0.00 & 4411.00 & 5658.00 & 1039.00 & 1603.00 &  0.00e+00 \\ 
-  11 & Orangutan & male & brain & Alu & 0.77 & 0.69 & 0.86 & 0.00 & 2063.00 & 7375.00 & 509.00 & 2358.00 &  0.00e+00 \\ 
-  12 & Orangutan & male & kidney & Alu & 1.13 & 1.04 & 1.24 & 0.01 & 5827.00 & 3473.00 & 1863.00 & 981.00 &  8.00e-04 \\ 
-  16 & Orangutan & female & brain & Alu & 1.66 & 1.48 & 1.86 & 0.00 & 7000.00 & 2142.00 & 2391.00 & 441.00 &  0.00e+00 \\ 
-  22 & GorGor & male & kidney & Alu & 0.73 & 0.66 & 0.81 & 0.00 & 3321.00 & 6416.00 & 669.00 & 1762.00 &  0.00e+00 \\ 
-  23 & GorGor & male & liver & Alu & 0.85 & 0.77 & 0.94 & 0.00 & 2824.00 & 6859.00 & 630.00 & 1794.00 &  2.00e-04 \\ 
-  24 & GorGor & male & heart & Alu & 1.33 & 1.16 & 1.52 & 0.00 & 8053.00 & 1519.00 & 2093.00 & 297.00 &  0.00e+00 \\ 
-  25 & GorGor & male & testis & Alu & 0.69 & 0.63 & 0.76 & 0.00 & 4824.00 & 5405.00 & 941.00 & 1526.00 & 0.00e+00 \\ 
-  29 & GorGor & female & heart & Alu & 1.19 & 1.08 & 1.32 & 0.00 & 6278.00 & 2883.00 & 1695.00 & 654.00 &  0.00e+00 \\ 
-  32 & Chimp & male & kidney & Alu & 0.65 & 0.55 & 0.77 & 0.00 & 1792.00 & 8910.00 & 176.00 & 1345.00 &  0.00e+00 \\ 
-  34 & Chimp & male & heart & Alu & 0.70 & 0.63 & 0.78 & 0.00 & 5442.00 & 4966.00 & 651.00 & 847.00 & 0.00e+00 \\ 
-  35 & Chimp & male & testis & Alu & 0.77 & 0.69 & 0.85 & 0.00 & 5652.00 & 5507.00 & 678.00 & 864.00 &  0.00e+00 \\ 
-  36 & Chimp & female & brain & Alu & 1.41 & 1.23 & 1.62 & 0.00 & 7943.00 & 2620.00 & 1233.00 & 288.00 &  0.00e+00 \\ 
-  39 & Chimp & female & heart & Alu & 0.74 & 0.66 & 0.84 & 0.00 & 3922.00 & 6341.00 & 472.00 & 1024.00 &  0.00e+00 \\ 
-  42 & RheMac & male & kidney & L1 & 0.49 & 0.35 & 0.71 & 0.00 & 8319.00 & 3714.00 & 71.00 & 64.00 &  6.00e-04 \\ 
-  81 & RheMac & male & brain & SVA & 0.54 & 0.34 & 0.81 & 0.00 & 3332.00 & 8810.00 & 28.00 & 138.00 &  0.00e+00 \\ 
-  85 & RheMac & male & testis & SVA & 0.43 & 0.30 & 0.62 & 0.00 & 5409.00 & 7136.00 & 41.00 & 125.00 &  0.00e+00 \\ 
-  87 & RheMac & female & kidney & SVA & 1.93 & 1.22 & 3.17 & 0.00 & 9106.00 & 2697.00 & 143.00 & 22.00 & 8.00e-04 \\ 
-  96 & Orangutan & female & brain & SVA & 2.21 & 1.57 & 3.19 & 0.00 & 9091.00 & 2545.00 & 300.00 & 38.00 &  0.00e+00 \\ 
-  102 & GorGor & male & kidney & SVA & 0.45 & 0.32 & 0.63 & 0.00 & 3945.00 & 7976.00 & 45.00 & 202.00 &  0.00e+00 \\ 
-  105 & GorGor & male & testis & SVA & 0.49 & 0.37 & 0.65 & 0.00 & 5691.00 & 6753.00 & 74.00 & 178.00 & 0.00e+00 \\ 
-  112 & Chimp & male & kidney & SVA & 0.46 & 0.26 & 0.77 & 0.00 & 1952.00 & 10076.00 & 16.00 & 179.00 &  0.00e+00 \\ 
-  114 & Chimp & male & heart & SVA & 0.47 & 0.34 & 0.64 & 0.00 & 6029.00 & 5684.00 & 64.00 & 129.00 &  0.00e+00 \\ 
-  115 & Chimp & male & testis & SVA & 0.49 & 0.36 & 0.67 & 0.00 & 6264.00 & 6238.00 & 66.00 & 133.00 &  0.00e+00 \\ 
-  119 & Chimp & female & heart & SVA & 0.47 & 0.33 & 0.67 & 0.00 & 4351.00 & 7215.00 & 43.00 & 150.00 &  0.00e+00 \\ 
-   \hline
-\end{tabular}
-\caption[Contingency table values and results of the two-tailed  permuation tests for MEI-expression tests]{\textbf{Contingency table values and results of the two-tailed  permuation tests for MEI-expression tests\\} Conf1: lower confidence limit, Conf2: higher confidence limit, MEI- : Genes with no identifiable MEI within the gene boundaries; MEI+ : Genes with MEIs within the gene boundaries; Hs: Genes expressed higher in humans; NHP: Genes expressed higher in the respective non-human primate. pvalue: proportion of permutations that were more extreme than the actual odds ratio out of 5000 permutations.}
-\label{table:permOR}
-\end{sidewaystable}
-
-
-\subsection{Males Show a Stronger Association between MEI Status and Expression in Humans when Compared to Females}
-
-There were four variables that were uncontrolled for in the calculation of odds ratio: sex of the individual, non-human primate species, tissue of origin, and MEI-type. It was therefore important to determine if any of these variables had a significant effect on the outcome of odds ratio. To compare the effect of each variable type, ORs were regressed on sex, NHP, tissue, and MEI-type (equation \ref{spec}). OR for the tissues testis and liver were removed due to the lack of data in female samples.
-
- %Linear Regression Equation: variables
-    \begin{equation}
-    \label{spec}
-        Odds Ratio  = \beta _{o} + \beta sex + \beta NHP  + \beta tissue + \beta MEI  + \epsilon
-    \end{equation}
-
-These models were compared using a four-way ANOVA. Using ANOVA, all variables were examined to determine which had the largest effect on OR (sex, primate comparison, tissue, or MEI-type) (table \ref{table:anova}). Sex of the individual (p < 5.2e-04) showed the most significant effect on OR. 
-
-
-    % ANOVA table
-    % Wed Apr 16 13:34:18 2014
-    \begin{table}[ht]
-    \large
-    \centering
-    \begin{tabular}{rlrrr}
-      \hline
-     & Variable & Df & F-value & p-value \\ 
-      \hline
-    1 & Sex &   1 & 13.02 & 5.2e-04 \\ 
-      2 & Tissue &   4 & 2.98 & 0.02 \\ 
-      3 & Primate &   3 & 2.81 & 0.04 \\ 
-      4 & MEI-type &   2 & 1.59 & 0.21 \\ 
-       \hline
-    \end{tabular}
-    \caption[Results of ANOVA comparing effects of sex, tissue, NHP, and MEI]{\normalsize{\textbf{Results of ANOVA comparing effects of sex, tissue, NHP, and MEI\\}
-    A single regression equation was calculated for Odds ratios regressed on sex, tissue, primate, and mei-type. The model was then analyzed by ANOVA to determine the respective contributions of each variable. Df = degress of freedom.
-    }}
-    \label{table:anova}
-    \end{table}
-
-Indeed when grouping significant ORs based on sex, a majority of the significant ORs were derived from male samples (20/27 = 74\%) as opposed to female samples (7/27 = 26\%). The direction of effect (i.e.: increased versus decreased expression in humans versus NHP) was also associated with the sex of the individual in genes containing MEIs. ORs were more often < 1 (decreased expression) in male samples (18/20 = 90\%) compared to female samples (2/7 = 28\%). Overall the odds ratios between males were significantly smaller than those between females (figure \ref{fig:malefemale}).
-
-
-    %boxplot of male odds ratios versus female odds ratios
-    \begin{figure}[!ht]
-        \centering
-        \includegraphics[width=0.6\textwidth,natwidth=610,natheight=642]{malefemale2.pdf}
-       \caption[Odds ratios based on sex of origin]{\normalsize{\textbf{Odds ratios based on sex of origin\\}
-       Odds ratios were calculated for each primate (human, chimp, gorilla, orangutan, and rhesus macaque) and each tissue (brain, heart, liver, kidney, testis). Odds ratios were separated by sex of origin. Black dots indicate odds ratios that were not significant after Bonferroni correction of the two-tailed permuted p-value.  Red dots indicate odds ratios that were significant ($\alpha$ = 1.25e-03).
-       }}
-        \label{fig:malefemale}
-    \end{figure}
-    
-    
-\section{Mobile Element Insertions that are Polymorphic Between Humans}
-The bias in OR due to the sex of the individual indicated that there was a bias in gene expression between males and females that was restricted to genes containing MEIs.  It was next determined if the expression differences between humans and NHPs were also present as differences in expression between male and female humans.
-
-\subsection{Genes containing MEI-Alu are differentially expressed between male and female humans}
-To test the differences between humans based on sex, expression was calculated within genes containing MEIs between chimps and humans. Expression was compared between females males using the contingency table presented in table \ref{table:contablesex}.
-
-\begin{table}
-\centering
-\pgfplotstabletypeset[
-  every head row/.style={%
-    before row={\toprule 
-        & \multicolumn{2}{c}{MEI-Status}\\
-        \cmidrule{2-3}},
-    after row=\midrule},
-  every last row/.style={after row=\bottomrule},
-  columns/{Higher Expression}/.style={string type},
-  column type=r,
-    columns/MEI/.style={string type},
-    columns/no-MEI/.style={string type},
-    columns/{Total by MEI}/.style={string type},
-]{
-    {Higher Expression}       MEI no-MEI  {Total by MEI}
-    Males                   a           c               a+c 
-    Females                b           d               b+d 
-    {Total by Expression}  a+b          c+d             a+b+c+d 
-}
-\caption[Contingency table for expression differences between males and females of the same species]{\textbf{Contingency table for expression differences between males and females of the same species\\}a,b,c, and represent counts of genes. Odds ratio = ad / bc}
-\label{table:contablesex}
-\end{table}
-
-To reduce the number of comparisons only one group of MEI was chosen to compare expression between the human sexes. This was MEI  derived from Alu (MEI-Alu) that were present in human but absent in all other NHPs (equivalent to MEI-Alu-Chimp). To further restrict the number of tests expression was only examined in one tissue, the brain. Indeed, gene expression was more likely to be decreased in human males compared to human females when an MEI-Alu-Chimp was present within the gene (OR = 0.42; CI 95\% = 0.33 -- 0.52; Fisher\rq s p  < 4.25 e-18). 
-
-\section{Replication of Sex-specific Results in Humans}
-Although these results indicated that there was a sex-dependent difference between humans in genes containing an MEI; it was possible that the analysis detected an unrelated bias in the dataset due to the small sample size (N male = 3, N female = 2). Therefore, a larger replication set was examined. This larger dataset was used to test the claim that the MEI gene set was significantly associated with genes that were differentially expressed between males and females.
-
-Trabzuni et al. characterized gene expression from human male (N=101) and female (N=36) brain and spinal cord tissues \citep{Trabzuni2013}. The top differentially expressed and alternatively spliced genes between males and females that were reported in this dataset were used for this analysis. To facilitate the comparison, MEI-Alu-Chimp were converted from Ensembl annotation to HUGO gene annotation (N MEI-Alu-Chimp converted = 2200). Of the 442 genes differentially expressed or spliced between the sexes in any brain region, 117 contained an MEI-Alu-Chimp. This was significantly more genes containing MEI-Alu-Chimp than expected by chance (OR= 2.8; CI 95\% = 2.29 -- 3.57;  Fisher\rq s exact p < 2.2e-16). Total gene count was set at 19116 to reflect the number of genes uniquely annotated in HUGO \citep{Flicek2013, Kent2002}. 
-
-\subsection{MEIs segregating in humans are associated with a decrease in expression}
-
-Alu, L1, and SVA are retrotranspositionally competent in humans resulting in mobile element variation within the human population \citep{Ewing2010, Stewart2011}. Stewart et al. annotated a subset of MEIs that are polymorphic between humans. It was next important to check if MEI-Alu locations that were segregating (MEI-seg) within the human population had a similar association with a change in gene expression as the MEIs previously identified between humans and primates.
-
-MEI-segs were identified from the CEU individuals typed in the 1000 genomes project. Expression data for the same CEU individuals was available from the Montgomery et al. dataset. Gene expression from Montgomery et al. was filtered to include only genes that contained an MEI-seg between the transcription start and transcription stop sites. 547 genes matched this criterion. Gene expression was compared between males and females containing MEI-seg (MEI-seg(+)). 338 genes (62\% of total, Z-test p < 3.8e-08) had a decrease in mean expression in males versus females (figure \ref{fig:femalemalecase}). Conversely when the same genes were compared between males and females without an MEI-seg (MEI-seg(-)), only 266 genes were decreased in males versus females (49\% of total, Z-test p < 0.64) (figure \ref{fig:femalemalecontrol}). A Student\rq s t-test showed that this decrease in expression in MEI-seg(+) individuals was significantly larger than in MEI-seg(-) individuals (mean difexp log MEI-seg(+) = 0.009; mean difexp log MEI-seg(-) = -0.002; Student\rq s t-test p < 1.87 e-25). 
-
-    %female male cases
-    \begin{figure}[!ht]
-        \centering
-        \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{femalemale_case.png}
-       \caption[Differential expression between sexes in individuals containing the MEI]{\textbf{Differential expression between sexes in individuals containing the MEI\\}
-       Gene expression of females containing an MEI were compared to the same genes in males who also contained the same MEI. The t-test p-values of these comparisons were plotted verus the difference between the means of the two groups. 
-       }
-        \label{fig:femalemalecase}
-    \end{figure}
-    
-    
-    %female male cases
-    \begin{figure}[!ht]
-        \centering
-        \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{femalemale_control.png}
-       \caption[Differential expression between sexes in individuals lacking the MEI]{\textbf{Differential expression between sexes in individuals lacking the MEI\\}
-        Gene expression of females lacking an MEI were compared to the same genes in males who also lacked the MEI. The t-test p-values of these comparisons were plotted verus the difference between the means of the two groups. 
-       }
-        \label{fig:femalemalecontrol}
-    \end{figure}
-
-
-\subsection{Decrease in expression in the presence of an MEI-seg is specific to males}
-
-Expression values were compared within each sex group to determine if the effect was biased towards a decrease in males, or an increase of expression in females. The odds of decreased expression in the presence of an MEI-seg were significantly increased when the individual was male compared to female (OR = 2.36; CI 95\% = 1.84 -- 3.05; Fisher\rq s exact p < 5.90e-12). Furthermore, the differential expression between MEI-seg(+) and MEI-seg (-) males was significantly greater than that between females (Student\rq s t-test  p < 7.93e-26) (figure \ref{fig:malemale_femfem}). These results indicated that the bias of decreased expression was largely driven by MEI-associated expression in males.
-
-    %female male cases
-    \begin{figure}[!ht]
-        \centering
-        \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{malemale_femfem.png}
-       \caption[Comparison within groups of the same sex, between MEI+ and MEI- individuals]{\textbf{Comparison within groups of the same sex, between MEI+ and MEI- individuals\\}
-       Differences in expression were calculated between females containing the MEI and lacking the MEI (Fem) or between males containing the MEI and lacking the MEI (Male). A red line is drawn at zero, where no change would be expected. 
-       }
-        \label{fig:malemale_femfem}
-    \end{figure}
-
-\subsection{Genes containing MEI are functionally enriched for Autism susceptibility genes}
-
-The genes contained an MEI-Alu, Chimp were tested for functional pathway enrichment. Splice variants were significantly enriched in this group (N = 1199, Benjamini corrected p < 4.1e-71), as well as neuron projection development (N = 54, Benjamini corrected p < 7.7e-04), brain expression (N = 1137, Benjamini corrected p < 9.2e-36), and phosphatidylinositol signaling (N = 19, Benjamini corrected p < 9.4e-02). The complete list is presented in supplementary table 2. 
-
-Baillie et al. previously showed that there is somatic retrotransposition in the human brain (Baillie et al., 2011). Within the list of genes that were deemed somatic inserts in Baillie et al., there was a significant overlap with genes associated with Autism Spectrum Disorder (ASD) (Hussman et al., 2011) (OR = 7.29; CI 95\% = 5.01 -- 10.73 ; Fisher\rq s exact p < 6.59e-27) (Supplementary table 2).  Therefore an additional functional enrichment test was performed to determine if genes containing MEI were enriched for genes related to ASD. MEI-Alu, Chimp were enriched for ASD genes. ASD genes were annotated using the Autism Database (AUTdb) \citep{Basu2009}. ASD genes were significantly enriched for genes containing MEI-Alu, Chimp (OR = 1.83; CI 95\% = 1.12 -- 2.90; Fisher\rq s exact p < 0.01). More strikingly, ASD genes were significantly enriched within genes containing the human polymorphic MEI-segs (OR = 5.10; CI 95\% = 3.48 -- 7.41; Fisher\rq s exact p < 6.09e-16). 
-
-Similar to all MEI-seg genes, the ASD genes containing an MEI-seg showed sex-specific differences in expression. Differences in expression between MEI-seg (+) and MEI-seg (-) males were significantly greater than between MEI-seg (+) versus MEI-seg (-) females (mean dif logExp male = -0.008; mean dif logExp female = -0.002 ; Student\rq s p < 0.04) (figure 5b).
-
- %%RORA STUFF
- %        %Figure alu rora conservation
- %   \begin{figure}[!ht]
- %       \centering
- %       %\includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{alu_rora.pdf}
- %       \includegraphics[scale=1,width=\textwidth]{alu_rora.pdf}
- %      \caption{\normalsize{\textbf{Basewise conservation of RORA-1 motif in AS and S Alu \\} Conservation scores were derived from phyloP conservation scores where a positive value indicates positive selection and a negative value indicates possible negative selection. AS and S values were normalized by intergenic values}}
- %       \label{fig:alurora}
- %   \end{figure}
-
-\section{Conclusions}
-These results suggest that the presence of a RT within a gene is indeed associated with decreased expression of the same gene. More importantly, this effect of RTs on gene expression was sex-specific, and largely driven by effects in males. Lastly, the genes found to contain variations in RTs are enriched for Autism susceptibility genes, which are also enriched for differences in expression between the sexes. These results provide evidence for RTs in mediating sex-specific effects of human gene expression.
 
 \renewcommand{\thepage}{\arabic{page}}% Arabic page numbers
 \bibliographystyle{apacite}
@@ -368,5 +188,4 @@ These results suggest that the presence of a RT within a gene is indeed associat
 }
 
 \end{document}
-
 
