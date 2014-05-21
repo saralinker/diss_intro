@@ -132,7 +132,6 @@ The differences in expression across all species were controlled for by inter-sa
 
 
 \begin{table}
-\large
 \centering
 \pgfplotstabletypeset[
   every head row/.style={%
@@ -162,7 +161,7 @@ Female humans were missing expression values for testis and liver; these tissues
     %Figure boxplot of MEI Odds Ratios
     \begin{figure}[!ht]
         \centering
-        \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{meiplots2.pdf}
+        \includegraphics[width=0.7\textwidth,natwidth=610,natheight=642]{meiplots2.pdf}
        \caption[The effect of MEI status on gene expression between primates]{\textbf{The effect of MEI status on gene expression between primates\\}
        Odds ratios for each tissue (brain, heart, liver, kidney, testis) and each primate (human, chimp, gorilla, orangutan, rhesus macaque) were plotted by MEI-type (Alu, L1, or SVA). Dots in black represented tests that did not pass Bonferonni significance ($\alpha$ = 1.25e-03 ). Dots in red represent tests that did pass Bonferroni significance.
        }
@@ -263,7 +262,7 @@ Indeed when grouping significant ORs based on sex, a majority of the significant
 The bias in OR due to the sex of the individual indicated that there was a bias in gene expression between males and females that was restricted to genes containing MEIs.  It was next determined if the expression differences between humans and NHPs were also present as differences in expression between male and female humans.
 
 \subsection{Genes containing MEI-Alu are differentially expressed between male and female humans}
-To test the differences between humans based on sex, expression was calculated within MEI genes in humans only and compared expression values between females and males of the same sex (table \ref{table:contablesex}).
+To test the differences between humans based on sex, expression was calculated within genes containing MEIs between chimps and humans. Expression was compared between females males using the contingency table presented in table \ref{table:contablesex}.
 
 \begin{table}
 \centering
@@ -289,9 +288,10 @@ To test the differences between humans based on sex, expression was calculated w
 \label{table:contablesex}
 \end{table}
 
-MEIs were restricted to those derived from Alu (MEI-Alu) and were present in human but absent in all other NHP (equivalent to MEI-Alu-Chimp). To restrict the number of tests expression was only examined in the brain. Indeed, gene expression was more likely to be decreased in human males compared to human females when an MEI-Alu-Chimp was present within the gene (OR = 0.42; CI 95\% = 0.33 -- 0.52; Fisher\rq s p  < 4.25 e-18). 
+To reduce the number of comparisons only one group of MEI was chosen to compare expression between the human sexes. This was MEI  derived from Alu (MEI-Alu) that were present in human but absent in all other NHPs (equivalent to MEI-Alu-Chimp). To further restrict the number of tests expression was only examined in one tissue, the brain. Indeed, gene expression was more likely to be decreased in human males compared to human females when an MEI-Alu-Chimp was present within the gene (OR = 0.42; CI 95\% = 0.33 -- 0.52; Fisher\rq s p  < 4.25 e-18). 
 
-Although these results indicated that there was a sex-dependent difference in expression in genes containing an MEI; it was possible that the analysis detected an unrelated bias in the dataset due to the small sample size (N male = 3, N female = 2). Therefore, a larger replication set was examined. This larger dataset was used to test the claim that the MEI gene set was significantly associated with genes that were differentially expressed between males and females.
+\section{Replication of Sex-specific Results in Humans}
+Although these results indicated that there was a sex-dependent difference between humans in genes containing an MEI; it was possible that the analysis detected an unrelated bias in the dataset due to the small sample size (N male = 3, N female = 2). Therefore, a larger replication set was examined. This larger dataset was used to test the claim that the MEI gene set was significantly associated with genes that were differentially expressed between males and females.
 
 Trabzuni et al. characterized gene expression from human male (N=101) and female (N=36) brain and spinal cord tissues \citep{Trabzuni2013}. The top differentially expressed and alternatively spliced genes between males and females that were reported in this dataset were used for this analysis. To facilitate the comparison, MEI-Alu-Chimp were converted from Ensembl annotation to HUGO gene annotation (N MEI-Alu-Chimp converted = 2200). Of the 442 genes differentially expressed or spliced between the sexes in any brain region, 117 contained an MEI-Alu-Chimp. This was significantly more genes containing MEI-Alu-Chimp than expected by chance (OR= 2.8; CI 95\% = 2.29 -- 3.57;  Fisher\rq s exact p < 2.2e-16). Total gene count was set at 19116 to reflect the number of genes uniquely annotated in HUGO \citep{Flicek2013, Kent2002}. 
 
