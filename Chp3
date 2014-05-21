@@ -228,7 +228,7 @@ The linear decay of RTs across gene deciles may be contributed to by a number of
 
 %Alternative Splicing
 \subsection{Alternative Splicing}
-Alu and L1 both contain cryptic splice sequences that are often used for alternative splicing. It was therefore investigated whether genes with alternative isoforms have a different AS bias than constitutively expressed genes. Using the knownAlt annotation track from Hg19 (UCSC Genome Browser), we separated genes into those with known alternative splicing events, and those that were constitutively expressed. We found no significant differences between the distribution of AS and S between the two groups (chi-square p > 0.25, p > 0.23 respectively). We further calculated the correlation of AS Alu density and CDS density within alternatively spliced genes. The negative correlation that is seen across all genes was replicated when examining only genes that are alternatively spliced (Pearson’s correlation coefficient: -0.78, p < 0.008). Therefore, there was no observable difference between alternatively spliced and constitutively spliced genes.
+Alu and L1 both contain cryptic splice sequences that are often used for alternative splicing. It was therefore investigated whether genes with alternative isoforms have a different AS bias than constitutively expressed genes. Using the knownAlt annotation track from Hg19 (UCSC Genome Browser), we separated genes into those with known alternative splicing events, and those that were constitutively expressed. We found no significant differences between the distribution of AS and S between the two groups (chi-square p > 0.25, p > 0.23 respectively). We further calculated the correlation of AS Alu density and CDS density within alternatively spliced genes. The negative correlation that is observed across all genes was replicated when examining only genes that are alternatively spliced (Pearson’s correlation coefficient: -0.78, p < 0.008). Therefore, there was no observable difference between alternatively spliced and constitutively spliced genes.
 
 %Correlation of Linear Decay with 5'-UTR
 \subsection{Alu and L1 are Decreased Near 5\rq-UTR}
@@ -554,7 +554,7 @@ Protein binding motifs other than the Pol-II promoter are highly concentrated in
 %        \label{fig:aluintmotif}
 %    \end{figure}
 
-The proportions of motifs within intergenic Alu were used to normalize the proportions of binding motifs identified within genes (figure \ref{fig:alumotifs}). To correct for differences in the total number of Alu within different regions of the genome, the count of motifs were first normalized by the number of elements within each region analyzed. After this normalization procedure, the proportion of any given motif was effected more by the placement within a gene, than the sequence of the motif. For example, all of the motifs located within AS Alu had values above 1.2, independent of the type of motif. Similarly, all of the motifs within S Alu had values below 0.8.
+The proportions of motifs within intergenic Alu were used to normalize the proportions of binding motifs identified within genes (figure \ref{fig:alumotifs}and Appendix table \ref{table:binding}). To correct for differences in the total number of Alu within different regions of the genome, the count of motifs were first normalized by the number of elements within each region analyzed. After this normalization procedure, the proportion of any given motif was effected more by the placement within a gene, than the sequence of the motif. For example, all of the motifs located within AS Alu had values above 1.2, independent of the type of motif. Similarly, all of the motifs within S Alu had values below 0.8.
 
 
     %Figure Alu motifs 
@@ -593,7 +593,7 @@ ANOVA was performed to determine if the effect of placement (i.e: sense, antisen
     \end{figure}
 
 
-The proportions of motifs in intergenic L1 were compared to the proportions within genes. As before, the values were normalized by the total number of elements in the respective region prior to comparison versus intergenic L1. Contrary to the pattern seen with Alu, L1 showed no trend of enrichment based on the placement within the gene. Instead the sequence of the motif had a significant effect on the proportion of motifs (p$_{placement}$ = 0.78; p$_{sequence}$ < 3.56e-13). Furthermore, unlike Alu, all motifs within L1 were reduced in genes compared to intergenically. SRY was the motif with the largest depletion within genes compared to L1 in intergenic regions (table \ref{table:sry}).
+The proportions of motifs in intergenic L1 were compared to the proportions within genes. As before, the values were normalized by the total number of elements in the respective region prior to comparison versus intergenic L1 (figure \ref{fig:l1motifs} and Appendix table \ref{table:binding}). Contrary to the pattern observed with Alu, L1 showed no trend of enrichment based on the placement within the gene. Instead the sequence of the motif had a significant effect on the proportion of motifs (p$_{placement}$ = 0.78; p$_{sequence}$ < 3.56e-13). Furthermore, unlike Alu, all motifs within L1 were reduced in genes compared to intergenically. SRY was the motif with the largest depletion within genes compared to L1 in intergenic regions (table \ref{table:sry}).
 
 % Tue May 20 14:18:09 2014
 \begin{table}[ht]
@@ -704,7 +704,7 @@ The proportion of motifs in each placement within TS genes were compared to the 
     %Figure L1 sense (TS / HK) motifs
     \begin{figure}[!ht]
         \centering
-        \includegraphics[scale=1,width=\textwidth]{l1_tshkmotifs_value.pdf}
+        \includegraphics[width=0.7\textwidth,natwidth=610,natheight=642]{l1_tshkmotifs_value.pdf}
        \caption[L1-contained binding motifs in tissue-specific and housekeeping genes]{\normalsize{\textbf{L1-contained binding motifs in tissue-specific and housekeeping genes\\}}}
         \label{fig:l1_tshkmotifs_value}
     \end{figure}
@@ -713,12 +713,17 @@ The proportion of motifs in each placement within TS genes were compared to the 
     %Figure L1 sense (TS / HK) motifs p-values
     \begin{figure}[!ht]
         \centering
-        \includegraphics[scale=1,width=\textwidth]{l1_tshkmotifs.pdf}
+        \includegraphics[width=0.7\textwidth,natwidth=610,natheight=642]{l1_tshkmotifs.pdf}
        \caption[L1-contained binding motifs in tissue-specific and housekeeping genes]{\normalsize{\textbf{L1-contained binding motifs in tissue-specific and housekeeping genes\\}}}
         \label{fig:l1motifs_tshk}
     \end{figure}
 
-For L1-contained motifs, all proportions of motifs were greater in TS genes than the respective placement in HK genes (56 of 56) (figure \ref{fig:l1_tshkmotifs_value}). 35 of the 56 comparisons were significant after Bonferonni correction ($\alpha$ = 8.9e-04) (figure \ref{fig:l1motifs_tshk}). The majority of the significant comparisons were within polyadenylation sequences (N = 7 of 7 possible), and the second variation of RUNX3 (N$_{b}$ = 6 of 7 possible). 
+For L1-contained motifs, all proportions of motifs were greater in TS genes than the respective placement in HK genes (56 of 56) (figure \ref{fig:l1_tshkmotifs_value}). 35 of the 56 comparisons were significant after Bonferonni correction ($\alpha$ = 8.9e-04) (figure \ref{fig:l1motifs_tshk}). The majority of the significant comparisons were within polyadenylation sequences (N = 7 of 7 possible), and the second variation of RUNX3 (N$_{b}$ = 6 of 7 possible). These results are further evidence that the binding motifs contained within RTs are under different selective pressures depending on the tissue-specificity of the gene.
+
+\section{Conclusions}
+Overall the results presented in this chapter suggested that variables associated with the gene and variables associated with the RT altered the selective pressure on the RT. Interestingly, some of the selective forces were contrary to what had originally be proposed in the literature. Most specifically was the effect of the 5\rq -UTR, which was found here to have a negligable or, at most, negative effect on RT density. This was contrary to the literature which had presumed an advantageous selective pressure on RTs near the 5\rq -UTR.
+
+It was also identified that binding motifs within RTs were clearly differentially maintained within genes, as well as dependent on the tissue-specificity of the gene. This was an important distinction since the effects of \textit{de novo} RT insertions, other than interrupting coding sequence, has largely been over-looked. Importantly, from this research, future studies can use the measures of distribution identified here to create a model for predicting the degree of impact that a new RT insertion has on an individual.  
 }
 
     
