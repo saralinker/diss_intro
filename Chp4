@@ -66,9 +66,10 @@
     keywordstyle={},
     morekeywords={}
     }
-\usepackage{setspace} %for spacing
+%\usepackage{setspace} %for spacing
 \usepackage[]{natbib} % for spacing and other formating options of apacite (needs "citep" instead of "cite")
 \renewcommand*{\bibfont}{\interlinepenalty 10000\relax} % no page breaks in the middle of a citation, requires \usepackage[]{natbib}
+\renewcommand{\bibfont}{\large}%for reference font size
 
 \widowpenalty=10000 % to remove single lines
 \clubpenalty=10000 %also to remove single lines
@@ -124,7 +125,7 @@ Group & Gene Set  & RheMac3 & PonAbe2 & GorGor3 & PanTro4 \\
 \label{table:mei}
 \end{table}
 
-RefSeq genes were identified in the human reference (hg19), that contained mobile elements of either L1, Alu, or SVA. The presence of each human mobile element was then examined within each non-human primate (NHP) reference genome. If the mobile element was absent in the NHP, and present in the human then it was labelled a mobile element insertion (MEI). Genes were classified as an MEI-containing gene if the MEI was within the gene transcription start to transcription stop sites, including introns. The sample sizes of MEI-containing genes are presented in table \ref{table:mei}.
+RefSeq genes were identified in the human reference (hg19) that contained mobile elements of  L1, Alu, or SVA. The presence of each human mobile element was then examined within each non-human primate (NHP) reference genome. If the mobile element was absent in the NHP, and present in the human then it was labelled a mobile element insertion (MEI). Genes were classified as an MEI-containing gene if the MEI was within the gene transcription start to transcription stop sites, including introns. The sample sizes of MEI-containing genes are presented in table \ref{table:mei}.
 
 These genes were then filtered to retain only genes with orthologs between hg19 and chimp (panTro4), gorilla (GorGor3), orangutan (ponAbe2), and rhesus macaque (rheMac3). Furthermore, in order to compare between the sexes, only genes on the autosomes were considered in this analysis. Using data from Brawand et al., expression values were obtained for all orthologous genes and for each species. This dataset contained expression for multiple tissues, including brain, heart, kidney, liver, and testis. The final counts of genes that had expression values in Brawand et al. are presented in table \ref{table:mei}. 
 
@@ -155,7 +156,7 @@ The differences in expression across all species were controlled for by inter-sa
 \label{table:contablemei}
 \end{table}
 
-Female humans were missing expression values for testis and liver; these tissues were therefore excluded from analysis in females. To minimize type I error, p-values were calculated directly by permuting MEI-status and a strict Bonferroni cutoff was calculated based on the total number of tests across all MEI types (Number of OR tests = 96; Bonferroni cutoff p = 5.21e-04) (table \ref{table:permOR}). Many ORs associated with Alu remained significant after Bonferroni correction (Alu: 16 of 32 ORs) (figure \ref{fig:meiplots}), indicating a tendency for gene expression to shift between species associated with MEI status. L1 and SVA ORs also showed significant results (L1: 1 of 32 ORs; SVA: 10 of 32 ORs). 
+Female humans were missing expression values for testis and liver; these tissues were therefore excluded from analysis in females. To minimize type I error, p-values were calculated directly by permuting MEI-status and a strict Bonferroni cutoff was calculated based on the total number of tests across all MEI types (Number of OR tests = 96; Bonferroni cutoff $\alpha$ = 5.21e-04) (table \ref{table:permOR}). Many ORs associated with Alu remained significant after Bonferroni correction (Alu: 16 of 32 ORs) (figure \ref{fig:meiplots}), indicating a tendency for gene expression to shift between species associated with MEI status. L1 and SVA ORs also showed significant results (L1: 1 of 32 ORs; SVA: 10 of 32 ORs). 
 
 
     %Figure boxplot of MEI Odds Ratios
@@ -168,7 +169,7 @@ Female humans were missing expression values for testis and liver; these tissues
         \label{fig:meiplots}
     \end{figure}
 
-Although it is possible that L1 and SVA are less often associated with genes that are expressed lower in humans than Alu, it is also possible that the reduced number of significant tests is due to a lack of power to detect significance due to their small sample numbers (req. effect size, Alu Chimp: 0.08; req. effect size, L1 Chimp: 0.48; req. effect size, SVA Chimp: 0.23). Interestingly, 76\% of the significant ORs were < 1 (Alu: 11 of 16 sig. tests (69\%); L1: 1 of 1 sig. tests (100\%); SVA: 8 of 11 sig. tests (72\%)), indicating an association of decreased gene expression in humans with the presence of an MEI. 
+Interestingly, 76\% of the significant ORs were < 1 (Alu: 11 of 16 sig. tests (69\%); L1: 1 of 1 sig. tests (100\%); SVA: 8 of 11 sig. tests (72\%)), indicating an association of decreased gene expression in humans with the presence of an MEI. 
 
 \begin{sidewaystable}[htbp!]
 % Wed Apr 16 11:39:47 2014
