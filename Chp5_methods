@@ -3,49 +3,41 @@
 
 %Preamble
 \documentclass[12bp]{report}
-\usepackage{setspace} %for double spacing
-\usepackage{times}
-\usepackage[top=1in, bottom=1in, left=1.25in, right=1in]{geometry}
-\usepackage{pslatex}
-%for the figures
-\usepackage{graphicx} 
-\usepackage{siunitx}
-\usepackage[T1]{fontenc}
-\usepackage{amsmath}
-%Formating for the contingency tables
+\usepackage[top=1in, bottom=1in, left=1.25in, right=1in]{geometry} %geom has to be loaded before fancy header
+\usepackage{pdflscape}
+\usepackage{longtable,tabularx,ltxtable}
+\usepackage{setspace}  
 \usepackage{pgfplots}
+\usepackage{xcolor}
 \usepackage{pgfplotstable}
-\pgfplotsset{compat=1.8}
 \usepackage{booktabs}
 %for rotating a table
 \usepackage{rotating} 
-%\setcounter{page}{11}
-\usepackage[margin=10pt,font=normalsize,justification=justified,labelsep=endash,labelfont=bf]{caption}
-
 \usepackage{fancyhdr}
 \pagestyle{fancy} %Control over headers and footers
     \fancyhf{}%clears all fieds
-    \lhead[R]{\rightmark} %add section title to the page
-    \cfoot{\thepage}    %add page number to center bottom
-    \renewcommand{\headrulewidth}{0.1pt} % 0 gets rid of the lines on top 
+    %\lhead[R]{\rightmark} %add section title to the page
+    \rhead{\thepage}    %add page number to center bottom
+    \renewcommand{\headrulewidth}{0pt} % 0 gets rid of the lines on top 
     \renewcommand{\footrulewidth}{0pt} % 0 gets rid of the line on bottom
     \fancypagestyle{plain}{% Changes all chapter pages to this format (by changing plain style)
         \fancyhf{}         % clear all header and footer fields
-        \rhead{\thepage}    % except the center
+        \cfoot{\thepage}    % except the center
         \renewcommand{\headrulewidth}{0pt}
         \renewcommand{\footrulewidth}{0pt}}
 
+\usepackage[margin=10pt,font=small,justification=justified,labelsep=endash,labelfont=bf]{caption}
+\usepackage{setspace} %for double spacing
+\usepackage{pslatex}
+\usepackage{graphicx} %for the figures
+\usepackage{siunitx}
+\usepackage[T1]{fontenc}
 \usepackage[final]{pdfpages}
+%properly spaces the urls in the apa citations
+\usepackage{hyperref}
 \usepackage{apacite} %for citing with APA
-%\newenvironment{tightcenter}{% for self-made chapter headings
-%  \setlength\topsep{0pt}
-%  \setlength\parskip{0pt}
-%  \begin{center}
-%}{%
-%  \end{center}
-%}
 \usepackage{amsmath}
-
+\usepackage{pifont}%for checkmark
 \usepackage{titlesec} %Re-format the chapter title
 \titleformat{\chapter}
   {\normalfont\LARGE\rm\raggedleft\uppercase}{\chaptertitlename\ \thechapter}{20pt}{\Huge}
@@ -74,6 +66,13 @@
     keywordstyle={},
     morekeywords={}
     }
+\usepackage{setspace} %for spacing
+\usepackage[]{natbib} % for spacing and other formating options of apacite (needs "citep" instead of "cite")
+\renewcommand*{\bibfont}{\interlinepenalty 10000\relax} % no page breaks in the middle of a citation, requires \usepackage[]{natbib}
+\renewcommand{\bibfont}{\large}%for reference font size
+
+\widowpenalty=10000 % to remove single lines
+\clubpenalty=10000 %also to remove single lines
 
 
 
@@ -83,58 +82,46 @@
 \chapter{\\METHODS}
 \section{Chapter 2 methods}
 \subsection{Data Sources}
-Retrotransposon insertion locations were downloaded from the 1000 genomes supplemental information \cite{Stewart2011}. This data was filtered for elements that were classified as Alu and as insertions with respect to the Hg18 reference genome. Deletions in comparison to the reference genome were not used in this analysis. All coordinates were converted to Hg19 coordinates using the Genome LiftOver tool provided from UCSC genome browser \cite{Kent2002}. Human-specific Alu were downloaded from the supplemental data in Bennett et al \cite{Bennett2008} and converted to Hg19 coordinates using the genome LiftOver tool. Somatic insertions of Alu in the brain were downloaded from Baillie et al. \cite{Baillie2011}. Germline insertions of Alu from Bundo et al. were also used in this analysis \cite{Bundo2013}.
+Insertion and deletion locations of retrotransposons (RT) that were polymorphic between populations, as well as those that were shared between populations, were downloaded from the 1000 genomes supplemental information \citep{Stewart2011}. This data was filtered for elements that were classified as insertions with respect to the Hg18 reference genome. Deletions in comparison to the reference genome were not used in this analysis. All coordinates were converted to Hg19 coordinates using the Genome LiftOver tool provided from UCSC genome browser \citep{Kent2002}. Somatic insertions of Alu in the brain were downloaded from Baillie et al. \citep{Baillie2011}. 
 
 \subsection{Determining the antisense bias of Alu retrotransposons}
-Allele frequencies (AF) identified in Stewart et al. were used for this analysis. Population specific subgroups were defined as Alu with an AF greater than 0 in either Yoruban (YRI), European (CEU), or the Chinese/Japanese (CHBJPT) populations, and an AF of 0 in the other two populations. The purpose of this grouping was to enrich for Alu that had been inserted after the split of YRI, CEU, and CHBJPT. Although identifying that the outside two populations do not have any detectable alleles (AF = 0), it is still possible that the allele was present prior to the split of the three populations, and that genetic drift played a role in the discrepancy between population AF's. This possibility would shift the data towards a group of alleles that more closely resembles older alleles, and therefore closer to the null hypothesis of young alleles being equivalent in AS bias to older alleles. For this reason, the method of seperating into populations I believe that the method chosen was a conservative one. Shared Alu were those where the AF was greater than 0 in all three populations. It is highly unlikely that an identical Alu allele would insert into the same nucleotide in sepearte germ lines, and therefore this method is likely to truly represent Alu that had inserted prior to the split of YRI, CEU, and CHBJPT. The number of antisense and sense Alu were counted in each poulation-specific group and combined with the antisense and sense Alu from somatic insertion datasets \cite{Bundo2013,Baillie2011}. The field of identifying somatic insertions is plauged with relatively new techniques. Due to this there is a possibility of false positives being identified and included in this analysis. Similar to the rational in including population specific Alu, false positives identified as somatic insertions would bias the proportion test towards the null hypothesis and therefore would be a conservative approach.
-
-Antisense and sense counts were tested using the R binomial sign test function; binom.test(). Comparisons in proportions of antisense Alu between two groups were calculated using the R function prop.test().
+Allele frequencies (AF) identified in Stewart et al. were used for this analysis. Population specific subgroups were defined as Alu with an AF greater than 0 in either Yoruban (YRI), European (CEU), or the Chinese/Japanese (CHBJPT) populations, and an AF of 0 in the other two populations. Shared Alu were defined as those where the AF was greater than 0 in all three populations. The number of antisense and sense Alu were counted in each population-specific group and combined with the antisense and sense Alu from somatic insertion datasets \citep{Bundo2013,Baillie2011}. Antisense and sense counts were tested for differences in proportion using the R binomial sign test function; binom.test(). Comparisons in proportions of antisense Alu between two groups were calculated using the R function prop.test() which is a test of equal proportions. 
 
 \subsection{Determining Ranks for Retrotransposon Subfamilies}
 
-L1 were ranked first by subfamily group by the average divergence from their respective consensus sequences, as tabulated in the repeat masker track of the UCSC genome browser, in the column millidiv. The applied rankings very closely followed the subfamily naming convention. This approach follows conventional methods for dating retrotransposon families in many respects. It does, however, have its limitations, particularly over shorter timespans (i.e., levels of nucleotide divergence). We consider this approach more conservative as the timescale grows larger because we make no assumptions about mutation rates over time or across element sequences. The only assumption made is that mutations are gradually accumulated over time, and this should hold true in the majority of instances, barring gene conversion and rare substitutions that revert nucleotides back to the corresponding consensus base. As the purpose of our ranking is to show no systematic increase or decrease in AS/S ratio over longer evolutionary periods, this relative ranking method should be suitable for our purposes. Over shorter timescales, however, it fails to capture the variance in element age estimates, as well as the fact that subfamilies can propagate over extended periods of time and can often do so in parallel with other subfamilies. In this sense, considering rank positions as distinct time points is a gross oversimplification. As our purpose in this particular analysis is to examine large scale trends in the magnitude of antisense bias, however, we do not expect these simplifications to impact our results or interpretation.
+L1 were ranked first by subfamily group by the average divergence from their respective consensus sequences, as tabulated in the repeat masker track of the UCSC genome browser, in the column millidiv. The applied rankings very closely followed the subfamily naming convention. This approach follows conventional methods for dating retrotransposon families in many respects. It does, however, have its limitations, particularly over shorter time spans (i.e., levels of nucleotide divergence). We consider this approach more conservative as the timescale grows larger because we make no assumptions about mutation rates over time or across element sequences. The only assumption made is that mutations are gradually accumulated over time, and this should hold true in the majority of instances, barring gene conversion and rare substitutions that revert nucleotides back to the corresponding consensus base. As the purpose of our ranking is to show no systematic increase or decrease in AS/S ratio over longer evolutionary periods, this relative ranking method should be suitable for our purposes. Over shorter timescales, however, it fails to capture the variance in element age estimates, as well as the fact that subfamilies can propagate over extended periods of time and can often do so in parallel with other subfamilies. In this sense, considering rank positions as distinct time points is a gross oversimplification. As our purpose in this particular analysis is to examine large scale trends in the magnitude of antisense bias, however, we do not expect these simplifications to impact our results or interpretation.
 
-\subsection{Simulating the expected age of retrotransposons with varied levels of selection}
-
-The R source code for these simulations are presented in the appendix (ASbiasSimulationimmediate.R and ASbiasSimulationcons.R). The simulations were run seperately using two different assumptions. The first was that the probability of an allele passing to the next generation rose to 1 after \textit{n} generations. This assumption was given the nickname "immediate" in the text and is coded in the R script under ASbiasSimulationimmediate.R. The second assumption was that the probability of an allele passing to the next generation remained constant over all generations. This assumption was given the nickname "constant" and is coded in the R script under ASbiasSimulationcons.R.
-
-The logic of both simulations were similar, other than the change in probability of passing to the next generation. Under initial conditions the population contains zero retrotransposons. At the start of each new generation \textit{i} new elements are inserted into the genome. [NEED TO REDESIGN THIS SO THAT THE NUMBER OF ALLELES ISN'T DIRECTLY LINKED TO THE AGE. TRY USING PYTHON WITH TWO ATTRIBUTES TO THE OBJECT. ONE THAT IS ALLELE FREQUENCY WHICH CAN BE MODIFIED BY P(SURVIVING TO THE NEXT GENERATION) AND THE OTHER THAT IS AGE WHICH IS ALWAYS THE LENGTH OF TIME SINCE IT'S INSERTION]
+%\subsection{Simulating the expected age of retrotransposons with varied levels of selection}
+%
+%The R source code for these simulations are presented in the appendix (ASbiasSimulationimmediate.R and ASbiasSimulationcons.R). The simulations were run seperately using two different assumptions. The first was that the probability of an allele passing to the next generation rose to 1 after \textit{n} generations. This assumption was given the nickname "immediate" in the text and is coded in the R script under ASbiasSimulationimmediate.R. The second assumption was that the probability of an allele passing to the next generation remained constant over all generations. This assumption was given the nickname "constant" and is coded in the R script under ASbiasSimulationcons.R.
+%
+%The logic of both simulations were similar, other than the change in probability of passing to the next generation. Under initial conditions the population contains zero retrotransposons. At the start of each new generation \textit{i} new elements are inserted into the genome. [NEED TO REDESIGN THIS SO THAT THE NUMBER OF ALLELES ISN'T DIRECTLY LINKED TO THE AGE. TRY USING PYTHON WITH TWO ATTRIBUTES TO THE OBJECT. ONE THAT IS ALLELE FREQUENCY WHICH CAN BE MODIFIED BY P(SURVIVING TO THE NEXT GENERATION) AND THE OTHER THAT IS AGE WHICH IS ALWAYS THE LENGTH OF TIME SINCE IT'S INSERTION]
 
 \section{Chapter 3 methods}
 
 \subsection{Data Sources}
 
-Retrotransposon (RepeatMasker) coordinates were downloaded from the UCSC genome browser (Human, hg19). Polymorphic Alu were taken from the supplemental data in the original publication \cite{Stewart2011}. Polymorphic mobile elements labelled as deletions, or those missing strand information, were removed from the dataset. The resulting elements were converted from Hg18 to Hg19 coordinates using the Lift Over tool from UCSC Genome Browser. Those elements that could not be converted were excluded from analysis.  Alu were converted from Hg18 to Hg19 coordinates using the Lift Over tool from UCSC Genome Browser. Those elements that could not be converted were excluded from analysis. 
+Retrotransposon (RepeatMasker) coordinates were downloaded from the UCSC genome browser (Human, hg19). Genes were defined using the RefSeq database unless otherwise states. Transcription factor binding motifs were mined from sequence data from the Hg19 reference sequence. 
 
 \subsection{Binning Reference Locations}
 
-Gene (RefSeq flat file track), and Retrotransposon (RepeatMasker) coordinates were downloaded from the UCSC genome browser (Human, hg19) \cite{Kent2002}. Each gene was subdivided into ten bins of equal size where decile 1 began at the transcription start and decile 10 ended at the transcription stop. This method of binning resulted in a concentration of exons in the first and last bins. Further calculations took this bias into account. Strandedness was taken into account so that the transcription start site was always in decile 1, irrespective of the direction of transcription. 
-
+Gene (RefSeq flat file track), and Retrotransposon (RepeatMasker) coordinates were downloaded from the UCSC genome browser (Human, hg19) \citep{Kent2002}. Each gene was subdivided into ten bins of equal size where decile 1 began at the transcription start and decile 10 ended at the transcription stop. This method of binning resulted in a concentration of exons in the first and last bins. Further calculations took this bias into account. Strandedness was taken into account so that the transcription start site was always in decile 1, irrespective of the direction of transcription. 
 
 \subsection{Identifying Genes with Secondary UTRs}
 
-5\rq -UTR coordinates were downloaded from the UCSC genome browser RefSeq Gene track \cite{Kent2002}. RefSeq genes were divided into deciles as described above. The 5\rq -UTR coordinates were intersected with each gene deciles to determine which decile they were present in. The genes containing these internal 5\rq - UTRs were thus identified and grouped based on the decile within which the 5\rq -UTR was contained. 
+5\rq -UTR coordinates were downloaded from the UCSC genome browser RefSeq Gene track \citep{Kent2002}. RefSeq genes were divided into deciles as described above. The 5\rq -UTR coordinates were intersected with each gene deciles to determine which decile they were present in. The genes containing these internal 5\rq - UTRs were thus identified and grouped based on the decile within which the 5\rq -UTR was contained. 
 
 \subsection{Distribution Analysis}
 
 Counts of elements within each decile were tabulated using an in-house script that intersected gene locations with RepeatMasker annotations to tabulate strand orientation counts per decile. Frequencies of elements within deciles were defined as the count of elements in a decile (for all genes) per total elements (across all genes). For S-only or AS-only plots, subfamily counts were normalized by the intergenic frequencies of the respective subfamilies in order to account for variable amplification rates. Trend lines were obtained via linear regression. For the analysis of L1 and Alu maintenance in genes as a function of rank by milliDiv; milliDiv was calculated as the average base mismatches in parts per thousand, as tabulated in RepeatMasker (UCSC Genome Browser, Hg19). A minimum sample size for comparison between subfamilies was calculated using G*Power3, using the Chi-Square test: Goodness-of-fit tests: Contingency tables test with an effect size of 0.1. This resulted in a minimum sample size of 1545, which we used as a minimum element count threshold for inclusion in subsequent linear regression analysis. To calculate the slopes of all Alu, L1, and exon counts across gene deciles, linear regression was performed on the internal deciles (i.e.: 2-9). Leading and trailing deciles were excluded to reduce the introduction of bias attributed to an “exon anchoring effect.” Briefly, by using the transcription start and stop positions as gene boundaries, the first and last deciles will always contain a minimum of one exon each due to standard gene biology. Therefore, counts in these deciles are systematically skewed and less representative of the general pattern across the gene.
 
-\subsection{Comparison of Frequency in Genes versus Intergenically}
-
-To correct for differences in genomic coverage within genes and intergenically, retrotransposon frequencies were calculated as a factor of their total length as opposed to count. Coverage in bp was tabulated for each element and summed per subfamily. Alu subfamilies were ranked according to age as per presence in humans. 
- The values within genes were then divided by the total bp covered by similar elements intergenically. All values were normalized by the total bp in the queried region. 
-
 \subsection{Tissue Specific Gene Sets}
 
-Gene categories were grouped based on the calculations in [57]. Power calculations resulted in the restriction of analysis to tissues with > 100 genes. Decile and frequencies were performed as above, but with the restricted gene sets.
+Gene categories were grouped based on the calculations in \citep{Chang2011}. Power calculations resulted in the restriction of analysis to tissues with > 100 genes. Decile and frequencies were performed as above, but with the restricted gene sets.
 
 \subsection{Motif Analysis}
 
 To reduce multiple testing we restricted motif analysis to sequences that have been previously identified in Alu or L1. Exact matches, unless otherwise stated, were searched in the necessary region (e.g.: in genes, intergenic) using an in-house program. Counts of each motif were tabulated in each region and, where necessary, were normalized by the relative element density. Truncated L1 were identified by comparing every known L1 (RepeatMasker, Hg19) versus known L1 consensus sequences using a local BLAST alignment. The start position of each L1 was denoted as the start position within its respective consensus sequence.
-
-\subsection{Retrotransposon eQTL Analysis}
-
-Polymorphic retrotransposons were filtered from the dataset in \cite{Stewart2011} where polymorphisms were included if they resided within a gene, and if at least 60 individuals were positive for the polymorphism. Expression data was taken from the normalized microarray dataset [REF]. Individuals that overlapped between both datasets were used for analysis. Expression values were correlated with variant status using Spearman’s rank correlation rho followed by false discovery rate correction using the fdrtools package in R.
 
 
 \section{Chapter 4 methods}
@@ -149,9 +136,17 @@ Gene expression values in this study were taken from Brawand et al. supplementar
 
 \subsection{Expression in humans versus humans}
 
-Expression values for CEU individuals within the 1000 genomes project were determined from (Montgomery et al., 2010). Female and male status was identified using annotations from Stewart et al..
+Expression values for CEU individuals within the 1000 genomes project were determined from (Montgomery et al., 2010). Female and male status was identified using annotations from Stewart et al.. 
 
 
+
+
+\renewcommand{\thepage}{\arabic{page}}% Arabic page numbers
+\bibliographystyle{apacite}
+
+\setlength\bibsep{10pt}%single space between references
+\large\singlespacing{
+\bibliography{library}
 
 
 \end{document}
