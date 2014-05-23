@@ -336,7 +336,7 @@ The results so far suggested that, contrary to expectation, there was a decrease
     \begin{figure}[!ht]
         \centering
       \includegraphics[width=0.7\textwidth,natwidth=610,natheight=642]{25utr_cdsmulti.pdf}
-        \caption[CDS density in  2$^\circ$ 5\rq-UTR gene groups]{\normalsize{\textbf{CDS density in  2$^\circ$ 5\rq-UTR gene groups\\}}}
+        \caption[CDS density in  2$^\circ$ 5\rq-UTR gene groups]{\normalsize{\textbf{CDS density in  2$^\circ$ 5\rq-UTR gene groups\\}The coding sequence density was caculated in each gene group separately. The deciles of each gene group were normalized based on the position of the 2$^\circ$ 5\rq-UTR so that the decile containing the 2$^\circ$ 5\rq-UTR was aligned to decile 0. Each colored line represents a different gene group which is labelled with the bottom percentile of the decile containing the 2$^\circ$ 5\rq-UTR. }}
         \label{fig:25_cdsmulti}
     \end{figure}
     
@@ -375,7 +375,7 @@ The CDS density and Alu density within non-2$^\circ$ 5\rq -UTR containing genes 
     \begin{figure}[!ht]
         \centering
         \includegraphics[width=0.7\textwidth,natwidth=610,natheight=642]{25utr_cdspred.pdf}
-        \caption[5\rq-UTR density and predictions based on CDS density]{\normalsize{\textbf{5\rq-UTR density and predictions based on CDS density\\}}}
+        \caption[5\rq-UTR density and predictions based on CDS density]{\normalsize{\textbf{5\rq-UTR density and predictions based on CDS density\\}The density of Alu was calculated within each 2$^\circ$ 5\rq-UTR gene group separately. These values are represented by the boxplots labelled "actual". The values predicted by the correlation of Alu with coding sequences in genes with no 2$^\circ$ 5\rq-UTR are represented by the boxplots labelled "predicted".}}
         \label{fig:25_cdspred}
     \end{figure}
     
@@ -652,7 +652,7 @@ The previous analysis examined the distribution of binding motifs within human g
 
 Conservation values used in this analysis were derived from the phyloP basewise conservation scores, where positive values indicated evidence of positive selection, and negative values indicated evidence of purifying selection. Importantly, conservation was only calculated within regions that matched the binding motif within the human reference sequence. Therefore, as opposed to the previous analysis which modeled the loss of binding motifs in the human reference, this calculation analyzed the individual basepairs within motifs that were present in humans but potentially lost in non-human primates.
 
-Polyadenylation sequences were the first motif analyzed since they were present within both Alu and L1 consensus sequences, and were reduced within genes compared to intergenic regions. Basewise conservation scores were averaged for each base within the polyadenylation sequence of either L1 (figure \ref{fig:l1polyA}) or Alu (figure \ref{fig:alupolyA}). L1 and Alu elements were first separated into AS and S elements before conservation scores were calculated. Interestingly, both Alu and L1 showed a decrease in conservation at the central T base. Moreover, polyadenylation signals of L1 in the sense orientation had a lower conservation score on average than those of AS oriented L1. 
+Polyadenylation sequences were the first motif analyzed since the 5\rq -AAATAAA motif was present within both Alu and L1 consensus sequences. Furthermore, this motif was reduced within genes compared to intergenic regions in both Alu and L1. Basewise conservation scores were averaged for each base within the polyadenylation sequence of either L1 (figure \ref{fig:l1polyA}) or Alu (figure \ref{fig:alupolyA}). L1 and Alu elements were first separated into AS and S elements before conservation scores were calculated. Interestingly, both Alu and L1 showed a decrease in conservation at the central T base. Moreover, polyadenylation signals of L1 in the sense orientation had a lower conservation score on average than those of AS oriented L1. 
 
 These results indicated that each position within a RT-contained binding motif had a different expectation of conservation. Interestingly, the polyadenylation sequence, had a similar dynamic of conservation  independent of the element within which it resided. Moreover, the S L1 had a complete reduction of the polyadenylation signal, whereas the AS L1, S Alu, and AS Alu all had reductions only in the central thymine. 
     
@@ -690,7 +690,7 @@ To reduce the number of statistical tests, analysis was restricted to the intern
     \begin{figure}[!ht]
         \centering
         \includegraphics[width=0.7\textwidth,natwidth=610,natheight=642]{alu_tshkmotifs.pdf}
-       \caption[Alu-contained binding motifs in tissue-specific and housekeeping genes]{\normalsize{\textbf{Alu-contained binding motifs in tissue-specific and housekeeping genes\\}}}
+       \caption[Significance Alu-contained binding motifs in tissue-specific and housekeeping genes]{\normalsize{\textbf{Alu-contained binding motifs in tissue-specific and housekeeping genes\\}The proportion of binding motifs within tissue-specific genes were tested versus those in housekeeping genes using a fisher's exact test. The Bonferonni cut-off alpha is represented by a horizontal line. }}
         \label{fig:alumotifs_tshk}
     \end{figure}
 
@@ -705,7 +705,7 @@ The proportion of motifs in each placement within TS genes were compared to the 
     \begin{figure}[!ht]
         \centering
         \includegraphics[width=0.7\textwidth,natwidth=610,natheight=642]{l1_tshkmotifs_value.pdf}
-       \caption[L1-contained binding motifs in tissue-specific and housekeeping genes]{\normalsize{\textbf{L1-contained binding motifs in tissue-specific and housekeeping genes\\}}}
+       \caption[L1-contained binding motifs in tissue-specific and housekeeping genes]{\normalsize{\textbf{L1-contained binding motifs in tissue-specific and housekeeping genes\\}The proportions of motifs within all sense, all antisense, sense near the 5\rq -UTR, antisense near the 5\rq -UTR, sense near the 3\rq -UTR, and antisense near the 3\rq -UTR were plotted for L1 within tissue-specific (blue) and housekeeping (red) genes. }}
         \label{fig:l1_tshkmotifs_value}
     \end{figure}
     
@@ -714,7 +714,7 @@ The proportion of motifs in each placement within TS genes were compared to the 
     \begin{figure}[!ht]
         \centering
         \includegraphics[width=0.7\textwidth,natwidth=610,natheight=642]{l1_tshkmotifs.pdf}
-       \caption[L1-contained binding motifs in tissue-specific and housekeeping genes]{\normalsize{\textbf{L1-contained binding motifs in tissue-specific and housekeeping genes\\}}}
+       \caption[Significance of L1-contained binding motifs in tissue-specific and housekeeping genes]{\normalsize{\textbf{L1-contained binding motifs in tissue-specific and housekeeping genes\\}The proportion of binding motifs within tissue-specific genes were tested versus those in housekeeping genes using a fisher's exact test. The Bonferonni cut-off alpha is represented by a horizontal line.}}
         \label{fig:l1motifs_tshk}
     \end{figure}
 
